@@ -1,0 +1,109 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id        String          @id @default(cuid())
+  email     String          @unique
+  name      String?
+  plan      String          @default("TENTANDO_A_SORTE") // ou "RUMO_A_APROVACAO"
+  groups    QuestionGroup[]
+  essays    Essay[]
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+}
+
+model Exam {
+  id        String     @id @default(cuid())
+  year      Int        @unique
+  questions Question[]
+}
+
+model Question {
+  id             String              @id @default(cuid())
+  examId         String
+  exam           Exam                @relation(fields: [examId], references: [id])
+  questionNumber Int
+  knowledgeArea  String // LINGUAGENS, CIENCIAS_HUMANAS, CIENCIAS_NATUREZA, MATEMATICA
+  subject        String // PORTUGUES, MATEMATICA, HISTORIA, etc.
+  statement      String
+  context        String?
+  optionA        String
+  optionB        String
+  optionC        String
+  optionD        String
+  optionE        String
+  correctAnswer  String
+  imageUrl       String?
+  aiExplanation  String?
+  groups         QuestionsOnGroups[]
+
+  @@unique([examId, questionNumber])
+  @@index([knowledgeArea])
+  @@index([subject])
+  @@index([examId])
+}
+
+model QuestionGroup {
+  id           String              @id @default(cuid())
+  userId       String
+  user         User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name         String
+  description  String?
+  color        String              @default("#6366f1")
+  savedFilters String? // JSON com filtros salvos
+  questions    QuestionsOnGroups[]
+  createdAt    DateTime            @default(now())
+  updatedAt    DateTime            @updatedAt
+
+  @@index([userId])
+}
+
+model QuestionsOnGroups {
+  questionId String
+  question   Question      @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  groupId    String
+  group      QuestionGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  addedAt    DateTime      @default(now())
+
+  @@id([questionId, groupId])
+  @@index([groupId])
+  @@index([questionId])
+}
+
+model Essay {
+  id          String            @id @default(cuid())
+  userId      String
+  user        User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title       String?
+  theme       String?
+  content     String
+  wordCount   Int               @default(0)
+  status      String            @default("DRAFT") // DRAFT, SUBMITTED, CORRECTED
+  corrections EssayCorrection[]
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  @@index([userId])
+  @@index([status])
+}
+
+model EssayCorrection {
+  id           String   @id @default(cuid())
+  essayId      String
+  essay        Essay    @relation(fields: [essayId], references: [id], onDelete: Cascade)
+  competencia1 Int // Domínio da norma culta (0-200)
+  competencia2 Int // Compreensão da proposta (0-200)
+  competencia3 Int // Argumentação (0-200)
+  competencia4 Int // Coesão textual (0-200)
+  competencia5 Int // Proposta de intervenção (0-200)
+  totalScore   Int // Soma das competências (0-1000)
+  feedback     String
+  createdAt    DateTime @default(now())
+
+  @@index([essayId])
+}

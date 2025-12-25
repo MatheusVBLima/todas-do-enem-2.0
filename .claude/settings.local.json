@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(bun add:*)",
+      "Bash(bunx prisma generate:*)",
+      "Bash(bunx prisma db push:*)",
+      "Bash(mkdir:*)",
+      "Bash(bunx shadcn@latest add:*)",
+      "Bash(bun run build)",
+      "Bash(npx prisma db execute:*)",
+      "Bash(bun run db:seed:*)",
+      "Bash(sqlite3:*)",
+      "Bash(psql:*)",
+      "Bash(bun:*)",
+      "Bash(bunx prisma:*)",
+      "Bash(npx ai-elements@latest add:*)",
+      "Bash(dir /s \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\")",
+      "Bash(ls:*)",
+      "Bash(npx kibo-ui:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(del test-search.js)",
+      "Bash(taskkill:*)",
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\test-db2.js\")"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "shadcn"
+  ]
+}
