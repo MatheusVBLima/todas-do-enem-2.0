@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { FolderOpen, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { GroupCard } from "@/components/groups/group-card"
 import { GroupFormDialog } from "@/components/groups/group-form-dialog"
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
@@ -103,17 +104,21 @@ export function GroupsClient() {
           ))}
         </div>
       ) : !groups || groups.length === 0 ? (
-        <div className="rounded-lg border bg-card p-12 text-center">
-          <FolderOpen className="mx-auto mb-4 size-12 text-muted-foreground" />
-          <h3 className="mb-2 text-lg font-semibold">Nenhum grupo criado ainda</h3>
-          <p className="mb-4 text-sm text-muted-foreground">
-            Crie seu primeiro grupo para começar a organizar suas questões
-          </p>
+        <Empty>
+          <EmptyHeader>
+            <EmptyMedia variant="icon">
+              <FolderOpen className="size-6" />
+            </EmptyMedia>
+            <EmptyTitle>Nenhum grupo criado ainda</EmptyTitle>
+            <EmptyDescription>
+              Crie seu primeiro grupo para começar a organizar suas questões
+            </EmptyDescription>
+          </EmptyHeader>
           <Button onClick={() => setIsCreateDialogOpen(true)}>
             <Plus className="mr-2 size-4" />
             Criar Primeiro Grupo
           </Button>
-        </div>
+        </Empty>
       ) : (
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {groups.map((group) => (

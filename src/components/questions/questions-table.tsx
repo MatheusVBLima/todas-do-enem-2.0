@@ -97,7 +97,7 @@ export function QuestionsTable({
                       variant="ghost"
                       size="sm"
                     />
-                    <Link href={`/questoes/${question.id}`}>
+                    <Link href={`/${question.id}`}>
                       <Button variant="ghost" size="sm" className="gap-2">
                         Ver
                         <ExternalLink className="size-3" />

@@ -1,9 +1,10 @@
 "use client"
 
 import { useQuery, useQueryClient } from "@tanstack/react-query"
-import { ChevronLeft, ChevronRight, LayoutGrid, Table2 } from "lucide-react"
+import { ChevronLeft, ChevronRight, LayoutGrid, Table2, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
+import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { QuestionCard } from "./question-card"
 import { QuestionsTable } from "./questions-table"
 import { useQuestionFilters } from "@/hooks/use-question-filters"
@@ -45,12 +46,30 @@ export function QuestionList() {
   }
 
   if (!data || data.data.length === 0) {
+    const hasActiveFilters = filters.anos?.length > 0 || filters.areas?.length > 0 || filters.disciplinas?.length > 0 || filters.busca
+
     return (
-      <div className="rounded-lg border bg-muted/50 p-8 text-center">
-        <p className="text-muted-foreground">
-          Nenhuma questão encontrada com os filtros selecionados.
-        </p>
-      </div>
+      <Empty>
+        <EmptyHeader>
+          <EmptyMedia variant="icon">
+            <Search className="size-6" />
+          </EmptyMedia>
+          <EmptyTitle>Nenhuma questão encontrada</EmptyTitle>
+          <EmptyDescription>
+            {hasActiveFilters
+              ? "Tente ajustar os filtros para encontrar mais questões."
+              : "Não há questões disponíveis no momento."}
+          </EmptyDescription>
+        </EmptyHeader>
+        {hasActiveFilters && (
+          <Button
+            variant="outline"
+            onClick={() => setFilters({ anos: [], areas: [], disciplinas: [], busca: "", pagina: 1 })}
+          >
+            Limpar filtros
+          </Button>
+        )}
+      </Empty>
     )
   }
 

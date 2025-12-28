@@ -3,10 +3,9 @@
 import * as React from "react"
 import {
   BookOpen,
-  FolderOpen,
   GraduationCap,
   PenTool,
-  User,
+  Sparkles,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -33,7 +32,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       items: [
         {
           title: "Questões",
-          url: "/questoes",
+          url: "/",
         },
         {
           title: "Grupos",
@@ -48,9 +47,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       badge: isPaidUser ? undefined : "PRO",
     },
     {
-      title: "Conta",
-      url: "/conta",
-      icon: User,
+      title: "Planos",
+      url: "/planos",
+      icon: Sparkles,
     },
   ]
 
@@ -62,7 +61,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   }
 
   return (
-    <Sidebar collapsible="icon" {...props}>
+    <Sidebar collapsible="icon" variant="inset" {...props}>
       <SidebarHeader>
         <div className="flex items-center gap-2 px-2 py-2">
           <GraduationCap className="size-6 text-primary" />

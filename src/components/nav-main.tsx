@@ -49,7 +49,7 @@ export function NavMain({
 
     timeoutRef.current = setTimeout(() => {
       // Prefetch based on URL
-      if (url === "/questoes") {
+      if (url === "/") {
         const defaultFilters = {
           anos: [],
           areas: [],

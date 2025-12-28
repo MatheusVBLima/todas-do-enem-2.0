@@ -4,6 +4,7 @@ import { useParams, useRouter } from "next/navigation"
 import { ArrowLeft, FolderOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { QuestionCard } from "@/components/questions/question-card"
 import { PDFExportButton } from "@/components/export/pdf-export-button"
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
@@ -110,16 +111,20 @@ export function GroupDetailClient() {
       </div>
 
       {questions.length === 0 ? (
-        <div className="rounded-lg border bg-card p-12 text-center">
-          <FolderOpen className="mx-auto mb-4 size-12 text-muted-foreground" />
-          <h3 className="mb-2 text-lg font-semibold">Nenhuma questão neste grupo</h3>
-          <p className="mb-4 text-sm text-muted-foreground">
-            Vá para a página de questões e adicione questões a este grupo
-          </p>
-          <Link href="/questoes">
+        <Empty>
+          <EmptyHeader>
+            <EmptyMedia variant="icon">
+              <FolderOpen className="size-6" />
+            </EmptyMedia>
+            <EmptyTitle>Nenhuma questão neste grupo</EmptyTitle>
+            <EmptyDescription>
+              Vá para a página de questões e adicione questões a este grupo
+            </EmptyDescription>
+          </EmptyHeader>
+          <Link href="/">
             <Button>Ir para Questões</Button>
           </Link>
-        </div>
+        </Empty>
       ) : (
         <div className="space-y-4">
           {questions.map((question) => (

@@ -1,0 +1,754 @@
+{
+  "exam": {
+    "id": "ENEM_2025_D1_AZUL",
+    "year": 2025,
+    "day": 1,
+    "color": "AZUL",
+    "area": "LINGUAGENS"
+  },
+  "questions": [
+    {
+      "id": "ENEM_2025_D1_LC_Q01_EN",
+      "number": 1,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q01",
+          "blocks": [
+            {
+              "id": "text_q01_1",
+              "type": "paragraph",
+              "content": "Glory Ames, from the White Earth reservation, is frustrated that despite the presence of several indigenous reservations near Moorhead, local Halloween stores still feature a western section with costumes such as \"pow wow princess\". Even worse, despite a long-running debate about racism and cultural appropriation, often prompted by backlash against celebrities and politicians for donning offensive costumes, people continue to wear such costumes. Last Halloween, Ames spotted a photo on Instagram of a girl dressed as a Native American with a bullet in her forehead. She immediately reported it to the social media platform and had it removed. \"They blatantly take certain aspects of our culture, race, religion, and use it for their advantage and ignore the people living it\", said Ames.",
+              "metadata": {
+                "source": "LIU, M. C. M. Disponível em: www.washingtonpost.com. Acesso em: 12 maio 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Ao abordar um aspecto da celebração do Halloween, esse texto tem por objetivo",
+      "alternatives": {
+        "A": "denunciar a violência contra crianças indígenas.",
+        "B": "descrever costumes tradicionais em celebrações indígenas.",
+        "C": "valorizar as vestimentas características dos povos originários.",
+        "D": "criticar a exploração indevida de elementos da identidade indígena.",
+        "E": "sugerir ações de combate ao preconceito contra os povos originários."
+      },
+      "correctAnswer": "D",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q02_EN",
+      "number": 2,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q02",
+          "blocks": [
+            {
+              "id": "text_q02_1",
+              "type": "paragraph",
+              "content": "My idea of philosophy is that if it is not relevant to human problems, if it does not tell us how we can go about eradicating some of the misery in this world, then it is not worth the name of philosophy. I think Socrates made a very profound statement when he asserted that philosophy is to teach us proper living. In this day and age \"proper living\" means liberation from the urgent problems of poverty, economic necessity and indoctrination, mental oppression.",
+              "metadata": {
+                "source": "DAVIS, A. Lectures on Liberation. Washington: Smithsonian Libraries, 1971 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse texto, ao discorrer sobre a relevância da filosofia, a escritora Angela Davis tem por objetivo",
+      "alternatives": {
+        "A": "criticá-la pela restrição temática.",
+        "B": "vinculá-la ao universo acadêmico.",
+        "C": "afastá-la da abordagem socrática.",
+        "D": "aproximá-la dos problemas sociais.",
+        "E": "responsabilizá-la pela pobreza humana."
+      },
+      "correctAnswer": "D",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q03_EN",
+      "number": 3,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q03",
+          "blocks": [
+            {
+              "id": "text_q03_1",
+              "type": "verse",
+              "content": "Remember the sky that you were born under,\nknow each of the star's stories.\nRemember the moon, know who she is.\nRemember the sun's birth at dawn. [...]\n\nRemember your birth, how your mother struggled\nto give you form and breath [...]\n\nRemember the earth whose skin you are:\nred earth, black earth, yellow earth, white earth\nbrown earth, we are earth.\nRemember the plants, trees, animal life who all have their\ntribes, their families, their histories, too [...]\n\nRemember you are all people and all people are you.\nRemember you are this universe and this universe is you.\nRemember all is in motion, is growing, is you.",
+              "metadata": {
+                "source": "HARJO, J. She Had Some Horses. Londres: W. Norton & Company, 1983 (fragmento)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse poema, de uma autora de ascendência indígena, o eu lírico ressalta a",
+      "alternatives": {
+        "A": "potência dos astros celestes.",
+        "B": "origem das plantas e dos animais.",
+        "C": "importância do apego à terra natal.",
+        "D": "relação entre seres humanos e natureza.",
+        "E": "conexão entre o tempo real e o tempo imaginário."
+      },
+      "correctAnswer": "D",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q04_EN",
+      "number": 4,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q04",
+          "blocks": [
+            {
+              "id": "text_q04_1",
+              "type": "paragraph",
+              "content": "It is true that all children are special, simply because they are children. But most adults are not special, and children end up as adults pretty quickly. Life then can be difficult and even disappointing. The shock of this may account for the emergence of the \"snowflake generation\" of university students, who are so delicate they can't handle controversial ideas being put forward in their lectures. The roots of this fragility run deep in modern culture. So, an approach of the world that states: \"Life is wonderful, you're special and, if you are a good boy/girl, life will be amazing forever\" is not a message designed to aid bouncing back from failure or confronting catastrophe. Resilience is not about feeding ego — telling your children how wonderful they are — but strengthening it.",
+              "metadata": {
+                "source": "LOTT, T. Disponível em: www.theguardian.com. Acesso em: 10 dez. 2017 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse texto, a expressão \"snowflake generation\" é usada para",
+      "alternatives": {
+        "A": "abordar obstáculos impostos a universitários.",
+        "B": "destacar mensagens de incentivo a estudantes.",
+        "C": "estimular ações proativas em situações de emergência.",
+        "D": "retratar relações conflituosas em ambiente universitário.",
+        "E": "apontar posturas de uma juventude avessa a contrariedades."
+      },
+      "correctAnswer": "E",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q05_EN",
+      "number": 5,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "img_q05",
+          "blocks": [
+            {
+              "id": "img_q05_1",
+              "type": "photo",
+              "url": "/images/enem2025/q05_coffee_cups.jpg",
+              "alt": "Três copos de café com frases escritas: 'WHAT IS SLEEP?', 'SLEPT 5-7 HOURS', 'SLEPT 8-10 HOURS'",
+              "caption": "Disponível em: https://pt.foursquare.com. Acesso em: 14 maio 2024."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse texto, a pergunta \"What is sleep?\", em uma das embalagens do produto, está relacionada ao(à)",
+      "alternatives": {
+        "A": "escassez de horas de sono.",
+        "B": "estímulo a um descanso de qualidade.",
+        "C": "gasto com bebidas que combatem a insônia.",
+        "D": "consumo de bebidas que causam dependência.",
+        "E": "necessidade de um produto que provoque o sono."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q06",
+      "number": 6,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q06_shared",
+          "blocks": [
+            {
+              "id": "text_q06_1",
+              "type": "paragraph",
+              "content": "Estranhei muito na primeira vez que escutei a expressão \"de próprio punho\". Foi numa situação em que me pediram que escrevesse à mão. Na verdade, o que importava era a autenticidade da minha caligrafia. Minha letra, hoje, tem uma espécie de alternância que me faz gostar bem mais dela do que gostava antes. Entre os 7 e os 17 anos, nas escolas e colégios, fui praticante de uma escrita à mão em letra de fôrma. Acho que só produzíamos em letra cursiva nas aulas de caligrafia. Quando fui fazer o vestibular, tive uma espécie de bloqueio. Nas redações, comecei a usar letra cursiva, embora estranha, porque pouco praticada. Desde os 7 anos, eu já estava bem familiarizada com a datilografia. Em casa, treino acelerado nas teclas da velha Remington do meu pai. Dos 17 aos 30 anos, alternei entre letra de fôrma, letra cursiva e datilografia. O computador apareceu aos 18 anos, com direito a curso de informática, digitação de muitas páginas numa máquina de escrever elétrica e depois num computador 286. Além disso, tive as primeiras experiências de escrever um livro no teclado. Aos 30 anos, houve a redescoberta do gosto por escrever à mão. Uma fisioterapeuta que estudava minha bursite do ombro esquerdo sugeriu que fizesse alongamentos, mas também que alternasse entre teclado e papel, em atividades que incluíam criação (e não apenas cópias). A caligrafia voltou à minha vida e aos meus cadernos. Descobri que gostava muito de escrever bilhetes e deixá-los para as pessoas em casa. Bilhetes de geladeira, bilhetes de cômodas, bilhetes na cama. Gosto até hoje. Uso papéis de recado autoadesivos e blocos. Escrevo à mão em letra de fôrma ou, às vezes, em letra cursiva. A escolha não obedece a regras. Lá em casa são todos alfabetizados nas duas letras. Também escrevo à mão em letra de fôrma parte dos meus originais e dos artigos que preparo. É um trabalho mais lento, meditado, diferente das palavras nervosas do teclado. Não que eu despreze estas. Escrevo há muitos anos num notebook. No escritório, costumo ser mais suave comigo mesma em relação a aspectos como extensão de parágrafos e páginas, mapeando meu dia de trabalho em blocos de papel. Gosto de escrever listas de tarefas, de lançar ideias. Em geral, faço isso com caneta hidrográfica ou roller ball. Canetas muito finas podem ser riscos vermelhos ou azuis que destaco. O problema está no fato de que, hoje, a seleção de canetas não é tão vasta como a que podia fazer anos atrás. Dos punhos ao pixel, há muita metamorfose nesta ciranda. No século XX, em escolas brasileiras de classe média, as tecnologias de escrita ainda em ebulição (com a passagem do regime da pena para o da caneta) foram questionadas até pelas práticas da datilografia, que ganhavam o mercado de trabalho. A máquina de escrever e o computador chegaram com força às casas e ao cotidiano de muita gente. Da escola à universidade, nas salas de aula, tem se mantido o lápis, mas também as múltiplas possibilidades de fazer circular a escrita. Hoje, no meu caso, o punho e o pixel se alternam e se completam de tal modo que fica difícil separar um do outro.",
+              "metadata": {
+                "source": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "No que diz respeito ao gênero bilhete, a autora dessa crônica",
+      "alternatives": {
+        "A": "ressalta a formalidade na comunicação com as pessoas de sua convivência.",
+        "B": "critica a ansiedade causada pela velocidade da comunicação.",
+        "C": "expressa a obrigatoriedade de concisão nas anotações.",
+        "D": "questiona a prática da escrita de próprio punho.",
+        "E": "apresenta a diversidade de usos no cotidiano."
+      },
+      "correctAnswer": "E",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q07",
+      "number": 7,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q07_shared",
+          "blocks": [
+            {
+              "id": "text_q07_1",
+              "type": "paragraph",
+              "content": "Estranhei muito na primeira vez que escutei a expressão \"de próprio punho\". Foi numa situação em que me pediram que escrevesse à mão. Na verdade, o que importava era a autenticidade da minha caligrafia. Minha letra, hoje, tem uma espécie de alternância que me faz gostar bem mais dela do que gostava antes. Entre os 7 e os 17 anos, nas escolas e colégios, fui praticante de uma escrita à mão em letra de fôrma. Acho que só produzíamos em letra cursiva nas aulas de caligrafia. Quando fui fazer o vestibular, tive uma espécie de bloqueio. Nas redações, comecei a usar letra cursiva, embora estranha, porque pouco praticada. Desde os 7 anos, eu já estava bem familiarizada com a datilografia. Em casa, treino acelerado nas teclas da velha Remington do meu pai. Dos 17 aos 30 anos, alternei entre letra de fôrma, letra cursiva e datilografia. O computador apareceu aos 18 anos, com direito a curso de informática, digitação de muitas páginas numa máquina de escrever elétrica e depois num computador 286. Além disso, tive as primeiras experiências de escrever um livro no teclado. Aos 30 anos, houve a redescoberta do gosto por escrever à mão. Uma fisioterapeuta que estudava minha bursite do ombro esquerdo sugeriu que fizesse alongamentos, mas também que alternasse entre teclado e papel, em atividades que incluíam criação (e não apenas cópias). A caligrafia voltou à minha vida e aos meus cadernos. Descobri que gostava muito de escrever bilhetes e deixá-los para as pessoas em casa. Bilhetes de geladeira, bilhetes de cômodas, bilhetes na cama. Gosto até hoje. Uso papéis de recado autoadesivos e blocos. Escrevo à mão em letra de fôrma ou, às vezes, em letra cursiva. A escolha não obedece a regras. Lá em casa são todos alfabetizados nas duas letras. Também escrevo à mão em letra de fôrma parte dos meus originais e dos artigos que preparo. É um trabalho mais lento, meditado, diferente das palavras nervosas do teclado. Não que eu despreze estas. Escrevo há muitos anos num notebook. No escritório, costumo ser mais suave comigo mesma em relação a aspectos como extensão de parágrafos e páginas, mapeando meu dia de trabalho em blocos de papel. Gosto de escrever listas de tarefas, de lançar ideias. Em geral, faço isso com caneta hidrográfica ou roller ball. Canetas muito finas podem ser riscos vermelhos ou azuis que destaco. O problema está no fato de que, hoje, a seleção de canetas não é tão vasta como a que podia fazer anos atrás. Dos punhos ao pixel, há muita metamorfose nesta ciranda. No século XX, em escolas brasileiras de classe média, as tecnologias de escrita ainda em ebulição (com a passagem do regime da pena para o da caneta) foram questionadas até pelas práticas da datilografia, que ganhavam o mercado de trabalho. A máquina de escrever e o computador chegaram com força às casas e ao cotidiano de muita gente. Da escola à universidade, nas salas de aula, tem se mantido o lápis, mas também as múltiplas possibilidades de fazer circular a escrita. Hoje, no meu caso, o punho e o pixel se alternam e se completam de tal modo que fica difícil separar um do outro.",
+              "metadata": {
+                "source": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O elemento que caracteriza esse texto como uma crônica é a",
+      "alternatives": {
+        "A": "defesa das opiniões da autora sobre um tema de interesse coletivo.",
+        "B": "exposição sobre o uso de tecnologias nas práticas de escrita atuais.",
+        "C": "abordagem de fatos do contexto pessoal em uma perspectiva reflexiva.",
+        "D": "utilização de recursos linguísticos para a interlocução direta com o leitor.",
+        "E": "apresentação de acontecimentos segundo a ordem de sucessão no tempo."
+      },
+      "correctAnswer": "C",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q08",
+      "number": 8,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q08_shared",
+          "blocks": [
+            {
+              "id": "text_q08_1",
+              "type": "paragraph",
+              "content": "Estranhei muito na primeira vez que escutei a expressão \"de próprio punho\". Foi numa situação em que me pediram que escrevesse à mão. Na verdade, o que importava era a autenticidade da minha caligrafia. Minha letra, hoje, tem uma espécie de alternância que me faz gostar bem mais dela do que gostava antes. Entre os 7 e os 17 anos, nas escolas e colégios, fui praticante de uma escrita à mão em letra de fôrma. Acho que só produzíamos em letra cursiva nas aulas de caligrafia. Quando fui fazer o vestibular, tive uma espécie de bloqueio. Nas redações, comecei a usar letra cursiva, embora estranha, porque pouco praticada. Desde os 7 anos, eu já estava bem familiarizada com a datilografia. Em casa, treino acelerado nas teclas da velha Remington do meu pai. Dos 17 aos 30 anos, alternei entre letra de fôrma, letra cursiva e datilografia. O computador apareceu aos 18 anos, com direito a curso de informática, digitação de muitas páginas numa máquina de escrever elétrica e depois num computador 286. Além disso, tive as primeiras experiências de escrever um livro no teclado. Aos 30 anos, houve a redescoberta do gosto por escrever à mão. Uma fisioterapeuta que estudava minha bursite do ombro esquerdo sugeriu que fizesse alongamentos, mas também que alternasse entre teclado e papel, em atividades que incluíam criação (e não apenas cópias). A caligrafia voltou à minha vida e aos meus cadernos. Descobri que gostava muito de escrever bilhetes e deixá-los para as pessoas em casa. Bilhetes de geladeira, bilhetes de cômodas, bilhetes na cama. Gosto até hoje. Uso papéis de recado autoadesivos e blocos. Escrevo à mão em letra de fôrma ou, às vezes, em letra cursiva. A escolha não obedece a regras. Lá em casa são todos alfabetizados nas duas letras. Também escrevo à mão em letra de fôrma parte dos meus originais e dos artigos que preparo. É um trabalho mais lento, meditado, diferente das palavras nervosas do teclado. Não que eu despreze estas. Escrevo há muitos anos num notebook. No escritório, costumo ser mais suave comigo mesma em relação a aspectos como extensão de parágrafos e páginas, mapeando meu dia de trabalho em blocos de papel. Gosto de escrever listas de tarefas, de lançar ideias. Em geral, faço isso com caneta hidrográfica ou roller ball. Canetas muito finas podem ser riscos vermelhos ou azuis que destaco. O problema está no fato de que, hoje, a seleção de canetas não é tão vasta como a que podia fazer anos atrás. Dos punhos ao pixel, há muita metamorfose nesta ciranda. No século XX, em escolas brasileiras de classe média, as tecnologias de escrita ainda em ebulição (com a passagem do regime da pena para o da caneta) foram questionadas até pelas práticas da datilografia, que ganhavam o mercado de trabalho. A máquina de escrever e o computador chegaram com força às casas e ao cotidiano de muita gente. Da escola à universidade, nas salas de aula, tem se mantido o lápis, mas também as múltiplas possibilidades de fazer circular a escrita. Hoje, no meu caso, o punho e o pixel se alternam e se completam de tal modo que fica difícil separar um do outro.",
+              "metadata": {
+                "source": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse texto, o que caracteriza a escrita \"de próprio punho\" é a letra manuscrita, enquanto a escrita digital é ilustrada pelo(a)",
+      "alternatives": {
+        "A": "utilização de tecnologias diversificadas.",
+        "B": "desenvolvimento de novos recursos de escrita.",
+        "C": "possibilidade de interações mediadas por telas.",
+        "D": "diversidade de fontes tipográficas que estão disponíveis.",
+        "E": "delimitação dos espaços onde a produção textual ocorre."
+      },
+      "correctAnswer": "D",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q09",
+      "number": 9,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q09_shared",
+          "blocks": [
+            {
+              "id": "text_q09_1",
+              "type": "paragraph",
+              "content": "Estranhei muito na primeira vez que escutei a expressão \"de próprio punho\". Foi numa situação em que me pediram que escrevesse à mão. Na verdade, o que importava era a autenticidade da minha caligrafia. Minha letra, hoje, tem uma espécie de alternância que me faz gostar bem mais dela do que gostava antes. Entre os 7 e os 17 anos, nas escolas e colégios, fui praticante de uma escrita à mão em letra de fôrma. Acho que só produzíamos em letra cursiva nas aulas de caligrafia. Quando fui fazer o vestibular, tive uma espécie de bloqueio. Nas redações, comecei a usar letra cursiva, embora estranha, porque pouco praticada. Desde os 7 anos, eu já estava bem familiarizada com a datilografia. Em casa, treino acelerado nas teclas da velha Remington do meu pai. Dos 17 aos 30 anos, alternei entre letra de fôrma, letra cursiva e datilografia. O computador apareceu aos 18 anos, com direito a curso de informática, digitação de muitas páginas numa máquina de escrever elétrica e depois num computador 286. Além disso, tive as primeiras experiências de escrever um livro no teclado. Aos 30 anos, houve a redescoberta do gosto por escrever à mão. Uma fisioterapeuta que estudava minha bursite do ombro esquerdo sugeriu que fizesse alongamentos, mas também que alternasse entre teclado e papel, em atividades que incluíam criação (e não apenas cópias). A caligrafia voltou à minha vida e aos meus cadernos. Descobri que gostava muito de escrever bilhetes e deixá-los para as pessoas em casa. Bilhetes de geladeira, bilhetes de cômodas, bilhetes na cama. Gosto até hoje. Uso papéis de recado autoadesivos e blocos. Escrevo à mão em letra de fôrma ou, às vezes, em letra cursiva. A escolha não obedece a regras. Lá em casa são todos alfabetizados nas duas letras. Também escrevo à mão em letra de fôrma parte dos meus originais e dos artigos que preparo. É um trabalho mais lento, meditado, diferente das palavras nervosas do teclado. Não que eu despreze estas. Escrevo há muitos anos num notebook. No escritório, costumo ser mais suave comigo mesma em relação a aspectos como extensão de parágrafos e páginas, mapeando meu dia de trabalho em blocos de papel. Gosto de escrever listas de tarefas, de lançar ideias. Em geral, faço isso com caneta hidrográfica ou roller ball. Canetas muito finas podem ser riscos vermelhos ou azuis que destaco. O problema está no fato de que, hoje, a seleção de canetas não é tão vasta como a que podia fazer anos atrás. Dos punhos ao pixel, há muita metamorfose nesta ciranda. No século XX, em escolas brasileiras de classe média, as tecnologias de escrita ainda em ebulição (com a passagem do regime da pena para o da caneta) foram questionadas até pelas práticas da datilografia, que ganhavam o mercado de trabalho. A máquina de escrever e o computador chegaram com força às casas e ao cotidiano de muita gente. Da escola à universidade, nas salas de aula, tem se mantido o lápis, mas também as múltiplas possibilidades de fazer circular a escrita. Hoje, no meu caso, o punho e o pixel se alternam e se completam de tal modo que fica difícil separar um do outro.",
+              "metadata": {
+                "source": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "A autora conclui que as novas tecnologias de escrita",
+      "alternatives": {
+        "A": "evoluem para facilitar a vida cotidiana.",
+        "B": "alcançam diferentes realidades sociais.",
+        "C": "coexistem com outras já estabelecidas.",
+        "D": "promovem maior agilidade na comunicação.",
+        "E": "surgem nos contextos em que são necessárias."
+      },
+      "correctAnswer": "C",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q10",
+      "number": 10,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q10_shared",
+          "blocks": [
+            {
+              "id": "text_q10_1",
+              "type": "paragraph",
+              "content": "Estranhei muito na primeira vez que escutei a expressão \"de próprio punho\". Foi numa situação em que me pediram que escrevesse à mão. Na verdade, o que importava era a autenticidade da minha caligrafia. Minha letra, hoje, tem uma espécie de alternância que me faz gostar bem mais dela do que gostava antes. Entre os 7 e os 17 anos, nas escolas e colégios, fui praticante de uma escrita à mão em letra de fôrma. Acho que só produzíamos em letra cursiva nas aulas de caligrafia. Quando fui fazer o vestibular, tive uma espécie de bloqueio. Nas redações, comecei a usar letra cursiva, embora estranha, porque pouco praticada. Desde os 7 anos, eu já estava bem familiarizada com a datilografia. Em casa, treino acelerado nas teclas da velha Remington do meu pai. Dos 17 aos 30 anos, alternei entre letra de fôrma, letra cursiva e datilografia. O computador apareceu aos 18 anos, com direito a curso de informática, digitação de muitas páginas numa máquina de escrever elétrica e depois num computador 286. Além disso, tive as primeiras experiências de escrever um livro no teclado. Aos 30 anos, houve a redescoberta do gosto por escrever à mão. Uma fisioterapeuta que estudava minha bursite do ombro esquerdo sugeriu que fizesse alongamentos, mas também que alternasse entre teclado e papel, em atividades que incluíam criação (e não apenas cópias). A caligrafia voltou à minha vida e aos meus cadernos. Descobri que gostava muito de escrever bilhetes e deixá-los para as pessoas em casa. Bilhetes de geladeira, bilhetes de cômodas, bilhetes na cama. Gosto até hoje. Uso papéis de recado autoadesivos e blocos. Escrevo à mão em letra de fôrma ou, às vezes, em letra cursiva. A escolha não obedece a regras. Lá em casa são todos alfabetizados nas duas letras. Também escrevo à mão em letra de fôrma parte dos meus originais e dos artigos que preparo. É um trabalho mais lento, meditado, diferente das palavras nervosas do teclado. Não que eu despreze estas. Escrevo há muitos anos num notebook. No escritório, costumo ser mais suave comigo mesma em relação a aspectos como extensão de parágrafos e páginas, mapeando meu dia de trabalho em blocos de papel. Gosto de escrever listas de tarefas, de lançar ideias. Em geral, faço isso com caneta hidrográfica ou roller ball. Canetas muito finas podem ser riscos vermelhos ou azuis que destaco. O problema está no fato de que, hoje, a seleção de canetas não é tão vasta como a que podia fazer anos atrás. Dos punhos ao pixel, há muita metamorfose nesta ciranda. No século XX, em escolas brasileiras de classe média, as tecnologias de escrita ainda em ebulição (com a passagem do regime da pena para o da caneta) foram questionadas até pelas práticas da datilografia, que ganhavam o mercado de trabalho. A máquina de escrever e o computador chegaram com força às casas e ao cotidiano de muita gente. Da escola à universidade, nas salas de aula, tem se mantido o lápis, mas também as múltiplas possibilidades de fazer circular a escrita. Hoje, no meu caso, o punho e o pixel se alternam e se completam de tal modo que fica difícil separar um do outro.",
+              "metadata": {
+                "source": "RIBEIRO, A. E. Disponível em: https://rascunho.com.br. Acesso em: 16 jan. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O recurso linguístico usado para marcar a síntese da opinião da autora sobre a temática desenvolvida foi o(a)",
+      "alternatives": {
+        "A": "emprego da primeira pessoa em \"Estranhei muito na primeira vez que escutei a expressão 'de próprio punho'\". (l. 1)",
+        "B": "utilização de locução adverbial em \"Na verdade, o que importava era a autenticidade da minha caligrafia\". (l. 3-4)",
+        "C": "uso de pronome possessivo em \"Minha letra, hoje, tem uma espécie de alternância\". (l. 5-6)",
+        "D": "adoção de termo autorreflexivo em \"No escritório, costumo ser mais suave comigo mesma\". (l. 30)",
+        "E": "substituição da expressão \"Do punho ao pixel\" (l. 44) pela expressão \"o punho e o pixel\". (l. 45)"
+      },
+      "correctAnswer": "E",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q11",
+      "number": 11,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LITERATURA",
+      "supportingMaterials": [
+        {
+          "id": "text_q11",
+          "blocks": [
+            {
+              "id": "text_q11_1",
+              "type": "paragraph",
+              "content": "— Vejo, disse ele com algum acanhamento, que o doutor não é nenhum pé-rapado, mas nunca é bom facilitar... Minha filha Nocência fez 18 anos pelo Natal, e é rapariga que pela feição parece moça de cidade, muito ariscazinha de modos, mas bonita e boa deveras... Coitada, foi criada sem mãe, e aqui nestes fundões. [...]\n— Ora muito que bem, continuou Pereira caindo aos poucos na habitual garrulice, quando vi a menina tomar corpo, tratei logo de casá-la.\n— Ah! é casada? perguntou Cirino.\n— Isto é, é e não é. A coisa está apalavrada. Por aqui costuma labutar no costeio do gado para São Paulo um homem de mão-cheia, que talvez o sr. conheça... o Manecão Doca...\n— Não, respondeu Cirino abanando a cabeça.\n— Pois isso é um homem às direitas, desempenado e trabucador como ele só... fura estes sertões todos e vem tangendo pontes de gado que metem pasmo. Também dizem que tem bichado muito e ajuntado cobre grosso, o que é possível, porque não é gastador nem dado a mulheres. Uma feita que estava aqui de pousada... olhe, mesmo neste lugar onde estava mecê inda agorinha, falei-lhe em casamento... isto é, dei-lhe uns toques... porque os pais devem tomar isso a si para bem de suas famílias; não acha?\n— Boa dúvida, aprovou Cirino, dou-lhe toda a razão; era do seu dever.",
+              "metadata": {
+                "source": "TAUNAY, A. d'E. Inocência. Disponível em: www.dominiopublico.gov.br. Acesso em: 29 fev. 2024."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse trecho, ao se referir à sua filha, o pai de Inocência reproduz os ideais românticos, presentes na",
+      "alternatives": {
+        "A": "valorização do ambiente rural na formação moral da mulher.",
+        "B": "figura decorativa da mulher ante o protagonismo masculino.",
+        "C": "equivalência de origem social para a harmonia do casal.",
+        "D": "importância do dote como condição para o casamento.",
+        "E": "aura de mistério sobre a identidade da jovem."
+      },
+      "correctAnswer": "B",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q12",
+      "number": 12,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "EDUCACAO_FISICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q12",
+          "blocks": [
+            {
+              "id": "text_q12_1",
+              "type": "paragraph",
+              "content": "O Ministério do Esporte no Brasil lançou o programa Maré Inclusiva, em 2024, ano dos Jogos Paralímpicos de Paris. Esse programa visa ampliar as oportunidades para pessoas com deficiência que desejam praticar o surf. O parasurf é a prática do surf adaptada para permitir que pessoas com deficiência pratiquem o esporte em todas as suas categorias, modalidades e manifestações. Para a Secretaria Nacional do Paradesporto, a iniciativa é mais do que um programa de esporte, é uma iniciativa que busca transformar vidas e promover a inclusão por meio do parasurf, criando um legado de igualdade e respeito.",
+              "metadata": {
+                "source": "Disponível em: www.gov.br/esporte. Acesso em: 6 set. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "De acordo com esse texto, o programa voltado ao estímulo da prática do parasurf evidencia a",
+      "alternatives": {
+        "A": "adesão de diferentes países a programas inclusivos.",
+        "B": "preocupação política em atender a demandas paralímpicas.",
+        "C": "importância de uma política pública esportiva para a inclusão.",
+        "D": "eficiência das iniciativas de inclusão em megaeventos esportivos.",
+        "E": "escassez de investimento em práticas corporais de aventura na natureza."
+      },
+      "correctAnswer": "C",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q13",
+      "number": 13,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q13",
+          "blocks": [
+            {
+              "id": "text_q13_1",
+              "type": "paragraph",
+              "content": "Art. 26-A. Nos estabelecimentos de ensino fundamental e médio, oficiais e particulares, torna-se obrigatório o ensino sobre História e Cultura Afro-Brasileira.\n§ 1º O conteúdo programático a que se refere o caput deste artigo incluirá o estudo da História da África e dos Africanos, a luta dos negros no Brasil, a cultura negra brasileira e o negro na formação da sociedade nacional, resgatando a contribuição do povo negro nas áreas social, econômica e política pertinentes à História do Brasil.\n§ 2º Os conteúdos referentes à História e Cultura Afro-Brasileira serão ministrados no âmbito de todo o currículo escolar, em especial nas áreas de Educação Artística e de Literatura e História Brasileiras.",
+              "metadata": {
+                "source": "BRASIL. Lei n. 10 639/2003. Disponível em: www.gov.br/planalto. Acesso em: 5 maio 2024."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O emprego da norma-padrão é justificado nesse texto",
+      "alternatives": {
+        "A": "pela especialização de seu público-alvo.",
+        "B": "pela relevância cultural de seu conteúdo.",
+        "C": "pelos contextos pedagógicos em que circula.",
+        "D": "pela importância para os grupos étnico-raciais.",
+        "E": "pelas características do gênero a que pertence."
+      },
+      "correctAnswer": "E",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q14",
+      "number": 14,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "img_q14",
+          "blocks": [
+            {
+              "id": "img_q14_1",
+              "type": "photo",
+              "url": "/images/enem2025/q14_poster.jpg",
+              "alt": "Cartaz publicitário com imagem de Fernando Pessoa com óculos e elementos gráficos, texto 'Você entra Fernando. E sai Pessoa.' e informações sobre a Bienal do Livro de São Paulo",
+              "caption": "Disponível em: www.publishnews.com.br. Acesso em: 19 set. 2024."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse cartaz publicitário, os recursos verbais e não verbais constroem um argumento que objetiva",
+      "alternatives": {
+        "A": "divulgar a obra de Fernando Pessoa no Brasil.",
+        "B": "valorizar a realização de eventos literários no país.",
+        "C": "ressaltar o impacto da leitura na vida das pessoas.",
+        "D": "fomentar o turismo cultural na cidade de São Paulo.",
+        "E": "evidenciar a influência de Pessoa na literatura brasileira."
+      },
+      "correctAnswer": "C",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q15",
+      "number": 15,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "ARTES",
+      "supportingMaterials": [
+        {
+          "id": "text_q15",
+          "blocks": [
+            {
+              "id": "text_q15_1",
+              "type": "paragraph",
+              "content": "O retrato como gênero da pintura ocidental ficou vinculado às elites, tornando invisíveis as populações que não faziam parte do círculo dominante. Num país de tradição escravocrata e colonizado por europeus como o Brasil, pouquíssimas pessoas negras e indígenas foram retratadas em pintura, e menos ainda identificadas com seus nomes nos retratos. Daí a importância, para a história da arte e para a história brasileira, dos retratos de Dalton Paula.",
+              "metadata": {
+                "source": "Disponível em: www.masp.org.br. Acesso em: 5 maio 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q15",
+          "blocks": [
+            {
+              "id": "img_q15_1",
+              "type": "artwork",
+              "url": "/images/enem2025/q15_zeferina.jpg",
+              "alt": "Figura 1 - PAULA, D. Zeferina. Óleo sobre tela, 59 × 44 cm. Masp, São Paulo, 2018.",
+              "caption": "Disponível em: www.masp.org.br. Acesso em: 5 maio 2024 (adaptado)."
+            },
+            {
+              "id": "img_q15_2",
+              "type": "artwork",
+              "url": "/images/enem2025/q15_joao.jpg",
+              "alt": "Figura 2 - PAULA, D. João de Deus Nascimento. Óleo sobre tela, 59,5 × 44 cm. Masp, São Paulo, 2018.",
+              "caption": "Disponível em: www.masp.org.br. Acesso em: 5 maio 2024 (adaptado)."
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "Ao dar protagonismo a Zeferina e a João de Deus Nascimento, o artista Dalton Paula evidencia que a(s)",
+      "alternatives": {
+        "A": "arte pode promover formas de afirmação de identidade social.",
+        "B": "comunidades periféricas passam a adquirir o gênero retrato.",
+        "C": "personagens retratadas simbolizam a sociedade brasileira.",
+        "D": "pintura funciona como instrumento de ascensão social.",
+        "E": "imagens tradicionais preservam memórias afetivas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q16",
+      "number": 16,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LITERATURA",
+      "supportingMaterials": [
+        {
+          "id": "text_q16",
+          "blocks": [
+            {
+              "id": "text_q16_1",
+              "type": "verse",
+              "content": "Símbolos\n\nEu e tu, ante a noite e o amplo desdobramento\ndo mar, fero, a estourar de encontro à rocha nua...\nUm símbolo descubro aqui, neste momento\nesta rocha, este mar... a minha vida e a tua.\n\nO mar vem, o mar vai, nele há o gesto violento\nde quem maltrata e, após, se arrepende e recua.\nComo compreendo bem da rocha o sentimento!\nSão muito iguais, por certo, a minha mágoa e a sua.\n\nContemplo neste quadro a nossa triste vida;\ntu és dúbio mar que, na sua inconsciência,\ntem carinhos de amor e fúrias de demência!\n\nEu sou a dor estanque, a dor empedernida,\nsou rocha a emergir de um côncavo de areia,\nimóvel, muda, isenta e alheia ao mar, alheia.",
+              "metadata": {
+                "source": "MACHADO, G. Poesia completa. Rio de Janeiro: Cátedra/MEC, 1978."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse soneto, os traços da estética simbolista são resgatados pelo eu lírico ao",
+      "alternatives": {
+        "A": "rejeitar as emoções de \"amor\" e \"mágoa\".",
+        "B": "expressar a dubiedade do olhar sobre o outro.",
+        "C": "representar o \"eu\" e o \"tu\" como sujeitos volúveis.",
+        "D": "associar a sua inconsciência a elementos da natureza.",
+        "E": "metaforizar o conflito amoroso nas imagens de \"mar\" e \"rocha\"."
+      },
+      "correctAnswer": "E",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q17",
+      "number": 17,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LITERATURA",
+      "supportingMaterials": [
+        {
+          "id": "text_q17",
+          "blocks": [
+            {
+              "id": "text_q17_1",
+              "type": "paragraph",
+              "content": "Antes do inverno chegar.\nEla tinha olhinhos brilhantes. Os mesmos de antes. Antes da fome. Antes das 17 mudanças de cidade. Dos sete filhos e dos muitos anos de trabalho dentro e fora de casa.\nEla fazia ambrosia, bolo de fubá e pedacinhos de queijo. Antes do inverno, ela plantava flores novas e diferentes para nos esperar nas próximas férias de verão.\nEla tinha o jeito de menina. Menina sapeca, correndo na grama seca do cerrado. O mesmo jeito de antes. Antes do marido (e mesmo com o marido). Antes do cansaço dos anos. Antes da dureza do trato com a terra.\nEla tinha histórias. Compridas, curtas, divertidas e verdadeiras. Mas isso foi antes. Antes das lembranças se bagunçarem feito bolas coloridas de Natal esperando para serem montadas na árvore.\nEu era sua neta. Antes do Alzheimer chegar, eu era sua neta. Mas ela é e sempre será minha avó.",
+              "metadata": {
+                "source": "PERSON, C. R. Borboletas no estômago: porque às vezes o título precisa ser adolescente e clichê, já que a vida exige sermos tão adultos. São Paulo: Ed. das Autoras, 2021."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "A narradora, ao resgatar memórias da história de vida da avó, faz uso recorrente da locução \"antes de\". Esse termo colabora para a progressão temática na medida em que",
+      "alternatives": {
+        "A": "relaciona eventos ocorridos simultaneamente.",
+        "B": "estabelece uma comparação entre as lembranças.",
+        "C": "ressalta fatos que ressignificam o momento presente.",
+        "D": "sinaliza uma sequência que denota ações consecutivas.",
+        "E": "apresenta uma explicação para as memórias resgatadas."
+      },
+      "correctAnswer": "C",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q18",
+      "number": 18,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "EDUCACAO_FISICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q18",
+          "blocks": [
+            {
+              "id": "text_q18_1",
+              "type": "paragraph",
+              "content": "Com 20 anos de experiência no futebol de alto rendimento, Marina, ex-jogadora da seleção brasileira de futebol, salienta que, por trás do espetáculo apresentado nas mídias, com mensagens de motivação e superação, o esporte não é tão inclusivo assim. \"É esta análise que devemos fazer: aqueles atletas que estão ali estão trazendo uma alta performance a partir dos seus limites\", explica. Para a profissional, é preciso analisar com cautela \"a ideia romântica que a mídia passa para os telespectadores\". A realidade é muito mais dura do que as imagens espetaculosas que principalmente a televisão busca transmitir para a audiência. \"Por trás existe um ser humano, a gente não pode nunca esquecer isso. Aquela pessoa treinou insistentemente para estar ali, durante meses, semanas e temporadas. Duas vezes ao dia, de duas a quatro horas\", pondera Marina. Atualmente, as crianças e os jovens vislumbram o sucesso profissional e a boa-vida financeira de poucos atletas que se destacam e estampam os meios de comunicação. Tudo parece ser muito mais fácil do que realmente é quando apenas as conquistas são mostradas.",
+              "metadata": {
+                "source": "ROSOLEN, N. Disponível em: www.uninter.com. Acesso em: 10 maio 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse texto, a visão crítica de uma ex-atleta de futebol revela que",
+      "alternatives": {
+        "A": "os meios de comunicação invisibilizam as dificuldades presentes no esporte.",
+        "B": "o treinamento atlético de alto nível é desestimulante para os indivíduos.",
+        "C": "o trabalho contínuo é desvalorizado no contexto esportivo profissional.",
+        "D": "as ações de incentivo financeiro a jovens atletas são precárias.",
+        "E": "as publicações da mídia esportiva rotulam atletas iniciantes."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q19",
+      "number": 19,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "EDUCACAO_FISICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q19",
+          "blocks": [
+            {
+              "id": "text_q19_1",
+              "type": "paragraph",
+              "content": "No predomínio das mulheres pretas brasileiras nos Jogos Olímpicos de 2024, uma coisa chamou a atenção no pódio: elas valorizam a parte psicológica. As duas medalhistas de ouro, a judoca Beatriz Souza e a ginasta Rebeca Andrade, ressaltam, em várias entrevistas, a importância da saúde mental. Em uma dessas entrevistas, Rebeca sinaliza: \"Acho que não é só sobre vencer a Simone, é sobre vencer a mim mesma. A minha briga está na minha cabeça, não está com outras pessoas. Para conseguir fazer as minhas apresentações, preciso controlar a minha cabeça, o meu corpo, e essa é a briga\". Na mesma linha, a skatista Rayssa Leal exalta a necessidade da terapia, e a Seleção Brasileira de Futebol de Mulheres tem o suporte psicológico como reforço no treinamento.",
+              "metadata": {
+                "source": "Disponível em: https://iclnoticias.com.br. Acesso em: 18 set. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nesse texto, as atletas brasileiras defendem o(a)",
+      "alternatives": {
+        "A": "investimento na modernização de equipamentos.",
+        "B": "subordinação do treinamento físico ao mental.",
+        "C": "estímulo à competição entre adversárias.",
+        "D": "aprimoramento da expressão corporal.",
+        "E": "importância da saúde emocional."
+      },
+      "correctAnswer": "E",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D1_LC_Q20",
+      "number": 20,
+      "examYear": 2025,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q20",
+          "blocks": [
+            {
+              "id": "text_q20_1",
+              "type": "paragraph",
+              "content": "A característica fundamental no aprendizado das práticas rituais nos candomblés é o processo iniciático e participante. Durante o período de reclusão em terreiros ou rocas, o iniciado passa por uma série de ritos esotéricos (banhos rituais, raspagem da cabeça etc.), ao mesmo tempo em que começa a adquirir um complexo código de símbolos materiais (substâncias, folhas, frutos, raízes etc.) e de gestos associados a um repertório linguístico específico das cerimônias que se desenrolam nos contextos sagrados em geral e em cada terreiro em particular. Esse repertório linguístico, genericamente chamado de \"língua de santo\" na Bahia, compreende uma terminologia religiosa operacional, de caráter mágico-semântico e de aparente forma portuguesa, mas que repousa sobre sistemas lexicais de diferentes línguas africanas que provavelmente foram faladas no Brasil escravocrata, vindo a constituir uma língua ritual, que se acredita pertencer à nação do vodum, do orixá ou do inquice, e não a determinada nação africana política atual.",
+              "metadata": {
+                "source": "Disponível em: https://periodicos.ufba.br. Acesso em: 21 jan. 2024 (adaptado)."
+              }
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "A \"língua de santo\" tem sua importância para o patrimônio linguístico brasileiro por",
+      "alternatives": {
+        "A": "apresentar uma carga semântica mítica.",
+        "B": "conservar elementos dos falares dos escravizados.",
+        "C": "resgatar expressões portuguesas do período colonial.",
+        "D": "decodificar o ritual religioso dos nossos antepassados.",
+        "E": "favorecer a compreensão do léxico africano contemporâneo."
+      },
+      "correctAnswer": "B",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    }
+  ]
+}

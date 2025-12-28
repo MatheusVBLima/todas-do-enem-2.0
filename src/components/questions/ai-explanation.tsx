@@ -16,6 +16,7 @@ import {
   ReasoningContent,
   ReasoningTrigger,
 } from "@/components/ai-elements/reasoning"
+import { UpgradeDialog } from "@/components/upgrade-dialog"
 
 type AIExplanationProps = {
   question: QuestionWithExam
@@ -24,6 +25,7 @@ type AIExplanationProps = {
 export function AIExplanation({ question }: AIExplanationProps) {
   const isPro = DEV_USER.plan === "RUMO_A_APROVACAO"
   const [isGenerating, setIsGenerating] = useState(false)
+  const [showUpgradeDialog, setShowUpgradeDialog] = useState(false)
 
   const { messages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
@@ -42,7 +44,7 @@ export function AIExplanation({ question }: AIExplanationProps) {
 
   const handleGenerate = async () => {
     if (!isPro) {
-      toast.error("Recurso disponível apenas no plano PRO")
+      setShowUpgradeDialog(true)
       return
     }
 
@@ -81,6 +83,12 @@ Explique esta questão do ENEM de forma didática.`
 
   return (
     <div className="space-y-4">
+      <UpgradeDialog
+        open={showUpgradeDialog}
+        onOpenChange={setShowUpgradeDialog}
+        feature="ai-explanation"
+      />
+
       {!showExplanation ? (
         <Button
           onClick={handleGenerate}
@@ -94,7 +102,7 @@ Explique esta questão do ENEM de forma didática.`
             <Brain className="mr-2 size-4" />
           )}
           {isLoading ? "Gerando explicação..." : "Gerar Explicação com IA"}
-          {isPro && <Badge variant="outline" className="ml-2">PRO</Badge>}
+          {!isPro && <Badge variant="outline" className="ml-2">PRO</Badge>}
         </Button>
       ) : (
         <>

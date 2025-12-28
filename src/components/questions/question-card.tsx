@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Eye, EyeOff, FolderPlus, Brain, ChevronDown, ChevronUp, Trash2 } from "lucide-react"
+import Image from "next/image"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -12,6 +13,18 @@ import { KNOWLEDGE_AREAS, SUBJECTS, ANSWER_OPTIONS, type KnowledgeAreaKey, type 
 import type { QuestionWithExam } from "@/types"
 import { AddToGroupButton } from "@/components/groups/add-to-group-button"
 import { AIExplanation } from "./ai-explanation"
+
+interface SupportingMaterial {
+  type: 'text' | 'image'
+  content?: string
+  url?: string
+  alt?: string
+  caption?: string
+  imageType?: string
+  metadata?: {
+    source?: string
+  }
+}
 
 interface QuestionCardProps {
   question: QuestionWithExam
@@ -26,6 +39,11 @@ export function QuestionCard({ question, showAnswer = false, onRemove }: Questio
 
   const area = KNOWLEDGE_AREAS[question.knowledgeArea as KnowledgeAreaKey]
   const subject = SUBJECTS[question.subject as SubjectKey]
+
+  // Parse supporting materials if available
+  const supportingMaterials: SupportingMaterial[] = question.supportingMaterials
+    ? JSON.parse(question.supportingMaterials)
+    : []
 
   const options = [
     { letter: "A", text: capitalizeSentences(question.optionA) },
@@ -93,8 +111,69 @@ export function QuestionCard({ question, showAnswer = false, onRemove }: Questio
       </CardHeader>
 
       <CardContent className="space-y-4">
-        {/* Context */}
-        {question.context && (
+        {/* Supporting Materials */}
+        {supportingMaterials.length > 0 && (
+          <div className="space-y-3">
+            {supportingMaterials.map((material, index) => (
+              <div key={index}>
+                {material.type === 'text' && material.content && (
+                  <div className="rounded-lg bg-muted/50 p-4 text-sm space-y-2">
+                    <p className={cn(!isExpanded && "line-clamp-6", "whitespace-pre-line")}>
+                      {capitalizeSentences(material.content)}
+                    </p>
+                    {material.metadata?.source && (
+                      <p className="text-xs text-muted-foreground italic">
+                        {material.metadata.source}
+                      </p>
+                    )}
+                    {material.content.length > 300 && (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="mt-2 h-auto p-0 text-primary"
+                        onClick={() => setIsExpanded(!isExpanded)}
+                      >
+                        {isExpanded ? (
+                          <>
+                            <ChevronUp className="mr-1 size-4" />
+                            Ver menos
+                          </>
+                        ) : (
+                          <>
+                            <ChevronDown className="mr-1 size-4" />
+                            Ver mais
+                          </>
+                        )}
+                      </Button>
+                    )}
+                  </div>
+                )}
+                {material.type === 'image' && material.url && (
+                  <div className="rounded-lg border bg-muted/30 p-4">
+                    <div className="relative w-full overflow-hidden rounded-md">
+                      <Image
+                        src={material.url}
+                        alt={material.alt || 'Imagem da questão'}
+                        width={800}
+                        height={600}
+                        className="w-full h-auto object-contain"
+                        unoptimized
+                      />
+                    </div>
+                    {material.caption && (
+                      <p className="mt-2 text-xs text-muted-foreground italic text-center">
+                        {material.caption}
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Legacy Context (for backward compatibility) */}
+        {question.context && !supportingMaterials.length && (
           <div className="rounded-lg bg-muted/50 p-4 text-sm">
             <p className={cn(!isExpanded && "line-clamp-3")}>
               {capitalizeSentences(question.context)}

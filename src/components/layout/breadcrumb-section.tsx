@@ -16,14 +16,15 @@ import { getGroup } from "@/server/actions/groups"
 import { queryKeys } from "@/lib/query-keys"
 
 const routeLabels: Record<string, string> = {
-  questoes: "Questões",
   grupos: "Grupos",
   redacao: "Redação",
   conta: "Conta",
 }
 
-function isUUID(str: string): boolean {
-  return /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(str)
+function isCUID(str: string): boolean {
+  // CUID format: c + timestamp (base36) + counter + fingerprint + random
+  // Example: cmjlvfb6a0000nolexmos2yyx (25 chars, starts with 'c')
+  return /^c[a-z0-9]{24}$/i.test(str)
 }
 
 export function BreadcrumbSection() {
@@ -36,14 +37,15 @@ export function BreadcrumbSection() {
   }
 
   // Detect if we're on a question or group detail page
-  const isQuestionPage = segments[0]?.toLowerCase() === "questoes" && segments.length >= 2 && isUUID(segments[1])
-  const isGroupPage = segments[0]?.toLowerCase() === "grupos" && segments.length >= 2 && isUUID(segments[1])
+  // Question detail is now at root: /[id]
+  const isQuestionPage = segments.length === 1 && isCUID(segments[0])
+  const isGroupPage = segments[0]?.toLowerCase() === "grupos" && segments.length === 2 && isCUID(segments[1])
 
   // Fetch question data if needed
   const { data: question, isLoading: isLoadingQuestion } = useQuery({
-    queryKey: queryKeys.questions.detail(segments[1]),
-    queryFn: () => getQuestion(segments[1]),
-    enabled: isQuestionPage && !!segments[1],
+    queryKey: queryKeys.questions.detail(segments[0]),
+    queryFn: () => getQuestion(segments[0]),
+    enabled: isQuestionPage && !!segments[0],
   })
 
   // Fetch group data if needed
@@ -61,8 +63,8 @@ export function BreadcrumbSection() {
     const isLast = index === segments.length - 1
     let label = routeLabels[segment] || segment
 
-    // Replace UUID with actual names
-    if (isUUID(segment)) {
+    // Replace CUID with actual names
+    if (isCUID(segment)) {
       if (isQuestionPage) {
         if (isLoadingQuestion) {
           label = "..."

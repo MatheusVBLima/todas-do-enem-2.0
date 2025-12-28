@@ -32,4 +32,13 @@ export const queryKeys = {
   years: {
     all: ["years"] as const,
   },
+
+  // Essays
+  essays: {
+    all: ["essays"] as const,
+    lists: () => [...queryKeys.essays.all, "list"] as const,
+    list: (userId: string) => [...queryKeys.essays.lists(), userId] as const,
+    details: () => [...queryKeys.essays.all, "detail"] as const,
+    detail: (id: string) => [...queryKeys.essays.details(), id] as const,
+  },
 } as const

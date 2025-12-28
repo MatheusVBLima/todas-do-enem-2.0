@@ -24,23 +24,25 @@ model Exam {
 }
 
 model Question {
-  id             String              @id @default(cuid())
-  examId         String
-  exam           Exam                @relation(fields: [examId], references: [id])
-  questionNumber Int
-  knowledgeArea  String // LINGUAGENS, CIENCIAS_HUMANAS, CIENCIAS_NATUREZA, MATEMATICA
-  subject        String // PORTUGUES, MATEMATICA, HISTORIA, etc.
-  statement      String
-  context        String?
-  optionA        String
-  optionB        String
-  optionC        String
-  optionD        String
-  optionE        String
-  correctAnswer  String
-  imageUrl       String?
-  aiExplanation  String?
-  groups         QuestionsOnGroups[]
+  id                  String              @id @default(cuid())
+  examId              String
+  exam                Exam                @relation(fields: [examId], references: [id])
+  questionNumber      Int
+  knowledgeArea       String // LINGUAGENS, CIENCIAS_HUMANAS, CIENCIAS_NATUREZA, MATEMATICA
+  subject             String // PORTUGUES, MATEMATICA, HISTORIA, etc.
+  statement           String
+  context             String?
+  optionA             String
+  optionB             String
+  optionC             String
+  optionD             String
+  optionE             String
+  correctAnswer       String
+  imageUrl            String?
+  supportingMaterials String? // JSON array of text/image blocks
+  languageOption      String? // INGLES or ESPANHOL for Q1-5
+  aiExplanation       String?
+  groups              QuestionsOnGroups[]
 
   @@unique([examId, questionNumber])
   @@index([knowledgeArea])
@@ -76,34 +78,44 @@ model QuestionsOnGroups {
 }
 
 model Essay {
-  id          String            @id @default(cuid())
-  userId      String
-  user        User              @relation(fields: [userId], references: [id], onDelete: Cascade)
-  title       String?
-  theme       String?
-  content     String
-  wordCount   Int               @default(0)
-  status      String            @default("DRAFT") // DRAFT, SUBMITTED, CORRECTED
-  corrections EssayCorrection[]
-  createdAt   DateTime          @default(now())
-  updatedAt   DateTime          @updatedAt
+  id         String           @id @default(cuid())
+  userId     String
+  user       User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title      String?
+  theme      String?
+  content    String
+  wordCount  Int              @default(0)
+  status     String           @default("DRAFT") // DRAFT, SUBMITTED, CORRECTED
+  correction EssayCorrection?
+  createdAt  DateTime         @default(now())
+  updatedAt  DateTime         @updatedAt
 
   @@index([userId])
   @@index([status])
 }
 
 model EssayCorrection {
-  id           String   @id @default(cuid())
-  essayId      String
-  essay        Essay    @relation(fields: [essayId], references: [id], onDelete: Cascade)
-  competencia1 Int // Domínio da norma culta (0-200)
-  competencia2 Int // Compreensão da proposta (0-200)
-  competencia3 Int // Argumentação (0-200)
-  competencia4 Int // Coesão textual (0-200)
-  competencia5 Int // Proposta de intervenção (0-200)
-  totalScore   Int // Soma das competências (0-1000)
-  feedback     String
-  createdAt    DateTime @default(now())
+  id      String @id @default(cuid())
+  essayId String @unique
+  essay   Essay  @relation(fields: [essayId], references: [id], onDelete: Cascade)
+
+  // Competence scores (0-200 each)
+  competence1Score    Int
+  competence1Feedback String
+  competence2Score    Int
+  competence2Feedback String
+  competence3Score    Int
+  competence3Feedback String
+  competence4Score    Int
+  competence4Feedback String
+  competence5Score    Int
+  competence5Feedback String
+
+  // Total score (0-1000)
+  totalScore      Int
+  generalFeedback String
+
+  createdAt DateTime @default(now())
 
   @@index([essayId])
 }

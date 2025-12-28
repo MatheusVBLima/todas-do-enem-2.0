@@ -21,7 +21,16 @@
       "Bash(npx shadcn@latest add:*)",
       "Bash(del test-search.js)",
       "Bash(taskkill:*)",
-      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\test-db2.js\")"
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\test-db2.js\")",
+      "Bash(find:*)",
+      "Bash(robocopy:*)",
+      "Bash(wc:*)",
+      "Bash(copy placeholder.svg q05_coffee_cups.jpg)",
+      "Bash(copy placeholder.svg q14_poster.jpg)",
+      "Bash(copy placeholder.svg q15_zeferina.jpg)",
+      "Bash(copy placeholder.svg q15_joao.jpg)",
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\components\\\\redacao\\\\correction-progress.tsx\")",
+      "Bash(node check-essays.js:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

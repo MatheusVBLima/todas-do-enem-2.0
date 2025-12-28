@@ -63,7 +63,7 @@ export function GlobalSearch() {
     setOpen(false)
     setSearch("")
     setDebouncedSearch("")
-    router.push(`/questoes/${questionId}`)
+    router.push(`/${questionId}`)
   }, [router])
 
   // Clear search when closing dialog
