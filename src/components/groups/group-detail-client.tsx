@@ -1,6 +1,6 @@
 "use client"
 
-import { useParams, useRouter } from "next/navigation"
+import { useParams } from "next/navigation"
 import { ArrowLeft, FolderOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -26,7 +26,6 @@ import { queryKeys } from "@/lib/query-keys"
 
 export function GroupDetailClient() {
   const params = useParams()
-  const router = useRouter()
   const queryClient = useQueryClient()
   const groupId = params.id as string
   const [questionToRemove, setQuestionToRemove] = useState<string | null>(null)
@@ -71,9 +70,11 @@ export function GroupDetailClient() {
         <FolderOpen className="size-16 text-muted-foreground" />
         <h2 className="text-2xl font-bold">Grupo não encontrado</h2>
         <p className="text-muted-foreground">Este grupo não existe ou foi deletado.</p>
-        <Button onClick={() => router.push("/grupos")}>
-          <ArrowLeft className="mr-2 size-4" />
-          Voltar para Grupos
+        <Button asChild>
+          <Link href="/grupos">
+            <ArrowLeft className="mr-2 size-4" />
+            Voltar para Grupos
+          </Link>
         </Button>
       </div>
     )
@@ -83,8 +84,10 @@ export function GroupDetailClient() {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-4">
-        <Button variant="ghost" size="icon" onClick={() => router.push("/grupos")}>
-          <ArrowLeft className="size-4" />
+        <Button variant="ghost" size="icon" asChild>
+          <Link href="/grupos">
+            <ArrowLeft className="size-4" />
+          </Link>
         </Button>
 
         <div className="flex-1">
@@ -122,9 +125,9 @@ export function GroupDetailClient() {
               Vá para a página de questões e adicione questões a este grupo
             </EmptyDescription>
           </EmptyHeader>
-          <Link href="/">
-            <Button>Ir para Questões</Button>
-          </Link>
+          <Button asChild>
+            <Link href="/">Ir para Questões</Link>
+          </Button>
         </Empty>
       ) : (
         <div className="space-y-4">

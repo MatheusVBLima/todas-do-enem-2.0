@@ -14,7 +14,6 @@ import type { EssayWithCorrection } from "@/server/actions/essays"
 import { getEssay } from "@/server/actions/essays"
 import { queryKeys } from "@/lib/query-keys"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
 
 interface EssayCorrectionProps {
   essay: EssayWithCorrection
@@ -30,7 +29,6 @@ const COMPETENCE_LABELS = [
 ]
 
 export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrectionProps) {
-  const router = useRouter()
   const queryClient = useQueryClient()
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
 
@@ -127,9 +125,11 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => router.push("/redacao")}
+              asChild
             >
-              <ArrowLeft className="size-4" />
+              <Link href="/redacao">
+                <ArrowLeft className="size-4" />
+              </Link>
             </Button>
             <div>
               <h1 className="text-3xl font-bold">{essay.title}</h1>

@@ -103,15 +103,20 @@ export function QuestionsTable({
                       variant="ghost"
                       size="sm"
                     />
-                    <Link
-                      href={`/${question.id}`}
-                      onMouseEnter={() => prefetchQuestion(question.id)}
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="gap-2"
+                      asChild
                     >
-                      <Button variant="ghost" size="sm" className="gap-2">
+                      <Link
+                        href={`/${question.id}`}
+                        onMouseEnter={() => prefetchQuestion(question.id)}
+                      >
                         Ver
                         <ExternalLink className="size-3" />
-                      </Button>
-                    </Link>
+                      </Link>
+                    </Button>
                   </div>
                 </TableCell>
               </TableRow>

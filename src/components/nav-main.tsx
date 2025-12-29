@@ -2,6 +2,7 @@
 
 import { ChevronRight, type LucideIcon } from "lucide-react"
 import { useRef } from "react"
+import Link from "next/link"
 import { usePrefetchQuestions } from "@/hooks/use-prefetch-questions"
 import { usePrefetchGroups } from "@/hooks/use-prefetch-groups"
 import { usePrefetchEssays } from "@/hooks/use-prefetch-essays"
@@ -100,13 +101,13 @@ export function NavMain({
                       {item.items.map((subItem) => (
                         <SidebarMenuSubItem key={subItem.title}>
                           <SidebarMenuSubButton asChild>
-                            <a
+                            <Link
                               href={subItem.url}
                               onMouseEnter={() => handlePrefetch(subItem.url)}
                               onMouseLeave={handleMouseLeave}
                             >
                               <span>{subItem.title}</span>
-                            </a>
+                            </Link>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       ))}
@@ -115,7 +116,7 @@ export function NavMain({
                 </>
               ) : (
                 <SidebarMenuButton asChild tooltip={item.title}>
-                  <a
+                  <Link
                     href={item.url}
                     onMouseEnter={() => handlePrefetch(item.url)}
                     onMouseLeave={handleMouseLeave}
@@ -127,7 +128,7 @@ export function NavMain({
                         {item.badge}
                       </span>
                     )}
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               )}
             </SidebarMenuItem>
