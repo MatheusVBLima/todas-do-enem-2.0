@@ -5,11 +5,27 @@ import { QuestionFilters, QuestionList } from "@/components/questions"
 import { QueryClient, dehydrate, HydrationBoundary } from "@tanstack/react-query"
 import { getQuestions } from "@/server/actions/questions"
 import { getCurrentUser } from "@/lib/auth/server"
+import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
 
 export default async function QuestoesPage() {
-  const queryClient = new QueryClient()
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: Infinity,
+      },
+    },
+  })
   const authUser = await getCurrentUser()
+
+  // Get user plan if authenticated
+  let userPlan: string | null = null
+  if (authUser) {
+    const userResult = await getUserProfile(authUser.id)
+    if (userResult.success && userResult.data) {
+      userPlan = userResult.data.plan
+    }
+  }
 
   // Default filters for initial load
   const defaultFilters = {
@@ -41,7 +57,7 @@ export default async function QuestoesPage() {
 
         <Suspense fallback={<QuestoesLoading />}>
           <QuestionFilters />
-          <QuestionList userId={authUser?.id || null} />
+          <QuestionList userId={authUser?.id || null} userPlan={userPlan} />
         </Suspense>
       </div>
     </HydrationBoundary>

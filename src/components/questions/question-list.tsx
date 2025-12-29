@@ -14,9 +14,10 @@ import { useEffect, useState } from "react"
 
 type QuestionListProps = {
   userId: string | null
+  userPlan: string | null
 }
 
-export function QuestionList({ userId }: QuestionListProps) {
+export function QuestionList({ userId, userPlan }: QuestionListProps) {
   const [filters, setFilters] = useQuestionFilters()
   const queryClient = useQueryClient()
   const [viewMode, setViewMode] = useState<"cards" | "table">("cards")
@@ -110,7 +111,7 @@ export function QuestionList({ userId }: QuestionListProps) {
       {viewMode === "cards" ? (
         <div className="space-y-4">
           {data.data.map((question) => (
-            <QuestionCard key={question.id} question={question} userId={userId} />
+            <QuestionCard key={question.id} question={question} userId={userId} userPlan={userPlan} />
           ))}
         </div>
       ) : (

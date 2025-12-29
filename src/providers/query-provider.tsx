@@ -9,11 +9,11 @@ export function QueryProvider({ children }: { children: React.ReactNode }) {
       new QueryClient({
         defaultOptions: {
           queries: {
-            staleTime: 5 * 60 * 1000, // 5 minutos - dados permanecem fresh por mais tempo
-            gcTime: 10 * 60 * 1000, // 10 minutos - garbage collection
+            staleTime: 1000 * 60 * 5, // 5 minutos - dados permanecem fresh por mais tempo
+            gcTime: 1000 * 60 * 60, // 1 hora - garbage collection (maior que antes)
             refetchOnWindowFocus: false,
-            refetchOnMount: false, // Evita refetch se dados estão fresh
-            retry: 1, // Reduz tentativas de retry
+            refetchOnReconnect: false, // Evita refetch ao reconectar
+            retry: 2, // 2 tentativas em caso de erro
           },
         },
       })

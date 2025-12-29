@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Eye, EyeOff, FolderPlus, Brain, ChevronDown, ChevronUp, Trash2 } from "lucide-react"
+import { Eye, ChevronDown, ChevronUp, Trash2 } from "lucide-react"
 import Image from "next/image"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
 import { capitalizeSentences } from "@/lib/text-utils"
-import { KNOWLEDGE_AREAS, SUBJECTS, ANSWER_OPTIONS, type KnowledgeAreaKey, type SubjectKey } from "@/lib/constants"
+import { KNOWLEDGE_AREAS, SUBJECTS, type KnowledgeAreaKey, type SubjectKey } from "@/lib/constants"
 import type { QuestionWithExam } from "@/types"
 import { AddToGroupButton } from "@/components/groups/add-to-group-button"
 import { AIExplanation } from "./ai-explanation"
@@ -38,8 +38,6 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
   const [isAnswerVisible, setIsAnswerVisible] = useState(showAnswer)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [isExpanded, setIsExpanded] = useState(false)
-  const [showAIExplanation, setShowAIExplanation] = useState(false)
-  const [autoGenerateAI, setAutoGenerateAI] = useState(false)
 
   const area = KNOWLEDGE_AREAS[question.knowledgeArea as KnowledgeAreaKey]
   const subject = SUBJECTS[question.subject as SubjectKey]
@@ -66,8 +64,6 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
 
   const handleRevealAnswer = () => {
     setIsAnswerVisible(true)
-    setShowAIExplanation(true)
-    setAutoGenerateAI(false)
   }
 
   const isCorrect = selectedOption === question.correctAnswer
@@ -92,18 +88,6 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
           </div>
           <div className="flex items-center gap-1">
             <AddToGroupButton questionId={question.id} userId={userId} variant="default" size="sm" />
-            <Button
-              variant="default"
-              size="sm"
-              onClick={() => {
-                setShowAIExplanation(true)
-                setAutoGenerateAI(true)
-              }}
-              title="Ver explicação por IA"
-            >
-              <Brain className="mr-1.5 size-4" />
-              IA
-            </Button>
             {onRemove && (
               <>
                 <div className="mx-2 h-6 w-px bg-border" />
@@ -291,12 +275,11 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
           </Button>
         </div>
 
-        {/* AI Explanation - shown when user clicks IA button OR after revealing answer */}
-        {(showAIExplanation || isAnswerVisible) && (
+        {/* AI Explanation - shown after revealing answer */}
+        {isAnswerVisible && (
           <AIExplanation
             question={question}
             userPlan={userPlan}
-            autoGenerate={autoGenerateAI}
           />
         )}
       </CardContent>

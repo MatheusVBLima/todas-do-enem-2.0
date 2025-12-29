@@ -26,6 +26,11 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
   const { data: essaysResult, isLoading } = useQuery({
     queryKey: queryKeys.essays.list(userId),
     queryFn: () => getEssays(userId),
+    staleTime: Infinity,
+    gcTime: Infinity,
+    refetchOnMount: false,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
   })
 
   const essays = essaysResult?.success ? essaysResult.data || [] : []

@@ -2,11 +2,9 @@
 
 import { ChevronRight, type LucideIcon } from "lucide-react"
 import { useRef } from "react"
-import { useQueryClient } from "@tanstack/react-query"
-import { queryKeys } from "@/lib/query-keys"
-import { getQuestions } from "@/server/actions/questions"
-import { getUserGroups } from "@/server/actions/groups"
-import { DEV_USER } from "@/lib/dev-user"
+import { usePrefetchQuestions } from "@/hooks/use-prefetch-questions"
+import { usePrefetchGroups } from "@/hooks/use-prefetch-groups"
+import { usePrefetchEssays } from "@/hooks/use-prefetch-essays"
 
 import {
   Collapsible,
@@ -26,6 +24,7 @@ import {
 
 export function NavMain({
   items,
+  userId,
 }: {
   items: {
     title: string
@@ -38,9 +37,12 @@ export function NavMain({
       url: string
     }[]
   }[]
+  userId: string | null
 }) {
-  const queryClient = useQueryClient()
   const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined)
+  const prefetchQuestions = usePrefetchQuestions()
+  const prefetchGroups = usePrefetchGroups(userId)
+  const prefetchEssays = usePrefetchEssays(userId)
 
   const handlePrefetch = (url: string) => {
     if (timeoutRef.current) {
@@ -57,15 +59,11 @@ export function NavMain({
           busca: "",
           pagina: 1,
         }
-        queryClient.prefetchQuery({
-          queryKey: queryKeys.questions.list(defaultFilters),
-          queryFn: () => getQuestions(defaultFilters),
-        })
+        prefetchQuestions(defaultFilters)
       } else if (url === "/grupos") {
-        queryClient.prefetchQuery({
-          queryKey: queryKeys.groups.list(DEV_USER.id),
-          queryFn: () => getUserGroups(DEV_USER.id),
-        })
+        prefetchGroups()
+      } else if (url === "/redacao") {
+        prefetchEssays()
       }
     }, 300)
   }

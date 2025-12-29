@@ -9,7 +9,13 @@ interface GroupDetailPageProps {
 
 export default async function GroupDetailPage({ params }: GroupDetailPageProps) {
   const { id } = await params
-  const queryClient = new QueryClient()
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: Infinity,
+      },
+    },
+  })
 
   // Server-side prefetch do grupo específico
   await queryClient.prefetchQuery({
