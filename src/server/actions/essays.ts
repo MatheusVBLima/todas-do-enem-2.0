@@ -1,10 +1,10 @@
 "use server"
 
 import { revalidatePath } from "next/cache"
-import { db } from "@/lib/db"
+import { supabase } from "@/lib/supabase/server"
 import { correctEssay } from "./ai"
 import type { ActionResponse } from "@/types"
-import type { Essay, EssayCorrection } from "@prisma/client"
+import type { Essay, EssayCorrection } from "@/lib/supabase/types"
 
 export type EssayWithCorrection = Essay & {
   correction: EssayCorrection | null
@@ -32,16 +32,20 @@ export async function createEssay(
   try {
     const wordCount = input.content.trim().split(/\s+/).filter(Boolean).length
 
-    const essay = await db.essay.create({
-      data: {
+    const { data: essay, error } = await supabase
+      .from('Essay')
+      .insert({
         userId: input.userId,
         title: input.title,
         theme: input.theme,
         content: input.content,
         wordCount,
         status: "DRAFT",
-      },
-    })
+      })
+      .select()
+      .single()
+
+    if (error) throw error
 
     revalidatePath("/redacao")
     return { success: true, data: essay }
@@ -66,10 +70,14 @@ export async function updateEssay(
       updateData.wordCount = input.content.trim().split(/\s+/).filter(Boolean).length
     }
 
-    const essay = await db.essay.update({
-      where: { id },
-      data: updateData,
-    })
+    const { data: essay, error } = await supabase
+      .from('Essay')
+      .update(updateData)
+      .eq('id', id)
+      .select()
+      .single()
+
+    if (error) throw error
 
     revalidatePath("/redacao")
     revalidatePath(`/redacao/${id}`)
@@ -87,56 +95,37 @@ export async function submitEssay(
   id: string
 ): Promise<ActionResponse<Essay>> {
   try {
-    // Get essay
-    const essay = await db.essay.findUnique({
-      where: { id },
-      include: { correction: true },
-    })
+    // Call RPC function for atomic transaction
+    const { data: result, error: rpcError } = await supabase
+      .rpc('submit_essay_for_correction', { p_essay_id: id })
 
-    if (!essay) {
-      return { success: false, error: "Redação não encontrada" }
+    if (rpcError) throw rpcError
+
+    const resultObj = typeof result === 'string' ? JSON.parse(result) : result
+
+    if (!resultObj.success) {
+      return { success: false, error: resultObj.error }
     }
 
-    // Validate required fields
-    if (!essay.theme) {
-      return {
-        success: false,
-        error: "O tema da redação é obrigatório"
-      }
-    }
+    // Get updated essay
+    const { data: essay, error: fetchError } = await supabase
+      .from('Essay')
+      .select('*')
+      .eq('id', id)
+      .single()
 
-    // Check word count (minimum 200 words for ENEM)
-    if (essay.wordCount < 200) {
-      return {
-        success: false,
-        error: "A redação deve ter no mínimo 200 palavras para ser corrigida"
-      }
-    }
-
-    // Delete old correction if exists and update status in a transaction
-    const submittedEssay = await db.$transaction(async (tx) => {
-      // Delete old correction if it exists
-      if (essay.correction) {
-        await tx.essayCorrection.delete({
-          where: { essayId: id },
-        })
-      }
-
-      // Update status to SUBMITTED
-      return await tx.essay.update({
-        where: { id },
-        data: { status: "SUBMITTED" },
-      })
-    })
+    if (fetchError) throw fetchError
 
     // Start AI correction in background (don't await)
-    processEssayCorrection(id, essay.theme, essay.content).catch((error) => {
-      console.error("Background correction error:", error)
-    })
+    if (essay.theme && essay.content) {
+      processEssayCorrection(id, essay.theme, essay.content).catch((error) => {
+        console.error("Background correction error:", error)
+      })
+    }
 
     revalidatePath("/redacao")
     revalidatePath(`/redacao/${id}`)
-    return { success: true, data: submittedEssay }
+    return { success: true, data: essay }
   } catch (error) {
     console.error("Error submitting essay:", error)
     return { success: false, error: "Erro ao enviar redação para correção" }
@@ -162,7 +151,25 @@ async function processEssayCorrection(
     console.log(`[processEssayCorrection] AI correction completed:`, correctionResult.success)
 
     if (!correctionResult.success || !correctionResult.data) {
-      console.log(`[processEssayCorrection] AI correction failed`)
+      console.log(`[processEssayCorrection] AI correction failed, creating error correction`)
+
+      // Create error correction using RPC
+      await supabase.rpc('save_essay_correction', {
+        p_essay_id: essayId,
+        p_comp1_score: 0,
+        p_comp1_feedback: 'Erro ao processar correção.',
+        p_comp2_score: 0,
+        p_comp2_feedback: 'Erro ao processar correção.',
+        p_comp3_score: 0,
+        p_comp3_feedback: 'Erro ao processar correção.',
+        p_comp4_score: 0,
+        p_comp4_feedback: 'Erro ao processar correção.',
+        p_comp5_score: 0,
+        p_comp5_feedback: 'Erro ao processar correção.',
+        p_total_score: 0,
+        p_general_feedback: correctionResult.error || 'Ocorreu um erro ao processar a correção. Tente editar e reenviar a redação.',
+      })
+
       return
     }
 
@@ -170,56 +177,60 @@ async function processEssayCorrection(
     console.log(`[processEssayCorrection] AI correction successful`)
   } catch (error) {
     console.error("[processEssayCorrection] AI correction error:", error)
+
+    // Create error correction using RPC
+    try {
+      await supabase.rpc('save_essay_correction', {
+        p_essay_id: essayId,
+        p_comp1_score: 0,
+        p_comp1_feedback: 'Erro ao processar correção.',
+        p_comp2_score: 0,
+        p_comp2_feedback: 'Erro ao processar correção.',
+        p_comp3_score: 0,
+        p_comp3_feedback: 'Erro ao processar correção.',
+        p_comp4_score: 0,
+        p_comp4_feedback: 'Erro ao processar correção.',
+        p_comp5_score: 0,
+        p_comp5_feedback: 'Erro ao processar correção.',
+        p_total_score: 0,
+        p_general_feedback: `Erro ao processar a correção: ${error instanceof Error ? error.message : 'Erro desconhecido'}. Tente editar e reenviar a redação.`,
+      })
+    } catch (dbError) {
+      console.error("[processEssayCorrection] Failed to save error correction:", dbError)
+    }
+
     return
   }
 
-  // Step 2 & 3: Save correction and update status atomically using transaction
+  // Step 2: Save correction atomically using RPC
   try {
-    console.log(`[processEssayCorrection] Saving correction and updating status in transaction...`)
+    console.log(`[processEssayCorrection] Saving correction...`)
 
-    await db.$transaction(async (tx) => {
-      // Save correction to database
-      await tx.essayCorrection.create({
-        data: {
-          essayId,
-          competence1Score: correctionData.competencia1.pontuacao,
-          competence1Feedback: correctionData.competencia1.feedback,
-          competence2Score: correctionData.competencia2.pontuacao,
-          competence2Feedback: correctionData.competencia2.feedback,
-          competence3Score: correctionData.competencia3.pontuacao,
-          competence3Feedback: correctionData.competencia3.feedback,
-          competence4Score: correctionData.competencia4.pontuacao,
-          competence4Feedback: correctionData.competencia4.feedback,
-          competence5Score: correctionData.competencia5.pontuacao,
-          competence5Feedback: correctionData.competencia5.feedback,
-          totalScore: correctionData.pontuacaoTotal,
-          generalFeedback: correctionData.feedbackGeral,
-        },
-      })
-
-      // Update essay status to CORRECTED
-      await tx.essay.update({
-        where: { id: essayId },
-        data: { status: "CORRECTED" },
-      })
+    const { data: saveResult, error: saveError } = await supabase.rpc('save_essay_correction', {
+      p_essay_id: essayId,
+      p_comp1_score: correctionData.competencia1.pontuacao,
+      p_comp1_feedback: correctionData.competencia1.feedback,
+      p_comp2_score: correctionData.competencia2.pontuacao,
+      p_comp2_feedback: correctionData.competencia2.feedback,
+      p_comp3_score: correctionData.competencia3.pontuacao,
+      p_comp3_feedback: correctionData.competencia3.feedback,
+      p_comp4_score: correctionData.competencia4.pontuacao,
+      p_comp4_feedback: correctionData.competencia4.feedback,
+      p_comp5_score: correctionData.competencia5.pontuacao,
+      p_comp5_feedback: correctionData.competencia5.feedback,
+      p_total_score: correctionData.pontuacaoTotal,
+      p_general_feedback: correctionData.feedbackGeral,
     })
 
-    console.log(`[processEssayCorrection] Transaction successful: correction saved and status updated to CORRECTED`)
+    if (saveError) throw saveError
+
+    console.log(`[processEssayCorrection] Correction saved successfully`)
   } catch (error) {
-    console.error("[processEssayCorrection] Database transaction error:", error)
-    // If transaction fails, just log the error (essay will stay as SUBMITTED)
+    console.error("[processEssayCorrection] Database error:", error)
     return
   }
 
-  // Step 4: Revalidate paths (non-critical, don't fail if this errors)
-  try {
-    revalidatePath("/redacao")
-    revalidatePath(`/redacao/${essayId}`)
-    console.log(`[processEssayCorrection] Paths revalidated successfully`)
-  } catch (error) {
-    console.error("[processEssayCorrection] Revalidation error (non-critical):", error)
-    // Don't fail the whole process for revalidation errors
-  }
+  console.log(`[processEssayCorrection] Correction process completed successfully`)
 }
 
 /**
@@ -229,17 +240,26 @@ export async function getEssays(
   userId: string
 ): Promise<ActionResponse<EssayWithCorrection[]>> {
   try {
-    const essays = await db.essay.findMany({
-      where: { userId },
-      include: {
-        correction: true,
-      },
-      orderBy: {
-        updatedAt: "desc",
-      },
-    })
+    const { data: essays, error } = await supabase
+      .from('Essay')
+      .select(`
+        *,
+        correction:EssayCorrection(*)
+      `)
+      .eq('userId', userId)
+      .order('updatedAt', { ascending: false })
 
-    return { success: true, data: essays }
+    if (error) throw error
+
+    // Transform correction from array to single object
+    const transformedEssays = (essays || []).map(essay => ({
+      ...essay,
+      correction: Array.isArray(essay.correction) && essay.correction.length > 0
+        ? essay.correction[0]
+        : null
+    }))
+
+    return { success: true, data: transformedEssays as EssayWithCorrection[] }
   } catch (error) {
     console.error("Error fetching essays:", error)
     return { success: false, error: "Erro ao buscar redações" }
@@ -253,18 +273,24 @@ export async function getEssay(
   id: string
 ): Promise<ActionResponse<EssayWithCorrection>> {
   try {
-    const essay = await db.essay.findUnique({
-      where: { id },
-      include: {
-        correction: true,
-      },
-    })
+    const { data: essay, error } = await supabase
+      .from('Essay')
+      .select(`
+        *,
+        correction:EssayCorrection(*)
+      `)
+      .eq('id', id)
+      .single()
+
+    if (error) throw error
 
     if (!essay) {
       return { success: false, error: "Redação não encontrada" }
     }
 
-    return { success: true, data: essay }
+    // When using .single(), Supabase returns correction as object (not array)
+    // TypeScript types show it as array, but runtime it's an object
+    return { success: true, data: essay as unknown as EssayWithCorrection }
   } catch (error) {
     console.error("Error fetching essay:", error)
     return { success: false, error: "Erro ao buscar redação" }
@@ -276,15 +302,13 @@ export async function getEssay(
  */
 export async function deleteEssay(id: string): Promise<ActionResponse<void>> {
   try {
-    // Delete correction first (if exists) due to foreign key
-    await db.essayCorrection.deleteMany({
-      where: { essayId: id },
-    })
+    // Cascade delete handles EssayCorrection automatically
+    const { error } = await supabase
+      .from('Essay')
+      .delete()
+      .eq('id', id)
 
-    // Delete essay
-    await db.essay.delete({
-      where: { id },
-    })
+    if (error) throw error
 
     revalidatePath("/redacao")
     return { success: true }

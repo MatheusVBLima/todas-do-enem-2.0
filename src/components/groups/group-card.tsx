@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button"
 import { useQuery } from "@tanstack/react-query"
 import { getGroup } from "@/server/actions/groups"
 import { queryKeys } from "@/lib/query-keys"
+import { usePrefetchGroup } from "@/hooks/use-prefetch-group"
 
 type GroupCardProps = {
   group: {
@@ -36,6 +37,8 @@ type GroupCardProps = {
 }
 
 export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
+  const prefetchGroup = usePrefetchGroup()
+
   const { data: groupDetails } = useQuery({
     queryKey: queryKeys.groups.detail(group.id),
     queryFn: () => getGroup(group.id),
@@ -49,7 +52,11 @@ export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
     <HoverCard openDelay={300} closeDelay={100}>
       <HoverCardTrigger asChild>
         <Card className="group relative overflow-hidden transition-all hover:shadow-md">
-          <Link href={`/grupos/${group.id}`} className="block">
+          <Link
+            href={`/grupos/${group.id}`}
+            className="block"
+            onMouseEnter={() => prefetchGroup(group.id)}
+          >
         <div
           className="absolute left-0 top-0 h-full w-1"
           style={{ backgroundColor: group.color }}

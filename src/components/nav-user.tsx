@@ -2,11 +2,11 @@
 
 import {
   BadgeCheck,
-  Bell,
   ChevronsUpDown,
-  CreditCard,
+  LogIn,
   LogOut,
   Sparkles,
+  User,
 } from "lucide-react"
 
 import {
@@ -30,6 +30,9 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import { ThemeSwitcher } from "@/components/kibo-ui/theme-switcher"
+import { createClientSupabaseClient } from "@/lib/auth/client"
+import { useRouter } from "next/navigation"
+import Link from "next/link"
 
 export function NavUser({
   user,
@@ -38,16 +41,27 @@ export function NavUser({
     name: string
     email: string
     avatar: string
-    plan: string
+    plan: string | null
   }
 }) {
+  const router = useRouter()
   const { isMobile } = useSidebar()
-  const userInitials = user.name
+
+  const isGuest = user.plan === null
+
+  const userInitials = isGuest ? "V" : user.name
     .split(" ")
     .map((n) => n[0])
     .join("")
     .toUpperCase()
     .slice(0, 2)
+
+  const handleLogout = async () => {
+    const supabase = createClientSupabaseClient()
+    await supabase.auth.signOut()
+    router.push('/login')
+    router.refresh()
+  }
 
   return (
     <SidebarMenu>
@@ -92,19 +106,27 @@ export function NavUser({
               </div>
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <BadgeCheck />
-                Minha Conta
-              </DropdownMenuItem>
-              {user.plan !== "Rumo à Aprovação" && (
-                <DropdownMenuItem>
-                  <Sparkles />
-                  Upgrade para PRO
-                </DropdownMenuItem>
-              )}
-            </DropdownMenuGroup>
-            <DropdownMenuSeparator />
+            {!isGuest && (
+              <>
+                <DropdownMenuGroup>
+                  <DropdownMenuItem asChild>
+                    <Link href="/conta">
+                      <BadgeCheck />
+                      Minha Conta
+                    </Link>
+                  </DropdownMenuItem>
+                  {user.plan !== "Rumo à Aprovação" && (
+                    <DropdownMenuItem asChild>
+                      <Link href="/planos">
+                        <Sparkles />
+                        Upgrade para PRO
+                      </Link>
+                    </DropdownMenuItem>
+                  )}
+                </DropdownMenuGroup>
+                <DropdownMenuSeparator />
+              </>
+            )}
             <div className="px-2 py-1.5">
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">Tema</span>
@@ -112,10 +134,19 @@ export function NavUser({
               </div>
             </div>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <LogOut />
-              Sair
-            </DropdownMenuItem>
+            {isGuest ? (
+              <DropdownMenuItem asChild>
+                <Link href="/login">
+                  <LogIn />
+                  Entrar
+                </Link>
+              </DropdownMenuItem>
+            ) : (
+              <DropdownMenuItem onClick={handleLogout}>
+                <LogOut />
+                Sair
+              </DropdownMenuItem>
+            )}
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>

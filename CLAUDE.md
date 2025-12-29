@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router) + React 19
-- **Database**: Prisma ORM with LibSQL adapter (SQLite dev, Turso/Supabase prod)
+- **Database**: Supabase (PostgreSQL) with supabase-js client
 - **UI**: shadcn/ui (New York) + Tailwind CSS 4 + Framer Motion
 - **State**: TanStack Query v5 + nuqs (URL state)
 - **AI**: Google Gemini Flash (Vercel AI SDK)
@@ -20,11 +20,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 bun run dev          # Start dev server (localhost:3000)
 bun run build        # Production build
-bun run db:push      # Push Prisma schema to database
-bun run db:generate  # Generate Prisma client
-bun run db:seed      # Seed database with sample data
-bun run db:studio    # Open Prisma Studio GUI
 ```
+
+## Supabase Access
+
+- **Dashboard**: https://supabase.com/dashboard/project/hmauacrtvesutfbmogyo
+- **SQL Editor**: For running queries and managing database
+- **Table Editor**: Visual interface for data management
 
 ## Architecture Patterns
 
@@ -94,34 +96,53 @@ const [anos, setAnos] = useQueryState('anos', parseAsArrayOf(parseAsInteger))
 
 ### 5. Database Access
 
-**Singleton** (`src/lib/db.ts`):
+**Supabase Client** (`src/lib/supabase/server.ts`):
 ```typescript
-const adapter = new PrismaLibSql({
-  url: process.env.DATABASE_URL || 'file:./prisma/dev.db',
-})
-export const db = new PrismaClient({ adapter })
+import { createClient } from '@supabase/supabase-js'
+import type { Database } from './database.types'
+
+// Singleton pattern - reuse connection in serverless
+export const supabase = createClient<Database>(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_SERVICE_ROLE_KEY!, // Bypasses RLS
+  { auth: { persistSession: false } }
+)
 ```
 
-Prevents connection pool exhaustion in serverless environments.
+**Re-exported as `db`** for backwards compatibility (`src/lib/db.ts`):
+```typescript
+export { supabase as db } from './supabase/server'
+```
+
+### 6. RPC Functions (Stored Procedures)
+
+Complex queries and transactions use PostgreSQL functions:
+
+1. **get_questions_with_filters** - Paginated questions with filters and ORDER BY exam.year
+2. **submit_essay_for_correction** - Atomic: DELETE old correction + UPDATE status to SUBMITTED
+3. **save_essay_correction** - Atomic: INSERT correction + UPDATE status to CORRECTED
 
 ## Database Schema
 
-**Key Models**:
+**Key Tables** (7 total):
 
 1. **Question** - ENEM exam questions
-   - Stored in **lowercase** for case-insensitive search in SQLite
+   - Stored in **lowercase** for case-insensitive search
    - Use `capitalizeSentences()` from `src/lib/text-utils.ts` for display
-   - Indexes: knowledgeArea, subject, examId
+   - Indexes: knowledgeArea, subject, examId, full-text search (Portuguese)
+   - `supportingMaterials` is JSONB (native JSON, not string)
 
 2. **QuestionGroup** - User's study groups
    - Many-to-many with Question via `QuestionsOnGroups`
-   - `savedFilters` (JSON) stores filter state
+   - `savedFilters` is JSONB (native JSON, not string)
 
 3. **User** - Student accounts
    - `plan`: TENTANDO_A_SORTE (free) or RUMO_A_APROVACAO (paid)
+   - `email` uses CITEXT for case-insensitive uniqueness
 
 4. **Essay + EssayCorrection** - AI essay evaluation
    - 5 competencies (0-200 points each)
+   - One-to-one relationship (essayId unique constraint)
 
 ## Directory Structure
 
@@ -149,7 +170,12 @@ src/
 ├── server/actions/      # Server actions ("use server")
 ├── hooks/               # Custom hooks (filters, prefetch)
 ├── lib/
-│   ├── db.ts            # Prisma singleton
+│   ├── db.ts            # Re-exports Supabase client
+│   ├── supabase/        # Supabase configuration
+│   │   ├── server.ts    # Server client (SERVICE_ROLE_KEY)
+│   │   ├── client.ts    # Browser client (PUBLISHABLE_KEY)
+│   │   ├── database.types.ts  # Generated types
+│   │   └── types.ts     # Manual type exports
 │   ├── query-keys.ts    # TanStack Query keys
 │   ├── ai.ts            # Gemini model config
 │   ├── constants.ts     # ENEM areas, subjects, plans
@@ -159,13 +185,13 @@ src/
 
 ## Key Implementation Details
 
-### Case-Insensitive Search (SQLite)
+### Case-Insensitive Search (PostgreSQL)
 
 **Database**: All text fields stored in **lowercase**
 ```typescript
-// Seed: prisma/seed.ts
-context: SAMPLE_CONTEXTS[i].toLowerCase(),
-statement: SAMPLE_STATEMENTS[i].toLowerCase(),
+// Stored lowercase in database
+context: "...",  // lowercase
+statement: "...", // lowercase
 ```
 
 **Display**: Use capitalization helper
@@ -174,13 +200,27 @@ import { capitalizeSentences } from "@/lib/text-utils"
 <p>{capitalizeSentences(question.context)}</p>
 ```
 
-**Search**: Convert search term to lowercase
+**Search**: Use PostgreSQL ILIKE operator
 ```typescript
-const searchLower = busca.toLowerCase()
-where.OR = [
-  { statement: { contains: searchLower } },
-  { context: { contains: searchLower } },
-]
+// In RPC function (scripts/supabase-functions.sql)
+WHERE statement ILIKE '%' || p_busca || '%'
+   OR context ILIKE '%' || p_busca || '%'
+```
+
+### JSONB vs JSON Strings
+
+**Supabase uses JSONB** (native JSON type):
+```typescript
+// NO need for JSON.parse() - already an object!
+const materials = question.supportingMaterials  // Already array
+const filters = group.savedFilters  // Already object
+
+// But handle legacy string data defensively:
+const materials = Array.isArray(question.supportingMaterials)
+  ? question.supportingMaterials
+  : typeof question.supportingMaterials === 'string'
+    ? JSON.parse(question.supportingMaterials)
+    : []
 ```
 
 ### AI Integration
@@ -280,21 +320,30 @@ Uses TanStack Query to fetch question/group data when needed.
 ## Environment Variables
 
 ```env
-DATABASE_URL="file:./prisma/dev.db"              # SQLite (dev)
-GOOGLE_GENERATIVE_AI_API_KEY="..."              # Gemini API
-# Future: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-# Future: POLAR_API_KEY
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL="https://hmauacrtvesutfbmogyo.supabase.co"
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY="..."  # Public key
+SUPABASE_SERVICE_ROLE_KEY="..."                      # Secret key (bypasses RLS)
+
+# AI
+GOOGLE_GENERATIVE_AI_API_KEY="..."
+
+# Future
+# NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+# POLAR_API_KEY
 ```
 
-**Database Location**: Must be `./prisma/dev.db` (not root)
+**Important**: `SUPABASE_SERVICE_ROLE_KEY` is used in server actions to bypass Row Level Security (RLS)
 
 ## Performance Optimizations
 
 1. **Server-Side Prefetching**: Data loaded on server, hydrated to client
 2. **Query Caching**: 5-minute stale time prevents refetches
 3. **Prefetch Hooks**: `usePrefetchQuestions`, `usePrefetchGroups`
-4. **Database Indexes**: On knowledgeArea, subject, examId
+4. **Database Indexes**: On knowledgeArea, subject, examId, full-text search
 5. **Debounced Search**: 300ms delay reduces API calls
+6. **RPC Functions**: Complex queries run in database for better performance
+7. **JSONB Storage**: Native PostgreSQL JSON for fast queries without parsing
 
 ## Type System
 
@@ -326,13 +375,17 @@ interface ActionResponse<T = void> {
 5. **Mobile**: Responsive with sidebar collapsing, breadcrumb hidden
 6. **Dark Mode**: System preference detection via next-themes
 7. **Streaming AI**: Use `createStreamableValue` for real-time responses
-8. **Database Adapter**: LibSQL adapter prevents serverless pooling issues
+8. **Supabase Client**: Use SERVICE_ROLE_KEY in server actions to bypass RLS
 9. **Text Display**: Always capitalize lowercase DB text with `capitalizeSentences()`
-10. **Search**: Convert to lowercase for case-insensitive SQLite search
+10. **Search**: Use ILIKE operator for case-insensitive PostgreSQL search
+11. **JSONB Fields**: No need for JSON.parse() - already native objects
+12. **Relations**: When using `.single()`, relations come as objects (not arrays)
+13. **Transactions**: Use RPC functions for atomic multi-step operations
 
 ## Deployment Considerations
 
-- **Database**: Switch to Turso/Supabase (update DATABASE_URL)
-- **Authentication**: Integrate Clerk (env vars ready)
+- **Database**: Already using Supabase PostgreSQL ✅
+- **Authentication**: Future Clerk integration (env vars ready)
 - **AI**: Set GOOGLE_GENERATIVE_AI_API_KEY in production
 - **Payments**: Future Polar integration (POLAR_API_KEY)
+- **RLS Policies**: Currently bypassed via SERVICE_ROLE_KEY (consider enabling for client-side queries)

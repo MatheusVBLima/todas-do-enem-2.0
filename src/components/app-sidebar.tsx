@@ -17,11 +17,22 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { getCurrentUser, hasPaidPlan } from "@/lib/dev-user"
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const user = getCurrentUser()
-  const isPaidUser = hasPaidPlan(user.plan)
+type UserPlan = 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO'
+
+interface AppUser {
+  id: string
+  email: string
+  name: string
+  plan: UserPlan
+}
+
+interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
+  user: AppUser | null
+}
+
+export function AppSidebar({ user, ...props }: AppSidebarProps) {
+  const isPaidUser = user ? user.plan === 'RUMO_A_APROVACAO' : false
 
   const navMain = [
     {
@@ -53,11 +64,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     },
   ]
 
-  const userData = {
+  const userData = user ? {
     name: user.name,
     email: user.email,
     avatar: "/avatars/user.jpg",
     plan: isPaidUser ? "Rumo à Aprovação" : "Tentando a Sorte",
+  } : {
+    name: "Visitante",
+    email: "Faça login para acessar todas as funcionalidades",
+    avatar: "/avatars/guest.jpg",
+    plan: null,
   }
 
   return (

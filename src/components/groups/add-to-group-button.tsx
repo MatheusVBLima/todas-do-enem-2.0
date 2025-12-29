@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { FolderPlus, Check } from "lucide-react"
+import { FolderPlus, Check, LogIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -15,20 +15,22 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Badge } from "@/components/ui/badge"
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import { getUserGroups, addQuestionsToGroup, createGroup } from "@/server/actions/groups"
-import { DEV_USER } from "@/lib/dev-user"
 import { toast } from "sonner"
 import { cn } from "@/lib/utils"
 import { GroupFormDialog } from "./group-form-dialog"
 import { queryKeys } from "@/lib/query-keys"
+import Link from "next/link"
 
 type AddToGroupButtonProps = {
   questionId: string
+  userId: string | null
   variant?: "default" | "outline" | "ghost"
   size?: "default" | "sm" | "lg" | "icon"
 }
 
 export function AddToGroupButton({
   questionId,
+  userId,
   variant = "outline",
   size = "sm",
 }: AddToGroupButtonProps) {
@@ -37,9 +39,42 @@ export function AddToGroupButton({
   const [showCreateDialog, setShowCreateDialog] = useState(false)
   const [selectedGroups, setSelectedGroups] = useState<Set<string>>(new Set())
 
+  // If user is not logged in, show login prompt
+  if (!userId) {
+    return (
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button variant={variant} size={size}>
+            <FolderPlus className="size-4" />
+            {size !== "icon" && "Adicionar ao Grupo"}
+          </Button>
+        </DialogTrigger>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Login necessário</DialogTitle>
+            <DialogDescription>
+              Você precisa estar logado para adicionar questões aos seus grupos de estudo
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex flex-col gap-4 py-4">
+            <Button asChild>
+              <Link href="/login">
+                <LogIn className="mr-2 size-4" />
+                Fazer login
+              </Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/signup">Criar conta</Link>
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+    )
+  }
+
   const { data: groupsResult, isLoading } = useQuery({
-    queryKey: queryKeys.groups.list(DEV_USER.id),
-    queryFn: () => getUserGroups(DEV_USER.id),
+    queryKey: queryKeys.groups.list(userId),
+    queryFn: () => getUserGroups(userId),
     enabled: open,
   })
 
@@ -100,7 +135,7 @@ export function AddToGroupButton({
         ) : (
           <ScrollArea className="max-h-[400px] pr-4">
             <div className="space-y-2">
-              {groups.map((group) => {
+              {groups.map((group: any) => {
                 const isSelected = selectedGroups.has(group.id)
 
                 return (
@@ -149,7 +184,7 @@ export function AddToGroupButton({
       description="Organize suas questões favoritas em grupos personalizados"
       onSubmit={async (data) => {
         const result = await createGroup({
-          userId: DEV_USER.id,
+          userId,
           name: data.name,
           description: data.description,
           color: data.color,

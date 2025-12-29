@@ -1,9 +1,41 @@
 import { streamText } from "ai"
 import { geminiModel } from "@/lib/ai"
+import { getCurrentUser } from "@/lib/auth/server"
+import { getUserProfile } from "@/server/actions/users"
+import { canAccessAIExplanations } from "@/lib/auth/permissions"
+import { NextResponse } from "next/server"
 
 export const maxDuration = 30
 
 export async function POST(req: Request) {
+  // Check if user is authenticated
+  const authUser = await getCurrentUser()
+
+  if (!authUser) {
+    return NextResponse.json(
+      { error: 'Você precisa estar logado para usar este recurso' },
+      { status: 401 }
+    )
+  }
+
+  // Get user from database
+  const userResult = await getUserProfile(authUser.id)
+
+  if (!userResult.success || !userResult.data) {
+    return NextResponse.json(
+      { error: 'Erro ao verificar permissões do usuário' },
+      { status: 403 }
+    )
+  }
+
+  // Check if user has access to AI explanations (paid feature)
+  if (!canAccessAIExplanations(userResult.data.plan)) {
+    return NextResponse.json(
+      { error: 'Este recurso é exclusivo do plano Rumo à Aprovação. Faça upgrade para ter acesso às explicações por IA.' },
+      { status: 403 }
+    )
+  }
+
   const { messages } = await req.json()
 
   // Converter formato do useChat v6 (com parts) para formato do streamText (com content)

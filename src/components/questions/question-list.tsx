@@ -12,7 +12,11 @@ import { getQuestions } from "@/server/actions/questions"
 import { queryKeys } from "@/lib/query-keys"
 import { useEffect, useState } from "react"
 
-export function QuestionList() {
+type QuestionListProps = {
+  userId: string | null
+}
+
+export function QuestionList({ userId }: QuestionListProps) {
   const [filters, setFilters] = useQuestionFilters()
   const queryClient = useQueryClient()
   const [viewMode, setViewMode] = useState<"cards" | "table">("cards")
@@ -106,7 +110,7 @@ export function QuestionList() {
       {viewMode === "cards" ? (
         <div className="space-y-4">
           {data.data.map((question) => (
-            <QuestionCard key={question.id} question={question} />
+            <QuestionCard key={question.id} question={question} userId={userId} />
           ))}
         </div>
       ) : (
@@ -115,6 +119,7 @@ export function QuestionList() {
           pagination={pagination}
           onPageChange={(page) => setFilters({ pagina: page })}
           isLoading={false}
+          userId={userId}
         />
       )}
 

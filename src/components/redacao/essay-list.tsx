@@ -23,6 +23,7 @@ import { toast } from "sonner"
 import { deleteEssay } from "@/server/actions/essays"
 import type { EssayWithCorrection } from "@/server/actions/essays"
 import { useQueryClient } from "@tanstack/react-query"
+import { usePrefetchEssay } from "@/hooks/use-prefetch-essay"
 
 interface EssayListProps {
   essays: EssayWithCorrection[]
@@ -31,6 +32,7 @@ interface EssayListProps {
 
 export function EssayList({ essays, onEdit }: EssayListProps) {
   const queryClient = useQueryClient()
+  const prefetchEssay = usePrefetchEssay()
   const [essayToDelete, setEssayToDelete] = useState<string | null>(null)
   const [isDeleting, setIsDeleting] = useState(false)
 
@@ -172,7 +174,10 @@ export function EssayList({ essays, onEdit }: EssayListProps) {
                     disabled={essay.status === "SUBMITTED"}
                   >
                     {essay.status === "CORRECTED" ? (
-                      <Link href={`/redacao/${essay.id}`}>
+                      <Link
+                        href={`/redacao/${essay.id}`}
+                        onMouseEnter={() => prefetchEssay(essay.id)}
+                      >
                         <Eye className="mr-2 size-4" />
                         Ver Correção
                       </Link>

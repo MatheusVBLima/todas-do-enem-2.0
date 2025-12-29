@@ -14,7 +14,10 @@ export default async function GroupDetailPage({ params }: GroupDetailPageProps) 
   // Server-side prefetch do grupo específico
   await queryClient.prefetchQuery({
     queryKey: queryKeys.groups.detail(id),
-    queryFn: () => getGroup(id),
+    queryFn: async () => {
+      const result = await getGroup(id)
+      return result.success ? result.data : null
+    },
   })
 
   return (

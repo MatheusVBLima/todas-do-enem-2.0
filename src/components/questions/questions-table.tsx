@@ -14,6 +14,7 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { AddToGroupButton } from "@/components/groups/add-to-group-button"
+import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
 import type { QuestionWithExam } from "@/types"
 
 interface QuestionsTableProps {
@@ -27,6 +28,7 @@ interface QuestionsTableProps {
   }
   onPageChange: (page: number) => void
   isLoading?: boolean
+  userId: string | null
 }
 
 export function QuestionsTable({
@@ -34,7 +36,10 @@ export function QuestionsTable({
   pagination,
   onPageChange,
   isLoading,
+  userId,
 }: QuestionsTableProps) {
+  const prefetchQuestion = usePrefetchQuestion()
+
   if (isLoading) {
     return (
       <div className="space-y-4">
@@ -94,10 +99,14 @@ export function QuestionsTable({
                   <div className="flex items-center justify-end gap-2">
                     <AddToGroupButton
                       questionId={question.id}
+                      userId={userId}
                       variant="ghost"
                       size="sm"
                     />
-                    <Link href={`/${question.id}`}>
+                    <Link
+                      href={`/${question.id}`}
+                      onMouseEnter={() => prefetchQuestion(question.id)}
+                    >
                       <Button variant="ghost" size="sm" className="gap-2">
                         Ver
                         <ExternalLink className="size-3" />

@@ -4,10 +4,12 @@ import { Skeleton } from "@/components/ui/skeleton"
 import { QuestionFilters, QuestionList } from "@/components/questions"
 import { QueryClient, dehydrate, HydrationBoundary } from "@tanstack/react-query"
 import { getQuestions } from "@/server/actions/questions"
+import { getCurrentUser } from "@/lib/auth/server"
 import { queryKeys } from "@/lib/query-keys"
 
 export default async function QuestoesPage() {
   const queryClient = new QueryClient()
+  const authUser = await getCurrentUser()
 
   // Default filters for initial load
   const defaultFilters = {
@@ -39,7 +41,7 @@ export default async function QuestoesPage() {
 
         <Suspense fallback={<QuestoesLoading />}>
           <QuestionFilters />
-          <QuestionList />
+          <QuestionList userId={authUser?.id || null} />
         </Suspense>
       </div>
     </HydrationBoundary>

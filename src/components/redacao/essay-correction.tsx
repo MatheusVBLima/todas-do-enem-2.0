@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { useQuery, useQueryClient } from "@tanstack/react-query"
 import { ArrowLeft, Download, FileText, Edit } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -33,10 +33,9 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
   const router = useRouter()
   const queryClient = useQueryClient()
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
-  const [isRefetching, setIsRefetching] = useState(false)
 
   // Use React Query with refetchInterval for polling
-  const { data: essay, refetch } = useQuery({
+  const { data: essay = initialEssay } = useQuery({
     queryKey: queryKeys.essays.detail(initialEssay.id),
     queryFn: async () => {
       const result = await getEssay(initialEssay.id)
@@ -46,8 +45,6 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
       return result.data
     },
     initialData: initialEssay,
-    staleTime: 0, // Always consider data stale
-    gcTime: 0, // Don't keep old data in cache
     // Poll every 5 seconds only when status is SUBMITTED
     refetchInterval: (query) => {
       const data = query.state.data
@@ -57,28 +54,8 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
     refetchIntervalInBackground: true,
   })
 
-  // Fallback to initialEssay if query hasn't loaded yet
-  const currentEssay = essay || initialEssay
-
-  // Reset refetching state when data updates from server
-  useEffect(() => {
-    console.log("[EssayCorrection] useEffect - isRefetching:", isRefetching, "status:", currentEssay.status)
-    if (isRefetching) {
-      // If we detect the status changed (data was refetched), stop loading
-      if (currentEssay.status === "SUBMITTED" || currentEssay.status === "CORRECTED") {
-        console.log("[EssayCorrection] Data updated, stopping loading in 100ms")
-        // Give a small delay to ensure the UI updates
-        const timer = setTimeout(() => {
-          console.log("[EssayCorrection] Setting isRefetching to false")
-          setIsRefetching(false)
-        }, 100)
-        return () => clearTimeout(timer)
-      }
-    }
-  }, [isRefetching, currentEssay])
-
-  // Show skeleton during correction or while refetching
-  if (currentEssay.status === "SUBMITTED" || isRefetching) {
+  // Show skeleton during correction
+  if (essay.status === "SUBMITTED") {
     return (
       <div className="space-y-6">
         {/* Header skeleton */}
@@ -119,7 +96,7 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
     )
   }
 
-  if (!currentEssay.correction) {
+  if (!essay.correction) {
     return (
       <div className="rounded-lg border bg-card p-12 text-center">
         <FileText className="mx-auto mb-4 size-12 text-muted-foreground" />
@@ -131,7 +108,7 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
     )
   }
 
-  const correction = currentEssay.correction
+  const correction = essay.correction
 
   // Color for total score
   const getTotalScoreColor = (score: number) => {
@@ -155,8 +132,8 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
               <ArrowLeft className="size-4" />
             </Button>
             <div>
-              <h1 className="text-3xl font-bold">{currentEssay.title}</h1>
-              <p className="text-muted-foreground">{currentEssay.theme}</p>
+              <h1 className="text-3xl font-bold">{essay.title}</h1>
+              <p className="text-muted-foreground">{essay.theme}</p>
             </div>
           </div>
         </div>
@@ -177,12 +154,12 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
         <CardHeader>
           <CardTitle>Texto da Redação</CardTitle>
           <CardDescription>
-            {currentEssay.wordCount} palavras
+            {essay.wordCount} palavras
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="whitespace-pre-wrap font-serif text-base leading-relaxed">
-            {currentEssay.content}
+            {essay.content}
           </div>
         </CardContent>
       </Card>
@@ -273,27 +250,17 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
           </DialogHeader>
           <EssayEditor
             userId={userId}
-            essayId={currentEssay.id}
-            initialTitle={currentEssay.title || ""}
-            initialTheme={currentEssay.theme || ""}
-            initialContent={currentEssay.content}
-            onSaved={async (essayId) => {
-              console.log("[EssayCorrection] onSaved called, showing loading")
-              // Show loading state immediately BEFORE closing dialog
-              setIsRefetching(true)
+            essayId={essay.id}
+            initialTitle={essay.title || ""}
+            initialTheme={essay.theme || ""}
+            initialContent={essay.content}
+            onSaved={async () => {
               setIsEditDialogOpen(false)
 
-              console.log("[EssayCorrection] Calling router.refresh()")
-              // Force Server Component to refresh
-              router.refresh()
-
-              console.log("[EssayCorrection] Invalidating React Query cache")
-              // Also invalidate React Query cache
+              // Force immediate refetch to show updated status
               await queryClient.invalidateQueries({
-                queryKey: queryKeys.essays.detail(currentEssay.id)
+                queryKey: queryKeys.essays.detail(essay.id),
               })
-
-              console.log("[EssayCorrection] All done, waiting for data to update")
             }}
             onClose={() => setIsEditDialogOpen(false)}
           />

@@ -31,9 +31,12 @@ export function GroupDetailClient() {
   const groupId = params.id as string
   const [questionToRemove, setQuestionToRemove] = useState<string | null>(null)
 
-  const { data: groupResult, isLoading } = useQuery({
+  const { data: group, isLoading } = useQuery({
     queryKey: queryKeys.groups.detail(groupId),
-    queryFn: () => getGroup(groupId),
+    queryFn: async () => {
+      const result = await getGroup(groupId)
+      return result.success ? result.data : null
+    },
   })
 
   const removeMutation = useMutation({
@@ -62,7 +65,7 @@ export function GroupDetailClient() {
     )
   }
 
-  if (!groupResult?.success || !groupResult.data) {
+  if (!group) {
     return (
       <div className="flex min-h-[400px] flex-col items-center justify-center gap-4">
         <FolderOpen className="size-16 text-muted-foreground" />
@@ -75,8 +78,6 @@ export function GroupDetailClient() {
       </div>
     )
   }
-
-  const group = groupResult.data
   const questions = group.questions.map((q) => q.question)
 
   return (

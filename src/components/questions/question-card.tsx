@@ -30,20 +30,26 @@ interface QuestionCardProps {
   question: QuestionWithExam
   showAnswer?: boolean
   onRemove?: () => void
+  userId?: string | null
+  userPlan?: string | null
 }
 
-export function QuestionCard({ question, showAnswer = false, onRemove }: QuestionCardProps) {
+export function QuestionCard({ question, showAnswer = false, onRemove, userId = null, userPlan = null }: QuestionCardProps) {
   const [isAnswerVisible, setIsAnswerVisible] = useState(showAnswer)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [isExpanded, setIsExpanded] = useState(false)
+  const [showAIExplanation, setShowAIExplanation] = useState(false)
+  const [autoGenerateAI, setAutoGenerateAI] = useState(false)
 
   const area = KNOWLEDGE_AREAS[question.knowledgeArea as KnowledgeAreaKey]
   const subject = SUBJECTS[question.subject as SubjectKey]
 
-  // Parse supporting materials if available
-  const supportingMaterials: SupportingMaterial[] = question.supportingMaterials
-    ? JSON.parse(question.supportingMaterials)
-    : []
+  // Parse supporting materials if available (JSONB is already parsed)
+  const supportingMaterials: SupportingMaterial[] = Array.isArray(question.supportingMaterials)
+    ? question.supportingMaterials as unknown as SupportingMaterial[]
+    : (typeof question.supportingMaterials === 'string'
+        ? JSON.parse(question.supportingMaterials)
+        : [])
 
   const options = [
     { letter: "A", text: capitalizeSentences(question.optionA) },
@@ -60,6 +66,8 @@ export function QuestionCard({ question, showAnswer = false, onRemove }: Questio
 
   const handleRevealAnswer = () => {
     setIsAnswerVisible(true)
+    setShowAIExplanation(true)
+    setAutoGenerateAI(false)
   }
 
   const isCorrect = selectedOption === question.correctAnswer
@@ -83,11 +91,14 @@ export function QuestionCard({ question, showAnswer = false, onRemove }: Questio
             </span>
           </div>
           <div className="flex items-center gap-1">
-            <AddToGroupButton questionId={question.id} variant="default" size="sm" />
+            <AddToGroupButton questionId={question.id} userId={userId} variant="default" size="sm" />
             <Button
               variant="default"
               size="sm"
-              onClick={() => setIsAnswerVisible(true)}
+              onClick={() => {
+                setShowAIExplanation(true)
+                setAutoGenerateAI(true)
+              }}
               title="Ver explicação por IA"
             >
               <Brain className="mr-1.5 size-4" />
@@ -280,8 +291,14 @@ export function QuestionCard({ question, showAnswer = false, onRemove }: Questio
           </Button>
         </div>
 
-        {/* AI Explanation */}
-        {isAnswerVisible && <AIExplanation question={question} />}
+        {/* AI Explanation - shown when user clicks IA button OR after revealing answer */}
+        {(showAIExplanation || isAnswerVisible) && (
+          <AIExplanation
+            question={question}
+            userPlan={userPlan}
+            autoGenerate={autoGenerateAI}
+          />
+        )}
       </CardContent>
     </Card>
   )

@@ -4,12 +4,41 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { getCurrentUser, hasPaidPlan } from "@/lib/dev-user"
 import { SUBSCRIPTION_PLANS } from "@/lib/constants"
+import { getCurrentUser } from "@/lib/auth/server"
+import { getUserProfile } from "@/server/actions/users"
+import { redirect } from "next/navigation"
+import { EditProfileForm } from "@/components/conta/edit-profile-form"
 
-export default function ContaPage() {
-  const user = getCurrentUser()
-  const isPaidUser = hasPaidPlan(user.plan)
+export default async function ContaPage() {
+  // Get auth user
+  const authUser = await getCurrentUser()
+
+  if (!authUser) {
+    redirect('/login')
+  }
+
+  // Get user from database
+  const userResult = await getUserProfile(authUser.id)
+
+  if (!userResult.success || !userResult.data) {
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center gap-3">
+          <User className="size-6 text-primary" />
+          <h1 className="text-2xl font-bold">Minha Conta</h1>
+        </div>
+        <Card>
+          <CardContent className="pt-6">
+            <p className="text-muted-foreground">Erro ao carregar perfil do usuário</p>
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
+
+  const user = userResult.data
+  const isPaidUser = user.plan === 'RUMO_A_APROVACAO'
   const currentPlan = isPaidUser
     ? SUBSCRIPTION_PLANS.RUMO_A_APROVACAO
     : SUBSCRIPTION_PLANS.TENTANDO_A_SORTE
@@ -42,19 +71,26 @@ export default function ContaPage() {
           <Card>
             <CardHeader>
               <CardTitle>Informações Pessoais</CardTitle>
-              <CardDescription>Seus dados de cadastro</CardDescription>
+              <CardDescription>Atualize seus dados de cadastro</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div>
-                <p className="text-sm text-muted-foreground">Nome completo</p>
-                <p className="font-medium">{user.name}</p>
-              </div>
+              <EditProfileForm
+                authUserId={authUser.id}
+                currentName={user.name}
+              />
+
               <Separator />
+
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
                 <p className="font-medium">{user.email}</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  O email não pode ser alterado
+                </p>
               </div>
+
               <Separator />
+
               <div>
                 <p className="text-sm text-muted-foreground">Plano atual</p>
                 <Badge variant={isPaidUser ? "default" : "secondary"}>
@@ -77,8 +113,8 @@ export default function ContaPage() {
                     Receba atualizações sobre seu progresso
                   </p>
                 </div>
-                <Button variant="outline" size="sm">
-                  Ativar
+                <Button variant="outline" size="sm" disabled>
+                  Em breve
                 </Button>
               </div>
               <Separator />
@@ -89,8 +125,8 @@ export default function ContaPage() {
                     Defina quantas questões quer resolver por dia
                   </p>
                 </div>
-                <Button variant="outline" size="sm">
-                  Configurar
+                <Button variant="outline" size="sm" disabled>
+                  Em breve
                 </Button>
               </div>
             </CardContent>
@@ -156,13 +192,13 @@ export default function ContaPage() {
                   </ul>
                 </div>
 
-                <Button className="w-full" size="lg">
+                <Button className="w-full" size="lg" disabled>
                   <Crown className="size-4" />
-                  Fazer Upgrade Agora
+                  Em breve - Pagamentos
                 </Button>
 
                 <p className="text-center text-xs text-muted-foreground">
-                  Cancele quando quiser. Sem compromisso.
+                  Sistema de pagamentos será implementado em breve
                 </p>
               </CardContent>
             </Card>
@@ -181,10 +217,10 @@ export default function ContaPage() {
                   <div>
                     <p className="font-medium">Forma de pagamento</p>
                     <p className="text-sm text-muted-foreground">
-                      Cartão terminado em 4242
+                      Configuração em breve
                     </p>
                   </div>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" disabled>
                     Atualizar
                   </Button>
                 </div>
@@ -193,10 +229,10 @@ export default function ContaPage() {
                   <div>
                     <p className="font-medium">Próxima cobrança</p>
                     <p className="text-sm text-muted-foreground">
-                      R$25,00 em 01/02/2025
+                      Sistema de cobrança em desenvolvimento
                     </p>
                   </div>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" disabled>
                     Ver faturas
                   </Button>
                 </div>
@@ -208,7 +244,7 @@ export default function ContaPage() {
                       Você perderá acesso aos recursos premium
                     </p>
                   </div>
-                  <Button variant="destructive" size="sm">
+                  <Button variant="destructive" size="sm" disabled>
                     Cancelar
                   </Button>
                 </div>
@@ -230,54 +266,29 @@ export default function ContaPage() {
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="rounded-lg border bg-card p-4">
                   <p className="text-sm text-muted-foreground">Questões resolvidas</p>
-                  <p className="text-3xl font-bold">127</p>
+                  <p className="text-3xl font-bold">-</p>
+                  <p className="text-xs text-muted-foreground mt-1">Em breve</p>
                 </div>
                 <div className="rounded-lg border bg-card p-4">
                   <p className="text-sm text-muted-foreground">Taxa de acerto</p>
-                  <p className="text-3xl font-bold">68%</p>
+                  <p className="text-3xl font-bold">-</p>
+                  <p className="text-xs text-muted-foreground mt-1">Em breve</p>
                 </div>
                 <div className="rounded-lg border bg-card p-4">
                   <p className="text-sm text-muted-foreground">Sequência atual</p>
-                  <p className="text-3xl font-bold">7 dias</p>
+                  <p className="text-3xl font-bold">-</p>
+                  <p className="text-xs text-muted-foreground mt-1">Em breve</p>
                 </div>
               </div>
 
               <Separator />
 
-              <div>
-                <h3 className="mb-4 font-medium">Desempenho por área</h3>
-                <div className="space-y-3">
-                  {[
-                    { area: "Matemática", acertos: 72, total: 100 },
-                    { area: "Linguagens", acertos: 45, total: 60 },
-                    { area: "Ciências Humanas", acertos: 38, total: 50 },
-                    { area: "Ciências da Natureza", acertos: 28, total: 40 },
-                  ].map((item) => (
-                    <div key={item.area}>
-                      <div className="mb-1 flex items-center justify-between text-sm">
-                        <span className="font-medium">{item.area}</span>
-                        <span className="text-muted-foreground">
-                          {item.acertos}/{item.total} ({Math.round((item.acertos / item.total) * 100)}%)
-                        </span>
-                      </div>
-                      <div className="h-2 w-full overflow-hidden rounded-full bg-secondary">
-                        <div
-                          className="h-full bg-primary transition-all"
-                          style={{ width: `${(item.acertos / item.total) * 100}%` }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <Separator />
-
-              <div className="rounded-lg border bg-muted/50 p-4 text-center">
-                <BarChart3 className="mx-auto mb-2 size-8 text-muted-foreground" />
-                <p className="mb-1 font-medium">Gráficos detalhados em breve</p>
-                <p className="text-sm text-muted-foreground">
-                  Estamos trabalhando em visualizações ainda mais completas
+              <div className="rounded-lg border bg-muted/50 p-8 text-center">
+                <BarChart3 className="mx-auto mb-3 size-12 text-muted-foreground" />
+                <p className="mb-2 font-medium text-lg">Estatísticas detalhadas em breve</p>
+                <p className="text-sm text-muted-foreground max-w-md mx-auto">
+                  Estamos trabalhando em um sistema completo de acompanhamento de progresso
+                  com gráficos, desempenho por área de conhecimento e muito mais
                 </p>
               </div>
             </CardContent>

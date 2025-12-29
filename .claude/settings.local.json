@@ -30,7 +30,12 @@
       "Bash(copy placeholder.svg q15_zeferina.jpg)",
       "Bash(copy placeholder.svg q15_joao.jpg)",
       "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\components\\\\redacao\\\\correction-progress.tsx\")",
-      "Bash(node check-essays.js:*)"
+      "Bash(node check-essays.js:*)",
+      "Bash(node:*)",
+      "Bash(if exist prisma-backup rmdir /S /Q prisma-backup)",
+      "Bash(dir /s /b \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\")",
+      "Bash(findstr:*)",
+      "Bash(dir:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

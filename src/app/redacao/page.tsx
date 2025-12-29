@@ -1,27 +1,44 @@
-"use client"
-
-import { useState } from "react"
-import { FileText, Plus, Lock, Sparkles } from "lucide-react"
+import { FileText, Lock, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { getCurrentUser, hasPaidPlan } from "@/lib/dev-user"
+import { getCurrentUser } from "@/lib/auth/server"
+import { getUserProfile } from "@/server/actions/users"
+import { hasPaidPlan } from "@/lib/auth/permissions"
 import { RedacaoClient } from "@/components/redacao/redacao-client"
-import { UpgradeDialog } from "@/components/upgrade-dialog"
+import { redirect } from "next/navigation"
+import Link from "next/link"
 
-export default function RedacaoPage() {
-  const user = getCurrentUser()
+export default async function RedacaoPage() {
+  // Get auth user
+  const authUser = await getCurrentUser()
+
+  if (!authUser) {
+    redirect('/login?redirect=/redacao')
+  }
+
+  // Get user from database
+  const userResult = await getUserProfile(authUser.id)
+
+  if (!userResult.success || !userResult.data) {
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center gap-3">
+          <FileText className="size-6 text-primary" />
+          <h1 className="text-2xl font-bold">Redação</h1>
+        </div>
+        <div className="rounded-lg border bg-card p-8 text-center">
+          <p className="text-muted-foreground">Erro ao carregar dados do usuário</p>
+        </div>
+      </div>
+    )
+  }
+
+  const user = userResult.data
   const isPaidUser = hasPaidPlan(user.plan)
-  const [showUpgradeDialog, setShowUpgradeDialog] = useState(false)
 
   if (!isPaidUser) {
     return (
       <div className="space-y-6">
-        <UpgradeDialog
-          open={showUpgradeDialog}
-          onOpenChange={setShowUpgradeDialog}
-          feature="essay-correction"
-        />
-
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <FileText className="size-6 text-primary" />
@@ -38,14 +55,34 @@ export default function RedacaoPage() {
           <h2 className="text-lg font-semibold mb-2">
             Recurso exclusivo do plano Rumo à Aprovação
           </h2>
-          <p className="text-muted-foreground mb-4">
+          <p className="text-muted-foreground mb-6 max-w-md mx-auto">
             Faça upgrade para ter acesso à correção de redação por IA com feedback
-            detalhado por competência.
+            detalhado por competência e sugestões de melhoria.
           </p>
-          <Button onClick={() => setShowUpgradeDialog(true)}>
-            <Sparkles className="mr-2 size-4" />
-            Fazer Upgrade
-          </Button>
+
+          <div className="space-y-4 max-w-md mx-auto">
+            <div className="grid gap-2 text-left">
+              <div className="flex items-center gap-2 text-sm">
+                <Sparkles className="size-4 text-primary" />
+                <span>Correção automática por IA</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm">
+                <Sparkles className="size-4 text-primary" />
+                <span>Feedback por competência do ENEM</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm">
+                <Sparkles className="size-4 text-primary" />
+                <span>Sugestões de melhoria personalizadas</span>
+              </div>
+            </div>
+
+            <Button asChild size="lg" className="w-full">
+              <Link href="/planos">
+                <Sparkles className="mr-2 size-4" />
+                Ver Planos
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     )

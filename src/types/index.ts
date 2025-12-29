@@ -1,6 +1,6 @@
-import type { Question, QuestionGroup, Essay, EssayCorrection, User, Exam } from '@prisma/client'
+import type { Question, QuestionGroup, Essay, EssayCorrection, User, Exam } from '@/lib/supabase/types'
 
-// Re-export Prisma types
+// Re-export Supabase types
 export type { Question, QuestionGroup, Essay, EssayCorrection, User, Exam }
 
 // Question with relations
