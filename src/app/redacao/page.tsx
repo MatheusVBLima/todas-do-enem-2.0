@@ -1,4 +1,5 @@
 import { FileText, Lock, Sparkles } from "lucide-react"
+import { Suspense } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { getCurrentUser } from "@/lib/auth/server"
@@ -16,8 +17,8 @@ async function EssaysData({ userId }: { userId: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: 1000 * 60 * 5, // 5 minutos
-        gcTime: 1000 * 60 * 60,
+        staleTime: 1000 * 60 * 30, // 30 minutos
+        gcTime: 1000 * 60 * 60 * 24, // 24 horas
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
@@ -133,7 +134,12 @@ export default async function RedacaoPage() {
         Escreva e corrija suas redações com inteligência artificial seguindo os critérios do ENEM.
       </p>
 
-      <EssaysData userId={user.id} />
+      <Suspense fallback={<div className="space-y-4">
+        <Skeleton className="h-[200px] w-full rounded-lg" />
+        <Skeleton className="h-[200px] w-full rounded-lg" />
+      </div>}>
+        <EssaysData userId={user.id} />
+      </Suspense>
     </div>
   )
 }

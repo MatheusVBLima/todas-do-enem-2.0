@@ -70,6 +70,9 @@ export function NavMain({
         prefetchGroups()
       } else if (url === "/redacao") {
         prefetchEssays()
+      } else if (url === "/conta") {
+        // Prefetch data do perfil se necessário, embora /conta já faça fetch no server
+        router.prefetch("/conta")
       }
     }, 300)
   }

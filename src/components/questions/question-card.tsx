@@ -1,8 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { Eye, ChevronDown, ChevronUp, Trash2 } from "lucide-react"
+import { useRouter } from "next/navigation"
+import { Eye, ChevronDown, ChevronUp, Trash2, ExternalLink } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -13,6 +15,7 @@ import { KNOWLEDGE_AREAS, SUBJECTS, type KnowledgeAreaKey, type SubjectKey } fro
 import type { QuestionWithExam } from "@/types"
 import { AddToGroupButton } from "@/components/groups/add-to-group-button"
 import { AIExplanation } from "./ai-explanation"
+import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
 
 interface SupportingMaterial {
   type: 'text' | 'image'
@@ -35,9 +38,11 @@ interface QuestionCardProps {
 }
 
 export function QuestionCard({ question, showAnswer = false, onRemove, userId = null, userPlan = null }: QuestionCardProps) {
+  const router = useRouter()
   const [isAnswerVisible, setIsAnswerVisible] = useState(showAnswer)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [isExpanded, setIsExpanded] = useState(false)
+  const prefetchQuestion = usePrefetchQuestion()
 
   const area = KNOWLEDGE_AREAS[question.knowledgeArea as KnowledgeAreaKey]
   const subject = SUBJECTS[question.subject as SubjectKey]
@@ -82,9 +87,17 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
             </Badge>
             <Badge variant="secondary">{subject?.label}</Badge>
             <Badge variant="outline">{question.exam.year}</Badge>
-            <span className="text-sm text-muted-foreground">
+            <Link 
+              href={`/${question.id}`}
+              className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 group"
+              onMouseEnter={() => {
+                prefetchQuestion(question.id)
+                router.prefetch(`/${question.id}`)
+              }}
+            >
               Questão {question.questionNumber}
-            </span>
+              <ExternalLink className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
           </div>
           <div className="flex items-center gap-1">
             <AddToGroupButton questionId={question.id} userId={userId} variant="default" size="sm" />

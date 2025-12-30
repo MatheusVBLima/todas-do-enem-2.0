@@ -8,28 +8,18 @@ import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
 
-export default async function QuestoesPage() {
+async function QuestionsData({ userId, userPlan }: { userId: string | null; userPlan: string | null }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: 1000 * 60 * 5, // 5 minutos
-        gcTime: 1000 * 60 * 60, // 1 hora - manter cache quente
+        staleTime: 1000 * 60 * 30, // 30 minutos
+        gcTime: 1000 * 60 * 60 * 24, // 24 horas
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
       },
     },
   })
-  const authUser = await getCurrentUser()
-
-  // Get user plan if authenticated
-  let userPlan: string | null = null
-  if (authUser) {
-    const userResult = await getUserProfile(authUser.id)
-    if (userResult.success && userResult.data) {
-      userPlan = userResult.data.plan
-    }
-  }
 
   // Default filters for initial load
   const defaultFilters = {
@@ -47,6 +37,25 @@ export default async function QuestoesPage() {
   })
 
   return (
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <QuestionList userId={userId} userPlan={userPlan} />
+    </HydrationBoundary>
+  )
+}
+
+export default async function QuestoesPage() {
+  const authUser = await getCurrentUser()
+
+  // Get user plan if authenticated
+  let userPlan: string | null = null
+  if (authUser) {
+    const userResult = await getUserProfile(authUser.id)
+    if (userResult.success && userResult.data) {
+      userPlan = userResult.data.plan
+    }
+  }
+
+  return (
     <div className="space-y-6">
       <div className="flex items-center gap-3">
         <BookOpen className="size-6 text-primary" />
@@ -60,11 +69,9 @@ export default async function QuestoesPage() {
 
       <QuestionFilters />
 
-      <HydrationBoundary state={dehydrate(queryClient)}>
-        <Suspense fallback={<QuestionListSkeleton />}>
-          <QuestionList userId={authUser?.id || null} userPlan={userPlan} />
-        </Suspense>
-      </HydrationBoundary>
+      <Suspense fallback={<QuestionListSkeleton />}>
+        <QuestionsData userId={authUser?.id || null} userPlan={userPlan} />
+      </Suspense>
     </div>
   )
 }

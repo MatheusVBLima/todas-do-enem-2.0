@@ -1,16 +1,18 @@
+import { Suspense } from "react"
 import { FolderOpen } from "lucide-react"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getUserGroups } from "@/server/actions/groups"
 import { getCurrentUser } from "@/lib/auth/server"
 import { queryKeys } from "@/lib/query-keys"
 import { GroupsClient } from "@/components/groups/groups-client"
+import { GroupSkeleton } from "@/components/groups/group-skeleton"
 
 async function GroupsData({ userId }: { userId: string | null }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: 1000 * 60 * 5, // 5 minutos
-        gcTime: 1000 * 60 * 60,
+        staleTime: 1000 * 60 * 30, // 30 minutos
+        gcTime: 1000 * 60 * 60 * 24, // 24 horas
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
@@ -47,7 +49,9 @@ export default async function GruposPage() {
         Organize suas questões em grupos para estudar de forma mais eficiente.
       </p>
 
-      <GroupsData userId={authUser?.id || null} />
+      <Suspense fallback={<GroupSkeleton />}>
+        <GroupsData userId={authUser?.id || null} />
+      </Suspense>
     </div>
   )
 }

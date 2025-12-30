@@ -110,14 +110,20 @@ export function NavUser({
               <>
                 <DropdownMenuGroup>
                   <DropdownMenuItem asChild>
-                    <Link href="/conta">
+                    <Link 
+                      href="/conta"
+                      onMouseEnter={() => router.prefetch("/conta")}
+                    >
                       <BadgeCheck />
                       Minha Conta
                     </Link>
                   </DropdownMenuItem>
                   {user.plan !== "Rumo à Aprovação" && (
                     <DropdownMenuItem asChild>
-                      <Link href="/planos">
+                      <Link 
+                        href="/planos"
+                        onMouseEnter={() => router.prefetch("/planos")}
+                      >
                         <Sparkles />
                         Upgrade para PRO
                       </Link>
@@ -128,7 +134,10 @@ export function NavUser({
               </>
             )}
             <DropdownMenuItem asChild>
-              <Link href="/aparencia">
+              <Link 
+                href="/aparencia"
+                onMouseEnter={() => router.prefetch("/aparencia")}
+              >
                 <Palette />
                 Aparência
               </Link>

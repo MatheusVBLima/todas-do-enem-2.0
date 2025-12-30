@@ -43,12 +43,12 @@ export async function generateMetadata({
 }
 
 async function QuestionData({ id }: { id: string }) {
-  // Create QueryClient with staleTime: Infinity
+  // Create QueryClient with extended cache
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: 1000 * 60 * 5, // 5 minutos
-        gcTime: 1000 * 60 * 60, // 1 hora
+        staleTime: 1000 * 60 * 30, // 30 minutos
+        gcTime: 1000 * 60 * 60 * 24, // 24 horas
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
@@ -75,11 +75,7 @@ async function QuestionData({ id }: { id: string }) {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <Suspense fallback={<QuestionSkeleton />}>
-        <div className="container mx-auto max-w-4xl py-8">
-          <QuestionDetailClient questionId={id} userPlan={userPlan} />
-        </div>
-      </Suspense>
+      <QuestionDetailClient questionId={id} userPlan={userPlan} />
     </HydrationBoundary>
   )
 }
@@ -88,6 +84,10 @@ export default async function QuestionPage({ params }: QuestionPageProps) {
   const { id } = await params
 
   return (
-    <QuestionData id={id} />
+    <div className="container mx-auto max-w-4xl py-8">
+      <Suspense fallback={<QuestionSkeleton />}>
+        <QuestionData id={id} />
+      </Suspense>
+    </div>
   )
 }

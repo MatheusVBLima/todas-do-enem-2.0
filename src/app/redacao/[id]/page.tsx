@@ -1,4 +1,5 @@
 import { redirect, notFound } from "next/navigation"
+import { Suspense } from "react"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getEssay } from "@/server/actions/essays"
 import { EssayCorrectionClient } from "@/components/redacao/essay-correction-client"
@@ -6,7 +7,7 @@ import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { hasPaidPlan } from "@/lib/auth/permissions"
 import { queryKeys } from "@/lib/query-keys"
-import EssayDetailLoading from "./loading"
+import { EssaySkeleton } from "@/components/redacao/essay-skeleton"
 import type { Metadata } from "next"
 
 interface EssayDetailPageProps {
@@ -45,8 +46,8 @@ async function EssayData({ id, userId }: { id: string; userId: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: 1000 * 60 * 5,
-        gcTime: 1000 * 60 * 60,
+        staleTime: 1000 * 60 * 30, // 30 minutos
+        gcTime: 1000 * 60 * 60 * 24, // 24 horas
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
@@ -92,6 +93,8 @@ export default async function EssayDetailPage({ params }: EssayDetailPageProps) 
   }
 
   return (
-    <EssayData id={id} userId={user.id} />
+    <Suspense fallback={<EssaySkeleton />}>
+      <EssayData id={id} userId={user.id} />
+    </Suspense>
   )
 }

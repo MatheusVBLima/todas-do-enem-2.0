@@ -38,8 +38,8 @@ async function GroupData({ id }: { id: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: 1000 * 60 * 5,
-        gcTime: 1000 * 60 * 60,
+        staleTime: 1000 * 60 * 30, // 30 minutos
+        gcTime: 1000 * 60 * 60 * 24, // 24 horas
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
@@ -58,9 +58,7 @@ async function GroupData({ id }: { id: string }) {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <Suspense fallback={<GroupSkeleton />}>
-        <GroupDetailClient />
-      </Suspense>
+      <GroupDetailClient />
     </HydrationBoundary>
   )
 }
@@ -69,6 +67,8 @@ export default async function GroupDetailPage({ params }: GroupDetailPageProps) 
   const { id } = await params
 
   return (
-    <GroupData id={id} />
+    <Suspense fallback={<GroupSkeleton />}>
+      <GroupData id={id} />
+    </Suspense>
   )
 }

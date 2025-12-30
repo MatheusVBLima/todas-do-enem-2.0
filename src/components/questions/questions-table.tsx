@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/table"
 import { AddToGroupButton } from "@/components/groups/add-to-group-button"
 import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
+import { usePrefetchQuestions } from "@/hooks/use-prefetch-questions"
+import { useQuestionFilters } from "@/hooks/use-question-filters"
 import type { QuestionWithExam } from "@/types"
 
 interface QuestionsTableProps {
@@ -41,6 +43,12 @@ export function QuestionsTable({
 }: QuestionsTableProps) {
   const router = useRouter()
   const prefetchQuestion = usePrefetchQuestion()
+  const prefetchQuestions = usePrefetchQuestions()
+  const [filters] = useQuestionFilters()
+
+  const handlePrefetchPage = (page: number) => {
+    prefetchQuestions({ ...filters, pagina: page })
+  }
 
   if (isLoading) {
     return (
@@ -138,6 +146,7 @@ export function QuestionsTable({
             size="sm"
             disabled={pagination.page <= 1}
             onClick={() => onPageChange(pagination.page - 1)}
+            onMouseEnter={() => pagination.page > 1 && handlePrefetchPage(pagination.page - 1)}
           >
             <ChevronLeft className="size-4" />
             Anterior
@@ -145,7 +154,7 @@ export function QuestionsTable({
 
           <div className="flex items-center gap-1">
             {Array.from({ length: Math.min(5, pagination.totalPages) }, (_, i) => {
-              // Show first page, current page, and last page with ... in between
+              // ... same logic ...
               let pageNum: number
 
               if (pagination.totalPages <= 5) {
@@ -164,6 +173,7 @@ export function QuestionsTable({
                   variant={pagination.page === pageNum ? "default" : "outline"}
                   size="sm"
                   onClick={() => onPageChange(pageNum)}
+                  onMouseEnter={() => handlePrefetchPage(pageNum)}
                   className="min-w-9"
                 >
                   {pageNum}
@@ -177,6 +187,7 @@ export function QuestionsTable({
             size="sm"
             disabled={!pagination.hasMore}
             onClick={() => onPageChange(pagination.page + 1)}
+            onMouseEnter={() => pagination.hasMore && handlePrefetchPage(pagination.page + 1)}
           >
             Próxima
             <ChevronRight className="size-4" />
