@@ -30,7 +30,7 @@ export function GroupDetailClient() {
   const groupId = params.id as string
   const [questionToRemove, setQuestionToRemove] = useState<string | null>(null)
 
-  const { data: group, isLoading } = useQuery({
+  const { data: group } = useQuery({
     queryKey: queryKeys.groups.detail(groupId),
     queryFn: async () => {
       const result = await getGroup(groupId)
@@ -50,19 +50,6 @@ export function GroupDetailClient() {
       }
     },
   })
-
-  if (isLoading) {
-    return (
-      <div className="space-y-6">
-        <div className="h-10 w-64 animate-pulse rounded-lg bg-muted" />
-        <div className="grid gap-4">
-          {[...Array(3)].map((_, i) => (
-            <div key={i} className="h-48 animate-pulse rounded-lg bg-muted" />
-          ))}
-        </div>
-      </div>
-    )
-  }
 
   if (!group) {
     return (

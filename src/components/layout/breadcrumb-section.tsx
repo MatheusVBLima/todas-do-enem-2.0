@@ -47,14 +47,14 @@ export function BreadcrumbSection() {
   const prefetchEssay = usePrefetchEssay()
 
   // Fetch question data if needed
-  const { data: question, isLoading: isLoadingQuestion } = useQuery({
+  const { data: question } = useQuery({
     queryKey: queryKeys.questions.detail(segments[0] || 'placeholder'),
     queryFn: () => getQuestion(segments[0]),
     enabled: isQuestionPage && !!segments[0],
   })
 
   // Fetch group data if needed
-  const { data: group, isLoading: isLoadingGroup } = useQuery({
+  const { data: group } = useQuery({
     queryKey: queryKeys.groups.detail(segments[1] || 'placeholder'),
     queryFn: async () => {
       const result = await getGroup(segments[1])
@@ -64,7 +64,7 @@ export function BreadcrumbSection() {
   })
 
   // Fetch essay data if needed
-  const { data: essay, isLoading: isLoadingEssay } = useQuery({
+  const { data: essay } = useQuery({
     queryKey: queryKeys.essays.detail(segments[1] || 'placeholder'),
     queryFn: async () => {
       const result = await getEssay(segments[1])
@@ -102,27 +102,21 @@ export function BreadcrumbSection() {
       if (isCUID(segment)) {
         if (isQuestionPage && index === 0) {
           // Question at root: /[id]
-          if (isLoadingQuestion) {
-            label = "..."
-          } else if (question) {
+          if (question) {
             label = `Q${question.questionNumber} - ${question.exam.year}`
           } else {
             label = "Questão"
           }
         } else if (isGroupPage && index === 1) {
           // Group detail: /grupos/[id]
-          if (isLoadingGroup) {
-            label = "..."
-          } else if (group) {
+          if (group) {
             label = group.name
           } else {
             label = "Grupo"
           }
         } else if (isEssayPage && index === 1) {
           // Essay detail: /redacao/[id]
-          if (isLoadingEssay) {
-            label = "..."
-          } else if (essay) {
+          if (essay) {
             // Use title if available, otherwise first 3 words of content
             if (essay.title && essay.title.trim()) {
               label = essay.title

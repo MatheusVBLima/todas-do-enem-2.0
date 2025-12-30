@@ -22,7 +22,7 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
   const queryClient = useQueryClient()
   const [viewMode, setViewMode] = useState<"cards" | "table">("cards")
 
-  const { data, isLoading, error } = useQuery({
+  const { data, isPending, error } = useQuery({
     queryKey: queryKeys.questions.list(filters),
     queryFn: () => getQuestions(filters),
   })
@@ -38,7 +38,7 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
     }
   }, [data?.pagination.hasMore, filters, queryClient])
 
-  if (isLoading) {
+  if (isPending) {
     return <QuestionListSkeleton />
   }
 

@@ -23,7 +23,7 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
   const queryClient = useQueryClient()
 
   // Fetch essays
-  const { data: essaysResult, isLoading } = useQuery({
+  const { data: essaysResult } = useQuery({
     queryKey: queryKeys.essays.list(userId),
     queryFn: () => getEssays(userId),
     staleTime: Infinity,

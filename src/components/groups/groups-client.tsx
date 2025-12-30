@@ -29,7 +29,7 @@ export function GroupsClient() {
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false)
   const [selectedGroup, setSelectedGroup] = useState<any>(null)
 
-  const { data: groupsResult, isLoading } = useQuery({
+  const { data: groupsResult, isPending } = useQuery({
     queryKey: queryKeys.groups.list(DEV_USER.id),
     queryFn: () => getUserGroups(DEV_USER.id),
   })
@@ -97,13 +97,7 @@ export function GroupsClient() {
         Organize suas questões em grupos para estudar de forma mais eficiente.
       </p>
 
-      {isLoading ? (
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {[...Array(3)].map((_, i) => (
-            <div key={i} className="h-32 animate-pulse rounded-lg bg-muted" />
-          ))}
-        </div>
-      ) : !groups || groups.length === 0 ? (
+      {!groups || groups.length === 0 ? (
         <Empty>
           <EmptyHeader>
             <EmptyMedia variant="icon">
