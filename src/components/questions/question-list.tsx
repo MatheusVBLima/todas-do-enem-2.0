@@ -1,6 +1,6 @@
 "use client"
 
-import { useQuery, useQueryClient } from "@tanstack/react-query"
+import { useSuspenseQuery, useQueryClient } from "@tanstack/react-query"
 import { ChevronLeft, ChevronRight, LayoutGrid, Table2, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
@@ -21,11 +21,9 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
   const queryClient = useQueryClient()
   const [viewMode, setViewMode] = useState<"cards" | "table">("cards")
 
-  const { data, isPending, isFetching } = useQuery({
+  const { data } = useSuspenseQuery({
     queryKey: queryKeys.questions.list(filters),
     queryFn: () => getQuestions(filters),
-    placeholderData: (previousData) => previousData,
-    refetchOnMount: false,
   })
 
   const prefetchPage = (page: number) => {
@@ -38,38 +36,12 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
 
   // Prefetch next page when current page loads (keeps paginação adiante quente)
   useEffect(() => {
-    if (data?.pagination.hasMore) {
+    if (data.pagination.hasMore) {
       prefetchPage(filters.pagina + 1)
     }
-  }, [data?.pagination.hasMore, filters.pagina])
+  }, [data.pagination.hasMore, filters.pagina])
 
-  if (!data && isPending) {
-    return (
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <div className="h-4 w-48 animate-pulse rounded bg-muted" />
-          <div className="h-8 w-24 animate-pulse rounded bg-muted" />
-        </div>
-        {Array.from({ length: 3 }).map((_, i) => (
-          <div key={i} className="rounded-lg border p-6 space-y-4">
-            <div className="flex gap-2">
-              <div className="h-6 w-20 animate-pulse rounded bg-muted" />
-              <div className="h-6 w-24 animate-pulse rounded bg-muted" />
-              <div className="h-6 w-16 animate-pulse rounded bg-muted" />
-            </div>
-            <div className="h-20 w-full animate-pulse rounded bg-muted" />
-            <div className="space-y-2">
-              {Array.from({ length: 5 }).map((_, j) => (
-                <div key={j} className="h-12 w-full animate-pulse rounded bg-muted" />
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    )
-  }
-
-  if (!data || data.data.length === 0) {
+  if (data.data.length === 0) {
     const hasActiveFilters = filters.anos?.length > 0 || filters.areas?.length > 0 || filters.disciplinas?.length > 0 || filters.busca
 
     return (

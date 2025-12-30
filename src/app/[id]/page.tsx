@@ -1,6 +1,8 @@
+import { Suspense } from "react"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getQuestion } from "@/server/actions/questions"
 import { QuestionDetailClient } from "@/components/questions/question-detail-client"
+import { QuestionSkeleton } from "@/components/questions/question-skeleton"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
@@ -73,9 +75,11 @@ async function QuestionData({ id }: { id: string }) {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <div className="container mx-auto max-w-4xl py-8">
-        <QuestionDetailClient questionId={id} userPlan={userPlan} />
-      </div>
+      <Suspense fallback={<QuestionSkeleton />}>
+        <div className="container mx-auto max-w-4xl py-8">
+          <QuestionDetailClient questionId={id} userPlan={userPlan} />
+        </div>
+      </Suspense>
     </HydrationBoundary>
   )
 }

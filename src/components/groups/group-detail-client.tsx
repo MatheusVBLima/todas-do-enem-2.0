@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { QuestionCard } from "@/components/questions/question-card"
 import { PDFExportButton } from "@/components/export/pdf-export-button"
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
+import { useSuspenseQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import { getGroup, removeQuestionFromGroup } from "@/server/actions/groups"
 import { toast } from "sonner"
 import Link from "next/link"
@@ -30,16 +30,12 @@ export function GroupDetailClient() {
   const groupId = params.id as string
   const [questionToRemove, setQuestionToRemove] = useState<string | null>(null)
 
-  const { data: group, isPending } = useQuery({
+  const { data: group } = useSuspenseQuery({
     queryKey: queryKeys.groups.detail(groupId),
     queryFn: async () => {
       const result = await getGroup(groupId)
       return result.success ? result.data : null
     },
-    placeholderData: (prev) => prev,
-    refetchOnMount: false,
-    refetchOnWindowFocus: false,
-    refetchOnReconnect: false,
   })
 
   const removeMutation = useMutation({
@@ -54,32 +50,6 @@ export function GroupDetailClient() {
       }
     },
   })
-
-  if (isPending && !group) {
-    return (
-      <div className="space-y-6">
-        <div className="flex items-center gap-4">
-          <div className="h-10 w-10 rounded-full bg-muted animate-pulse" />
-          <div className="space-y-2 flex-1">
-            <div className="h-5 w-40 bg-muted rounded animate-pulse" />
-            <div className="h-4 w-64 bg-muted rounded animate-pulse" />
-          </div>
-        </div>
-        <div className="space-y-3">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <div key={i} className="rounded-lg border p-4 space-y-3 animate-pulse">
-              <div className="h-4 w-3/4 bg-muted rounded" />
-              <div className="space-y-2">
-                {Array.from({ length: 4 }).map((__, j) => (
-                  <div key={j} className="h-3 w-full bg-muted rounded" />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    )
-  }
 
   if (!group) {
     return (

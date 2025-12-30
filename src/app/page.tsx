@@ -1,5 +1,7 @@
+import { Suspense } from "react"
 import { BookOpen } from "lucide-react"
 import { QuestionFilters, QuestionList } from "@/components/questions"
+import { QuestionListSkeleton } from "@/components/questions/question-list-skeleton"
 import { QueryClient, dehydrate, HydrationBoundary } from "@tanstack/react-query"
 import { getQuestions } from "@/server/actions/questions"
 import { getCurrentUser } from "@/lib/auth/server"
@@ -45,21 +47,24 @@ export default async function QuestoesPage() {
   })
 
   return (
-    <HydrationBoundary state={dehydrate(queryClient)}>
-      <div className="space-y-6">
-        <div className="flex items-center gap-3">
-          <BookOpen className="size-6 text-primary" />
-          <h1 className="text-2xl font-bold">Questões do ENEM</h1>
-        </div>
-
-        <p className="text-muted-foreground">
-          Navegue por todas as questões do ENEM desde 1998. Use os filtros para
-          encontrar questões específicas.
-        </p>
-
-        <QuestionFilters />
-        <QuestionList userId={authUser?.id || null} userPlan={userPlan} />
+    <div className="space-y-6">
+      <div className="flex items-center gap-3">
+        <BookOpen className="size-6 text-primary" />
+        <h1 className="text-2xl font-bold">Questões do ENEM</h1>
       </div>
-    </HydrationBoundary>
+
+      <p className="text-muted-foreground">
+        Navegue por todas as questões do ENEM desde 1998. Use os filtros para
+        encontrar questões específicas.
+      </p>
+
+      <QuestionFilters />
+
+      <HydrationBoundary state={dehydrate(queryClient)}>
+        <Suspense fallback={<QuestionListSkeleton />}>
+          <QuestionList userId={authUser?.id || null} userPlan={userPlan} />
+        </Suspense>
+      </HydrationBoundary>
+    </div>
   )
 }

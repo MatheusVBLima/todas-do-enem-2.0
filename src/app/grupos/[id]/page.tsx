@@ -1,7 +1,9 @@
+import { Suspense } from "react"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getGroup } from "@/server/actions/groups"
 import { queryKeys } from "@/lib/query-keys"
 import { GroupDetailClient } from "@/components/groups/group-detail-client"
+import { GroupSkeleton } from "@/components/groups/group-skeleton"
 import type { Metadata } from "next"
 
 interface GroupDetailPageProps {
@@ -56,7 +58,9 @@ async function GroupData({ id }: { id: string }) {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <GroupDetailClient />
+      <Suspense fallback={<GroupSkeleton />}>
+        <GroupDetailClient />
+      </Suspense>
     </HydrationBoundary>
   )
 }
