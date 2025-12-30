@@ -20,6 +20,11 @@ export interface Database {
           email: string
           name: string | null
           plan: string
+          stripeCustomerId: string | null
+          stripeSubscriptionId: string | null
+          stripeSubscriptionStatus: string | null
+          stripePriceId: string | null
+          stripeCurrentPeriodEnd: string | null
           createdAt: string
           updatedAt: string
         }
@@ -28,6 +33,11 @@ export interface Database {
           email: string
           name?: string | null
           plan?: string
+          stripeCustomerId?: string | null
+          stripeSubscriptionId?: string | null
+          stripeSubscriptionStatus?: string | null
+          stripePriceId?: string | null
+          stripeCurrentPeriodEnd?: string | null
           createdAt?: string
           updatedAt?: string
         }
@@ -36,6 +46,11 @@ export interface Database {
           email?: string
           name?: string | null
           plan?: string
+          stripeCustomerId?: string | null
+          stripeSubscriptionId?: string | null
+          stripeSubscriptionStatus?: string | null
+          stripePriceId?: string | null
+          stripeCurrentPeriodEnd?: string | null
           createdAt?: string
           updatedAt?: string
         }

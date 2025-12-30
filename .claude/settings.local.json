@@ -39,7 +39,13 @@
       "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\stores\\\\use-chat-store.ts\")",
       "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\app\\\\loading.tsx\")",
       "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\app\\\\grupos\\\\loading.tsx\")",
-      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\app\\\\redacao\\\\loading.tsx\")"
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\app\\\\redacao\\\\loading.tsx\")",
+      "Bash(scoop bucket add:*)",
+      "Bash(where:*)",
+      "Bash(stripe --version:*)",
+      "Bash(stripe products create:*)",
+      "Bash(stripe prices create:*)",
+      "Bash(stripe config:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

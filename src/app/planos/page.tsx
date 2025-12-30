@@ -8,6 +8,7 @@ import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { hasPaidPlan } from "@/lib/auth/permissions"
 import { Skeleton } from "@/components/ui/skeleton"
+import { SubscribeButton } from "@/components/stripe/subscribe-button"
 
 async function PlanBadge() {
   const authUser = await getCurrentUser()
@@ -35,8 +36,10 @@ async function PlanBadge() {
 async function PlanActions({ planType }: { planType: 'FREE' | 'PRO' }) {
   const authUser = await getCurrentUser()
   let isPaidUser = false
+  let userId: string | null = null
 
   if (authUser) {
+    userId = authUser.id
     const userResult = await getUserProfile(authUser.id)
     if (userResult.success && userResult.data) {
       isPaidUser = hasPaidPlan(userResult.data.plan)
@@ -48,9 +51,16 @@ async function PlanActions({ planType }: { planType: 'FREE' | 'PRO' }) {
       <Button
         variant="outline"
         className="w-full"
-        disabled={!isPaidUser}
+        disabled
       >
-        {isPaidUser ? "Plano Atual" : "Plano Gratuito"}
+        {!isPaidUser ? (
+          <>
+            <Check className="mr-2 size-4" />
+            Plano Atual
+          </>
+        ) : (
+          "Plano Gratuito"
+        )}
       </Button>
     )
   }
@@ -61,10 +71,7 @@ async function PlanActions({ planType }: { planType: 'FREE' | 'PRO' }) {
       Plano Atual
     </Button>
   ) : (
-    <Button className="w-full" disabled>
-      <Sparkles className="mr-2 size-4" />
-      Em breve - Integração com Polar
-    </Button>
+    <SubscribeButton userId={userId} />
   )
 }
 

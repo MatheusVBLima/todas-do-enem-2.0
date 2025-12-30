@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { User, Crown, Zap, CreditCard, BarChart3 } from "lucide-react"
+import { User, Crown, Zap, CreditCard, BarChart3, Calendar, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -8,9 +8,15 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { SUBSCRIPTION_PLANS } from "@/lib/constants"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
+import { getSubscriptionDetails } from "@/server/actions/stripe"
 import { redirect } from "next/navigation"
 import { EditProfileForm } from "@/components/conta/edit-profile-form"
 import { Skeleton } from "@/components/ui/skeleton"
+import { CancelSubscriptionButton } from "@/components/conta/cancel-subscription-button"
+import { ReactivateSubscriptionButton } from "@/components/conta/reactivate-subscription-button"
+import { SubscribeButton } from "@/components/stripe/subscribe-button"
+import Link from "next/link"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 
 async function AccountData({ userId }: { userId: string }) {
   const userResult = await getUserProfile(userId)
@@ -30,6 +36,13 @@ async function AccountData({ userId }: { userId: string }) {
   const currentPlan = isPaidUser
     ? SUBSCRIPTION_PLANS.RUMO_A_APROVACAO
     : SUBSCRIPTION_PLANS.TENTANDO_A_SORTE
+
+  // Fetch subscription details if user has Stripe subscription
+  const subscriptionDetails = user.stripeSubscriptionId
+    ? await getSubscriptionDetails()
+    : null
+
+  const hasActiveSubscription = user.stripeSubscriptionId && user.stripeSubscriptionStatus === 'active'
 
   return (
     <Tabs defaultValue="perfil" className="space-y-6">
@@ -156,7 +169,7 @@ async function AccountData({ userId }: { userId: string }) {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold">R$25</span>
+                <span className="text-4xl font-bold">R$ 29,90</span>
                 <span className="text-muted-foreground">/mês</span>
               </div>
 
@@ -174,19 +187,26 @@ async function AccountData({ userId }: { userId: string }) {
                 </ul>
               </div>
 
-              <Button className="w-full" size="lg" disabled>
-                <Crown className="size-4" />
-                Em breve - Pagamentos
-              </Button>
+              <SubscribeButton userId={userId} />
 
               <p className="text-center text-xs text-muted-foreground">
-                Sistema de pagamentos será implementado em breve
+                Pagamento seguro processado pelo Stripe
               </p>
             </CardContent>
           </Card>
         )}
 
-        {isPaidUser && (
+        {isPaidUser && !hasActiveSubscription && (
+          <Alert variant="destructive">
+            <AlertCircle className="size-4" />
+            <AlertDescription>
+              Seu plano foi configurado manualmente. Para gerenciar sua assinatura via Stripe,
+              faça o downgrade para o plano gratuito e assine novamente através da página de planos.
+            </AlertDescription>
+          </Alert>
+        )}
+
+        {isPaidUser && hasActiveSubscription && (
           <Card>
             <CardHeader>
               <CardTitle>Gerenciar Assinatura</CardTitle>
@@ -195,40 +215,90 @@ async function AccountData({ userId }: { userId: string }) {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
+              {/* Subscription Status Alert if Cancellation Scheduled */}
+              {subscriptionDetails?.success && subscriptionDetails.data?.cancelAtPeriodEnd && (
+                <Alert>
+                  <Calendar className="size-4" />
+                  <AlertDescription className="flex items-start justify-between gap-4">
+                    <div>
+                      <strong>Assinatura cancelada.</strong> Você manterá acesso aos recursos PRO até{' '}
+                      {subscriptionDetails.data.cancelAt &&
+                        new Date(subscriptionDetails.data.cancelAt).toLocaleDateString('pt-BR', {
+                          day: '2-digit',
+                          month: 'long',
+                          year: 'numeric',
+                        })}
+                    </div>
+                    <ReactivateSubscriptionButton />
+                  </AlertDescription>
+                </Alert>
+              )}
+
               <div className="flex items-center justify-between">
                 <div>
                   <p className="font-medium">Forma de pagamento</p>
                   <p className="text-sm text-muted-foreground">
-                    Configuração em breve
+                    {subscriptionDetails?.success && subscriptionDetails.data?.cardLast4
+                      ? `${subscriptionDetails.data.cardBrand?.toUpperCase() || 'Cartão'} •••• ${subscriptionDetails.data.cardLast4}`
+                      : 'Cartão de crédito'}
                   </p>
                 </div>
-                <Button variant="outline" size="sm" disabled>
-                  Atualizar
+                <Button variant="outline" size="sm" asChild>
+                  <Link href="/planos">
+                    Atualizar
+                  </Link>
                 </Button>
               </div>
               <Separator />
+
+              {subscriptionDetails?.success && subscriptionDetails.data?.createdAt && (
+                <>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-medium">Assinatura desde</p>
+                      <p className="text-sm text-muted-foreground">
+                        {new Date(subscriptionDetails.data.createdAt).toLocaleDateString('pt-BR', {
+                          day: '2-digit',
+                          month: 'long',
+                          year: 'numeric',
+                        })}
+                      </p>
+                    </div>
+                  </div>
+                  <Separator />
+                </>
+              )}
+
               <div className="flex items-center justify-between">
                 <div>
                   <p className="font-medium">Próxima cobrança</p>
                   <p className="text-sm text-muted-foreground">
-                    Sistema de cobrança em desenvolvimento
+                    {user.stripeCurrentPeriodEnd
+                      ? new Date(user.stripeCurrentPeriodEnd).toLocaleDateString('pt-BR', {
+                          day: '2-digit',
+                          month: 'long',
+                          year: 'numeric'
+                        })
+                      : 'Data não disponível'}
                   </p>
                 </div>
-                <Button variant="outline" size="sm" disabled>
-                  Ver faturas
-                </Button>
+                <p className="text-sm font-medium">R$ 29,90</p>
               </div>
               <Separator />
               <div className="flex items-center justify-between">
                 <div>
                   <p className="font-medium text-destructive">Cancelar assinatura</p>
                   <p className="text-sm text-muted-foreground">
-                    Você perderá acesso aos recursos premium
+                    Você manterá acesso até o fim do período de cobrança
                   </p>
                 </div>
-                <Button variant="destructive" size="sm" disabled>
-                  Cancelar
-                </Button>
+                {subscriptionDetails?.success && subscriptionDetails.data?.cancelAtPeriodEnd ? (
+                  <Button variant="outline" size="sm" disabled>
+                    Cancelada
+                  </Button>
+                ) : (
+                  <CancelSubscriptionButton periodEnd={user.stripeCurrentPeriodEnd} />
+                )}
               </div>
             </CardContent>
           </Card>

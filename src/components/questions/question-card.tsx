@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, startTransition } from "react"
 import { useRouter } from "next/navigation"
 import { Eye, ChevronDown, ChevronUp, Trash2, ExternalLink } from "lucide-react"
 import Image from "next/image"
@@ -87,12 +87,14 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
             </Badge>
             <Badge variant="secondary">{subject?.label}</Badge>
             <Badge variant="outline">{question.exam.year}</Badge>
-            <Link 
+            <Link
               href={`/${question.id}`}
               className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 group"
               onMouseEnter={() => {
-                prefetchQuestion(question.id)
-                router.prefetch(`/${question.id}`)
+                startTransition(() => {
+                  prefetchQuestion(question.id)
+                  router.prefetch(`/${question.id}`)
+                })
               }}
             >
               Questão {question.questionNumber}
