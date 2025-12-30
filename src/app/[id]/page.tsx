@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import { notFound } from "next/navigation"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getQuestion } from "@/server/actions/questions"
@@ -6,6 +7,7 @@ import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
 import type { QuestionWithExam } from "@/types"
+import QuestionDetailLoading from "./loading"
 
 interface QuestionPageProps {
   params: Promise<{
@@ -13,9 +15,7 @@ interface QuestionPageProps {
   }>
 }
 
-export default async function QuestionPage({ params }: QuestionPageProps) {
-  const { id } = await params
-
+async function QuestionData({ id }: { id: string }) {
   // Create QueryClient with staleTime: Infinity
   const queryClient = new QueryClient({
     defaultOptions: {
@@ -55,5 +55,15 @@ export default async function QuestionPage({ params }: QuestionPageProps) {
         <QuestionCard question={question} userPlan={userPlan} />
       </div>
     </HydrationBoundary>
+  )
+}
+
+export default async function QuestionPage({ params }: QuestionPageProps) {
+  const { id } = await params
+
+  return (
+    <Suspense fallback={<QuestionDetailLoading />}>
+      <QuestionData id={id} />
+    </Suspense>
   )
 }

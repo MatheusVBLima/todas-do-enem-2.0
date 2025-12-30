@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import { notFound, redirect } from "next/navigation"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getEssay } from "@/server/actions/essays"
@@ -6,11 +7,48 @@ import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { hasPaidPlan } from "@/lib/auth/permissions"
 import { queryKeys } from "@/lib/query-keys"
+import EssayDetailLoading from "./loading"
 
 interface EssayDetailPageProps {
   params: Promise<{
     id: string
   }>
+}
+
+async function EssayData({ id, userId }: { id: string; userId: string }) {
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: Infinity,
+      },
+    },
+  })
+
+  // Prefetch essay
+  await queryClient.prefetchQuery({
+    queryKey: queryKeys.essays.detail(id),
+    queryFn: () => getEssay(id),
+  })
+
+  // Get essay from cache
+  const result = queryClient.getQueryData(queryKeys.essays.detail(id)) as Awaited<ReturnType<typeof getEssay>> | undefined
+
+  if (!result?.success || !result.data) {
+    notFound()
+  }
+
+  const essay = result.data
+
+  // Verify ownership
+  if (essay.userId !== userId) {
+    notFound()
+  }
+
+  return (
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <EssayCorrection essay={essay} userId={userId} />
+    </HydrationBoundary>
+  )
 }
 
 export default async function EssayDetailPage({ params }: EssayDetailPageProps) {
@@ -37,38 +75,9 @@ export default async function EssayDetailPage({ params }: EssayDetailPageProps) 
     redirect("/redacao")
   }
 
-  // Create QueryClient with staleTime: Infinity
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      queries: {
-        staleTime: Infinity,
-      },
-    },
-  })
-
-  // Prefetch essay
-  await queryClient.prefetchQuery({
-    queryKey: queryKeys.essays.detail(id),
-    queryFn: () => getEssay(id),
-  })
-
-  // Get essay from cache
-  const result = queryClient.getQueryData(queryKeys.essays.detail(id)) as Awaited<ReturnType<typeof getEssay>> | undefined
-
-  if (!result?.success || !result.data) {
-    notFound()
-  }
-
-  const essay = result.data
-
-  // Verify ownership
-  if (essay.userId !== user.id) {
-    notFound()
-  }
-
   return (
-    <HydrationBoundary state={dehydrate(queryClient)}>
-      <EssayCorrection essay={essay} userId={user.id} />
-    </HydrationBoundary>
+    <Suspense fallback={<EssayDetailLoading />}>
+      <EssayData id={id} userId={user.id} />
+    </Suspense>
   )
 }

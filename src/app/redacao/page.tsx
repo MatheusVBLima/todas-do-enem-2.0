@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import { FileText, Lock, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -10,6 +11,32 @@ import Link from "next/link"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { queryKeys } from "@/lib/query-keys"
 import { getEssays } from "@/server/actions/essays"
+import RedacaoLoading from "./loading"
+
+async function EssaysData({ userId }: { userId: string }) {
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: Infinity,
+      },
+    },
+  })
+
+  try {
+    await queryClient.prefetchQuery({
+      queryKey: queryKeys.essays.list(userId),
+      queryFn: () => getEssays(userId),
+    })
+  } catch (error) {
+    console.error("Error prefetching essays:", error)
+  }
+
+  return (
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <RedacaoClient userId={userId} />
+    </HydrationBoundary>
+  )
+}
 
 export default async function RedacaoPage() {
   // Get auth user
@@ -91,27 +118,9 @@ export default async function RedacaoPage() {
     )
   }
 
-  // Prefetch essays list for paid users
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      queries: {
-        staleTime: Infinity,
-      },
-    },
-  })
-
-  try {
-    await queryClient.prefetchQuery({
-      queryKey: queryKeys.essays.list(user.id),
-      queryFn: () => getEssays(user.id),
-    })
-  } catch (error) {
-    console.error("Error prefetching essays:", error)
-  }
-
   return (
-    <HydrationBoundary state={dehydrate(queryClient)}>
-      <RedacaoClient userId={user.id} />
-    </HydrationBoundary>
+    <Suspense fallback={<RedacaoLoading />}>
+      <EssaysData userId={user.id} />
+    </Suspense>
   )
 }
