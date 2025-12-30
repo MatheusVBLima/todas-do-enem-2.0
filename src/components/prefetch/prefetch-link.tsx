@@ -58,12 +58,26 @@ export function PrefetchLink({
     }
   }
 
+  const handleFocus = () => {
+    // Prefetch imediato no foco (usuário está navegando intencionalmente)
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current)
+    }
+
+    queryClient.prefetchQuery({
+      queryKey,
+      queryFn,
+    })
+  }
+
   return (
     <Link
       {...linkProps}
       className={className}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onFocus={handleFocus}
+      onBlur={handleMouseLeave}
     >
       {children}
     </Link>

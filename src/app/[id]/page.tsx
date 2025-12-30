@@ -4,11 +4,40 @@ import { QuestionDetailClient } from "@/components/questions/question-detail-cli
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
+import type { Metadata } from "next"
+import { capitalizeSentences } from "@/lib/text-utils"
 
 interface QuestionPageProps {
   params: Promise<{
     id: string
   }>
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ id: string }>
+}): Promise<Metadata> {
+  const { id } = await params
+  const question = await getQuestion(id)
+
+  if (!question) {
+    return {
+      title: "Questão não encontrada | Todas do ENEM",
+      description: "Esta questão não está disponível.",
+    }
+  }
+
+  // Capitalizar e truncar para SEO
+  const statement = capitalizeSentences(question.statement)
+  const truncatedStatement = statement.length > 157
+    ? statement.substring(0, 157) + "..."
+    : statement
+
+  return {
+    title: `Q${question.questionNumber} - ${question.exam.year} | Todas do ENEM`,
+    description: truncatedStatement,
+  }
 }
 
 async function QuestionData({ id }: { id: string }) {

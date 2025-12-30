@@ -2,9 +2,34 @@ import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query
 import { getGroup } from "@/server/actions/groups"
 import { queryKeys } from "@/lib/query-keys"
 import { GroupDetailClient } from "@/components/groups/group-detail-client"
+import type { Metadata } from "next"
 
 interface GroupDetailPageProps {
   params: Promise<{ id: string }>
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ id: string }>
+}): Promise<Metadata> {
+  const { id } = await params
+  const result = await getGroup(id)
+
+  if (!result.success || !result.data) {
+    return {
+      title: "Grupo não encontrado | Todas do ENEM",
+      description: "Este grupo não está disponível.",
+    }
+  }
+
+  const group = result.data
+  const questionCount = group.questions?.length || 0
+
+  return {
+    title: `${group.name} | Grupos | Todas do ENEM`,
+    description: group.description || `Grupo de estudos com ${questionCount} questões`,
+  }
 }
 
 async function GroupData({ id }: { id: string }) {

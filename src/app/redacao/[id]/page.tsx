@@ -7,11 +7,38 @@ import { getUserProfile } from "@/server/actions/users"
 import { hasPaidPlan } from "@/lib/auth/permissions"
 import { queryKeys } from "@/lib/query-keys"
 import EssayDetailLoading from "./loading"
+import type { Metadata } from "next"
 
 interface EssayDetailPageProps {
   params: Promise<{
     id: string
   }>
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ id: string }>
+}): Promise<Metadata> {
+  const { id } = await params
+  const result = await getEssay(id)
+
+  if (!result.success || !result.data) {
+    return {
+      title: "Redação não encontrada | Todas do ENEM",
+      description: "Esta redação não está disponível.",
+    }
+  }
+
+  const essay = result.data
+  const statusText = essay.status === "SUBMITTED" ? "Em correção" :
+                     essay.status === "CORRECTED" ? "Corrigida" : "Rascunho"
+  const essayTitle = essay.title || essay.theme || "Redação"
+
+  return {
+    title: `${essayTitle} - ${statusText} | Redação | Todas do ENEM`,
+    description: `Redação sobre "${essayTitle}" - Status: ${statusText}`,
+  }
 }
 
 async function EssayData({ id, userId }: { id: string; userId: string }) {

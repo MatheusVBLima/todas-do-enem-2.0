@@ -107,10 +107,6 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
           Mostrando {data.data.length} de {pagination.total} questões
         </p>
 
-        {isFetching && (
-          <span className="text-xs text-muted-foreground">Atualizando…</span>
-        )}
-
         {/* View toggle */}
         <div className="flex gap-2">
           <Button
