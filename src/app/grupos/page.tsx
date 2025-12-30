@@ -46,9 +46,9 @@ async function GroupsData({ userId }: { userId: string | null }) {
     },
   })
 
-  // Server-side prefetch de grupos do usuário (NON-BLOCKING - removed await)
+  // Server-side prefetch de grupos do usuário (aguardado)
   if (userId) {
-    queryClient.prefetchQuery({
+    await queryClient.prefetchQuery({
       queryKey: queryKeys.groups.list(userId),
       queryFn: () => getUserGroups(userId),
     })
@@ -56,7 +56,7 @@ async function GroupsData({ userId }: { userId: string | null }) {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <GroupsClient />
+      <GroupsClient userId={userId} />
     </HydrationBoundary>
   )
 }

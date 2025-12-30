@@ -59,8 +59,8 @@ export default async function QuestoesPage() {
     pagina: 1,
   }
 
-  // Prefetch questions on server (NON-BLOCKING - removed await)
-  queryClient.prefetchQuery({
+  // Prefetch questions on server so hydration already has data
+  await queryClient.prefetchQuery({
     queryKey: queryKeys.questions.list(defaultFilters),
     queryFn: () => getQuestions(defaultFilters),
   })

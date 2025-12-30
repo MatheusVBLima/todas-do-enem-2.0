@@ -23,8 +23,8 @@ async function QuestionData({ id }: { id: string }) {
     },
   })
 
-  // Prefetch question (NON-BLOCKING - removed await)
-  queryClient.prefetchQuery({
+  // Prefetch question before hydration
+  await queryClient.prefetchQuery({
     queryKey: queryKeys.questions.detail(id),
     queryFn: () => getQuestion(id),
   })

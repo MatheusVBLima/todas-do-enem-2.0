@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Newsreader } from "next/font/google"
 import { Providers } from "@/providers"
 import { AppSidebar } from "@/components/app-sidebar"
 import { Header } from "@/components/layout"
@@ -8,6 +8,7 @@ import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/s
 import { Separator } from "@/components/ui/separator"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile, upsertUserInDatabase } from "@/server/actions/users"
+import { AppearanceScript } from "@/components/appearance-script"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -18,6 +19,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+})
+
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 })
 
 export const metadata: Metadata = {
@@ -73,8 +80,9 @@ export default async function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} antialiased`}
       >
+        <AppearanceScript />
         <Providers>
           <SidebarProvider>
             <AppSidebar user={user} />

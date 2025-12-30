@@ -69,9 +69,9 @@ async function EssaysData({ userId }: { userId: string }) {
     },
   })
 
-  // Prefetch essays (NON-BLOCKING - removed await)
+  // Prefetch essays antes da hidratação
   try {
-    queryClient.prefetchQuery({
+    await queryClient.prefetchQuery({
       queryKey: queryKeys.essays.list(userId),
       queryFn: () => getEssays(userId),
     })

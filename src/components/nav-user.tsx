@@ -5,6 +5,7 @@ import {
   ChevronsUpDown,
   LogIn,
   LogOut,
+  Palette,
   Sparkles,
   User,
 } from "lucide-react"
@@ -29,7 +30,6 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
-import { ThemeSwitcher } from "@/components/kibo-ui/theme-switcher"
 import { createClientSupabaseClient } from "@/lib/auth/client"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
@@ -127,12 +127,12 @@ export function NavUser({
                 <DropdownMenuSeparator />
               </>
             )}
-            <div className="px-2 py-1.5">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Tema</span>
-                <ThemeSwitcher />
-              </div>
-            </div>
+            <DropdownMenuItem asChild>
+              <Link href="/aparencia">
+                <Palette />
+                Aparência
+              </Link>
+            </DropdownMenuItem>
             <DropdownMenuSeparator />
             {isGuest ? (
               <DropdownMenuItem asChild>

@@ -43,11 +43,14 @@ export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
 
   const { data: groupDetails } = useQuery({
     queryKey: queryKeys.groups.detail(group.id),
-    queryFn: () => getGroup(group.id),
+    queryFn: async () => {
+      const result = await getGroup(group.id)
+      return result.success ? result.data : null
+    },
     enabled: false, // Only fetch on hover
   })
 
-  const questions = groupDetails?.success && groupDetails.data ? groupDetails.data.questions : []
+  const questions = groupDetails?.questions || []
   const previewQuestions = questions.slice(0, 3)
 
   return (

@@ -18,8 +18,8 @@ async function GroupData({ id }: { id: string }) {
     },
   })
 
-  // Server-side prefetch do grupo específico (NON-BLOCKING - removed await)
-  queryClient.prefetchQuery({
+  // Server-side prefetch do grupo específico (aguardado)
+  await queryClient.prefetchQuery({
     queryKey: queryKeys.groups.detail(id),
     queryFn: async () => {
       const result = await getGroup(id)

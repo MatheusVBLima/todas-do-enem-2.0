@@ -3,11 +3,21 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Check, Sparkles, BookOpen } from "lucide-react"
 import { SUBSCRIPTION_PLANS } from "@/lib/constants"
-import { getCurrentUser, hasPaidPlan } from "@/lib/dev-user"
+import { getCurrentUser } from "@/lib/auth/server"
+import { getUserProfile } from "@/server/actions/users"
+import { hasPaidPlan } from "@/lib/auth/permissions"
 
-export default function PlanosPage() {
-  const user = getCurrentUser()
-  const isPaidUser = hasPaidPlan(user.plan)
+export default async function PlanosPage() {
+  const authUser = await getCurrentUser()
+
+  let isPaidUser = false
+
+  if (authUser) {
+    const userResult = await getUserProfile(authUser.id)
+    if (userResult.success && userResult.data) {
+      isPaidUser = hasPaidPlan(userResult.data.plan)
+    }
+  }
 
   return (
     <div className="container mx-auto max-w-6xl space-y-8 py-8">

@@ -8,7 +8,6 @@ import { GroupCard } from "@/components/groups/group-card"
 import { GroupFormDialog } from "@/components/groups/group-form-dialog"
 import { useSuspenseQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import { getUserGroups, createGroup, updateGroup, deleteGroup } from "@/server/actions/groups"
-import { DEV_USER } from "@/lib/dev-user"
 import { toast } from "sonner"
 import { queryKeys } from "@/lib/query-keys"
 import {
@@ -22,21 +21,41 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 
-export function GroupsClient() {
+interface GroupsClientProps {
+  userId: string | null
+}
+
+export function GroupsClient({ userId }: GroupsClientProps) {
   const queryClient = useQueryClient()
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false)
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false)
   const [selectedGroup, setSelectedGroup] = useState<any>(null)
 
+  if (!userId) {
+    return (
+      <Empty>
+        <EmptyHeader>
+          <EmptyMedia variant="icon">
+            <FolderOpen className="size-6" />
+          </EmptyMedia>
+          <EmptyTitle>Faça login para ver seus grupos</EmptyTitle>
+          <EmptyDescription>
+            Conecte-se para criar e gerenciar seus grupos de questões.
+          </EmptyDescription>
+        </EmptyHeader>
+      </Empty>
+    )
+  }
+
   const { data: groupsResult } = useSuspenseQuery({
-    queryKey: queryKeys.groups.list(DEV_USER.id),
-    queryFn: () => getUserGroups(DEV_USER.id),
+    queryKey: queryKeys.groups.list(userId),
+    queryFn: () => getUserGroups(userId),
   })
 
   const createMutation = useMutation({
     mutationFn: (data: { name: string; description?: string; color: string }) =>
-      createGroup({ userId: DEV_USER.id, ...data }),
+      createGroup({ userId, ...data }),
     onSuccess: (result) => {
       if (result.success) {
         queryClient.invalidateQueries({ queryKey: queryKeys.groups.all })
