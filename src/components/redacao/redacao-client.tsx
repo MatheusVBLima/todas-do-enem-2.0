@@ -11,7 +11,6 @@ import { EnemCompetencias } from "./enem-competencias"
 import { useQuery, useQueryClient } from "@tanstack/react-query"
 import { getEssays } from "@/server/actions/essays"
 import { queryKeys } from "@/lib/query-keys"
-import { Skeleton } from "@/components/ui/skeleton"
 
 interface RedacaoClientProps {
   userId: string
@@ -114,15 +113,7 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
             </Button>
           </div>
 
-          {isLoading ? (
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <Skeleton key={i} className="h-48" />
-              ))}
-            </div>
-          ) : (
-            <EssayList essays={essays} onEdit={handleEditEssay} />
-          )}
+          <EssayList essays={essays} onEdit={handleEditEssay} />
         </TabsContent>
 
         {/* Tab: Competências do ENEM */}
