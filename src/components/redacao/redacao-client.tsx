@@ -73,18 +73,7 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
     : undefined
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <div className="flex items-center gap-3">
-        <FileText className="size-6 text-primary" />
-        <h1 className="text-2xl font-bold">Redação</h1>
-      </div>
-
-      <p className="text-muted-foreground">
-        Escreva suas redações e receba correção automática por IA seguindo as
-        competências do ENEM.
-      </p>
-
+    <>
       {/* Tabs */}
       <Tabs defaultValue="redacoes" className="space-y-6">
         <TabsList className="grid w-full grid-cols-2 lg:w-[400px]">
@@ -136,6 +125,6 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
           />
         </DialogContent>
       </Dialog>
-    </div>
+    </>
   )
 }

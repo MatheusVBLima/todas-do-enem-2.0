@@ -11,13 +11,60 @@ import Link from "next/link"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { queryKeys } from "@/lib/query-keys"
 import { getEssays } from "@/server/actions/essays"
-import RedacaoLoading from "./loading"
+import { Skeleton } from "@/components/ui/skeleton"
+
+function RedacaoLoading() {
+  return (
+    <>
+      {/* Tabs skeleton */}
+      <div className="flex gap-2">
+        <Skeleton className="h-10 w-40" />
+        <Skeleton className="h-10 w-40" />
+      </div>
+
+      {/* Header with button */}
+      <div className="flex items-center justify-between">
+        <Skeleton className="h-7 w-48" />
+        <Skeleton className="h-10 w-40" />
+      </div>
+
+      {/* Essay cards skeleton */}
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {Array.from({ length: 3 }).map((_, i) => (
+          <div key={i} className="rounded-lg border p-6 space-y-4">
+            <div className="flex items-start justify-between gap-2">
+              <div className="flex-1 space-y-2">
+                <Skeleton className="h-5 w-32" />
+                <Skeleton className="h-4 w-48" />
+              </div>
+              <Skeleton className="h-6 w-20 rounded-full" />
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <Skeleton className="h-4 w-16" />
+                <Skeleton className="h-4 w-12" />
+              </div>
+              <div className="flex items-center justify-between">
+                <Skeleton className="h-4 w-20" />
+                <Skeleton className="h-4 w-20" />
+              </div>
+            </div>
+            <div className="flex gap-2 pt-2">
+              <Skeleton className="h-9 flex-1" />
+              <Skeleton className="h-9 w-9" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}
 
 async function EssaysData({ userId }: { userId: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: Infinity,
+        staleTime: 1000 * 60 * 5, // 5 minutos
       },
     },
   })
@@ -120,8 +167,19 @@ export default async function RedacaoPage() {
   }
 
   return (
-    <Suspense fallback={<RedacaoLoading />}>
-      <EssaysData userId={user.id} />
-    </Suspense>
+    <div className="space-y-6">
+      <div className="flex items-center gap-3">
+        <FileText className="size-6 text-primary" />
+        <h1 className="text-2xl font-bold">Redação</h1>
+      </div>
+
+      <p className="text-muted-foreground">
+        Escreva e corrija suas redações com inteligência artificial seguindo os critérios do ENEM.
+      </p>
+
+      <Suspense fallback={<RedacaoLoading />}>
+        <EssaysData userId={user.id} />
+      </Suspense>
+    </div>
   )
 }

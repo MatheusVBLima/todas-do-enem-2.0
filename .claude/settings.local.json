@@ -36,7 +36,10 @@
       "Bash(dir /s /b \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\")",
       "Bash(findstr:*)",
       "Bash(dir:*)",
-      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\stores\\\\use-chat-store.ts\")"
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\stores\\\\use-chat-store.ts\")",
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\app\\\\loading.tsx\")",
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\app\\\\grupos\\\\loading.tsx\")",
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\app\\\\redacao\\\\loading.tsx\")"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -80,22 +80,13 @@ export function GroupsClient() {
   const groups = groupsResult?.success ? groupsResult.data : []
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <FolderOpen className="size-6 text-primary" />
-          <h1 className="text-2xl font-bold">Grupos de Questões</h1>
-        </div>
-
+    <>
+      <div className="flex items-center justify-end">
         <Button onClick={() => setIsCreateDialogOpen(true)}>
           <Plus className="size-4" />
           Novo Grupo
         </Button>
       </div>
-
-      <p className="text-muted-foreground">
-        Organize suas questões em grupos para estudar de forma mais eficiente.
-      </p>
 
       {!groups || groups.length === 0 ? (
         <Empty>
@@ -179,6 +170,6 @@ export function GroupsClient() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-    </div>
+    </>
   )
 }
