@@ -1,12 +1,3 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Check, Sparkles, BookOpen } from "lucide-react"
-import { SUBSCRIPTION_PLANS } from "@/lib/constants"
-import { getCurrentUser } from "@/lib/auth/server"
-import { getUserProfile } from "@/server/actions/users"
-import { hasPaidPlan } from "@/lib/auth/permissions"
-
 import { Suspense } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
