@@ -1,4 +1,3 @@
-import { Suspense } from "react"
 import { redirect, notFound } from "next/navigation"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getEssay } from "@/server/actions/essays"
@@ -19,7 +18,11 @@ async function EssayData({ id, userId }: { id: string; userId: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: Infinity,
+        staleTime: 1000 * 60 * 5,
+        gcTime: 1000 * 60 * 60,
+        refetchOnMount: false,
+        refetchOnWindowFocus: false,
+        refetchOnReconnect: false,
       },
     },
   })
@@ -62,8 +65,6 @@ export default async function EssayDetailPage({ params }: EssayDetailPageProps) 
   }
 
   return (
-    <Suspense fallback={<EssayDetailLoading />}>
-      <EssayData id={id} userId={user.id} />
-    </Suspense>
+    <EssayData id={id} userId={user.id} />
   )
 }

@@ -1,11 +1,9 @@
-import { Suspense } from "react"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getQuestion } from "@/server/actions/questions"
 import { QuestionDetailClient } from "@/components/questions/question-detail-client"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
-import QuestionDetailLoading from "./loading"
 
 interface QuestionPageProps {
   params: Promise<{
@@ -18,7 +16,11 @@ async function QuestionData({ id }: { id: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: Infinity,
+        staleTime: 1000 * 60 * 5, // 5 minutos
+        gcTime: 1000 * 60 * 60, // 1 hora
+        refetchOnMount: false,
+        refetchOnWindowFocus: false,
+        refetchOnReconnect: false,
       },
     },
   })
@@ -53,8 +55,6 @@ export default async function QuestionPage({ params }: QuestionPageProps) {
   const { id } = await params
 
   return (
-    <Suspense fallback={<QuestionDetailLoading />}>
-      <QuestionData id={id} />
-    </Suspense>
+    <QuestionData id={id} />
   )
 }

@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { EssayEditor } from "./essay-editor"
 import { EssayList } from "./essay-list"
 import { EnemCompetencias } from "./enem-competencias"
-import { useSuspenseQuery, useQueryClient } from "@tanstack/react-query"
+import { useQuery, useQueryClient } from "@tanstack/react-query"
 import { getEssays } from "@/server/actions/essays"
 import { queryKeys } from "@/lib/query-keys"
 
@@ -21,10 +21,14 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
   const [editingEssayId, setEditingEssayId] = useState<string | undefined>()
   const queryClient = useQueryClient()
 
-  // Fetch essays with useSuspenseQuery
-  const { data: essaysResult } = useSuspenseQuery({
+  // Fetch essays with hydration + cache reuse
+  const { data: essaysResult, isPending } = useQuery({
     queryKey: queryKeys.essays.list(userId),
     queryFn: () => getEssays(userId),
+    placeholderData: (prev) => prev,
+    refetchOnMount: false,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
   })
 
   const essays = essaysResult?.success ? essaysResult.data || [] : []
@@ -88,17 +92,47 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
         </TabsList>
 
         {/* Tab: Minhas Redações */}
-        <TabsContent value="redacoes" className="space-y-6">
-          <div className="flex items-center justify-between">
-            <h2 className="text-xl font-semibold">Minhas Redações</h2>
-            <Button onClick={handleNewEssay} className="gap-2">
-              <Plus className="size-4" />
-              Nova Redação
-            </Button>
-          </div>
+      <TabsContent value="redacoes" className="space-y-6">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-semibold">Minhas Redações</h2>
+          <Button onClick={handleNewEssay} className="gap-2">
+            <Plus className="size-4" />
+            Nova Redação
+          </Button>
+        </div>
 
+        {isPending && !essaysResult ? (
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {Array.from({ length: 3 }).map((_, i) => (
+              <div key={i} className="rounded-lg border p-6 space-y-4 animate-pulse">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="flex-1 space-y-2">
+                    <div className="h-5 w-32 bg-muted rounded" />
+                    <div className="h-4 w-48 bg-muted rounded" />
+                  </div>
+                  <div className="h-6 w-20 rounded-full bg-muted" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <div className="h-4 w-16 bg-muted rounded" />
+                    <div className="h-4 w-12 bg-muted rounded" />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <div className="h-4 w-20 bg-muted rounded" />
+                    <div className="h-4 w-20 bg-muted rounded" />
+                  </div>
+                </div>
+                <div className="flex gap-2 pt-2">
+                  <div className="h-9 flex-1 bg-muted rounded" />
+                  <div className="h-9 w-9 bg-muted rounded" />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
           <EssayList essays={essays} onEdit={handleEditEssay} />
-        </TabsContent>
+        )}
+      </TabsContent>
 
         {/* Tab: Competências do ENEM */}
         <TabsContent value="competencias">

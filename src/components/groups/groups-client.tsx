@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { GroupCard } from "@/components/groups/group-card"
 import { GroupFormDialog } from "@/components/groups/group-form-dialog"
-import { useSuspenseQuery, useMutation, useQueryClient } from "@tanstack/react-query"
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import { getUserGroups, createGroup, updateGroup, deleteGroup } from "@/server/actions/groups"
 import { toast } from "sonner"
 import { queryKeys } from "@/lib/query-keys"
@@ -48,9 +48,13 @@ export function GroupsClient({ userId }: GroupsClientProps) {
     )
   }
 
-  const { data: groupsResult } = useSuspenseQuery({
+  const { data: groupsResult, isPending } = useQuery({
     queryKey: queryKeys.groups.list(userId),
     queryFn: () => getUserGroups(userId),
+    placeholderData: (prev) => prev,
+    refetchOnMount: false,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
   })
 
   const createMutation = useMutation({
@@ -138,6 +142,28 @@ export function GroupsClient({ userId }: GroupsClientProps) {
                 setIsDeleteDialogOpen(true)
               }}
             />
+          ))}
+        </div>
+      )}
+
+      {isPending && !groupsResult && (
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="rounded-lg border p-6 space-y-4 animate-pulse">
+              <div className="flex items-start justify-between">
+                <div className="flex items-center gap-3 flex-1">
+                  <div className="size-10 rounded-full bg-muted" />
+                  <div className="space-y-2 flex-1">
+                    <div className="h-5 w-32 rounded bg-muted" />
+                    <div className="h-4 w-48 rounded bg-muted" />
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-between pt-4 border-t">
+                <div className="h-4 w-24 rounded bg-muted" />
+                <div className="h-8 w-8 rounded-full bg-muted" />
+              </div>
+            </div>
           ))}
         </div>
       )}

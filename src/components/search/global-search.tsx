@@ -9,12 +9,14 @@ import { Badge } from "@/components/ui/badge"
 import { useQuery } from "@tanstack/react-query"
 import { getQuestions } from "@/server/actions/questions"
 import { queryKeys } from "@/lib/query-keys"
+import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
 
 export function GlobalSearch() {
   const [open, setOpen] = useState(false)
   const [search, setSearch] = useState("")
   const [debouncedSearch, setDebouncedSearch] = useState("")
   const router = useRouter()
+  const prefetchQuestion = usePrefetchQuestion()
 
   // Keyboard shortcut: Cmd+K or Ctrl+K
   useEffect(() => {
@@ -59,12 +61,15 @@ export function GlobalSearch() {
     staleTime: 0, // Consider data stale immediately
   })
 
-  const handleSelect = useCallback((questionId: string) => {
+  const handleSelect = useCallback(async (questionId: string) => {
     setOpen(false)
     setSearch("")
     setDebouncedSearch("")
+    // Prefetch data + route to evitar flash/suspense
+    await prefetchQuestion(questionId)
+    router.prefetch(`/${questionId}`)
     router.push(`/${questionId}`)
-  }, [router])
+  }, [prefetchQuestion, router])
 
   // Clear search when closing dialog
   const handleOpenChange = useCallback((open: boolean) => {
@@ -129,6 +134,10 @@ export function GlobalSearch() {
                 <button
                   key={question.id}
                   onClick={() => handleSelect(question.id)}
+                  onMouseEnter={() => {
+                    prefetchQuestion(question.id)
+                    router.prefetch(`/${question.id}`)
+                  }}
                   className="data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none hover:bg-accent hover:text-accent-foreground"
                 >
                   <div className="flex flex-1 flex-col gap-1">

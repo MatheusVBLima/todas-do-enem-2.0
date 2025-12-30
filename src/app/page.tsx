@@ -1,4 +1,3 @@
-import { Suspense } from "react"
 import { BookOpen } from "lucide-react"
 import { QuestionFilters, QuestionList } from "@/components/questions"
 import { QueryClient, dehydrate, HydrationBoundary } from "@tanstack/react-query"
@@ -6,36 +5,16 @@ import { getQuestions } from "@/server/actions/questions"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
-import { Skeleton } from "@/components/ui/skeleton"
-
-function QuestoesLoading() {
-  return (
-    <div className="space-y-4">
-      <Skeleton className="h-10 w-full" />
-      {Array.from({ length: 3 }).map((_, i) => (
-        <div key={i} className="rounded-lg border p-6 space-y-4">
-          <div className="flex gap-2">
-            <Skeleton className="h-6 w-20" />
-            <Skeleton className="h-6 w-24" />
-            <Skeleton className="h-6 w-16" />
-          </div>
-          <Skeleton className="h-20 w-full" />
-          <div className="space-y-2">
-            {Array.from({ length: 5 }).map((_, j) => (
-              <Skeleton key={j} className="h-12 w-full" />
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  )
-}
 
 export default async function QuestoesPage() {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
         staleTime: 1000 * 60 * 5, // 5 minutos
+        gcTime: 1000 * 60 * 60, // 1 hora - manter cache quente
+        refetchOnMount: false,
+        refetchOnWindowFocus: false,
+        refetchOnReconnect: false,
       },
     },
   })
@@ -78,10 +57,8 @@ export default async function QuestoesPage() {
           encontrar questões específicas.
         </p>
 
-        <Suspense fallback={<QuestoesLoading />}>
-          <QuestionFilters />
-          <QuestionList userId={authUser?.id || null} userPlan={userPlan} />
-        </Suspense>
+        <QuestionFilters />
+        <QuestionList userId={authUser?.id || null} userPlan={userPlan} />
       </div>
     </HydrationBoundary>
   )

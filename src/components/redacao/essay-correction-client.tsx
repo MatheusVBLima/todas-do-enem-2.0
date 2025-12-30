@@ -1,6 +1,6 @@
 "use client"
 
-import { useSuspenseQuery } from "@tanstack/react-query"
+import { useQuery } from "@tanstack/react-query"
 import { notFound } from "next/navigation"
 import { EssayCorrection } from "./essay-correction"
 import { getEssay } from "@/server/actions/essays"
@@ -12,11 +12,24 @@ interface EssayCorrectionClientProps {
 }
 
 export function EssayCorrectionClient({ essayId, userId }: EssayCorrectionClientProps) {
-  // useSuspenseQuery suspends until data is ready
-  const { data: result } = useSuspenseQuery({
+  const { data: result, isPending } = useQuery({
     queryKey: queryKeys.essays.detail(essayId),
     queryFn: () => getEssay(essayId),
+    placeholderData: (prev) => prev,
+    refetchOnMount: false,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
   })
+
+  if (isPending && !result) {
+    return (
+      <div className="space-y-4">
+        <div className="h-6 w-40 rounded bg-muted animate-pulse" />
+        <div className="h-4 w-64 rounded bg-muted animate-pulse" />
+        <div className="h-64 w-full rounded bg-muted animate-pulse" />
+      </div>
+    )
+  }
 
   if (!result?.success || !result.data) {
     notFound()
