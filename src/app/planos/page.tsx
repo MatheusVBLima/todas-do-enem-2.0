@@ -7,9 +7,19 @@ import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { hasPaidPlan } from "@/lib/auth/permissions"
 
-export default async function PlanosPage() {
-  const authUser = await getCurrentUser()
+import { Suspense } from "react"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+import { Check, Sparkles, BookOpen } from "lucide-react"
+import { SUBSCRIPTION_PLANS } from "@/lib/constants"
+import { getCurrentUser } from "@/lib/auth/server"
+import { getUserProfile } from "@/server/actions/users"
+import { hasPaidPlan } from "@/lib/auth/permissions"
+import { Skeleton } from "@/components/ui/skeleton"
 
+async function PlanBadge() {
+  const authUser = await getCurrentUser()
   let isPaidUser = false
 
   if (authUser) {
@@ -19,6 +29,55 @@ export default async function PlanosPage() {
     }
   }
 
+  if (!isPaidUser) return null
+
+  return (
+    <div className="flex justify-center">
+      <Badge variant="default" className="px-4 py-2 text-sm">
+        <Sparkles className="mr-2 size-4" />
+        Você está no plano PRO
+      </Badge>
+    </div>
+  )
+}
+
+async function PlanActions({ planType }: { planType: 'FREE' | 'PRO' }) {
+  const authUser = await getCurrentUser()
+  let isPaidUser = false
+
+  if (authUser) {
+    const userResult = await getUserProfile(authUser.id)
+    if (userResult.success && userResult.data) {
+      isPaidUser = hasPaidPlan(userResult.data.plan)
+    }
+  }
+
+  if (planType === 'FREE') {
+    return (
+      <Button
+        variant="outline"
+        className="w-full"
+        disabled={!isPaidUser}
+      >
+        {isPaidUser ? "Plano Atual" : "Plano Gratuito"}
+      </Button>
+    )
+  }
+
+  return isPaidUser ? (
+    <Button className="w-full" disabled>
+      <Check className="mr-2 size-4" />
+      Plano Atual
+    </Button>
+  ) : (
+    <Button className="w-full" disabled>
+      <Sparkles className="mr-2 size-4" />
+      Em breve - Integração com Polar
+    </Button>
+  )
+}
+
+export default function PlanosPage() {
   return (
     <div className="container mx-auto max-w-6xl space-y-8 py-8">
       {/* Header */}
@@ -29,15 +88,10 @@ export default async function PlanosPage() {
         </p>
       </div>
 
-      {/* Current plan badge */}
-      {isPaidUser && (
-        <div className="flex justify-center">
-          <Badge variant="default" className="px-4 py-2 text-sm">
-            <Sparkles className="mr-2 size-4" />
-            Você está no plano PRO
-          </Badge>
-        </div>
-      )}
+      {/* Current plan badge - Async */}
+      <Suspense fallback={<div className="h-9" />}>
+        <PlanBadge />
+      </Suspense>
 
       {/* Plans comparison */}
       <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
@@ -82,13 +136,9 @@ export default async function PlanosPage() {
           </CardContent>
 
           <CardFooter>
-            <Button
-              variant="outline"
-              className="w-full"
-              disabled={!isPaidUser}
-            >
-              {isPaidUser ? "Plano Atual" : "Plano Gratuito"}
-            </Button>
+            <Suspense fallback={<Skeleton className="h-10 w-full" />}>
+              <PlanActions planType="FREE" />
+            </Suspense>
           </CardFooter>
         </Card>
 
@@ -142,17 +192,9 @@ export default async function PlanosPage() {
           </CardContent>
 
           <CardFooter>
-            {isPaidUser ? (
-              <Button className="w-full" disabled>
-                <Check className="mr-2 size-4" />
-                Plano Atual
-              </Button>
-            ) : (
-              <Button className="w-full" disabled>
-                <Sparkles className="mr-2 size-4" />
-                Em breve - Integração com Polar
-              </Button>
-            )}
+            <Suspense fallback={<Skeleton className="h-10 w-full" />}>
+              <PlanActions planType="PRO" />
+            </Suspense>
           </CardFooter>
         </Card>
       </div>
