@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { QuestionCard } from "@/components/questions/question-card"
 import { PDFExportButton } from "@/components/export/pdf-export-button"
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
+import { useSuspenseQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import { getGroup, removeQuestionFromGroup } from "@/server/actions/groups"
 import { toast } from "sonner"
 import Link from "next/link"
@@ -30,7 +30,7 @@ export function GroupDetailClient() {
   const groupId = params.id as string
   const [questionToRemove, setQuestionToRemove] = useState<string | null>(null)
 
-  const { data: group } = useQuery({
+  const { data: group } = useSuspenseQuery({
     queryKey: queryKeys.groups.detail(groupId),
     queryFn: async () => {
       const result = await getGroup(groupId)

@@ -1,9 +1,8 @@
 "use client"
 
-import { useQuery, useQueryClient } from "@tanstack/react-query"
+import { useSuspenseQuery, useQueryClient } from "@tanstack/react-query"
 import { ChevronLeft, ChevronRight, LayoutGrid, Table2, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Skeleton } from "@/components/ui/skeleton"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { QuestionCard } from "./question-card"
 import { QuestionsTable } from "./questions-table"
@@ -22,7 +21,8 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
   const queryClient = useQueryClient()
   const [viewMode, setViewMode] = useState<"cards" | "table">("cards")
 
-  const { data, isPending, error } = useQuery({
+  // useSuspenseQuery suspends until data is ready - no need for isPending check
+  const { data } = useSuspenseQuery({
     queryKey: queryKeys.questions.list(filters),
     queryFn: () => getQuestions(filters),
   })
@@ -37,18 +37,6 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
       })
     }
   }, [data?.pagination.hasMore, filters, queryClient])
-
-  if (isPending) {
-    return <QuestionListSkeleton />
-  }
-
-  if (error) {
-    return (
-      <div className="rounded-lg border border-destructive/50 bg-destructive/10 p-6 text-center">
-        <p className="text-destructive">Erro ao carregar questões. Tente novamente.</p>
-      </div>
-    )
-  }
 
   if (!data || data.data.length === 0) {
     const hasActiveFilters = filters.anos?.length > 0 || filters.areas?.length > 0 || filters.disciplinas?.length > 0 || filters.busca
@@ -166,28 +154,6 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
           </Button>
         </div>
       )}
-    </div>
-  )
-}
-
-function QuestionListSkeleton() {
-  return (
-    <div className="space-y-4">
-      {Array.from({ length: 3 }).map((_, i) => (
-        <div key={i} className="rounded-lg border p-6 space-y-4">
-          <div className="flex gap-2">
-            <Skeleton className="h-6 w-20" />
-            <Skeleton className="h-6 w-24" />
-            <Skeleton className="h-6 w-16" />
-          </div>
-          <Skeleton className="h-20 w-full" />
-          <div className="space-y-2">
-            {Array.from({ length: 5 }).map((_, j) => (
-              <Skeleton key={j} className="h-12 w-full" />
-            ))}
-          </div>
-        </div>
-      ))}
     </div>
   )
 }

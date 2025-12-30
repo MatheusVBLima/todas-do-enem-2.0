@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { EssayEditor } from "./essay-editor"
 import { EssayList } from "./essay-list"
 import { EnemCompetencias } from "./enem-competencias"
-import { useQuery, useQueryClient } from "@tanstack/react-query"
+import { useSuspenseQuery, useQueryClient } from "@tanstack/react-query"
 import { getEssays } from "@/server/actions/essays"
 import { queryKeys } from "@/lib/query-keys"
 
@@ -21,15 +21,10 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
   const [editingEssayId, setEditingEssayId] = useState<string | undefined>()
   const queryClient = useQueryClient()
 
-  // Fetch essays
-  const { data: essaysResult } = useQuery({
+  // Fetch essays with useSuspenseQuery
+  const { data: essaysResult } = useSuspenseQuery({
     queryKey: queryKeys.essays.list(userId),
     queryFn: () => getEssays(userId),
-    staleTime: Infinity,
-    gcTime: Infinity,
-    refetchOnMount: false,
-    refetchOnWindowFocus: false,
-    refetchOnReconnect: false,
   })
 
   const essays = essaysResult?.success ? essaysResult.data || [] : []

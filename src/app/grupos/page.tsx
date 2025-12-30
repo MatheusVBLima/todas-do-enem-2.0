@@ -15,9 +15,9 @@ async function GroupsData({ userId }: { userId: string | null }) {
     },
   })
 
-  // Server-side prefetch de grupos do usuário
+  // Server-side prefetch de grupos do usuário (NON-BLOCKING - removed await)
   if (userId) {
-    await queryClient.prefetchQuery({
+    queryClient.prefetchQuery({
       queryKey: queryKeys.groups.list(userId),
       queryFn: () => getUserGroups(userId),
     })

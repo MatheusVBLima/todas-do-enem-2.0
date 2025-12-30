@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { GroupCard } from "@/components/groups/group-card"
 import { GroupFormDialog } from "@/components/groups/group-form-dialog"
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
+import { useSuspenseQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import { getUserGroups, createGroup, updateGroup, deleteGroup } from "@/server/actions/groups"
 import { DEV_USER } from "@/lib/dev-user"
 import { toast } from "sonner"
@@ -29,7 +29,7 @@ export function GroupsClient() {
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false)
   const [selectedGroup, setSelectedGroup] = useState<any>(null)
 
-  const { data: groupsResult, isPending } = useQuery({
+  const { data: groupsResult } = useSuspenseQuery({
     queryKey: queryKeys.groups.list(DEV_USER.id),
     queryFn: () => getUserGroups(DEV_USER.id),
   })

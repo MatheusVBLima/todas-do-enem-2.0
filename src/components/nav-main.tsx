@@ -3,6 +3,7 @@
 import { ChevronRight, type LucideIcon } from "lucide-react"
 import { useRef } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { usePrefetchQuestions } from "@/hooks/use-prefetch-questions"
 import { usePrefetchGroups } from "@/hooks/use-prefetch-groups"
 import { usePrefetchEssays } from "@/hooks/use-prefetch-essays"
@@ -40,6 +41,7 @@ export function NavMain({
   }[]
   userId: string | null
 }) {
+  const router = useRouter()
   const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined)
   const prefetchQuestions = usePrefetchQuestions()
   const prefetchGroups = usePrefetchGroups(userId)
@@ -51,7 +53,10 @@ export function NavMain({
     }
 
     timeoutRef.current = setTimeout(() => {
-      // Prefetch based on URL
+      // Prefetch route
+      router.prefetch(url)
+
+      // Prefetch data based on URL
       if (url === "/") {
         const defaultFilters = {
           anos: [],

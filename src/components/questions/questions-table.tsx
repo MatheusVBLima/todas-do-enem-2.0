@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -38,6 +39,7 @@ export function QuestionsTable({
   isLoading,
   userId,
 }: QuestionsTableProps) {
+  const router = useRouter()
   const prefetchQuestion = usePrefetchQuestion()
 
   if (isLoading) {
@@ -111,7 +113,10 @@ export function QuestionsTable({
                     >
                       <Link
                         href={`/${question.id}`}
-                        onMouseEnter={() => prefetchQuestion(question.id)}
+                        onMouseEnter={() => {
+                          prefetchQuestion(question.id)
+                          router.prefetch(`/${question.id}`)
+                        }}
                       >
                         Ver
                         <ExternalLink className="size-3" />

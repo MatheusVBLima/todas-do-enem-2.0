@@ -1,8 +1,8 @@
 import { Suspense } from "react"
-import { notFound, redirect } from "next/navigation"
+import { redirect, notFound } from "next/navigation"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getEssay } from "@/server/actions/essays"
-import { EssayCorrection } from "@/components/redacao/essay-correction"
+import { EssayCorrectionClient } from "@/components/redacao/essay-correction-client"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { hasPaidPlan } from "@/lib/auth/permissions"
@@ -24,29 +24,15 @@ async function EssayData({ id, userId }: { id: string; userId: string }) {
     },
   })
 
-  // Prefetch essay
-  await queryClient.prefetchQuery({
+  // Prefetch essay (NON-BLOCKING - removed await)
+  queryClient.prefetchQuery({
     queryKey: queryKeys.essays.detail(id),
     queryFn: () => getEssay(id),
   })
 
-  // Get essay from cache
-  const result = queryClient.getQueryData(queryKeys.essays.detail(id)) as Awaited<ReturnType<typeof getEssay>> | undefined
-
-  if (!result?.success || !result.data) {
-    notFound()
-  }
-
-  const essay = result.data
-
-  // Verify ownership
-  if (essay.userId !== userId) {
-    notFound()
-  }
-
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <EssayCorrection essay={essay} userId={userId} />
+      <EssayCorrectionClient essayId={id} userId={userId} />
     </HydrationBoundary>
   )
 }

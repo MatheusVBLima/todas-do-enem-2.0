@@ -1,12 +1,10 @@
 import { Suspense } from "react"
-import { notFound } from "next/navigation"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { getQuestion } from "@/server/actions/questions"
-import { QuestionCard } from "@/components/questions/question-card"
+import { QuestionDetailClient } from "@/components/questions/question-detail-client"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
 import { queryKeys } from "@/lib/query-keys"
-import type { QuestionWithExam } from "@/types"
 import QuestionDetailLoading from "./loading"
 
 interface QuestionPageProps {
@@ -25,18 +23,11 @@ async function QuestionData({ id }: { id: string }) {
     },
   })
 
-  // Prefetch question
-  await queryClient.prefetchQuery({
+  // Prefetch question (NON-BLOCKING - removed await)
+  queryClient.prefetchQuery({
     queryKey: queryKeys.questions.detail(id),
     queryFn: () => getQuestion(id),
   })
-
-  // Get question from cache
-  const question = queryClient.getQueryData(queryKeys.questions.detail(id)) as QuestionWithExam | undefined
-
-  if (!question) {
-    notFound()
-  }
 
   // Get current user plan
   const authUser = await getCurrentUser()
@@ -52,7 +43,7 @@ async function QuestionData({ id }: { id: string }) {
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <div className="container mx-auto max-w-4xl py-8">
-        <QuestionCard question={question} userPlan={userPlan} />
+        <QuestionDetailClient questionId={id} userPlan={userPlan} />
       </div>
     </HydrationBoundary>
   )

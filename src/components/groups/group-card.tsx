@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { FolderOpen, MoreVertical, Pencil, Trash2, BookOpen } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -37,6 +38,7 @@ type GroupCardProps = {
 }
 
 export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
+  const router = useRouter()
   const prefetchGroup = usePrefetchGroup()
 
   const { data: groupDetails } = useQuery({
@@ -55,7 +57,10 @@ export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
           <Link
             href={`/grupos/${group.id}`}
             className="block"
-            onMouseEnter={() => prefetchGroup(group.id)}
+            onMouseEnter={() => {
+              prefetchGroup(group.id)
+              router.prefetch(`/grupos/${group.id}`)
+            }}
           >
         <div
           className="absolute left-0 top-0 h-full w-1"

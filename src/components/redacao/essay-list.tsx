@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 import { FileText, Trash2, Eye, Edit, Clock, CheckCircle2, Loader2 } from "lucide-react"
@@ -31,6 +32,7 @@ interface EssayListProps {
 }
 
 export function EssayList({ essays, onEdit }: EssayListProps) {
+  const router = useRouter()
   const queryClient = useQueryClient()
   const prefetchEssay = usePrefetchEssay()
   const [essayToDelete, setEssayToDelete] = useState<string | null>(null)
@@ -176,7 +178,10 @@ export function EssayList({ essays, onEdit }: EssayListProps) {
                     {essay.status === "CORRECTED" ? (
                       <Link
                         href={`/redacao/${essay.id}`}
-                        onMouseEnter={() => prefetchEssay(essay.id)}
+                        onMouseEnter={() => {
+                          prefetchEssay(essay.id)
+                          router.prefetch(`/redacao/${essay.id}`)
+                        }}
                       >
                         <Eye className="mr-2 size-4" />
                         Ver Correção
