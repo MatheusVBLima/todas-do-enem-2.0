@@ -66,7 +66,7 @@ export function GroupDetailClient() {
       </div>
     )
   }
-  const questions = group.questions.map((q) => q.question)
+  const questions = Array.isArray(group?.questions) ? group.questions.map((q) => q.question) : []
 
   return (
     <div className="space-y-6">

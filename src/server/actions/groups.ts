@@ -30,7 +30,7 @@ export async function getUserGroups(userId: string) {
     const transformedGroups = (groups || []).map(group => ({
       ...group,
       _count: {
-        questions: group.questions?.[0]?.count || 0,
+        questions: Array.isArray(group.questions) ? group.questions?.[0]?.count || 0 : 0,
       },
       questions: undefined, // Remove raw questions data
     }))

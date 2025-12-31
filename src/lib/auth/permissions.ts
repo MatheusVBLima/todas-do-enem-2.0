@@ -37,3 +37,23 @@ export function canAccessRoute(plan: UserPlan | string, route: string): boolean 
   // All other routes are accessible
   return true
 }
+
+/**
+ * Get quota limits for plan
+ */
+export function getQuotaLimits(plan: UserPlan | string): {
+  questionsLimit: number
+  essaysLimit: number
+} {
+  if (hasPaidPlan(plan)) {
+    return {
+      questionsLimit: 1500,
+      essaysLimit: 20,
+    }
+  }
+
+  return {
+    questionsLimit: 0,
+    essaysLimit: 0,
+  }
+}

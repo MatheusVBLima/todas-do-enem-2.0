@@ -326,9 +326,10 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
         </div>
 
         {/* AI Explanation - shown after revealing answer */}
-        {isAnswerVisible && (
+        {isAnswerVisible && userId && (
           <AIExplanation
             question={question}
+            userId={userId}
             userPlan={userPlan}
           />
         )}

@@ -2,7 +2,7 @@
 
 import { supabase } from "@/lib/supabase/server"
 import { PAGINATION } from "@/lib/constants"
-import type { QuestionFilters, PaginatedResponse, QuestionWithExam } from "@/types"
+import type { QuestionFilters, PaginatedResponse, QuestionWithExam, QuestionFull } from "@/types"
 
 export async function getQuestions(
   filters: QuestionFilters
@@ -34,16 +34,17 @@ export async function getQuestions(
     })
 
     const duration = Date.now() - startTime
+    const rows = (data as any[] | null) || []
 
     console.log('[Search] RPC Response:', {
-      hasData: !!data,
-      dataLength: data?.length,
+      hasData: rows.length > 0,
+      dataLength: rows.length,
       hasError: !!error,
       error: error,
-      firstRow: data?.[0] ? {
-        id: data[0].id,
-        statement: data[0].statement?.substring(0, 50),
-        totalCount: data[0].total_count
+      firstRow: rows[0] ? {
+        id: rows[0].id,
+        statement: rows[0].statement?.substring(0, 50),
+        totalCount: rows[0].total_count
       } : null
     })
 
@@ -55,17 +56,17 @@ export async function getQuestions(
 
     console.log('[Search] Query completed in', duration, 'ms')
     console.log('[Search] Results:', {
-      found: data?.length || 0,
-      totalCount: data?.[0]?.total_count || 0,
+      found: rows.length || 0,
+      totalCount: rows[0]?.total_count || 0,
     })
 
     // Extract questions and total count
-    const questions = (data || []).map((row: any) => {
+    const questions = rows.map((row: any) => {
       const { total_count, ...question } = row
       return question as QuestionWithExam
     })
 
-    const total = data?.[0]?.total_count || 0
+    const total = rows[0]?.total_count || 0
     const totalPages = Math.ceil(total / pageSize)
 
     return {
@@ -93,7 +94,7 @@ export async function getQuestions(
   }
 }
 
-export async function getQuestion(id: string) {
+export async function getQuestion(id: string): Promise<QuestionFull | null> {
   try {
     const { data: question, error } = await supabase
       .from('Question')
@@ -113,7 +114,13 @@ export async function getQuestion(id: string) {
       return null
     }
 
-    return question
+    const normalizedQuestion = {
+      ...question,
+      exam: (question as any)?.exam && !(question as any)?.exam?.error ? (question as any).exam : null,
+      groups: Array.isArray((question as any)?.groups) ? (question as any).groups : [],
+    }
+
+    return normalizedQuestion as QuestionFull
   } catch (error) {
     console.error('Error in getQuestion:', error)
     return null

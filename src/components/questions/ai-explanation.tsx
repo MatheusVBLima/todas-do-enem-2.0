@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Loader2, Sparkles } from "lucide-react"
+import { Loader2, Sparkles, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -10,6 +10,7 @@ import { toast } from "sonner"
 import { Streamdown } from "streamdown"
 import { useChat } from "@ai-sdk/react"
 import { DefaultChatTransport } from "ai"
+import { useQueryClient } from "@tanstack/react-query"
 import {
   Reasoning,
   ReasoningTrigger,
@@ -18,42 +19,59 @@ import { UpgradeDialog } from "@/components/upgrade-dialog"
 
 type AIExplanationProps = {
   question: QuestionWithExam
+  userId: string
   userPlan: string | null
 }
 
-export function AIExplanation({ question, userPlan }: AIExplanationProps) {
+export function AIExplanation({ question, userId, userPlan }: AIExplanationProps) {
   const isPro = userPlan === "RUMO_A_APROVACAO"
+  const [isGenerating, setIsGenerating] = useState(false)
   const [showUpgradeDialog, setShowUpgradeDialog] = useState(false)
-  const [hasGenerated, setHasGenerated] = useState(false)
+  const queryClient = useQueryClient()
+
+  // Check if explanation is cached
+  const isCached = !!question.aiExplanation
 
   const { messages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
       api: "/api/chat",
+      body: {
+        questionId: question.id, // Send questionId for cache checking
+      },
     }),
     onError: (err) => {
-      console.error("[AI-EXPLANATION] Error generating explanation:", err)
+      console.error("Error generating explanation:", err)
 
+      // Check if it's a permission error
       if (err.message?.includes('exclusivo do plano') || err.message?.includes('403')) {
         setShowUpgradeDialog(true)
         toast.error("Este recurso é exclusivo do plano Rumo à Aprovação")
+      } else if (err.message?.includes('limite')) {
+        toast.error(err.message, { duration: 5000 })
       } else {
         toast.error("Erro ao gerar explicação")
       }
+
+      setIsGenerating(false)
     },
     onFinish: () => {
-      toast.success("Explicação gerada com sucesso!")
+      toast.success(isCached ? "Explicação carregada!" : "Explicação gerada com sucesso!")
+      setIsGenerating(false)
+
+      // Invalidate quota to update UI
+      queryClient.invalidateQueries({ queryKey: ["ai-quota", userId] })
     },
   })
 
-  // Handle manual generation (when "Gerar Explicação com IA" is clicked)
   const handleGenerate = async () => {
     if (!isPro) {
       setShowUpgradeDialog(true)
       return
     }
 
-    setHasGenerated(true)
+    setIsGenerating(true)
 
+    // Create the prompt for explanation
     const prompt = `Área: ${question.knowledgeArea}
 Disciplina: ${question.subject}
 Ano: ${question.exam.year}
@@ -72,11 +90,21 @@ Resposta correta: ${question.correctAnswer}
 
 Explique esta questão do ENEM de forma didática.`
 
-    sendMessage({ text: prompt })
+    await sendMessage({ text: prompt })
   }
 
+  const assistantMessage = messages.find((m) => m.role === "assistant")
+  const showExplanation = messages.length > 0
+  const isLoading = status === "streaming"
+
+  // Extract full text from message parts
+  const explanationText = assistantMessage?.parts
+    .filter((part) => part.type === "text")
+    .map((part) => part.text)
+    .join("") || ""
+
   // If not generated yet, show button
-  if (!hasGenerated) {
+  if (!showExplanation) {
     return (
       <>
         <UpgradeDialog
@@ -87,25 +115,21 @@ Explique esta questão do ENEM de forma didática.`
 
         <Button
           onClick={handleGenerate}
+          disabled={isLoading}
           variant="outline"
           className="w-full"
         >
-          <Sparkles className="mr-2 size-4" />
-          Gerar Explicação com IA
+          {isLoading ? (
+            <Loader2 className="mr-2 size-4 animate-spin" />
+          ) : (
+            <Sparkles className="mr-2 size-4" />
+          )}
+          {isLoading ? "Gerando explicação..." : "Gerar Explicação com IA"}
           {!isPro && <Badge variant="outline" className="ml-2">PRO</Badge>}
         </Button>
       </>
     )
   }
-
-  // Extract text safely with proper null checking
-  const assistantMessage = messages.find((m) => m.role === "assistant")
-  const explanationText = assistantMessage?.parts
-    ?.filter((part) => part.type === "text")
-    ?.map((part) => part.text)
-    .join("") || ""
-
-  const isLoading = status === 'submitted' || (status === 'ready' && !explanationText)
 
   return (
     <div className="space-y-4">
@@ -115,10 +139,10 @@ Explique esta questão do ENEM de forma didática.`
         feature="ai-explanation"
       />
 
-      {isLoading && !explanationText ? (
+      {isGenerating && !explanationText ? (
         <Reasoning isStreaming={true} defaultOpen={false}>
           <ReasoningTrigger
-            getThinkingMessage={() => "Analisando questão e gerando explicação..."}
+            getThinkingMessage={() => isCached ? "Carregando explicação..." : "Analisando questão e gerando explicação..."}
           />
         </Reasoning>
       ) : explanationText ? (
@@ -127,6 +151,12 @@ Explique esta questão do ENEM de forma didática.`
             <CardTitle className="flex items-center gap-2 text-lg">
               <Sparkles className="size-5 text-primary" />
               Explicação por IA
+              {isCached && (
+                <Badge variant="secondary" className="gap-1 ml-auto">
+                  <Zap className="size-3" />
+                  Cache
+                </Badge>
+              )}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -141,19 +171,14 @@ Explique esta questão do ENEM de forma didática.`
                 variant="ghost"
                 size="sm"
                 className="mt-4"
-                onClick={() => setHasGenerated(false)}
+                onClick={() => window.location.reload()}
               >
                 Fechar explicação
               </Button>
             )}
           </CardContent>
         </Card>
-      ) : (
-        <div className="flex items-center justify-center gap-2 rounded-lg border border-dashed p-4">
-          <Loader2 className="size-5 animate-spin text-primary" />
-          <span className="text-sm text-muted-foreground">Gerando explicação...</span>
-        </div>
-      )}
+      ) : null}
     </div>
   )
 }

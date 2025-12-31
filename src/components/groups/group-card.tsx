@@ -37,6 +37,17 @@ type GroupCardProps = {
   onDelete?: () => void
 }
 
+type GroupQuestionPreview = {
+  questionId: string
+  addedAt: string
+  question: {
+    id: string
+    exam: { id: string; year: number }
+    knowledgeArea: string
+    subject: string
+  }
+}
+
 export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
   const router = useRouter()
   const prefetchGroup = usePrefetchGroup()
@@ -50,7 +61,9 @@ export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
     enabled: false, // Only fetch on hover
   })
 
-  const questions = groupDetails?.questions || []
+  const questions: GroupQuestionPreview[] = Array.isArray(groupDetails?.questions)
+    ? groupDetails?.questions
+    : []
   const previewQuestions = questions.slice(0, 3)
 
   return (

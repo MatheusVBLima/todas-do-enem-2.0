@@ -21,14 +21,16 @@ export async function generateMetadata({
   params: Promise<{ id: string }>
 }): Promise<Metadata> {
   const { id } = await params
-  const question = await getQuestion(id)
+  const result = await getQuestion(id)
 
-  if (!question) {
+  if (!result) {
     return {
       title: "Questão não encontrada | Todas do ENEM",
       description: "Esta questão não está disponível.",
     }
   }
+
+  const question = result
 
   // Capitalizar e truncar para SEO
   const statement = capitalizeSentences(question.statement)

@@ -46,7 +46,10 @@
       "Bash(stripe products create:*)",
       "Bash(stripe prices create:*)",
       "Bash(stripe config:*)",
-      "Bash(npx shadcn@latest diff:*)"
+      "Bash(npx shadcn@latest diff:*)",
+      "Bash(npx supabase:*)",
+      "Bash(bunx supabase db push:*)",
+      "Bash(curl:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

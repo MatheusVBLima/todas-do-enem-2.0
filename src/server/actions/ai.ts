@@ -5,8 +5,64 @@ import { createStreamableValue } from "@ai-sdk/rsc"
 import { geminiModel } from "@/lib/ai"
 import { z } from "zod"
 import type { QuestionWithExam } from "@/types"
+import { calculateAICost } from "@/lib/ai-cost-calculator"
+import { canGenerateExplanation, canCorrectEssay, recordAIUsage } from "@/lib/ai-quota"
+import { supabase } from "@/lib/supabase/server"
 
-export async function generateQuestionExplanation(question: QuestionWithExam) {
+interface GenerateExplanationParams {
+  question: QuestionWithExam
+  userId: string
+  userPlan: string
+}
+
+/**
+ * Generate question explanation with quota check and caching
+ */
+export async function generateQuestionExplanation(params: GenerateExplanationParams) {
+  const { question, userId, userPlan } = params
+
+  // STEP 1: Check if cached explanation exists (global cache)
+  if (question.aiExplanation) {
+    console.log(`[AI] Cache HIT for question ${question.id}`)
+
+    // Log cache hit (0 tokens, 0 cost)
+    await recordAIUsage({
+      userId,
+      type: 'QUESTION_EXPLANATION',
+      resourceId: question.id,
+      promptTokens: 0,
+      completionTokens: 0,
+      totalTokens: 0,
+      estimatedCostBRL: 0,
+      cacheHit: true,
+      status: 'SUCCESS',
+    })
+
+    // Return cached result immediately
+    const stream = createStreamableValue("")
+    stream.done(question.aiExplanation)
+    return {
+      output: stream.value,
+      cached: true,
+    }
+  }
+
+  // STEP 2: Check quota
+  const quotaCheck = await canGenerateExplanation(userId, userPlan)
+
+  if (!quotaCheck.allowed) {
+    const stream = createStreamableValue("")
+    stream.error(new Error(quotaCheck.error || 'Quota exceeded'))
+    return {
+      output: stream.value,
+      error: quotaCheck.error,
+      quota: quotaCheck.quota,
+    }
+  }
+
+  // STEP 3: Generate explanation with AI
+  console.log(`[AI] Cache MISS for question ${question.id}, generating...`)
+
   const stream = createStreamableValue("")
 
   ;(async () => {
@@ -43,23 +99,93 @@ Resposta correta: ${question.correctAnswer}
 
 Explique esta questão do ENEM de forma didática.`
 
-    const { textStream } = streamText({
-      model: geminiModel,
-      system,
-      prompt,
-      temperature: 0.7,
-    })
+    try {
+      const result = streamText({
+        model: geminiModel,
+        system,
+        prompt,
+        temperature: 0.7,
+      })
 
-    for await (const delta of textStream) {
-      stream.update(delta)
+      let fullText = ""
+
+      // Stream the text
+      for await (const delta of result.textStream) {
+        fullText += delta
+        stream.update(fullText)
+      }
+
+      // Wait for usage metadata
+      const usage = await result.usage
+
+      // Calculate cost
+      const cost = calculateAICost({
+        inputTokens: usage.inputTokens,
+        outputTokens: usage.outputTokens,
+        totalTokens: usage.totalTokens,
+      })
+
+      console.log(`[AI] Generated explanation:`, {
+        questionId: question.id,
+        tokens: usage.totalTokens,
+        costBRL: cost.totalCostBRL.toFixed(6),
+      })
+
+      // STEP 4: Save explanation to database (global cache)
+      try {
+        await supabase
+          .from('Question')
+          .update({ aiExplanation: fullText })
+          .eq('id', question.id)
+
+        console.log(`[AI] Cached explanation for question ${question.id}`)
+      } catch (cacheError) {
+        console.error('[AI] Failed to cache explanation:', cacheError)
+        // Don't fail the request if caching fails
+      }
+
+      // STEP 5: Record usage and increment quota
+      await recordAIUsage({
+        userId,
+        type: 'QUESTION_EXPLANATION',
+        resourceId: question.id,
+        promptTokens: cost.inputTokens,
+        completionTokens: cost.outputTokens,
+        totalTokens: cost.totalTokens,
+        estimatedCostBRL: cost.totalCostBRL,
+        cacheHit: false,
+        status: 'SUCCESS',
+      })
+
+      stream.done()
+    } catch (error) {
+      console.error('[AI] Error generating explanation:', error)
+
+      // Log error
+      await recordAIUsage({
+        userId,
+        type: 'QUESTION_EXPLANATION',
+        resourceId: question.id,
+        promptTokens: 0,
+        completionTokens: 0,
+        totalTokens: 0,
+        estimatedCostBRL: 0,
+        cacheHit: false,
+        status: 'ERROR',
+        errorMessage: error instanceof Error ? error.message : 'Unknown error',
+      })
+
+      stream.error(error instanceof Error ? error : new Error('Unknown error'))
     }
-
-    stream.done()
   })()
 
-  return { output: stream.value }
+  return {
+    output: stream.value,
+    cached: false,
+  }
 }
 
+// Essay correction schemas (unchanged)
 const essayFeedbackSchema = z.object({
   competencia1: z.object({
     nome: z.literal("Domínio da Norma Culta"),
@@ -92,7 +218,31 @@ const essayFeedbackSchema = z.object({
 
 export type EssayFeedback = z.infer<typeof essayFeedbackSchema>
 
-export async function correctEssay(essayText: string, theme: string) {
+interface CorrectEssayParams {
+  essayId: string
+  essayText: string
+  theme: string
+  userId: string
+  userPlan: string
+}
+
+/**
+ * Correct essay with quota check
+ */
+export async function correctEssay(params: CorrectEssayParams) {
+  const { essayId, essayText, theme, userId, userPlan } = params
+
+  // STEP 1: Check quota
+  const quotaCheck = await canCorrectEssay(userId, userPlan)
+
+  if (!quotaCheck.allowed) {
+    return {
+      success: false,
+      error: quotaCheck.error || 'Quota exceeded',
+      quota: quotaCheck.quota,
+    }
+  }
+
   try {
     const system = `Você é um avaliador de redações do ENEM. Avalie redações baseado nas 5 competências oficiais:
 
@@ -115,7 +265,7 @@ ${essayText}
 
 Avalie esta redação de acordo com os critérios do ENEM e forneça feedback detalhado para cada competência com pontuações específicas.`
 
-    const { object } = await generateObject({
+    const result = await generateObject({
       model: geminiModel,
       system,
       prompt,
@@ -123,9 +273,53 @@ Avalie esta redação de acordo com os critérios do ENEM e forneça feedback de
       temperature: 0.5,
     })
 
-    return { success: true, data: object }
+    // Get usage metadata
+    const usage = result.usage
+
+    // Calculate cost
+    const cost = calculateAICost({
+      inputTokens: usage.inputTokens,
+      outputTokens: usage.outputTokens,
+      totalTokens: usage.totalTokens,
+    })
+
+    console.log(`[AI] Corrected essay:`, {
+      essayId,
+      tokens: usage.totalTokens,
+      costBRL: cost.totalCostBRL.toFixed(6),
+    })
+
+    // STEP 2: Record usage and increment quota
+    await recordAIUsage({
+      userId,
+      type: 'ESSAY_CORRECTION',
+      resourceId: essayId,
+      promptTokens: cost.inputTokens,
+      completionTokens: cost.outputTokens,
+      totalTokens: cost.totalTokens,
+      estimatedCostBRL: cost.totalCostBRL,
+      cacheHit: false,
+      status: 'SUCCESS',
+    })
+
+    return { success: true, data: result.object }
   } catch (error) {
-    console.error("Error correcting essay:", error)
+    console.error("[AI] Error correcting essay:", error)
+
+    // Log error (don't increment quota on error)
+    await recordAIUsage({
+      userId,
+      type: 'ESSAY_CORRECTION',
+      resourceId: essayId,
+      promptTokens: 0,
+      completionTokens: 0,
+      totalTokens: 0,
+      estimatedCostBRL: 0,
+      cacheHit: false,
+      status: 'ERROR',
+      errorMessage: error instanceof Error ? error.message : 'Unknown error',
+    })
+
     return { success: false, error: "Erro ao corrigir redação" }
   }
 }

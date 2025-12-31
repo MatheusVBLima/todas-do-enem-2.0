@@ -92,7 +92,9 @@ export async function updateEssay(
  * Submit essay for AI correction
  */
 export async function submitEssay(
-  id: string
+  id: string,
+  userId: string,
+  userPlan: string
 ): Promise<ActionResponse<Essay>> {
   try {
     // Call RPC function for atomic transaction
@@ -118,7 +120,7 @@ export async function submitEssay(
 
     // Start AI correction in background (don't await)
     if (essay.theme && essay.content) {
-      processEssayCorrection(id, essay.theme, essay.content).catch((error) => {
+      processEssayCorrection(id, essay.theme, essay.content, userId, userPlan).catch((error) => {
         console.error("Background correction error:", error)
       })
     }
@@ -138,7 +140,9 @@ export async function submitEssay(
 async function processEssayCorrection(
   essayId: string,
   theme: string,
-  content: string
+  content: string,
+  userId: string,
+  userPlan: string
 ): Promise<void> {
   console.log(`[processEssayCorrection] Starting correction for essay ${essayId}`)
 
@@ -147,25 +151,34 @@ async function processEssayCorrection(
   // Step 1: Get AI correction
   try {
     console.log(`[processEssayCorrection] Calling AI correction...`)
-    const correctionResult = await correctEssay(theme, content)
+    const correctionResult = await correctEssay({
+      essayId,
+      essayText: content,
+      theme,
+      userId,
+      userPlan,
+    })
     console.log(`[processEssayCorrection] AI correction completed:`, correctionResult.success)
 
     if (!correctionResult.success || !correctionResult.data) {
       console.log(`[processEssayCorrection] AI correction failed, creating error correction`)
 
+      // Check if quota error
+      const isQuotaError = correctionResult.error?.includes('limite')
+
       // Create error correction using RPC
       await supabase.rpc('save_essay_correction', {
         p_essay_id: essayId,
         p_comp1_score: 0,
-        p_comp1_feedback: 'Erro ao processar correção.',
+        p_comp1_feedback: isQuotaError ? 'Limite de correções atingido.' : 'Erro ao processar correção.',
         p_comp2_score: 0,
-        p_comp2_feedback: 'Erro ao processar correção.',
+        p_comp2_feedback: isQuotaError ? 'Aguarde renovação do limite.' : 'Erro ao processar correção.',
         p_comp3_score: 0,
-        p_comp3_feedback: 'Erro ao processar correção.',
+        p_comp3_feedback: isQuotaError ? '' : 'Erro ao processar correção.',
         p_comp4_score: 0,
-        p_comp4_feedback: 'Erro ao processar correção.',
+        p_comp4_feedback: isQuotaError ? '' : 'Erro ao processar correção.',
         p_comp5_score: 0,
-        p_comp5_feedback: 'Erro ao processar correção.',
+        p_comp5_feedback: isQuotaError ? '' : 'Erro ao processar correção.',
         p_total_score: 0,
         p_general_feedback: correctionResult.error || 'Ocorreu um erro ao processar a correção. Tente editar e reenviar a redação.',
       })

@@ -13,7 +13,7 @@ import { queryKeys } from "@/lib/query-keys"
 import { getEssays } from "@/server/actions/essays"
 import { Skeleton } from "@/components/ui/skeleton"
 
-async function EssaysData({ userId }: { userId: string }) {
+async function EssaysData({ userId, userPlan }: { userId: string; userPlan: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
@@ -38,7 +38,7 @@ async function EssaysData({ userId }: { userId: string }) {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <RedacaoClient userId={userId} />
+      <RedacaoClient userId={userId} userPlan={userPlan} />
     </HydrationBoundary>
   )
 }
@@ -138,7 +138,7 @@ export default async function RedacaoPage() {
         <Skeleton className="h-[200px] w-full rounded-lg" />
         <Skeleton className="h-[200px] w-full rounded-lg" />
       </div>}>
-        <EssaysData userId={user.id} />
+        <EssaysData userId={user.id} userPlan={user.plan} />
       </Suspense>
     </div>
   )

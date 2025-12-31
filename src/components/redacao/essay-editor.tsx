@@ -13,6 +13,7 @@ import { queryKeys } from "@/lib/query-keys"
 
 interface EssayEditorProps {
   userId: string
+  userPlan: string
   essayId?: string
   initialTitle?: string
   initialTheme?: string
@@ -23,6 +24,7 @@ interface EssayEditorProps {
 
 export function EssayEditor({
   userId,
+  userPlan,
   essayId,
   initialTitle = "",
   initialTheme = "",
@@ -91,7 +93,7 @@ export function EssayEditor({
       }
 
       // Now submit the essay for correction
-      const result = await submitEssay(essayIdToSubmit)
+      const result = await submitEssay(essayIdToSubmit, userId, userPlan)
 
       if (result.success) {
         toast.success("Redação enviada para correção!")

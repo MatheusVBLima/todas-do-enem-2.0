@@ -42,7 +42,7 @@ export async function generateMetadata({
   }
 }
 
-async function EssayData({ id, userId }: { id: string; userId: string }) {
+async function EssayData({ id, userId, userPlan }: { id: string; userId: string; userPlan: string }) {
   const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
@@ -71,7 +71,7 @@ async function EssayData({ id, userId }: { id: string; userId: string }) {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <EssayCorrectionClient essayId={id} userId={userId} />
+      <EssayCorrectionClient essayId={id} userId={userId} userPlan={userPlan} />
     </HydrationBoundary>
   )
 }
@@ -102,7 +102,7 @@ export default async function EssayDetailPage({ params }: EssayDetailPageProps) 
 
   return (
     <Suspense fallback={<EssaySkeleton />}>
-      <EssayData id={id} userId={user.id} />
+      <EssayData id={id} userId={user.id} userPlan={user.plan} />
     </Suspense>
   )
 }

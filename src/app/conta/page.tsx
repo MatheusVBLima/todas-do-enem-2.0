@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { User, Crown, Zap, CreditCard, BarChart3, Calendar, AlertCircle } from "lucide-react"
+import { User, Crown, Zap, CreditCard, BarChart3, Calendar, AlertCircle, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -17,6 +17,8 @@ import { ReactivateSubscriptionButton } from "@/components/conta/reactivate-subs
 import { SubscribeButton } from "@/components/stripe/subscribe-button"
 import Link from "next/link"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import { QuotaDisplay } from "@/components/ai/quota-display"
+import { AdminStats } from "@/components/admin/admin-stats"
 
 async function AccountData({ userId }: { userId: string }) {
   const userResult = await getUserProfile(userId)
@@ -33,6 +35,7 @@ async function AccountData({ userId }: { userId: string }) {
 
   const user = userResult.data
   const isPaidUser = user.plan === 'RUMO_A_APROVACAO'
+  const isAdmin = user.role === 'ADMIN'
   const currentPlan = isPaidUser
     ? SUBSCRIPTION_PLANS.RUMO_A_APROVACAO
     : SUBSCRIPTION_PLANS.TENTANDO_A_SORTE
@@ -46,7 +49,7 @@ async function AccountData({ userId }: { userId: string }) {
 
   return (
     <Tabs defaultValue="perfil" className="space-y-6">
-      <TabsList className="grid w-full grid-cols-3 lg:w-[400px]">
+      <TabsList className={`grid w-full ${isAdmin ? 'grid-cols-4 lg:w-[500px]' : 'grid-cols-3 lg:w-[400px]'}`}>
         <TabsTrigger value="perfil">
           <User className="mr-2 size-4" />
           Perfil
@@ -59,6 +62,12 @@ async function AccountData({ userId }: { userId: string }) {
           <BarChart3 className="mr-2 size-4" />
           Estatísticas
         </TabsTrigger>
+        {isAdmin && (
+          <TabsTrigger value="admin">
+            <Shield className="mr-2 size-4" />
+            Admin
+          </TabsTrigger>
+        )}
       </TabsList>
 
       {/* Tab: Perfil */}
@@ -307,6 +316,11 @@ async function AccountData({ userId }: { userId: string }) {
 
       {/* Tab: Estatísticas */}
       <TabsContent value="estatisticas" className="space-y-4">
+        {/* AI Quota Display for paid users */}
+        {isPaidUser && (
+          <QuotaDisplay userId={userId} userPlan={user.plan} variant="full" />
+        )}
+
         <Card>
           <CardHeader>
             <CardTitle>Seu Progresso</CardTitle>
@@ -346,6 +360,13 @@ async function AccountData({ userId }: { userId: string }) {
           </CardContent>
         </Card>
       </TabsContent>
+
+      {/* Tab: Admin */}
+      {isAdmin && (
+        <TabsContent value="admin" className="space-y-4">
+          <AdminStats />
+        </TabsContent>
+      )}
     </Tabs>
   )
 }

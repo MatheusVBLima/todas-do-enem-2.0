@@ -73,8 +73,9 @@ export function BreadcrumbSection() {
     enabled: isEssayPage && !!segments[1],
   })
 
-  // Don't show breadcrumb for home page (after all hooks are called)
-  if (segments.length === 0) {
+  // Don't show breadcrumb for home page or single-segment pages (after all hooks are called)
+  // Only show when we have at least 2 segments (e.g., /grupos/[id], /redacao/[id])
+  if (segments.length === 0 || segments.length === 1) {
     return null
   }
 

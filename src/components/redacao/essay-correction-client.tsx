@@ -9,9 +9,10 @@ import { queryKeys } from "@/lib/query-keys"
 interface EssayCorrectionClientProps {
   essayId: string
   userId: string
+  userPlan: string
 }
 
-export function EssayCorrectionClient({ essayId, userId }: EssayCorrectionClientProps) {
+export function EssayCorrectionClient({ essayId, userId, userPlan }: EssayCorrectionClientProps) {
   const { data: essay } = useSuspenseQuery({
     queryKey: queryKeys.essays.detail(essayId),
     queryFn: async () => {
@@ -30,5 +31,5 @@ export function EssayCorrectionClient({ essayId, userId }: EssayCorrectionClient
     notFound()
   }
 
-  return <EssayCorrection essay={essay} userId={userId} />
+  return <EssayCorrection essay={essay} userId={userId} userPlan={userPlan} />
 }

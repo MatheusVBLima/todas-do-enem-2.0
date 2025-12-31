@@ -14,9 +14,10 @@ import { queryKeys } from "@/lib/query-keys"
 
 interface RedacaoClientProps {
   userId: string
+  userPlan: string
 }
 
-export function RedacaoClient({ userId }: RedacaoClientProps) {
+export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
   const [isEditorOpen, setIsEditorOpen] = useState(false)
   const [editingEssayId, setEditingEssayId] = useState<string | undefined>()
   const queryClient = useQueryClient()
@@ -150,6 +151,7 @@ export function RedacaoClient({ userId }: RedacaoClientProps) {
           </DialogHeader>
           <EssayEditor
             userId={userId}
+            userPlan={userPlan}
             essayId={editingEssayId}
             initialTitle={editingEssay?.title || ""}
             initialTheme={editingEssay?.theme || ""}

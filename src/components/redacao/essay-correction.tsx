@@ -18,6 +18,7 @@ import Link from "next/link"
 interface EssayCorrectionProps {
   essay: EssayWithCorrection
   userId: string
+  userPlan: string
 }
 
 const COMPETENCE_LABELS = [
@@ -28,7 +29,7 @@ const COMPETENCE_LABELS = [
   "Elaborar proposta de intervenção para o problema abordado, respeitando os direitos humanos",
 ]
 
-export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrectionProps) {
+export function EssayCorrection({ essay: initialEssay, userId, userPlan }: EssayCorrectionProps) {
   const queryClient = useQueryClient()
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
 
@@ -266,6 +267,7 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
           </DialogHeader>
           <EssayEditor
             userId={userId}
+            userPlan={userPlan}
             essayId={essay.id}
             initialTitle={essay.title || ""}
             initialTheme={essay.theme || ""}
