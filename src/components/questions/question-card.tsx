@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, startTransition } from "react"
+import { useState, startTransition, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { Eye, ChevronDown, ChevronUp, Trash2, ExternalLink } from "lucide-react"
 import Image from "next/image"
@@ -42,7 +42,36 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
   const [isAnswerVisible, setIsAnswerVisible] = useState(showAnswer)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [isExpanded, setIsExpanded] = useState(false)
+  const [showExpandButton, setShowExpandButton] = useState(false)
+  const textRef = useRef<HTMLParagraphElement>(null)
+  const contextRef = useRef<HTMLParagraphElement>(null)
   const prefetchQuestion = usePrefetchQuestion()
+
+  // Check if text is actually truncated
+  useEffect(() => {
+    const checkTruncation = () => {
+      // Check supporting materials truncation
+      if (textRef.current && !isExpanded) {
+        const isTruncated = textRef.current.scrollHeight > textRef.current.clientHeight
+        setShowExpandButton(isTruncated)
+      }
+      // Check legacy context truncation
+      else if (contextRef.current && !isExpanded) {
+        const isTruncated = contextRef.current.scrollHeight > contextRef.current.clientHeight
+        setShowExpandButton(isTruncated)
+      }
+    }
+
+    // Use setTimeout to ensure DOM is fully rendered
+    const timer = setTimeout(checkTruncation, 0)
+
+    // Recheck on window resize
+    window.addEventListener('resize', checkTruncation)
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener('resize', checkTruncation)
+    }
+  }, [question.supportingMaterials, question.context, isExpanded])
 
   const area = KNOWLEDGE_AREAS[question.knowledgeArea as KnowledgeAreaKey]
   const subject = SUBJECTS[question.subject as SubjectKey]
@@ -128,7 +157,10 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
               <div key={index}>
                 {material.type === 'text' && material.content && (
                   <div className="rounded-lg bg-muted/50 p-4 text-sm space-y-2">
-                    <p className={cn(!isExpanded && "line-clamp-6", "whitespace-pre-line")}>
+                    <p
+                      ref={textRef}
+                      className={cn(!isExpanded && "line-clamp-6", "whitespace-pre-line")}
+                    >
                       {capitalizeSentences(material.content)}
                     </p>
                     {material.metadata?.source && (
@@ -136,7 +168,7 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
                         {material.metadata.source}
                       </p>
                     )}
-                    {material.content.length > 300 && (
+                    {showExpandButton && (
                       <Button
                         variant="ghost"
                         size="sm"
@@ -185,10 +217,13 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
         {/* Legacy Context (for backward compatibility) */}
         {question.context && !supportingMaterials.length && (
           <div className="rounded-lg bg-muted/50 p-4 text-sm">
-            <p className={cn(!isExpanded && "line-clamp-3")}>
+            <p
+              ref={contextRef}
+              className={cn(!isExpanded && "line-clamp-3")}
+            >
               {capitalizeSentences(question.context)}
             </p>
-            {question.context.length > 200 && (
+            {showExpandButton && (
               <Button
                 variant="ghost"
                 size="sm"
