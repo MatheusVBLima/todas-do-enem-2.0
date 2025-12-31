@@ -353,6 +353,37 @@ export interface Database {
           total_count: number
         }[]
       }
+      search_questions_with_trigrams: {
+        Args: {
+          p_busca?: string | null
+          p_anos?: number[] | null
+          p_areas?: string[] | null
+          p_disciplinas?: string[] | null
+          p_offset?: number
+          p_limit?: number
+        }
+        Returns: {
+          id: string
+          examId: string
+          questionNumber: number
+          knowledgeArea: string
+          subject: string
+          statement: string
+          context: string | null
+          optionA: string
+          optionB: string
+          optionC: string
+          optionD: string
+          optionE: string
+          correctAnswer: string
+          imageUrl: string | null
+          supportingMaterials: Json | null
+          languageOption: string | null
+          aiExplanation: string | null
+          exam: Json
+          total_count: number
+        }[]
+      }
       submit_essay_for_correction: {
         Args: {
           p_essay_id: string
