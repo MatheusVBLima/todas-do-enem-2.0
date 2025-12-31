@@ -881,7 +881,7 @@
     font-family: var(--app-font-family);
   }
 
-  /* Custom scrollbar styles (shadcn/ui ScrollArea style) */
+  /* Custom scrollbar styles (matching shadcn/ui ScrollArea) */
   * {
     scrollbar-width: thin;
     scrollbar-color: hsl(var(--border)) transparent;
@@ -894,18 +894,16 @@
 
   *::-webkit-scrollbar-track {
     background: transparent;
+    margin: 1px;
   }
 
   *::-webkit-scrollbar-thumb {
     background: hsl(var(--border));
-    border-radius: 5px;
-    border: 2px solid transparent;
-    background-clip: padding-box;
+    border-radius: 9999px;
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--muted-foreground) / 0.3);
-    background-clip: padding-box;
+    background: hsl(var(--border));
   }
 }
 
