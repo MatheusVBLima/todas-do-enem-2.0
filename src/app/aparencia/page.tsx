@@ -29,14 +29,14 @@ const THEMES: ThemeOption[] = [
     label: "Padrão",
     description: "Equilibrado e amigável",
     light: {
-      bg: "oklch(0.9940 0 0)",
-      primary: "oklch(0.5393 0.2713 286.7462)",
-      muted: "oklch(0.9702 0 0)",
+      bg: "oklch(0.9818 0.0054 95.0986)",
+      primary: "oklch(0.6171 0.1375 39.0427)",
+      muted: "oklch(0.9341 0.0153 90.2390)",
     },
     dark: {
-      bg: "oklch(0.2223 0.0060 271.1393)",
-      primary: "oklch(0.6132 0.2294 291.7437)",
-      muted: "oklch(0.2940 0.0130 272.9312)",
+      bg: "oklch(0.2679 0.0036 106.6427)",
+      primary: "oklch(0.6724 0.1308 38.7559)",
+      muted: "oklch(0.2213 0.0038 106.7070)",
     },
   },
   {
@@ -208,7 +208,7 @@ export default function AparenciaPage() {
                     >
                       <div className="flex justify-between items-center">
                         <div className="size-3 rounded-full" style={{ backgroundColor: theme.light.primary }} />
-                        <Sun className="size-3 opacity-40" />
+                        <Sun className="size-4 text-amber-700" />
                       </div>
                       <div className="space-y-1.5 mt-1">
                         <div className="h-1.5 w-16 rounded-full opacity-20" style={{ backgroundColor: theme.light.primary }} />
@@ -222,7 +222,7 @@ export default function AparenciaPage() {
                     >
                       <div className="flex justify-between items-center">
                         <div className="size-3 rounded-full" style={{ backgroundColor: theme.dark.primary }} />
-                        <Moon className="size-3 opacity-40 text-white" />
+                        <Moon className="size-4 text-gray-300" />
                       </div>
                       <div className="space-y-1.5 mt-1">
                         <div className="h-1.5 w-16 rounded-full opacity-20" style={{ backgroundColor: theme.dark.primary }} />
@@ -307,7 +307,7 @@ export default function AparenciaPage() {
           <RadioGroup
             value={settings.font}
             onValueChange={(value) => setFont(value as FontFamily)}
-            className="grid gap-4 sm:grid-cols-3"
+            className="grid gap-4 lg:grid-cols-3"
           >
             {FONTS.map((font) => (
               <Label

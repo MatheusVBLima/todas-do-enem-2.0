@@ -45,7 +45,8 @@
       "Bash(stripe --version:*)",
       "Bash(stripe products create:*)",
       "Bash(stripe prices create:*)",
-      "Bash(stripe config:*)"
+      "Bash(stripe config:*)",
+      "Bash(npx shadcn@latest diff:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

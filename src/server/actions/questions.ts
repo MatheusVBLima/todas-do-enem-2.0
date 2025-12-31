@@ -12,20 +12,52 @@ export async function getQuestions(
   const offset = (pagina - 1) * pageSize
 
   try {
-    // Call RPC function for complex query with filters and ordering
-    const { data, error } = await supabase.rpc('get_questions_with_filters', {
+    console.log('[Search] Starting trigram search with filters:', {
+      busca: busca?.trim() || null,
+      anos: anos && anos.length > 0 ? anos : null,
+      areas: areas && areas.length > 0 ? areas : null,
+      disciplinas: disciplinas && disciplinas.length > 0 ? disciplinas : null,
+      pagina,
+      offset,
+    })
+
+    const startTime = Date.now()
+
+    // Call RPC function with trigram search for partial text matching
+    const { data, error } = await supabase.rpc('search_questions_with_trigrams', {
+      p_busca: busca?.trim() || null,
       p_anos: anos && anos.length > 0 ? anos : null,
       p_areas: areas && areas.length > 0 ? areas : null,
       p_disciplinas: disciplinas && disciplinas.length > 0 ? disciplinas : null,
-      p_busca: busca?.trim() || null,
       p_offset: offset,
       p_limit: pageSize,
     })
 
+    const duration = Date.now() - startTime
+
+    console.log('[Search] RPC Response:', {
+      hasData: !!data,
+      dataLength: data?.length,
+      hasError: !!error,
+      error: error,
+      firstRow: data?.[0] ? {
+        id: data[0].id,
+        statement: data[0].statement?.substring(0, 50),
+        totalCount: data[0].total_count
+      } : null
+    })
+
     if (error) {
-      console.error('Error fetching questions:', error)
+      console.error('[Search] Error fetching questions:', error)
+      console.error('[Search] Error details:', JSON.stringify(error, null, 2))
       throw new Error('Failed to fetch questions')
     }
+
+    console.log('[Search] Query completed in', duration, 'ms')
+    console.log('[Search] Results:', {
+      found: data?.length || 0,
+      totalCount: data?.[0]?.total_count || 0,
+    })
 
     // Extract questions and total count
     const questions = (data || []).map((row: any) => {

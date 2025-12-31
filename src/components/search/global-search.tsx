@@ -6,6 +6,7 @@ import { Search } from "lucide-react"
 import { CommandDialog, CommandEmpty } from "@/components/ui/command"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { ScrollArea } from "@/components/ui/scroll-area"
 import { useQuery } from "@tanstack/react-query"
 import { getQuestions } from "@/server/actions/questions"
 import { queryKeys } from "@/lib/query-keys"
@@ -106,56 +107,71 @@ export function GlobalSearch() {
             className="placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
           />
         </div>
-        <div className="max-h-[300px] scroll-py-1 overflow-x-hidden overflow-y-auto">
-          {debouncedSearch.length === 0 && (
-            <CommandEmpty>Digite para buscar questões...</CommandEmpty>
-          )}
+        <div className="min-h-[300px] max-h-[300px]">
+          <ScrollArea className="h-[300px]">
+            <div className="p-1">
+              {/* Estado 1: Vazio (sem busca) */}
+              {debouncedSearch.length === 0 && (
+                <div className="py-6 text-center text-sm text-muted-foreground">
+                  Digite para buscar questões...
+                </div>
+              )}
 
-          {!isLoading && questions.length === 0 && debouncedSearch.length > 0 && (
-            <div className="py-6 text-center text-sm text-muted-foreground">
-              {debouncedSearch.length < 3
-                ? "Digite pelo menos 3 caracteres para buscar"
-                : "Nenhuma questão encontrada"}
-            </div>
-          )}
+              {/* Estado 2: Busca muito curta */}
+              {debouncedSearch.length > 0 && debouncedSearch.length < 3 && (
+                <div className="py-6 text-center text-sm text-muted-foreground">
+                  Digite pelo menos 3 caracteres para buscar
+                </div>
+              )}
 
-          {(isLoading || (search !== debouncedSearch && search.length > 2)) && (
-            <div className="py-6 text-center text-sm text-muted-foreground">
-              Buscando...
-            </div>
-          )}
+              {/* Estado 3: Loading */}
+              {isLoading && debouncedSearch.length >= 3 && (
+                <div className="py-6 text-center text-sm text-muted-foreground">
+                  Buscando...
+                </div>
+              )}
 
-          {questions.length > 0 && (
-            <div className="text-foreground overflow-hidden p-1">
-              <div className="text-muted-foreground px-2 py-1.5 text-xs font-medium">
-                Questões
-              </div>
-              {questions.map((question) => (
-                <button
-                  key={question.id}
-                  onClick={() => handleSelect(question.id)}
-                  onMouseEnter={() => {
-                    prefetchQuestion(question.id)
-                    router.prefetch(`/${question.id}`)
-                  }}
-                  className="data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none hover:bg-accent hover:text-accent-foreground"
-                >
-                  <div className="flex flex-1 flex-col gap-1">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="outline">{question.exam.year}</Badge>
-                      <Badge variant="secondary">Q{question.questionNumber}</Badge>
-                      <span className="text-xs text-muted-foreground">
-                        {question.knowledgeArea}
-                      </span>
-                    </div>
-                    <p className="text-xs text-muted-foreground line-clamp-2 text-left">
-                      {question.subject}
-                    </p>
+              {/* Estado 4: Sem resultados */}
+              {!isLoading && questions.length === 0 && debouncedSearch.length >= 3 && (
+                <div className="py-6 text-center text-sm text-muted-foreground">
+                  Nenhuma questão encontrada
+                </div>
+              )}
+
+              {/* Estado 5: Com resultados */}
+              {!isLoading && questions.length > 0 && (
+                <div className="text-foreground">
+                  <div className="text-muted-foreground px-2 py-1.5 text-xs font-medium">
+                    Questões
                   </div>
-                </button>
-              ))}
+                  {questions.map((question) => (
+                    <button
+                      key={question.id}
+                      onClick={() => handleSelect(question.id)}
+                      onMouseEnter={() => {
+                        prefetchQuestion(question.id)
+                        router.prefetch(`/${question.id}`)
+                      }}
+                      className="data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none hover:bg-accent hover:text-accent-foreground"
+                    >
+                      <div className="flex flex-1 flex-col gap-1">
+                        <div className="flex items-center gap-2">
+                          <Badge variant="outline">{question.exam.year}</Badge>
+                          <Badge variant="secondary">Q{question.questionNumber}</Badge>
+                          <span className="text-xs text-muted-foreground">
+                            {question.knowledgeArea}
+                          </span>
+                        </div>
+                        <p className="text-xs text-muted-foreground line-clamp-2 text-left">
+                          {question.subject}
+                        </p>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
-          )}
+          </ScrollArea>
         </div>
       </CommandDialog>
     </>
