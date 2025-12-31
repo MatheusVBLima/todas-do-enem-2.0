@@ -1,6 +1,6 @@
 "use client"
 
-import { Palette, Type, Moon, Sun, Check, Monitor } from "lucide-react"
+import { Palette, Moon, Sun, Check, Monitor } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
@@ -168,7 +168,7 @@ export default function AparenciaPage() {
   }
 
   return (
-    <div className="space-y-8 max-w-4xl pb-10">
+    <div className="space-y-8 max-w-5xl mx-auto pb-10">
       <div>
         <div className="flex items-center gap-3 mb-2">
           <Palette className="size-6 text-primary" />

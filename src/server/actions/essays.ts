@@ -292,7 +292,7 @@ export async function getEssay(
     // TypeScript types show it as array, but runtime it's an object
     return { success: true, data: essay as unknown as EssayWithCorrection }
   } catch (error) {
-    console.error("Error fetching essay:", error)
+    console.error("[getEssay] Error fetching essay:", error)
     return { success: false, error: "Erro ao buscar redação" }
   }
 }

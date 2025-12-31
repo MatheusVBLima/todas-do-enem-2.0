@@ -36,8 +36,22 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
   const { data: essay = initialEssay } = useQuery({
     queryKey: queryKeys.essays.detail(initialEssay.id),
     queryFn: async () => {
+      console.log('[Essay Correction] Fetching essay data for ID:', initialEssay.id)
+      const startTime = Date.now()
+
       const result = await getEssay(initialEssay.id)
+      const duration = Date.now() - startTime
+
+      console.log('[Essay Correction] Fetch completed in', duration, 'ms')
+      console.log('[Essay Correction] Result:', {
+        success: result.success,
+        status: result.data?.status,
+        hasCorrection: !!result.data?.correction,
+        error: result.error
+      })
+
       if (!result.success || !result.data) {
+        console.error('[Essay Correction] Fetch failed:', result.error)
         throw new Error(result.error || "Failed to fetch essay")
       }
       return result.data
@@ -46,7 +60,9 @@ export function EssayCorrection({ essay: initialEssay, userId }: EssayCorrection
     // Poll every 5 seconds only when status is SUBMITTED
     refetchInterval: (query) => {
       const data = query.state.data
-      return data?.status === "SUBMITTED" ? 5000 : false
+      const shouldPoll = data?.status === "SUBMITTED"
+      console.log('[Essay Correction] Poll check - Status:', data?.status, 'Should poll:', shouldPoll)
+      return shouldPoll ? 5000 : false
     },
     // Keep polling even when window is not focused
     refetchIntervalInBackground: true,

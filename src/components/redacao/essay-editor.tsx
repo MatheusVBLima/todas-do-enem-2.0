@@ -102,10 +102,10 @@ export function EssayEditor({
         // Call onSaved callback if provided (used in edit dialog)
         if (onSaved) {
           onSaved(essayIdToSubmit)
-        } else {
-          // If no onSaved callback, close the dialog (used in main redacao page)
-          onClose?.()
         }
+
+        // Always close the dialog after successful submission
+        onClose?.()
       } else {
         toast.error(result.error || "Erro ao enviar redação")
       }

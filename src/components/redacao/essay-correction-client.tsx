@@ -1,6 +1,6 @@
 "use client"
 
-import { useQuery } from "@tanstack/react-query"
+import { useSuspenseQuery } from "@tanstack/react-query"
 import { notFound } from "next/navigation"
 import { EssayCorrection } from "./essay-correction"
 import { getEssay } from "@/server/actions/essays"
@@ -12,30 +12,18 @@ interface EssayCorrectionClientProps {
 }
 
 export function EssayCorrectionClient({ essayId, userId }: EssayCorrectionClientProps) {
-  const { data: result, isPending } = useQuery({
+  const { data: essay } = useSuspenseQuery({
     queryKey: queryKeys.essays.detail(essayId),
-    queryFn: () => getEssay(essayId),
-    placeholderData: (prev) => prev,
-    refetchOnMount: false,
-    refetchOnWindowFocus: false,
-    refetchOnReconnect: false,
+    queryFn: async () => {
+      const result = await getEssay(essayId)
+
+      if (!result.success || !result.data) {
+        throw new Error(result.error || "Essay not found")
+      }
+
+      return result.data
+    },
   })
-
-  if (isPending && !result) {
-    return (
-      <div className="space-y-4">
-        <div className="h-6 w-40 rounded bg-muted animate-pulse" />
-        <div className="h-4 w-64 rounded bg-muted animate-pulse" />
-        <div className="h-64 w-full rounded bg-muted animate-pulse" />
-      </div>
-    )
-  }
-
-  if (!result?.success || !result.data) {
-    notFound()
-  }
-
-  const essay = result.data
 
   // Verify ownership
   if (essay.userId !== userId) {

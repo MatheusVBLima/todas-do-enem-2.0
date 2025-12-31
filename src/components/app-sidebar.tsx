@@ -67,12 +67,12 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
   const userData = user ? {
     name: user.name,
     email: user.email,
-    avatar: "/avatars/user.jpg",
+    avatar: "", // Empty string will use fallback with initials
     plan: isPaidUser ? "Rumo à Aprovação" : "Tentando a Sorte",
   } : {
     name: "Visitante",
     email: "Faça login para acessar todas as funcionalidades",
-    avatar: "/avatars/guest.jpg",
+    avatar: "", // Empty string will use fallback
     plan: null,
   }
 

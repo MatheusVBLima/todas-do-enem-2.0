@@ -92,7 +92,7 @@ export default function PlanosPage() {
       </Suspense>
 
       {/* Plans comparison */}
-      <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
         {/* Free Plan */}
         <Card className="relative flex flex-col">
           <CardHeader>
@@ -200,7 +200,7 @@ export default function PlanosPage() {
       {/* FAQ or additional info */}
       <div className="mt-12 text-center space-y-4">
         <h2 className="text-2xl font-bold">Por que escolher o plano PRO?</h2>
-        <div className="grid gap-6 md:grid-cols-3 text-left max-w-5xl mx-auto">
+        <div className="grid gap-6 lg:grid-cols-3 text-left max-w-5xl mx-auto">
           <Card>
             <CardHeader>
               <CardTitle className="text-lg">IA de Última Geração</CardTitle>

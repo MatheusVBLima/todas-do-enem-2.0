@@ -58,7 +58,15 @@ async function EssayData({ id, userId }: { id: string; userId: string }) {
   // Prefetch essay before hydration
   await queryClient.prefetchQuery({
     queryKey: queryKeys.essays.detail(id),
-    queryFn: () => getEssay(id),
+    queryFn: async () => {
+      const result = await getEssay(id)
+
+      if (!result.success || !result.data) {
+        throw new Error(result.error || "Essay not found")
+      }
+
+      return result.data
+    },
   })
 
   return (

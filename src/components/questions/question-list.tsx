@@ -37,7 +37,11 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
   // Prefetch next page when current page loads (keeps paginação adiante quente)
   useEffect(() => {
     if (data.pagination.hasMore) {
-      prefetchPage(filters.pagina + 1)
+      // Wrap in setTimeout to avoid setState during render
+      const timer = setTimeout(() => {
+        prefetchPage(filters.pagina + 1)
+      }, 0)
+      return () => clearTimeout(timer)
     }
   }, [data.pagination.hasMore, filters.pagina])
 
