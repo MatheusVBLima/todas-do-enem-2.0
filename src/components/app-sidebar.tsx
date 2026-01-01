@@ -6,6 +6,7 @@ import {
   GraduationCap,
   PenTool,
   Sparkles,
+  FileText,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -50,6 +51,11 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
           url: "/grupos",
         },
       ],
+    },
+    {
+      title: "Provas",
+      url: "/provas",
+      icon: FileText,
     },
     {
       title: "Redação",

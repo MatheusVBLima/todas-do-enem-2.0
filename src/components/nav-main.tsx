@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation"
 import { usePrefetchQuestions } from "@/hooks/use-prefetch-questions"
 import { usePrefetchGroups } from "@/hooks/use-prefetch-groups"
 import { usePrefetchEssays } from "@/hooks/use-prefetch-essays"
+import { usePrefetchProofs } from "@/hooks/use-prefetch-proofs"
 
 import {
   Collapsible,
@@ -46,6 +47,7 @@ export function NavMain({
   const prefetchQuestions = usePrefetchQuestions()
   const prefetchGroups = usePrefetchGroups(userId)
   const prefetchEssays = usePrefetchEssays(userId)
+  const { prefetchProofsList } = usePrefetchProofs()
 
   const handlePrefetch = (url: string) => {
     if (timeoutRef.current) {
@@ -70,6 +72,8 @@ export function NavMain({
         prefetchGroups()
       } else if (url === "/redacao") {
         prefetchEssays()
+      } else if (url === "/provas") {
+        prefetchProofsList({ anos: [], pagina: 1 })
       } else if (url === "/conta") {
         // Prefetch data do perfil se necessário, embora /conta já faça fetch no server
         router.prefetch("/conta")

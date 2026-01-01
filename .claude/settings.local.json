@@ -49,7 +49,11 @@
       "Bash(npx shadcn@latest diff:*)",
       "Bash(npx supabase:*)",
       "Bash(bunx supabase db push:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(bunx supabase db execute:*)",
+      "Bash(timeout /t 60)",
+      "Bash(ping:*)",
+      "Bash(del test-ai-models.ts)"
     ]
   },
   "enableAllProjectMcpServers": true,

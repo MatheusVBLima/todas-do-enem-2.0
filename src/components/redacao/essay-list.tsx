@@ -57,7 +57,7 @@ export function EssayList({ essays, onEdit }: EssayListProps) {
         )
       case "CORRECTED":
         return (
-          <Badge className="gap-1 bg-green-600">
+          <Badge className="gap-1">
             <CheckCircle2 className="size-3" />
             Corrigida
           </Badge>
@@ -197,7 +197,7 @@ export function EssayList({ essays, onEdit }: EssayListProps) {
 
                 <Button
                   onClick={() => setEssayToDelete(essay.id)}
-                  variant="ghost"
+                  variant="destructive"
                   size="sm"
                   disabled={essay.status === "SUBMITTED"}
                 >

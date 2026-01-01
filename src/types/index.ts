@@ -106,3 +106,22 @@ export interface UpdateEssayInput {
   theme?: string
   content?: string
 }
+
+// Proof (Exam with PDF metadata)
+export interface Proof {
+  id: string
+  year: number
+  color: string
+  testDate: Date | null
+  season: '1º dia' | '2º dia' | 'COMPLETA'
+  pdfUrl: string
+  description: string | null
+  createdAt: Date
+  updatedAt: Date
+}
+
+export interface ProofFilters {
+  anos?: number[]
+  tipo?: '1º dia' | '2º dia' | 'COMPLETA'
+  pagina?: number
+}

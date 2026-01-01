@@ -1,4 +1,4 @@
-import type { QuestionFilters } from "@/types"
+import type { QuestionFilters, ProofFilters } from "@/types"
 
 /**
  * Centralized query keys for TanStack Query
@@ -40,5 +40,14 @@ export const queryKeys = {
     list: (userId: string) => [...queryKeys.essays.lists(), userId] as const,
     details: () => [...queryKeys.essays.all, "detail"] as const,
     detail: (id: string) => [...queryKeys.essays.details(), id] as const,
+  },
+
+  // Proofs
+  proofs: {
+    all: ["proofs"] as const,
+    lists: () => [...queryKeys.proofs.all, "list"] as const,
+    list: (filters: ProofFilters) => [...queryKeys.proofs.lists(), filters] as const,
+    details: () => [...queryKeys.proofs.all, "detail"] as const,
+    detail: (id: string) => [...queryKeys.proofs.details(), id] as const,
   },
 } as const

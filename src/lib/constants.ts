@@ -82,10 +82,10 @@ export const SUBSCRIPTION_PLANS = {
     price: 25,
     features: [
       'Tudo do plano gratuito',
-      'Explicação por IA de cada questão',
-      'Correção de redação por IA',
-      'Feedback por competências',
-      'Sugestões de melhoria',
+      'Até 900 explicações por IA/mês',
+      'Correção de até 20 redações por IA/mês',
+      'Feedback detalhado por competências',
+      'Sugestões personalizadas de melhoria',
     ],
   },
 } as const

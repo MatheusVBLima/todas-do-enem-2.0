@@ -40,6 +40,12 @@ export function canAccessRoute(plan: UserPlan | string, route: string): boolean 
 
 /**
  * Get quota limits for plan
+ *
+ * Updated 2026-01-01: Reduced questions limit from 1500 to 900
+ * to optimize AI costs with Gemini 2.5 Flash migration
+ *
+ * 900/mês permite: ~5 ENEMs completos com 50% das questões explicadas
+ * ou 4 ENEMs completos + uso durante a semana
  */
 export function getQuotaLimits(plan: UserPlan | string): {
   questionsLimit: number
@@ -47,7 +53,7 @@ export function getQuotaLimits(plan: UserPlan | string): {
 } {
   if (hasPaidPlan(plan)) {
     return {
-      questionsLimit: 1500,
+      questionsLimit: 900,
       essaysLimit: 20,
     }
   }

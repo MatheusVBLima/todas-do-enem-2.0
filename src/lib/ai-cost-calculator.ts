@@ -1,17 +1,19 @@
 /**
  * AI Cost Calculator
  *
- * Calculates costs based on Gemini 3.0 Flash pricing (2025):
- * - Input: $0.50 per 1M tokens
- * - Output: $3.00 per 1M tokens
+ * Calculates costs based on Gemini 2.5 Flash pricing (2026):
+ * - Input: $0.15 per 1M tokens
+ * - Output: $0.60 per 1M tokens (sem reasoning mode)
  * - BRL conversion rate: ~R$5.50 per USD (approximate, hardcoded)
  *
  * Uses native Vercel AI SDK usage metadata (LanguageModelUsage)
+ *
+ * Cost reduction: ~70% cheaper than Gemini 3.0 Flash
  */
 
-// Gemini 3.0 Flash pricing (USD)
-const GEMINI_FLASH_INPUT_COST_PER_1M = 0.50
-const GEMINI_FLASH_OUTPUT_COST_PER_1M = 3.00
+// Gemini 2.5 Flash pricing (USD) - Updated 2026-01-01
+const GEMINI_FLASH_INPUT_COST_PER_1M = 0.15
+const GEMINI_FLASH_OUTPUT_COST_PER_1M = 0.60
 
 // USD to BRL conversion rate (approximate)
 const USD_TO_BRL = 5.50
