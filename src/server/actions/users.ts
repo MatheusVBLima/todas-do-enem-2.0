@@ -1,16 +1,17 @@
 'use server'
 
+import { cache } from 'react'
 import { getSupabaseServer } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 import type { ActionResponse } from '@/types'
 import type { User } from '@/lib/supabase/types'
 
 /**
- * Get user by auth ID
+ * Get user by auth ID (internal, uncached)
  */
-export async function getUserProfile(authUserId: string): Promise<ActionResponse<User>> {
+async function fetchUserProfile(authUserId: string): Promise<ActionResponse<User>> {
   try {
-    const supabase = await getSupabaseServer()
+    const supabase = getSupabaseServer()
 
     const { data, error } = await supabase
       .from('User')
@@ -26,6 +27,14 @@ export async function getUserProfile(authUserId: string): Promise<ActionResponse
     return { success: false, error: 'Erro ao buscar perfil do usuário' }
   }
 }
+
+/**
+ * Get user by auth ID
+ *
+ * Uses React cache() to deduplicate calls within the same request.
+ * Layout and Page can both call getUserProfile() without extra DB hits.
+ */
+export const getUserProfile = cache(fetchUserProfile)
 
 /**
  * Update user profile (name only for now)

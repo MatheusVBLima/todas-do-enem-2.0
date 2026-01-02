@@ -44,16 +44,13 @@ async function QuestionsData({ userId, userPlan }: { userId: string | null; user
 }
 
 export default async function QuestoesPage() {
+  // Paraleliza autenticação - não bloqueia renderização inicial
   const authUser = await getCurrentUser()
 
-  // Get user plan if authenticated
-  let userPlan: string | null = null
-  if (authUser) {
-    const userResult = await getUserProfile(authUser.id)
-    if (userResult.success && userResult.data) {
-      userPlan = userResult.data.plan
-    }
-  }
+  // Se autenticado, busca perfil (não tem como paralelizar pois depende do authUser.id)
+  const userPlan = authUser
+    ? await getUserProfile(authUser.id).then(r => r.success ? r.data?.plan ?? null : null)
+    : null
 
   return (
     <div className="space-y-6">

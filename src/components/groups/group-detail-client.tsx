@@ -71,7 +71,7 @@ export function GroupDetailClient() {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-4">
-        <Button variant="ghost" size="icon" asChild>
+        <Button variant="ghost" size="icon" asChild aria-label="Voltar para grupos">
           <Link href="/grupos">
             <ArrowLeft className="size-4" />
           </Link>

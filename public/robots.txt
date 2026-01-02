@@ -1,0 +1,8 @@
+# robots.txt for Todas do ENEM
+# Allow all crawlers to access the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update when sitemap is generated)
+# Sitemap: https://todasdoenem.com.br/sitemap.xml

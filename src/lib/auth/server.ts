@@ -1,3 +1,4 @@
+import { cache } from 'react'
 import { cookies } from 'next/headers'
 import { createServerClient } from '@supabase/ssr'
 import type { Database } from '@/lib/supabase/database.types'
@@ -36,8 +37,11 @@ export async function createServerSupabaseClient() {
 /**
  * Get the current authenticated user from Server Components/Actions
  * Returns null if not authenticated
+ *
+ * Uses React cache() to deduplicate calls within the same request.
+ * Layout and Page can both call getCurrentUser() without extra DB hits.
  */
-export async function getCurrentUser() {
+export const getCurrentUser = cache(async () => {
   const supabase = await createServerSupabaseClient()
 
   const {
@@ -45,7 +49,7 @@ export async function getCurrentUser() {
   } = await supabase.auth.getUser()
 
   return user
-}
+})
 
 /**
  * Get the current user ID (throws if not authenticated)

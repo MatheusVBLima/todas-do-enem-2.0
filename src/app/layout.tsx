@@ -36,38 +36,42 @@ export const metadata: Metadata = {
 
 async function SidebarWrapper() {
   const authUser = await getCurrentUser()
-  let user = null
 
-  if (authUser) {
-    const userResult = await getUserProfile(authUser.id)
-    if (userResult.success && userResult.data) {
-      user = {
-        id: userResult.data.id,
-        email: userResult.data.email,
-        name: userResult.data.name || authUser.email?.split('@')[0] || 'Usuário',
-        plan: userResult.data.plan as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
-      }
-    } else {
-      const createResult = await upsertUserInDatabase(authUser.id, authUser.email || '')
-      if (createResult.success && createResult.data) {
-        user = {
-          id: createResult.data.id,
-          email: createResult.data.email,
-          name: createResult.data.name || authUser.email?.split('@')[0] || 'Usuário',
-          plan: createResult.data.plan as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
-        }
-      } else {
-        user = {
-          id: authUser.id,
-          email: authUser.email || '',
-          name: authUser.email?.split('@')[0] || 'Usuário',
-          plan: 'TENTANDO_A_SORTE' as const,
-        }
-      }
-    }
+  if (!authUser) {
+    return <AppSidebar user={null} />
   }
 
-  return <AppSidebar user={user} />
+  // Busca perfil do usuário
+  const userResult = await getUserProfile(authUser.id)
+
+  if (userResult.success && userResult.data) {
+    return (
+      <AppSidebar
+        user={{
+          id: userResult.data.id,
+          email: userResult.data.email,
+          name: userResult.data.name || authUser.email?.split('@')[0] || 'Usuário',
+          plan: userResult.data.plan as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
+        }}
+      />
+    )
+  }
+
+  // Usuário autenticado mas não existe no banco - criar
+  const createResult = await upsertUserInDatabase(authUser.id, authUser.email || '')
+
+  return (
+    <AppSidebar
+      user={{
+        id: createResult.success && createResult.data ? createResult.data.id : authUser.id,
+        email: createResult.success && createResult.data ? createResult.data.email : authUser.email || '',
+        name: createResult.success && createResult.data
+          ? createResult.data.name || authUser.email?.split('@')[0] || 'Usuário'
+          : authUser.email?.split('@')[0] || 'Usuário',
+        plan: (createResult.success && createResult.data ? createResult.data.plan : 'TENTANDO_A_SORTE') as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
+      }}
+    />
+  )
 }
 
 export default function RootLayout({

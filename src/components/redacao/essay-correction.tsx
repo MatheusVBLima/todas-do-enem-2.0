@@ -143,6 +143,7 @@ export function EssayCorrection({ essay: initialEssay, userId, userPlan }: Essay
               variant="ghost"
               size="icon"
               asChild
+              aria-label="Voltar para redações"
             >
               <Link href="/redacao">
                 <ArrowLeft className="size-4" />

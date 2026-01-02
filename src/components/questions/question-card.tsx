@@ -139,7 +139,7 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
                   variant="destructive"
                   size="icon"
                   onClick={onRemove}
-                  title="Remover do grupo"
+                  aria-label="Remover do grupo"
                 >
                   <Trash2 className="size-4" />
                 </Button>

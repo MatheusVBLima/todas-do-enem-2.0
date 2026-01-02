@@ -158,12 +158,13 @@ export function PdfViewer({ pdfUrl, fileName }: PdfViewerProps) {
       {/* Professional Floating Toolbar */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1 p-1.5 bg-black/80 backdrop-blur-md border border-white/10 rounded-full shadow-2xl transition-all hover:bg-black/90">
         <div className="flex items-center gap-1 px-2 border-r border-white/10">
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="h-8 w-8 rounded-full text-white hover:bg-white/10" 
-            onClick={goToPrevPage} 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-8 w-8 rounded-full text-white hover:bg-white/10"
+            onClick={goToPrevPage}
             disabled={pageNumber <= 1}
+            aria-label="Página anterior"
           >
             <ChevronLeft className="h-5 w-5" />
           </Button>
@@ -172,64 +173,67 @@ export function PdfViewer({ pdfUrl, fileName }: PdfViewerProps) {
             <span className="opacity-40">/</span>
             <span className="opacity-60">{numPages || "--"}</span>
           </div>
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="h-8 w-8 rounded-full text-white hover:bg-white/10" 
-            onClick={goToNextPage} 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-8 w-8 rounded-full text-white hover:bg-white/10"
+            onClick={goToNextPage}
             disabled={pageNumber >= numPages}
+            aria-label="Próxima página"
           >
             <ChevronRight className="h-5 w-5" />
           </Button>
         </div>
 
         <div className="flex items-center gap-1 px-2 border-r border-white/10">
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="h-8 w-8 rounded-full text-white hover:bg-white/10" 
-            onClick={zoomOut} 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-8 w-8 rounded-full text-white hover:bg-white/10"
+            onClick={zoomOut}
             disabled={scale <= 0.5}
+            aria-label="Diminuir zoom"
           >
             <ZoomOut className="h-4 w-4" />
           </Button>
           <div className="flex items-center gap-1 px-2 min-w-[50px] justify-center">
             <span className="text-[13px] font-medium text-white">{Math.round(scale * 100)}%</span>
           </div>
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="h-8 w-8 rounded-full text-white hover:bg-white/10" 
-            onClick={zoomIn} 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-8 w-8 rounded-full text-white hover:bg-white/10"
+            onClick={zoomIn}
             disabled={scale >= 3.0}
+            aria-label="Aumentar zoom"
           >
             <ZoomIn className="h-4 w-4" />
           </Button>
         </div>
 
         <div className="flex items-center gap-1 px-1">
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="h-8 w-8 rounded-full text-white hover:bg-white/10 hidden sm:flex" 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-8 w-8 rounded-full text-white hover:bg-white/10 hidden sm:flex"
             onClick={rotate}
-            title="Rotacionar"
+            aria-label="Rotacionar"
           >
             <RotateCw className="h-4 w-4" />
           </Button>
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="h-8 w-8 rounded-full text-white hover:bg-white/10" 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="h-8 w-8 rounded-full text-white hover:bg-white/10"
             onClick={toggleFullscreen}
-            title={isFullscreen ? "Sair da tela cheia" : "Tela cheia"}
+            aria-label={isFullscreen ? "Sair da tela cheia" : "Tela cheia"}
           >
             {isFullscreen ? <Minimize className="h-4 w-4" /> : <Maximize className="h-4 w-4" />}
           </Button>
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full text-white hover:bg-white/10">
+              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full text-white hover:bg-white/10" aria-label="Mais opções">
                 <MoreVertical className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
