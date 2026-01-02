@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Newsreader } from "next/font/google"
 import { Suspense } from "react"
+import { Analytics } from "@vercel/analytics/next"
 import { Providers } from "@/providers"
 import { AppSidebar } from "@/components/app-sidebar"
 import { Header } from "@/components/layout"
@@ -88,6 +89,7 @@ export default function RootLayout({
       >
         <AppearanceScript />
         <Providers>
+          <Analytics />
           <SidebarProvider>
             <Suspense fallback={<div className="w-[var(--sidebar-width)] bg-sidebar animate-pulse h-screen" />}>
               <SidebarWrapper />
