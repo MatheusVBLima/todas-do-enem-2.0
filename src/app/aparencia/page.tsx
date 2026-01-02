@@ -168,7 +168,7 @@ export default function AparenciaPage() {
   }
 
   return (
-    <div className="space-y-8 max-w-5xl mx-auto pb-10">
+    <div className="space-y-6">
       <div>
         <div className="flex items-center gap-3 mb-2">
           <Palette className="size-6 text-primary" />
