@@ -53,7 +53,8 @@
       "Bash(bunx supabase db execute:*)",
       "Bash(timeout /t 60)",
       "Bash(ping:*)",
-      "Bash(del test-ai-models.ts)"
+      "Bash(del test-ai-models.ts)",
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\components\\\\nav-ferramentas.tsx\")"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -203,7 +203,7 @@ export async function recordAIUsage(params: {
       p_cost_brl: params.estimatedCostBRL,
       p_cache_hit: params.cacheHit,
       p_status: params.status,
-      p_error_message: params.errorMessage || null,
+      p_error_message: params.errorMessage || undefined,
     })
 
     if (logError) {

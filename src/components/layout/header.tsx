@@ -1,7 +1,95 @@
 "use client"
 
+import { useState } from "react"
+import { usePathname } from "next/navigation"
+import { Plus, RotateCcw } from "lucide-react"
 import { GlobalSearch } from "@/components/search/global-search"
+import { Button } from "@/components/ui/button"
+import { SimuladoDialog } from "@/components/simulado/simulado-dialog"
+import { SimuladoRedirectDialog } from "@/components/simulado/simulado-redirect-dialog"
 
-export function Header() {
-  return <GlobalSearch />
+interface HeaderProps {
+  userId?: string | null
+}
+
+// Páginas que permitem criar simulado (têm questões)
+function canCreateSimulado(pathname: string): boolean {
+  // Página raiz (questões)
+  if (pathname === "/") return true
+  // Página de grupo específico
+  if (pathname.startsWith("/grupos/") && pathname !== "/grupos") return true
+  return false
+}
+
+// Verifica se está na página de resultado de simulado
+function isSimuladoResultPage(pathname: string): boolean {
+  // /simulados/[id] mas não /simulados/[id]/sessao
+  const match = pathname.match(/^\/simulados\/([^/]+)$/)
+  return match !== null && match[1] !== undefined
+}
+
+// Extrai o ID do simulado da URL
+function getSimuladoIdFromPath(pathname: string): string | null {
+  const match = pathname.match(/^\/simulados\/([^/]+)$/)
+  return match ? match[1] : null
+}
+
+export function Header({ userId = null }: HeaderProps) {
+  const pathname = usePathname()
+  const [simuladoDialogOpen, setSimuladoDialogOpen] = useState(false)
+  const [redirectDialogOpen, setRedirectDialogOpen] = useState(false)
+
+  const canCreate = canCreateSimulado(pathname)
+  const isResultPage = isSimuladoResultPage(pathname)
+  const simuladoId = getSimuladoIdFromPath(pathname)
+
+  const handleButtonClick = () => {
+    if (canCreate || isResultPage) {
+      setSimuladoDialogOpen(true)
+    } else {
+      setRedirectDialogOpen(true)
+    }
+  }
+
+  // Texto e ícone do botão
+  const buttonText = isResultPage ? "Refazer Simulado" : "Novo Simulado"
+  const ButtonIcon = isResultPage ? RotateCcw : Plus
+
+  return (
+    <>
+      <div className="flex items-center gap-2">
+        <GlobalSearch />
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={handleButtonClick}
+          className="hidden sm:flex items-center gap-2"
+        >
+          <ButtonIcon className="size-4" />
+          <span>{buttonText}</span>
+        </Button>
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={handleButtonClick}
+          className="sm:hidden"
+          aria-label={buttonText}
+        >
+          <ButtonIcon className="size-4" />
+        </Button>
+      </div>
+
+      <SimuladoDialog
+        open={simuladoDialogOpen}
+        onOpenChange={setSimuladoDialogOpen}
+        userId={userId}
+        refazerSimuladoId={isResultPage ? simuladoId : undefined}
+      />
+
+      <SimuladoRedirectDialog
+        open={redirectDialogOpen}
+        onOpenChange={setRedirectDialogOpen}
+      />
+    </>
+  )
 }

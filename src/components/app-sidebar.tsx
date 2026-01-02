@@ -7,6 +7,8 @@ import {
   PenTool,
   Sparkles,
   FileText,
+  ClipboardList,
+  History,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -35,22 +37,16 @@ interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
 export function AppSidebar({ user, ...props }: AppSidebarProps) {
   const isPaidUser = user ? user.plan === 'RUMO_A_APROVACAO' : false
 
-  const navMain = [
+  const ferramentas = [
     {
-      title: "Estudo",
-      url: "#",
+      title: "Questões",
+      url: "/",
       icon: BookOpen,
-      isActive: true,
-      items: [
-        {
-          title: "Questões",
-          url: "/",
-        },
-        {
-          title: "Grupos",
-          url: "/grupos",
-        },
-      ],
+    },
+    {
+      title: "Grupos",
+      url: "/grupos",
+      icon: ClipboardList,
     },
     {
       title: "Provas",
@@ -63,6 +59,14 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       icon: PenTool,
       badge: isPaidUser ? undefined : "PRO",
     },
+    {
+      title: "Simulados",
+      url: "/simulados",
+      icon: History,
+    },
+  ]
+
+  const plataforma = [
     {
       title: "Planos",
       url: "/planos",
@@ -91,7 +95,8 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
         </div>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={navMain} userId={user?.id ?? null} />
+        <NavMain items={ferramentas} userId={user?.id ?? null} groupLabel="Ferramentas" />
+        <NavMain items={plataforma} userId={user?.id ?? null} groupLabel="Plataforma" />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={userData} />

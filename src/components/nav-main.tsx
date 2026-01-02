@@ -28,6 +28,7 @@ import {
 export function NavMain({
   items,
   userId,
+  groupLabel = "Platform",
 }: {
   items: {
     title: string
@@ -41,6 +42,7 @@ export function NavMain({
     }[]
   }[]
   userId: string | null
+  groupLabel?: string
 }) {
   const router = useRouter()
   const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined)
@@ -89,7 +91,7 @@ export function NavMain({
 
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
+      <SidebarGroupLabel>{groupLabel}</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <Collapsible

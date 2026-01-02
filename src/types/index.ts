@@ -111,17 +111,85 @@ export interface UpdateEssayInput {
 export interface Proof {
   id: string
   year: number
-  color: string
-  testDate: Date | null
-  season: '1º dia' | '2º dia' | 'COMPLETA'
-  pdfUrl: string
+  color: string | null
+  testDate: string | null
+  season: string | null
+  pdfUrl: string | null
   description: string | null
-  createdAt: Date
-  updatedAt: Date
+  createdAt: string | null
+  updatedAt: string | null
 }
 
 export interface ProofFilters {
   anos?: number[]
   tipo?: '1º dia' | '2º dia' | 'COMPLETA'
   pagina?: number
+}
+
+// Simulado types
+export type SimuladoStatus = 'EM_ANDAMENTO' | 'CONCLUIDO' | 'ABANDONADO'
+export type SimuladoSourceType = 'HOME' | 'GROUP' | 'REFAZER'
+export type AnswerOption = 'A' | 'B' | 'C' | 'D' | 'E'
+
+export interface Simulado {
+  id: string
+  userId: string
+  name: string
+  totalQuestions: number
+  timeLimit: number | null
+  appliedFilters: unknown
+  sourceType: string
+  sourceGroupId: string | null
+  status: string
+  createdAt: string
+  startedAt: string
+  completedAt: string | null
+  updatedAt: string
+}
+
+export interface SimuladoQuestao {
+  simuladoId: string
+  questionId: string
+  position: number
+  userAnswer: string | null
+  isCorrect: boolean | null
+  answeredAt: string | null
+}
+
+export interface SimuladoResultado {
+  id: string
+  simuladoId: string
+  totalScore: number
+  correctAnswers: number
+  wrongAnswers: number
+  unansweredQuestions: number
+  scoreByArea: Record<string, { correct: number; total: number; percentage: number }>
+  timeTaken: number | null
+  completedAt: string
+  createdAt: string
+}
+
+// Simulado with relations
+export interface SimuladoWithQuestions extends Simulado {
+  questions: (SimuladoQuestao & { question: QuestionWithExam })[]
+}
+
+export interface SimuladoWithResult extends Simulado {
+  resultado: SimuladoResultado | null
+}
+
+// Create simulado params
+export interface CreateSimuladoParams {
+  userId: string
+  name: string
+  filters: QuestionFilters
+  timeLimit?: number
+  sourceType: SimuladoSourceType
+  sourceGroupId?: string
+}
+
+export interface SubmitAnswerParams {
+  simuladoId: string
+  questionId: string
+  answer: AnswerOption
 }

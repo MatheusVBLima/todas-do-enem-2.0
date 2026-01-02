@@ -34,44 +34,46 @@ export const metadata: Metadata = {
     "Acesse todas as questões do ENEM desde 1998. Filtre por ano, área e disciplina. Crie grupos de estudo e exporte para PDF.",
 }
 
-async function SidebarWrapper() {
+async function getUserData() {
   const authUser = await getCurrentUser()
 
   if (!authUser) {
-    return <AppSidebar user={null} />
+    return null
   }
 
   // Busca perfil do usuário
   const userResult = await getUserProfile(authUser.id)
 
   if (userResult.success && userResult.data) {
-    return (
-      <AppSidebar
-        user={{
-          id: userResult.data.id,
-          email: userResult.data.email,
-          name: userResult.data.name || authUser.email?.split('@')[0] || 'Usuário',
-          plan: userResult.data.plan as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
-        }}
-      />
-    )
+    return {
+      id: userResult.data.id,
+      email: userResult.data.email,
+      name: userResult.data.name || authUser.email?.split('@')[0] || 'Usuário',
+      plan: userResult.data.plan as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
+    }
   }
 
   // Usuário autenticado mas não existe no banco - criar
   const createResult = await upsertUserInDatabase(authUser.id, authUser.email || '')
 
-  return (
-    <AppSidebar
-      user={{
-        id: createResult.success && createResult.data ? createResult.data.id : authUser.id,
-        email: createResult.success && createResult.data ? createResult.data.email : authUser.email || '',
-        name: createResult.success && createResult.data
-          ? createResult.data.name || authUser.email?.split('@')[0] || 'Usuário'
-          : authUser.email?.split('@')[0] || 'Usuário',
-        plan: (createResult.success && createResult.data ? createResult.data.plan : 'TENTANDO_A_SORTE') as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
-      }}
-    />
-  )
+  return {
+    id: createResult.success && createResult.data ? createResult.data.id : authUser.id,
+    email: createResult.success && createResult.data ? createResult.data.email : authUser.email || '',
+    name: createResult.success && createResult.data
+      ? createResult.data.name || authUser.email?.split('@')[0] || 'Usuário'
+      : authUser.email?.split('@')[0] || 'Usuário',
+    plan: (createResult.success && createResult.data ? createResult.data.plan : 'TENTANDO_A_SORTE') as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
+  }
+}
+
+async function SidebarWrapper() {
+  const user = await getUserData()
+  return <AppSidebar user={user} />
+}
+
+async function HeaderWrapper() {
+  const user = await getUserData()
+  return <Header userId={user?.id ?? null} />
 }
 
 export default function RootLayout({
@@ -100,7 +102,9 @@ export default function RootLayout({
                   </div>
                 </div>
                 <div className="ml-auto shrink-0">
-                  <Header />
+                  <Suspense fallback={<div className="w-32 h-8 bg-muted animate-pulse rounded" />}>
+                    <HeaderWrapper />
+                  </Suspense>
                 </div>
               </header>
               <main className="flex flex-1 flex-col gap-4 p-4 lg:p-6">{children}</main>

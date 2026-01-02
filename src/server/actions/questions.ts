@@ -25,10 +25,10 @@ export async function getQuestions(
 
     // Call RPC function with trigram search for partial text matching
     const { data, error } = await supabase.rpc('search_questions_with_trigrams', {
-      p_busca: busca?.trim() || null,
-      p_anos: anos && anos.length > 0 ? anos : null,
-      p_areas: areas && areas.length > 0 ? areas : null,
-      p_disciplinas: disciplinas && disciplinas.length > 0 ? disciplinas : null,
+      p_busca: busca?.trim() || '',
+      p_anos: anos && anos.length > 0 ? anos : undefined,
+      p_areas: areas && areas.length > 0 ? areas : undefined,
+      p_disciplinas: disciplinas && disciplinas.length > 0 ? disciplinas : undefined,
       p_offset: offset,
       p_limit: pageSize,
     })

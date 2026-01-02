@@ -1,4 +1,4 @@
-import type { QuestionFilters, ProofFilters } from "@/types"
+import type { QuestionFilters, ProofFilters, SimuladoStatus } from "@/types"
 
 /**
  * Centralized query keys for TanStack Query
@@ -49,5 +49,17 @@ export const queryKeys = {
     list: (filters: ProofFilters) => [...queryKeys.proofs.lists(), filters] as const,
     details: () => [...queryKeys.proofs.all, "detail"] as const,
     detail: (id: string) => [...queryKeys.proofs.details(), id] as const,
+  },
+
+  // Simulados
+  simulados: {
+    all: ["simulados"] as const,
+    lists: () => [...queryKeys.simulados.all, "list"] as const,
+    list: (userId: string, status?: SimuladoStatus) =>
+      [...queryKeys.simulados.lists(), { userId, status }] as const,
+    details: () => [...queryKeys.simulados.all, "detail"] as const,
+    detail: (id: string) => [...queryKeys.simulados.details(), id] as const,
+    session: (id: string) => [...queryKeys.simulados.all, "session", id] as const,
+    result: (id: string) => [...queryKeys.simulados.all, "result", id] as const,
   },
 } as const

@@ -6,367 +6,600 @@ export type Json =
   | { [key: string]: Json | undefined }
   | Json[]
 
-/**
- * Supabase generated types.
- *
- * These were recreated manually from the current schema so we have
- * the Insert/Update helpers that the Supabase client expects. The
- * prior file only had Row definitions, which caused type inference
- * to resolve `.update()` payloads to `never`.
- */
 export type Database = {
+  // Allows to automatically instantiate createClient with right options
+  // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
+  __InternalSupabase: {
+    PostgrestVersion: "14.1"
+  }
   public: {
     Tables: {
       AIUsage: {
         Row: {
-          id: string
-          userId: string
-          type: string
-          resourceId: string | null
-          promptTokens: number
-          completionTokens: number
-          totalTokens: number
-          estimatedCostBRL: number
           cacheHit: boolean
-          status: string
-          errorMessage: string | null
-          metadata: Json | null
+          completionTokens: number
           createdAt: string
+          errorMessage: string | null
+          estimatedCostBRL: number
+          id: string
+          metadata: Json | null
+          promptTokens: number
+          resourceId: string | null
+          status: string
+          totalTokens: number
+          type: string
+          userId: string
         }
         Insert: {
-          id?: string
-          userId: string
-          type: string
-          resourceId?: string | null
-          promptTokens?: number
-          completionTokens?: number
-          totalTokens?: number
-          estimatedCostBRL?: number
           cacheHit?: boolean
-          status?: string
-          errorMessage?: string | null
-          metadata?: Json | null
+          completionTokens?: number
           createdAt?: string
+          errorMessage?: string | null
+          estimatedCostBRL?: number
+          id?: string
+          metadata?: Json | null
+          promptTokens?: number
+          resourceId?: string | null
+          status?: string
+          totalTokens?: number
+          type: string
+          userId: string
         }
         Update: {
-          id?: string
-          userId?: string
-          type?: string
-          resourceId?: string | null
-          promptTokens?: number
-          completionTokens?: number
-          totalTokens?: number
-          estimatedCostBRL?: number
           cacheHit?: boolean
-          status?: string
-          errorMessage?: string | null
-          metadata?: Json | null
+          completionTokens?: number
           createdAt?: string
+          errorMessage?: string | null
+          estimatedCostBRL?: number
+          id?: string
+          metadata?: Json | null
+          promptTokens?: number
+          resourceId?: string | null
+          status?: string
+          totalTokens?: number
+          type?: string
+          userId?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "AIUsage_userId_fkey"
+            columns: ["userId"]
+            isOneToOne: false
+            referencedRelation: "User"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       Essay: {
         Row: {
-          id: string
-          userId: string
-          title: string | null
-          theme: string | null
           content: string
-          wordCount: number
-          status: string
           createdAt: string
+          id: string
+          status: string
+          theme: string | null
+          title: string | null
           updatedAt: string
+          userId: string
+          wordCount: number
         }
         Insert: {
-          id?: string
-          userId: string
-          title?: string | null
-          theme?: string | null
           content: string
-          wordCount?: number
-          status?: string
           createdAt?: string
+          id?: string
+          status?: string
+          theme?: string | null
+          title?: string | null
           updatedAt?: string
+          userId: string
+          wordCount?: number
         }
         Update: {
-          id?: string
-          userId?: string
-          title?: string | null
-          theme?: string | null
           content?: string
-          wordCount?: number
-          status?: string
           createdAt?: string
+          id?: string
+          status?: string
+          theme?: string | null
+          title?: string | null
           updatedAt?: string
+          userId?: string
+          wordCount?: number
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "Essay_userId_fkey"
+            columns: ["userId"]
+            isOneToOne: false
+            referencedRelation: "User"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       EssayCorrection: {
         Row: {
-          id: string
-          essayId: string
-          competence1Score: number
           competence1Feedback: string
-          competence2Score: number
+          competence1Score: number
           competence2Feedback: string
-          competence3Score: number
+          competence2Score: number
           competence3Feedback: string
-          competence4Score: number
+          competence3Score: number
           competence4Feedback: string
-          competence5Score: number
+          competence4Score: number
           competence5Feedback: string
-          totalScore: number
-          generalFeedback: string
+          competence5Score: number
           createdAt: string
+          essayId: string
+          generalFeedback: string
+          id: string
+          totalScore: number
         }
         Insert: {
-          id?: string
-          essayId: string
-          competence1Score: number
           competence1Feedback: string
-          competence2Score: number
+          competence1Score: number
           competence2Feedback: string
-          competence3Score: number
+          competence2Score: number
           competence3Feedback: string
-          competence4Score: number
+          competence3Score: number
           competence4Feedback: string
-          competence5Score: number
+          competence4Score: number
           competence5Feedback: string
-          totalScore: number
-          generalFeedback: string
+          competence5Score: number
           createdAt?: string
+          essayId: string
+          generalFeedback: string
+          id?: string
+          totalScore: number
         }
         Update: {
-          id?: string
-          essayId?: string
-          competence1Score?: number
           competence1Feedback?: string
-          competence2Score?: number
+          competence1Score?: number
           competence2Feedback?: string
-          competence3Score?: number
+          competence2Score?: number
           competence3Feedback?: string
-          competence4Score?: number
+          competence3Score?: number
           competence4Feedback?: string
-          competence5Score?: number
+          competence4Score?: number
           competence5Feedback?: string
-          totalScore?: number
-          generalFeedback?: string
+          competence5Score?: number
           createdAt?: string
+          essayId?: string
+          generalFeedback?: string
+          id?: string
+          totalScore?: number
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "EssayCorrection_essayId_fkey"
+            columns: ["essayId"]
+            isOneToOne: true
+            referencedRelation: "Essay"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       Exam: {
         Row: {
+          color: string | null
+          createdAt: string | null
+          description: string | null
           id: string
+          pdfUrl: string | null
+          season: string | null
+          testDate: string | null
+          updatedAt: string | null
           year: number
         }
         Insert: {
+          color?: string | null
+          createdAt?: string | null
+          description?: string | null
           id?: string
+          pdfUrl?: string | null
+          season?: string | null
+          testDate?: string | null
+          updatedAt?: string | null
           year: number
         }
         Update: {
+          color?: string | null
+          createdAt?: string | null
+          description?: string | null
           id?: string
+          pdfUrl?: string | null
+          season?: string | null
+          testDate?: string | null
+          updatedAt?: string | null
           year?: number
         }
         Relationships: []
       }
       Question: {
         Row: {
-          id: string
-          examId: string
-          questionNumber: number
-          knowledgeArea: string
-          subject: string
-          statement: string
+          aiExplanation: string | null
           context: string | null
+          correctAnswer: string
+          examId: string
+          id: string
+          imageUrl: string | null
+          knowledgeArea: string
+          languageOption: string | null
           optionA: string
           optionB: string
           optionC: string
           optionD: string
           optionE: string
-          correctAnswer: string
-          imageUrl: string | null
+          questionNumber: number
+          statement: string
+          subject: string
           supportingMaterials: Json | null
-          languageOption: string | null
-          aiExplanation: string | null
         }
         Insert: {
-          id?: string
-          examId: string
-          questionNumber: number
-          knowledgeArea: string
-          subject: string
-          statement: string
+          aiExplanation?: string | null
           context?: string | null
+          correctAnswer: string
+          examId: string
+          id?: string
+          imageUrl?: string | null
+          knowledgeArea: string
+          languageOption?: string | null
           optionA: string
           optionB: string
           optionC: string
           optionD: string
           optionE: string
-          correctAnswer: string
-          imageUrl?: string | null
+          questionNumber: number
+          statement: string
+          subject: string
           supportingMaterials?: Json | null
-          languageOption?: string | null
-          aiExplanation?: string | null
         }
         Update: {
-          id?: string
-          examId?: string
-          questionNumber?: number
-          knowledgeArea?: string
-          subject?: string
-          statement?: string
+          aiExplanation?: string | null
           context?: string | null
+          correctAnswer?: string
+          examId?: string
+          id?: string
+          imageUrl?: string | null
+          knowledgeArea?: string
+          languageOption?: string | null
           optionA?: string
           optionB?: string
           optionC?: string
           optionD?: string
           optionE?: string
-          correctAnswer?: string
-          imageUrl?: string | null
+          questionNumber?: number
+          statement?: string
+          subject?: string
           supportingMaterials?: Json | null
-          languageOption?: string | null
-          aiExplanation?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "Question_examId_fkey"
+            columns: ["examId"]
+            isOneToOne: false
+            referencedRelation: "Exam"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       QuestionGroup: {
         Row: {
-          id: string
-          userId: string
-          name: string
-          description: string | null
           color: string
-          savedFilters: Json | null
           createdAt: string
+          description: string | null
+          id: string
+          name: string
+          savedFilters: Json | null
           updatedAt: string
+          userId: string
         }
         Insert: {
-          id?: string
-          userId: string
-          name: string
-          description?: string | null
-          color: string
-          savedFilters?: Json | null
+          color?: string
           createdAt?: string
+          description?: string | null
+          id?: string
+          name: string
+          savedFilters?: Json | null
           updatedAt?: string
+          userId: string
         }
         Update: {
-          id?: string
-          userId?: string
-          name?: string
-          description?: string | null
           color?: string
-          savedFilters?: Json | null
           createdAt?: string
+          description?: string | null
+          id?: string
+          name?: string
+          savedFilters?: Json | null
           updatedAt?: string
+          userId?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "QuestionGroup_userId_fkey"
+            columns: ["userId"]
+            isOneToOne: false
+            referencedRelation: "User"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       QuestionsOnGroups: {
         Row: {
-          questionId: string
-          groupId: string
           addedAt: string
+          groupId: string
+          questionId: string
         }
         Insert: {
-          questionId: string
-          groupId: string
           addedAt?: string
+          groupId: string
+          questionId: string
         }
         Update: {
-          questionId?: string
-          groupId?: string
           addedAt?: string
+          groupId?: string
+          questionId?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "QuestionsOnGroups_groupId_fkey"
+            columns: ["groupId"]
+            isOneToOne: false
+            referencedRelation: "QuestionGroup"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "QuestionsOnGroups_questionId_fkey"
+            columns: ["questionId"]
+            isOneToOne: false
+            referencedRelation: "Question"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      Simulado: {
+        Row: {
+          appliedFilters: Json | null
+          completedAt: string | null
+          createdAt: string
+          id: string
+          name: string
+          sourceGroupId: string | null
+          sourceType: string
+          startedAt: string
+          status: string
+          timeLimit: number | null
+          totalQuestions: number
+          updatedAt: string
+          userId: string
+        }
+        Insert: {
+          appliedFilters?: Json | null
+          completedAt?: string | null
+          createdAt?: string
+          id?: string
+          name: string
+          sourceGroupId?: string | null
+          sourceType?: string
+          startedAt?: string
+          status?: string
+          timeLimit?: number | null
+          totalQuestions: number
+          updatedAt?: string
+          userId: string
+        }
+        Update: {
+          appliedFilters?: Json | null
+          completedAt?: string | null
+          createdAt?: string
+          id?: string
+          name?: string
+          sourceGroupId?: string | null
+          sourceType?: string
+          startedAt?: string
+          status?: string
+          timeLimit?: number | null
+          totalQuestions?: number
+          updatedAt?: string
+          userId?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "Simulado_sourceGroupId_fkey"
+            columns: ["sourceGroupId"]
+            isOneToOne: false
+            referencedRelation: "QuestionGroup"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "Simulado_userId_fkey"
+            columns: ["userId"]
+            isOneToOne: false
+            referencedRelation: "User"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      SimuladoQuestao: {
+        Row: {
+          answeredAt: string | null
+          isCorrect: boolean | null
+          position: number
+          questionId: string
+          simuladoId: string
+          userAnswer: string | null
+        }
+        Insert: {
+          answeredAt?: string | null
+          isCorrect?: boolean | null
+          position: number
+          questionId: string
+          simuladoId: string
+          userAnswer?: string | null
+        }
+        Update: {
+          answeredAt?: string | null
+          isCorrect?: boolean | null
+          position?: number
+          questionId?: string
+          simuladoId?: string
+          userAnswer?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "SimuladoQuestao_questionId_fkey"
+            columns: ["questionId"]
+            isOneToOne: false
+            referencedRelation: "Question"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "SimuladoQuestao_simuladoId_fkey"
+            columns: ["simuladoId"]
+            isOneToOne: false
+            referencedRelation: "Simulado"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      SimuladoResultado: {
+        Row: {
+          completedAt: string
+          correctAnswers: number
+          createdAt: string
+          id: string
+          scoreByArea: Json
+          simuladoId: string
+          timeTaken: number | null
+          totalScore: number
+          unansweredQuestions: number
+          wrongAnswers: number
+        }
+        Insert: {
+          completedAt?: string
+          correctAnswers: number
+          createdAt?: string
+          id?: string
+          scoreByArea: Json
+          simuladoId: string
+          timeTaken?: number | null
+          totalScore: number
+          unansweredQuestions: number
+          wrongAnswers: number
+        }
+        Update: {
+          completedAt?: string
+          correctAnswers?: number
+          createdAt?: string
+          id?: string
+          scoreByArea?: Json
+          simuladoId?: string
+          timeTaken?: number | null
+          totalScore?: number
+          unansweredQuestions?: number
+          wrongAnswers?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "SimuladoResultado_simuladoId_fkey"
+            columns: ["simuladoId"]
+            isOneToOne: true
+            referencedRelation: "Simulado"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       User: {
         Row: {
-          id: string
+          createdAt: string
           email: string
+          id: string
           name: string | null
           plan: string
           role: string
-          createdAt: string
-          updatedAt: string
+          stripeCurrentPeriodEnd: string | null
           stripeCustomerId: string | null
+          stripePriceId: string | null
           stripeSubscriptionId: string | null
           stripeSubscriptionStatus: string | null
-          stripePriceId: string | null
-          stripeCurrentPeriodEnd: string | null
+          updatedAt: string
         }
         Insert: {
-          id?: string
+          createdAt?: string
           email: string
+          id?: string
           name?: string | null
           plan?: string
           role?: string
-          createdAt?: string
-          updatedAt?: string
+          stripeCurrentPeriodEnd?: string | null
           stripeCustomerId?: string | null
+          stripePriceId?: string | null
           stripeSubscriptionId?: string | null
           stripeSubscriptionStatus?: string | null
-          stripePriceId?: string | null
-          stripeCurrentPeriodEnd?: string | null
+          updatedAt?: string
         }
         Update: {
-          id?: string
+          createdAt?: string
           email?: string
+          id?: string
           name?: string | null
           plan?: string
           role?: string
-          createdAt?: string
-          updatedAt?: string
+          stripeCurrentPeriodEnd?: string | null
           stripeCustomerId?: string | null
+          stripePriceId?: string | null
           stripeSubscriptionId?: string | null
           stripeSubscriptionStatus?: string | null
-          stripePriceId?: string | null
-          stripeCurrentPeriodEnd?: string | null
+          updatedAt?: string
         }
         Relationships: []
       }
       UserAIQuota: {
         Row: {
-          id: string
-          userId: string
-          currentPeriodStart: string
           currentPeriodEnd: string
-          questionsUsed: number
-          questionsLimit: number
-          essaysUsed: number
+          currentPeriodStart: string
           essaysLimit: number
-          totalTokensUsed: number
+          essaysUsed: number
+          id: string
+          questionsLimit: number
+          questionsUsed: number
           totalCostBRL: number
+          totalTokensUsed: number
           updatedAt: string
+          userId: string
         }
         Insert: {
-          id?: string
-          userId: string
-          currentPeriodStart: string
           currentPeriodEnd: string
-          questionsUsed?: number
-          questionsLimit?: number
-          essaysUsed?: number
+          currentPeriodStart: string
           essaysLimit?: number
-          totalTokensUsed?: number
+          essaysUsed?: number
+          id?: string
+          questionsLimit?: number
+          questionsUsed?: number
           totalCostBRL?: number
+          totalTokensUsed?: number
           updatedAt?: string
+          userId: string
         }
         Update: {
-          id?: string
-          userId?: string
-          currentPeriodStart?: string
           currentPeriodEnd?: string
-          questionsUsed?: number
-          questionsLimit?: number
-          essaysUsed?: number
+          currentPeriodStart?: string
           essaysLimit?: number
-          totalTokensUsed?: number
+          essaysUsed?: number
+          id?: string
+          questionsLimit?: number
+          questionsUsed?: number
           totalCostBRL?: number
+          totalTokensUsed?: number
           updatedAt?: string
+          userId?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "UserAIQuota_userId_fkey"
+            columns: ["userId"]
+            isOneToOne: true
+            referencedRelation: "User"
+            referencedColumns: ["id"]
+          },
+        ]
       }
     }
     Views: {
@@ -376,81 +609,147 @@ export type Database = {
       check_or_initialize_user_quota: {
         Args: { p_user_id: string; p_user_plan: string }
         Returns: {
-          questions_used: number
-          questions_limit: number
-          essays_used: number
-          essays_limit: number
           current_period_end: string
+          essays_limit: number
+          essays_used: number
+          questions_limit: number
+          questions_used: number
+        }[]
+      }
+      generate_cuid: { Args: never; Returns: string }
+      get_costs_by_user: {
+        Args: never
+        Returns: {
+          cacheHits: number
+          lastUsed: string
+          totalCostBRL: number
+          totalRequests: number
+          totalTokens: number
+          userEmail: string
+          userId: string
+          userName: string
+        }[]
+      }
+      get_questions_with_filters: {
+        Args: {
+          p_anos?: number[]
+          p_areas?: string[]
+          p_busca?: string
+          p_disciplinas?: string[]
+          p_limit?: number
+          p_offset?: number
         }
+        Returns: {
+          aiExplanation: string
+          context: string
+          correctAnswer: string
+          exam: Json
+          examId: string
+          id: string
+          imageUrl: string
+          knowledgeArea: string
+          languageOption: string
+          optionA: string
+          optionB: string
+          optionC: string
+          optionD: string
+          optionE: string
+          questionNumber: number
+          statement: string
+          subject: string
+          supportingMaterials: Json
+          total_count: number
+        }[]
+      }
+      get_total_ai_costs: {
+        Args: never
+        Returns: {
+          cacheHitRate: number
+          cacheHits: number
+          totalCostBRL: number
+          totalRequests: number
+          totalTokens: number
+        }[]
       }
       increment_ai_usage: {
         Args: {
-          p_user_id: string
-          p_user_plan?: string
-          p_type: string
-          p_tokens: number
           p_cost_brl: number
+          p_tokens: number
+          p_type: string
+          p_user_id: string
         }
-        Returns: null
+        Returns: boolean
       }
       log_ai_usage: {
         Args: {
-          p_user_id: string
-          p_type: string
-          p_resource_id?: string | null
-          p_prompt_tokens: number
+          p_cache_hit: boolean
           p_completion_tokens: number
+          p_cost_brl: number
+          p_error_message?: string
+          p_prompt_tokens: number
+          p_resource_id: string
+          p_status: string
           p_total_tokens: number
-          p_cost_brl?: number
-          p_estimated_cost_brl?: number
-          p_cache_hit?: boolean
-          p_status?: string
-          p_error_message?: string | null
-          p_metadata?: Json | null
+          p_type: string
+          p_user_id: string
         }
-        Returns: null
-      }
-      submit_essay_for_correction: {
-        Args: { p_essay_id: string }
-        Returns: null
+        Returns: string
       }
       save_essay_correction: {
         Args: {
+          p_comp1_feedback: string
+          p_comp1_score: number
+          p_comp2_feedback: string
+          p_comp2_score: number
+          p_comp3_feedback: string
+          p_comp3_score: number
+          p_comp4_feedback: string
+          p_comp4_score: number
+          p_comp5_feedback: string
+          p_comp5_score: number
           p_essay_id: string
-          p_corrections?: Json
-          p_total_score?: number
-          p_general_feedback?: string
-          p_comp1_score?: number
-          p_comp1_feedback?: string
-          p_comp2_score?: number
-          p_comp2_feedback?: string
-          p_comp3_score?: number
-          p_comp3_feedback?: string
-          p_comp4_score?: number
-          p_comp4_feedback?: string
-          p_comp5_score?: number
-          p_comp5_feedback?: string
+          p_general_feedback: string
+          p_total_score: number
         }
-        Returns: null
+        Returns: Json
       }
       search_questions_with_trigrams: {
         Args: {
-          p_busca?: string | null
-          p_anos?: number[] | null
-          p_areas?: string[] | null
-          p_disciplinas?: string[] | null
-          p_offset?: number
+          p_anos?: number[]
+          p_areas?: string[]
+          p_busca: string
+          p_disciplinas?: string[]
           p_limit?: number
+          p_offset?: number
         }
-        Returns: Json[]
+        Returns: {
+          aiExplanation: string
+          context: string
+          correctAnswer: string
+          exam: Json
+          examId: string
+          id: string
+          imageUrl: string
+          knowledgeArea: string
+          languageOption: string
+          optionA: string
+          optionB: string
+          optionC: string
+          optionD: string
+          optionE: string
+          questionNumber: number
+          statement: string
+          subject: string
+          supportingMaterials: Json
+          total_count: number
+        }[]
       }
-      get_total_ai_costs: {
-        Args: Record<string, never>
+      set_current_user: { Args: { user_id: string }; Returns: undefined }
+      show_limit: { Args: never; Returns: number }
+      show_trgm: { Args: { "": string }; Returns: string[] }
+      submit_essay_for_correction: {
+        Args: { p_essay_id: string }
         Returns: Json
-      }
-      get_costs_by_user: {
-        Args: Record<string, never>
-        Returns: Json[]
       }
     }
     Enums: {
@@ -461,3 +760,126 @@ export type Database = {
     }
   }
 }
+
+type DatabaseWithoutInternals = Omit<Database, "__InternalSupabase">
+
+type DefaultSchema = DatabaseWithoutInternals[Extract<keyof Database, "public">]
+
+export type Tables<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof (DefaultSchema["Tables"] & DefaultSchema["Views"])
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
+        DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? (DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"] &
+      DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Views"])[TableName] extends {
+      Row: infer R
+    }
+    ? R
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof (DefaultSchema["Tables"] &
+        DefaultSchema["Views"])
+    ? (DefaultSchema["Tables"] &
+        DefaultSchema["Views"])[DefaultSchemaTableNameOrOptions] extends {
+        Row: infer R
+      }
+      ? R
+      : never
+    : never
+
+export type TablesInsert<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof DefaultSchema["Tables"]
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+      Insert: infer I
+    }
+    ? I
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
+    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+        Insert: infer I
+      }
+      ? I
+      : never
+    : never
+
+export type TablesUpdate<
+  DefaultSchemaTableNameOrOptions extends
+    | keyof DefaultSchema["Tables"]
+    | { schema: keyof DatabaseWithoutInternals },
+  TableName extends DefaultSchemaTableNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"]
+    : never = never,
+> = DefaultSchemaTableNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaTableNameOrOptions["schema"]]["Tables"][TableName] extends {
+      Update: infer U
+    }
+    ? U
+    : never
+  : DefaultSchemaTableNameOrOptions extends keyof DefaultSchema["Tables"]
+    ? DefaultSchema["Tables"][DefaultSchemaTableNameOrOptions] extends {
+        Update: infer U
+      }
+      ? U
+      : never
+    : never
+
+export type Enums<
+  DefaultSchemaEnumNameOrOptions extends
+    | keyof DefaultSchema["Enums"]
+    | { schema: keyof DatabaseWithoutInternals },
+  EnumName extends DefaultSchemaEnumNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"]
+    : never = never,
+> = DefaultSchemaEnumNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[DefaultSchemaEnumNameOrOptions["schema"]]["Enums"][EnumName]
+  : DefaultSchemaEnumNameOrOptions extends keyof DefaultSchema["Enums"]
+    ? DefaultSchema["Enums"][DefaultSchemaEnumNameOrOptions]
+    : never
+
+export type CompositeTypes<
+  PublicCompositeTypeNameOrOptions extends
+    | keyof DefaultSchema["CompositeTypes"]
+    | { schema: keyof DatabaseWithoutInternals },
+  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
+    schema: keyof DatabaseWithoutInternals
+  }
+    ? keyof DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+    : never = never,
+> = PublicCompositeTypeNameOrOptions extends {
+  schema: keyof DatabaseWithoutInternals
+}
+  ? DatabaseWithoutInternals[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
+  : PublicCompositeTypeNameOrOptions extends keyof DefaultSchema["CompositeTypes"]
+    ? DefaultSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
+    : never
+
+export const Constants = {
+  public: {
+    Enums: {},
+  },
+} as const

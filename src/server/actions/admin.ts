@@ -68,21 +68,21 @@ export async function getTotalAICosts(): Promise<{ success: boolean; data?: Tota
     }
 
     const totals = data as {
-      totalCostBRL?: string
-      totalTokens?: string
-      totalRequests?: string
-      cacheHits?: string
-      cacheHitRate?: string
+      totalCostBRL?: number
+      totalTokens?: number
+      totalRequests?: number
+      cacheHits?: number
+      cacheHitRate?: number
     }
 
     return {
       success: true,
       data: {
-        totalCostBRL: parseFloat(totals.totalCostBRL || '0'),
-        totalTokens: parseInt(totals.totalTokens || '0'),
-        totalRequests: parseInt(totals.totalRequests || '0'),
-        cacheHits: parseInt(totals.cacheHits || '0'),
-        cacheHitRate: parseFloat(totals.cacheHitRate || '0'),
+        totalCostBRL: totals.totalCostBRL ?? 0,
+        totalTokens: totals.totalTokens ?? 0,
+        totalRequests: totals.totalRequests ?? 0,
+        cacheHits: totals.cacheHits ?? 0,
+        cacheHitRate: totals.cacheHitRate ?? 0,
       }
     }
   } catch (error) {

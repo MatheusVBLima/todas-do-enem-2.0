@@ -73,19 +73,23 @@ export function ProofViewerContent({ proofId }: ProofViewerContentProps) {
             </p>
           )}
         </div>
-        <PdfDownloadButton
-          pdfUrl={proof.pdfUrl}
-          year={proof.year}
-          season={proof.season}
-          size="default"
-        />
+        {proof.pdfUrl && (
+          <PdfDownloadButton
+            pdfUrl={proof.pdfUrl}
+            year={proof.year}
+            season={proof.season ?? undefined}
+            size="default"
+          />
+        )}
       </div>
 
       {/* PDF Viewer */}
-      <PdfViewer
-        pdfUrl={proof.pdfUrl}
-        fileName={`ENEM_${proof.year}_${proof.season}.pdf`}
-      />
+      {proof.pdfUrl && (
+        <PdfViewer
+          pdfUrl={proof.pdfUrl}
+          fileName={`ENEM_${proof.year}_${proof.season || 'prova'}.pdf`}
+        />
+      )}
     </div>
   )
 }

@@ -17,13 +17,14 @@ export function ProofCard({ proof }: ProofCardProps) {
   const handleDownload = async (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
+    if (!proof.pdfUrl) return
     try {
       const response = await fetch(proof.pdfUrl)
       const blob = await response.blob()
       const url = window.URL.createObjectURL(blob)
       const a = document.createElement("a")
       a.href = url
-      a.download = `ENEM_${proof.year}_${proof.season}.pdf`
+      a.download = `ENEM_${proof.year}_${proof.season || 'prova'}.pdf`
       document.body.appendChild(a)
       a.click()
       window.URL.revokeObjectURL(url)
