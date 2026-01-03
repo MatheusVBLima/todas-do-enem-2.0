@@ -14,6 +14,7 @@ import {
 import { getQuestion } from "@/server/actions/questions"
 import { getGroup } from "@/server/actions/groups"
 import { getEssay } from "@/server/actions/essays"
+import { getSimuladoResult } from "@/server/actions/simulados"
 import { queryKeys } from "@/lib/query-keys"
 import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
 import { usePrefetchGroup } from "@/hooks/use-prefetch-group"
@@ -23,6 +24,7 @@ const routeLabels: Record<string, string> = {
   grupos: "Grupos",
   redacao: "Redação",
   conta: "Conta",
+  simulados: "Simulados",
 }
 
 function isCUID(str: string): boolean {
@@ -40,6 +42,7 @@ export function BreadcrumbSection() {
   const isQuestionPage = segments.length === 1 && isCUID(segments[0])
   const isGroupPage = segments[0]?.toLowerCase() === "grupos" && segments.length === 2 && isCUID(segments[1])
   const isEssayPage = segments[0]?.toLowerCase() === "redacao" && segments.length === 2 && isCUID(segments[1])
+  const isSimuladoPage = segments[0]?.toLowerCase() === "simulados" && segments.length === 2 && isCUID(segments[1])
 
   // IMPORTANT: Always call all hooks to maintain consistent hook order
   const prefetchQuestion = usePrefetchQuestion()
@@ -71,6 +74,16 @@ export function BreadcrumbSection() {
       return result.success ? result.data : null
     },
     enabled: isEssayPage && !!segments[1],
+  })
+
+  // Fetch simulado data if needed
+  const { data: simulado } = useQuery({
+    queryKey: queryKeys.simulados.detail(segments[1] || 'placeholder'),
+    queryFn: async () => {
+      const result = await getSimuladoResult(segments[1])
+      return result.success ? result.data : null
+    },
+    enabled: isSimuladoPage && !!segments[1],
   })
 
   // Don't show breadcrumb for home page or single-segment pages (after all hooks are called)
@@ -127,6 +140,13 @@ export function BreadcrumbSection() {
             }
           } else {
             label = "Redação"
+          }
+        } else if (isSimuladoPage && index === 1) {
+          // Simulado result: /simulados/[id]
+          if (simulado) {
+            label = simulado.name
+          } else {
+            label = "Simulado"
           }
         } else {
           label = "..."

@@ -1,21 +1,19 @@
 "use client"
 
-import { useState } from "react"
-import { useSuspenseQuery } from "@tanstack/react-query"
+import { useState, useTransition } from "react"
+import { useSuspenseQuery, useQueryClient } from "@tanstack/react-query"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import {
   Clock,
   Trophy,
-  CheckCircle2,
-  XCircle,
-  MinusCircle,
   ChevronLeft,
   ChevronRight,
   Play,
   ClipboardList,
   Calendar,
   AlertCircle,
+  Trash2,
 } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -28,10 +26,22 @@ import {
   EmptyDescription,
   EmptyContent,
 } from "@/components/ui/empty"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog"
 import { cn } from "@/lib/utils"
 import { queryKeys } from "@/lib/query-keys"
-import { getSimulados } from "@/server/actions/simulados"
+import { getSimulados, deleteSimulado } from "@/server/actions/simulados"
 import type { SimuladoWithResult } from "@/types"
+
+const PAGE_SIZE = 5
 
 interface SimuladoHistoryClientProps {
   userId: string
@@ -43,11 +53,15 @@ export function SimuladoHistoryClient({
   initialPage,
 }: SimuladoHistoryClientProps) {
   const router = useRouter()
+  const queryClient = useQueryClient()
   const [page, setPage] = useState(initialPage)
+  const [isPending, startTransition] = useTransition()
+  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false)
+  const [simuladoToDelete, setSimuladoToDelete] = useState<SimuladoWithResult | null>(null)
 
   const { data } = useSuspenseQuery({
-    queryKey: queryKeys.simulados.list(userId),
-    queryFn: () => getSimulados(userId, page),
+    queryKey: queryKeys.simulados.list(userId, page),
+    queryFn: () => getSimulados(userId, page, PAGE_SIZE),
   })
 
   const { data: simulados, pagination } = data
@@ -101,6 +115,25 @@ export function SimuladoHistoryClient({
     if (score >= 60) return "text-yellow-500"
     if (score >= 40) return "text-orange-500"
     return "text-red-500"
+  }
+
+  const handleDeleteClick = (e: React.MouseEvent, simulado: SimuladoWithResult) => {
+    e.stopPropagation()
+    setSimuladoToDelete(simulado)
+    setDeleteDialogOpen(true)
+  }
+
+  const handleConfirmDelete = () => {
+    if (!simuladoToDelete) return
+
+    startTransition(async () => {
+      const result = await deleteSimulado(simuladoToDelete.id)
+      if (result.success) {
+        queryClient.invalidateQueries({ queryKey: queryKeys.simulados.all })
+      }
+      setDeleteDialogOpen(false)
+      setSimuladoToDelete(null)
+    })
   }
 
   // Empty state
@@ -158,7 +191,18 @@ export function SimuladoHistoryClient({
                       {formatDate(simulado.createdAt)}
                     </div>
                   </div>
-                  {getStatusBadge(simulado.status)}
+                  <div className="flex items-center gap-2">
+                    {getStatusBadge(simulado.status)}
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="size-8 text-muted-foreground hover:text-destructive hover:bg-destructive/10"
+                      onClick={(e) => handleDeleteClick(e, simulado)}
+                      aria-label="Deletar simulado"
+                    >
+                      <Trash2 className="size-4" />
+                    </Button>
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-4 text-sm font-medium">
@@ -267,6 +311,29 @@ export function SimuladoHistoryClient({
           </Button>
         </div>
       )}
+
+      {/* Delete Confirmation Dialog */}
+      <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Deletar simulado?</AlertDialogTitle>
+            <AlertDialogDescription>
+              Tem certeza que deseja deletar o simulado &quot;{simuladoToDelete?.name}&quot;?
+              Esta ação não pode ser desfeita.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel disabled={isPending}>Cancelar</AlertDialogCancel>
+            <AlertDialogAction
+              onClick={handleConfirmDelete}
+              disabled={isPending}
+              className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+            >
+              {isPending ? "Deletando..." : "Deletar"}
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   )
 }

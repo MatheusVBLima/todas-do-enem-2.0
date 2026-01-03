@@ -9,6 +9,8 @@ import { queryKeys } from "@/lib/query-keys"
 import { getCurrentUser } from "@/lib/auth/server"
 import type { Metadata } from "next"
 
+const PAGE_SIZE = 5
+
 export const metadata: Metadata = {
   title: "Histórico de Simulados | Todas do ENEM",
   description: "Veja seu histórico de simulados realizados",
@@ -35,8 +37,8 @@ async function HistoryData({ userId, page }: { userId: string; page: number }) {
 
   // Server-side prefetch
   await queryClient.prefetchQuery({
-    queryKey: queryKeys.simulados.list(userId),
-    queryFn: () => getSimulados(userId, page),
+    queryKey: queryKeys.simulados.list(userId, page),
+    queryFn: () => getSimulados(userId, page, PAGE_SIZE),
   })
 
   return (

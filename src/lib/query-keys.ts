@@ -55,8 +55,8 @@ export const queryKeys = {
   simulados: {
     all: ["simulados"] as const,
     lists: () => [...queryKeys.simulados.all, "list"] as const,
-    list: (userId: string, status?: SimuladoStatus) =>
-      [...queryKeys.simulados.lists(), { userId, status }] as const,
+    list: (userId: string, page?: number, status?: SimuladoStatus) =>
+      [...queryKeys.simulados.lists(), { userId, page, status }] as const,
     details: () => [...queryKeys.simulados.all, "detail"] as const,
     detail: (id: string) => [...queryKeys.simulados.details(), id] as const,
     session: (id: string) => [...queryKeys.simulados.all, "session", id] as const,

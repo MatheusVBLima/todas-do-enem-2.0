@@ -24,30 +24,55 @@ export async function createSimulado(
   const { userId, name, filters, timeLimit, sourceType, sourceGroupId } = params
 
   try {
-    // First, fetch questions based on filters (same as getQuestions but without pagination limit)
-    const { data: questionsData, error: questionsError } = await supabase.rpc(
-      "search_questions_with_trigrams",
-      {
-        p_busca: filters.busca?.trim() || '',
-        p_anos: filters.anos && filters.anos.length > 0 ? filters.anos : undefined,
-        p_areas: filters.areas && filters.areas.length > 0 ? filters.areas : undefined,
-        p_disciplinas: filters.disciplinas && filters.disciplinas.length > 0 ? filters.disciplinas : undefined,
-        p_offset: 0,
-        p_limit: 500, // Reasonable max for a simulado
+    let questions: any[] = []
+
+    // If creating from a group, fetch group's questions
+    if (sourceGroupId) {
+      const { data: groupQuestions, error: groupError } = await supabase
+        .from('QuestionsOnGroups')
+        .select('questionId, question:Question(*)')
+        .eq('groupId', sourceGroupId)
+        .order('addedAt', { ascending: false })
+
+      if (groupError) {
+        console.error("Error fetching questions from group:", groupError)
+        return { success: false, error: "Erro ao buscar questões do grupo." }
       }
-    )
 
-    if (questionsError) {
-      console.error("Error fetching questions for simulado:", questionsError)
-      return { success: false, error: "Erro ao buscar questões para o simulado." }
-    }
+      questions = (groupQuestions || []).map((gq: any) => gq.question)
 
-    const questions = (questionsData as any[]) || []
+      if (questions.length === 0) {
+        return {
+          success: false,
+          error: "Este grupo não possui questões. Adicione questões ao grupo antes de criar um simulado.",
+        }
+      }
+    } else {
+      // Use existing RPC search logic for home page
+      const { data: questionsData, error: questionsError } = await supabase.rpc(
+        "search_questions_with_trigrams",
+        {
+          p_busca: filters.busca?.trim() || '',
+          p_anos: filters.anos && filters.anos.length > 0 ? filters.anos : undefined,
+          p_areas: filters.areas && filters.areas.length > 0 ? filters.areas : undefined,
+          p_disciplinas: filters.disciplinas && filters.disciplinas.length > 0 ? filters.disciplinas : undefined,
+          p_offset: 0,
+          p_limit: 500, // Reasonable max for a simulado
+        }
+      )
 
-    if (questions.length === 0) {
-      return {
-        success: false,
-        error: "Nenhuma questão encontrada com os filtros selecionados.",
+      if (questionsError) {
+        console.error("Error fetching questions for simulado:", questionsError)
+        return { success: false, error: "Erro ao buscar questões para o simulado." }
+      }
+
+      questions = (questionsData as any[]) || []
+
+      if (questions.length === 0) {
+        return {
+          success: false,
+          error: "Nenhuma questão encontrada com os filtros selecionados.",
+        }
       }
     }
 
@@ -322,12 +347,49 @@ export async function abandonSimulado(
   }
 }
 
+// Delete simulado from history
+export async function deleteSimulado(
+  simuladoId: string
+): Promise<ActionResponse> {
+  try {
+    // Delete related records first (cascade isn't automatic)
+    // Delete resultado
+    await supabase
+      .from("SimuladoResultado")
+      .delete()
+      .eq("simuladoId", simuladoId)
+
+    // Delete questoes
+    await supabase
+      .from("SimuladoQuestao")
+      .delete()
+      .eq("simuladoId", simuladoId)
+
+    // Delete simulado
+    const { error } = await supabase
+      .from("Simulado")
+      .delete()
+      .eq("id", simuladoId)
+
+    if (error) {
+      console.error("Error deleting simulado:", error)
+      return { success: false, error: "Erro ao deletar simulado." }
+    }
+
+    revalidatePath("/simulados")
+    return { success: true }
+  } catch (error) {
+    console.error("Error in deleteSimulado:", error)
+    return { success: false, error: "Erro ao deletar simulado." }
+  }
+}
+
 // Get simulados history for a user
 export async function getSimulados(
   userId: string,
-  page: number = 1
+  page: number = 1,
+  pageSize: number = PAGINATION.DEFAULT_PAGE_SIZE
 ): Promise<PaginatedResponse<SimuladoWithResult>> {
-  const pageSize = PAGINATION.DEFAULT_PAGE_SIZE
   const offset = (page - 1) * pageSize
 
   try {

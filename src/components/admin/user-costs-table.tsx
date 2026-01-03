@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+import { Eye } from "lucide-react"
 import {
   Table,
   TableBody,
@@ -9,10 +11,9 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
 import type { UserCost } from "@/server/actions/admin"
-import { formatDistanceToNow } from "date-fns"
-import { ptBR } from "date-fns/locale"
 
 interface UserCostsTableProps {
   data: UserCost[]
@@ -45,59 +46,35 @@ export function UserCostsTable({ data, isLoading }: UserCostsTableProps) {
           <TableRow>
             <TableHead>Usuário</TableHead>
             <TableHead className="text-right">Custo Total</TableHead>
-            <TableHead className="text-right">Tokens</TableHead>
-            <TableHead className="text-right">Requisições</TableHead>
-            <TableHead className="text-right">Cache Hits</TableHead>
-            <TableHead className="text-right">Último Uso</TableHead>
+            <TableHead className="w-[100px] text-right">Ações</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data.map((user, index) => {
-            const cacheHitRate = user.totalRequests > 0
-              ? ((user.cacheHits / user.totalRequests) * 100).toFixed(1)
-              : '0.0'
-
-            return (
-              <TableRow key={user.userId}>
-                <TableCell>
-                  <div className="flex flex-col">
-                    <span className="font-medium">{user.userName}</span>
-                    <span className="text-xs text-muted-foreground">{user.userEmail}</span>
-                  </div>
-                </TableCell>
-                <TableCell className="text-right">
-                  <span className="font-mono font-semibold">
-                    R$ {user.totalCostBRL.toFixed(2)}
-                  </span>
-                  {index === 0 && (
-                    <Badge variant="destructive" className="ml-2">
-                      Top #1
-                    </Badge>
-                  )}
-                </TableCell>
-                <TableCell className="text-right font-mono text-sm">
-                  {user.totalTokens.toLocaleString('pt-BR')}
-                </TableCell>
-                <TableCell className="text-right font-mono text-sm">
-                  {user.totalRequests.toLocaleString('pt-BR')}
-                </TableCell>
-                <TableCell className="text-right">
-                  <div className="flex flex-col items-end">
-                    <span className="font-mono text-sm">{user.cacheHits}</span>
-                    <span className="text-xs text-muted-foreground">
-                      {cacheHitRate}%
-                    </span>
-                  </div>
-                </TableCell>
-                <TableCell className="text-right text-sm text-muted-foreground">
-                  {formatDistanceToNow(new Date(user.lastUsed), {
-                    addSuffix: true,
-                    locale: ptBR,
-                  })}
-                </TableCell>
-              </TableRow>
-            )
-          })}
+          {data.map((user, index) => (
+            <TableRow key={user.userId}>
+              <TableCell>
+                <span className="font-medium">{user.userName}</span>
+              </TableCell>
+              <TableCell className="text-right">
+                <span className="font-mono font-semibold">
+                  R$ {user.totalCostBRL.toFixed(2)}
+                </span>
+                {index === 0 && (
+                  <Badge className="ml-2">
+                    Top #1
+                  </Badge>
+                )}
+              </TableCell>
+              <TableCell className="text-right">
+                <Button variant="ghost" size="sm" asChild>
+                  <Link href={`/conta/admin/usuarios/${user.userId}`}>
+                    <Eye className="size-4 mr-1" />
+                    Ver
+                  </Link>
+                </Button>
+              </TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </div>

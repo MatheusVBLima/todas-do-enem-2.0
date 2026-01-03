@@ -139,16 +139,35 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                   </span>
                   <span className="text-[10px] uppercase font-bold text-muted-foreground tracking-widest">Score</span>
                 </div>
-                {/* Simple circular background for the score */}
-                <div className="size-full rounded-full border-[10px] border-muted flex items-center justify-center" />
-                <div 
-                  className={cn(
-                    "absolute inset-0 rounded-full border-[10px] border-transparent",
-                    resultado.totalScore >= 80 ? "border-t-green-500 border-r-green-500" :
-                    resultado.totalScore >= 50 ? "border-t-yellow-500" : "border-t-red-500"
-                  )} 
-                  style={{ transform: `rotate(${resultado.totalScore * 3.6}deg)` }}
-                />
+                {/* Circular progress SVG */}
+                <svg className="size-full -rotate-90" viewBox="0 0 100 100">
+                  {/* Background circle */}
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="42"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="10"
+                    className="text-muted"
+                  />
+                  {/* Progress circle */}
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="42"
+                    fill="none"
+                    strokeWidth="10"
+                    strokeLinecap="round"
+                    className={cn(
+                      resultado.totalScore >= 80 ? "text-green-500" :
+                      resultado.totalScore >= 60 ? "text-yellow-500" :
+                      resultado.totalScore >= 40 ? "text-orange-500" : "text-red-500"
+                    )}
+                    stroke="currentColor"
+                    strokeDasharray={`${resultado.totalScore * 2.64} 264`}
+                  />
+                </svg>
               </div>
             </div>
           </CardContent>

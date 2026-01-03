@@ -123,3 +123,55 @@ export async function getCostsByUser(): Promise<{ success: boolean; data?: UserC
     return { success: false, error: 'Failed to fetch costs by user' }
   }
 }
+
+export type UserDetails = UserCost & {
+  plan: string
+  createdAt: string
+  stripeSubscriptionStatus: string | null
+}
+
+export async function getUserDetails(userId: string): Promise<{ success: boolean; data?: UserDetails; error?: string }> {
+  // SECURITY: Verify admin access
+  const accessCheck = await verifyAdminAccess()
+  if (!accessCheck.allowed) {
+    return { success: false, error: accessCheck.error }
+  }
+
+  try {
+    // Get user basic info
+    const { data: user, error: userError } = await supabase
+      .from('User')
+      .select('id, email, name, plan, createdAt, stripeSubscriptionStatus')
+      .eq('id', userId)
+      .single()
+
+    if (userError || !user) {
+      console.error('[Admin] Error fetching user:', userError)
+      return { success: false, error: 'Usuário não encontrado' }
+    }
+
+    // Get user AI costs
+    const { data: costsData } = await supabase.rpc('get_costs_by_user')
+    const userCosts = (costsData || []).find((row: any) => row.userId === userId)
+
+    return {
+      success: true,
+      data: {
+        userId: user.id,
+        userEmail: user.email,
+        userName: user.name || 'Usuário',
+        plan: user.plan,
+        createdAt: user.createdAt,
+        stripeSubscriptionStatus: user.stripeSubscriptionStatus,
+        totalCostBRL: parseFloat(userCosts?.totalCostBRL || '0'),
+        totalTokens: parseInt(userCosts?.totalTokens || '0'),
+        totalRequests: parseInt(userCosts?.totalRequests || '0'),
+        cacheHits: parseInt(userCosts?.cacheHits || '0'),
+        lastUsed: userCosts?.lastUsed || user.createdAt,
+      }
+    }
+  } catch (error) {
+    console.error('[Admin] Unexpected error:', error)
+    return { success: false, error: 'Failed to fetch user details' }
+  }
+}

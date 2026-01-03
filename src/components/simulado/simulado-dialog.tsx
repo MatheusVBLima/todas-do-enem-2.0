@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useTransition } from "react"
-import { useRouter, usePathname, useSearchParams } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { Clock, FileQuestion, Play, AlertCircle, RotateCcw } from "lucide-react"
 
 import {
@@ -52,7 +52,6 @@ export function SimuladoDialog({
   refazerSimuladoId,
 }: SimuladoDialogProps) {
   const router = useRouter()
-  const pathname = usePathname()
   const searchParams = useSearchParams()
   const [isPending, startTransition] = useTransition()
 
@@ -73,12 +72,9 @@ export function SimuladoDialog({
     }
   }
 
-  // Determine source type based on current path
+  // Determine source type based on sourceGroupId prop
   const getSourceType = (): SimuladoSourceType => {
-    if (pathname.startsWith("/grupos/") && sourceGroupId) {
-      return "GROUP"
-    }
-    return "HOME"
+    return sourceGroupId ? "GROUP" : "HOME"
   }
 
   const handleStart = () => {

@@ -7,17 +7,18 @@ import { GlobalSearch } from "@/components/search/global-search"
 import { Button } from "@/components/ui/button"
 import { SimuladoDialog } from "@/components/simulado/simulado-dialog"
 import { SimuladoRedirectDialog } from "@/components/simulado/simulado-redirect-dialog"
+import { useSimuladoContext } from "@/stores/use-simulado-context"
 
 interface HeaderProps {
   userId?: string | null
 }
 
 // Páginas que permitem criar simulado (têm questões)
-function canCreateSimulado(pathname: string): boolean {
+function canCreateSimulado(pathname: string, hasGroupContext: boolean): boolean {
   // Página raiz (questões)
   if (pathname === "/") return true
-  // Página de grupo específico
-  if (pathname.startsWith("/grupos/") && pathname !== "/grupos") return true
+  // Página de grupo específico (via context)
+  if (hasGroupContext) return true
   return false
 }
 
@@ -39,7 +40,10 @@ export function Header({ userId = null }: HeaderProps) {
   const [simuladoDialogOpen, setSimuladoDialogOpen] = useState(false)
   const [redirectDialogOpen, setRedirectDialogOpen] = useState(false)
 
-  const canCreate = canCreateSimulado(pathname)
+  // Get group context from Zustand store (set by GroupDetailClient)
+  const { groupId } = useSimuladoContext()
+
+  const canCreate = canCreateSimulado(pathname, !!groupId)
   const isResultPage = isSimuladoResultPage(pathname)
   const simuladoId = getSimuladoIdFromPath(pathname)
 
@@ -83,6 +87,7 @@ export function Header({ userId = null }: HeaderProps) {
         open={simuladoDialogOpen}
         onOpenChange={setSimuladoDialogOpen}
         userId={userId}
+        sourceGroupId={groupId ?? undefined}
         refazerSimuladoId={isResultPage ? simuladoId : undefined}
       />
 

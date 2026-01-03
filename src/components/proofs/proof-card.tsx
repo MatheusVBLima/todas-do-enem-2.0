@@ -61,14 +61,10 @@ export function ProofCard({ proof }: ProofCardProps) {
                 <Badge
                   variant="secondary"
                   className="font-semibold"
-                  style={{
-                    backgroundColor: proof.color ? `${proof.color}15` : undefined,
-                    color: proof.color || undefined,
-                    borderColor: proof.color ? `${proof.color}30` : undefined,
-                  }}
+                  
                 >
                   {proof.season}
-                </Badge>
+                </Badge> 
               )}
             </div>
           </div>

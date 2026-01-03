@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Todas do ENEM 2.0** is a SaaS platform for Brazilian students to study ENEM exam questions (1998-present). Features include question filtering, study groups, PDF export, and AI-powered explanations/essay correction using Google Gemini.
 
+## Important
+
+You should neve user run dev
+
 ## Tech Stack
 
 - **Framework**: Next.js 16 (App Router) + React 19
@@ -17,8 +21,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Development Commands
 
-```bash
-bun run dev          # Start dev server (localhost:3000)
+```bash        # Start dev server (localhost:3000)
 bun run build        # Production build
 ```
 
@@ -27,6 +30,7 @@ bun run build        # Production build
 - **Dashboard**: https://supabase.com/dashboard/project/hmauacrtvesutfbmogyo
 - **SQL Editor**: For running queries and managing database
 - **Table Editor**: Visual interface for data management
+- You can and should use supabase mcp
 
 ## Architecture Patterns
 

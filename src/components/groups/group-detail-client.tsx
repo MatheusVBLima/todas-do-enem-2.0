@@ -1,6 +1,7 @@
 "use client"
 
 import { useParams } from "next/navigation"
+import { useEffect } from "react"
 import { ArrowLeft, FolderOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -23,12 +24,14 @@ import {
 } from "@/components/ui/alert-dialog"
 import { useState } from "react"
 import { queryKeys } from "@/lib/query-keys"
+import { useSimuladoContext } from "@/stores/use-simulado-context"
 
 export function GroupDetailClient() {
   const params = useParams()
   const queryClient = useQueryClient()
   const groupId = params.id as string
   const [questionToRemove, setQuestionToRemove] = useState<string | null>(null)
+  const { setGroupContext, clearGroupContext } = useSimuladoContext()
 
   const { data: group } = useSuspenseQuery({
     queryKey: queryKeys.groups.detail(groupId),
@@ -37,6 +40,14 @@ export function GroupDetailClient() {
       return result.success ? result.data : null
     },
   })
+
+  // Set group context for Header's simulado button
+  useEffect(() => {
+    if (group) {
+      setGroupContext(group.id, group.name)
+    }
+    return () => clearGroupContext()
+  }, [group, setGroupContext, clearGroupContext])
 
   const removeMutation = useMutation({
     mutationFn: (questionId: string) => removeQuestionFromGroup(groupId, questionId),
