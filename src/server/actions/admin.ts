@@ -163,10 +163,10 @@ export async function getUserDetails(userId: string): Promise<{ success: boolean
         plan: user.plan,
         createdAt: user.createdAt,
         stripeSubscriptionStatus: user.stripeSubscriptionStatus,
-        totalCostBRL: parseFloat(userCosts?.totalCostBRL || '0'),
-        totalTokens: parseInt(userCosts?.totalTokens || '0'),
-        totalRequests: parseInt(userCosts?.totalRequests || '0'),
-        cacheHits: parseInt(userCosts?.cacheHits || '0'),
+        totalCostBRL: parseFloat(String(userCosts?.totalCostBRL || '0')),
+        totalTokens: parseInt(String(userCosts?.totalTokens || '0')),
+        totalRequests: parseInt(String(userCosts?.totalRequests || '0')),
+        cacheHits: parseInt(String(userCosts?.cacheHits || '0')),
         lastUsed: userCosts?.lastUsed || user.createdAt,
       }
     }
