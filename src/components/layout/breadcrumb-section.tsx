@@ -11,10 +11,17 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 import { getQuestion } from "@/server/actions/questions"
 import { getGroup } from "@/server/actions/groups"
 import { getEssay } from "@/server/actions/essays"
 import { getSimuladoResult } from "@/server/actions/simulados"
+import { getProof } from "@/server/actions/proofs"
+import { getUserName } from "@/server/actions/admin"
 import { queryKeys } from "@/lib/query-keys"
 import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
 import { usePrefetchGroup } from "@/hooks/use-prefetch-group"
@@ -25,12 +32,20 @@ const routeLabels: Record<string, string> = {
   redacao: "Redação",
   conta: "Conta",
   simulados: "Simulados",
+  provas: "Provas",
+  admin: "Admin",
 }
 
 function isCUID(str: string): boolean {
   // CUID format: c + timestamp (base36) + counter + fingerprint + random
   // Example: cmjlvfb6a0000nolexmos2yyx (25 chars, starts with 'c')
   return /^c[a-z0-9]{24}$/i.test(str)
+}
+
+function isUUID(str: string): boolean {
+  // UUID format: 8-4-4-4-12 hexadecimal characters
+  // Example: 08f6fd37-539b-48b8-b89b-842e8b969847
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(str)
 }
 
 export function BreadcrumbSection() {
@@ -43,6 +58,12 @@ export function BreadcrumbSection() {
   const isGroupPage = segments[0]?.toLowerCase() === "grupos" && segments.length === 2 && isCUID(segments[1])
   const isEssayPage = segments[0]?.toLowerCase() === "redacao" && segments.length === 2 && isCUID(segments[1])
   const isSimuladoPage = segments[0]?.toLowerCase() === "simulados" && segments.length === 2 && isCUID(segments[1])
+  const isProofPage = segments[0]?.toLowerCase() === "provas" && segments.length === 2 && isCUID(segments[1])
+  const isAdminUserPage = segments[0]?.toLowerCase() === "conta" &&
+                          segments[1]?.toLowerCase() === "admin" &&
+                          segments[2]?.toLowerCase() === "usuarios" &&
+                          segments.length === 4 &&
+                          isUUID(segments[3])
 
   // IMPORTANT: Always call all hooks to maintain consistent hook order
   const prefetchQuestion = usePrefetchQuestion()
@@ -86,6 +107,26 @@ export function BreadcrumbSection() {
     enabled: isSimuladoPage && !!segments[1],
   })
 
+  // Fetch proof data if needed (use separate key to avoid conflict with page cache)
+  const { data: proof } = useQuery({
+    queryKey: ['breadcrumb', 'proof', segments[1] || 'placeholder'],
+    queryFn: async () => {
+      const result = await getProof(segments[1])
+      return result.success ? result.data : null
+    },
+    enabled: isProofPage && !!segments[1],
+  })
+
+  // Fetch admin user name if needed
+  const { data: adminUser } = useQuery({
+    queryKey: ['admin', 'user', segments[3] || 'placeholder'],
+    queryFn: async () => {
+      const result = await getUserName(segments[3])
+      return result.success ? result.data : null
+    },
+    enabled: isAdminUserPage && !!segments[3],
+  })
+
   // Don't show breadcrumb for home page or single-segment pages (after all hooks are called)
   // Only show when we have at least 2 segments (e.g., /grupos/[id], /redacao/[id])
   if (segments.length === 0 || segments.length === 1) {
@@ -108,12 +149,22 @@ export function BreadcrumbSection() {
   // Build breadcrumb items
   const breadcrumbItems = segments
     .map((segment, index) => {
-      const href = `/${segments.slice(0, index + 1).join("/")}`
+      // Skip only "usuarios" segment for admin user page (keep "admin")
+      if (isAdminUserPage && segment === "usuarios") {
+        return null
+      }
+
+      let href = `/${segments.slice(0, index + 1).join("/")}`
       const isLast = index === segments.length - 1
       let label = routeLabels[segment] || segment
 
-      // Replace CUID with actual names
-      if (isCUID(segment)) {
+      // For admin user page, make "admin" link to /conta with tab query param
+      if (isAdminUserPage && segment === "admin") {
+        href = "/conta?tab=admin"
+      }
+
+      // Replace CUID/UUID with actual names
+      if (isCUID(segment) || isUUID(segment)) {
         if (isQuestionPage && index === 0) {
           // Question at root: /[id]
           if (question) {
@@ -148,6 +199,20 @@ export function BreadcrumbSection() {
           } else {
             label = "Simulado"
           }
+        } else if (isProofPage && index === 1) {
+          // Proof detail: /provas/[id]
+          if (proof) {
+            label = proof.description || `ENEM ${proof.year}${proof.season ? ` - ${proof.season}` : ''}`
+          } else {
+            label = "Prova"
+          }
+        } else if (isAdminUserPage && index === 3) {
+          // Admin user detail: /conta/admin/usuarios/[id]
+          if (adminUser) {
+            label = adminUser.name
+          } else {
+            label = "Usuário"
+          }
         } else {
           label = "..."
         }
@@ -161,6 +226,7 @@ export function BreadcrumbSection() {
         index,
       }
     })
+    .filter((item): item is NonNullable<typeof item> => item !== null) // Remove null items (skipped segments)
 
   return (
     <Breadcrumb>
@@ -170,7 +236,14 @@ export function BreadcrumbSection() {
             {index > 0 && <BreadcrumbSeparator />}
             <BreadcrumbItem>
               {item.isLast ? (
-                <BreadcrumbPage>{item.label}</BreadcrumbPage>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <BreadcrumbPage className="max-w-[200px] truncate">{item.label}</BreadcrumbPage>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{item.label}</p>
+                  </TooltipContent>
+                </Tooltip>
               ) : (
                 <BreadcrumbLink asChild>
                   <Link

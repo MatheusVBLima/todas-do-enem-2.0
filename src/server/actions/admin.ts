@@ -130,6 +130,34 @@ export type UserDetails = UserCost & {
   stripeSubscriptionStatus: string | null
 }
 
+export async function getUserName(userId: string): Promise<{ success: boolean; data?: { name: string }; error?: string }> {
+  // SECURITY: Verify admin access
+  const accessCheck = await verifyAdminAccess()
+  if (!accessCheck.allowed) {
+    return { success: false, error: accessCheck.error }
+  }
+
+  try {
+    const { data: user, error: userError } = await supabase
+      .from('User')
+      .select('name')
+      .eq('id', userId)
+      .single()
+
+    if (userError || !user) {
+      return { success: false, error: 'Usuário não encontrado' }
+    }
+
+    return {
+      success: true,
+      data: { name: user.name || 'Usuário' }
+    }
+  } catch (error) {
+    console.error('[Admin] Unexpected error:', error)
+    return { success: false, error: 'Failed to fetch user name' }
+  }
+}
+
 export async function getUserDetails(userId: string): Promise<{ success: boolean; data?: UserDetails; error?: string }> {
   // SECURITY: Verify admin access
   const accessCheck = await verifyAdminAccess()

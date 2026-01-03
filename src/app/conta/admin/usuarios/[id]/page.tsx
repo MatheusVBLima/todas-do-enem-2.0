@@ -1,7 +1,7 @@
 import { Suspense } from "react"
 import { notFound, redirect } from "next/navigation"
 import Link from "next/link"
-import { ArrowLeft, User, Mail, Crown, Calendar, DollarSign, MessageSquare, Zap, TrendingUp } from "lucide-react"
+import { User, Mail, Crown, Calendar, DollarSign, MessageSquare, Zap, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -52,11 +52,6 @@ async function UserDetailsContent({ userId }: { userId: string }) {
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center gap-4">
-        <Button variant="ghost" size="icon" asChild>
-          <Link href="/conta?tab=admin">
-            <ArrowLeft className="size-4" />
-          </Link>
-        </Button>
         <div className="flex-1">
           <h1 className="text-2xl font-bold">{user.userName}</h1>
           <p className="text-muted-foreground">{user.userEmail}</p>

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { useQuery, useQueryClient } from "@tanstack/react-query"
-import { ArrowLeft, Download, FileText, Edit } from "lucide-react"
+import { Download, FileText, Edit } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
@@ -13,7 +13,6 @@ import { EssayEditor } from "./essay-editor"
 import type { EssayWithCorrection } from "@/server/actions/essays"
 import { getEssay } from "@/server/actions/essays"
 import { queryKeys } from "@/lib/query-keys"
-import Link from "next/link"
 
 interface EssayCorrectionProps {
   essay: EssayWithCorrection
@@ -138,22 +137,8 @@ export function EssayCorrection({ essay: initialEssay, userId, userPlan }: Essay
       {/* Header */}
       <div className="flex items-start justify-between gap-4">
         <div className="flex-1 space-y-2">
-          <div className="flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              asChild
-              aria-label="Voltar para redações"
-            >
-              <Link href="/redacao">
-                <ArrowLeft className="size-4" />
-              </Link>
-            </Button>
-            <div>
-              <h1 className="text-3xl font-bold">{essay.title}</h1>
-              <p className="text-muted-foreground">{essay.theme}</p>
-            </div>
-          </div>
+          <h1 className="text-3xl font-bold">{essay.title}</h1>
+          <p className="text-muted-foreground">{essay.theme}</p>
         </div>
 
         <div className="text-right">
@@ -236,12 +221,6 @@ export function EssayCorrection({ essay: initialEssay, userId, userPlan }: Essay
 
       {/* Actions */}
       <div className="flex gap-2">
-        <Button asChild variant="outline">
-          <Link href="/redacao">
-            <ArrowLeft className="mr-2 size-4" />
-            Voltar para Redações
-          </Link>
-        </Button>
         <Button
           variant="outline"
           onClick={() => setIsEditDialogOpen(true)}

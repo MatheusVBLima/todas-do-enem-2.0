@@ -47,8 +47,8 @@ export function ProofCard({ proof }: ProofCardProps) {
                 <h3 className="font-bold text-lg tracking-tight">ENEM {proof.year}</h3>
               </div>
               {proof.testDate && (
-                <p className="text-sm text-muted-foreground flex items-center gap-1.5 ml-1">
-                  <Calendar className="size-3.5 opacity-70" />
+                <p className="text-sm text-muted-foreground flex items-center gap-1.5 ml-1 whitespace-nowrap">
+                  <Calendar className="size-3.5 opacity-70 shrink-0" />
                   {format(new Date(proof.testDate), "dd 'de' MMMM", {
                     locale: ptBR,
                   })}
@@ -86,19 +86,19 @@ export function ProofCard({ proof }: ProofCardProps) {
             <Button
               variant="secondary"
               size="sm"
-              className="flex-1 font-medium"
+              className="flex-1 min-w-0 font-medium"
             >
-              <Eye className="size-4 mr-2 opacity-70" />
-              Visualizar
+              <Eye className="size-4 mr-1.5 shrink-0 opacity-70" />
+              <span className="truncate">Visualizar</span>
             </Button>
             <Button
               size="sm"
               variant="outline"
               onClick={handleDownload}
-              className="flex-1 font-medium"
+              className="flex-1 min-w-0 font-medium"
             >
-              <Download className="size-4 mr-2 opacity-70" />
-              Baixar
+              <Download className="size-4 mr-1.5 shrink-0 opacity-70" />
+              <span className="truncate">Baixar</span>
             </Button>
           </div>
         </CardContent>

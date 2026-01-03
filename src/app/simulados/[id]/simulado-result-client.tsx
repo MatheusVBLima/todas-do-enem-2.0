@@ -134,7 +134,11 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
 
               <div className="relative flex items-center justify-center size-32">
                 <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                  <span className={cn("text-4xl font-black", getScoreColor(resultado.totalScore))}>
+                  <span className={cn(
+                    "font-black",
+                    resultado.totalScore === 100 ? "text-2xl" : "text-4xl",
+                    getScoreColor(resultado.totalScore)
+                  )}>
                     {resultado.totalScore}%
                   </span>
                   <span className="text-[10px] uppercase font-bold text-muted-foreground tracking-widest">Score</span>

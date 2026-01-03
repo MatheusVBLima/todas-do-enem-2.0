@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation"
 import { useEffect } from "react"
-import { ArrowLeft, FolderOpen } from "lucide-react"
+import { FolderOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
@@ -69,10 +69,7 @@ export function GroupDetailClient() {
         <h2 className="text-2xl font-bold">Grupo não encontrado</h2>
         <p className="text-muted-foreground">Este grupo não existe ou foi deletado.</p>
         <Button asChild>
-          <Link href="/grupos">
-            <ArrowLeft className="mr-2 size-4" />
-            Voltar para Grupos
-          </Link>
+          <Link href="/grupos">Voltar para Grupos</Link>
         </Button>
       </div>
     )
@@ -82,12 +79,6 @@ export function GroupDetailClient() {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-4">
-        <Button variant="ghost" size="icon" asChild aria-label="Voltar para grupos">
-          <Link href="/grupos">
-            <ArrowLeft className="size-4" />
-          </Link>
-        </Button>
-
         <div className="flex-1">
           <div className="flex items-center gap-2">
             <FolderOpen className="size-6" style={{ color: group.color }} />
