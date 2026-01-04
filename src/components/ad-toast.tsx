@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 import { toast } from "sonner"
 import { Megaphone } from "lucide-react"
 
-const AD_INTERVAL = 10 * 60 * 1000 // 10 minutos em milliseconds
+const AD_INTERVAL = 10 * 60 * 1000 // 10 minutos
 
 export function AdToastProvider() {
   const hasShownInitial = useRef(false)
