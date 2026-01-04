@@ -16,6 +16,7 @@ import {
   ReasoningTrigger,
 } from "@/components/ai-elements/reasoning"
 import { UpgradeDialog } from "@/components/upgrade-dialog"
+import { AdBanner } from "@/components/ad-banner"
 
 type AIExplanationProps = {
   question: QuestionWithExam
@@ -167,14 +168,17 @@ Explique esta questão do ENEM de forma didática.`
             </div>
 
             {!isLoading && (
-              <Button
-                variant="ghost"
-                size="sm"
-                className="mt-4"
-                onClick={() => window.location.reload()}
-              >
-                Fechar explicação
-              </Button>
+              <>
+                <AdBanner className="mt-6" />
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="mt-4"
+                  onClick={() => window.location.reload()}
+                >
+                  Fechar explicação
+                </Button>
+              </>
             )}
           </CardContent>
         </Card>

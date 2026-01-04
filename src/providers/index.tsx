@@ -5,6 +5,7 @@ import { QueryProvider } from "./query-provider"
 import { ThemeProvider } from "./theme-provider"
 import { Toaster } from "@/components/ui/sonner"
 import { AppearanceInitializer } from "@/components/appearance-initializer"
+import { AdToastProvider } from "@/components/ad-toast"
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -19,6 +20,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         <QueryProvider>
           {children}
           <Toaster />
+          <AdToastProvider />
         </QueryProvider>
       </NuqsAdapter>
     </ThemeProvider>

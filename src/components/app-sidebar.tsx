@@ -13,6 +13,7 @@ import {
 
 import { NavMain } from "@/components/nav-main"
 import { NavUser } from "@/components/nav-user"
+import { AdCard } from "@/components/ad-card"
 import {
   Sidebar,
   SidebarContent,
@@ -99,6 +100,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
         <NavMain items={plataforma} userId={user?.id ?? null} groupLabel="Plataforma" />
       </SidebarContent>
       <SidebarFooter>
+        <AdCard />
         <NavUser user={userData} />
       </SidebarFooter>
       <SidebarRail />
