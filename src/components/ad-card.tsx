@@ -5,7 +5,7 @@ import { useSidebar } from "@/components/ui/sidebar"
 
 function AdCardItem() {
   return (
-    <div className="flex-1 rounded-lg border border-dashed border-primary/30 bg-primary/5 p-3 flex flex-col justify-center min-h-[108px]">
+    <div className="flex-1 rounded-lg border border-dashed border-primary/30 bg-primary/5 px-4 py-8 flex flex-col justify-center">
       <div className="flex items-center gap-2">
         <Megaphone className="size-4 shrink-0 text-primary" />
         <p className="text-xs font-medium">Quer anunciar o seu negócio?</p>
