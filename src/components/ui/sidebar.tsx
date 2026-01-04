@@ -379,7 +379,7 @@ function SidebarContent({ className, ...props }: React.ComponentProps<"div">) {
         className
       )}
     >
-      <div className="flex flex-col gap-2" {...props} />
+      <div className="flex min-h-full flex-col gap-2" {...props} />
     </ScrollArea>
   )
 }

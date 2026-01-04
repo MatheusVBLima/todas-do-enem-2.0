@@ -5,6 +5,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Height breakpoint for tall screens */
+@custom-variant tall (@media (min-height: 850px));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

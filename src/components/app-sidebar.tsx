@@ -98,9 +98,9 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       <SidebarContent>
         <NavMain items={ferramentas} userId={user?.id ?? null} groupLabel="Ferramentas" />
         <NavMain items={plataforma} userId={user?.id ?? null} groupLabel="Plataforma" />
+        <AdCard />
       </SidebarContent>
       <SidebarFooter>
-        <AdCard />
         <NavUser user={userData} />
       </SidebarFooter>
       <SidebarRail />

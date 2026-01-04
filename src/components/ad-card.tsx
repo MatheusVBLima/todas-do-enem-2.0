@@ -1,11 +1,16 @@
 "use client"
 
 import { Megaphone } from "lucide-react"
-import { useSidebar } from "@/components/ui/sidebar"
+import {
+  SidebarGroup,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+} from "@/components/ui/sidebar"
 
 function AdCardItem() {
   return (
-    <div className="flex-1 rounded-lg border border-dashed border-primary/30 bg-primary/5 px-4 py-8 flex flex-col justify-center">
+    <div className="rounded-lg border border-dashed border-primary/30 bg-primary/5 px-4 py-5 tall:py-10 flex flex-col justify-center">
       <div className="flex items-center gap-2">
         <Megaphone className="size-4 shrink-0 text-primary" />
         <p className="text-xs font-medium">Quer anunciar o seu negócio?</p>
@@ -21,33 +26,27 @@ function AdCardItem() {
 }
 
 export function AdCard() {
-  const { state } = useSidebar()
-  const isCollapsed = state === "collapsed"
-
-  // Quando a sidebar está colapsada, mostra apenas o ícone
-  if (isCollapsed) {
-    return (
-      <div className="flex flex-col gap-2 px-2 py-2">
-        <a
-          href="mailto:contato@todasdoenem.com.br?subject=Quero anunciar no Todas do ENEM"
-          className="flex size-8 items-center justify-center rounded-md text-muted-foreground hover:bg-accent hover:text-primary"
-        >
-          <Megaphone className="size-4" />
-        </a>
-        <a
-          href="mailto:contato@todasdoenem.com.br?subject=Quero anunciar no Todas do ENEM"
-          className="flex size-8 items-center justify-center rounded-md text-muted-foreground hover:bg-accent hover:text-primary"
-        >
-          <Megaphone className="size-4" />
-        </a>
-      </div>
-    )
-  }
-
   return (
-    <div className="mx-2 flex flex-col gap-2">
-      <AdCardItem />
-      <AdCardItem />
-    </div>
+    <SidebarGroup>
+      {/* Ícones visíveis apenas quando colapsado */}
+      <SidebarMenu className="hidden group-data-[collapsible=icon]:flex">
+        {[1, 2, 3].map((i) => (
+          <SidebarMenuItem key={i}>
+            <SidebarMenuButton asChild tooltip="Anuncie aqui">
+              <a href="mailto:contato@todasdoenem.com.br?subject=Quero anunciar no Todas do ENEM">
+                <Megaphone />
+                <span>Anuncie aqui</span>
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        ))}
+      </SidebarMenu>
+      {/* Cards visíveis apenas quando expandido */}
+      <div className="flex flex-col gap-2 px-2 group-data-[collapsible=icon]:hidden">
+        <AdCardItem />
+        <AdCardItem />
+        <AdCardItem />
+      </div>
+    </SidebarGroup>
   )
 }
