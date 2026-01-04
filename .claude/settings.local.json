@@ -54,7 +54,8 @@
       "Bash(timeout /t 60)",
       "Bash(ping:*)",
       "Bash(del test-ai-models.ts)",
-      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\components\\\\nav-ferramentas.tsx\")"
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\components\\\\nav-ferramentas.tsx\")",
+      "Bash(del \"c:\\\\Web Workspace\\\\todas-do-enem-2.0\\\\src\\\\components\\\\redacao\\\\essays-skeleton.tsx\")"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -54,10 +54,8 @@ export default async function ProvasPage({ searchParams }: PageProps) {
                 {[...Array(8)].map((_, i) => (
                   <div
                     key={i}
-                    className="h-[280px] rounded-xl bg-card/50 border border-border/50 animate-pulse relative overflow-hidden"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-transparent" />
-                  </div>
+                    className="h-[280px] rounded-xl border animate-pulse bg-muted/50"
+                  />
                 ))}
               </div>
             }

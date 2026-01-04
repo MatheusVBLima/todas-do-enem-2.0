@@ -11,7 +11,7 @@ import Link from "next/link"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { queryKeys } from "@/lib/query-keys"
 import { getEssays } from "@/server/actions/essays"
-import { Skeleton } from "@/components/ui/skeleton"
+import { RedacaoSkeleton } from "@/components/redacao/redacao-skeleton"
 
 async function EssaysData({ userId, userPlan }: { userId: string; userPlan: string }) {
   const queryClient = new QueryClient({
@@ -134,10 +134,7 @@ export default async function RedacaoPage() {
         Escreva e corrija suas redações com inteligência artificial seguindo os critérios do ENEM.
       </p>
 
-      <Suspense fallback={<div className="space-y-4">
-        <Skeleton className="h-[200px] w-full rounded-lg" />
-        <Skeleton className="h-[200px] w-full rounded-lg" />
-      </div>}>
+      <Suspense fallback={<RedacaoSkeleton />}>
         <EssaysData userId={user.id} userPlan={user.plan} />
       </Suspense>
     </div>

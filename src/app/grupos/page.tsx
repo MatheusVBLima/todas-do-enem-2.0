@@ -5,7 +5,7 @@ import { getUserGroups } from "@/server/actions/groups"
 import { getCurrentUser } from "@/lib/auth/server"
 import { queryKeys } from "@/lib/query-keys"
 import { GroupsClient } from "@/components/groups/groups-client"
-import { GroupSkeleton } from "@/components/groups/group-skeleton"
+import { GroupsListSkeleton } from "@/components/groups/groups-list-skeleton"
 
 async function GroupsData({ userId }: { userId: string | null }) {
   const queryClient = new QueryClient({
@@ -49,7 +49,7 @@ export default async function GruposPage() {
         Organize suas questões em grupos para estudar de forma mais eficiente.
       </p>
 
-      <Suspense fallback={<GroupSkeleton />}>
+      <Suspense fallback={<GroupsListSkeleton />}>
         <GroupsData userId={authUser?.id || null} />
       </Suspense>
     </div>

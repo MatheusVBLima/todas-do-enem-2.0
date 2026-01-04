@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
-import { Search } from "lucide-react"
-import { CommandDialog, CommandEmpty } from "@/components/ui/command"
+import { Search, Loader2 } from "lucide-react"
+import { CommandDialog } from "@/components/ui/command"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -11,6 +11,8 @@ import { useQuery } from "@tanstack/react-query"
 import { getQuestions } from "@/server/actions/questions"
 import { queryKeys } from "@/lib/query-keys"
 import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
+import { KNOWLEDGE_AREAS, KnowledgeAreaKey } from "@/lib/constants"
+import { capitalizeSentences } from "@/lib/text-utils"
 
 export function GlobalSearch() {
   const [open, setOpen] = useState(false)
@@ -98,76 +100,87 @@ export function GlobalSearch() {
       </Button>
 
       <CommandDialog open={open} onOpenChange={handleOpenChange}>
-        <div className="flex h-9 items-center gap-2 border-b px-3">
+        <div className="flex items-center border-b px-3">
           <Search className="size-4 shrink-0 opacity-50" />
           <input
-            placeholder="Digite para buscar questões..."
+            placeholder="Digite para buscar questões pelo enunciado, assunto ou ano..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
+            className="placeholder:text-muted-foreground flex h-12 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
           />
         </div>
         <div className="min-h-[300px] max-h-[300px]">
           <ScrollArea className="h-[300px]">
             <div className="p-1">
-              {/* Estado 1: Vazio (sem busca) */}
-              {debouncedSearch.length === 0 && (
-                <div className="py-6 text-center text-sm text-muted-foreground">
-                  Digite para buscar questões...
-                </div>
-              )}
-
-              {/* Estado 2: Busca muito curta */}
-              {debouncedSearch.length > 0 && debouncedSearch.length < 3 && (
-                <div className="py-6 text-center text-sm text-muted-foreground">
-                  Digite pelo menos 3 caracteres para buscar
-                </div>
-              )}
-
               {/* Estado 3: Loading */}
               {isLoading && debouncedSearch.length >= 3 && (
-                <div className="py-6 text-center text-sm text-muted-foreground">
+                <div className="py-6 flex flex-col items-center justify-center gap-2 text-sm text-muted-foreground">
+                  <Loader2 className="size-4 animate-spin" />
                   Buscando...
                 </div>
               )}
 
               {/* Estado 4: Sem resultados */}
               {!isLoading && questions.length === 0 && debouncedSearch.length >= 3 && (
-                <div className="py-6 text-center text-sm text-muted-foreground">
-                  Nenhuma questão encontrada
+                <div className="py-12 text-center">
+                  <p className="text-sm text-muted-foreground">Nenhuma questão encontrada para &quot;{debouncedSearch}&quot;</p>
                 </div>
               )}
 
               {/* Estado 5: Com resultados */}
               {!isLoading && questions.length > 0 && (
-                <div className="text-foreground">
-                  <div className="text-muted-foreground px-2 py-1.5 text-xs font-medium">
-                    Questões
+                <div className="space-y-1 p-1">
+                  <div className="text-muted-foreground px-2 py-1.5 text-xs font-medium uppercase tracking-wider">
+                    Questões encontradas
                   </div>
-                  {questions.map((question) => (
-                    <button
-                      key={question.id}
-                      onClick={() => handleSelect(question.id)}
-                      onMouseEnter={() => {
-                        prefetchQuestion(question.id)
-                        router.prefetch(`/${question.id}`)
-                      }}
-                      className="data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground relative flex w-full cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none hover:bg-accent hover:text-accent-foreground"
-                    >
-                      <div className="flex flex-1 flex-col gap-1">
-                        <div className="flex items-center gap-2">
-                          <Badge variant="outline">{question.exam.year}</Badge>
-                          <Badge variant="secondary">Q{question.questionNumber}</Badge>
-                          <span className="text-xs text-muted-foreground">
-                            {question.knowledgeArea}
-                          </span>
+                  {questions.map((question) => {
+                    const area = KNOWLEDGE_AREAS[question.knowledgeArea as KnowledgeAreaKey]
+                    return (
+                      <button
+                        key={question.id}
+                        onClick={() => handleSelect(question.id)}
+                        onMouseEnter={() => {
+                          prefetchQuestion(question.id)
+                          router.prefetch(`/${question.id}`)
+                        }}
+                        className="group relative flex w-full cursor-pointer items-start gap-3 rounded-lg border border-transparent px-3 py-3 text-sm transition-all hover:bg-accent hover:border-border overflow-hidden"
+                      >
+                        {/* Borda lateral colorida indicando a área */}
+                        <div 
+                          className="absolute left-0 top-0 bottom-0 w-1 opacity-70 group-hover:opacity-100 transition-opacity"
+                          style={{ backgroundColor: area?.color || 'gray' }}
+                        />
+                        
+                        <div className="flex flex-1 flex-col gap-2 min-w-0">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="font-bold text-foreground tabular-nums tracking-tight">
+                              {question.exam.year} • Q{question.questionNumber}
+                            </span>
+                            <Badge 
+                              variant="outline" 
+                              className="text-[10px] h-4 px-1.5 font-semibold bg-background/50 border-muted-foreground/20"
+                              style={{ 
+                                color: area?.color,
+                                borderColor: `${area?.color}33`,
+                                backgroundColor: `${area?.color}11`
+                              }}
+                            >
+                              {area?.shortLabel || question.knowledgeArea}
+                            </Badge>
+                            {question.subject && (
+                              <span className="text-[10px] text-muted-foreground/70 uppercase font-medium truncate">
+                                {question.subject}
+                              </span>
+                            )}
+                          </div>
+                          
+                          <p className="text-xs text-muted-foreground line-clamp-2 text-left leading-relaxed">
+                            {capitalizeSentences(question.statement)}
+                          </p>
                         </div>
-                        <p className="text-xs text-muted-foreground line-clamp-2 text-left">
-                          {question.subject}
-                        </p>
-                      </div>
-                    </button>
-                  ))}
+                      </button>
+                    )
+                  })}
                 </div>
               )}
             </div>
