@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-export type ThemeName = "default" | "notebook" | "haze" | "ghibli" | "twitter" | "violeta" | "neutro"
+export type ThemeName = "default" | "notebook" | "haze" | "ghibli" | "twitter" | "violeta" | "neutro" | "musgo" | "supabase"
 export type ThemeMode = "light" | "dark"
 export type FontFamily = "sans" | "serif" | "mono"
 

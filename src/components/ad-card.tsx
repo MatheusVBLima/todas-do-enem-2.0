@@ -10,14 +10,14 @@ import {
 
 function AdCardItem() {
   return (
-    <div className="rounded-lg border border-dashed border-primary/30 bg-primary/5 px-4 py-5 tall:py-10 flex flex-col justify-center">
+    <div className="rounded-lg border border-dashed border-sidebar-border bg-sidebar-accent/50 px-4 py-5 tall:py-10 flex flex-col justify-center">
       <div className="flex items-center gap-2">
-        <Megaphone className="size-4 shrink-0 text-primary" />
+        <Megaphone className="size-4 shrink-0 text-muted-foreground" />
         <p className="text-xs font-medium">Quer anunciar o seu negócio?</p>
       </div>
       <a
         href="mailto:contato@todasdoenem.com.br?subject=Quero anunciar no Todas do ENEM"
-        className="mt-2 block text-xs text-primary hover:underline"
+        className="mt-2 block text-xs text-muted-foreground hover:text-foreground hover:underline"
       >
         contato@todasdoenem.com.br
       </a>

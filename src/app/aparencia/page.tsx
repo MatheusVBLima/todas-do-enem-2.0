@@ -129,6 +129,36 @@ const THEMES: ThemeOption[] = [
       muted: "oklch(0.2940 0.0130 272.9312)",
     },
   },
+  {
+    name: "musgo",
+    label: "Musgo",
+    description: "Verde sutil e orgânico",
+    light: {
+      bg: "oklch(0.9761 0.0041 91.4461)",
+      primary: "oklch(0.6333 0.0309 154.9039)",
+      muted: "oklch(0.9251 0.0071 88.6450)",
+    },
+    dark: {
+      bg: "oklch(0.1448 0 0)",
+      primary: "oklch(0.6333 0.0309 154.9039)",
+      muted: "oklch(0.2178 0 0)",
+    },
+  },
+  {
+    name: "supabase",
+    label: "Supabase",
+    description: "Verde vibrante e moderno",
+    light: {
+      bg: "oklch(0.9911 0 0)",
+      primary: "oklch(0.8348 0.1302 160.9080)",
+      muted: "oklch(0.9461 0 0)",
+    },
+    dark: {
+      bg: "oklch(0.1822 0 0)",
+      primary: "oklch(0.4365 0.1044 156.7556)",
+      muted: "oklch(0.2393 0 0)",
+    },
+  },
 ]
 
 const FONTS = [
