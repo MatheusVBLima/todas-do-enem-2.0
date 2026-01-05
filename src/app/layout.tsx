@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: "%s | Todas do ENEM",
   },
   description:
-    "Acesse todas as questões do ENEM desde 1998. Filtre por ano, área e disciplina. Crie grupos de estudo e exporte para PDF.",
+    "Acesse todas as questões do ENEM desde 1998. Inteligência artificial treinada para explicar questões, corrigir redações pelas competências do ENEM, simulados e planejamento de estudos.",
   keywords: [
     "ENEM",
     "questões ENEM",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: "Todas do ENEM",
     title: "Todas do ENEM - Questões do ENEM desde 1998",
     description:
-      "Acesse todas as questões do ENEM desde 1998. Filtre por ano, área e disciplina. Crie grupos de estudo e exporte para PDF.",
+      "Acesse todas as questões do ENEM desde 1998. Inteligência artificial treinada para explicar questões, corrigir redações pelas competências do ENEM, simulados e planejamento de estudos.",
     images: [
       {
         url: "/og.png",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Todas do ENEM - Questões do ENEM desde 1998",
     description:
-      "Acesse todas as questões do ENEM desde 1998. Filtre por ano, área e disciplina. Crie grupos de estudo e exporte para PDF.",
+      "Acesse todas as questões do ENEM desde 1998. Inteligência artificial treinada para explicar questões, corrigir redações pelas competências do ENEM, simulados e planejamento de estudos.",
     images: ["/og.png"],
   },
   robots: {
