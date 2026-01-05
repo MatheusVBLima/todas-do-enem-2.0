@@ -14,6 +14,9 @@ export function AdToastProvider() {
     const initialDelay = 2 * 60 * 1000
 
     const showAdToast = () => {
+      // Dismiss any existing ad toast before showing a new one
+      toast.dismiss("ad-toast")
+
       toast(
         <div className="flex items-start gap-3">
           <Megaphone className="mt-0.5 size-4 shrink-0 text-primary" />
@@ -31,7 +34,8 @@ export function AdToastProvider() {
           </div>
         </div>,
         {
-          duration: 8000,
+          id: "ad-toast",
+          duration: 10000,
           position: "bottom-right",
         }
       )

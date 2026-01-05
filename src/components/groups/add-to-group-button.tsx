@@ -190,9 +190,20 @@ export function AddToGroupButton({
           color: data.color,
         })
 
-        if (result.success) {
-          toast.success("Grupo criado com sucesso!")
+        if (result.success && result.data) {
+          // Adiciona a questão ao grupo recém-criado
+          const addResult = await addQuestionsToGroup(result.data.id, [questionId])
+
+          if (addResult.success) {
+            toast.success("Grupo criado e questão adicionada!")
+            setSelectedGroups((prev) => new Set(prev).add(result.data!.id))
+          } else {
+            toast.success("Grupo criado com sucesso!")
+            toast.error("Erro ao adicionar questão ao grupo")
+          }
+
           queryClient.invalidateQueries({ queryKey: queryKeys.groups.all })
+          queryClient.invalidateQueries({ queryKey: queryKeys.groups.detail(result.data.id) })
         } else {
           toast.error(result.error || "Erro ao criar grupo")
         }

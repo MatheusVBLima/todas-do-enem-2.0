@@ -103,12 +103,12 @@ export function GroupCard({ group, onEdit, onDelete }: GroupCardProps) {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={onEdit}>
+                <DropdownMenuItem onClick={(e) => { e.stopPropagation(); onEdit?.(); }}>
                   <Pencil className="mr-2 size-4" />
                   Editar
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem onClick={onDelete} className="text-destructive">
+                <DropdownMenuItem onClick={(e) => { e.stopPropagation(); onDelete?.(); }} className="text-destructive">
                   <Trash2 className="mr-2 size-4" />
                   Deletar
                 </DropdownMenuItem>
