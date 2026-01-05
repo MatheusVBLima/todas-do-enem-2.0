@@ -29,10 +29,65 @@ const newsreader = Newsreader({
   weight: ["400", "500", "600", "700"],
 })
 
+const siteUrl = "https://todas-do-enem-2-0.vercel.app"
+
 export const metadata: Metadata = {
-  title: "Todas do ENEM - Questões do ENEM desde 1998",
+  title: {
+    default: "Todas do ENEM - Questões do ENEM desde 1998",
+    template: "%s | Todas do ENEM",
+  },
   description:
     "Acesse todas as questões do ENEM desde 1998. Filtre por ano, área e disciplina. Crie grupos de estudo e exporte para PDF.",
+  keywords: [
+    "ENEM",
+    "questões ENEM",
+    "simulado ENEM",
+    "estudar ENEM",
+    "provas ENEM",
+    "questões antigas ENEM",
+    "banco de questões",
+    "vestibular",
+  ],
+  authors: [{ name: "Todas do ENEM" }],
+  creator: "Todas do ENEM",
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: siteUrl,
+    siteName: "Todas do ENEM",
+    title: "Todas do ENEM - Questões do ENEM desde 1998",
+    description:
+      "Acesse todas as questões do ENEM desde 1998. Filtre por ano, área e disciplina. Crie grupos de estudo e exporte para PDF.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Todas do ENEM - Plataforma de questões do ENEM",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Todas do ENEM - Questões do ENEM desde 1998",
+    description:
+      "Acesse todas as questões do ENEM desde 1998. Filtre por ano, área e disciplina. Crie grupos de estudo e exporte para PDF.",
+    images: ["/og.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 }
 
 async function getUserData() {
