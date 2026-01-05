@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useTransition } from "react"
 import { useRouter } from "next/navigation"
-import { useSuspenseQuery } from "@tanstack/react-query"
+import { useSuspenseQuery, useQueryClient } from "@tanstack/react-query"
 import {
   Clock,
   ChevronLeft,
@@ -62,6 +62,7 @@ interface SimuladoSessionClientProps {
 
 export function SimuladoSessionClient({ simuladoId }: SimuladoSessionClientProps) {
   const router = useRouter()
+  const queryClient = useQueryClient()
   const [isPending, startTransition] = useTransition()
 
   // Fetch simulado data
@@ -137,9 +138,11 @@ export function SimuladoSessionClient({ simuladoId }: SimuladoSessionClientProps
           questionId,
           answer,
         })
+        // Invalidate daily goal progress cache so it updates in real-time
+        queryClient.invalidateQueries({ queryKey: ["daily-goal-progress"] })
       })
     },
-    [currentQuestion?.questionId, simuladoId]
+    [currentQuestion?.questionId, simuladoId, queryClient]
   )
 
   // Navigation

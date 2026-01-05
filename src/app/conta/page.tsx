@@ -1,5 +1,8 @@
 import { Suspense } from "react"
 import { User, Crown, Zap, CreditCard, BarChart3, Calendar, AlertCircle, Shield } from "lucide-react"
+
+// Disable cache for this page - always fetch fresh data
+export const dynamic = 'force-dynamic'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -19,6 +22,8 @@ import Link from "next/link"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { QuotaDisplay } from "@/components/ai/quota-display"
 import { AdminStats } from "@/components/admin/admin-stats"
+import { UserStatistics } from "@/components/conta/user-statistics"
+import { DailyGoalCard } from "@/components/conta/daily-goal-card"
 
 async function AccountData({ userId }: { userId: string }) {
   const userResult = await getUserProfile(userId)
@@ -104,37 +109,6 @@ async function AccountData({ userId }: { userId: string }) {
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Preferências</CardTitle>
-            <CardDescription>Configurações de estudo e notificações</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-medium">Notificações por email</p>
-                <p className="text-sm text-muted-foreground">
-                  Receba atualizações sobre seu progresso
-                </p>
-              </div>
-              <Button variant="outline" size="sm" disabled>
-                Em breve
-              </Button>
-            </div>
-            <Separator />
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-medium">Meta diária de questões</p>
-                <p className="text-sm text-muted-foreground">
-                  Defina quantas questões quer resolver por dia
-                </p>
-              </div>
-              <Button variant="outline" size="sm" disabled>
-                Em breve
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
       </TabsContent>
 
       {/* Tab: Assinatura */}
@@ -321,44 +295,11 @@ async function AccountData({ userId }: { userId: string }) {
           <QuotaDisplay userId={userId} userPlan={user.plan} variant="full" />
         )}
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Seu Progresso</CardTitle>
-            <CardDescription>
-              Acompanhe sua evolução nos estudos
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid gap-4 md:grid-cols-3">
-              <div className="rounded-lg border bg-card p-4">
-                <p className="text-sm text-muted-foreground">Questões resolvidas</p>
-                <p className="text-3xl font-bold">-</p>
-                <p className="text-xs text-muted-foreground mt-1">Em breve</p>
-              </div>
-              <div className="rounded-lg border bg-card p-4">
-                <p className="text-sm text-muted-foreground">Taxa de acerto</p>
-                <p className="text-3xl font-bold">-</p>
-                <p className="text-xs text-muted-foreground mt-1">Em breve</p>
-              </div>
-              <div className="rounded-lg border bg-card p-4">
-                <p className="text-sm text-muted-foreground">Sequência atual</p>
-                <p className="text-3xl font-bold">-</p>
-                <p className="text-xs text-muted-foreground mt-1">Em breve</p>
-              </div>
-            </div>
+        {/* Daily Goal */}
+        <DailyGoalCard userId={userId} />
 
-            <Separator />
-
-            <div className="rounded-lg border bg-muted/50 p-8 text-center">
-              <BarChart3 className="mx-auto mb-3 size-12 text-muted-foreground" />
-              <p className="mb-2 font-medium text-lg">Estatísticas detalhadas em breve</p>
-              <p className="text-sm text-muted-foreground max-w-md mx-auto">
-                Estamos trabalhando em um sistema completo de acompanhamento de progresso
-                com gráficos, desempenho por área de conhecimento e muito mais
-              </p>
-            </div>
-          </CardContent>
-        </Card>
+        {/* User Statistics with charts */}
+        <UserStatistics userId={userId} />
       </TabsContent>
 
       {/* Tab: Admin */}

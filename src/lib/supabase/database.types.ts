@@ -509,6 +509,7 @@ export type Database = {
       User: {
         Row: {
           createdAt: string
+          dailyGoal: number | null
           email: string
           id: string
           name: string | null
@@ -523,6 +524,7 @@ export type Database = {
         }
         Insert: {
           createdAt?: string
+          dailyGoal?: number | null
           email: string
           id?: string
           name?: string | null
@@ -537,6 +539,7 @@ export type Database = {
         }
         Update: {
           createdAt?: string
+          dailyGoal?: number | null
           email?: string
           id?: string
           name?: string | null
@@ -669,6 +672,21 @@ export type Database = {
           totalCostBRL: number
           totalRequests: number
           totalTokens: number
+        }[]
+      }
+      get_user_performance_by_area: {
+        Args: { p_user_id: string }
+        Returns: {
+          area: string
+          correct: number
+          total: number
+        }[]
+      }
+      get_user_total_statistics: {
+        Args: { p_user_id: string }
+        Returns: {
+          correct_answers: number
+          total_answered: number
         }[]
       }
       increment_ai_usage: {

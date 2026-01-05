@@ -124,7 +124,7 @@ export function EssayEditor({
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">
-          {currentEssayId ? "Editar Redação" : "Nova Redação"}
+          Nova Redação
         </h2>
 
         <Button

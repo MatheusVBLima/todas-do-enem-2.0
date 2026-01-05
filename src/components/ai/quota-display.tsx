@@ -18,8 +18,8 @@ export function QuotaDisplay({ userId, userPlan, variant = "full" }: QuotaDispla
   const { data: quota, isLoading } = useQuery({
     queryKey: ["ai-quota", userId],
     queryFn: () => getUserQuota(userId, userPlan),
-    staleTime: 1000 * 60, // 1 minute
-    refetchInterval: 1000 * 60, // Refresh every minute
+    staleTime: 0, // Always consider data stale
+    refetchOnMount: 'always', // Always refetch when component mounts
   })
 
   if (isLoading) {
