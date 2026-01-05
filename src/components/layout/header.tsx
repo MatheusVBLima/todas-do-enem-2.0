@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { usePathname } from "next/navigation"
-import { Plus, RotateCcw } from "lucide-react"
+import { ClipboardList, RotateCcw } from "lucide-react"
 import { GlobalSearch } from "@/components/search/global-search"
 import { Button } from "@/components/ui/button"
 import { SimuladoDialog } from "@/components/simulado/simulado-dialog"
@@ -57,7 +57,7 @@ export function Header({ userId = null }: HeaderProps) {
 
   // Texto e ícone do botão
   const buttonText = isResultPage ? "Refazer Simulado" : "Novo Simulado"
-  const ButtonIcon = isResultPage ? RotateCcw : Plus
+  const ButtonIcon = isResultPage ? RotateCcw : ClipboardList
 
   return (
     <>

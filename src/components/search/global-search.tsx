@@ -89,12 +89,12 @@ export function GlobalSearch() {
     <>
       <Button
         variant="outline"
-        className="relative justify-start text-sm text-muted-foreground md:w-10 lg:w-64"
+        className="relative justify-start text-sm text-muted-foreground w-10 sm:w-64"
         onClick={() => setOpen(true)}
       >
-        <Search className="size-4 lg:mr-2" />
-        <span className="hidden lg:inline-flex">Buscar questões...</span>
-        <kbd className="pointer-events-none absolute right-1.5 top-2 hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 lg:flex">
+        <Search className="size-4 sm:mr-2" />
+        <span className="hidden sm:inline-flex">Buscar questões...</span>
+        <kbd className="pointer-events-none absolute right-1.5 top-2 hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
           <span className="text-xs">⌘</span>K
         </kbd>
       </Button>

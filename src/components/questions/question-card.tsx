@@ -107,34 +107,42 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
     <Card>
       <CardHeader className="pb-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-1.5">
             <Badge
               variant="outline"
               style={{ borderColor: area?.color, color: area?.color }}
             >
               {area?.shortLabel}
             </Badge>
-            <Badge variant="secondary">{subject?.label}</Badge>
-            <Badge variant="outline">{question.exam.year}</Badge>
-            <Link
-              href={`/${question.id}`}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 group"
-              onMouseEnter={() => {
-                startTransition(() => {
-                  prefetchQuestion(question.id)
-                  router.prefetch(`/${question.id}`)
-                })
-              }}
-            >
-              Questão {question.questionNumber}
-              <ExternalLink className="size-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </Link>
+            <Badge variant="secondary" className="max-[380px]:hidden">{subject?.label}</Badge>
+            <Badge variant="outline" className="max-[380px]:hidden">{question.exam.year}</Badge>
+            <Badge variant="outline" className="min-[381px]:hidden">{question.exam.year.toString().slice(2)}</Badge>
+            <Button variant="default" size="sm" className="h-auto py-1 px-2" asChild>
+              <Link
+                href={`/${question.id}`}
+                className="flex items-center gap-1"
+                onMouseEnter={() => {
+                  startTransition(() => {
+                    prefetchQuestion(question.id)
+                    router.prefetch(`/${question.id}`)
+                  })
+                }}
+              >
+                Q{question.questionNumber}
+                <ExternalLink className="size-3" />
+              </Link>
+            </Button>
           </div>
           <div className="flex items-center gap-1">
-            <AddToGroupButton questionId={question.id} userId={userId} variant="default" size="sm" />
+            <div className="hidden sm:contents">
+              <AddToGroupButton questionId={question.id} userId={userId} variant="default" size="sm" />
+            </div>
+            <div className="sm:hidden">
+              <AddToGroupButton questionId={question.id} userId={userId} variant="default" size="icon" />
+            </div>
             {onRemove && (
               <>
-                <div className="mx-2 h-6 w-px bg-border" />
+                <div className="mx-2 h-6 w-px bg-border hidden sm:block" />
                 <Button
                   variant="destructive"
                   size="icon"
