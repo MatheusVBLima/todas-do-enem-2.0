@@ -33,7 +33,7 @@ const siteUrl = "https://todas-do-enem-2-0.vercel.app"
 
 export const metadata: Metadata = {
   title: {
-    default: "Todas do ENEM - Questões do ENEM desde 1998",
+    default: "Todas do ENEM - Plataforma Inteligente de Preparação para o ENEM",
     template: "%s | Todas do ENEM",
   },
   description:
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: siteUrl,
     siteName: "Todas do ENEM",
-    title: "Todas do ENEM - Questões do ENEM desde 1998",
+    title: "Todas do ENEM - Plataforma Inteligente de Preparação para o ENEM",
     description:
       "Acesse todas as questões do ENEM desde 1998. Inteligência artificial treinada para explicar questões, corrigir redações pelas competências do ENEM, simulados e planejamento de estudos.",
     images: [
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Todas do ENEM - Questões do ENEM desde 1998",
+    title: "Todas do ENEM - Plataforma Inteligente de Preparação para o ENEM",
     description:
       "Acesse todas as questões do ENEM desde 1998. Inteligência artificial treinada para explicar questões, corrigir redações pelas competências do ENEM, simulados e planejamento de estudos.",
     images: ["/og.png"],
