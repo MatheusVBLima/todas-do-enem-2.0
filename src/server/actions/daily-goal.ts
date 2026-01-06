@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache"
 import { supabase } from "@/lib/supabase/server"
+import { todayBrazilISOString } from "@/lib/timezone"
 
 export interface DailyGoalProgress {
   goal: number
@@ -83,10 +84,8 @@ export async function getDailyGoalProgress(userId: string): Promise<ActionRespon
     const goalResult = await getUserDailyGoal(userId)
     const goal = goalResult.data ?? 10
 
-    // Get today's start timestamp
-    const today = new Date()
-    today.setHours(0, 0, 0, 0)
-    const todayStr = today.toISOString()
+    // Get today's start timestamp using Brazilian timezone
+    const todayStr = todayBrazilISOString()
 
     // Count questions answered today
     const { count, error } = await supabase

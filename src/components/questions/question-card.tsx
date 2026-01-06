@@ -300,7 +300,6 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
         <div className="flex items-center justify-between">
           {!isAnswerVisible ? (
             <Button
-              variant="outline"
               size="sm"
               onClick={handleRevealAnswer}
               disabled={!hasAnswered}
@@ -322,7 +321,6 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
           )}
 
           <Button
-            variant="ghost"
             size="sm"
             onClick={() => {
               setSelectedOption(null)

@@ -15,6 +15,7 @@ import {
   Reasoning,
   ReasoningTrigger,
 } from "@/components/ai-elements/reasoning"
+import { Shimmer } from "@/components/ai-elements/shimmer"
 import { UpgradeDialog } from "@/components/upgrade-dialog"
 import { AdBanner } from "@/components/ad-banner"
 
@@ -28,6 +29,7 @@ export function AIExplanation({ question, userId, userPlan }: AIExplanationProps
   const isPro = userPlan === "RUMO_A_APROVACAO"
   const [isGenerating, setIsGenerating] = useState(false)
   const [showUpgradeDialog, setShowUpgradeDialog] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(true)
   const queryClient = useQueryClient()
 
   // Check if explanation is cached
@@ -117,7 +119,7 @@ Explique esta questão do ENEM de forma didática.`
         <Button
           onClick={handleGenerate}
           disabled={isLoading}
-          variant="outline"
+          variant="default"
           className="w-full"
         >
           {isLoading ? (
@@ -143,21 +145,20 @@ Explique esta questão do ENEM de forma didática.`
       {isGenerating && !explanationText ? (
         <Reasoning isStreaming={true} defaultOpen={false}>
           <ReasoningTrigger
-            getThinkingMessage={() => isCached ? "Carregando explicação..." : "Analisando questão e gerando explicação..."}
+            getThinkingMessage={() => (
+              <Shimmer duration={1.5}>
+                {isCached ? "Carregando explicação..." : "Analisando questão e gerando explicação..."}
+              </Shimmer>
+            )}
           />
         </Reasoning>
       ) : explanationText ? (
+        isExpanded ? (
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg">
               <Sparkles className="size-5 text-primary" />
               Explicação por IA
-              {isCached && (
-                <Badge variant="secondary" className="gap-1 ml-auto">
-                  <Zap className="size-3" />
-                  Cache
-                </Badge>
-              )}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -171,10 +172,9 @@ Explique esta questão do ENEM de forma didática.`
               <>
                 <AdBanner className="mt-6" />
                 <Button
-                  variant="ghost"
                   size="sm"
                   className="mt-4"
-                  onClick={() => window.location.reload()}
+                  onClick={() => setIsExpanded(false)}
                 >
                   Fechar explicação
                 </Button>
@@ -182,6 +182,16 @@ Explique esta questão do ENEM de forma didática.`
             )}
           </CardContent>
         </Card>
+        ) : (
+          <Button
+            size="sm"
+            className="w-full"
+            onClick={() => setIsExpanded(true)}
+          >
+            <Sparkles className="mr-2 size-4" />
+            Ver explicação
+          </Button>
+        )
       ) : null}
     </div>
   )

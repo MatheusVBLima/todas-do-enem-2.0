@@ -27,7 +27,7 @@ async function PlanBadge() {
     <div className="flex justify-center">
       <Badge variant="default" className="px-4 py-2 text-sm">
         <Sparkles className="mr-2 size-4" />
-        Você está no plano PRO
+        Você está no plano Rumo à Aprovação
       </Badge>
     </div>
   )
@@ -166,7 +166,7 @@ export default function PlanosPage() {
 
           <CardContent className="flex-1 space-y-4">
             <div className="space-y-3">
-              <h4 className="font-semibold text-sm text-muted-foreground">Tudo do plano gratuito, mais:</h4>
+              <h4 className="font-semibold text-sm text-muted-foreground">Tudo do plano Tentando a Sorte, mais:</h4>
 
               <div className="space-y-2">
                 {SUBSCRIPTION_PLANS.RUMO_A_APROVACAO.features.slice(1).map((feature) => (
@@ -199,7 +199,7 @@ export default function PlanosPage() {
 
       {/* FAQ or additional info */}
       <div className="mt-12 text-center space-y-4">
-        <h2 className="text-2xl font-bold">Por que escolher o plano PRO?</h2>
+        <h2 className="text-2xl font-bold">Por que escolher o plano Rumo à Aprovação?</h2>
         <div className="grid gap-6 lg:grid-cols-3 text-left max-w-5xl mx-auto">
           <Card>
             <CardHeader>

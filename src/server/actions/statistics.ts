@@ -1,6 +1,7 @@
 "use server"
 
 import { supabase } from "@/lib/supabase/server"
+import { getTodayBrazil, todayBrazilDateString, todayBrazilISOString } from "@/lib/timezone"
 
 export interface UserStatistics {
   questionsAnswered: number
@@ -124,10 +125,9 @@ async function calculateStreak(userId: string): Promise<number> {
 
     if (uniqueDates.length === 0) return 0
 
-    // Get today and yesterday dates
-    const today = new Date()
-    today.setHours(0, 0, 0, 0)
-    const todayStr = today.toISOString().split('T')[0]
+    // Get today and yesterday dates using Brazilian timezone
+    const today = getTodayBrazil()
+    const todayStr = todayBrazilDateString()
 
     const yesterday = new Date(today)
     yesterday.setDate(yesterday.getDate() - 1)
@@ -169,9 +169,8 @@ async function calculateStreak(userId: string): Promise<number> {
  */
 export async function getTodayProgress(userId: string): Promise<ActionResponse<{ answered: number }>> {
   try {
-    const today = new Date()
-    today.setHours(0, 0, 0, 0)
-    const todayStr = today.toISOString()
+    // Get today's start timestamp using Brazilian timezone
+    const todayStr = todayBrazilISOString()
 
     const { count, error } = await supabase
       .from('SimuladoQuestao')

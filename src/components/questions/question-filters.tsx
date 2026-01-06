@@ -197,7 +197,7 @@ export function QuestionFilters() {
               )}
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-full sm:max-w-md">
+          <SheetContent side="right" className="w-full sm:max-w-md px-4">
             <SheetHeader>
               <SheetTitle className="flex items-center justify-between">
                 Filtros

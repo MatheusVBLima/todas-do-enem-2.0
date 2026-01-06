@@ -150,6 +150,24 @@ export function EssayCorrection({ essay: initialEssay, userId, userPlan }: Essay
         </div>
       </div>
 
+      {/* Actions */}
+      <div className="flex gap-2">
+        <Button
+          onClick={() => setIsEditDialogOpen(true)}
+        >
+          <Edit className="mr-2 size-4" />
+          Editar Redação
+        </Button>
+        <Button
+          onClick={() => {
+            window.print()
+          }}
+        >
+          <Download className="mr-2 size-4" />
+          Exportar Correção
+        </Button>
+      </div>
+
       <Separator />
 
       {/* Essay text */}
@@ -217,26 +235,6 @@ export function EssayCorrection({ essay: initialEssay, userId, userPlan }: Essay
             feedback={correction.competence5Feedback}
           />
         </div>
-      </div>
-
-      {/* Actions */}
-      <div className="flex gap-2">
-        <Button
-          variant="outline"
-          onClick={() => setIsEditDialogOpen(true)}
-        >
-          <Edit className="mr-2 size-4" />
-          Editar Redação
-        </Button>
-        <Button
-          variant="outline"
-          onClick={() => {
-            window.print()
-          }}
-        >
-          <Download className="mr-2 size-4" />
-          Exportar Correção
-        </Button>
       </div>
 
       {/* Edit dialog */}

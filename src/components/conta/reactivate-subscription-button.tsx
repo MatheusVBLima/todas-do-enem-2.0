@@ -59,7 +59,7 @@ export function ReactivateSubscriptionButton() {
             Reativar Assinatura
           </AlertDialogTitle>
           <AlertDialogDescription className="space-y-3 text-left">
-            <p>Deseja reativar sua assinatura do plano PRO?</p>
+            <p>Deseja reativar sua assinatura do plano Rumo à Aprovação?</p>
 
             <div className="rounded-lg bg-muted p-4">
               <p className="font-medium text-foreground mb-1">

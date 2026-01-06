@@ -84,20 +84,18 @@ export function ProofCard({ proof }: ProofCardProps) {
 
           <div className="flex gap-2">
             <Button
-              variant="secondary"
               size="sm"
-              className="flex-1 min-w-0 font-medium"
+              className="flex-1 min-w-0 font-medium gap-1.5"
             >
-              <Eye className="size-4 mr-1.5 shrink-0 opacity-70" />
+              <Eye className="size-4 shrink-0 opacity-70" />
               <span className="truncate">Visualizar</span>
             </Button>
             <Button
               size="sm"
-              variant="outline"
               onClick={handleDownload}
-              className="flex-1 min-w-0 font-medium"
+              className="flex-1 min-w-0 font-medium gap-1.5"
             >
-              <Download className="size-4 mr-1.5 shrink-0 opacity-70" />
+              <Download className="size-4 shrink-0 opacity-70" />
               <span className="truncate">Baixar</span>
             </Button>
           </div>

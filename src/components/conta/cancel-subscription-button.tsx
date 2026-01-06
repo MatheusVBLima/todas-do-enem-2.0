@@ -71,7 +71,7 @@ export function CancelSubscriptionButton({ periodEnd }: CancelSubscriptionButton
             Cancelar Assinatura
           </AlertDialogTitle>
           <AlertDialogDescription className="space-y-3 text-left">
-            <p>Tem certeza que deseja cancelar sua assinatura do plano PRO?</p>
+            <p>Tem certeza que deseja cancelar sua assinatura do plano Rumo à Aprovação?</p>
 
             {formattedPeriodEnd && (
               <div className="rounded-lg bg-muted p-4">
@@ -91,7 +91,7 @@ export function CancelSubscriptionButton({ periodEnd }: CancelSubscriptionButton
             <ul className="text-sm list-disc list-inside space-y-1 ml-2">
               <li>Perderá acesso às explicações por IA</li>
               <li>Não poderá mais corrigir redações</li>
-              <li>Voltará ao plano gratuito</li>
+              <li>Voltará ao plano Tentando a Sorte</li>
             </ul>
           </AlertDialogDescription>
         </AlertDialogHeader>

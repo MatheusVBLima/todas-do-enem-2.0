@@ -194,9 +194,9 @@ export function SimuladoHistoryClient({
                   <div className="flex items-center gap-2">
                     {getStatusBadge(simulado.status)}
                     <Button
-                      variant="ghost"
+                      variant="destructive"
                       size="icon"
-                      className="size-8 text-muted-foreground hover:text-destructive hover:bg-destructive/10"
+                      className="size-8"
                       onClick={(e) => handleDeleteClick(e, simulado)}
                       aria-label="Deletar simulado"
                     >

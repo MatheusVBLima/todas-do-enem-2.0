@@ -103,7 +103,7 @@ export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
         </div>
 
         {isPending && !essaysResult ? (
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2">
             {Array.from({ length: 3 }).map((_, i) => (
               <div key={i} className="rounded-lg border p-6 space-y-4 animate-pulse">
                 <div className="flex items-start justify-between gap-2">

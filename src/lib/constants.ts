@@ -81,7 +81,7 @@ export const SUBSCRIPTION_PLANS = {
     name: 'Rumo à Aprovação',
     price: 25,
     features: [
-      'Tudo do plano gratuito',
+      'Tudo do plano Tentando a Sorte',
       'Até 900 explicações por IA/mês',
       'Correção de até 20 redações por IA/mês',
       'Feedback detalhado por competências',

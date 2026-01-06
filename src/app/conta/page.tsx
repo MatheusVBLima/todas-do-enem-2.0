@@ -184,7 +184,7 @@ async function AccountData({ userId }: { userId: string }) {
             <AlertCircle className="size-4" />
             <AlertDescription>
               Seu plano foi configurado manualmente. Para gerenciar sua assinatura via Stripe,
-              faça o downgrade para o plano gratuito e assine novamente através da página de planos.
+              faça o downgrade para o plano Tentando a Sorte e assine novamente através da página de planos.
             </AlertDescription>
           </Alert>
         )}

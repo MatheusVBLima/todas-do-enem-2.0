@@ -1,6 +1,6 @@
 "use client"
 
-import { Award, CheckCircle2 } from "lucide-react"
+import { Award, CheckCircle2, Lightbulb } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
@@ -172,9 +172,12 @@ export function EnemCompetencias() {
       </div>
 
       {/* Dicas */}
-      <Card className="border-yellow-500/20 bg-yellow-500/5">
+      <Card className="bg-muted/50">
         <CardHeader>
-          <CardTitle className="text-lg">💡 Dicas Importantes</CardTitle>
+          <CardTitle className="text-lg flex items-center gap-2">
+            <Lightbulb className="size-5 text-primary" />
+            Dicas Importantes
+          </CardTitle>
         </CardHeader>
         <CardContent className="space-y-2 text-sm">
           <p>

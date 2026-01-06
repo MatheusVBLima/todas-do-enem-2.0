@@ -109,7 +109,7 @@ export function EssayList({ essays, onEdit }: EssayListProps) {
   return (
     <div className="space-y-4">
       {/* Essays grid */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2">
         {essays.map((essay) => (
           <Card key={essay.id} className="flex flex-col">
             <CardHeader>
