@@ -27,6 +27,7 @@ type AIExplanationProps = {
 
 export function AIExplanation({ question, userId, userPlan }: AIExplanationProps) {
   const isPro = userPlan === "RUMO_A_APROVACAO"
+
   const [isGenerating, setIsGenerating] = useState(false)
   const [showUpgradeDialog, setShowUpgradeDialog] = useState(false)
   const [isExpanded, setIsExpanded] = useState(true)

@@ -2,7 +2,7 @@
 
 import { useState, startTransition, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { Eye, ChevronDown, ChevronUp, Trash2, ExternalLink } from "lucide-react"
+import { Eye, ChevronDown, ChevronUp, Trash2, ExternalLink, Lock, Sparkles } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -41,6 +41,7 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
   const router = useRouter()
   const [isAnswerVisible, setIsAnswerVisible] = useState(showAnswer)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
+
   const [isExpanded, setIsExpanded] = useState(false)
   const [showExpandButton, setShowExpandButton] = useState(false)
   const textRef = useRef<HTMLParagraphElement>(null)
@@ -332,12 +333,26 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
         </div>
 
         {/* AI Explanation - shown after revealing answer */}
-        {isAnswerVisible && userId && (
-          <AIExplanation
-            question={question}
-            userId={userId}
-            userPlan={userPlan}
-          />
+        {isAnswerVisible && (
+          userId ? (
+            <AIExplanation
+              question={question}
+              userId={userId}
+              userPlan={userPlan}
+            />
+          ) : (
+            <Button
+              variant="default"
+              size="sm"
+              className="w-full"
+              asChild
+            >
+              <Link href="/planos">
+                <Sparkles className="mr-2 size-4" />
+                Assine Rumo à Aprovação para ver a explicação com IA
+              </Link>
+            </Button>
+          )
         )}
       </CardContent>
     </Card>

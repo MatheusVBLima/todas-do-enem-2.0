@@ -44,7 +44,7 @@ export async function proxy(request: NextRequest) {
   )
 
   // Define protected routes that require authentication
-  const protectedRoutes = ['/conta', '/redacao', '/grupos']
+  const protectedRoutes = ['/conta', '/redacao', '/grupos', '/simulados']
   const isProtectedRoute = protectedRoutes.some((route) =>
     request.nextUrl.pathname.startsWith(route)
   )
