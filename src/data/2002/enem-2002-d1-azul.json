@@ -1,0 +1,10 @@
+{
+  "exam": {
+    "id": "ENEM_2002_D1_AZUL",
+    "year": 2002,
+    "day": 1,
+    "color": "AZUL",
+    "area": "LINGUAGENS"
+  },
+  "questions": []
+}
