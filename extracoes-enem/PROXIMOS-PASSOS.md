@@ -13,80 +13,59 @@
 
 ---
 
-## 🔧 Passo Atual: Instalar Tesseract com Português
+## 🔧 Passo Atual: Próximas Ações
 
-### Status: ⏳ AGUARDANDO INSTALAÇÃO
+### Status: ✅ OCR CONCLUÍDO (2006-2008)
 
-Você precisa instalar o pacote de idioma PORTUGUÊS no Tesseract para processar os anos problemáticos (2006-2008).
+O OCR foi executado com sucesso nos anos problemáticos! Os markdowns foram gerados com texto em ordem correta.
 
-### Como fazer:
+### ⚠️ Importante - Limitações do OCR:
 
-**Opção A: Baixar arquivo manualmente (RECOMENDADO - 2 minutos)**
+Os anos 2006-2008 foram processados, mas o OCR tem limitações:
 
-1. Baixe o arquivo `por.traineddata`:
-   - Link direto: https://github.com/tesseract-ocr/tessdata/raw/main/por.traineddata
-   - Tamanho: ~11 MB
+1. **Números de questões ilegíveis** - Estão em boxes gráficos que o OCR não lê bem
+   - Aparece `[2uestioKT` em vez de `**QUESTÃO 1**`
+   - Taxa de identificação: ~27% (17 de 63 questões)
 
-2. Copie o arquivo baixado para:
-   ```
-   C:\Program Files\Tesseract-OCR\tessdata\
-   ```
+2. **Texto legível** - O conteúdo das questões está bem extraído
+3. **Ordem correta** - Páginas processadas em sequência (corrigido!)
 
-3. Verifique se o arquivo está lá:
-   - Abra a pasta `C:\Program Files\Tesseract-OCR\tessdata\`
-   - Deve ter o arquivo `por.traineddata` (tamanho ~11 MB)
+**Resultados do OCR:**
 
-**Opção B: Reinstalar Tesseract (10 minutos)**
+| Ano | Imagens | Caracteres | Palavras | Markdown |
+|-----|---------|------------|----------|----------|
+| 2006 | 41 | 72.885 | 12.084 | ✅ `extracoes/2006/prova_enem_2006.md` |
+| 2007 | 53 | 71.881 | 11.762 | ✅ `extracoes/2007/prova_enem_2007.md` |
+| 2008 | 44 | 74.983 | 12.312 | ✅ `extracoes/2008/prova_enem_2008.md` |
 
-1. Desinstale o Tesseract pelo Painel de Controle
-2. Baixe novamente: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-5.3.3.20231005.exe
-3. Durante a instalação:
-   - ✅ Marque "Additional language data (download)"
-   - ✅ Selecione "Portuguese" na lista
+### Opções para Anos 2006-2008:
 
-### Testar instalação:
+**Opção 1: Revisão Manual** (Recomendado)
+- Usar markdown OCR como base
+- Adicionar marcadores `**QUESTÃO XX**` manualmente
+- Tempo: ~2-3 horas por ano
 
-```bash
-# Terminal (cmd ou PowerShell)
-cd "c:\Web Workspace\todas-do-enem-2.0\extracoes-enem"
-
-# Teste rápido
-python test-tesseract.py
-```
-
-**Saída esperada se tudo estiver OK:**
-```
-✅ Tesseract encontrado! Versão: 5.x.x
-✅ Idiomas instalados: eng, osd, por
-✅ PORTUGUÊS (por) está instalado! 🎉
-✅ TUDO OK! Você está pronto para executar os scripts de OCR!
-```
-
-**Se aparecer erro "PORTUGUÊS (por) NÃO está instalado":**
-- Siga a Opção A acima (baixar e copiar `por.traineddata`)
+**Opção 2: Pular por enquanto** (Mais rápido)
+- Focar em anos 2009-2025 (~10.000 questões)
+- Voltar em 2006-2008 depois
 
 ---
 
-## 📅 Passos Seguintes (Após Tesseract instalado)
+## 📅 Próximos Passos
 
-### 1️⃣ Processar Anos Problemáticos (2006-2008)
+### 1️⃣ Converter Anos 2022-2023 para JSON (Recomendado começar aqui)
 
-**Estimativa:** 15-30 minutos por ano (depende do número de páginas)
+Esses anos têm alta qualidade de extração (70%+ de sucesso):
 
 ```bash
-cd "c:\Web Workspace\todas-do-enem-2.0\extracoes-enem"
-python ocr_extraction.py
+cd "c:\Web Workspace\todas-do-enem-2.0"
+
+# Converter markdown → JSON
+bun run convert-all-exams.ts 2022 2023
+
+# Copiar imagens para public
+bun run copy-images.ts 2022 2023
 ```
-
-Este script vai:
-- Aplicar OCR em todas as imagens de 2006, 2007 e 2008
-- Gerar arquivos markdown em `extracoes/2006/`, `extracoes/2007/`, `extracoes/2008/`
-- Mostrar estatísticas de caracteres e palavras extraídas
-
-**Arquivos gerados:**
-- `extracoes/2006/prova_enem_2006.md`
-- `extracoes/2007/prova_enem_2007.md`
-- `extracoes/2008/prova_enem_2008.md`
 
 ### 2️⃣ Reprocessar Anos Híbridos (2009-2021) - OPCIONAL
 
