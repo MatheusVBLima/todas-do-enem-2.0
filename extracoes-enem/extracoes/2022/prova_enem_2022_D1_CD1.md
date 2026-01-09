@@ -2407,7 +2407,7 @@ uma característica da sociedade brasileira, que é o(a):
 
 
 PAZ, A. D. Disponível em: www.ct.ufpb.br. Acesso em: 15 out. 2021 (adaptado).
-A intensificação da ocupação urbana demonstrada afeta
+**QUESTÃO 49**\n\nA intensificação da ocupação urbana demonstrada afeta
 de forma imediata o(a)
 
 **A** nível altimétrico.
@@ -2904,7 +2904,7 @@ em que provoca a formação de
 ![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D1_CD1.pdf-24-0.png)
 
 Disponível em: https://ndmais.com.br. Acesso em: 8 out. 2021.
-O ápice da ilustração se traduz por uma conduta social
+**QUESTÃO 65**\n\nO ápice da ilustração se traduz por uma conduta social
 caracterizada pela
 **A** cultura do cancelamento.
 **B** prática do feminicídio.

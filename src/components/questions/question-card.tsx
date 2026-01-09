@@ -201,13 +201,13 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
                 )}
                 {material.type === 'image' && material.url && (
                   <div className="rounded-lg border bg-muted/30 p-4">
-                    <div className="relative w-full overflow-hidden rounded-md">
+                    <div className="relative w-full rounded-md">
                       <Image
                         src={material.url}
                         alt={material.alt || 'Imagem da questão'}
-                        width={800}
-                        height={600}
-                        className="w-full h-auto object-contain"
+                        width={1200}
+                        height={900}
+                        className="w-full h-auto max-w-full"
                         unoptimized
                       />
                     </div>

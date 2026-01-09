@@ -6,5 +6,3223 @@
     "color": "AZUL",
     "area": "LINGUAGENS"
   },
-  "questions": []
+  "questions": [
+    {
+      "id": "ENEM_2024_D1_LC_Q01_IN",
+      "number": 1,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q01",
+          "blocks": [
+            {
+              "id": "text_q01_1",
+              "type": "paragraph",
+              "content": "2013."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "dar oportunidade a pessoas que parecem necessitadas.",
+        "B": "identificar contextos que podem representar perigo.",
+        "C": "tirar proveito de situações que podem ser adversas.",
+        "D": "evitar dificuldades que parecem ser intransponíveis.",
+        "E": "contestar circunstâncias que parecem ser harmônicas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q02_IN",
+      "number": 2,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q02",
+          "blocks": [
+            {
+              "id": "text_q02_1",
+              "type": "paragraph",
+              "content": "**Holy War**\nOh, so we can hate each other and fear each other\nWe can build these walls between each other\nBaby, blow by blow and brick by brick\nKeep yourself locked in, yourself locked in\n[…]\nOh, maybe we should love somebody\nOh, maybe we could care a little more\nSo maybe we should love somebody\nInstead of polishing the bombs of holy war\nKEYS, A. **Here** . Estados Unidos: RCA Records, 2016.\nNessa letra de canção, que aborda um contexto de ódio\ne intolerância, o marcador “ _instead of_ ” introduz a ideia de"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "e intolerância, o marcador “ _instead of_ ” introduz a ideia de",
+      "alternatives": {
+        "A": "mudança de comportamento.",
+        "B": "panorama de conflitos.",
+        "C": "rotina de isolamento.",
+        "D": "perspectiva bélica.",
+        "E": "cenário religioso."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q03_IN",
+      "number": 3,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q03",
+          "blocks": [
+            {
+              "id": "text_q03_1",
+              "type": "paragraph",
+              "content": "2017 (adaptado).\nO texto estabelece uma relação entre elementos da\nnatureza e comandos de um programa de computador para"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q03_1",
+          "blocks": [
+            {
+              "id": "img_q03_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 3",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-1-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q03_2",
+          "blocks": [
+            {
+              "id": "img_q03_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 3",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-1-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "natureza e comandos de um programa de computador para",
+      "alternatives": {
+        "A": "alertar as pessoas sobre a rápida destruição da natureza.",
+        "B": "conscientizar os indivíduos sobre a passagem acelerada",
+        "C": "apresentar aos leitores os avanços tecnológicos na",
+        "D": "orientar os usuários sobre o emprego sustentável das",
+        "E": "informar os interessados sobre o tempo de crescimento"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q04_IN",
+      "number": 4,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q04",
+          "blocks": [
+            {
+              "id": "text_q04_1",
+              "type": "paragraph",
+              "content": "I remember being caught speaking Spanish at recess\n[...] I remember being sent to the corner of the classroom\nfor “talking back” to the Anglo teacher when all I was trying\nto do was tell her how to pronounce my name. “If you\nwant to be American, speak ‘American’. If you don’t like it,\ngo back to Mexico where you belong”.\n“I want you to speak English […]”, my mother would\nsay, mortified that I spoke English like a Mexican. At Pan\nAmerican University, I and all Chicano students were\nrequired to take two speech classes. Their purpose: to get\nrid of our accents.\nANZALDÚA, G. **Borderlands/La Frontera** : The New Mestiza.\nSan Francisco: Aunt Lute Books, 1987.\nO problema abordado nesse texto sobre imigrantes residentes\nnos Estados Unidos diz respeito aos prejuízos gerados pelo(a)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "nos Estados Unidos diz respeito aos prejuízos gerados pelo(a)",
+      "alternatives": {
+        "A": "repúdio ao sotaque espanhol no uso do inglês.",
+        "B": "resignação diante do apagamento da língua materna.",
+        "C": "escassez de oportunidades de aprendizado do espanhol.",
+        "D": "choque entre falantes de línguas distintas de diferentes",
+        "E": "concorrência entre as variações linguísticas do inglês"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q05_IN",
+      "number": 5,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "INGLES",
+      "languageOption": "INGLES",
+      "supportingMaterials": [
+        {
+          "id": "text_q05",
+          "blocks": [
+            {
+              "id": "text_q05_1",
+              "type": "paragraph",
+              "content": "2015."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "problematizar o enredo de sua obra.",
+        "B": "acusar o recebimento de seu manuscrito.",
+        "C": "solicitar a revisão ortográfica de seu texto.",
+        "D": "informar a transferência de seu livro a outra editora.",
+        "E": "comunicar a recusa da publicação de seu romance."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q01_ES",
+      "number": 1,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "ESPANHOL",
+      "languageOption": "ESPANHOL",
+      "supportingMaterials": [
+        {
+          "id": "text_q01",
+          "blocks": [
+            {
+              "id": "text_q01_1",
+              "type": "paragraph",
+              "content": "**El vírus de la cancelación**\n¿De qué se trata este fenómeno? Se entiende por\ncultura de la cancelación a una práctica popular que consiste\nen “quitarle apoyo” especialmente a figuras públicas y\ncompañías multinacionales después de que hayan hecho\n- dicho algo considerado objetable u ofensivo. Cuando\nalguien o algo está cancelado se descarta, se deja de ver,\nse deja de escuchar, se desclasifica, se aísla, se abandona,\nse niega, se deja de consumir hasta que eventualmente\npuede o no desaparecer. Es una estrategia muy extendida\nen la historia de las luchas anticoloniales, antiespecistas,\nsexodisidentes, feministas y, especialmente en nuestro\npaís, también llevadas adelante por el movimiento de\nderechos humanos. Entonces, ¿dónde radica el problema?\nSe puede observar positivamente que hay un proceso cada\nvez más agudo de socialización de herramientas críticas\npara desmantelar formas de desigualdad incrustadas en\nlos lazos sociales. Pero la popularización irrestricta y el uso\namplificado de esta herramienta por fuera de sus contextos\ncolectivos de emergencia han despertado efectos adversos\nen una sociedad atravesada por las pantallas como formas\nde encierro-consumo, la representación online como única\nesfera pública y un imperativo felicista cuya moral nos obliga\na trabajar ansiosamente por una vida sin desacuerdos, sin\nerrores y sin dolor, a como dé lugar.\n 2021 (adaptado).\nNa argumentação apresentada sobre cultura do\ncancelamento, esse texto objetiva"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q01_1",
+          "blocks": [
+            {
+              "id": "img_q01_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 1",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-2-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "cancelamento, esse texto objetiva",
+      "alternatives": {
+        "A": "apresentar o conceito desse tipo de prática.",
+        "B": "mostrar a contrariedade das mídias com relação a",
+        "C": "criticar o impacto dessa cultura sobre a vida",
+        "D": "evidenciar a democratização dessa prática na",
+        "E": "discorrer historicamente sobre a origem e as causas"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q02_ES",
+      "number": 2,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "ESPANHOL",
+      "languageOption": "ESPANHOL",
+      "supportingMaterials": [
+        {
+          "id": "text_q02",
+          "blocks": [
+            {
+              "id": "text_q02_1",
+              "type": "paragraph",
+              "content": "“Y si llueve, que llueva” es un refrán gallego. Para mí cobró\nsentido una noche de febrero, cuando vivía en el barrio de la\nMacarena de Sevilla con dos buenos amigos, gallegos también.\nMi compañero y yo nos decidimos a salir ese sábado\nde noche, pese a que había estado lloviendo algunas\nhoras a lo largo del día. La idea era una locura, al parecer.\nLe propusimos salir “de parranda” con nosotros a una\namiga andaluza, ésta respondió que no, nos dijo que no\niba a salir un día de lluvia. Flipamos. Comentamos entre\nnosotros que si los gallegos no saliésemos de casa cuando\nllueve, en invierno saldríamos poco. Habríamos inventado\nel confinamiento hace mucho.\nLos gallegos no dejamos de salir por la lluvia.\n 2021.\nO comportamento dos personagens narrado no texto\ndestaca o(a)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O comportamento dos personagens narrado no texto",
+      "alternatives": {
+        "A": "abandono da própria identidade.",
+        "B": "medo dos perigos durante a noite.",
+        "C": "influência do grupo na tomada de decisão.",
+        "D": "diferença cultural entre galegos e andaluzes.",
+        "E": "variação meteorológica entre Sevilha e Galiza."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q03_ES",
+      "number": 3,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "ESPANHOL",
+      "languageOption": "ESPANHOL",
+      "supportingMaterials": [
+        {
+          "id": "text_q03",
+          "blocks": [
+            {
+              "id": "text_q03_1",
+              "type": "paragraph",
+              "content": "Celerina Patricia Sánchez Santiago comentó que su\nacercamiento a la poesía fue por la escuela, con libros de texto\nen español. Descubrió el gusto por las letras pero notó que no\nhabía textos en la suya, así que, contra muchos comentarios\nnegativos que recibió en ese momento, decidió emprender el\ncamino de la escritura pero en mixteco. “Fue un proceso de\naños para notar que en mi lengua podía escribir poesía,\nporque me decían que mi lengua era tan pobre que no podía\ntener conceptos abstractos, era un reto pero yo sabía que\nsí era posible”.\nEste proceso no sólo le ayudó a vivir la poesía en\nmixteco, sino a “ir descubriendo mi propia historia y la de mi\npueblo”. Comentó que las lenguas habladas en el territorio\nnacional se encuentran en gran desventaja con el español.\n“El reconocimiento a la diversidad no se ha hecho y ha\nsido tratada de borrar. Este es un país con 68 lenguas\ny somos monolingües del español. Antes había nulo de\nreconocimiento de ser bilingüe, negabas que hablabas tu\nlengua, hasta le decían dialecto. Era parte del proceso fatal\nque nos llevó a no reconocernos en un país multilingüe.\n¿Si tenemos varias lenguas por qué no aprender?”.\n 2021.\nEm sua escrita poética, a poetisa mexicana Celerina\nPatricia Sánchez Santiago assume o desafio de"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Patricia Sánchez Santiago assume o desafio de",
+      "alternatives": {
+        "A": "destacar a importância da literatura na formação escolar.",
+        "B": "discutir a hegemonia da literatura escrita em espanhol.",
+        "C": "promover reflexões acerca de conceitos abstratos.",
+        "D": "representar a pluralidade linguística de seu país.",
+        "E": "narrar uma trajetória de autoconhecimento."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q04_ES",
+      "number": 4,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "ESPANHOL",
+      "languageOption": "ESPANHOL",
+      "supportingMaterials": [
+        {
+          "id": "text_q04",
+          "blocks": [
+            {
+              "id": "text_q04_1",
+              "type": "paragraph",
+              "content": "**Morir muy vivos**\nNo todo es perder, es cierto. Si te esfuerzas mucho\ny bien, porque no viene de fábrica, ganas conocimiento\ndel mundo y de ti mismo, empatía, sosiego y, en suma,\nalgo que podríamos denominar sabiduría. Pero creo que\npara ello hay que mantenerse alerta y no darse nunca por\nvencido. Pero también es un tiempo para saldar cuentas.\nNo creo que haya que dejarse llevar por el peso de los días\ncomo un leño podrido al que las olas arrojan finalmente\na la playa. Uno siempre puede intentar sacarse alguna\nde las piedras que lleva a la espalda, decir las cosas que\nnunca se atrevió a decir, cumplir en la medida de lo posible\nlos deseos arrumbados, rescatar algún sueño que quedó\nen la cuneta. No rendirse, esa es la clave. Y sobre todo\ndecirse: ¿y por qué no? Porque la vejez no está reñida con\nla audacia. Debemos aspirar a morir muy vivos.\nMONTERO, R.  2017.\nNesse texto, ao utilizar a expressão “ _morir muy vivos_ ”,\na escritora Rosa Montero evidencia a importância de se"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "a escritora Rosa Montero evidencia a importância de se",
+      "alternatives": {
+        "A": "acumular sabedoria com o passar do tempo.",
+        "B": "observar o impacto dos anos sobre o corpo.",
+        "C": "rever os erros e os acertos de sua trajetória.",
+        "D": "desfrutar de todas as fases da vida.",
+        "E": "libertar das amarras sociais."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q05_ES",
+      "number": 5,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "ESPANHOL",
+      "languageOption": "ESPANHOL",
+      "supportingMaterials": [
+        {
+          "id": "text_q05",
+          "blocks": [
+            {
+              "id": "text_q05_1",
+              "type": "paragraph",
+              "content": "**Los últimos días del sitio de Tenochtitlán**\nY todo esto pasó con nosotros.\nNosotros lo vimos,\nnosotros lo admiramos.\nCon esta lamentosa y triste suerte\nnos vimos angustiados.\nEn los caminos yacen dardos rotos,\nlos cabellos están esparcidos.\nDestechadas están las casas,\nenrojecidos tienen sus muros.\nGusanos pululan por calles y plazas,\ny en las paredes están salpicados los sesos.\nRojas están las aguas, están como teñidas,\ny cuando la bebimos,\nes como si bebiéramos agua de salitre.\n**Manuscrito anónimo de Tlatelolco**, 1528.  2021 (fragmento).\nNesse poema, o eu lírico representa a voz de um\nsobrevivente asteca que testemunha a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "sobrevivente asteca que testemunha a",
+      "alternatives": {
+        "A": "destruição da capital do Império Asteca pelos",
+        "B": "degradação do meio ambiente no entorno da capital",
+        "C": "tristeza dos refugiados astecas ao deixarem a capital",
+        "D": "aflição dos astecas ao receberem os colonizadores",
+        "E": "resistência dos astecas às mudanças feitas pelos"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q06",
+      "number": 6,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q06",
+          "blocks": [
+            {
+              "id": "text_q06_1",
+              "type": "paragraph",
+              "content": "**Expressões e termos utilizados no Amazonas**\n**são retratados em livro e em camisetas**\n“Na linguagem, podemos nos ver da forma mais\nverdadeira: nossas crenças, nossos valores, nosso lugar\nno mundo”, afirmou o doutor em linguística e professor da\nUfam em seu livro _Amazonês: expressões e termos usados_\n_no Amazonas_ . Portanto, o amazonense, com todas as suas\n“cunhantãs” e “curumins”, acaba por encontrar um lugar no\nmundo e formar uma unidade linguística, informalmente\ndenominada de português “caboco”, que muito se diferencia\ndo português “mineiro”, “gaúcho”, “carioca” e de tantos\noutros espalhados pelo Brasil. O livro, que conta com cerca\nde 1 100 expressões e termos típicos do falar amazonense,\nlevou dez anos para ser construído. Para o autor, o principal\nobjetivo da obra é registrar a linguagem.\nUm designer amazonense também acha o amazonês\n“xibata”, tanto é que criou uma série de camisetas estampadas\ncom o nome de Caboquês Ilustrado, que mistura o bom\nhumor com as expressões típicas da região. A coleção conta\ncom sete modelos já lançados, entre eles: Leseira Baré,\nXibata no Balde e Até o Tucupi, e 43 ainda na fila de espera.\nPara o criador, as camisas têm como objetivo “resgatar o\norgulho do povo manauara, do povo do Norte”.\n 2024 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "2024 (adaptado).",
+      "alternatives": {
+        "A": "recomendam produtos feitos por empreendedores da",
+        "B": "ressaltam diferenças entre o falar manauara e outros",
+        "C": "reverenciam o trabalho feito por pesquisadores brasileiros.",
+        "D": "destacam a descontração no jeito de ser do amazonense.",
+        "E": "valorizam o repertório linguístico do povo do Amazonas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q07",
+      "number": 7,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q07",
+          "blocks": [
+            {
+              "id": "text_q07_1",
+              "type": "paragraph",
+              "content": "**Conheça histórias de atletas paralímpicas que**\n**trocaram de modalidade durante a carreira esportiva**\n**Jane Karla** : a goiana de 45 anos teve poliomielite aos três\nanos, o que prejudicou seus movimentos das pernas. Em\n2003, iniciou no tênis de mesa e conseguiu conquistar títulos\nnacionais e internacionais. Mas conheceu o tiro com arco e,\nem 2015, optou por se dedicar somente à nova modalidade.\nEm seu ano de estreia no tiro, já faturou a medalha de ouro\nnos Jogos Parapan-Americanos de Toronto 2015.\n**Elizabeth Gomes** : a santista de 55 anos era jogadora de\nvôlei quando foi diagnosticada com esclerose múltipla em\n1993. Ingressou no Movimento Paralímpico pelo basquete\nem cadeira de rodas até experimentar o atletismo.\nChegou a praticar as duas modalidades simultaneamente\naté optar pelas provas de campo em 2010. No\nCampeonato Mundial de Atletismo, realizado em Dubai, em\n2019, Beth se sagrou campeã do lançamento de disco e\nestabeleceu um novo recorde mundial da classe F52.\n**Silvana Fernandes** : a paraibana de 21 anos é natural de\nSão Bento e nasceu com malformação no braço direito.\nAos 15 anos, começou a praticar atletismo no lançamento\nde dardo. Em 2018, enquanto competia na regional\nNorte-Nordeste, foi convidada para conhecer o paratae\nkwon do. No ano seguinte, migrou para a modalidade\ne já faturou o ouro na categoria até 58 kg nos Jogos\nParapan-Americanos de Lima 2019.\n 2024 (adaptado).\nEsse conjunto de minibiografias tem como propósito"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Esse conjunto de minibiografias tem como propósito",
+      "alternatives": {
+        "A": "descrever as rotinas de treinamento das atletas.",
+        "B": "comparar os desempenhos de atletas de alto rendimento.",
+        "C": "destacar a trajetória profissional de atletas paralímpicas",
+        "D": "indicar as categorias mais adequadas a adaptações",
+        "E": "estimular a participação de mulheres em campeonatos"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q08",
+      "number": 8,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q08",
+          "blocks": [
+            {
+              "id": "text_q08_1",
+              "type": "paragraph",
+              "content": "É fundamentalmente no Minho, norte de Portugal, que o\ncavaquinho aparece como instrumento tipicamente popular,\nligado às formas essenciais da música característica dessa\nprovíncia. O cavaquinho minhoto tem escala rasa com o\ntampo, o que facilita a prática do “rasqueado”. O cavaquinho\nchega ao Brasil diretamente de Portugal, e o modelo\nbrasileiro é maior do que a sua versão portuguesa, com\numa caixa de ressonância mais funda. Semelhante ao\ncavaquinho minhoto, o machete, ou machetinho madeirense,\né um pequeno cordófono de corda dedilhada, que faz\nparte da grande e diversificada família das violas de mão\nportuguesas. O ukulele tem a sua origem no século XIX,\ntendo como ancestrais o braguinha (ou machete) e o rajão,\ninstrumentos levados pelos madeirenses quando eles\nemigraram para o Havaí.\nOLIVEIRA, E. V. **Cavaquinhos e família** .  2021 (adaptado).\nO conjunto dessas práticas musicais demonstra que os\ninstrumentos mencionados no texto"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "instrumentos mencionados no texto",
+      "alternatives": {
+        "A": "refletem a dependência da utilização de matéria-prima",
+        "B": "adaptam suas características a cada cultura, assumindo",
+        "C": "comprovam a hegemonia portuguesa na invenção de",
+        "D": "ilustram processos de dominação cultural, evidenciando",
+        "E": "mantêm nomenclatura própria para garantir a fidelidade"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q09",
+      "number": 9,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q09",
+          "blocks": [
+            {
+              "id": "text_q09_1",
+              "type": "paragraph",
+              "content": "Pressão, depressão, estresse e crise de ansiedade.\nOs males da sociedade contemporânea também estão\nno esporte. A tenista Naomi Osaka, do Japão, jogadora\nmais bem paga do mundo e que já ocupou o número 2 do\nranking, retirou-se do torneio de Roland Garros de 2021\nporque não estava conseguindo administrar as crises\nde ansiedade provocadas pelos grandes eventos, por\nser uma estrela aos 23 anos, e pelo peso de parte da\nimprensa. O tenista australiano Nick Kyrgios, de 25 anos,\nrevelou sua “situação triste e solitária” enquanto lutava\ncontra a depressão causada pelo ritmo avassalador do\nCircuito Mundial de Tênis. O jogador de basquete americano\nKevin Love também tornou público seu quadro de ansiedade\ne depressão. O mundo do atleta é solitário e distante da\nfamília. O que vemos numa partida não reflete a rotina\ndesgastante. A imprensa denomina atletas como heróis,\ncomo se aquele corpo fosse indestrutível, mas a mente é\n- ponto fraco da história.\n 2021 (adaptado).\nAs causas do desequilíbrio na saúde mental apontadas\nno texto estão relacionadas às"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "no texto estão relacionadas às",
+      "alternatives": {
+        "A": "nacionalidades diversificadas dos praticantes.",
+        "B": "modalidades esportivas distintas.",
+        "C": "faixas etárias aproximadas.",
+        "D": "representações heroicas dos atletas.",
+        "E": "pressões constantes dos eventos e da mídia."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q10",
+      "number": 10,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q10",
+          "blocks": [
+            {
+              "id": "text_q10_1",
+              "type": "paragraph",
+              "content": "Já ouvi gente falando que o podcast é o renascimento\ndo rádio. O rádio é genial, uma mídia imorredoura,\nmas podcast não tem nada a ver com ele. O formato está\nmais próximo do ensaio literário do que de um programa\nde ondas curtas, médias ou longas.\nPodcasts são antípodas das redes sociais. Enquanto\nelas são dispersivas, levam à evasão e à desinformação,\nos podcasts são uma possibilidade de imersão,\nconcentração, aprendizado. Depois que eles surgiram,\nlavar a louça e me locomover pela cidade viraram um\nprogramaço. Um pós-almoço de domingo e aprendo tudo\nsobre bonobos e gorilas. Um táxi pro aeroporto e chego\nao embarque PhD em reforma tributária.\nPRATA, A.  2024 (adaptado).\nSegundo a argumentação construída nesse texto, o podcast"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Segundo a argumentação construída nesse texto, o podcast",
+      "alternatives": {
+        "A": "provoca dispersão da atenção em seu público.",
+        "B": "funciona por meio de uma frequência de ondas curtas.",
+        "C": "propicia divulgação de conhecimento para seus usuários.",
+        "D": "tem um formato de interação semelhante ao das redes",
+        "E": "constitui uma evolução na transmissão de informações"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q11",
+      "number": 11,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q11",
+          "blocks": [
+            {
+              "id": "text_q11_1",
+              "type": "paragraph",
+              "content": "Evanildo Bechara prepara a sua aposentadoria de pouco\nem pouco, como se a adiasse ao máximo. Aos 95 anos,\n- imortal da Academia Brasileira de Letras (ABL) alcançou\num status de astro pop no mundo da filologia e da gramática.\nQuando ainda tinha saúde para viagens mais longas, o filólogo\nlotava plateias em suas palestras na Europa e no Brasil,\nque não raro terminavam com filas para selfies."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "que não raro terminavam com filas para selfies.",
+      "alternatives": {
+        "A": "situacional, pois o contexto exige o uso da linguagem",
+        "B": "regional, pois ele traz marcas do falar de seu local de",
+        "C": "sociocultural, pois sua formação pressupõe o uso de",
+        "D": "geracional, pois ele emprega termos característicos de",
+        "E": "ocupacional, pois ele faz uso de termos específicos de"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q12",
+      "number": 12,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "seu registro passou da forma oral para a escrita.",
+        "B": "classe social de seus usuários ganhou prestígio.",
+        "C": "sua função inicial se manteve ao longo dos anos.",
+        "D": "sentimento de identidade linguística tem se consolidado.",
+        "E": "perfil etário de seus falantes tem se tornado homogêneo."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q13",
+      "number": 13,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q13",
+          "blocks": [
+            {
+              "id": "text_q13_1",
+              "type": "paragraph",
+              "content": "Diante do pouco dinheiro para produtos básicos de\nsobrevivência, são as adolescentes o alvo mais vulnerável\nà precariedade menstrual. Sofrem com dois fatores:\n- desconhecimento da importância da higiene menstrual\npara sua saúde e a dependência dos pais ou familiares para\na compra do absorvente, que acaba entrando na lista de\nartigos supérfluos da casa."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "artigos supérfluos da casa.",
+      "alternatives": {
+        "A": "sugerir soluções para um problema de ordem social.",
+        "B": "estabelecer uma relação entre menstruação e gravidez.",
+        "C": "comparar o desempenho acadêmico de mulheres e",
+        "D": "informar o leitor sobre o impacto da pobreza menstrual",
+        "E": "orientar o público sobre a necessidade de rotinas de"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q14",
+      "number": 14,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q14",
+          "blocks": [
+            {
+              "id": "text_q14_1",
+              "type": "paragraph",
+              "content": "Maranhenses que moram longe matam a saudade da\nterra natal usando expressões próprias do estado. Se o\nmaranhês impressiona e desperta a curiosidade de quem\nmora no próprio Maranhão, imagine de quem vem de\noutros estados e países? A variedade linguística local é\nenorme e o modo de falar tão próprio e característico dos\nmaranhenses vem conquistando muita gente e inspirando\ntítulos e muito conteúdo digital com a criação de podcasts,\nblogs, perfis na internet, além de estampar diversos tipos\nde produtos e serviços de empresas locais.\nCom saudades do Maranhão, morando há 16 anos no\nRio de Janeiro, um fotógrafo maranhense criou um perfil\nna internet no qual compartilha a culinária, brincadeiras e o\n‘dicionário’ maranhês. “A primeira vez que fui a uma padaria\nno Rio, na inocência, pedi 3 reais de ‘pães misturados’.\nQuando falei isso, as pessoas pararam e me olharam de\numa forma bem engraçada, aí já fiquei ‘encabulado, ó’\ne o atendente sorriu e explicou que lá não existia pão\nmisturado e, sim, pão francês e suíço. Depois foi a minha\nvez de explicar sobre os pães ‘massa grossa e massa\nfina’”, contou o fotógrafo, com humor.\n 2021 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "2021 (adaptado).",
+      "alternatives": {
+        "A": "impedem o entendimento mútuo.",
+        "B": "enaltecem o português do Maranhão.",
+        "C": "são constitutivas do português brasileiro.",
+        "D": "exigem a dicionarização dos termos usados.",
+        "E": "são restritas a situações coloquiais de comunicação."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q15",
+      "number": 15,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q15",
+          "blocks": [
+            {
+              "id": "text_q15_1",
+              "type": "paragraph",
+              "content": "**Telemedicina é para todos,**\n**mas nem todos estão preparados**"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "disponibilizar prontuário único do cidadão tanto na rede",
+        "B": "oportunizar o acesso a atendimento médico a pacientes",
+        "C": "fornecer dispositivos tecnológicos para a realização",
+        "D": "promover a interação entre diferentes especialidades",
+        "E": "garantir infraestrutura para o trabalho remoto de"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q16",
+      "number": 16,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q16",
+          "blocks": [
+            {
+              "id": "text_q16_1",
+              "type": "paragraph",
+              "content": "Uma definição possível para o conceito de arte\nafro-brasileira pode ser: produção plástica que é feita por\nnegros, mestiços ou brancos a partir de suas experiências\nsociais com a cultura negra nacional. Exemplos clássicos\ndessa abordagem são Carybé (1911-1997), Mestre Didi\n(1917-2013) e Djanira da Motta e Silva (1914-1979), cujas\nobras emergem e ganham forma em razão do ambiente\nsocial no qual habitaram e viveram. Se Didi era um\ncélebre representante da cultura religiosa nagô baiana e\nbrasileira, iniciado desde o ventre no candomblé, Carybé\nera argentino e, naturalizado brasileiro, envolveu-se de\ntal modo com essa religião que alguns dos orixás dos\nquais conhecemos a imagem visual são produções suas.\n 2021 (adaptado).\nSob a perspectiva da multiculturalidade e de acordo com\n- texto, a produção artística afro-brasileira caracteriza-se\npelo(a)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "- texto, a produção artística afro-brasileira caracteriza-se",
+      "alternatives": {
+        "A": "estranhamento no modo de apropriação da cultura",
+        "B": "distanciamento entre as raízes de matriz africana e",
+        "C": "visão uniformizadora das religiões de matriz africana",
+        "D": "relação complexa entre as vivências pessoais dos",
+        "E": "padronização da forma de produção e da temática da"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q17",
+      "number": 17,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q17",
+          "blocks": [
+            {
+              "id": "text_q17_1",
+              "type": "paragraph",
+              "content": "Influenciadores negros têm recorrentemente chamado\na atenção para o fato de terem muito menos repercussão\nem suas postagens e nas entregas do seu conteúdo\nquando comparados com os influenciadores brancos,\nmesmo se fotos, contextos e anúncios forem extremamente\nsemelhantes. Segundo o site Negrê, a digital influencer\ne youtuber criadora do projeto digital Preta Pariu iniciou\num experimento em uma plataforma. Após perceber a\ncrescente queda nos índices de alcance digital, a paulista\npublicou fotografias de modelos brancas em seu perfil e\nanalisou as métricas de engajamento. Surpreendentemente,\na ferramenta de estatísticas aferiu um aumento de 6 000%\nem seu alcance.\n 2024 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "2024 (adaptado).",
+      "alternatives": {
+        "A": "demonstrar a repercussão de projetos como o Preta Pariu.",
+        "B": "informar o quantitativo de postagens da comunidade negra.",
+        "C": "potencializar o alcance de textos e imagens em sites",
+        "D": "exaltar a qualidade das publicações sobre negritude",
+        "E": "comprovar a relação entre o alcance de conteúdos"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q18",
+      "number": 18,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q18",
+          "blocks": [
+            {
+              "id": "text_q18_1",
+              "type": "paragraph",
+              "content": "Um estudo norte-americano analisou os efeitos\nda pandemia da covid-19 sobre a saúde mental e a\nmanutenção da atividade física, revelando que um fator\nestá diretamente ligado ao outro. De acordo com os dados,\nfamílias de baixa renda foram mais impactadas pelo\nciclo vicioso de falta de motivação e pelo sedentarismo.\nDiante da necessidade de distanciamento social e do\ninício da quarentena, as opções de espaços seguros\npara exercícios físicos diminuíram, o que dificultou que as\npessoas mantivessem seus níveis de atividade. Os dados\nevidenciaram que as pessoas mais ativas tinham melhor\nestado de saúde mental. As pessoas com menor renda\ntiveram mais dificuldade para manter os níveis de atividade\nfísica durante a pandemia, sendo aproximadamente\nduas vezes menos propensas a continuarem no mesmo\nritmo de exercícios de antes da pandemia. Habitantes\nde áreas urbanas mostraram maior probabilidade de\nnão conseguirem manter os níveis de atividade física\nsemelhantes aos de pessoas que vivem em zonas rurais,\nonde há mais oportunidades de sair para espaços abertos.\n 2021 (adaptado).\nO texto evidencia a perspectiva ampliada de saúde ao\nabordar criticamente a pandemia da covid-19 a partir do(a)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "abordar criticamente a pandemia da covid-19 a partir do(a)",
+      "alternatives": {
+        "A": "busca por espaços para a prática de exercícios físicos.",
+        "B": "necessidade de se manter ativo para ter equilíbrio",
+        "C": "distanciamento social e sua vinculação com a prática",
+        "D": "relação entre os determinantes socioeconômicos e a",
+        "E": "benefício de morar em áreas rurais para preservar a"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q19",
+      "number": 19,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q19",
+          "blocks": [
+            {
+              "id": "text_q19_1",
+              "type": "paragraph",
+              "content": "Até ali que sabia das misérias do mundo? Nada.\nAquela noite do Castelo, tão simples, tão monótona,\nfora uma revelação! Era bem certo que a lágrima existia,\nque irrompiam soluços de peitos oprimidos, que para\nalguém os dias não tinham cor nem a noite tinha estrelas!\nEla, criada entre beijos, no aroma dos seus jardins, com as\nvontades satisfeitas, o leito fofo, a mesa delicada, sentira\nsempre no coração um desejo sem nome, um desejo ou\numa saudade absurda, a saudade do céu, como dizia o\ndr. Gervásio, e que não era mais que a doida aspiração\nda artista incipiente, que germinava no seu peito fraco."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "da artista incipiente, que germinava no seu peito fraco.",
+      "alternatives": {
+        "A": "desvalorização da arte produzida por mulheres.",
+        "B": "mudança das condições de moradia do povo negro.",
+        "C": "ruptura do projeto político de emancipação feminina.",
+        "D": "exploração da força de trabalho da população negra.",
+        "E": "disputa de poder entre brancos e negros no século XIX."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q20",
+      "number": 20,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q20",
+          "blocks": [
+            {
+              "id": "text_q20_1",
+              "type": "paragraph",
+              "content": "Sempre passo nervoso quando leio minha crônica\nneste jornal e percebo que escapuliu a palavra “coisa” em\nalguma frase. Acontece que “coisa” está entre as coisas\nmais deliciosas do mundo.\nO primeiro banho da minha filha foi embalado pela\nminha voz dizendo, ao fundo, “cuidado, ela ainda é uma\ncoisinha tão pequena”. “Viu só que amor? Nunca vi coisa\nassim”. O amor que não dá conta de explicação é “a coisa”\nem seu esplendor e excelência. “Alguma coisa acontece\nno meu coração” é a frase mais bonita que alguém já disse\nsobre São Paulo. E quando Caetano, citado aqui pela\nterceira vez pra defender a dimensão poética da coisa,\ndiz “coisa linda”, nós sabemos que nenhuma palavra\ndefiniria de forma mais profunda e literária o quão bela e\namada uma coisa pode ser.\n“Coisar” é verbo de quem está com pressa ou tem\nlapsos de memória. É pra quando “mexe qualquer coisa\ndentro doida”. E que coisa magnífica poder se expressar\ntal qual Caetano Veloso. Agora chega, porque “esse papo\njá tá qualquer coisa” e eu já tô “pra lá de Marrakech”.\nTATI BERNARDI.  2024 (adaptado).\nO recurso utilizado na progressão textual para garantir a\nunidade temática dessa crônica é a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "unidade temática dessa crônica é a",
+      "alternatives": {
+        "A": "intertextualidade, marcada pela citação de versos de",
+        "B": "metalinguagem, marcada pela referência à escrita de",
+        "C": "reiteração, marcada pela repetição de uma determinada",
+        "D": "conexão, marcada pela presença dos conectores lógicos",
+        "E": "pronominalização, marcada pela retomada de “minha filha”"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q21",
+      "number": 21,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q21",
+          "blocks": [
+            {
+              "id": "text_q21_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "indistinção hierárquica entre os membros de um mesmo",
+        "B": "prevalência dos elementos do mundo natural sobre as",
+        "C": "reconfiguração constante das representações coletivas",
+        "D": "indeterminação entre as noções de identidade individual",
+        "E": "indissociabilidade entre objetos ritualísticos e os papéis"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q22",
+      "number": 22,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q22",
+          "blocks": [
+            {
+              "id": "text_q22_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\n**Capítulo 4, versículo 3**\nMinha palavra vale um tiro, eu tenho muita munição\nNa queda ou na ascensão, minha atitude vai além"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q22_1",
+          "blocks": [
+            {
+              "id": "img_q22_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 22",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-9-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "Na queda ou na ascensão, minha atitude vai além",
+      "alternatives": {
+        "A": "como metáfora da desigualdade, que associa a ideia de",
+        "B": "na referência a termos bélicos, que sinaliza uma crítica",
+        "C": "como procedimento metalinguístico, que concebe a",
+        "D": "nas definições ambíguas do enunciador, que inverte e",
+        "E": "na menção à imortalidade, que sugere a possibilidade de"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q23",
+      "number": 23,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q23",
+          "blocks": [
+            {
+              "id": "text_q23_1",
+              "type": "paragraph",
+              "content": "As reações à sétima temporada foram o ápice do último\nestágio em _Game of Thrones_ . De forma alguma, este que\nvos fala seria capaz de argumentar que a série é perfeita,\nmas os defeitos que existem aqui sempre existiram, de uma\nforma ou de outra, durante os sete anos em que ela esteve\nno ar. Os dois roteiristas foram brilhantes em traduzir os\npersonagens intrincados e conflituosos da obra de George\nR. R. Martin, mas nunca souberam exatamente como fazer\njus a eles (e especialmente a elas, as mulheres da trama)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "jus a eles (e especialmente a elas, as mulheres da trama).",
+      "alternatives": {
+        "A": "marcas de impessoalidade que disfarçam a opinião do",
+        "B": "expressões adversativas para fazer ressalvas às",
+        "C": "interlocução com o leitor para corroborar opiniões",
+        "D": "eufemismos que minimizam as críticas feitas à",
+        "E": "antíteses que opõem a fragilidade do roteiro à beleza"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q24",
+      "number": 24,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q24",
+          "blocks": [
+            {
+              "id": "text_q24_1",
+              "type": "paragraph",
+              "content": "- Vá para o inferno, Gondim. Você acanalhou o troço.\nEstá pernóstico, está safado, está idiota. Há lá ninguém\nque fale dessa forma!\nAzevedo Gondim apagou o sorriso, engoliu em seco,\napanhou os cacos da sua pequenina vaidade e replicou\namuado que um artista não pode escrever como fala.\n- Não pode? — perguntei com assombro. E por quê?\nAzevedo Gondim respondeu que não pode porque\nnão pode.\n- Foi assim que sempre se fez. A literatura é a\nliteratura, seu Paulo. A gente discute, briga, trata de\nnegócios naturalmente, mas arranjar palavras com tinta é\noutra coisa. Se eu fosse escrever como falo, ninguém me lia.\nRAMOS, G. **São Bernardo** . Rio de Janeiro: Record, 2009.\nNesse fragmento, a discussão dos personagens traz à\ncena um debate acerca da escrita que"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "cena um debate acerca da escrita que",
+      "alternatives": {
+        "A": "diferencia a produção artística do registro padrão da língua.",
+        "B": "aproxima a literatura de dialetos sociais de pouco prestígio.",
+        "C": "defende a relação entre a fala e o estilo literário de um autor.",
+        "D": "contrapõe o preciosismo linguístico a situações de",
+        "E": "associa o uso da norma culta à ocorrência de"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q25",
+      "number": 25,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q25",
+          "blocks": [
+            {
+              "id": "text_q25_1",
+              "type": "paragraph",
+              "content": "VISCONTI, E. **Três meninas no jardim** . Óleo sobre tela,\n81 × 65 cm. Museu Nacional de Belas Artes,\nRio de Janeiro, 1935.\n 2012.\nEliseu D’Angelo Visconti (1866-1944) desenvolveu diversas\nobras no Brasil, com grande influência das escolas\neuropeias. Em sua pintura _Três meninas no jardim,_ há"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q25_1",
+          "blocks": [
+            {
+              "id": "img_q25_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 25",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-10-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "europeias. Em sua pintura _Três meninas no jardim,_ há",
+      "alternatives": {
+        "A": "culto à fluidez e ao progresso, nos moldes do ideário",
+        "B": "valorização de formas decompostas, a exemplo do",
+        "C": "efeitos fugazes de luz e movimento, que remetem à",
+        "D": "expressão do sonho e do inconsciente, que dialoga",
+        "E": "tematização de elementos cotidianos, que resgata"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q26",
+      "number": 26,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q26",
+          "blocks": [
+            {
+              "id": "text_q26_1",
+              "type": "paragraph",
+              "content": "Por trás do universo “masculino” das lutas, é cada\nvez mais notório o aumento da participação de mulheres\nnessa prática corporal. Algumas situações reforçam esse\nfenômeno de ocupação em ambientes de lutas: a inclusão\nde mulheres em combates de artes marciais mistas, ou MMA,\na transmissão televisiva de lutas de mulheres e a criação de\nhorários específicos para elas em academias que ensinam\nlutas. Uma pesquisa científica mostrou menor participação e\nmobilização das meninas em comparação com os meninos\nnas aulas de Educação Física. Entre as justificativas discentes\npara essa situação está o fato de que eles relacionam a luta\ncomo uma expressão corporal masculina e, por consequência,\nnão adequada aos interesses femininos. Dessa forma, o ensino\nde lutas nas aulas de Educação Física é atravessado por\ntensões relacionadas às questões de gênero e sexualidade,\n- que, por sua vez, pode favorecer a sua exclusão do conteúdo\npróprio da disciplina.\nSO, M. R.; MARTINS, M. Z.; BETTI, M. As relações das meninas\ncom os saberes das lutas nas aulas de Educação Física.\n**Motrivivência**, n. 56, dez. 2018 (adaptado).\nSegundo o texto, apesar do aumento da participação de\nmulheres em lutas, a realidade na escola ainda é diferente\nem razão do(a)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "mulheres em lutas, a realidade na escola ainda é diferente",
+      "alternatives": {
+        "A": "esportivização desse conteúdo.",
+        "B": "masculinização dessa modalidade.",
+        "C": "enfoque desses eventos pela mídia.",
+        "D": "trato pedagógico dessa manifestação.",
+        "E": "marginalização desse tema pela Educação Física."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q27",
+      "number": 27,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q27",
+          "blocks": [
+            {
+              "id": "text_q27_1",
+              "type": "paragraph",
+              "content": "Volta e meia recebo cartinhas de fãs, e alguns são bem\njovens, contando como meu trabalho com a música mudou\na vida deles. Fico no céu lendo essas coisas e me emociono\nquando escrevem que não são aceitos pelos pais por serem\ndiferentes, e como minhas músicas são uma companhia e\nos libertam nessas horas de solidão.\nSinto que é mais complicado ser jovem hoje, já que nunca\ntivemos essa superpopulação no planeta: haja competitividade,\nculto à beleza, ter filho ou não, estudar, ralar para arranjar\ntrabalho, ser mal remunerado, ser bombardeado com trocentas\ninformações, lavagens cerebrais...\nQueria dar beijinhos e carinhos sem ter fim nessa moçada e\ndizer a ela que a barra é pesada mesmo, mas que a juventude\nestá a seu favor e, de repente, a maré de tempestade muda.\nDiria também um monte de clichê: que vale a pena estudar\nmais, pesquisar mais, ler mais. Diria que não é sinal de saúde\nestar bem-adaptado a uma sociedade doente, que o que é\nnormal para uma aranha é o caos para uma mosca.\nMeninada, sintam-se beijados pela vovó Rita.\nRITA LEE. **Outra autobiografia** . São Paulo: Globo Livros, 2023.\nComo estratégia para se aproximar de seu leitor, a autora\nusa uma postura de empatia explicitada em"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "usa uma postura de empatia explicitada em",
+      "alternatives": {
+        "A": "“Volta e meia recebo cartinhas de fãs, e alguns são",
+        "B": "“Fico no céu lendo essas coisas”.",
+        "C": "“Sinto que é mais complicado ser jovem hoje”.",
+        "D": "“Queria dar beijinhos e carinhos sem ter fim nessa moçada”.",
+        "E": "“Diria que não é sinal de saúde estar bem-adaptado a"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q28",
+      "number": 28,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q28",
+          "blocks": [
+            {
+              "id": "text_q28_1",
+              "type": "paragraph",
+              "content": "_**Data venia**_\nConheci Bentinho e Capitu nos meus curiosos e antigos\nquinze anos. E os olhos de água da jovem de Matacavalos\natraíram-me, seduziram-me ao primeiro contato. Aliados ao\nseu jeito de ser, flor e mistério. Mas tomou-me também a\nindignação diante do narrador e seu texto, feito de acusação\ne vilipêndio. Sem qualquer direito de defesa. Sem acesso ao\ndiscurso, usurpado, sutilmente, pela palavra autoritária do\nmarido, algoz, em pele de cordeiro vitimado. Crudelíssimo\ne desumano: não bastasse o que faz com a mulher, chega\na desejar a morte do próprio filho e a festejá-la com\num jantar, sem qualquer remorso. No fundo, uma pobre\nconsciência dilacerada, um homem dividido, que busca\nencontrar-se na memória, e acaba faltando-se a si mesmo.\nRetomei inúmeras vezes a triste história daquele amor em\ndesencanto. Familiarizei-me, ao longo do tempo, com a\ncrítica do texto; poucos, muito poucos, escapam das bem\ntraçadas linhas do libelo condenatório; no mínimo concedem\nà ré o beneplácito da dúvida: convertem-na num enigma\nindecifrável, seu atributo consagrador.\nEis que, diante de mais um retorno ao romance, veio\na iluminação: por que não dar voz plena àquela mulher,\nbrasileira do século XIX, que, apesar de todas as artimanhas\ne do maquiavelismo do companheiro, se converte numa das\nmais fascinantes criaturas do gênio que foi Machado de Assis?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "mais fascinantes criaturas do gênio que foi Machado de Assis?",
+      "alternatives": {
+        "A": "relaciona aspectos centrais da obra original e, então,",
+        "B": "explica os pontos de vista de críticos da literatura e,",
+        "C": "introduz elementos relevantes da história e, na sequência,",
+        "D": "justifica as razões pelas quais adotou certa abordagem",
+        "E": "contextualiza o enredo de forma subjetiva e, na conclusão,"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q29",
+      "number": 29,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q29",
+          "blocks": [
+            {
+              "id": "text_q29_1",
+              "type": "paragraph",
+              "content": "Meu irmão é filho adotivo. Há uma tecnicidade no termo,\nfilho adotivo, que contribui para sua aceitação social. Há uma\nnovidade que por um átimo o absolve das mazelas do passado,\nque parece limpá-lo de seus sentidos indesejáveis. Digo que\nmeu irmão é filho adotivo e as pessoas tendem a assentir com\nsolenidade, disfarçando qualquer pesar, baixando os olhos\ncomo se não sentissem nenhuma ânsia de perguntar mais\nnada. Talvez compartilhem da minha inquietude, talvez de\nfato se esqueçam do assunto no próximo gole ou na próxima\ngarfada. Se a inquietude continua a reverberar em mim,\né porque ouço a frase também de maneira parcial — meu irmão\né filho — e é difícil aceitar que ela não termine com a verdade\ntautológica habitual: meu irmão é filho dos meus pais. Estou\nentoando que meu irmão é filho e uma interrogação sempre\nme salta aos lábios: filho de quem?\nFUCKS, J. **A resistência** . São Paulo: Cia. das Letras, 2015.\nDas reflexões do narrador, apreende-se uma perspectiva\nque associa a adoção"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "que associa a adoção",
+      "alternatives": {
+        "A": "a representações sociais estigmatizadas da parentalidade.",
+        "B": "à necessidade de aprovação por parte de desconhecidos.",
+        "C": "ao julgamento velado de membros do núcleo familiar.",
+        "D": "ao conflito entre o termo técnico e o vínculo afetivo.",
+        "E": "a inquietações próprias das relações entre irmãos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q30",
+      "number": 30,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q30",
+          "blocks": [
+            {
+              "id": "text_q30_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "defendem a dignidade do ofício dos artistas.",
+        "B": "concluem que a arte reforça crenças pessoais.",
+        "C": "apresentam a pobreza como inspiração para a arte.",
+        "D": "afirmam o necessário caráter desestabilizador da arte.",
+        "E": "atestam que há mudanças significativas na produção"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q31",
+      "number": 31,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q31",
+          "blocks": [
+            {
+              "id": "text_q31_1",
+              "type": "paragraph",
+              "content": "**Cap. XLVIII / Terpsícore**\nAo contrário do que ficou dito atrás, Flora não se aborreceu\nna ilha. Conjeturei mal, emendo-me a tempo. Podia aborrecer-se\npelas razões que lá ficam, e ainda outras que poupei ao leitor\napressado; mas, em verdade, passou bem a noite. A novidade\nda festa, a vizinhança do mar, os navios perdidos na sombra,\na cidade defronte com os seus lampiões de gás, embaixo e\nem cima, na praia e nos outeiros, eis aí aspectos novos que\na encantaram durante aquelas horas rápidas.\nNão lhe faltavam pares, nem conversação, nem alegria\nalheia e própria. Toda ela compartia da felicidade dos outros.\nVia, ouvia, sorria, esquecia-se do resto para se meter\nconsigo. Também invejava a princesa imperial, que viria a\nser imperatriz um dia, com o absoluto poder de despedir\nministros e damas, visitas e requerentes, e ficar só, no mais\nrecôndito do paço, fartando-se de contemplação ou de\nmúsica. Era assim que Flora definia o ofício de governar.\nTais ideias passavam e tornavam. De uma vez alguém lhe\ndisse, como para lhe dar força: “Toda alma livre é imperatriz!”.\nASSIS, M. **Esaú e Jacó** . Rio de Janeiro: Nova Aguilar, 1974.\nConvidada para o último baile do Império, na Ilha Fiscal,\nlocalizada no Rio de Janeiro, Flora devaneia sobre\naspectos daquele contexto, no qual o narrador ironiza a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "aspectos daquele contexto, no qual o narrador ironiza a",
+      "alternatives": {
+        "A": "promessa de esperança com o futuro regime.",
+        "B": "alienação da elite em relação ao fim da monarquia.",
+        "C": "perspectiva da contemplação distanciada da capital.",
+        "D": "animosidade entre população e membros da nobreza.",
+        "E": "fantasia de amor e de casamento da mulher burguesa."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q32",
+      "number": 32,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q32",
+          "blocks": [
+            {
+              "id": "text_q32_1",
+              "type": "paragraph",
+              "content": "**Marília acorda**\nTomo café em golinhos para não queimar meus lábios\nressequidos. Como pão em pedacinhos para não engasgar\ncom um farelo mais duro. Marília come também, mas olha\n- tempo todo para baixo. Parece que tem um acanhamento\nnovo entre a gente. Termino. Olho mais uma vez pela janela.\nO dia está bom. Quero caminhar pelo pátio. Marília levanta,\npega o andador e põe ao lado da cama. Ela sabe que eu\nquero levantar sozinha, e levanto. O lance de escadas,\napesar de pequeno, ainda me causa problemas, mas não\nquero um elevador na casa e não vou tolerar descer uma\nrampa de cadeira de rodas. Marília abre a porta e saímos\npara a manhã. O dia está mais fresco do que eu imaginava.\nEla pega uma manta de tricô que temos desde não sei\nquando e põe sobre as minhas costas. Ela aperta meus\nombros com muita força, porque mesmo depois de todos\nesses anos, não descobriu a medida certa do carinho.\nEu gosto. Porque entendo que naquele ato, naquela força\nestá o nosso carinho.\nPOLESSO, N. B. **Amora** . Porto Alegre: Não Editora, 2015.\nNesse trecho, o drama do declínio físico da narradora\ntransmite uma sensibilidade lírica centrada na"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "transmite uma sensibilidade lírica centrada na",
+      "alternatives": {
+        "A": "necessidade de fazer adaptações na casa.",
+        "B": "atmosfera de afeto fortalecido pelo convívio.",
+        "C": "condição de dependência de outras pessoas.",
+        "D": "determinação de manter a regularidade da rotina.",
+        "E": "aceitação das restrições de mobilidade da personagem."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q33",
+      "number": 33,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q33",
+          "blocks": [
+            {
+              "id": "text_q33_1",
+              "type": "paragraph",
+              "content": "2024 (adaptado).\nNesse cartaz, a expressão “Vou deixar que você se vá”,\nem conjunto com os elementos não verbais utilizados,\ntem a finalidade de"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "tem a finalidade de",
+      "alternatives": {
+        "A": "incentivar o descarte de itens defeituosos.",
+        "B": "promover a reciclagem de produtos usados.",
+        "C": "garantir a conservação de roupas de inverno.",
+        "D": "relacionar o gesto de doação à ideia de desapego.",
+        "E": "comparar a peça de roupa ao sentimento de despedida."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q34",
+      "number": 34,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q34",
+          "blocks": [
+            {
+              "id": "text_q34_1",
+              "type": "paragraph",
+              "content": "**Teclado amazônico**\nEm novembro de 2023, uma professora indígena\nrecebeu uma missão: verter as regras de um jogo de\ntabuleiro infantil do português para o tukano, sua língua\nnativa. Com vinte anos de experiência como professora\nde línguas em Taracuá, no Amazonas, ela já se dedicava à\ntradução havia tempos. O trabalho ficou mais fácil graças\na um aplicativo lançado no ano anterior: com o Linklado\nem seu computador, ela traduziu as sete páginas das\ninstruções do jogo em dois dias. Sem esse recurso, a tarefa\nseria bem mais trabalhosa. Antes dele, diz a professora,\nas transcrições de línguas indígenas exigiam o esforço\nquase manual de produzir diacríticos (acentos gráficos)\ne letras que não constam no teclado de aplicativos de\nmensagens ou programas de texto.\nPara a pesquisadora do Instituto Nacional de Pesquisas\nda Amazônia (Inpa), idealizadora do aplicativo, o Linklado\nrepresenta uma revolução. O programa não restringe\ncombinações de acentos, e isso poderá facilitar a criação\nde representações gráficas para fonemas que ainda não\ntêm forma escrita. “Eu mirei em uma dor e atingimos várias\noutras”, diz.\n“O Linklado possibilita que o Brasil reconheça a sua\ndiversidade linguística”, afirma uma antropóloga que é\ncolega da pesquisadora no Inpa e faz parte da equipe do\naplicativo. Ela defende que escrever na língua materna é\numa das principais formas de preservá-la.\n 2024 (adaptado).\nDe acordo com esse texto, o aplicativo Linklado contribuiu\npara a"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q34_1",
+          "blocks": [
+            {
+              "id": "img_q34_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 34",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-13-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "De acordo com esse texto, o aplicativo Linklado contribuiu",
+      "alternatives": {
+        "A": "criação de fonemas representativos de línguas indígenas",
+        "B": "democratização do registro escrito de línguas dos povos",
+        "C": "adaptação de regras de jogos de tabuleiro de origem",
+        "D": "divulgação das técnicas de tradução de línguas indígenas.",
+        "E": "aprendizagem da lingua portuguesa pelos indígenas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q35",
+      "number": 35,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q35",
+          "blocks": [
+            {
+              "id": "text_q35_1",
+              "type": "paragraph",
+              "content": "- Eu lhe juro, Aurélia. Estes lábios nunca tocaram a face de outra mulher, que não fosse minha mãe. Meu primeiro\nbeijo de amor, guardei-o para minha esposa, para ti...\n[...]\n- Ou de outra mais rica! — disse ela, retraindo-se para fugir ao beijo do marido, e afastando-o com a ponta dos dedos."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "- Ou de outra mais rica! — disse ela, retraindo-se para fugir ao beijo do marido, e afastando-o com a ponta dos dedos.",
+      "alternatives": {
+        "A": "defesa da igualdade de gêneros.",
+        "B": "importância atribuída à castidade.",
+        "C": "indignação com as injustiças sociais.",
+        "D": "interferência da riqueza sobre o amor.",
+        "E": "valorização das relações interpessoais."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q36",
+      "number": 36,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q36",
+          "blocks": [
+            {
+              "id": "text_q36_1",
+              "type": "paragraph",
+              "content": "**TEXTO I** **TEXTO II**\nAnônimo. **Cabeça de uma figura feminina** .\n_Circa_ 2700-2500 a.C. Escultura em mármore, 8 × 3,2 cm.\nMetropolitan Museum of Art, Nova Iorque.\nMODIGLIANI, A. **Cabeça de mulher** . _Circa_ 1910-1911.\nEscultura em calcário, 68,3 × 15,9 × 24,1 cm.\nNational Gallery of Art, Washington.\nWOLKOFF, J. **These 5,000-Year-Old Sculptures Look Shockingly Similar to Modern Art** .\n 2019."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q36_1",
+          "blocks": [
+            {
+              "id": "img_q36_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 36",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-14-1.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q36_2",
+          "blocks": [
+            {
+              "id": "img_q36_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 36",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-14-0.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "WOLKOFF, J. **These 5,000-Year-Old Sculptures Look Shockingly Similar to Modern Art** .",
+      "alternatives": {
+        "A": "valorização da arte antiga por artistas contemporâneos.",
+        "B": "resistência da arte escultórica aos avanços tecnológicos.",
+        "C": "simplificação da forma em razão do tipo de material utilizado.",
+        "D": "persistência de padrões estéticos em diferentes épocas e culturas.",
+        "E": "ausência de detalhes como traço distintivo da arte tradicional popular."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q37",
+      "number": 37,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q37",
+          "blocks": [
+            {
+              "id": "text_q37_1",
+              "type": "paragraph",
+              "content": "**Se você é feito de música, este texto é pra você**\nÀs vezes, no silêncio da noite, eu fico imaginando:\nque graça teria a vida sem música? Sem ela não há paz,\nnão há beleza. Nos dias de festa e nas madrugadas de\npranto, nas trilhas dos filmes e nas corridas no parque,\n- que seria de nós sem as canções que enfeitam o cotidiano\ncom ritmo e verso? Quem nunca curou uma dor de cotovelo\ndançando lambada ou terminou de se afundar ouvindo\nsertanejo sofrência? Quantos já criticaram funk e fecharam\na noite descendo até o chão? Tudo bem... Raul nos ensinou\nque é preferível ser essa metamorfose ambulante do que\nter aquela velha opinião formada sobre tudo.\nJá somos castigados com o peso das tragédias,\n- barulho das buzinas, os ruídos dos conflitos. É pau,\né pedra, é o fim do caminho. Há uma nuvem de lágrimas\nsobre os olhos, você está na lanterna dos afogados,\n- coração despedaçado. Mas, como um sopro, da janela\ndo vizinho, entra o samba que reanima a mente. Floresce\ndo fundo do nosso quintal a batida que ressuscita o ânimo,\nsintoniza a alegria e equaliza o fôlego. Levanta, sacode\na poeira, dá a volta por cima.\nBITTAR, L.  2021 (adaptado).\nDefendendo a importância da música para o bem-estar e\n- equilíbrio emocional das pessoas, a autora usa, como\nrecurso persuasivo, a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "recurso persuasivo, a",
+      "alternatives": {
+        "A": "contradição, ao associar o coração despedaçado",
+        "B": "metáfora, ao citar a imagem da metamorfose ambulante.",
+        "C": "intertextualidade, ao resgatar versos de letras de canções.",
+        "D": "enumeração, ao mencionar diferentes ritmos musicais.",
+        "E": "hipérbole, ao falar em “sofrência”, “tragédias” e “afogados”."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q38",
+      "number": 38,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q38",
+          "blocks": [
+            {
+              "id": "text_q38_1",
+              "type": "paragraph",
+              "content": "pessoas com suas malas\nmochilas e valises\nchegam e se vão\nse encontram\nse despedem\ne se despem\nde seus pertences\ncomo se pudessem chegar\na algum lugar\nonde elas mesmas\nnão estivessem\nRUIZ, A. In: SANT’ANNA, A. **Rua Aribau: coletânea de poemas** .\nPorto Alegre: TAG, 2018.\nEsse poema, por meio da ideia de deslocamento, metaforiza\na tentativa de pessoas"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "a tentativa de pessoas",
+      "alternatives": {
+        "A": "buscarem novos encontros.",
+        "B": "fugirem da própria identidade.",
+        "C": "procurarem lugares inexplorados.",
+        "D": "partirem em experiências inusitadas.",
+        "E": "desaparecerem da vida em sociedade."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q39",
+      "number": 39,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q39",
+          "blocks": [
+            {
+              "id": "text_q39_1",
+              "type": "paragraph",
+              "content": "**Falar errado é uma arte, Arnesto!**\nNo dia 6 de agosto de 1910, Emma Riccini Rubinato\npariu um garoto sapeca em Valinhos e deu a ele o nome\nde João Rubinato. Na escola, João não passou do terceiro\nano. Não era a área dele, tinha de escolher outra. Fez o que\napareceu. Foi ser garçom, metalúrgico, até virar radialista,\ncomediante, ator de cinema e TV, cantor e compositor.\nDe samba.\nComo tinha sobrenome italiano, João resolveu mudar\npara emplacar seu samba. E como ia mudar o sobrenome,\nmudou o nome. Virou Adoniran Barbosa. O cara falava\nerrado, voz rouca, pinta de malandro da roça. Virou ícone da\nmúsica brasileira, o mais paulista de todos, falando errado\ne irritando Vinicius de Moraes, que ficou de bico fechado\ndepois de ouvir a música que Adoniran fez para a letra\n_Bom dia, tristeza_, de autoria do Poetinha. Coisa de arrepiar.\nPara toda essa gente que implicava, Adoniran tinha\numa resposta neoerudita: “Gosto de samba e não foi fácil,\npra mim, ser aceito como compositor, porque ninguém\nqueria nada com as minhas letras que falavam ‘nóis vai’,\n‘nóis fumo’, ‘nóis fizemo’, ‘nóis peguemo’. Acontece que é\npreciso saber falar errado. Falar errado é uma arte, senão\nvira deboche”.\nEle sabia o que fazia. Por isso dizia que falar errado\nera uma arte. A sua arte. Escolhida a dedo porque casava\ncom seu tipo. O _Samba do Arnesto_ é um monumento à\nfala errada, assim como _Tiro ao Álvaro_ . O erudito podia\nresmungar, mas o povo se identificava.\nPEREIRA, E.  2024 (adaptado).\nO “falar errado” a que o texto se refere constitui um\npreconceito em relação ao uso que Adoniran Barbosa\nfazia da língua em suas composições, pois esse uso"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "fazia da língua em suas composições, pois esse uso",
+      "alternatives": {
+        "A": "marcava a linguagem dos comediantes no mesmo",
+        "B": "prejudicava a compreensão das canções pelo público.",
+        "C": "denunciava a ausência de estilo nas letras de canção.",
+        "D": "restringia a criação poética nas letras do compositor.",
+        "E": "transgredia a norma-padrão vigente à época."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q40",
+      "number": 40,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q40",
+          "blocks": [
+            {
+              "id": "text_q40_1",
+              "type": "paragraph",
+              "content": "O festival folclórico de Parintins, no Amazonas,\nanunciou que o Boi Caprichoso levou, em 2018, seu\n23º título — contra 31 do adversário Boi Garantido.\nDesde o fim do evento que não paro de cantar duas\nmúsicas que aprendi no Bumbódromo (arena onde ocorre\n- espetáculo). Revezo entre “ _meu amor, eu sou feliz, ééé_\n_azul o meu país_ ”, obviamente do boi azul, o Caprichoso;\ne “ _vermelhou o curral, a ideologia avermelhou_ ”, do boi\nvermelho, o Garantido. Esse revezamento seria proibido\nem Parintins, cidade tão dividida entre as torcidas dos bois.\nEm Parintins, você tem de ter um lado. Há aqueles que\ntentam fugir e dizem que são “garanchoso”, com os quais\nme identifiquei, mas esses são vistos com certo desdém.\nDYNIEWICZ, L.  2018 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "DYNIEWICZ, L.  2018 (adaptado).",
+      "alternatives": {
+        "A": "escolha de um local específico para a festa.",
+        "B": "importância atribuída pelos turistas aos bois.",
+        "C": "interação social estabelecida após o evento.",
+        "D": "aproximação da manifestação folclórica com o esporte.",
+        "E": "composição de enredos musicais pelos “garanchosos”."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q41",
+      "number": 41,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q41",
+          "blocks": [
+            {
+              "id": "text_q41_1",
+              "type": "paragraph",
+              "content": "O Brasil somou cerca de 60 mil novos casos de câncer\nde mama até o final de 2019, número que corresponde a\n25% de todos os diagnósticos da condição registrados no\npaís, segundo dados do Instituto Nacional do Câncer (Inca).\nApesar de o Outubro Rosa ser o mês de conscientização\nsobre a questão voltada para as mulheres, é muito importante\nlembrar que um dos grandes mitos da medicina é o de que\n- câncer de mama não afeta o sexo masculino.\nFatores importantes para detectar o câncer de mama\nmasculino:\n1. \u0007 \u0007Genética: se houver casos na família, as chances são\num pouco mais elevadas.\n2. \u0007 \u0007Hormônios: homens podem desenvolver tecido real das\nglândulas mamárias por tomarem certos medicamentos\nou apresentarem níveis hormonais anormais.\n3. \u0007 \u0007Caroços: é necessário que os médicos se atentem a\nalguns sintomas suspeitos, como um caroço na área\ndo tórax.\n4. \u0007 \u0007Retração na pele: em situações mais graves do câncer\nde mama masculino, é possível também ocorrer uma\nretração do mamilo.\n 2021 (adaptado).\nAs informações dessa reportagem auxiliam no combate\nao câncer de mama masculino por apresentarem um\nalerta sobre o(s)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "alerta sobre o(s)",
+      "alternatives": {
+        "A": "sinais indicadores da doença.",
+        "B": "índice de crescimento de casos.",
+        "C": "exames para diagnóstico do tumor.",
+        "D": "mitos a respeito da herança genética.",
+        "E": "período de campanhas de conscientização."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q42",
+      "number": 42,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q42",
+          "blocks": [
+            {
+              "id": "text_q42_1",
+              "type": "paragraph",
+              "content": "**Feijoada à minha moda**\nAmiga Helena Sangirardi\nConforme um dia prometi\nOnde, confesso que esqueci"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Onde, confesso que esqueci",
+      "alternatives": {
+        "A": "nomeação de um interlocutor.",
+        "B": "manifestação de intimidade.",
+        "C": "descrição de procedimentos.",
+        "D": "utilização de uma linguagem expressiva.",
+        "E": "apresentação de ingredientes culinários."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q43",
+      "number": 43,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q43",
+          "blocks": [
+            {
+              "id": "text_q43_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "técnica fotográfica alternativa limita o registro de imagens.",
+        "B": "apreciação da natureza depende de registro fotográfico.",
+        "C": "criatividade artística decorre do conhecimento científico.",
+        "D": "câmera de criação caseira tem valor tecnológico.",
+        "E": "produção artística pode ser resultado do acaso."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q44",
+      "number": 44,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q44",
+          "blocks": [
+            {
+              "id": "text_q44_1",
+              "type": "paragraph",
+              "content": "Os Jogos Olímpicos já não são mais os mesmos."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Os Jogos Olímpicos já não são mais os mesmos.",
+      "alternatives": {
+        "A": "aproximando da aventura.",
+        "B": "mantendo em sua forma padrão.",
+        "C": "tornando uma forma de dança.",
+        "D": "afastando de elementos culturais.",
+        "E": "adaptando às demandas do seu tempo."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q45",
+      "number": 45,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q45",
+          "blocks": [
+            {
+              "id": "text_q45_1",
+              "type": "paragraph",
+              "content": "**Memes e fake news: o impacto na**\n**educação das crianças**\nHá quem diga que o Brasil nunca mais foi o mesmo\ndepois dos memes. Na economia da velocidade, alguns\napostam no humor, outros no engajamento político, e tem\ngente investindo alto na mentira também. Diante desse\ncenário, uma pergunta se torna essencial: será que todo\nmundo está conseguindo traduzir as mensagens postadas,\ncurtidas e compartilhadas?\nEssa dúvida incentivou uma professora de língua\nportuguesa a desenvolver uma proposta de leitura e análise\ncrítica de memes com estudantes do ensino fundamental, na\nrede pública do Distrito Federal, na cidade de Samambaia.\n“Percebi que muitos alunos e pais estavam divulgando\nconteúdos sem saber o que havia por trás das palavras”,\nrelata a professora.\n“O que antes era engraçado para os alunos passou\na ser visto com outros olhos”, afirma a professora. Para\nela, que utilizou a representação da criança em memes\nde WhatsApp como material gerador das discussões em\nsala de aula, aguçar o olhar sobre essas mensagens\nimpacta diretamente a atitude de postar, curtir e compartilhar\nconteúdos ao estimular o uso consciente da informação\nque circula nas plataformas de mídia social.\nLetramento político e midiático é um desafio\nintergeracional. Em tempos de notícias falsas, de imagens\nmanipuladas e de memes sendo usados como triunfo\nda verdade de cada um, checagem de informação e\ninterpretação de texto acabam se tornando moedas valiosas.\n 2024 (adaptado).\nAo abordar a relação dos memes com a educação,\na reportagem sustenta uma crítica à"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q45_1",
+          "blocks": [
+            {
+              "id": "img_q45_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 45",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-17-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q45_2",
+          "blocks": [
+            {
+              "id": "img_q45_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 45",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-18-0.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q45_3",
+          "blocks": [
+            {
+              "id": "img_q45_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 45",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-18-1.png"
+            }
+          ],
+          "order": 4
+        }
+      ],
+      "statement": "a reportagem sustenta uma crítica à",
+      "alternatives": {
+        "A": "partir da leitura dos textos motivadores e com base nos conhecimentos construídos ao longo de sua",
+        "B": "divulgação de informação manipulada em postagens",
+        "C": "utilização de ferramentas digitais no trabalho",
+        "D": "exploração de conteúdos humorísticos nas mídias",
+        "E": "a tua cara é de cariri"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q46",
+      "number": 46,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q46",
+          "blocks": [
+            {
+              "id": "text_q46_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\nUm terremoto de magnitude 5,9 atingiu a cidade de\nValparaíso, na costa chilena. O terremoto ocorreu a uma\nprofundidade de 112 quilômetros.\n**Terremoto de magnitude 5,9 atinge Valparaíso, no Chile** .\n 2021 (adaptado).\n**TEXTO II**\nUm tremor de terra de magnitude 4,8 foi registrado\nno município de Atalaia do Norte, no interior do estado do\nAmazonas. O abalo é de magnitude considerada mediana\npara os níveis do Brasil. Os eventos dessa região costumam\nser resultado das atividades da placa de Nazca.\n**Tremor de terra de magnitude 4,8 é registrado no interior do**\n**Amazonas** .  2021 (adaptado).\n**TEXTO III**\nMoradores usaram as redes sociais para relatar tremores\nde terra no interior de São Paulo. As atividades foram\nregistradas nas cidades de Júlio Mesquita e Guaimbê e\ntiveram magnitude 3,0 na escala Richter, o que é considerado\npequeno e sem previsão de danos.\n**Moradores do interior de SP relatam tremores de terra** .\n 2021 (adaptado).\nAs diferenças entre os eventos geológicos relatados\ndecorrem de distintas posições geográficas das cidades\nem relação a:"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "decorrem de distintas posições geográficas das cidades",
+      "alternatives": {
+        "A": "Planícies costeiras.",
+        "B": "Bacias continentais.",
+        "C": "Zonas de subducção.",
+        "D": "Áreas de denudação.",
+        "E": "Vertentes escarpadas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q47",
+      "number": 47,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q47",
+          "blocks": [
+            {
+              "id": "text_q47_1",
+              "type": "paragraph",
+              "content": "Tal qual num exército, não se compreende um efetivo\ncomposto apenas de oficiais. Também na saúde pública,\nos funcionários técnicos graduados necessitam ser\nassistidos por auxiliares em número suficiente e com\npreparo adequado, constituído pelas enfermeiras de saúde\npública, educadoras ou visitadoras sanitárias, técnicos de\nlaboratório, inspetores ou guardas etc., para não falarmos\nno pessoal burocrático, não especializado.\nPAULA SOUZA, G. H.; VIEIRA, F. B. Centro de saúde “eixo” de\norganização sanitária. **Boletim do Instituto de Higiene**\n**de São Paulo**, n. 59 (adaptado).\nO texto dos sanitaristas atuantes nas décadas de 1920 e\n1930 veicula uma mensagem caracterizada pela"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "1930 veicula uma mensagem caracterizada pela",
+      "alternatives": {
+        "A": "higienização moral.",
+        "B": "imposição eugênica.",
+        "C": "assimilação cultural.",
+        "D": "hegemonização identitária.",
+        "E": "hierarquização profissional."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q48",
+      "number": 48,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q48",
+          "blocks": [
+            {
+              "id": "text_q48_1",
+              "type": "paragraph",
+              "content": "O rompimento da barragem de Fundão levou muito\nconsigo. A lama soterrou sonhos e modificou de forma\npermanente centenas de vidas nascidas e criadas em\nBento Rodrigues e Paracatu, em Mariana (MG). Mas não\nsomente. Ao se estender ao longo do rio, outras famílias e\nhistórias foram atingidas de formas diferentes. Ao fugirem\ndos rejeitos que rapidamente tomaram as localidades,\ndeixaram para trás os resquícios da vida que tiveram até\n- 5 de novembro de 2015. Nada jamais seria igual.\nSANTOS, P. Histórias soterradas. **Curinga**,\nn. 19, nov. 2016 (adaptado).\nConforme o texto, o evento gerou o seguinte impacto na\nrelação entre as pessoas e o seu espaço vivido:"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "relação entre as pessoas e o seu espaço vivido:",
+      "alternatives": {
+        "A": "Flexibilização de parâmetros ambientais.",
+        "B": "Consolidação de identidades regionais.",
+        "C": "Fragilização de vínculos afetivos.",
+        "D": "Supressão de práticas exploratórias.",
+        "E": "Recuperação de tradições ancestrais."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q49",
+      "number": 49,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q49",
+          "blocks": [
+            {
+              "id": "text_q49_1",
+              "type": "paragraph",
+              "content": "Com a proximidade do final do século XIX, amplificam-se\nas expectativas com relação ao século seguinte. Se muitas\neram as utopias, talvez uma das mais evidentes tenha se\nconcentrado nas potencialidades da nova ciência, com suas\ninvenções e projetos. Não é por mera coincidência que\na agenda do país tenha sido tomada pela introdução de\numa série de inventos. De forma acelerada, entraram no\nBrasil a luz elétrica e, com ela, o telégrafo, o telefone,\n- cinematógrafo. Na área dos transportes, o trem a vapor é\nsubstituído pelo elétrico, que assiste à entrada do automóvel\ne até do aeroplano.\nCOSTA, A. M.; SCHWARCZ, L. M. **1890-1914, no tempo das certezas** .\nSão Paulo: Cia. das Letras, 2000 (adaptado).\nNo Brasil, os eventos descritos ganharam conotação\npolítica ao serem vinculados à"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "política ao serem vinculados à",
+      "alternatives": {
+        "A": "expansão estratégica do imperialismo.",
+        "B": "ascensão gradual do mercantilismo.",
+        "C": "laicidade da educação.",
+        "D": "retomada do absolutismo.",
+        "E": "visão republicana de nação."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q50",
+      "number": 50,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "LINGUAGENS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q50",
+          "blocks": [
+            {
+              "id": "text_q50_1",
+              "type": "paragraph",
+              "content": "O bispo Bartolomeu de Las Casas é o homem mais\nodiado da América, o anti-Cristo dos senhores, o açoite\ndestas terras. Por sua culpa, o imperador promulgou\nnovas leis que despojam de escravos índios os filhos dos\nconquistadores. O que será deles sem os braços que\nos sustentam nas minas e nas lavouras? As novas leis\nestão arrancando a comida de suas bocas. Las Casas é o\nhomem mais amado da América. Voz dos mudos, teimoso\ndefensor dos que recebem pior tratamento que o esterco\ndas praças, denunciador de quem por cobiça converte\nJesus Cristo no mais cruel dos deuses e o rei em lobo\nfaminto de carne humana.\nGALEANO, E. **Os nascimentos** . Porto Alegre:\nL&PM, 2011 (adaptado).\nOs diferentes pontos de vista presentes no texto expressam\nque o bispo era, ao mesmo tempo,"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "que o bispo era, ao mesmo tempo,",
+      "alternatives": {
+        "A": "execrado pelos reis e reverenciado pelos religiosos do local.",
+        "B": "detestado pelos colonizadores e respeitado pelos povos",
+        "C": "menosprezado pela colônia e idolatrado pelos governantes",
+        "D": "desrespeitado pela metrópole e adorado pelos invasores",
+        "E": "desacatado pelos excluídos e valorizado pelos negociantes"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q51",
+      "number": 51,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "traços advindos da feitiçaria nórdica.",
+        "B": "práticas inspiradas em rituais pagãos.",
+        "C": "regras decorrentes do período renascentista.",
+        "D": "compassos produzidos em territórios colonizados.",
+        "E": "elementos provenientes de segmentos populares."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q52",
+      "number": 52,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q52",
+          "blocks": [
+            {
+              "id": "text_q52_1",
+              "type": "paragraph",
+              "content": "O Black Lives Matter vai para além do nacionalismo\nestreito que pode prevalecer no seio das comunidades\nnegras, que se limita a apelar aos negros a amar\nos negros, viver como os negros e comprar produtos\ndos negros, e mantém à frente do movimento homens\nnegros heterossexuais. Black Lives Matter estima as\nvidas dos negros e negras homossexuais e transexuais,\npessoas incapacitadas, negros sem documentos ou com\nantecedentes criminais, mulheres e as vidas de todos os\nnegros de todo o espectro de gêneros.\nLA BOTZ, D. **O movimento Black Lives Matter organiza-se e procura**\n**definir-se politicamente** .  2021 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "LA BOTZ, D. **O movimento Black Lives Matter organiza-se e procura**",
+      "alternatives": {
+        "A": "manter a conquista de direitos sociais.",
+        "B": "integrar a diversidade do grupo identitário.",
+        "C": "priorizar a preservação de culturas africanas.",
+        "D": "defender a adoção de valores supremacistas.",
+        "E": "permitir a permanência do modelo androcêntrico."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q53",
+      "number": 53,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q53",
+          "blocks": [
+            {
+              "id": "text_q53_1",
+              "type": "paragraph",
+              "content": "**Diferenças entre inundação gradual e brusca**\nTOMINAGA, L. K.; SANTORO, J.; AMARAL, R. **Desastres naturais** :\nconhecer para prevenir. São Paulo: Instituto Geológico, 2009 (adaptado)."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q53_1",
+          "blocks": [
+            {
+              "id": "img_q53_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 53",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-20-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "conhecer para prevenir. São Paulo: Instituto Geológico, 2009 (adaptado).",
+      "alternatives": {
+        "A": "variabilidade solar anual.",
+        "B": "temperatura média mensal.",
+        "C": "declividade do relevo local.",
+        "D": "dinâmica tectônica regional.",
+        "E": "gradação da turbidez fluvial."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q54",
+      "number": 54,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q54",
+          "blocks": [
+            {
+              "id": "text_q54_1",
+              "type": "paragraph",
+              "content": "Os grupos dominantes são beneficiados em termos de\ncredibilidade e podem, com isso, controlar falas de membros\nde outros grupos, descredibilizando seus testemunhos com\nbase em concepções compartilhadas de preconceito de\nidentidade (gênero e raça). Algumas formas de preconceito\ntornam as declarações das pessoas menos importantes\ndevido ao seu pertencimento a determinado grupo social.\nAssim, um falante recebe menos credibilidade devido ao\npreconceito do ouvinte.\nKUHNEN, T. Resenha de The Power and Ethics of Knowing,\nde Miranda Fricker. **Revista Princípios**, n. 33, 2013.\nCom base na reflexão suscitada no texto, o preconceito\nde identidade é responsável por um tipo de injustiça"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "de identidade é responsável por um tipo de injustiça",
+      "alternatives": {
+        "A": "estética, que normatiza os padrões corporais.",
+        "B": "sensorial, que privilegia as habilidades visuais.",
+        "C": "afetiva, que impede as expressões emocionais.",
+        "D": "epistêmica, que prejudica as trocas informacionais.",
+        "E": "econômica, que perpetua as desigualdades materiais."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q55",
+      "number": 55,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "pressuposto lógico.",
+        "B": "pensamento dicotômico.",
+        "C": "contemplação da natureza.",
+        "D": "raciocínio argumentativo.",
+        "E": "crítica à individualidade."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q56",
+      "number": 56,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q56",
+          "blocks": [
+            {
+              "id": "text_q56_1",
+              "type": "paragraph",
+              "content": "No primeiro dia, foi colocada uma panela de barro no\ncentro do barracão, a qual representava o espírito do morto\npresente na sala. Aqueles que dançavam depositavam\nmoedas ao passarem junto dela e, ao seu redor, milho\nbranco, mel, água, acaçás, cachaça. No segundo dia,\nos ogãs, antes de iniciar a cerimônia, caminharam pelo\ncorredor formado pelas casas, batendo com longas varas\nde bambus nos seus beirais, até alcançarem o portão de\nentrada. No terceiro dia, quatro pessoas, as mais influentes\ndo culto, carregaram um lençol, que aparentemente\ncontinha um corpo em seu interior. No entanto, esse corpo\nera formado por folhas verdes de plantas, que foram\nderramadas sobre uma pessoa.\nMANZOCHI, H. M. Axexe, um rito de passagem. **Revista do Museu**\n**de Arqueologia e Etnologia**, n. 5, 1995 (adaptado).\nO ritual brasileiro apresentado no texto representa, para\nseus adeptos, a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O ritual brasileiro apresentado no texto representa, para",
+      "alternatives": {
+        "A": "manutenção de uma memória coletiva.",
+        "B": "contestação de uma identidade étnica.",
+        "C": "imolação de uma divindade africana.",
+        "D": "legitimação de uma prática pagã.",
+        "E": "promissão de uma revolta social."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q57",
+      "number": 57,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q57",
+          "blocks": [
+            {
+              "id": "text_q57_1",
+              "type": "paragraph",
+              "content": "Espaços públicos não são produtos dados e acabados,\numa instituição que, uma vez estabelecida, traria a paz da\nconsensualidade e a perfeita igualdade. São os lugares em\nque os problemas aparecem e se transformam em debates,\nem diálogo e em possibilidade de ajuste e compromissos.\nPor isso, não anulam os conflitos, ao contrário, são canais\nde comunicação e de visibilidade de oposições.\nGOMES, P. C. C. Espaço público, espaços públicos.\n**Geographia**, n. 44, set.-dez. 2018 (adaptado).\nAs características descritas no texto exibem a importância\ndos espaços públicos para a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "dos espaços públicos para a",
+      "alternatives": {
+        "A": "prática do lazer.",
+        "B": "vigilância da sociedade.",
+        "C": "erradicação da violência.",
+        "D": "construção da democracia.",
+        "E": "diversificação do trabalho."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q58",
+      "number": 58,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q58",
+          "blocks": [
+            {
+              "id": "text_q58_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\nAristóteles entendia que a felicidade era diretamente\nligada ao respeito pela própria natureza e, de certa maneira,\na uma vida que tivesse na natureza de si mesma uma\nreferência inabalável. Isso lhe permitiu formular o conceito\nde excelência. O que seria excelência? Seria, justamente,\nao longo da vida, tirar de si mesmo, em forma de performance,\nde conduta, de comportamento, de disposição, o que a natureza\npermitiria de melhor.\nCOEN, M.; BARROS FILHO, C. **A monja e o professor** : reflexões\nsobre ética, preceitos e valores. Rio de Janeiro: Best Seller, 2018.\n**TEXTO II**"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "sobre ética, preceitos e valores. Rio de Janeiro: Best Seller, 2018.",
+      "alternatives": {
+        "A": "teoria das formas essenciais.",
+        "B": "identificação dos princípios racionais.",
+        "C": "desenvolvimento das técnicas retóricas.",
+        "D": "aperfeiçoamento das condutas humanas.",
+        "E": "conhecimento das epistemes verdadeiras."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q59",
+      "number": 59,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q59",
+          "blocks": [
+            {
+              "id": "text_q59_1",
+              "type": "paragraph",
+              "content": "As instituições que a Idade Média nos legou são de\num valor maior e mais imperecível do que suas catedrais."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "um valor maior e mais imperecível do que suas catedrais.",
+      "alternatives": {
+        "A": "adotar currículo e método padronizado.",
+        "B": "rejeitar ideologias e costumes orientais.",
+        "C": "possuir organização e função mercantil.",
+        "D": "transmitir técnicas e valores ecumênicos.",
+        "E": "agregar tradição e conhecimento científico."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q60",
+      "number": 60,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q60",
+          "blocks": [
+            {
+              "id": "text_q60_1",
+              "type": "paragraph",
+              "content": "Há experiências de lutas sociais de reapropriação\ncultural da natureza que são movimentos emblemáticos,\ncomo a dos seringueiros no Brasil, que da luta sindical\npara a comercialização da borracha chegaram a inventar\n- conceito de reserva extrativista e estão avançando para\num novo modo de produção, uma nova racionalidade\nprodutiva, mostrando que é possível viver bem, e não apenas\nsobreviver, em harmonia com a natureza que habitam.\nO novo planeta que podemos imaginar é feito desses\nterritórios produtivos que não são apenas economias de\nautossubsistência mas economias que potencializam\na produtividade ecológica de seus territórios.\nLEFF, E. **Discursos sustentáveis** . São Paulo: Cortez, 2010 (adaptado).\nO texto expõe a possibilidade de uma nova racionalidade\nprodutiva por meio de uma gestão territorial que se baseia na"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "produtiva por meio de uma gestão territorial que se baseia na",
+      "alternatives": {
+        "A": "integração de mercados regidos por pressões regionais.",
+        "B": "conexão de valores fundamentados por decisões locais.",
+        "C": "unificação de preços delimitados por demandas nacionais.",
+        "D": "normatização de regras construídas por instituições",
+        "E": "valorização de tradições orientadas por determinações"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q61",
+      "number": 61,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q61",
+          "blocks": [
+            {
+              "id": "text_q61_1",
+              "type": "paragraph",
+              "content": "Eu sentia falta do futuro. É claro que eu sabia,\nmuito mesmo antes da recorrência dele, que nunca\nenvelheceria. Era muito provável que eu nunca mais\nfosse ver o oceano de uma altura de trinta mil pés de\nnovo, uma distância tão grande que não dá nem para\ndistinguir as ondas, nem nenhum barco, de um jeito que\nfaz o oceano parecer um enorme e infinito monólito.\nEu poderia imaginá-lo. Eu poderia me lembrar dele.\nMas não poderia vê-lo de novo, e me ocorreu que a ambição\nvoraz dos seres humanos nunca é saciada quando os sonhos\nsão realizados, porque há sempre a sensação de que tudo\npoderia ter sido feito melhor e ser feito outra vez.\nGREEN, J. **A culpa é das estrelas** . Rio de Janeiro: Intrínseca, 2012.\nO texto apresenta uma reflexão da personagem acerca de\num problema característico da filosofia contemporânea,\nque trata da(s)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "um problema característico da filosofia contemporânea,",
+      "alternatives": {
+        "A": "implicações éticas.",
+        "B": "finitude humana.",
+        "C": "limitações da linguagem.",
+        "D": "pressuposição existencial.",
+        "E": "objetividade do conhecimento."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q62",
+      "number": 62,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q62",
+          "blocks": [
+            {
+              "id": "text_q62_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\nO empirismo moderno foi, em grande parte,\ncondicionado por dois dogmas. Um deles é a crença em\ncerta divisão fundamental entre verdades analíticas, ou\nfundadas em significados independentemente de questões\nde fato, e verdades sintéticas, ou fundadas em fatos. O outro\ndogma é o reducionismo: a crença de que todo enunciado\nsignificativo é equivalente a algum construto lógico sobre\ntermos que se referem à experiência imediata.\nQUINE, W. V. O. Dois dogmas do empirismo. In: RYLE, G. et al.\n**Ensaios** . São Paulo: Abril Cultural, 1975.\n**TEXTO II**\nTeses: 1. Somente os enunciados que possuem conteúdo\nfactual são teoricamente significativos; enunciados que não\npodem, em princípio, estar fundamentados pela experiência\nsão carentes de significado. 2. As ciências empíricas usam\nsomente o conteúdo empírico da realidade. 3. A filosofia usa\num conceito não empírico da realidade.\nCARNAP, R. Pseudoproblemas na filosofia. In: SCHLICK, M.;\nCARNAP, R.; POPPER, K. **Coletânea de textos** .\nSão Paulo: Abril Cultural, 1975.\nAo comparar os textos, conclui-se que eles apresentam\nposicionamentos filosóficos divergentes com relação ao"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "posicionamentos filosóficos divergentes com relação ao",
+      "alternatives": {
+        "A": "estatuto epistemológico da linguagem.",
+        "B": "alicerce estruturante da moralidade.",
+        "C": "conteúdo essencial da metafísica.",
+        "D": "princípio constitutivo da ontologia.",
+        "E": "domínio reflexivo da estética."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q63",
+      "number": 63,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q63",
+          "blocks": [
+            {
+              "id": "text_q63_1",
+              "type": "paragraph",
+              "content": "Uma das principais atividades provocadas pela arte,\na reflexão, é abandonada pela indústria cultural. A indústria\ncultural seria como uma isca que ilude os indivíduos,\ncom o sonho de que eles são livres, originais, únicos e\nespeciais quando, na verdade, os trata como servos\ne partes de uma massa homogênea.\nFONTES, B.; MAGALHÃES, R. O que é indústria cultural? In:\nBODART, C. N. (Org.). **Conceitos e categorias do ensino de**\n**sociologia** . Maceió: Café com Sociologia, 2021 (adaptado).\nAo analisar as consequências da dinâmica apresentada no\ntexto, as autoras destacam a importância do conceito como:"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "texto, as autoras destacam a importância do conceito como:",
+      "alternatives": {
+        "A": "Ferramenta de luta coletiva.",
+        "B": "Mecanismo de controle social.",
+        "C": "Instituição de interesse público.",
+        "D": "Organização da iniciativa privada.",
+        "E": "Instrumento de manipulação estatal."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q64",
+      "number": 64,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q64",
+          "blocks": [
+            {
+              "id": "text_q64_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\nNeta de Tomásia, uma escravizada alforriada, Chiquinha\nGonzaga foi uma das primeiras mulheres a se destacar na\nmúsica popular brasileira. Entre suas obras mais famosas\nestão a marcha _Ó abre alas_, sucesso nos blocos de Carnaval\naté hoje, e o tango _Gaúcho_, além de inúmeras peças musicais\npara teatro e óperas. Chiquinha também teve uma atuação em\ndefesa dos direitos das mulheres e pelo fim da escravatura.\n 2023 (adaptado).\n**TEXTO II**\nDepois da estreia de sua peça _Gonzaga_, em 1867,\nque tem como um de seus núcleos dramáticos dois\nescravizados, pai e filha, separados há muitos anos,\nCastro Alves escreve talvez o maior conjunto de poemas\nantiescravistas do Romantismo brasileiro, publicados em\n1883 no livro _Os escravos_, doze anos após a sua morte.\nOs textos _Vozes d’África_ e _Navio negreiro_, por exemplo,\npublicados em folhetos, já em 1878, tiveram enorme\nrepercussão desde a sua circulação, a ponto de Afrânio\nCoutinho (um importante crítico brasileiro) afirmar ter sido\nCastro Alves, no que diz respeito à poesia antiescravista,\num dos primeiros que o Brasil ouviu.\n 2023 (adaptado).\nOs textos indicam a participação de artistas e intelectuais\nbrasileiros em defesa do(a)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "brasileiros em defesa do(a)",
+      "alternatives": {
+        "A": "ação integralista.",
+        "B": "literatura realista.",
+        "C": "movimento abolicionista.",
+        "D": "política indigenista.",
+        "E": "nacionalismo desenvolvimentista."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q65",
+      "number": 65,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q65",
+          "blocks": [
+            {
+              "id": "text_q65_1",
+              "type": "paragraph",
+              "content": "Como conclusão provisória, parece então que a\nglobalização tem, sim, o efeito de contestar e deslocar\nas identidades centradas e “fechadas” de uma cultura\nnacional. Ela tem um efeito pluralizante sobre as identidades,\nproduzindo uma variedade de possibilidades e novas posições\nde identificação, e tornando as identidades mais posicionais,\nmais políticas, mais plurais e diversas; menos fixas, unificadas\nou trans-históricas.\nHALL, S. **A identidade cultural na pós-modernidade** .\nRio de Janeiro: DP&A, 2011.\nDe acordo com o texto, o processo apresentado contribuiu\npara"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "De acordo com o texto, o processo apresentado contribuiu",
+      "alternatives": {
+        "A": "elevar a renda da população.",
+        "B": "abandonar os valores morais.",
+        "C": "estabelecer a igualdade racial.",
+        "D": "fortalecer as pautas das minorias.",
+        "E": "inverter os fluxos das migrações."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q66",
+      "number": 66,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q66",
+          "blocks": [
+            {
+              "id": "text_q66_1",
+              "type": "paragraph",
+              "content": "Em 1960, a primeira pílula anticoncepcional foi\ncomercializada nos EUA, e, em poucos anos, o método\ncontraceptivo se difundiu pelo mundo, inclusive no Brasil.\nEm nosso país, a chegada das pílulas anticoncepcionais foi\nsimultânea às discussões neomalthusianas sobre a crise\ndemográfica, à aceleração dos processos de modernização\ne ao boom da indústria farmacêutica multinacional.\nDIAS, T. M. et al. A pílula da oportunidade: discursos sobre as pílulas\nanticoncepcionais em _A Gazeta da Farmácia_, 1960-1981. **História,**\n**Ciências, Saúde — Manguinhos**, n. 3, jul.-set. 2018 (adaptado).\nQual foi o efeito social resultante do avanço tecnológico\nmencionado no texto?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "mencionado no texto?",
+      "alternatives": {
+        "A": "O afastamento da autoridade médica na regulação da",
+        "B": "A superação do discurso da moralidade pela ação da",
+        "C": "A ampliação do debate público sobre o planejamento",
+        "D": "A centralização da pesquisa científica pelo sistema",
+        "E": "O enrijecimento das doutrinas religiosas sobre a"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q67",
+      "number": 67,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "Valorização da economia local.",
+        "B": "Elaboração de projetos culturais.",
+        "C": "Estabelecimento de regras comerciais.",
+        "D": "Incremento da infraestrutura educacional.",
+        "E": "Homogeneização da qualificação profissional."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q68",
+      "number": 68,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q68",
+          "blocks": [
+            {
+              "id": "text_q68_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\nUma única árvore joga entre 300 e 1 000 litros de água\npor dia para a atmosfera. Considerando a demanda mínima\nque uma pessoa consome de água, ou seja, 120 litros por\ndia, uma única árvore pode ser capaz de produzir água\npara até oito pessoas.\nMAGNO, C. **Estudiosos explicam o motivo de chover tanto**\n**em Belém** .  2021.\n**TEXTO II**"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "MAGNO, C. **Estudiosos explicam o motivo de chover tanto**",
+      "alternatives": {
+        "A": "circulação de ventos alísios.",
+        "B": "aquecimento dos solos locais.",
+        "C": "média de temperatura oceânica.",
+        "D": "índice de refletividade superficial.",
+        "E": "intensidade de chuvas convectivas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q69",
+      "number": 69,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q69",
+          "blocks": [
+            {
+              "id": "text_q69_1",
+              "type": "paragraph",
+              "content": "Atribuo a causa desse florescimento estéril a um\nsistema de educação falso, extraído de livros sobre o\nassunto escrito por homens que, ao considerar as mulheres\nmais como fêmeas do que como criaturas humanas, estão\nmais ansiosos em torná-las damas sedutoras do que\nesposas afetuosas e mães racionais. O entendimento do\nsexo feminino tem sido tão distorcido por essa homenagem\nilusória de que as mulheres civilizadas de nosso século,\ncom raras exceções, anseiam apenas inspirar amor, quando\ndeveriam nutrir uma ambição mais nobre e exigir respeito\npor suas capacidades e virtudes.\nWOLLSTONECRAFT, M. **Reivindicação dos direitos da mulher** .\nSão Paulo: Boitempo, 2016.\nNesse texto, escrito no século XVIII, a autora reivindica\npara as mulheres a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "para as mulheres a",
+      "alternatives": {
+        "A": "recuperação de sua participação política.",
+        "B": "equiparação de ganhos salariais.",
+        "C": "valorização de seu papel social.",
+        "D": "distinção de padrões biológicos.",
+        "E": "ocupação de cargos públicos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q70",
+      "number": 70,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q70",
+          "blocks": [
+            {
+              "id": "text_q70_1",
+              "type": "paragraph",
+              "content": "Cada objeto é, em si mesmo, um sistema funcionando\nsistemicamente. Um grande supermercado ou shopping\ncenter seria incapaz de existir se não fossem servidos por\nvias rápidas, estacionamentos adequados e acessíveis,\nsistemas de transportes públicos com horários regulares\ne conhecidos e se, no seu próprio interior, as atividades\nnão estivessem subordinadas a uma coordenação. Esse é\n- caso dos armazéns, dos silos etc. Os portos, a rede\nrodoviária de um país e, sobretudo, a rede ferroviária são\nexemplos de objetos complexos e sistêmicos.\nSANTOS, M. **A natureza do espaço** : técnica, tempo, razão e emoção.\nSão Paulo: Hucitec, 1996 (adaptado).\nDe acordo com o texto, o território torna-se cada vez mais\ndotado de objetos com a finalidade de intensificar a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "dotado de objetos com a finalidade de intensificar a",
+      "alternatives": {
+        "A": "desindustrialização da economia.",
+        "B": "desregulamentação do mercado.",
+        "C": "concentração da produção.",
+        "D": "distribuição de renda.",
+        "E": "dinamização dos fluxos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q71",
+      "number": 71,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "povos ribeirinhos e segmentos culturais.",
+        "B": "blocos econômicos e instituições militares.",
+        "C": "grupos científicos e universidades públicas.",
+        "D": "organismos supranacionais e sociedade civil.",
+        "E": "agentes governamentais e demanda turística."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q72",
+      "number": 72,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "cuidado, proteção e valorização dos indivíduos.",
+        "B": "entendimento, perdão e tolerância dos responsáveis.",
+        "C": "cerceamento, arregimentação e controle de entidades.",
+        "D": "regramento, legislação e responsabilização de culpados.",
+        "E": "ensimesmamento, interiorização e indulgência dos agentes."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q73",
+      "number": 73,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q73",
+          "blocks": [
+            {
+              "id": "text_q73_1",
+              "type": "paragraph",
+              "content": "As capas dos folhetos de cordel, já então ilustradas\npor postais fotográficos, desenhos ou fotogramas de\nfilmes, demoravam mais de uma semana para serem\ntransformadas em clichês em Recife ou Fortaleza, o que\nlevou a que santeiros e artesãos locais fossem requisitados\npara cortar na umburana — madeira preferida para\n- taco xilográfico pela facilidade do talhe e abundância —\nprincesas, dragões, cangaceiros.\nCARVALHO, G. Xilogravura: os percursos da criação popular.\n**Revista do Instituto de Estudos Brasileiros**,\nn. 39, 1986 (adaptado).\nNo início do século XX, a incorporação da técnica de\nprodução descrita no texto promoveu uma renovação da"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "produção descrita no texto promoveu uma renovação da",
+      "alternatives": {
+        "A": "manifestação jornalística.",
+        "B": "narrativa literária.",
+        "C": "indústria regional.",
+        "D": "estética editorial.",
+        "E": "cultura erudita."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q74",
+      "number": 74,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q74",
+          "blocks": [
+            {
+              "id": "text_q74_1",
+              "type": "paragraph",
+              "content": "O Círio de Nazaré é uma festa que ocorre, anualmente,\nna cidade de Belém do Pará, no segundo domingo do mês de\noutubro. Sua estrutura ritualística tem origem no catolicismo\ndevocional que surge em Portugal por volta do século XV.\nAté 1789, a festa em louvor a Nossa Senhora de Nazaré,\nem Belém, era marcada pelas ladainhas e novenas.\nEm 1790, a Igreja Católica autorizou a realização de festa em\nhomenagem à Virgem. A primeira procissão ocorreu em 1793.\nExistindo há mais de duzentos anos, a Festa congrega um\nextenso mosaico de elementos integrados em diferentes\nplanos e graus de intensidade.\nALMEIDA, I. M. A. Revisitando o Círio de Nazaré a partir da lente\nsociológica de Eidorfe Moreira. **Boletim do Museu Paraense**\n**Emílio Goeldi**, n. 3, set.-dez. 2015 (adaptado).\nO reconhecimento da festa descrita no texto, como\npatrimônio histórico, encontra sustentação no(a)"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "patrimônio histórico, encontra sustentação no(a)",
+      "alternatives": {
+        "A": "instituição de políticas públicas de âmbito local.",
+        "B": "registro de bens culturais de natureza imaterial.",
+        "C": "tombamento de sítios arqueológicos de propriedade privada.",
+        "D": "salvaguarda de elementos sacros de expressão regional.",
+        "E": "categorização de manifestações cristãs de caráter oficial."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q75",
+      "number": 75,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q75",
+          "blocks": [
+            {
+              "id": "text_q75_1",
+              "type": "paragraph",
+              "content": "Os salões permitiam aos escritores da época do\nIluminismo adentrar no universo dos poderosos. Figuras\ncomo as de Voltaire e Duclos exortavam seus “irmãos”\na aproveitarem da mobilidade que era oferecida pela\nordem social do Antigo Regime, juntando-se à elite.\nNos últimos decênios do Ancien Régime, ele foi se tornando\ncada vez mais o reduto dos filósofos do Alto Iluminismo,\nque deixavam os cafés para os tipos inferiores de literário.\nCom efeito, os cafés se constituíram na antítese lógica\ndos salões. Eles eram abertos a todos, a um passo da rua.\nComo é possível constatar, salões e cafés constituem\ninteressantes instituições do espaço público literário através\ndas quais é possível vislumbrar as bases sociais nas quais\nse assentavam o Alto e o Baixo Iluminismo.\nHABERMAS, J. **Mudança estrutural da esfera pública** :\ninvestigações quanto a uma categoria da sociedade burguesa.\nRio de Janeiro: Tempo Brasileiro, 1984 (adaptado).\nNo período iluminista, os espaços sociais mencionados\ncontribuíram para"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "contribuíram para",
+      "alternatives": {
+        "A": "segregar pensadores e aumentar a circulação de ideias.",
+        "B": "apoiar revolucionários e perseguir a nobreza local.",
+        "C": "rejeitar poetisas e proibir a entrada de mulheres.",
+        "D": "censurar cronistas e coibir o patrocínio editorial.",
+        "E": "integrar artistas e ampliar o comércio urbano."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q76",
+      "number": 76,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q76",
+          "blocks": [
+            {
+              "id": "text_q76_1",
+              "type": "paragraph",
+              "content": "Resumamos os principais caracteres de um rizoma:\ndiferentemente das árvores ou de suas raízes, o rizoma\nconecta um ponto qualquer com outro ponto qualquer e cada\num de seus traços não remete necessariamente a traços de\nmesma natureza. Contra os sistemas centrados (e mesmo\npolicentrados), de comunicação hierárquica e ligações\npreestabelecidas, o rizoma é um sistema a-centrado não\nhierárquico e não significante, sem general, sem memória\norganizadora ou autômato central, unicamente definido por\numa circulação de estados.\nDELEUZE, G.; GUATTARI, F. **Mil platôs** .\nSão Paulo: Editora 34, 1995 (adaptado).\nQual elemento da cultura contemporânea se relaciona às\ncaracterísticas do conceito de rizoma, conforme descrito\nno texto?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "características do conceito de rizoma, conforme descrito",
+      "alternatives": {
+        "A": "Estrutura fixa.",
+        "B": "Lógica binária.",
+        "C": "Controle homogêneo.",
+        "D": "Uniformidade de opiniões.",
+        "E": "Pluralidade de interações."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q77",
+      "number": 77,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q77",
+          "blocks": [
+            {
+              "id": "text_q77_1",
+              "type": "paragraph",
+              "content": "VIEIRA, A. P. L. **O Departamento de Imprensa e Propaganda e a política editorial do Estado Novo (1937-1945)** .\nRio de Janeiro: Unirio, 2019.\nO que as capas da revista _Travel in Brazil_, publicadas entre 1941 e 1944 pelo Departamento de Imprensa e Propaganda (DIP),\nevidenciam?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O que as capas da revista _Travel in Brazil_, publicadas entre 1941 e 1944 pelo Departamento de Imprensa e Propaganda (DIP),",
+      "alternatives": {
+        "A": "Estereótipos da cultura nacional.",
+        "B": "Exploração da população pobre.",
+        "C": "Preconceitos de ordem racial.",
+        "D": "Política de censura midiática.",
+        "E": "Projeto de país industrial."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q78",
+      "number": 78,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "Doutrina teleológica.",
+        "B": "Imperativo categórico.",
+        "C": "Pensamento utilitarista.",
+        "D": "Secularização inautêntica.",
+        "E": "Raciocínio consequencialista."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q79",
+      "number": 79,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q79",
+          "blocks": [
+            {
+              "id": "text_q79_1",
+              "type": "paragraph",
+              "content": "O que alicerça, portanto, o acolhimento de refugiados pelos Estados gira em torno da fronteira erguida entre inclusão\ne exclusão, admissão e rejeição, desejáveis e indesejáveis; ao mesmo tempo, enseja vulnerabilidade, indefinição e\nincerteza a esses migrantes internacionais forçados.\nMOREIRA, J. B. Refugiados no Brasil. **REMHU**, n. 43, jul.-dez. 2014."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q79_1",
+          "blocks": [
+            {
+              "id": "img_q79_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 79",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-27-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "MOREIRA, J. B. Refugiados no Brasil. **REMHU**, n. 43, jul.-dez. 2014.",
+      "alternatives": {
+        "A": "planejamento familiar.",
+        "B": "segregação territorial.",
+        "C": "homogeneização cultural.",
+        "D": "diferenciação étnico-racial.",
+        "E": "integração socioeconômica."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q80",
+      "number": 80,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q80",
+          "blocks": [
+            {
+              "id": "text_q80_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\n“As novelas brasileiras foram as primeiras a aparecer na\nTV russa ainda na época de Gorbachov, nos anos 1980. Elas\ncausaram sensação. Houve casos anedóticos, como quando\n- Parlamento da Federação Russa terminou a sessão mais\ncedo para ver o último capítulo de _Escrava Isaura_ ”, conta o\nrusso Anatoli Sostanov, consultor na área de TV internacional\ne ex-diretor da emissora estatal russa Canal.\n 2021.\n**TEXTO II**\nAs novelas de maior impacto em Angola foram as produções\nbrasileiras. Fizeram tanto sucesso que um mercado popular,\nna época era o maior a céu aberto na África, chegou a receber\n- nome de _Roque Santeiro_, novela brasileira exibida naquele\npaís na década de 1980. A influência das produções brasileiras\nfez com que os angolanos conhecessem o Brasil por meio das\nnovelas. Além de entreter, os folhetins brasileiros até hoje ditam\na moda em Angola. Figurinos e acessórios de personagens\nse transformam em uma verdadeira febre e influenciam\n- comportamento.\n 2021 (adaptado).\nEmbora situados em continentes diferentes com práticas\nsociais distintas, Rússia e Angola se aproximam, conforme\nos textos I e II, no aspecto"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "os textos I e II, no aspecto",
+      "alternatives": {
+        "A": "cultural, ao subjetivarem costumes da teledramaturgia",
+        "B": "econômico, ao importarem confecções de estilistas famosos.",
+        "C": "geográfico, ao encurtarem distâncias de caráter ideológico.",
+        "D": "antropológico, ao adaptarem valores de povos tradicionais.",
+        "E": "político, ao adotarem sistemas de governos democráticos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q81",
+      "number": 81,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q81",
+          "blocks": [
+            {
+              "id": "text_q81_1",
+              "type": "paragraph",
+              "content": "No Brasil, os remanescentes de antigos quilombos,\n“mocambos”, “comunidades negras rurais”, “quilombos\ncontemporâneos”, “comunidades quilombolas” ou “terras\nde preto” referem-se a um mesmo patrimônio territorial\ne cultural inestimável, que só recentemente passaram\na ter atenção do Estado e ser do interesse de algumas\nautoridades e organismos oficiais.\nANJOS, R. S. A. Cartografia e quilombos: territórios étnicos\nafricanos no Brasil. **Africana Studia**, n. 9, 2007.\nNa esfera de ação do Estado, com a Constituição de 1988,\nos espaços mencionados tornaram-se objeto de"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "os espaços mencionados tornaram-se objeto de",
+      "alternatives": {
+        "A": "iniciativas de planejamento familiar.",
+        "B": "projetos de reorientação religiosa.",
+        "C": "programas de moradias sustentáveis.",
+        "D": "políticas de inserção social.",
+        "E": "medidas de homogeneização educacional."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q82",
+      "number": 82,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q82",
+          "blocks": [
+            {
+              "id": "text_q82_1",
+              "type": "paragraph",
+              "content": "Bertrand Russell conta a história de um peru que\ndescobrira, em sua primeira manhã na fazenda de perus,\nque fora alimentado às 9 da manhã. Contudo, ele não tirou\nconclusões apressadas. Esperou até recolher um grande\nnúmero de observações do fato de que era alimentado\nàs 9 da manhã e fez essas observações sob uma ampla\nvariedade de circunstâncias, às quartas e quintas-feiras,\nem dias quentes e dias frios, em dias chuvosos e dias\nsecos. A cada dia acrescentava uma outra proposição\nde observação à sua lista. Finalmente, sua consciência\nficou satisfeita e ele concluiu. “Eu sou alimentado sempre\nàs 9 da manhã”.\nCHALMERS, A. **O que é ciência, afinal?**\nSão Paulo: Brasiliense, 1993 (adaptado).\nQual tipo de raciocínio corresponde ao padrão de pensamento\nexibido pelo personagem do texto?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "exibido pelo personagem do texto?",
+      "alternatives": {
+        "A": "Prático, porque recolhe evidências e recomenda ações.",
+        "B": "Absoluto, porque busca confirmações e bloqueia refutações.",
+        "C": "Indutivo, porque observa eventos particulares e infere",
+        "D": "Demonstrativo, porque encadeia premissas e extrai",
+        "E": "Analógico, porque compara diferentes situações e detecta"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q83",
+      "number": 83,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "preservação de espaços naturais.",
+        "B": "emancipação de sujeitos marginais.",
+        "C": "revalorização de culturas reprimidas.",
+        "D": "inversão de hierarquias estabelecidas.",
+        "E": "sustentação de hegemonias territoriais."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q84",
+      "number": 84,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q84",
+          "blocks": [
+            {
+              "id": "text_q84_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\nO bufarinheiro, conhecido nas cidades por teque-teque,\nchama-se, nos recônditos da Amazônia, “regatão”. Em lugar de\ntransportar nas costas o mundo de miudezas, transporta-o no\nbojo de uma gaiola que desloca duas, três, quatro toneladas,\ndivididas em seções de secos e molhados e é movido por remo\nde faia. Cortando comunidades e matas da Amazônia por rios,\ndentro dessas gaiolas, riscadas de prateleiras, encontram-se\nos artigos mais díspares, que vão da agulha à espingarda,\ndo lenço ao cobertor, da chita à escova de dentes.\nMORAES, R. **Na Planície Amazônica** . São Paulo:\nEditora Nacional, 1936 (adaptado).\n**TEXTO II**\nNo século XIX, o comércio dos regatões era feito, então,\ncom base em relações tecidas com quilombolas, pequenos\nprodutores, comerciantes locais e indígenas, constituindo\nrelação comercial alternativa ao abastecimento da população.\nHENRIQUE, M. C.; MORAIS, L. T. Estradas líquidas, comércio sólido:\níndios e regatões na Amazônia (século XIX). **Rev. Hist.**,\nn. 171, jul.-dez. 2014 (adaptado).\nComo parte do patrimônio cultural da Amazônia, o regatão\nfoi fundamental, no século XIX, para a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "foi fundamental, no século XIX, para a",
+      "alternatives": {
+        "A": "organização de rotas de fuga na floresta tropical.",
+        "B": "criação de postos de trabalho nos seringais nortistas.",
+        "C": "divulgação de receitas de fármacos nas zonas ribeirinhas.",
+        "D": "construção de redes de sociabilidade no interior brasileiro.",
+        "E": "ampliação de ambientes de lazer nos territórios autóctones."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q85",
+      "number": 85,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q85",
+          "blocks": [
+            {
+              "id": "text_q85_1",
+              "type": "paragraph",
+              "content": "Era uma vez um país, uma cidade, uma praça, algumas\nmães... Las Madres de Plaza de Mayo! Silenciosas, com\nlenços brancos na cabeça, rondavam a Praça de Maio.\nIncansáveis, caminharam por dias, meses, anos. Foram\nchamadas de loucas. Em silêncio, criaram um fato político,\nescancararam as entranhas da repressão, desafiaram o\naparato militar e suas dores ecoaram pelo mundo. Como\nobservou Oliveira, “à luz do dia, sob as janelas do ditador, sob\nchuva, sob sol, no silêncio entrecortado de gritos, faziam ouvir\ncomo que a alucinação de uma litania, que ecoou no país,\nna América Latina e além-mar”. Era impossível ignorá-las,\nestavam lá, sempre em silêncio, mas estavam lá.\nGONÇALVES, R. De antigas e novas loucas: Madres e Mães de Maio\ncontra a violência de Estado. **Lutas Sociais**, n. 29, jul.-dez. 2012.\nQual problema de âmbito nacional argentino o movimento\nsocial mencionado expôs ao mundo?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "social mencionado expôs ao mundo?",
+      "alternatives": {
+        "A": "Violação dos direitos humanos.",
+        "B": "Insegurança da juventude periférica.",
+        "C": "Naturalização da violência doméstica.",
+        "D": "Ampliação das desigualdades sociais.",
+        "E": "Relativização dos princípios democráticos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q86",
+      "number": 86,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q86",
+          "blocks": [
+            {
+              "id": "text_q86_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\n 2023.\n**TEXTO II**\n 2023."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q86_1",
+          "blocks": [
+            {
+              "id": "img_q86_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 86",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-29-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q86_2",
+          "blocks": [
+            {
+              "id": "img_q86_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 86",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-29-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "conservação de lugares afetivos.",
+        "B": "aumento de áreas desertificadas.",
+        "C": "redefinição de fronteiras nacionais.",
+        "D": "artificialização do espaço geográfico.",
+        "E": "mudança da dinâmica macroclimática."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q87",
+      "number": 87,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "Soberania popular.",
+        "B": "Divisão de classes.",
+        "C": "Acúmulo de capital.",
+        "D": "Defesa da propriedade.",
+        "E": "Centralização administrativa."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q88",
+      "number": 88,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "Criação de faixas sinalizadoras.",
+        "B": "Incineração de resíduos sólidos.",
+        "C": "Implantação de parques públicos.",
+        "D": "Verticalização de espaços centrais.",
+        "E": "Construção de estacionamentos privados."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q89",
+      "number": 89,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q89",
+          "blocks": [
+            {
+              "id": "text_q89_1",
+              "type": "paragraph",
+              "content": "O Conselho de Segurança da Organização das\nNações Unidas (ONU) é, junto com a Assembleia-Geral,\num dos principais órgãos de tomada de decisão dentro da\nentidade. O Conselho lida com questões de segurança e\npaz internacionais, além de recomendar a admissão de\nnovos membros à Assembleia-Geral e aprovar mudanças\nna Carta das Nações Unidas. Cinco dos quinze membros\nsão permanentes e podem vetar resoluções, o que ocorreu\n261 vezes até 2020.\nGOMES, L.; PRETTO, N. **O funcionamento do Conselho de Segurança**\n**das Nações Unidas** .  2021 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "GOMES, L.; PRETTO, N. **O funcionamento do Conselho de Segurança**",
+      "alternatives": {
+        "A": "Igualdade militar.",
+        "B": "Assimetria política.",
+        "C": "Consenso multipolar.",
+        "D": "Equilíbrio estratégico.",
+        "E": "Soberania compartilhada."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2024_D1_LC_Q90",
+      "number": 90,
+      "examYear": 2024,
+      "examDay": 1,
+      "examColor": "AZUL",
+      "area": "LINGUAGENS",
+      "subject": "CIENCIAS_HUMANAS_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q90",
+          "blocks": [
+            {
+              "id": "text_q90_1",
+              "type": "paragraph",
+              "content": "Uma fábrica na qual os operários fossem, efetiva e\nintegralmente, simples peças de máquinas executando\ncegamente as ordens da direção pararia em quinze minutos.\nO capitalismo só pode funcionar com a contribuição constante\nda atividade propriamente humana de seus subjugados que,\nao mesmo tempo, tenta reduzir e desumanizar o mais possível.\nCASTORIADIS, C. **A instituição imaginária da sociedade** .\nRio de Janeiro: Paz e Terra, 1982.\nO texto apresenta uma contradição interna do capitalismo\ncaracterizada pela"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q90_1",
+          "blocks": [
+            {
+              "id": "img_q90_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 90",
+              "url": "/images/enem/2024/2024_PV_impresso_D1_CD1.pdf-31-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "caracterizada pela",
+      "alternatives": {
+        "A": "obsolescência associada ao uso da tecnologia.",
+        "B": "orientação voltada à administração de conflitos.",
+        "C": "alienação decorrente da organização do trabalho.",
+        "D": "isonomia remanescente da geração de riquezas.",
+        "E": "produtividade vinculada ao fortalecimento da autonomia."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    }
+  ]
 }

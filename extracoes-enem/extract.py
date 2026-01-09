@@ -95,17 +95,17 @@ def convert_to_markdown_with_images(pdf_path, output_path):
 # convert_to_markdown_with_images("provas/2025/2025_PV_impresso_D1_CD1.pdf", "prova_enem_2025_D1_CD1.md")
 # convert_to_markdown_with_images("provas/2025/2025_PV_impresso_D2_CD7.pdf", "prova_enem_2025_D2_CD7.md")
 
-# ANO 2024 - JA EXTRAIDO
-# convert_to_markdown_with_images("provas/2024/2024_PV_impresso_D1_CD1.pdf", "prova_enem_2024_D1_CD1.md")
-# convert_to_markdown_with_images("provas/2024/2024_PV_impresso_D2_CD7.pdf", "prova_enem_2024_D2_CD7.md")
+# ANO 2024 - REPROCESSANDO (formato incorreto anterior)
+convert_to_markdown_with_images("provas/2024/2024_PV_impresso_D1_CD1.pdf", "prova_enem_2024.md")
+convert_to_markdown_with_images("provas/2024/2024_PV_impresso_D2_CD7.pdf", "prova_enem_2024_D2_CD7.md")
 
-# ANO 2023 - JA EXTRAIDO (D1 CD1 e D2 CD7)
+# ANO 2023 - COMPLETO (180/185 - PDF D1 incompleto)
+# convert_to_markdown_with_images("provas/2023/2023_PV_impresso_D1_CD1.pdf", "prova_enem_2023.md")
 # convert_to_markdown_with_images("provas/2023/2023_PV_impresso_D2_CD7.pdf", "prova_enem_2023_D2_CD7.md")
-# convert_to_markdown_with_images("provas/2023/2023_PV_impresso_D1_CD1.pdf", "prova_enem_2023_D1_CD1.md")
 
-# ANO 2022 - JA EXTRAIDO (D1 CD1 e D2 CD7)
-# convert_to_markdown_with_images("provas/2022/2022_PV_impresso_D1_CD1.pdf", "prova_enem_2022_D1_CD1.md")
-# convert_to_markdown_with_images("provas/2022/2022_PV_impresso_D2_CD7.pdf", "prova_enem_2022_D2_CD7.md")
+# ANO 2022 - PROCESSANDO AGORA
+convert_to_markdown_with_images("provas/2022/2022_PV_impresso_D1_CD1.pdf", "prova_enem_2022.md")
+convert_to_markdown_with_images("provas/2022/2022_PV_impresso_D2_CD7.pdf", "prova_enem_2022_D2_CD7.md")
 
 # ANO 2021 - JA EXTRAIDO (D1 CD1 e D2 CD7)
 # convert_to_markdown_with_images("provas/2021/2021_PV_impresso_D1_CD1.pdf", "prova_enem_2021_D1_CD1.md")
@@ -195,11 +195,6 @@ def convert_to_markdown_with_images(pdf_path, output_path):
 print("✅ TODAS AS EXTRAÇÕES FORAM CONCLUÍDAS!")
 print("📁 Markdowns: extracoes-enem/extracoes/")
 print("📁 Imagens: extracoes-enem/images/")
-
-# ANO 2024 - DESCOMENTE PARA EXECUTAR
-# convert_to_markdown_with_images("provas/2024/2024_PV_impresso_D1_CD1.pdf", "prova_enem_2024_D1_CD1.md")
-# convert_to_markdown_with_images("provas/2024/2024_PV_impresso_D2_CD1.pdf", "prova_enem_2024_D2_CD1.md")
-
 # ANO 2023 - DESCOMENTE PARA EXECUTAR
 # convert_to_markdown_with_images("provas/2023/2023_PV_impresso_D1_CD1.pdf", "prova_enem_2023_D1_CD1.md")
 # convert_to_markdown_with_images("provas/2023/2023_PV_impresso_D2_CD1.pdf", "prova_enem_2023_D2_CD1.md")

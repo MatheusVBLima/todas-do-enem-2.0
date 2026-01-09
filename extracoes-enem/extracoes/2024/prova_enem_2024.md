@@ -1,46 +1,46 @@
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-2.png)
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-3.png)
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-1.png)
-
-
-
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-6.png)
-
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-10.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-1.png)
 
 
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-6.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-10.png)
 
 
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-5.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-7.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-8.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-5.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-9.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-7.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-11.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-8.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-12.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-9.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-13.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-11.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-14.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-12.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-23.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-13.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-14.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-23.png)
 
 **M2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024E**
 
@@ -48,37 +48,37 @@
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-15.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-15.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-16.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-16.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-17.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-17.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-18.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-18.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-19.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-19.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-20.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-20.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-21.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-21.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-22.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-22.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-24.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-24.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-25.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-25.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-26.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-26.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-27.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-27.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-28.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-28.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-29.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-29.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-30.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-30.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-31.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-0-31.png)
 ##### *010175AZ2*
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
@@ -154,9 +154,9 @@ de novas árvores.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-1-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-1-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-1-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-1-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -264,7 +264,7 @@ dessa cultura.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-2-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-2-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1194,7 +1194,7 @@ resistência para além da dicotomia entre vida e morte.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-9-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-9-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1305,7 +1305,7 @@ modelos de representação da arte realista.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-10-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-10-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1703,7 +1703,7 @@ E aprendizagem da lingua portuguesa pelos indígenas.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-13-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-13-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1755,7 +1755,7 @@ E valorização das relações interpessoais.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-14-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-14-1.png)
 
 Anônimo. **Cabeça de uma figura feminina** .
 _Circa_ 2700-2500 a.C. Escultura em mármore, 8 × 3,2 cm.
@@ -1763,7 +1763,7 @@ Metropolitan Museum of Art, Nova Iorque.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-14-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-14-0.png)
 
 MODIGLIANI, A. **Cabeça de mulher** . _Circa_ 1910-1911.
 Escultura em calcário, 68,3 × 15,9 × 24,1 cm.
@@ -2181,7 +2181,7 @@ E propagação de mensagens com objetivos políticos.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-17-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-17-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2291,9 +2291,9 @@ Disponível em: www.oglobo.com. Acesso em:
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-18-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-18-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-18-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-18-1.png)
 
 **PROPOSTA DE REDAÇÃO**
 A partir da leitura dos textos motivadores e com base nos conhecimentos construídos ao longo de sua
@@ -2558,7 +2558,7 @@ E gradação da turbidez fluvial.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-20-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-20-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -3395,7 +3395,7 @@ E integração socioeconômica.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-27-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-27-0.png)
 ##### *010175AZ29*
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
@@ -3628,9 +3628,9 @@ E mudança da dinâmica macroclimática.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-29-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-29-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-29-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-29-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -3856,4 +3856,4 @@ E produtividade vinculada ao fortalecimento da autonomia.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D1_CD1.pdf-31-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D1_CD1.pdf-31-0.png)

@@ -1,76 +1,76 @@
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-3.png)
-
-
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-6.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-10.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-3.png)
 
 
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-6.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-10.png)
 
 
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-4.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-5.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-7.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-8.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-9.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-11.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-12.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-13.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-14.png)
-
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-23.png)
 
 
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-15.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-5.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-16.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-7.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-17.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-8.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-18.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-9.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-19.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-11.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-20.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-12.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-21.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-13.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-22.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-14.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-24.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-23.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-25.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-26.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-27.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-15.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-28.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-16.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-29.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-17.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-30.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-18.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-31.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-19.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-20.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-21.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-22.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-24.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-25.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-26.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-27.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-28.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-29.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-30.png)
+
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-0-31.png)
 
 **M2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024E**
 
@@ -141,7 +141,7 @@ A figura esquematiza uma CCM e as reações envolvidas.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-1-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-1-0.png)
 
 B CO2 (g) + O2 (g) + H [+] (aq) → H2O (l) + CH3COO [−] (aq)
 
@@ -190,7 +190,7 @@ A CH3COO [−] (aq) + O2 (g) → 2 CO2 (g) + 3 H [+] (aq)
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-1-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-1-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -307,9 +307,9 @@ E 7,0 g
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-2-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-2-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-2-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-2-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -409,9 +409,9 @@ E virtual e 3,8 cm.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-3-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-3-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-3-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-3-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -532,11 +532,11 @@ mosquitos.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-4-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-4-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-4-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-4-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-4-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-4-2.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -795,17 +795,17 @@ E
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-3.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-4.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-5.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-5.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-6.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-6-6.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -853,11 +853,11 @@ E baixa de CO2 e alta de HC.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-7-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-7-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-7-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-7-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-7-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-7-2.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1003,7 +1003,7 @@ E V
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-8-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-8-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1047,7 +1047,7 @@ durante todo o circuito.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-0.png)
 
 Nessa situação, em quantos minutos o nadador completará
 a prova?
@@ -1117,11 +1117,11 @@ E
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-9-3.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1211,11 +1211,11 @@ E aeróbio estrito, anaeróbio facultativo e anaeróbio estrito.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-10-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-10-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-10-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-10-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-10-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-10-2.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1312,7 +1312,7 @@ C
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-0.png)
 
 D
 
@@ -1321,17 +1321,17 @@ E
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-3.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-4.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-5.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-5.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-6.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-11-6.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1430,9 +1430,9 @@ E VI.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-12-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-12-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-12-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-12-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1536,19 +1536,19 @@ E 720 g.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-3.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-4.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-5.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-5.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-6.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-13-6.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1605,7 +1605,7 @@ E 2,0 × 10 [7] ton
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-14-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-14-0.png)
 #### *020325AZ16*
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
@@ -1706,9 +1706,9 @@ E 390 000.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-15-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-15-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-15-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-15-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1802,9 +1802,9 @@ E 4,0.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-16-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-16-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-16-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-16-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -1932,7 +1932,7 @@ E 1 145
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-17-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-17-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2021,7 +2021,7 @@ C _a_ = 20; _b_ = (, )0 5 ~~10~~
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-18-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-18-0.png)
 
 E _[a ]_ [=][ 20; ] _[b]_ [=][ 40]
 
@@ -2069,7 +2069,7 @@ D _a_ = 20; _b_ =
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-18-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-18-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2197,9 +2197,9 @@ E 0,13525
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-19-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-19-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-19-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-19-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2324,7 +2324,7 @@ E _F_ + _T_ + _D_
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-20-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-20-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2457,7 +2457,7 @@ E 5 280.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-21-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-21-0.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2494,7 +2494,7 @@ C
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-0.png)
 
 D
 
@@ -2503,15 +2503,15 @@ E
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-3.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-4.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-5.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-22-5.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2606,9 +2606,9 @@ E 8 e 9.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-23-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-23-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-23-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-23-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2734,7 +2734,7 @@ E _d Q_ �� - _d R_ ��
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-24-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-24-0.png)
 
 Disponível em: www.tecmundo.com.br.
 Acesso em: 5 nov. 2014 (adaptado).
@@ -2793,15 +2793,15 @@ E
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-1.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-3.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-4.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-25-4.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -2867,7 +2867,7 @@ os estudiosos do assunto, é conhecida uma expressão algébrica relacionando es
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-26-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-26-0.png)
 
 2   
 - _M_ 1 - 3 _log_ ��
@@ -2976,7 +2976,7 @@ O alcance de cada uma das cinco câmeras é:
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-27-4.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-27-4.png)
 
 do percurso;
 
@@ -3099,7 +3099,7 @@ _ABCDEF_ descrita pelo personagem é
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-1.png)
 
 A
 
@@ -3118,17 +3118,17 @@ E
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-2.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-2.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-3.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-3.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-4.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-4.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-5.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-5.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-6.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-28-6.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -3198,9 +3198,9 @@ E 11.
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-29-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-29-0.png)
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-29-1.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-29-1.png)
 
 **ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM20E4ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024ENEM2024**
 
@@ -3471,4 +3471,4 @@ E - -
 
 
 
-![](images/prova-2024/2024_PV_impresso_D2_CD7.pdf-31-0.png)
+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2024/2024_PV_impresso_D2_CD7.pdf-31-0.png)

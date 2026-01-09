@@ -3369,3 +3369,324 @@ _t_ (s)
 
 
 ![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2023/2023_PV_impresso_D2_CD7.pdf-31-0.png)
+**Questão 93**
+
+QUESTÃO 93	
+A utilização de tecnologia nuclear é um tema 
+bastante controverso, por causa do risco de acidentes 
+graves, como aqueles ocorridos em Chernobyl (1986), 
+em Goiânia (1987) e em Fukushima (2011). Apesar de 
+muitas desvantagens, como a geração de resíduos 
+tóxicos, a descontaminação ambiental dispendiosa em 
+caso de acidentes e a utilização em armas nucleares, 
+a geração de energia nuclear apresenta vantagens em 
+comparação a outras fontes de energia.
+A geração dessa energia tem como característica:
+A	
+A	 Formar resíduos facilmente recicláveis.
+B	
+B	 Promover o aumento do desmatamento.
+C	
+C	 Contribuir para a produção de chuva ácida.
+D	
+D	 Emitir gases tóxicos que são lançados no ambiente.
+E	
+E	 Produzir calor sem o consumo de combustíveis fósseis.
+
+**Questão 99**
+
+QUESTÃO 99	
+A leishmaniose visceral é uma zoonose causada por 
+um protozoário do gênero Leishmania que é encontrado em 
+diversos tecidos. Ela é transmitida ao homem de forma 
+indireta, por vetores do ambiente doméstico. O cão é 
+considerado um importante hospedeiro desse protozoário, 
+podendo ou não apresentar os sintomas da doença, como 
+perda de peso, anemia, ferimentos na pele, diarreia, 
+conjuntivite e insuficiência renal. Em uma região que 
+sofre com alta incidência dessa doença, uma campanha 
+do centro de zoonoses buscou verificar a presença desse 
+protozoário nos cães para tentar controlar a doença.
+Em qual material biológico dos cães a presença desse 
+protozoário representa risco de transmissão dessa zoonose?
+A	
+A	 Urina.
+B	
+B	 Saliva.
+C	
+C	 Fezes.
+D	
+D	 Sangue.
+E	
+E	 Secreção ocular.
+
+**Questão 106**
+
+QUESTÃO 106	
+A tecnologia de vacinas de RNA mensageiro (RNAm) 
+é investigada há anos. Avanços científicos em genética 
+molecular permitiram desenvolver uma vacina para 
+controle da pandemia da covid-19 causada pelo vírus de 
+RNA SARS-CoV-2. A vacina de RNAm tem sequências 
+de genes do vírus. Entretanto, por ser muito instável, o 
+RNAm deve ser recoberto por uma capa de lipídios que 
+evita sua degradação e favorece sua ação. Dessa forma, 
+o RNAm desempenhará sua função específica atuando 
+no mesmo compartimento celular de sempre.
+Disponível em: https://sbim.org.br. Acesso em: 29 nov. 2021 (adaptado).
+A imunização produzida por esse tipo de vacina é 
+alcançada por meio da
+A	
+A	 estimulação de leucócitos induzida pela capa lipídica 
+contendo RNAm.
+B	
+B	 atuação do RNAm como sequestrador do vírus para 
+o meio extracelular.
+C	
+C	 tradução do RNAm em proteína viral, desencadeando 
+a resposta antigênica.
+D	
+D	 competição entre o RNAm vacinal e o RNA viral pelos 
+sítios dos ribossomos.
+E	
+E	 incorporação do RNAm viral ao genoma do hospedeiro, 
+gerando novo fenótipo.
+
+**Questão 115**
+
+QUESTÃO 115	
+A biorremediação designa tratamentos que usam 
+organismos para reduzir a quantidade de substâncias 
+tóxicas no ambiente ou degradá-las em substâncias 
+não tóxicas ou de menor toxicidade. Uma planta aquática, 
+o aguapé, tem sido utilizada para a biorremediação de 
+ambientes contaminados por metais tóxicos. Sabe-se 
+que esses poluentes serão captados para dentro do 
+corpo do vegetal.
+Dentro do corpo do vegetal, esses contaminantes serão
+A	
+A	 digeridos por enzimas.
+B	
+B	 acumulados nos tecidos.
+C	
+C	 eliminados pelos estômatos.
+D	
+D	 metabolizados por glândulas.
+E	
+E	 utilizados como fonte energética.
+
+**Questão 118**
+
+QUESTÃO 118	
+A gasolina é uma mistura de hidrocarbonetos de 
+cadeias saturadas contendo de 8 a 12 átomos de carbono. 
+Além disso, a gasolina de alto desempenho deve conter 
+elevados teores de hidrocarbonetos de cadeias ramificadas, 
+de forma a resistir à compressão e entrar em ignição apenas 
+quando a vela aciona uma centelha elétrica no motor. 
+No quadro, estão apresentados compostos que podem 
+ser utilizados como combustíveis.
+Composto
+Nomenclatura
+I
+n-decano
+II
+n-heptano
+III
+2,2,4-trimetilpentano
+IV
+3-etil-4-metilex-1-eno
+V
+3-etil-2-metilpentan-1-ol
+Entre esses compostos, aquele que conferirá maior 
+desempenho como combustível é o
+A	
+A	 I.
+B	
+B	 II.
+C	
+C	 III.
+D	
+D	 IV.
+E	
+E	 V.
+
+**Questão 142**
+
+QUESTÃO 142	
+A água utilizada pelos 75 moradores de um vilarejo provém de um reservatório de formato cilíndrico circular reto 
+cujo raio da base mede 5 metros, sempre abastecido no primeiro dia de cada mês por caminhões-pipa. Cada morador 
+desse vilarejo consome, em média, 200 litros de água por dia.
+No mês de junho de um determinado ano, o vilarejo festejou o dia do seu padroeiro e houve um gasto extra de água 
+nos primeiros 20 dias. Passado esse período, as pessoas verificaram a quantidade de água presente no reservatório 
+e constataram que o nível da coluna de água estava em 1,5 metro. Decidiram, então, fazer um racionamento de água 
+durante os 10 dias seguintes. Considere 3 como aproximação para p.
+Qual é a quantidade mínima de água, em litro, que cada morador, em média, deverá economizar por dia, de modo 
+que o reservatório não fique sem água nos próximos 10 dias?
+A	
+A	 50
+B	
+B	 60
+C	
+C	 80
+D	
+D	 140
+E	
+E	 150
+
+**Questão 144**
+
+QUESTÃO 144	
+A foto mostra a construção de uma cisterna destinada 
+ao armazenamento de água. Uma cisterna como essa, na 
+forma de cilindro circular reto com 3 m² de área da base, 
+foi abastecida por um curso-d’água com vazão constante. 
+O seu proprietário registrou a altura do nível da água no 
+interior da cisterna durante o abastecimento em diferentes 
+momentos de um mesmo dia, conforme o quadro.
+Horário (h)
+Nível da água (m)
+6:00
+0,5
+8:00
+1,1
+12:00
+2,3
+15:00
+3,2
+Disponível em: www.paraibamix.com. Acesso em: 3 dez. 2012.
+Qual foi a vazão, em metro cúbico por hora, do 
+curso-d’água que abasteceu a cisterna?
+A	
+A	 0,3
+B	
+B	 0,5
+C	
+C	 0,9
+D	
+D	 1,8
+E	
+E	 2,7
+
+**Questão 152**
+
+QUESTÃO 152	
+A exposição a alguns níveis sonoros pode causar 
+lesões auditivas. Por isso, em uma indústria, são adotadas 
+medidas preventivas de acordo com a máquina que o 
+funcionário opera e o nível N de intensidade do som, 
+medido em decibel (dB), a que o operário é exposto, 
+sendo N = log10I 10 − log10I 10
+0 , I a intensidade do som e 
+I0 = 10−12 W/m2.
+Disponível em: www.sofisica.com.br. Acesso em: 8 jul. 2015 (adaptado).
+Quando o som é considerado baixo, ou seja, 
+N = 48 dB ou menos, deve ser utilizada a medida 
+preventiva I. No caso de o som ser moderado, quando 
+N está no intervalo (48 dB, 55 dB), deve ser utilizada a 
+medida preventiva II. Quando o som é moderado alto, 
+que equivale a N no intervalo (55 dB, 80 dB), a medida 
+preventiva a ser usada é a III. Se N estiver no intervalo 
+(80 dB, 115 dB), quando o som é considerado alto, deve ser 
+utilizada a medida preventiva IV. E se o som é considerado 
+muito alto, com N maior que 115 dB, deve-se utilizar a 
+medida preventiva V.
+Uma nova máquina, com I = 8 × 10−8 W/m2, foi adquirida 
+e será classificada de acordo com o nível de ruído 
+que produz. 
+Considere 0,3 como aproximação para log102.
+O funcionário que operará a nova máquina deverá adotar 
+a medida preventiva
+A	
+A	 I.
+B	
+B	 II.
+C	
+C	 III.
+D	
+D	 IV.
+E	
+E	 V.
+*020325AZ21*
+
+22
+MT • 2º DIA • CADERNO 7 • AZUL
+QUESTÃO 155	
+Na planta baixa de um clube, a piscina é representada 
+por um quadrado cuja área real mede 400 m². Ao redor 
+dessa piscina, será construída uma calçada, de largura 
+constante igual a 5 m.
+Calçada
+Piscina
+5 m
+5 m
+5 m
+5 m
+Qual é a medida da área, em metro quadrado, ocupada 
+pela calçada?
+A	
+A	 1 000
+B	
+B	 900
+C	
+C	 600
+D	
+D	 500
+E	
+E	 400
+QUESTÃO 156	
+Uma pessoa caminha por 30 minutos e utiliza um 
+aplicativo instalado em seu celular para monitorar a 
+variação da intensidade do sinal de internet recebido 
+pelo aparelho durante o deslocamento. Chegando ao seu 
+destino, o aplicativo forneceu este gráfico:
+Intensidade do sinal de internet
+Tempo (min)
+0
+2
+4
+6
+8
+10 12 14
+16
+18 20
+22 24
+26 28 30
+Por quantos minutos, durante essa caminhada, o celular 
+dessa pessoa ficou sem receber sinal de internet?
+A	
+A	 6
+B	
+B	 8
+C	
+C	 10
+D	
+D	 14
+E	
+E	 24
+
+**Questão 167**
+
+QUESTÃO 167	
+A cada bimestre, a diretora de uma escola compra uma quantidade de folhas de papel ofício proporcional ao número 
+de alunos matriculados. No bimestre passado, ela comprou 6 000 folhas para serem utilizadas pelos 1 200 alunos 
+matriculados. Neste bimestre, alguns alunos cancelaram suas matrículas e a escola tem, agora, 1 150 alunos. 
+A diretora só pode gastar R$ 220,00 nessa compra, e sabe que o fornecedor da escola vende as folhas de papel 
+ofício em embalagens de 100 unidades a R$ 4,00 a embalagem. Assim, será preciso convencer o fornecedor a dar um 
+desconto à escola, de modo que seja possível comprar a quantidade total de papel ofício necessária para o bimestre.
+O desconto necessário no preço final da compra, em porcentagem, pertence ao intervalo
+A	
+A	 (5,0 ; 5,5).
+B	
+B	 (8,0 ; 8,5).
+C	
+C	 (11,5 ; 12,5).
+D	
+D	 (19,5 ; 20,5). 
+E	
+E	 (3,5 ; 4,0).
+*020325AZ26*
+
+27
+MT • 2º DIA • CADERNO 7 • AZUL
+

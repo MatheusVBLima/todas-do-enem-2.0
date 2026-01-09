@@ -2145,7 +2145,7 @@ coesa, argumentos e fatos para a defesa de seu ponto de vista.
 **Questões de 46 a 90**
 
 
-**QUESTÃO 46**\n\n**Fotografia da avó bordada**
+**Fotografia da avó bordada**
 
 SCARELI, G. A máquina de costura e os fios da memória. **Revista Brasileira**
 **de Pesquisa (Auto)Biográfica**, n. 18, maio-ago. 2021.
@@ -3685,3 +3685,563 @@ pelos filósofos gregos da Antiguidade, porque se mostra alinhada à
 
 
 ![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2023/2023_PV_impresso_D1_CD1.pdf-31-0.png)
+**Questão 6**
+
+QUESTÃO 60	
+Negar o pedido por dinheiro indispensável para 
+necessidades pessoais ou comprar bens usando o nome 
+da pessoa sem o consentimento dela. Ameaçar o corte 
+de recursos dependendo de atitudes pessoais, esconder 
+documentos ou trocar senhas do banco sem avisar. 
+Ou, ainda, proibir a pessoa de trabalhar ou destruir seus 
+pertences. As histórias são comuns, mas às vezes não são 
+reconhecidas como abuso. Mas é uma das cinco formas de 
+conduta contra a mulher previstas na Lei Maria da Penha.
+LEWGOY, J. Conduta quase invisível destrói a vida de mulheres. Disponível em: 
+https://valorinveste.globo.com. Acesso em: 23 out. 2021 (adaptado).
+O texto apresenta tipos de conduta sujeitos a punição, 
+conforme previsto na Lei Maria da Penha, porque 
+consistem em formas de
+A	
+A	 ação difamatória.
+B	
+B	 desvio comportamental.
+C	
+C	 expressão preconceituosa.
+D	
+D	 violência patrimonial.
+E	
+E	 desentendimento matrimonial.
+QUESTÃO 61	
+Por trás da “mágica” do Google Assistant de sua 
+capacidade de interpretar 26 idiomas está uma enorme 
+equipe de linguistas distribuídos globalmente, trabalhando 
+como subcontratados, que devem rotular tediosamente os 
+dados de treinamento para que funcione. Eles ganham 
+baixos salários e são rotineiramente forçados a trabalhar 
+horas extras não remuneradas. A inteligência artificial não 
+funciona com um pozinho mágico. Ela funciona por meio 
+de trabalhadores que treinam algoritmos incansavelmente 
+até que eles automatizem seus próprios trabalhos.
+A Inteligência Artificial (IA) da economia freelancer está vindo atrás de você. 
+Disponível em: https://mittechreview.com.br. Acesso em: 6 out. 2021 (adaptado).
+O texto critica a mudança tecnológica em razão da 
+seguinte consequência:
+A	
+A	 Diversificação da função.
+B	
+B	 Mobilidade da população.
+C	
+C	 Autonomia do empregado.
+D	
+D	 Concentração da produção.
+E	
+E	 Invisibilidade do profissional.
+*010175AZ23*
+
+24
+–CH • 1º DIA • CADERNO 1 • AZUL–
+QUESTÃO 62	
+Enormes alto-falantes sul-coreanos instalados na 
+fronteira com o Norte costumavam transmitir desde 
+canções em estilo K-pop (como é chamado o pop 
+sul-coreano) até boletins climáticos e noticiário crítico ao 
+vizinho comunista. O Norte costuma praticar atividade 
+semelhante, transmitindo por seus alto-falantes discursos 
+críticos a Seul e aliados. Durante os anos 1980, o governo 
+sul-coreano construiu um mastro de 97 metros de altura 
+para hastear sua bandeira no povoado de Daesong-dong, 
+na fronteira com o Norte. O Norte respondeu com a 
+construção de um mastro ainda mais alto (160 m) na 
+cidade fronteiriça de Gijung-dong. “Essas demonstrações 
+são uma válvula de escape competitiva e importante entre 
+os dois lados, fora de um possível conflito militar”, diz o 
+analista Ankit Panda.
+TAN, Y. Disputa de mastros e alto-falantes com K-pop: as pequenas picuinhas do conflito 
+entre as Coreias. Disponível em: www.bbc.com. Acesso em: 7 nov. 2021 (adaptado).
+Os atos de competição citados têm suas origens 
+históricas vinculadas a um contexto de
+A	
+A	 domínio cultural-identitário de atores sociais.
+B	
+B	 disputas étnico-raciais de povos tradicionais.
+C	
+C	 divergências político-ideológicas de agentes estatais.
+D	
+D	 imposição econômico-financeira de empresas 
+privadas.
+E	
+E	 protestos ecológico-sustentáveis de entidades 
+ambientais.
+QUESTÃO 63	
+Seda, madeiras aromáticas e têxteis, obras de arte, 
+lã, cristais e muitas, muitas peças de porcelana chegaram 
+ao Brasil ao longo dos séculos XVII e XVIII. A opulência 
+proporcionada pelo ouro fez com que esses itens fossem 
+ainda mais presentes em cidades mineiras como Ouro Preto, 
+Mariana e Sabará. Esses objetos inspiraram a criação das 
+chinesices, termo que designa um tipo de arte que evoca 
+motivos chineses, presentes em várias igrejas barrocas de 
+Minas Gerais. No Brasil, é bem provável que a inspiração 
+para as pinturas nas igrejas barrocas com pássaros, 
+elefantes, tigres, mandarins e pagodes tenha sido tirada de 
+gravuras, tecidos, móveis e, principalmente, das porcelanas 
+chinesas que circulavam livremente em uma sociedade 
+enriquecida pelo comércio do ouro e pedras preciosas.
+MARIUZZO, P. Estudos interdisciplinares ampliam conhecimento sobre 
+chinesice no barroco mineiro. Disponível em: http://cienciaecultura.bvs.br. 
+Acesso em: 23 nov. 2021 (adaptado).
+O desenvolvimento do processo artístico descrito no 
+texto foi possível pelo(a)
+A	
+A	 representação arquitetônica.
+B	
+B	 intercâmbio transcontinental.
+C	
+C	 dependência econômica.
+D	
+D	 intervenção estatal.
+E	
+E	 padrão estético.
+QUESTÃO 64	
+Txai Suruí, liderança da Juventude Indígena, 
+profere seu discurso na abertura da COP-26
+“O clima está esquentando, os animais estão 
+desaparecendo, os rios estão morrendo e nossas 
+plantações não florescem como no passado. A Terra está 
+falando: ela nos diz que não temos mais tempo.”
+VICK, M. Quais são as conquistas do movimento indígena na COP-26. 
+Disponível em: www.nexojornal.com.br. Acesso em: 10 nov. 2021 (adaptado).
+O discurso da líder indígena explicita um problema global 
+relacionado ao(à)
+A	
+A	 manejo tradicional.
+B	
+B	 reciclagem residual.
+C	
+C	 consumo consciente.
+D	
+D	 exploração predatória.
+E	
+E	 reaproveitamento energético.
+QUESTÃO 65	
+Nas reportagens publicadas sobre a inauguração do 
+Museu de Arte de São Paulo, em 1947, quando ele ainda 
+ocupava um edifício na rua Sete de Abril, Lina Bo Bardi não foi 
+mencionada nenhuma vez. A arquiteta era responsável pelo 
+projeto do museu que mudaria para sempre a posição de São 
+Paulo no circuito mundial das artes. Mas não houve nenhum 
+registro disso. O louvor se concentrou em seu marido e 
+parceiro profissional, o respeitado crítico de arte Pietro Maria 
+Bardi. Passados 75 anos, a mulher então ignorada recebeu 
+um Leão de Ouro póstumo, a maior homenagem da Bienal 
+de Arquitetura de Veneza, e tem agora sua história contada 
+em duas biografias de peso, que procuram destrinchar uma 
+carreira marcada pela ousadia e pela contradição.
+PORTO, W. Lina Bo Bardi tem sua arquitetura contraditória destrinchada em biografias. 
+Disponível em: www1.folha.uol.com.br. Acesso em: 10 nov. 2021 (adaptado).
+As transformações pelas quais passaram as sociedades 
+ocidentais e que possibilitaram o reconhecimento recente 
+do trabalho da arquiteta mencionada no texto foram 
+resultado das mobilizações sociais pela
+A	
+A	 equidade de gênero.
+B	
+B	 liberdade de expressão.
+C	
+C	 admissibilidade de voto.
+D	
+D	 igualdade de oportunidade.
+E	
+E	 reciprocidade de tratamento.
+*010175AZ24*
+
+
+![Imagem](images/temp-extraction/q6_p24_img0.jpeg)
+
+**Questão 27**
+
+QUESTÃO 27	
+E assim as coisas continuaram acontecendo entre os 
+dois, em quase sustos, um grande por acaso com cacoetes 
+de gestos definitivos. Com o Nunca Mais se oferecendo 
+o tempo todo, bastaria dizer foi um prazer ter te conhecido, 
+bastaria não trocar telefones nem e-mails e enterrar 
+a casualidade com a cal da sabedoria — nada poderia 
+ser definitivo, os encontros duravam duas horas ou duas 
+décadas ou duas vezes isso, mas em algum momento 
+necessariamente seria o fim. De todos os grandes amores. 
+De todos os pequenos. De todas as juras, das promessas, 
+de todos os na-alegria-e-na-tristeza. De todos os não 
+amores, os desamores, os casamentos para sempre, 
+os rancores para sempre, de todas as paralelas que só 
+se viabilizam na abstração da geometria, de todas as 
+pequenas paixões e de todas as grandes paixões, de tudo 
+que para na antessala da paixão, de todos os vínculos não 
+experimentados, de todos.
+LISBOA, A. Rakushisha. Rio de Janeiro: Objetiva, 2014.
+O recurso que promove a progressão textual, contribuindo 
+para a construção da ideia de que as relações amorosas 
+têm um enredo comum, é a
+A	
+A	 repetição do pronome indefinido “todos”.
+B	
+B	 utilização do travessão na marcação do aposto.
+C	
+C	 retomada do antecedente pelo pronome “isso”.
+D	
+D	 contraposição de ideias marcada pela conjunção “mas”.
+E	
+E	 substantivação de expressões pela anteposição do 
+artigo.
+
+**Questão 28**
+
+QUESTÃO 28	
+A garganta é a gruta que guarda o som
+A garganta está entre a mente e o coração
+Vem coisa de cima, vem coisa de baixo e de
+[repente um nó (e o que eu quero dizer?)
+Às vezes, acontece um negócio esquisito
+Quando eu quero falar eu grito, quando eu quero
+[gritar eu falo, o resultado
+Calo.
+ESTRELA D’ALVA, R. Disponível em: https://claudia.abril.com.br. 
+Acesso em: 23 nov. 2021 (fragmento).
+A função emotiva presente no poema cumpre o propósito 
+do eu lírico de
+A	
+A	 revelar as desilusões amorosas.
+B	
+B	 refletir sobre a censura à sua voz.
+C	
+C	 expressar a dificuldade de comunicação.
+D	
+D	 ressaltar a existência de pressões externas.
+E	
+E	 manifestar as dores do processo de criação.
+*010175AZ13*
+
+14
+–LC • 1º DIA • CADERNO 1 • AZUL–
+
+**Questão 35**
+
+QUESTÃO 35	
+A indústria do esporte eletrônico é um mercado que 
+está crescendo em um ritmo mais rápido do que a economia 
+mundial. Sua popularidade cresceu muito e no Brasil não é 
+diferente. De acordo com os dados de uma pesquisa, mais de 
+64% dos brasileiros que jogam videogame já ouviram falar de 
+esporte eletrônico. No entanto, o que chama a atenção é o 
+crescimento superior a 10% do público praticante comparado 
+ao ano anterior, que subiu de 44,7% para 55,4%. Trata-se 
+de um percentual expressivo, já que o Brasil está no top 3 
+dentre os países que têm maior número de espectadores de 
+esporte eletrônico do mundo. Comparado ao ano anterior, 
+em 2020, o Brasil teve um marco de crescimento de 20% 
+na audiência. Mundo afora, a árdua dedicação de grandes 
+gamers contribuiu para o reconhecimento do Comitê Olímpico 
+Internacional, aliado a outras cinco federações esportivas 
+e suas desenvolvedoras de jogos, que direcionaram um 
+olhar mais atento ao assunto, permitindo dar o primeiro 
+passo para concretizar, pela primeira vez na história dos 
+jogos eletrônicos, um evento olímpico oficial.
+Disponível em: https://chicoterra.com. Acesso em: 19 nov. 2021 (adaptado).
+O contexto em que o esporte eletrônico é apresentado no 
+texto demonstra o(a)
+A	
+A	 condição favorável à expansão dessa modalidade.
+B	
+B	 promoção dessa prática por jogadores profissionais.
+C	
+C	 impulsionamento de um processo de marketing.
+D	
+D	 favorecimento de fabricantes dos jogos.
+E	
+E	 modificação da audiência televisiva.
+
+**Questão 39**
+
+QUESTÃO 39	
+A petição on-line criada por um cidadão paulista 
+surtiu efeito: casado há três anos com seu companheiro, 
+ele pedia a alteração da definição de “casamento” no 
+tradicional dicionário Michaelis em português. Na definição 
+anterior, casamento aparecia como “união legítima entre 
+homem e mulher” e “união legal entre homem e mulher, 
+para constituir família”.
+O novo verbete não traz em nenhum momento as 
+palavras homem ou mulher — agora a definição de 
+casamento se refere a “pessoas”.
+Para o diretor de comunicação do site onde a petição foi 
+publicada, a iniciativa mostra a “eficiência da mobilização”. 
+“Em dois dias, mudou-se uma definição que permanecia 
+a mesma há décadas”, afirma. E conclui: “A plataforma 
+serve para todos os tipos de causas, para as mudanças 
+que importam para as pessoas.”.
+SENRA, R. Disponível em: www.bbc.com. Acesso em: 29 out. 2015.
+A notícia trata da mudança ocorrida em um dicionário da 
+língua portuguesa. Segundo o texto, essa mudança foi 
+impulsionada pela
+A	
+A	 inclusão de informações no verbete.
+B	
+B	 relevância social da instituição casamento.
+C	
+C	 utilização pública da petição pelos cidadãos.
+D	
+D	 rapidez na disseminação digital do verbete.
+E	
+E	 divulgação de plataformas para a criação de petição.
+
+**Questão 40**
+
+QUESTÃO 40	
+A neozelandesa Laurel Hubbard fez história nos Jogos 
+Olímpicos. Apesar de ter ficado de fora da disputa por 
+medalhas, a levantadora de peso deixou sua marca na 
+edição de Tóquio por ser a primeira mulher abertamente 
+transgênero a participar de uma competição olímpica. 
+No início da carreira, na década de 1990, a neozelandesa 
+participava de disputas na categoria masculina. 
+Em 2001, aos 23 anos, ela se afastou da atividade. 
+“A pressão de tentar me encaixar em um mundo que talvez 
+não tenha sido feito para pessoas como eu se tornou um 
+fardo muito grande para suportar.” Em 2012, Laurel começou 
+sua transição de gênero por meio de terapias hormonais e, 
+em 2013, declarou abertamente ser uma mulher trans. Para 
+o Comitê Olímpico Internacional, a participação de mulheres 
+trans nos Jogos é permitida caso o nível de testosterona, 
+hormônio que aumenta a massa muscular, esteja abaixo de 
+10 nanomols por litro por pelo menos 12 meses.
+Disponível em: https://revistagalileu.globo.com. Acesso em: 18 nov. 2021 (adaptado).
+No texto, os limites do potencial inclusivo do esporte são 
+dados pela
+A	
+A	 dificuldade de conseguir bons resultados esportivos.
+B	
+B	 dependência de características biológicas padronizadas.
+C	
+C	 inexistência de uma categoria para pessoas 
+transgênero.
+D	
+D	 necessidade de afastamento temporário das 
+competições.
+E	
+E	 impossibilidade de uso controlado de substâncias 
+exógenas.
+
+**Questão 46**
+
+QUESTÃO 46	
+Fotografia da avó bordada
+SCARELI, G. A máquina de costura e os fios da memória. Revista Brasileira 
+de Pesquisa (Auto)Biográfica, n. 18, maio-ago. 2021.
+A definição de Sertão descrita no bordado associa esse 
+recorte espacial a 
+A	
+A	 percursos e roteiros turísticos.
+B	
+B	 trajetos e movimentos holísticos.
+C	
+C	 vivências e itinerários socioafetivos.
+D	
+D	 fronteiras e demarcações territoriais.
+E	
+E	 profissões e interesses econômicos.
+
+**Questão 53**
+
+QUESTÃO 53	
+A Cordilheira do Himalaia tem mais de 50 milhões de 
+anos, sendo classificada como a maior cordilheira do planeta. 
+Originário da língua sânscrito, comum na região, seu nome 
+quer dizer “morada da neve”. É possível encontrar nessa 
+cordilheira as quinze maiores montanhas do mundo. Ao todo, 
+existem mais de cem picos, que contam com altitudes bem 
+maiores que 7 000 m. O Everest, considerado o ponto mais 
+alto da Terra, tem nada menos que 8 848 m de altitude, e 
+continua crescendo, aproximadamente, 0,8 mm a cada ano.
+Disponível em: https://meioambiente.culturamix.com. Acesso em: 12 nov. 2021 (adaptado).
+Qual dinâmica natural é responsável pelo fenômeno 
+apresentado?
+A	
+A	 Derrame de lava vulcânica.
+B	
+B	 Encontro de placas tectônicas.
+C	
+C	 Ação do intemperismo químico.
+D	
+D	 Sedimentação de erosão eólica.
+E	
+E	 Derretimento de geleiras glaciais.
+
+**Questão 55**
+
+QUESTÃO 55	
+A diversão é o prolongamento do trabalho sob o capitalismo tardio. Ela é procurada por quem quer escapar 
+ao processo de trabalho mecanizado para se pôr de novo em condições de enfrentá-lo. Mas, ao mesmo tempo, 
+a mecanização atingiu um tal poderio sobre a pessoa em seu lazer e sobre a sua felicidade, ela determina tão 
+profundamente a fabricação das mercadorias destinadas à diversão que essa pessoa não pode mais perceber outra 
+coisa senão as cópias que reproduzem o próprio processo de trabalho. 
+ADORNO, T.; HORKHEIMER, M. Dialética do esclarecimento. Rio de Janeiro: Zahar, 1997.
+No texto, o tempo livre é concebido como
+A	
+A	 consumo de produtos culturais elaborados no mesmo sistema produtivo do capitalismo.
+B	
+B	 forma de realizar as diversas potencialidades da natureza humana.
+C	
+C	 alternativa para equilibrar tensões psicológicas do dia a dia.
+D	
+D	 promoção da satisfação de necessidades artificiais.
+E	
+E	 mecanismo de organização do ócio e do prazer.
+
+**Questão 58**
+
+QUESTÃO 58	
+A Cavalgada de Sant’Ana é uma expressão da devoção 
+dos vaqueiros à padroeira de Caicó (RN). Nas décadas de 
+1950 a 1970, esse evento, então denominado Cavalaria, 
+era celebrado pelas pessoas que residiam na zona rural 
+do município de Caicó. Essas pessoas usavam os animais 
+(jegues, mulas e cavalos) como único meio de transporte, 
+sobretudo para se dirigirem à cidade nos dias de feiras, 
+trazendo seus produtos para comercializarem. Estando em 
+Caicó no período da Festa de Sant’Ana, esses agricultores 
+se organizavam em cavalgada até o pátio da Catedral de 
+Sant’Ana para louvar a santa e receber bênção para seus 
+animais. Por volta da década de 1970, com a chegada do 
+automóvel à zona rural do município, essa expressão cultural 
+foi extinta. O meio de transporte utilizando os animais passou 
+a ser substituído por carros, sobretudo caminhonetes e 
+caminhões, que transportavam os camponeses para a 
+cidade em dias de feiras e festas. Desde 2002, um grupo de 
+caicoenses retomou essa expressão cultural e, em conjunto 
+com a associação dos vaqueiros, realiza no primeiro 
+domingo da Festa a Cavalgada de Sant’Ana. O evento, além 
+de contar com a participação dos cavaleiros que residem 
+nas zonas rurais, atrai também pessoas que residem em 
+Caicó, cidades vizinhas e amantes das vaquejadas.
+FESTA DE SANT’ANA. Disponível em: http://portal.iphan.gov.br. 
+Acesso em: 12 out. 2021 (adaptado).
+As 
+mudanças 
+culturais 
+mencionadas 
+no 
+texto 
+caracterizam-se pela presença de
+A	
+A	 elementos tradicionais e modernos em torno de uma 
+crença religiosa.
+B	
+B	 argumentos teológicos e históricos em consequência 
+de uma ordem papal.
+C	
+C	 fundamentos estéticos e etnográficos em função de 
+uma cerimônia clerical.
+D	
+D	 práticas corporais e esportivas em decorrência de uma 
+imposição eclesiástica.
+E	
+E	 discursos filosóficos e antropológicos em resultado de 
+uma determinação paroquial.
+
+**Questão 75**
+
+QUESTÃO 75	
+A torcida do Fluminense inicia um movimento para 
+mudar a letra de uma das músicas mais populares das 
+arquibancadas tricolores. Grupos pedem a remoção do 
+termo “mulambo imundo”, em uma provocação direta ao 
+Flamengo. Mulambo é um termo que surgiu em Angola, 
+na época da escravatura, e eles eram chamados de 
+mulambos pelos senhores de engenho, os patrões 
+das fazendas.
+Disponível em: https://oglobo.globo.com. Acesso em: 23 nov. 2021.
+Qual mudança no comportamento social a proposta 
+reportada no texto reflete?
+A	
+A	 Rejeição de costumes elitistas.
+B	
+B	 Repulsão de condutas misóginas.
+C	
+C	 Condenação do preconceito racial.
+D	
+D	 Criminalização de práticas homofóbicas.
+E	
+E	 Contestação do comportamento machista.
+
+**Questão 81**
+
+QUESTÃO 81	
+A economia das ilegalidades se reestruturou com o 
+desenvolvimento da sociedade capitalista. A ilegalidade dos 
+bens foi separada da ilegalidade dos direitos. Divisão que 
+corresponde a uma oposição de classes, pois, de um lado, a 
+ilegalidade mais acessível às classes populares será a dos 
+bens — transferência violenta das propriedades; de outro, 
+à burguesia, então, se reservará a ilegalidade dos direitos: 
+a possibilidade de desviar seus próprios regulamentos 
+e suas próprias leis; e essa grande redistribuição das 
+ilegalidades se traduzirá até por uma especialização dos 
+circuitos judiciários; para as ilegalidades de bens — para 
+o roubo — os tribunais ordinários e os castigos; para 
+as ilegalidades de direitos — fraudes, evasões fiscais, 
+operações comerciais irregulares — jurisdições especiais 
+com transações, acomodações, multas atenuadas etc.
+FOUCAULT, M. Vigiar e punir: nascimento da prisão. Petrópolis: Vozes, 1987.
+O texto apresenta uma relação de cálculo político-econômico 
+que caracteriza o poder punitivo por meio da
+A	
+A	 gestão das ilicitudes pelo sistema judicial.
+B	
+B	 aplicação das sanções pelo modelo equânime.
+C	
+C	 supressão dos crimes pela penalização severa.
+D	
+D	 regulamentação dos privilégios pela justiça social.
+E	
+E	 repartição de vantagens pela hierarquização cultural.
+
+**Questão 84**
+
+QUESTÃO 84	
+A partir da década de 1930, começam a ser discutidos 
+no Brasil os princípios de racionalização do trabalho. 
+As preocupações com a cozinha e o trabalho doméstico 
+foram introduzidas com a medicina sanitária e a oferta 
+de gás e eletricidade para uso doméstico no início do 
+século XX. A organização da cozinha visava atingir 
+uma simplificação das tarefas, com a economia de 
+movimentos, e o barateamento dos equipamentos, a 
+partir da produção em grande escala. A padronização e 
+racionalização da habitação e seus componentes visava 
+uma radical transformação da casa, em especial da 
+cozinha, e apoiava-se tanto no desenvolvimento de novos 
+equipamentos quanto nos estudos de racionalização 
+do trabalho doméstico. A principal preocupação era 
+o desenvolvimento de um novo tipo de habitação, que 
+deveria induzir um novo comportamento social.
+SILVA, J. L. M. Transformações no espaço doméstico: o fogão a gás e a cozinha 
+paulistana, 1870-1930. Anais do Museu Paulista, n. 2, jul.-dez. 2007 (adaptado).
+No contexto descrito, as mudanças mencionadas 
+proporcionavam às mulheres o(a)
+A	
+A	 controle do orçamento familiar.
+B	
+B	 libertação das tradições religiosas.
+C	
+C	 exercício da representatividade política.
+D	
+D	 ampliação dos momentos de socialização.
+E	
+E	 afastamento das atividades especializadas.
+ 
+*010175AZ29*
+
+30
+–CH • 1º DIA • CADERNO 1 • AZUL–
+

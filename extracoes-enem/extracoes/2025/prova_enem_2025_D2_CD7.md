@@ -176,6 +176,28 @@ E 0
 
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
+**Questão 96**
+
+Questão 96	
+Os sapinhos-ponta-de-flecha constituem um grupo de 
+espécies encontradas na América Central e do Sul. Seus venenos 
+são obtidos por meio do consumo de algumas formigas e cupins 
+que se alimentam de plantas que contêm esses venenos. Esses 
+anfíbios são usados para envenenar as flechas das zarabatanas 
+dos caçadores nativos. Quando capturados e criados em 
+condições artificiais, ou quando nascidos em cativeiro, não 
+são tóxicos.
+BADIO, B. et al. Epibatidine: Discovery and Definition as a Potent 
+Analgesic and Nicotinic Agonist. Med. Chem. Res., 
+n. 4, 1994 (adaptado).
+A perda da capacidade de se obter a toxina nos nascidos em 
+cativeiro é causada pela
+A	diferença de umidade entre os ambientes.
+B	ausência de alimentação natural.
+C	adaptação ao novo ambiente.
+D	mudança de comportamento.
+E	variabilidade genética.
+
 **Questão 97**
 
 
@@ -210,50 +232,6 @@ B refração.
 C irradiação.
 D dispersão.
 E convecção.
-
-**Questão 96**
-
-Os sapinhos-ponta-de-flecha constituem um grupo de
-espécies encontradas na América Central e do Sul. Seus venenos
-são obtidos por meio do consumo de algumas formigas e cupins
-que se alimentam de plantas que contêm esses venenos. Esses
-anfíbios são usados para envenenar as flechas das zarabatanas
-dos caçadores nativos. Quando capturados e criados em
-condições artificiais, ou quando nascidos em cativeiro, não
-são tóxicos.
-
-BADIO, B. et al. Epibatidine: Discovery and Definition as a Potent
-Analgesic and Nicotinic Agonist. **Med. Chem. Res** .,
-n. 4, 1994 (adaptado).
-
-A perda da capacidade de se obter a toxina nos nascidos em
-cativeiro é causada pela
-
-A diferença de umidade entre os ambientes.
-B ausência de alimentação natural.
-C adaptação ao novo ambiente.
-D mudança de comportamento.
-E variabilidade genética.
-
-
-
-A produção de vacinas exige uma sequência de procedimentos,
-além do cumprimento estrito de verificações de segurança.
-No esquema, estão demonstradas as etapas básicas realizadas
-para a fabricação de uma vacina utilizando a tecnologia tradicional
-e o efeito dela no organismo.
-
-
-O antígeno utilizado na vacina causa um efeito protetor contra
-
-- vírus porque
-
-A mata o vírus pela ligação.
-B aglutina o vírus por associação.
-C contém imunoglobulinas de defesa.
-D induz a produção de proteínas neutralizadoras.
-E mantém a quantidade de anticorpos preexistentes.
-
 
 **Questão 98**
 
@@ -519,6 +497,19 @@ E
 
 
 
+**Questão 107**
+
+Questão 107	
+A figura apresenta a herança genética de uma característica 
+a partir do cruzamento de insetos de uma mesma espécie.
+Qual alternativa representa a proporção fenotípica da prole 
+resultante do cruzamento entre indivíduos da primeira geração?
+A	
+B	
+C	
+D	
+E
+
 **Questão 108**
 
 Para transportar uma caixa do primeiro para o segundo
@@ -585,32 +576,6 @@ E
 
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
-**Questão 111**
-
-
-
-O fruto do cajueiro é um aquênio repleto de um líquido
-escuro, quase preto, cáustico e inflamável. Esse líquido da
-casca da castanha do caju (LCC) representa aproximadamente
-25% da massa da castanha e é um subproduto de agronegócio
-do caju. Quando submetido a altas temperaturas, o ácido
-anacárdico presente no LCC é convertido a cardanol, que recebe
-a denominação de LCC técnico, conforme o esquema:
-
-
-MAZZETTO, S. E.; LOMONACO, D.; MELE, G. Óleo da castanha de caju:
-oportunidades e desafios no contexto do desenvolvimento e
-sustentabilidade industrial. **Química Nova**, n. 3, 2009 (adaptado).
-
-O LCC técnico é produzido por meio de uma reação orgânica
-do tipo
-
-A hidrólise.
-B fenilação.
-C esterificação.
-D hidrogenação.
-E descarboxilação.
-
 **Questão 110**
 
 A química nuclear é uma importante ferramenta
@@ -653,6 +618,32 @@ C destruição da camada de ozônio.
 D ocorrência de inversão térmica.
 E produção de chuva ácida.
 
+
+**Questão 111**
+
+
+
+O fruto do cajueiro é um aquênio repleto de um líquido
+escuro, quase preto, cáustico e inflamável. Esse líquido da
+casca da castanha do caju (LCC) representa aproximadamente
+25% da massa da castanha e é um subproduto de agronegócio
+do caju. Quando submetido a altas temperaturas, o ácido
+anacárdico presente no LCC é convertido a cardanol, que recebe
+a denominação de LCC técnico, conforme o esquema:
+
+
+MAZZETTO, S. E.; LOMONACO, D.; MELE, G. Óleo da castanha de caju:
+oportunidades e desafios no contexto do desenvolvimento e
+sustentabilidade industrial. **Química Nova**, n. 3, 2009 (adaptado).
+
+O LCC técnico é produzido por meio de uma reação orgânica
+do tipo
+
+A hidrólise.
+B fenilação.
+C esterificação.
+D hidrogenação.
+E descarboxilação.
 
 **Questão 112**
 
@@ -794,32 +785,6 @@ E C10H18O2
 
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
-**Questão 119**
-
-
-
-As cangas são ambientes resultantes da atuação, ao longo
-de milhões de anos, de chuvas, enxurradas, calor e ventos em
-rochas ricas em ferro. São compostas por até 90% de óxidos
-de ferro e contêm solos muito ácidos, rasos, com reduzidos
-índices de fertilidade e temperaturas que atingem quase 70 **°** C
-na superfície. Ao contrário do que se imagina, esse tipo de
-ambiente abriga comunidades de plantas e animais com elevado
-número de espécies e distribuição restrita.
-
-CARMO, F. F. et al. **Ilhas de ferro estratégicas para a conservação** .
-Disponível em: http://cienciahoje.org.br.
-Acesso em: 2 dez. 2018 (adaptado).
-
-A seleção adaptativa nesses ambientes favorece a ocorrência
-de espécies
-
-A exóticas.
-B migratórias.
-C endêmicas.
-D dominantes.
-E generalistas.
-
 **Questão 117**
 
 Para a produção de titânio metálico ou dióxido de titânio
@@ -921,6 +886,32 @@ CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS | 2º DIA | CADERNO 7 | AZUL **9**
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
 
+
+**Questão 119**
+
+
+
+As cangas são ambientes resultantes da atuação, ao longo
+de milhões de anos, de chuvas, enxurradas, calor e ventos em
+rochas ricas em ferro. São compostas por até 90% de óxidos
+de ferro e contêm solos muito ácidos, rasos, com reduzidos
+índices de fertilidade e temperaturas que atingem quase 70 **°** C
+na superfície. Ao contrário do que se imagina, esse tipo de
+ambiente abriga comunidades de plantas e animais com elevado
+número de espécies e distribuição restrita.
+
+CARMO, F. F. et al. **Ilhas de ferro estratégicas para a conservação** .
+Disponível em: http://cienciahoje.org.br.
+Acesso em: 2 dez. 2018 (adaptado).
+
+A seleção adaptativa nesses ambientes favorece a ocorrência
+de espécies
+
+A exóticas.
+B migratórias.
+C endêmicas.
+D dominantes.
+E generalistas.
 
 **Questão 120**
 
@@ -1034,52 +1025,6 @@ E Água.
 
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
-**Questão 126**
-
-
-
-Objetos de prata escurecem em contato com compostos
-contendo enxofre por causa da formação de uma fina camada
-de sulfeto de prata. Um método simples para clarear o objeto
-consiste em forrar um recipiente com papel alumínio, adicionar
-ao recipiente uma solução aquosa de cloreto de sódio e,
-enfim, mergulhar o objeto de prata enegrecido. Em cerca de
-três minutos, a prata volta à coloração original. As seguintes
-semirreações e os respectivos potenciais-padrão de redução
-são úteis para a compreensão dos fenômenos ocorridos.
-
-
-
-Ag2S (s) + 2 e [−] → 2 Ag (s) + S [2][−] (aq)
-
-O2 (g) + 4 H [+] (aq) + 4 e [−] → 2 H2O (l)
-
-Al [3][+] (aq) + 3 e [−] → Al (s)
-
-
-
-−0,69 V
-
-+1,23 V
-
-−1,68 V
-
-
-
-SARTORI, E. R.; BATISTA, E. F.; FATIBELLO-FILHO, O. Escurecimento e limpeza
-de objetos de prata: um experimento simples e de fácil execução envolvendo
-reações de oxidação-redução. **Química Nova na Escola**, n. 30, 2008 (adaptado).
-
-Os valores das diferenças de potencial-padrão das reações que
-representam o escurecimento e o clareamento do objeto de
-prata são, respectivamente:
-
-A +0,54 V e +2,37 V.
-B +1,92 V e +0,99 V.
-C −0,15 V e +5,43 V.
-D +2,61 V e +1,29 V.
-E +0,15 V e −1,29 V.
-
 **Questão 125**
 
 Apaixonada por culinária e química, uma chefe de cozinha
@@ -1152,6 +1097,52 @@ CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS | 2º DIA | CADERNO 7 | AZUL **11**
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
 
+
+**Questão 126**
+
+
+
+Objetos de prata escurecem em contato com compostos
+contendo enxofre por causa da formação de uma fina camada
+de sulfeto de prata. Um método simples para clarear o objeto
+consiste em forrar um recipiente com papel alumínio, adicionar
+ao recipiente uma solução aquosa de cloreto de sódio e,
+enfim, mergulhar o objeto de prata enegrecido. Em cerca de
+três minutos, a prata volta à coloração original. As seguintes
+semirreações e os respectivos potenciais-padrão de redução
+são úteis para a compreensão dos fenômenos ocorridos.
+
+
+
+Ag2S (s) + 2 e [−] → 2 Ag (s) + S [2][−] (aq)
+
+O2 (g) + 4 H [+] (aq) + 4 e [−] → 2 H2O (l)
+
+Al [3][+] (aq) + 3 e [−] → Al (s)
+
+
+
+−0,69 V
+
++1,23 V
+
+−1,68 V
+
+
+
+SARTORI, E. R.; BATISTA, E. F.; FATIBELLO-FILHO, O. Escurecimento e limpeza
+de objetos de prata: um experimento simples e de fácil execução envolvendo
+reações de oxidação-redução. **Química Nova na Escola**, n. 30, 2008 (adaptado).
+
+Os valores das diferenças de potencial-padrão das reações que
+representam o escurecimento e o clareamento do objeto de
+prata são, respectivamente:
+
+A +0,54 V e +2,37 V.
+B +1,92 V e +0,99 V.
+C −0,15 V e +5,43 V.
+D +2,61 V e +1,29 V.
+E +0,15 V e −1,29 V.
 
 **Questão 127**
 
@@ -1758,29 +1749,6 @@ E 400.
 
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
-**Questão 145**
-
-
-
-Na cantina de uma escola, há cinco alimentos vendidos em
-pacotes com diferentes quantidades de porções.
-As informações nutricionais contidas nos rótulos desses
-produtos estão indicadas nas imagens.
-
-
-Uma estudante opta sempre pelo alimento com a menor
-quantidade total de sódio por pacote.
-
-
-Qual desses produtos deve ser o escolhido pela estudante?
-
-A Batata chips.
-B Palitos salgados.
-C Biscoito multigrãos.
-D Biscoito de polvilho.
-E Biscoito de água e sal.
-
-
 **Questão 144**
 
 Uma fábrica utilizou uma impressora 3D para produzir o
@@ -1833,6 +1801,29 @@ D diminui até o instante t2, a partir do qual se torna constante.
 E diminui de forma proporcional ao tempo, tanto entre t1 e t2
 
 quanto após t2.
+
+**Questão 145**
+
+
+
+Na cantina de uma escola, há cinco alimentos vendidos em
+pacotes com diferentes quantidades de porções.
+As informações nutricionais contidas nos rótulos desses
+produtos estão indicadas nas imagens.
+
+
+Uma estudante opta sempre pelo alimento com a menor
+quantidade total de sódio por pacote.
+
+
+Qual desses produtos deve ser o escolhido pela estudante?
+
+A Batata chips.
+B Palitos salgados.
+C Biscoito multigrãos.
+D Biscoito de polvilho.
+E Biscoito de água e sal.
+
 
 **Questão 146**
 
@@ -1918,25 +1909,6 @@ E V.
 
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
-**Questão 151**
-
-
-
-A cúpula pentagonal giralongada é um poliedro de Johnson,
-cujas faces são polígonos regulares, mas que não é um poliedro
-de Platão, de Arquimedes, prisma ou antiprisma.
-As figuras apresentam esse poliedro em duas posições e
-uma de suas planificações.
-
-
-Quantos vértices tem esse poliedro?
-
-A 21
-B 25
-C 55
-D 80
-E 110
-
 **Questão 150**
 
 Uma fábrica de tijolos ecológicos com 3 funcionários,
@@ -1990,6 +1962,25 @@ B 0281090.
 C 1010982.
 D 2081090.
 E 2810910.
+
+**Questão 151**
+
+
+
+A cúpula pentagonal giralongada é um poliedro de Johnson,
+cujas faces são polígonos regulares, mas que não é um poliedro
+de Platão, de Arquimedes, prisma ou antiprisma.
+As figuras apresentam esse poliedro em duas posições e
+uma de suas planificações.
+
+
+Quantos vértices tem esse poliedro?
+
+A 21
+B 25
+C 55
+D 80
+E 110
 
 **Questão 152**
 
@@ -2110,25 +2101,6 @@ de autores brasileiros.
 
 **ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
-**Questão 157**
-
-
-
-Dez casais fundaram um grupo de dança e decidiram
-constituir uma diretoria com três cargos: presidente, secretário
-e tesoureiro. Para maior representatividade, decidiu-se que no
-máximo uma pessoa por casal poderá ocupar um cargo nessa
-diretoria.
-
-Quantas diretorias diferentes podem ser constituídas por esses
-10 casais?
-
-A 10 × 9 × 8
-B 20 × 18 × 16
-C 20 × 19 × 18
-D 10 × 9 × 8 × 2
-E 20 × 18 × 16 × 2
-
 **Questão 156**
 
 Um artista, que costuma fazer desenhos com areia na
@@ -2172,6 +2144,25 @@ C _[T]_ _F_ [=] [ 1 59],
 D _T_ _[F]_ [=] [ 1 59],
 
 E _F_ ⋅ _T_ = 1,59
+
+**Questão 157**
+
+
+
+Dez casais fundaram um grupo de dança e decidiram
+constituir uma diretoria com três cargos: presidente, secretário
+e tesoureiro. Para maior representatividade, decidiu-se que no
+máximo uma pessoa por casal poderá ocupar um cargo nessa
+diretoria.
+
+Quantas diretorias diferentes podem ser constituídas por esses
+10 casais?
+
+A 10 × 9 × 8
+B 20 × 18 × 16
+C 20 × 19 × 18
+D 10 × 9 × 8 × 2
+E 20 × 18 × 16 × 2
 
 **Questão 158**
 
@@ -2869,13 +2860,6 @@ E 12,0.
 
 **30** MATEMÁTICA E SUAS TECNOLOGIAS | 2º DIA | CADERNO 7 | AZUL
 
-
-**Questão 177**
-
-
-#### *020325AZ31*
-
-**ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEN2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025ENEM2025**
 
 **Questão 177**
 

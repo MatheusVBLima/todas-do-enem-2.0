@@ -1,6 +1,16 @@
 # 🚀 Próximos Passos - Processamento de Provas ENEM
 
-**Última atualização:** 07/01/2026
+**Última atualização:** 09/01/2026
+
+> ⚠️ **IMPORTANTE**: Este documento está **DESATUALIZADO**.
+>
+> **Para continuar o trabalho, consulte**: [`GUIA-COMPLETO-LLM.md`](GUIA-COMPLETO-LLM.md)
+>
+> O novo guia contém:
+> - ✅ Status atualizado (2025 completo, 2024 falta Q114)
+> - ✅ Todos os scripts disponíveis
+> - ✅ Workflow completo passo a passo
+> - ✅ Troubleshooting e soluções para problemas conhecidos
 
 ---
 
