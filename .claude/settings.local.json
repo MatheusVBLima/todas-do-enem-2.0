@@ -80,7 +80,8 @@
       "Bash(then node -e \"const data = require\\(''./$file''\\); console.log\\(''$file:'', data.questions.length, ''questões''\\)\")",
       "Bash(fi)",
       "Bash(done)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(npx tsc:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

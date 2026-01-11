@@ -1,4 +1,4 @@
-import { FileText, Lock, Sparkles } from "lucide-react"
+import { FileText, Lock, Sparkles, Clock } from "lucide-react"
 import { Suspense } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -74,49 +74,40 @@ export default async function RedacaoPage() {
   if (!isPaidUser) {
     return (
       <div className="space-y-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <FileText className="size-6 text-primary" />
-            <h1 className="text-2xl font-bold">Redação</h1>
-            <Badge variant="secondary" className="gap-1">
-              <Lock className="size-3" />
-              PRO
-            </Badge>
-          </div>
+        <div className="flex items-center gap-3">
+          <FileText className="size-6 text-primary" />
+          <h1 className="text-2xl font-bold">Redação</h1>
+          <Badge variant="secondary" className="gap-1">
+            <Clock className="size-3" />
+            Em breve
+          </Badge>
         </div>
 
         <div className="rounded-lg border bg-card p-8 text-center">
-          <Lock className="mx-auto size-12 text-muted-foreground/50 mb-4" />
+          <Clock className="mx-auto size-12 text-primary mb-4" />
           <h2 className="text-lg font-semibold mb-2">
-            Recurso exclusivo do plano Rumo à Aprovação
+            Correção de Redação Em Breve
           </h2>
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-            Faça upgrade para ter acesso à correção de redação por IA com feedback
-            detalhado por competência e sugestões de melhoria.
+            Estamos preparando uma experiência incrível de correção de redação
+            por inteligência artificial. Continue estudando as questões!
           </p>
 
           <div className="space-y-4 max-w-md mx-auto">
             <div className="grid gap-2 text-left">
-              <div className="flex items-center gap-2 text-sm">
-                <Sparkles className="size-4 text-primary" />
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Clock className="size-4 shrink-0" />
                 <span>Correção automática por IA</span>
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Sparkles className="size-4 text-primary" />
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Clock className="size-4 shrink-0" />
                 <span>Feedback por competência do ENEM</span>
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Sparkles className="size-4 text-primary" />
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Clock className="size-4 shrink-0" />
                 <span>Sugestões de melhoria personalizadas</span>
               </div>
             </div>
-
-            <Button asChild size="lg" className="w-full">
-              <Link href="/planos">
-                <Sparkles className="mr-2 size-4" />
-                Ver Planos
-              </Link>
-            </Button>
           </div>
         </div>
       </div>

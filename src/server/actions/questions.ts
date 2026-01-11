@@ -80,8 +80,20 @@ function convertLocalToQuestionWithExam(
     // Map other fields
     knowledgeArea: localQuestion.area,
     questionNumber: localQuestion.number,
-    exam: exam,
-  }
+    examId: exam.id,
+    aiExplanation: null,
+    context: null,
+    imageUrl: null,
+    exam: {
+      ...exam,
+      createdAt: null,
+      description: null,
+      pdfUrl: null,
+      season: null,
+      testDate: null,
+      updatedAt: null,
+    },
+  } as QuestionWithExam
 }
 
 // Helper to load ALL local questions from all JSON files with caching
@@ -99,9 +111,13 @@ function loadAllLocalQuestions(): QuestionWithExam[] {
   // Get all available years
   const allYears = getAvailableLocalYears()
 
-  // Filter to only years with complete data (2023-2025)
-  const years = allYears.filter(year => year >= 2023 && year <= 2025)
+  // Filter based on feature flag
+  const isCompleteMode = process.env.NEXT_PUBLIC_FEATURE_FLAG_COMPLETE === 'true'
+  const years = isCompleteMode
+    ? allYears.filter(year => year >= 2023 && year <= 2025) // Complete: all available data
+    : allYears.filter(year => year === 2025) // Limited: 2025 only
   console.log('[LocalQuestions] All years found:', allYears)
+  console.log('[LocalQuestions] Feature flag complete mode:', isCompleteMode)
   console.log('[LocalQuestions] Loading years:', years)
 
   for (const year of years) {
@@ -138,7 +154,7 @@ function loadAllLocalQuestions(): QuestionWithExam[] {
 
   // Log distribution by year for debugging
   const yearCounts = allQuestions.reduce((acc, q) => {
-    acc[q.examYear] = (acc[q.examYear] || 0) + 1
+    acc[q.exam.year] = (acc[q.exam.year] || 0) + 1
     return acc
   }, {} as Record<number, number>)
   console.log(`[LocalQuestions] Questions per year:`, yearCounts)
@@ -160,7 +176,7 @@ function formatLocalQuestionsForResponse(
 
   // Apply filters
   if (filters.anos && filters.anos.length > 0) {
-    filtered = filtered.filter(q => filters.anos!.includes(q.examYear))
+    filtered = filtered.filter(q => filters.anos!.includes(q.exam.year))
   }
 
   if (filters.areas && filters.areas.length > 0) {
@@ -390,7 +406,11 @@ export async function getYearsWithQuestions(): Promise<number[]> {
   // Check if using local questions mode
   if (USE_LOCAL_QUESTIONS) {
     console.log('[getYearsWithQuestions] Using LOCAL mode')
-    return getAvailableLocalYears()
+    const localYears = getAvailableLocalYears()
+
+    // Apply feature flag filter
+    const isCompleteMode = process.env.NEXT_PUBLIC_FEATURE_FLAG_COMPLETE === 'true'
+    return isCompleteMode ? localYears : localYears.filter(year => year === 2025)
   }
 
   // Original Supabase implementation
@@ -405,8 +425,10 @@ export async function getYearsWithQuestions(): Promise<number[]> {
       return []
     }
 
-    // Return all years - they all have questions by design
-    return (exams || []).map((e) => e.year)
+    // Apply feature flag filter to Supabase results
+    const years = (exams || []).map((e) => e.year)
+    const isCompleteMode = process.env.NEXT_PUBLIC_FEATURE_FLAG_COMPLETE === 'true'
+    return isCompleteMode ? years : years.filter(y => y === 2025)
   } catch (error) {
     console.error('Error in getYearsWithQuestions:', error)
     return []
