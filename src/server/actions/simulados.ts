@@ -191,7 +191,8 @@ export async function submitAnswer(
       return { success: false, error: "Questão não encontrada." }
     }
 
-    const isCorrect = question.correctAnswer === answer
+    // Questões anuladas são sempre consideradas corretas
+    const isCorrect = question.correctAnswer === 'ANULADA' || question.correctAnswer === answer
 
     // Update the SimuladoQuestao record
     const { error: updateError } = await supabase

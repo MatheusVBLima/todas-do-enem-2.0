@@ -394,7 +394,8 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                           <div className="grid gap-2">
                             {options.map((option) => {
                               const isUserAnswer = sq.userAnswer === option.letter
-                              const isCorrectAnswer = question.correctAnswer === option.letter
+                              const isCancelled = question.correctAnswer === 'ANULADA'
+                              const isCorrectAnswer = !isCancelled && question.correctAnswer === option.letter
 
                               return (
                                 <div
@@ -402,14 +403,14 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                                   className={cn(
                                     "group flex items-start gap-4 rounded-xl border p-4 transition-all",
                                     isCorrectAnswer && "border-green-500/50 bg-green-500/5 shadow-sm",
-                                    isUserAnswer && !isCorrectAnswer && "border-red-500/50 bg-red-500/5"
+                                    isUserAnswer && !isCorrectAnswer && !isCancelled && "border-red-500/50 bg-red-500/5"
                                   )}
                                 >
                                   <div
                                     className={cn(
                                       "flex size-7 shrink-0 items-center justify-center rounded-full border text-sm font-black transition-colors",
                                       isCorrectAnswer && "border-green-500 bg-green-500 text-white",
-                                      isUserAnswer && !isCorrectAnswer && "border-red-500 bg-red-500 text-white",
+                                      isUserAnswer && !isCorrectAnswer && !isCancelled && "border-red-500 bg-red-500 text-white",
                                       !isCorrectAnswer && !isUserAnswer && "bg-muted text-muted-foreground"
                                     )}
                                   >
@@ -423,7 +424,7 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                                       <CheckCircle2 className="size-4" />
                                     </div>
                                   )}
-                                  {isUserAnswer && !isCorrectAnswer && (
+                                  {isUserAnswer && !isCorrectAnswer && !isCancelled && (
                                     <div className="size-6 rounded-full bg-red-500/10 flex items-center justify-center text-red-600">
                                       <XCircle className="size-4" />
                                     </div>
@@ -434,7 +435,14 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                           </div>
                         </div>
 
-                        {!wasAnswered && (
+                        {question.correctAnswer === 'ANULADA' && (
+                          <div className="bg-yellow-500/5 border border-yellow-500/20 rounded-lg p-3 flex items-center gap-2 text-yellow-700 dark:text-yellow-500 text-xs font-bold uppercase">
+                            <AlertCircle className="size-4" />
+                            Questão Anulada - Todos recebem pontuação
+                          </div>
+                        )}
+
+                        {!wasAnswered && question.correctAnswer !== 'ANULADA' && (
                           <div className="bg-yellow-500/5 border border-yellow-500/20 rounded-lg p-3 flex items-center gap-2 text-yellow-700 dark:text-yellow-500 text-xs font-bold uppercase">
                             <AlertCircle className="size-4" />
                             Você não respondeu esta questão

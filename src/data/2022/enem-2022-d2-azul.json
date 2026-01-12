@@ -1,0 +1,1391 @@
+{
+  "exam": {
+    "id": "ENEM_2022_D2_AZUL",
+    "year": 2022,
+    "day": 2,
+    "color": "AZUL",
+    "area": "CIENCIAS_HUMANAS"
+  },
+  "questions": [
+    {
+      "id": "ENEM_2022_D2_LC_Q02",
+      "number": 2,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q02",
+          "blocks": [
+            {
+              "id": "img_q02_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-1-0.png",
+              "alt": "Imagem da questão 2"
+            },
+            {
+              "id": "img_q02_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-1-1.png",
+              "alt": "Imagem da questão 2"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-1-0.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-1-1.png) BERTAGI, L. T.; BASÍLIO, A. O.; PERALTA-ZAMORA, P. Aplicações ambientais de persulfato: remediação de águas subterrâneas e solos contaminados. Química Nova, n. 9, 2021 (adaptado). Esse procedimento de remediação de águas subterrâneas baseia-se em reações de",
+      "alternatives": {
+        "A": "oxirredução.",
+        "B": "substituição.",
+        "C": "precipitação.",
+        "D": "desidratação.",
+        "E": "neutralização."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q03",
+      "number": 3,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "De acordo com a Organização Mundial da Saúde, a filariose e a leishmaniose são consideradas doenças tropicais infecciosas e constituem uma preocupação para a saúde pública por ser alto o índice de mortalidade a elas associado. Uma medida profilática comum a essas duas doenças é o(a)",
+      "alternatives": {
+        "A": "1 000 000 m [2]",
+        "B": "500 000 m [2]",
+        "C": "250 000 m [2]",
+        "D": "100 000 m [2]",
+        "E": "20 000 m [2]"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q07",
+      "number": 7,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "O urânio é empregado como fonte de energia em reatores nucleares. Para tanto, o seu mineral deve ser refinado, convertido a hexafluoreto de urânio e posteriormente enriquecido, para aumentar de 0,7% a 3% a abundância de um isótopo específico — o urânio-235. Uma das formas de enriquecimento utiliza a pequena diferença de massa entre os hexafluoretos de urânio-235 e de urânio-238 para separá-los por efusão, precedida pela vaporização. Esses vapores devem efundir repetidamente milhares de vezes através de barreiras porosas formadas por telas com grande número de pequenos orifícios. No entanto, devido à complexidade e à grande quantidade de energia envolvida, cientistas e engenheiros continuam a pesquisar procedimentos alternativos de enriquecimento. ATKINS, P.; Considerando a diferença de massa mencionada entre os dois isótopos, que tipo de procedimento alternativo ao da efusão pode ser empregado para tal finalidade?",
+      "alternatives": {
+        "A": "Peneiração.",
+        "B": "Centrifugação.",
+        "C": "Extração por solvente.",
+        "D": "Destilação fracionada.",
+        "E": "Separação magnética."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q08",
+      "number": 8,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q08",
+          "blocks": [
+            {
+              "id": "img_q08_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-3-1.png",
+              "alt": "Imagem da questão 8"
+            },
+            {
+              "id": "img_q08_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-3-2.png",
+              "alt": "Imagem da questão 8"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "A Agência Nacional de Vigilância Sanitária (Anvisa) aprovou um produto de terapia gênica no país, indicado para o tratamento da distrofia hereditária da retina. O procedimento é recomendado para crianças acima de 12 meses e adultos com perda de visão causada pela mutação do gene humano RPE65. O produto, elaborado por engenharia genética, é composto por um vírus, no qual foi inserida uma cópia do gene normal humano RPE65 para corrigir o funcionamento das células da retina. ANVISA. 2021 (adaptado). O sucesso dessa terapia advém do fato de que o produto favorecerá a",
+      "alternatives": {
+        "A": "correção do código genético para a tradução da proteína.",
+        "B": "alteração do RNA ribossômico ligado à síntese da proteína.",
+        "C": "produção de mutações benéficas para a correção do problema.",
+        "D": "liberação imediata da proteína normal na região ocular humana.",
+        "E": "expressão do gene responsável pela produção da enzima normal.![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-3-1.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-3-2.png) 4 CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q09",
+      "number": 9,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "A extinção de espécies é uma ameaça real que afeta diversas regiões do país. A introdução de espécies exóticas pode ser considerada um fator maximizador desse processo. A jaqueira ( _Artocarpus heterophyllus_) _,_ por exemplo, é uma árvore originária da Índia e de regiões do Sudeste Asiático que foi introduzida ainda na era colonial e se aclimatou muito bem em praticamente todo o território nacional. Casos como o dessa árvore podem provocar a redução da biodiversidade, pois elas",
+      "alternatives": {
+        "A": "ocupam áreas de vegetação nativa e substituem parcialmente a flora original.",
+        "B": "estimulam a competição por seus frutos entre animais típicos da região e eliminam as espécies perdedoras.",
+        "C": "alteram os nichos e aumentam o número de possibilidades de relações entre os seres vivos daquele ambiente.",
+        "D": "apresentam alta taxa de reprodução e se mantêm com um número de indivíduos superior à capacidade suporte do ambiente.",
+        "E": "diminuem a relação de competição entre os polinizadores e facilitam a ação de dispersores de sementes de espécies nativas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q11",
+      "number": 11,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "O etanol é um combustível produzido a partir da fermentação da sacarose presente no caldo de cana-de-açúcar. Um dos fatores que afeta a produção desse álcool é o grau de deterioração da sacarose, que se inicia após o corte, por causa da ação de microrganismos. Foram analisadas cinco amostras de diferentes tipos de cana-de-açúcar e cada uma recebeu um código de identificação. No quadro são apresentados os dados de concentração de sacarose e de microrganismos presentes nessas amostras. |Col1|Amostra de cana-de-açúcar|Col3|Col4|Col5|Col6| |---|---|---|---|---|---| ||RB72| RB84| RB92| SP79| SP80| |Concentração inicial<br>de sacarose (g L-1)|<br>13,0|<br>18,0|<br>16,0|<br>14,0|<br>17,0| |Concentração de<br>microrganismos<br>(mg L-1)|0,7|0,8|0,6|0,5|0,9| Pretende-se escolher o tipo de cana-de-açúcar que conterá o maior teor de sacarose 10 horas após o corte e que, consequentemente, produzirá a maior quantidade de etanol por fermentação. Considere que existe uma redução de aproximadamente 50% da concentração de sacarose nesse tempo, para cada 1,0 mg L [−][1] de microrganismos presentes na cana-de-açúcar. 2012 (adaptado). Qual tipo de cana-de-açúcar deve ser escolhido?",
+      "alternatives": {
+        "A": "RB72",
+        "B": "RB84",
+        "C": "RB92",
+        "D": "SP79",
+        "E": "SP80"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q14",
+      "number": 14,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Diversas substâncias são empregadas com a intenção de incrementar o desempenho esportivo de atletas de alto nível. O chamado _doping_ sanguíneo, por exemplo, pela utilização da eritropoietina, é proibido pelas principais federações de esportes no mundo. A eritropoietina é um hormônio produzido pelos rins e fígado e sua principal ação é regular o processo de eritropoiese. Seu uso administrado intravenosamente em quantidades superiores àquelas presentes naturalmente no organismo permite que o indivíduo aumente a sua capacidade de realização de exercícios físicos. Esse tipo de _doping_ está diretamente relacionado ao aumento da",
+      "alternatives": {
+        "A": "frequência cardíaca.",
+        "B": "capacidade pulmonar.",
+        "C": "massa muscular do indivíduo.",
+        "D": "atividade anaeróbica da musculatura.",
+        "E": "taxa de transporte de oxigênio pelo sangue."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q17",
+      "number": 17,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q17",
+          "blocks": [
+            {
+              "id": "img_q17_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-7-2.png",
+              "alt": "Imagem da questão 17"
+            },
+            {
+              "id": "img_q17_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-7-3.png",
+              "alt": "Imagem da questão 17"
+            },
+            {
+              "id": "img_q17_3",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-7-7.png",
+              "alt": "Imagem da questão 17"
+            },
+            {
+              "id": "img_q17_4",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-7-11.png",
+              "alt": "Imagem da questão 17"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "A biomassa celulósica pode ser utilizada para a produção de etanol de segunda geração. Entretanto, é necessário que os polissacarídeos sejam convertidos em mono e dissacarídeos, processo que pode ser conduzido em meio ácido, conforme mostra o esquema: H+![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-7-2.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-7-3.png) O![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-7-7.png) + O H H O![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-7-11.png) H O H+ O OH OGEDA, T. L.; PETRI, D. F. S. [...] Química Nova, n. 7, 2010 (adaptado). Nessa conversão de polissacarídeos, a função do íon H [+] é",
+      "alternatives": {
+        "A": "dissolver os reagentes.",
+        "B": "deslocar o equilíbrio químico.",
+        "C": "aumentar a velocidade da reação.",
+        "D": "mudar a constante de equilíbrio da reação.",
+        "E": "formar ligações de hidrogênio com o polissacarídeo."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q18",
+      "number": 18,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "O ácido tartárico é o principal ácido do vinho e está diretamente relacionado com sua qualidade. Na avaliação de um vinho branco em produção, uma analista neutralizou uma alíquota de 25,0 mL do vinho com NaOH a 0,10 mol L [−1], consumindo um volume igual a 8,0 mL dessa base. A reação para esse processo de titulação é representada pela equação química:  NaO   HO   OH   Ácido tartárico  (massa molar: 150 g mol  1) A concentração de ácido tartárico no vinho analisado é mais próxima de:",
+      "alternatives": {
+        "A": "1,8 g L [−1]",
+        "B": "2,4 g L [−1]",
+        "C": "3,6 g L [−1]",
+        "D": "4,8 g L [−1]",
+        "E": "9,6 g L [−1] 8 CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q19",
+      "number": 19,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "O elemento iodo (I) tem função biológica e é acumulado na tireoide. Nos acidentes nucleares de Chernobyl e Fukushima, ocorreu a liberação para a atmosfera do radioisótopo 131I, responsável por enfermidades nas pessoas que foram expostas a ele. O decaimento de uma massa de 12 microgramas do isótopo [131] I foi monitorado por 14 dias, conforme o quadro. |Tempo (dia)|Massa residual de 131I (µg)| |---|---| |0|12,0| |2|10,1| |4|8,5| |5|7,8| |6|7,2| |8|6,0| |14|3,6| Após o período de 40 dias, a massa residual desse isótopo é mais próxima de",
+      "alternatives": {
+        "A": "2,4 µg.",
+        "B": "1,5 µg.",
+        "C": "0,8 µg.",
+        "D": "0,4 µg.",
+        "E": "0,2 µg."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q20",
+      "number": 20,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Desde a proposição da teoria de seleção natural por Darwin, os seres vivos nunca mais foram olhados da mesma forma. No que diz respeito à reprodução de anfíbios anuros, os cientistas já descreveram diferentes padrões reprodutivos, como os exemplificados a seguir: Espécie 1 – As fêmeas produzem cerca de 5 000 gametas, que são fecundados na água, em lagoas temporárias de estação chuvosa. Todo o desenvolvimento embrionário, do ovo à metamorfose, ocorre, nesse ambiente, independente dos pais. Espécie 2 – As fêmeas produzem aproximadamente 200 gametas, que são depositados em poças próximas a corpos-d’água. Os embriões são vigiados pelos machos durante boa parte do seu desenvolvimento. Espécie 3 – As fêmeas produzem por volta de 20 gametas, que são fecundados sobre a superfície das folhas de plantas cujos galhos estão dispostos acima da superfície de corpos-d’água e aí se desenvolvem até a eclosão. Espécie 4 – As fêmeas produzem poucos gametas que, quando fecundados, são “abocanhados” pelos machos. Os embriões se desenvolvem no interior do saco vocal do macho até a metamorfose, quando saem através da boca do pai. 020325AZ9 Os padrões descritos evidenciam que",
+      "alternatives": {
+        "A": "as fêmeas influenciam o comportamento dos machos.",
+        "B": "- cuidado parental é necessário para o desenvolvimento.",
+        "C": "- grau de evolução determina o comportamento reprodutivo.",
+        "D": "- sucesso reprodutivo pode ser garantido por estratégias diferentes.",
+        "E": "- ambiente induz modificação na produção do número de gametas femininos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q23",
+      "number": 23,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "As células da epiderme da folha da _Tradescantia_ _pallida purpurea_, uma herbácea popularmente conhecida como trapoeraba-roxa, contém um vacúolo onde se encontra um pigmento que dá a coloração arroxeada a esse tecido. Em um experimento, um corte da epiderme de uma folha da trapoeraba-roxa foi imerso em ambiente hipotônico e, logo em seguida, foi colocado em uma lâmina e observado em microscópio óptico. Durante a observação desse corte, foi possível identificar o(a)",
+      "alternatives": {
+        "A": "acúmulo do solvente com fragmentação da organela.",
+        "B": "rompimento da membrana celular com liberação do citosol.",
+        "C": "aumento do vacúolo com diluição do pigmento no seu interior.",
+        "D": "quebra da parede celular com extravasamento do pigmento.",
+        "E": "murchamento da célula com expulsão do pigmento do vacúolo."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q24",
+      "number": 24,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "A variação da incidência de radiação solar sobre a superfície da Terra resulta em uma variação de temperatura ao longo de um dia denominada amplitude térmica. Edificações e pavimentações realizadas nas áreas urbanas contribuem para alterar as amplitudes térmicas dessas regiões, em comparação com regiões que mantêm suas características naturais, com presença de vegetação e água, já que o calor específico do concreto é inferior ao da água. Assim, parte da avaliação do impacto ambiental que a presença de concreto proporciona às áreas urbanas consiste em considerar a substituição da área concretada por um mesmo volume de água e comparar as variações de temperatura devido à absorção da radiação solar nas duas situações (concretada e alagada). Desprezando os efeitos da evaporação e considerando que toda a radiação é absorvida, essa avaliação pode ser realizada com os seguintes dados: massa de 24 kg. Além disso, ele aproxima o movimento do balanço para o movimento circular uniforme, considera que a m aceleração da gravidade é igual a 10 s2 e despreza aceleração da gravidade é igual a forças dissipativas. 10 s2 e despreza Qual é a tensão de ruptura da corda escolhida?",
+      "alternatives": {
+        "A": "120 N",
+        "B": "300 N",
+        "C": "360 N",
+        "D": "450 N",
+        "E": "900 N"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q25",
+      "number": 25,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "A nanotecnologia é responsável pelo aprimoramento de diversos materiais, incluindo os que são impactados com a presença de poluentes e da umidade na atmosfera, causadores de corrosão. O processo de corrosão é espontâneo e provoca a deterioração de metais como - ferro, que, em presença de oxigênio e água, sofre oxidação, conforme ilustra a equação química: 4 Fe (s) + 2 H2O (l) + 3 O2 (g) → 2 Fe2O3⋅H2O (s) Uma forma de garantir a durabilidade da estrutura metálica e a sua resistência à umidade consiste na deposição de filmes finos nanocerâmicos à base de zircônia (ZrO2) e alumina (Al2O3) sobre a superfície do objeto que se deseja proteger. CLEMENTE, G. A. B. F. et al. O uso de materiais híbridos ou nanocompósitos como revestimentos anticorrosivos do aço. Química Nova, n. 9, 2021 (adaptado). Essa nanotecnologia aplicada na proteção contra a corrosão se baseia no(a)",
+      "alternatives": {
+        "A": "1,0.",
+        "B": "2,1.",
+        "C": "2,5.",
+        "D": "5,3.",
+        "E": "13,1. potencial de redução. 10 CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q27",
+      "number": 27,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Em 2002, foi publicado um artigo científico que relacionava alterações na produção de hormônios sexuais de sapos machos expostos à atrazina, um herbicida, com - desenvolvimento anômalo de seus caracteres sexuais primários e secundários. Entre os animais sujeitos à contaminação, observaram-se casos de hermafroditismo e desmasculinização da laringe. O estudo em questão comparou a concentração de um hormônio específico no sangue de machos expostos ao agrotóxico com a de outros machos e fêmeas que não o foram (controles). Os resultados podem ser vistos na figura. 6 |L<br>Vazão<br>\u001a<br>min\u001b|T( C)|Col3|Col4| |---|---|---|---| |Vazão<br>L<br>min<br> <br> <br> <br>\u001b\u001a|Morno|Quente|Superquente| |3|10|20|30| |6|5|10|15| Utiliza-se um disjuntor para proteger o circuito dessa ducha contra sobrecargas elétricas em qualquer nível de aquecimento. Por padrão, o disjuntor é especificado pela corrente nominal igual ao múltiplo de 5 A imediatamente superior à corrente máxima do circuito. Considere que a ducha deve ser ligada em 220 V e que toda a energia é dissipada através da resistência do chuveiro e convertida em energia térmica transferida para a água, que apresenta |Col1|Col2| |---|---| ||| ||| ||| ||| ||| controle J calor específico de 4,2 g C �� e densidade de 1 000 [g] L [.] O disjuntor adequado para a proteção dessa ducha é especificado por:",
+      "alternatives": {
+        "A": "60 A",
+        "B": "30 A",
+        "C": "20 A",
+        "D": "10 A",
+        "E": "5 A"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q29",
+      "number": 29,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Uma lanterna funciona com três pilhas de resistência interna igual a 0,5 Ω cada, ligadas em série. Quando posicionadas corretamente, devem acender a lâmpada incandescente de especificações 4,5 W e 4,5 V. Cada pilha na posição correta gera uma f.e.m. (força eletromotriz) de 1,5 V. Uma pessoa, ao trocar as pilhas da lanterna, comete o equívoco de inverter a posição de uma das pilhas. Considere que as pilhas mantêm contato independentemente da posição. Com esse equívoco, qual é a intensidade de corrente que passa pela lâmpada ao se ligar a lanterna?",
+      "alternatives": {
+        "A": "0,25 A",
+        "B": "0,33 A",
+        "C": "0,75 A",
+        "D": "1,00 A",
+        "E": "1,33 A"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q30",
+      "number": 30,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Em uma aula prática de bioquímica, para medir a atividade catalítica da enzima catalase, foram realizados seis ensaios independentes, nas mesmas condições, variando-se apenas a temperatura. A catalase decompõe o peróxido de hidrogênio (H2O2), produzindo água e oxigênio. Os resultados dos ensaios estão apresentados no quadro. |Ensaio|Temperatura (°C)|Resultado| |---|---|---| |Ensaio<br>|Temperatura(°C)<br>|Decomposição de H2O2 <br>10 12<br> <br> <br> <br> <br>\u001b<br>\u001a<br>\u0019<br>mol<br>min<br>| |1<br>|10<br>| 8,0<br>| |2<br>|15<br>|<br>10,5<br>| |3<br>|20<br>| 9,5<br>| |4<br>|25<br>|<br> 5,0<br>| |5<br>|30<br>|<br> 3,6<br>| |6|35|<br> 3,1| Os diferentes resultados dos ensaios justificam-se pelo(a)",
+      "alternatives": {
+        "A": "variação do pH do meio.",
+        "B": "aumento da energia de ativação.",
+        "C": "consumo da enzima durante o ensaio.",
+        "D": "diminuição da concentração do substrato.",
+        "E": "modificação da estrutura tridimensional da enzima."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q31",
+      "number": 31,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Antimicrobianos são substâncias naturais ou sintéticas que têm capacidade de matar ou inibir o crescimento de microrganismos. A tabela apresenta uma lista de antimicrobianos hipotéticos, bem como suas ações e efeitos sobre - metabolismo microbiano. |Antimicrobiano|Ação|Efeito| |---|---|---| |1|Une-se aos ribossomos|Impede a síntese proteica| |2|Une-se aos microtúbulos|Impede a segregação das cromátides| |3|Une-se aos fosfolipídeos da membrana plasmática|Reduz a permeabilidade da membrana plasmática| |4|Interfere na síntese de timina|Inibe a síntese de DNA| |5|Interfere na síntese de uracila|Impede a síntese de RNA| Qual dos antimicrobianos deve ser utilizado para curar uma infecção causada por um fungo sem afetar as bactérias da microbiota normal do organismo?",
+      "alternatives": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5 12 CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q32",
+      "number": 32,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "O veneno da cascavel pode causar hemorragia com risco de morte a quem é picado pela serpente. No entanto, pesquisadores do Brasil e da Bélgica desenvolveram uma molécula de interesse farmacêutico, a PEG-collineína-1, a partir de uma proteína encontrada no veneno dessa cobra, capaz de modular a coagulação sanguínea. Embora a técnica não seja nova, foi a primeira vez que - método foi usado a partir de uma toxina animal na sua forma recombinante, ou seja, produzida em laboratório por um fungo geneticamente modificado. JULIà Esse novo medicamento apresenta potencial aplicação para",
+      "alternatives": {
+        "A": "impedir a formação de trombos, típicos em alguns casos de acidente vascular cerebral.",
+        "B": "tratar consequências da anemia profunda, em razão da perda de grande volume de sangue.",
+        "C": "evitar a manifestação de urticárias, comumente relacionadas a processos alérgicos.",
+        "D": "reduzir o inchaço dos linfonodos, parte da resposta imunitária de diferentes infecções.",
+        "E": "regular a oscilação da pressão arterial, característica dos quadros de hipertensão."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q34",
+      "number": 34,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Durante o ano de 2020, impulsionado pela necessidade de respostas rápidas e eficientes para desinfectar ambientes de possíveis contaminações com o SARS-CoV-2, causador da covid-19, diversas alternativas foram buscadas para os procedimentos de descontaminação de materiais e ambientes. Entre elas, o uso de ozônio em meio aquoso como agente sanitizante para pulverização em humanos e equipamentos de proteção em câmaras ou túneis, higienização de automóveis e de ambientes fechados e descontaminação de trajes. No entanto, pouca atenção foi dada à toxicidade do ozônio, à formação de subprodutos, ao nível de concentração segura e às precauções necessárias. LIMA, M. J. A.; FELIX, E. P.; CARDOSO, A. A. Aplicações e implicações do ozônio na indústria, ambiente e saúde. Química Nova, n. 9, 2021 (adaptado). O grande risco envolvido no emprego indiscriminado dessa substância deve-se à sua ação química como",
+      "alternatives": {
+        "A": "catalisador.",
+        "B": "oxidante.",
+        "C": "redutor.",
+        "D": "ácido.",
+        "E": "base."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q36",
+      "number": 36,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "A água bruta coletada de mananciais apresenta alto índice de sólidos suspensos, o que a deixa com um aspecto turvo. Para se obter uma água límpida e potável, ela deve passar por um processo de purificação numa estação de tratamento de água. Nesse processo, as principais etapas são, nesta ordem: coagulação, decantação, filtração, desinfecção e fluoretação. Qual é a etapa de retirada de grande parte desses sólidos?",
+      "alternatives": {
+        "A": "Coagulação.",
+        "B": "Decantação.",
+        "C": "Filtração.",
+        "D": "Desinfecção.",
+        "E": "Fluoretação."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q37",
+      "number": 37,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "Os ursos, por não apresentarem uma hibernação verdadeira, acordam por causa da presença de termogenina, uma proteína mitocondrial que impede a chegada dos prótons até a ATP sintetase, gerando calor. Esse calor é importante para aquecer o organismo, permitindo seu despertar. SADAVA, D. et al. Vida: a ciência da biologia. Porto Alegre: Artmed, 2009 (adaptado). Em qual etapa do metabolismo energético celular a termogenina interfere?",
+      "alternatives": {
+        "A": "Glicólise.",
+        "B": "Fermentação lática.",
+        "C": "Ciclo do ácido cítrico.",
+        "D": "Oxidação do piruvato.",
+        "E": "Fosforilação oxidativa."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q38",
+      "number": 38,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q38",
+          "blocks": [
+            {
+              "id": "img_q38_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-13-0.png",
+              "alt": "Imagem da questão 38"
+            },
+            {
+              "id": "img_q38_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-13-1.png",
+              "alt": "Imagem da questão 38"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "A fim de classificar as melhores rotas em um aplicativo de trânsito, um pesquisador propõe um modelo com base em circuitos elétricos. Nesse modelo, a corrente representa o número de carros que passam por um ponto da pista no intervalo de 1 s. A diferença de potencial (d.d.p.) corresponde à quantidade de energia por carro necessária para o deslocamento de 1 m. De forma análoga à lei de Ohm, cada via é classificada pela sua resistência, sendo a de maior resistência a mais congestionada. O aplicativo mostra as rotas em ordem crescente, ou seja, da rota de menor para a de maior resistência. Como teste para o sistema, são utilizadas três possíveis vias para uma viagem de A até B, com os valores de d.d.p. e corrente conforme a tabela.![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-13-0.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-13-1.png)",
+      "alternatives": {
+        "A": "N2",
+        "B": "NH3",
+        "C": "NH4+",
+        "D": "NO2−",
+        "E": "NO3−"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q39",
+      "number": 39,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "No processo de captação da luz pelo olho para a formação de imagens estão envolvidas duas estruturas celulares: os cones e os bastonetes. Os cones são sensíveis à energia dos fótons, e os bastonetes, à quantidade de fótons incidentes. A energia dos fótons que compõem os raios luminosos está associada à sua frequência, e a intensidade, ao número de fótons incidentes. Um animal que tem bastonetes mais sensíveis irá",
+      "alternatives": {
+        "A": "1, 2, 3.",
+        "B": "1, 3, 2.",
+        "C": "2, 1, 3.",
+        "D": "3, 1, 2.",
+        "E": "3, 2, 1."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q41",
+      "number": 41,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q41",
+          "blocks": [
+            {
+              "id": "img_q41_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-14-0.png",
+              "alt": "Imagem da questão 41"
+            },
+            {
+              "id": "img_q41_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-14-1.png",
+              "alt": "Imagem da questão 41"
+            },
+            {
+              "id": "img_q41_3",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-14-2.png",
+              "alt": "Imagem da questão 41"
+            },
+            {
+              "id": "img_q41_4",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-14-3.png",
+              "alt": "Imagem da questão 41"
+            },
+            {
+              "id": "img_q41_5",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-14-4.png",
+              "alt": "Imagem da questão 41"
+            },
+            {
+              "id": "img_q41_6",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-14-5.png",
+              "alt": "Imagem da questão 41"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "De modo geral, a palavra “aromático” invoca associações agradáveis, como cheiro de café fresco ou de um pão doce de canela. Associações similares ocorriam no passado da história da química orgânica, quando os compostos ditos “aromáticos” apresentavam um odor agradável e foram isolados de óleos naturais. À medida que as estruturas desses compostos eram elucidadas, foi se descobrindo que vários deles continham uma unidade estrutural específica. Os compostos aromáticos que continham essa unidade estrutural tornaram-se parte de uma grande família, muito mais com base em suas estruturas eletrônicas do que nos seus cheiros, como as substâncias a seguir, encontradas em óleos vegetais. O CH3 H3C O CH3![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-14-0.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-14-1.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-14-2.png) Benzaldeído Salicilato de metila Anetol (no óleo de amêndoas) (no óleo de gaultéria) (no óleo de anis) O CH3 CH2 H![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-14-3.png) HO H3C![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-14-4.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-14-5.png) Vanilina Eugenol Cinamaldeído (no óleo de baunilha) (no óleo de cravos) (no óleo de canela) SOLOMONS, T. W. G.; FRYHLE, C. B. Química orgânica. Rio de Janeiro: LTC, 2009 (adaptado). A característica estrutural dessa família de compostos é a presença de",
+      "alternatives": {
+        "A": "ramificações.",
+        "B": "insaturações.",
+        "C": "anel benzênico.",
+        "D": "átomos de oxigênio.",
+        "E": "carbonos assimétricos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q43",
+      "number": 43,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "O protozoário _Trypanosoma cruzi_, causador da doença de Chagas, pode ser a nova arma da medicina contra o câncer. Pesquisadores brasileiros conseguiram criar uma vacina contra a doença usando uma variação do protozoário incapaz de desencadear a patologia (não patogênico). Para isso, realizaram uma modificação genética criando um _T. cruzi_ capaz de produzir também moléculas fabricadas pelas células tumorais. Quando - organismo inicia o combate ao protozoário, entra em contato também com a molécula tumoral, que passa a ser vista também pelo sistema imune como um indicador de células do protozoário. Depois de induzidas as defesas, estas passam a destruir todas as células com a molécula tumoral, como se lutassem apenas contra o protozoário _._ 2012 (adaptado). Qual o mecanismo utilizado no experimento para enganar as células de defesa, fazendo com que ataquem o tumor?",
+      "alternatives": {
+        "A": "Autoimunidade.",
+        "B": "Hipersensibilidade.",
+        "C": "Ativação da resposta inata.",
+        "D": "Apresentação de antígeno específico.",
+        "E": "Desencadeamento de processo anti-inflamatório."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q44",
+      "number": 44,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "HISTORIA",
+      "supportingMaterials": [],
+      "statement": "O sinal sonoro oriundo da queda de um grande bloco de gelo de uma geleira é detectado por dois dispositivos situados em um barco, sendo que o detector A está imerso em água e o B, na proa da embarcação. Sabe-se que a velocidade do som na água é de 1 540 [m] s A distância L, em metro, entre o barco e a geleira é mais próxima de",
+      "alternatives": {
+        "A": "339 000.",
+        "B": "78 900.",
+        "C": "14 400.",
+        "D": "5 240.",
+        "E": "100."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q47",
+      "number": 47,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q47",
+          "blocks": [
+            {
+              "id": "img_q47_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-16-0.png",
+              "alt": "Imagem da questão 47"
+            },
+            {
+              "id": "img_q47_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-16-1.png",
+              "alt": "Imagem da questão 47"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O gráfico apresenta os totais de receitas e despesas de uma empresa, expressos em milhão de reais, no decorrer dos meses de um determinado ano. A empresa obtém lucro quando a diferença entre receita e despesa é positiva e tem prejuízo quando essa diferença é negativa. 9 8 7 6 5 4 3 2 1![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-16-0.png) Receitas Despesas![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-16-1.png) _t_ (h) 0 as 10 horas de funcionamento?",
+      "alternatives": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q48",
+      "number": 48,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "A _World Series_ é a decisão do campeonato norte-americano de beisebol. Os dois times que chegam a essa fase jogam, entre si, até sete partidas. O primeiro desses times que completar quatro vitórias é declarado campeão. Considere que, em todas as partidas, a probabilidade Qual é a mediana, em milhão de reais, dos valores dos lucros apurados pela empresa nesse ano?",
+      "alternatives": {
+        "A": "[35] 64",
+        "B": "[40] 64",
+        "C": "[42] 64",
+        "D": "[44] 64",
+        "E": "5,5 de qualquer um dos dois times vencer é sempre [1] 2 [.] Qual é a probabilidade de o time campeão ser aquele que venceu a primeira partida da _World Series_?"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q49",
+      "number": 49,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Um casal está reformando a cozinha de casa e decidiu comprar um refrigerador novo. Observando a planta da nova cozinha, desenhada na escala de 1: 50, notaram que o espaço destinado ao refrigerador tinha 3,8 cm de altura e 1,6 cm de largura. Eles sabem que os fabricantes de refrigeradores indicam que, para um bom funcionamento e fácil manejo na limpeza, esses eletrodomésticos devem ser colocados em espaços que permitam uma distância de, pelo menos, 10 cm de outros móveis ou paredes, tanto na parte superior quanto nas laterais. O casal comprou um refrigerador que caberia no local a ele destinado na nova cozinha, seguindo as instruções do fabricante. Esse refrigerador tem altura e largura máximas, em metro, respectivamente, iguais a",
+      "alternatives": {
+        "A": "1,80 e 0,60.",
+        "B": "1,80 e 0,70.",
+        "C": "1,90 e 0,80.",
+        "D": "2,00 e 0,90.",
+        "E": "2,00 e 1,00."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q50",
+      "number": 50,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Foram convidadas 32 equipes para um torneio de futebol, que foram divididas em 8 grupos com 4 equipes, sendo que, dentro de um grupo, cada equipe disputa uma única partida contra cada uma das demais equipes de seu grupo. A primeira e a segunda colocadas de cada grupo seguem para realizar as 8 partidas da próxima fase do torneio, chamada oitavas de final. Os vencedores das partidas das oitavas de final seguem para jogar as 4 partidas das quartas de final. Os vencedores das quartas de final disputam as 2 partidas das semifinais, e os vencedores avançam para a grande final, que define a campeã do torneio. Pelas regras do torneio, cada equipe deve ter um período de descanso de, no mínimo, 3 dias entre dois jogos por ela disputados, ou seja, se um time disputar uma partida, por exemplo, num domingo, só poderá disputar a partida seguinte a partir da quinta-feira da mesma semana. O número mínimo de dias necessários para a realização desse torneio é",
+      "alternatives": {
+        "A": "22.",
+        "B": "25.",
+        "C": "28.",
+        "D": "48.",
+        "E": "64. |03|48|12|27| |---|---|---|---| |49|11|22|05| |29|50|19|45| |33|23|38|07|"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q52",
+      "number": 52,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma montadora de automóveis divulgou que oferta a seus clientes mais de 1 000 configurações diferentes de carro, variando o modelo, a motorização, os opcionais e a cor do veículo. Atualmente, ela oferece 7 modelos de carros com 2 tipos de motores: 1.0 e 1.6. Já em relação aos opcionais, existem 3 escolhas possíveis: central multimídia, rodas de liga leve e bancos de couro, podendo - cliente optar por incluir um, dois, três ou nenhum dos opcionais disponíveis. Para ser fiel à divulgação feita, a quantidade mínima de cores que a montadora deverá disponibilizar a seus clientes é",
+      "alternatives": {
+        "A": "8.",
+        "B": "9.",
+        "C": "11.",
+        "D": "18.",
+        "E": "24."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q55",
+      "number": 55,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "O pacote básico de um jogo para smartphone, que é vendido a R$ 50,00, contém 2 000 gemas e 100 000 moedas de ouro, que são itens utilizáveis nesse jogo. A empresa que comercializa esse jogo decidiu criar um pacote especial que será vendido a R$ 100,00 e que se diferenciará do pacote básico por apresentar maiores quantidades de gemas e moedas de ouro. Para estimular as vendas desse novo pacote, a empresa decidiu inserir nele 6 000 gemas a mais, em relação ao que o cliente teria caso optasse por comprar, com a mesma quantia, dois pacotes básicos. A quantidade de moedas de ouro que a empresa deverá inserir ao pacote especial, para que seja mantida a mesma proporção existente entre as quantidades de gemas e de moedas de ouro contidas no pacote básico, é",
+      "alternatives": {
+        "A": "50 000.",
+        "B": "100 000.",
+        "C": "200 000.",
+        "D": "300 000.",
+        "E": "400 000."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q56",
+      "number": 56,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Um parque tem dois circuitos de tamanhos diferentes para corridas. Um corredor treina nesse parque e, no primeiro dia, inicia seu treino percorrendo 3 voltas em torno do circuito maior e 2 voltas em torno do menor, perfazendo um total de 1 800 m. Em seguida, dando continuidade a seu treino, corre mais 2 voltas em torno do circuito maior e 1 volta em torno do menor, percorrendo mais 1 100 m. No segundo dia, ele pretende percorrer 5 000 m nos circuitos do parque, fazendo um número inteiro de voltas em torno deles e de modo que o número de voltas seja o maior possível. A soma do número de voltas em torno dos dois circuitos, no segundo dia, será",
+      "alternatives": {
+        "A": "10.",
+        "B": "13.",
+        "C": "14.",
+        "D": "15.",
+        "E": "16."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q58",
+      "number": 58,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "A luminosidade _L_ de uma estrela está relacionada com - raio _R_ e com a temperatura _T_ dessa estrela segundo a Lei de Stefan-Boltzmann: _L_ = _c_ ⋅ _R_ [2 ] ⋅ _T_ [4], em que _c_ é uma constante igual para todas as estrelas. 2013 (adaptado). Considere duas estrelas _E_ e _F_, sendo que a estrela _E_ tem metade do raio da estrela _F_ e o dobro da temperatura de _F_. Indique por _LE_ e _LF_ suas respectivas luminosidades. A relação entre as luminosidades dessas duas estrelas é dada por",
+      "alternatives": {
+        "A": "_LE_ = _LF_ 2",
+        "B": "_LE_ = _LF_ 4",
+        "C": "_LE_ = _LF_",
+        "D": "_LE_ = 4 _LF_",
+        "E": "_LE_ = 8 _LF_"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q59",
+      "number": 59,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma das informações que pode auxiliar no dimensionamento do número de pediatras que devem atender em uma Unidade Básica de Saúde (UBS) é - número que representa a mediana da quantidade de crianças por família existente na região sob sua responsabilidade. O quadro mostra a distribuição das frequências do número de crianças por família na região de responsabilidade de uma UBS. |Número de crianças<br>por família|Frequência| |---|---| |0|100| |1|400| |2|200| |3|150| |4|100| |5|50| O número que representa a mediana da quantidade de crianças por família nessa região é",
+      "alternatives": {
+        "A": "1,0.",
+        "B": "1,5.",
+        "C": "1,9.",
+        "D": "2,1.",
+        "E": "2,5."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q61",
+      "number": 61,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Um médico faz o acompanhamento clínico de um grupo de pessoas que realizam atividades físicas diariamente. Ele observou que a perda média de massa dessas pessoas para cada hora de atividade física era de 1,5 kg. Sabendo que a massa de 1 L de água é de 1 kg, ele recomendou que ingerissem, ao longo das 3 horas seguintes ao final da atividade, uma quantidade total de água correspondente a 40% a mais do que a massa perdida na atividade física, para evitar desidratação. Seguindo a recomendação médica, uma dessas pessoas ingeriu, certo dia, um total de 1,7 L de água após terminar seus exercícios físicos. Para que a recomendação médica tenha efetivamente sido respeitada, a atividade física dessa pessoa, nesse dia, durou",
+      "alternatives": {
+        "A": "30 minutos ou menos.",
+        "B": "mais de 35 e menos de 45 minutos.",
+        "C": "mais de 45 e menos de 55 minutos.",
+        "D": "mais de 60 e menos de 70 minutos.",
+        "E": "70 minutos ou mais."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q63",
+      "number": 63,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma empresa produz e vende um tipo de chocolate, maciço, em formato de cone circular reto com as medidas do diâmetro da base e da altura iguais a 8 cm e 10 cm, respectivamente, como apresenta a figura. Devido a um aumento de preço dos ingredientes utilizados na produção desse chocolate, a empresa decide produzir esse mesmo tipo de chocolate com um volume 19% menor, no mesmo formato de cone circular reto com altura de 10 cm. Para isso, a empresa produzirá esses novos chocolates com medida do raio da base, em centímetro, igual a",
+      "alternatives": {
+        "A": "1,52.",
+        "B": "3,24.",
+        "C": "3,60.",
+        "D": "6,48.",
+        "E": "7,20."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q64",
+      "number": 64,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Em janeiro de 2013, foram declaradas 1 794 272 admissões e 1 765 372 desligamentos no Brasil, ou seja, foram criadas 28 900 vagas de emprego, segundo dados do Cadastro Geral de Empregados e Desempregados (Caged), divulgados pelo Ministério do Trabalho e Emprego (MTE). Segundo o Caged, o número de vagas criadas em janeiro de 2013 sofreu uma queda de 75%, quando comparado com o mesmo período de 2012. 2013 (adaptado). De acordo com as informações dadas, o número de vagas criadas em janeiro de 2012 foi",
+      "alternatives": {
+        "A": "16 514.",
+        "B": "86 700.",
+        "C": "115 600.",
+        "D": "441 343.",
+        "E": "448 568."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q67",
+      "number": 67,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "O funcionário de uma loja tem seu salário mensal formado por uma parcela fixa de 675 reais mais uma comissão que depende da quantidade de peças vendidas por ele no mês. O cálculo do valor dessa comissão é feito de acordo com estes critérios: - até a quinquagésima peça vendida, paga-se 5 reais por peça; - a partir da quinquagésima primeira peça vendida, o valor pago é de 7 reais por peça. Represente por _q_ a quantidade de peças vendidas no mês por esse funcionário, e por _S_ ( _q_) o seu salário mensal, em real, nesse mês. A expressão algébrica que descreve _S_ ( _q_) em função de _q_ é",
+      "alternatives": {
+        "A": "_S_ ( _q_) = 675 + 12 _q_",
+        "B": "_S_ ( _q_) = 325 + 12 _q_",
+        "C": "_S_ ( _q_) = 675 + 7 _q_ �625 - 5 _q_, se _q_ - 50",
+        "D": "_[S q]_ () - �925 - 7 _q_, se _q_ - 50 �625 - 5 _q_, se _q_ - 50",
+        "E": "_S q_ () - �575 - 7 _q_, se _q_ - 50"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q68",
+      "number": 68,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Ao analisar os dados de uma epidemia em uma cidade, peritos obtiveram um modelo que avalia a quantidade de pessoas infectadas a cada mês, ao longo de um ano. O modelo é dado por _p_ ( _t_) = − _t_ [2] + 10 _t_ + 24, sendo _t_ um número natural, variando de 1 a 12, que representa os meses do ano, e _p_ ( _t_) a quantidade de pessoas infectadas no mês _t_ do ano. Para tentar diminuir o número de infectados no próximo ano, a Secretaria Municipal de Saúde decidiu intensificar a propaganda oficial sobre os cuidados com a epidemia. Foram apresentadas cinco propostas (I, II, III, IV e V), com diferentes períodos de intensificação das propagandas: - I: 1 ≤ _t_ ≤ 2; - II: 3 ≤ _t_ ≤ 4; - III: 5 ≤ _t_ ≤ 6; - IV: 7 ≤ _t_ ≤ 9; - V: 10 ≤ _t_ ≤ 12. A sugestão dos peritos é que seja escolhida a proposta cujo período de intensificação da propaganda englobe o mês em que, segundo o modelo, há a maior quantidade de infectados. A sugestão foi aceita. A proposta escolhida foi a",
+      "alternatives": {
+        "A": "I.",
+        "B": "II.",
+        "C": "III.",
+        "D": "IV.",
+        "E": "V."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q70",
+      "number": 70,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Um robô, que tem um ímã em sua base, se desloca sobre a superfície externa de um cubo metálico, ao longo de segmentos de reta cujas extremidades são pontos médios de arestas e centros de faces. Ele inicia seu deslocamento no ponto _P_, centro da face superior do cubo, segue para o centro da próxima face, converte à esquerda e segue para o centro da face seguinte, converte à direita e continua sua movimentação, sempre alternando entre conversões à esquerda e à direita quando alcança o centro de uma face. O robô só termina sua movimentação quando retorna ao ponto _P_. A figura apresenta os deslocamentos iniciais desse robô. |Col1|P|Col3|Col4| |---|---|---|---| ||||| ||||| ||||| A projeção ortogonal do trajeto descrito por esse robô sobre o plano da base, após terminada sua movimentação, visualizada da posição em que se está enxergando esse cubo, é",
+      "alternatives": {
+        "E": "29 000",
+        "A": "5 000",
+        "B": "7 000",
+        "C": "11 000",
+        "D": "18 000"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q71",
+      "number": 71,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma empresa de engenharia projetou uma casa com a forma de um retângulo para um de seus clientes. Esse cliente solicitou a inclusão de uma varanda em forma de L. A figura apresenta a planta baixa desenhada pela empresa, já com a varanda incluída, cujas medidas, indicadas em centímetro, representam os valores das A medida real da área da varanda, em metro quadrado, é",
+      "alternatives": {
+        "A": "33,40.",
+        "B": "66,80.",
+        "C": "89,24.",
+        "D": "133,60.",
+        "E": "534,40."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q73",
+      "number": 73,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Em uma universidade, atuam professores que estão enquadrados funcionalmente pela sua maior titulação: mestre ou doutor. Nela há, atualmente, 60 mestres e 40 doutores. Os salários mensais dos professores mestres e dos doutores são, respectivamente, R$ 8 000,00 e R$ 12 000,00. A diretoria da instituição pretende proporcionar um aumento salarial diferenciado para o ano seguinte, de tal forma que o salário médio mensal dos professores dessa instituição não ultrapasse R$ 12 240,00. A universidade já estabeleceu que o aumento salarial será de 25% para os mestres e precisa ainda definir o percentual de reajuste para os doutores. Mantido o número atual de professores com suas atuais titulações, o aumento salarial, em porcentagem, a ser concedido aos doutores deverá ser de, no máximo,",
+      "alternatives": {
+        "A": "14,4.",
+        "B": "20,7.",
+        "C": "22,0.",
+        "D": "30,0.",
+        "E": "37,5."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q74",
+      "number": 74,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Um borrifador de atuação automática libera, a cada acionamento, uma mesma quantidade de inseticida. O recipiente desse produto, quando cheio, contém 360 mL de inseticida, que duram 60 dias se o borrifador permanecer ligado ininterruptamente e for acionado a cada 48 minutos. A quantidade de inseticida que é liberada a cada acionamento do borrifador, em mililitro, é",
+      "alternatives": {
+        "A": "0,125.",
+        "B": "0,200.",
+        "C": "4,800.",
+        "D": "6,000.",
+        "E": "12,000."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q76",
+      "number": 76,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q76",
+          "blocks": [
+            {
+              "id": "img_q76_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-26-0.png",
+              "alt": "Imagem da questão 76"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Em uma competição de velocidade, diz-se que há uma ultrapassagem quando um veículo que está atrás de outro passa à sua frente, com ambos se deslocando no mesmo sentido. Considere uma competição automobilística entre cinco carros em uma pista com 100 m de comprimento, onde todos largam no mesmo instante e da mesma linha. O gráfico mostra a variação da distância percorrida por cada veículo, em função do tempo, durante toda a competição. 100 0![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-26-0.png) Qual o número de ultrapassagens, após o início da competição, efetuadas pelo veículo que chegou em último lugar?",
+      "alternatives": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3",
+        "E": "4"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q78",
+      "number": 78,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma pessoa precisa se deslocar de automóvel do ponto _P_ para o ponto _Q_, indicados na figura, na qual as linhas verticais e horizontais simbolizam ruas. |Col1|Col2|Col3|Col4|Col5|Q| |---|---|---|---|---|---| ||||||| ||||||| ||||||| ||||||| ||_P_||||| Por causa do sentido de tráfego nessas ruas, o caminho poligonal destacado é a possibilidade mais curta de efetuar esse deslocamento. Para descrevê-lo, deve-se especificar qual o sentido a ser tomado em cada cruzamento de ruas, em relação à direção de deslocamento do automóvel, que se movimentará continuamente. Para isso, empregam-se as letras E, F e D para indicar “vire à esquerda”, “siga em frente” e “vire à direita”, respectivamente. A sequência de letras que descreve o caminho poligonal destacado é",
+      "alternatives": {
+        "A": "DDEFDDEEFFD.",
+        "B": "DFEFDDDEFFD.",
+        "C": "DFEFDDEEFFD.",
+        "D": "EFDFEEDDFFE.",
+        "E": "EFDFEEEDFFE."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q79",
+      "number": 79,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma loja comercializa cinco modelos de caixas-d’água (I, II, III, IV e V), todos em formato de cilindro reto de base circular. Os modelos II, III, IV e V têm as especificações de suas dimensões dadas em relação às dimensões do modelo I, cuja profundidade é _P_ e área da base é _A_ b, como segue: - modelo II: o dobro da profundidade e a metade da área da base do modelo I; - modelo III: o dobro da profundidade e a metade do raio da base do modelo I; - modelo IV: a metade da profundidade e o dobro da área da base do modelo I; - modelo V: a metade da profundidade e o dobro do raio da base do modelo I. Uma pessoa pretende comprar nessa loja o modelo de caixa-d’água que ofereça a maior capacidade volumétrica. O modelo escolhido deve ser o",
+      "alternatives": {
+        "A": "I.",
+        "B": "II.",
+        "C": "III.",
+        "D": "IV.",
+        "E": "V."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q80",
+      "number": 80,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q80",
+          "blocks": [
+            {
+              "id": "img_q80_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-27-0.png",
+              "alt": "Imagem da questão 80"
+            },
+            {
+              "id": "img_q80_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-27-1.png",
+              "alt": "Imagem da questão 80"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "No período de 2005 a 2013, o valor de venda dos imóveis em uma cidade apresentou alta, o que resultou no aumento dos aluguéis. Os gráficos apresentam a evolução desses valores, para um mesmo imóvel, no mercado imobiliário dessa cidade.![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-27-0.png)![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-27-1.png) A rentabilidade do aluguel de um imóvel é calculada pela razão entre o valor mensal de aluguel e o valor de mercado desse imóvel. Com base nos dados fornecidos, em que ano a rentabilidade do aluguel foi maior?",
+      "alternatives": {
+        "A": "2005",
+        "B": "2007",
+        "C": "2009",
+        "D": "2011",
+        "E": "2013 28 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q81",
+      "number": 81,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Nos cinco jogos finais da última temporada, com uma média de 18 pontos por jogo, um jogador foi eleito o melhor do campeonato de basquete. Na atual temporada, cinco jogadores têm a chance de igualar ou melhorar essa média. No quadro estão registradas as pontuações desses cinco jogadores nos quatro primeiros jogos das finais deste ano. |Jogadores|Jogo 1|Jogo 2|Jogo 3|Jogo 4| |---|---|---|---|---| |I|12|25|20|20| |II|12|12|27|20| |III|14|14|17|26| |IV|15|18|21|21| |V|22|15|23|15| O quinto e último jogo será realizado para decidir a equipe campeã e qual o melhor jogador da temporada. O jogador que precisa fazer a menor quantidade de pontos no quinto jogo, para igualar a média de pontos do melhor jogador da temporada passada, é o",
+      "alternatives": {
+        "A": "I.",
+        "B": "II.",
+        "C": "III.",
+        "D": "IV.",
+        "E": "V."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q83",
+      "number": 83,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma instituição de ensino superior ofereceu vagas em um processo seletivo de acesso a seus cursos. Finalizadas as inscrições, foi divulgada a relação do número de candidatos por vaga em cada um dos cursos oferecidos. Esses dados são apresentados no quadro. |Curso|Número<br>de vagas<br>oferecidas|Número<br>de candidatos<br>por vaga| |---|---|---| |Administração|30|<br>6| |Ciências Contábeis|40|6| |Engenharia Elétrica|50|7| |História|30|8| |Letras|25|4| |Pedagogia|25|5| Qual foi o número total de candidatos inscritos nesse processo seletivo?",
+      "alternatives": {
+        "A": "200",
+        "B": "400",
+        "C": "1 200",
+        "D": "1 235",
+        "E": "7 200"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q85",
+      "number": 85,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Ao escutar a notícia de que um filme recém-lançado arrecadou, no primeiro mês de lançamento, R$ 1,35 bilhão em bilheteria, um estudante escreveu corretamente o número que representa essa quantia, com todos os seus algarismos. O número escrito pelo estudante foi",
+      "alternatives": {
+        "A": "135 000,00.",
+        "B": "1 350 000,00.",
+        "C": "13 500 000,00.",
+        "D": "135 000 000,00.",
+        "E": "1 350 000 000,00."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q87",
+      "number": 87,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma pessoa precisa contratar um operário para fazer um serviço em sua casa. Para isso, ela postou um anúncio em uma rede social. Cinco pessoas responderam informando preços por hora trabalhada, gasto diário com transporte e tempo necessário para conclusão do serviço, conforme valores apresentados no quadro. |Operário|Preço por<br>hora<br>(real)|Preço do<br>transporte<br>(real)|Tempo até<br>conclusão<br>(hora)| |---|---|---|---| |I|120|0,00|8| |II<br>|180<br>|0,00<br>|6<br>| |III|170|20,00|6| |IV|110|10,00|9| |V|110|0,00|10| _y_ (km) 40 30 20 10 |zações sugeridas para o ponto de conexão entre s rodovias.|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|Col12|Col13|Col14| |---|---|---|---|---|---|---|---|---|---|---|---|---|---| |Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>| |Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|Cidade A<br>Rodovia 001<br>|||||| |||||||||||Ro|dovi|a 0| 2| ||||||||||||||| |||||||||||Ci|dad|B|| ||||||||||||||| |Rod|<br>ovi|<br>a 00|<br> 3<br>I||<br>I|<br>I<br>I|<br>II I|<br> V||<br>V|<br>||| Pretende-se que a distância percorrida entre as duas cidades, pelas Rodovias 001 e 002, passando pelo ponto de conexão, seja a menor possível. Dadas as exigências do projeto, qual das localizações sugeridas deve ser a escolhida para o ponto de conexão?",
+      "alternatives": {
+        "A": "I.",
+        "B": "II.",
+        "C": "III.",
+        "D": "IV.",
+        "E": "V."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q88",
+      "number": 88,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [],
+      "statement": "Uma cozinheira produz docinhos especiais por encomenda. Usando uma receita-base de massa, ela prepara uma porção, com a qual produz 50 docinhos maciços de formato esférico, com 2 cm de diâmetro. Um cliente encomenda 150 desses docinhos, mas pede que cada um tenha formato esférico com 4 cm de diâmetro. A cozinheira pretende preparar o número exato de porções da receita-base de massa necessário para produzir os docinhos dessa encomenda. Quantas porções da receita-base de massa ela deve preparar para atender esse cliente?",
+      "alternatives": {
+        "A": "2",
+        "B": "3",
+        "C": "6",
+        "D": "12",
+        "E": "24 30 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2022_D2_LC_Q90",
+      "number": 90,
+      "examYear": 2022,
+      "examDay": 2,
+      "examColor": "AZUL",
+      "area": "CIENCIAS_HUMANAS",
+      "subject": "GEOGRAFIA",
+      "supportingMaterials": [
+        {
+          "id": "img_q90",
+          "blocks": [
+            {
+              "id": "img_q90_1",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-30-0.png",
+              "alt": "Imagem da questão 90"
+            },
+            {
+              "id": "img_q90_2",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-30-1.png",
+              "alt": "Imagem da questão 90"
+            },
+            {
+              "id": "img_q90_3",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-30-2.png",
+              "alt": "Imagem da questão 90"
+            },
+            {
+              "id": "img_q90_4",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-30-3.png",
+              "alt": "Imagem da questão 90"
+            },
+            {
+              "id": "img_q90_5",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-30-4.png",
+              "alt": "Imagem da questão 90"
+            },
+            {
+              "id": "img_q90_6",
+              "type": "image",
+              "url": "/images/enem/2022/2022_PV_impresso_D2_CD7.pdf-31-1.png",
+              "alt": "Imagem da questão 90"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Na figura estão destacadas duas trajetórias sobre a superfície do globo terrestre, descritas ao se percorrer parte dos meridianos 1, 2 e da Linha do Equador, sendo que os meridianos 1 e 2 estão contidos em planos perpendiculares entre si. O plano α é paralelo ao que contém a Linha do Equador.![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-30-0.png) α 74 73![](C:/Web Workspace/todas-do-enem-2.0/extracoes-enem/images/prova-2022/2022_PV_impresso_D2_CD7.pdf-30-1.png) 72 2008 2009 2010 2011 2012 2013 2014 (adaptado). A vista superior da projeção ortogonal sobre o plano α dessas duas trajetórias é",
+      "alternatives": {
+        "E": "Pode-se observar que a esperança de vida ao nascer em 2012 foi exatamente a média das registradas nos anos de 2011 e 2013. Suponha que esse fato também ocorreu com a esperança de vida ao nascer em 2013, em relação às esperanças de vida de 2012 e de 2014. Caso a suposição feita tenha sido confirmada, a esperança de vida ao nascer no Brasil no ano de 2014 terá sido, em ano, igual a",
+        "A": "74,23.",
+        "B": "74,51.",
+        "C": "75,07.",
+        "D": "75,23."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    }
+  ]
+}

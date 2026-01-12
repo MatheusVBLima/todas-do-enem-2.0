@@ -9,6 +9,7 @@ import {
   FileText,
   ClipboardList,
   History,
+  BarChart3,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -58,7 +59,7 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       title: "Redação",
       url: "/redacao",
       icon: PenTool,
-      badge: isPaidUser ? undefined : "PRO",
+      // Badge removido - mensagem "Em breve" aparecerá na própria página
     },
     {
       title: "Simulados",
@@ -72,6 +73,11 @@ export function AppSidebar({ user, ...props }: AppSidebarProps) {
       title: "Planos",
       url: "/planos",
       icon: Sparkles,
+    },
+    {
+      title: "Status da Plataforma",
+      url: "/status",
+      icon: BarChart3,
     },
   ]
 

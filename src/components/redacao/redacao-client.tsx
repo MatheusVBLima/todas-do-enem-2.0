@@ -1,13 +1,15 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { FileText, Plus, Award } from "lucide-react"
+import { FileText, Plus, Award, BookText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { EssayEditor } from "./essay-editor"
 import { EssayList } from "./essay-list"
 import { EnemCompetencias } from "./enem-competencias"
+import { EssayThemes } from "./essay-themes"
+import { ComingSoonDialog } from "@/components/coming-soon-dialog"
 import { useQuery, useQueryClient } from "@tanstack/react-query"
 import { getEssays } from "@/server/actions/essays"
 import { queryKeys } from "@/lib/query-keys"
@@ -20,6 +22,7 @@ interface RedacaoClientProps {
 export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
   const [isEditorOpen, setIsEditorOpen] = useState(false)
   const [editingEssayId, setEditingEssayId] = useState<string | undefined>()
+  const [showComingSoonDialog, setShowComingSoonDialog] = useState(false)
   const queryClient = useQueryClient()
 
   // Fetch essays with hydration + cache reuse
@@ -49,16 +52,13 @@ export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
   }, [essays, userId, queryClient])
 
   const handleNewEssay = () => {
-    setEditingEssayId(undefined)
-    setIsEditorOpen(true)
+    // Show coming soon dialog instead of opening editor
+    setShowComingSoonDialog(true)
   }
 
   const handleEditEssay = (essayId: string) => {
-    const essay = essays?.find((e) => e.id === essayId)
-    if (!essay) return
-
-    setEditingEssayId(essayId)
-    setIsEditorOpen(true)
+    // Show coming soon dialog instead of opening editor
+    setShowComingSoonDialog(true)
   }
 
   const handleEssaySaved = (essayId: string) => {
@@ -79,9 +79,16 @@ export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
 
   return (
     <>
+      {/* Coming Soon Dialog */}
+      <ComingSoonDialog
+        open={showComingSoonDialog}
+        onOpenChange={setShowComingSoonDialog}
+        feature="essay-correction"
+      />
+
       {/* Tabs */}
       <Tabs defaultValue="redacoes" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-2 lg:w-[400px]">
+        <TabsList className="grid w-full grid-cols-3 lg:w-[600px]">
           <TabsTrigger value="redacoes">
             <FileText className="mr-2 size-4" />
             Minhas Redações
@@ -89,6 +96,10 @@ export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
           <TabsTrigger value="competencias">
             <Award className="mr-2 size-4" />
             Competências
+          </TabsTrigger>
+          <TabsTrigger value="temas">
+            <BookText className="mr-2 size-4" />
+            Temas do ENEM
           </TabsTrigger>
         </TabsList>
 
@@ -138,6 +149,11 @@ export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
         {/* Tab: Competências do ENEM */}
         <TabsContent value="competencias">
           <EnemCompetencias />
+        </TabsContent>
+
+        {/* Tab: Temas do ENEM */}
+        <TabsContent value="temas">
+          <EssayThemes />
         </TabsContent>
       </Tabs>
 

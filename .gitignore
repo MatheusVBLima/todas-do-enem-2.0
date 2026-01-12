@@ -42,8 +42,9 @@ next-env.d.ts
 
 plans/
 docs/
+
+# Extraction files and scripts (internal use only)
+extracoes-enem/
 scripts/
 
 .vercel
-
-nul

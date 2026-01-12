@@ -1,0 +1,10 @@
+{
+  "exam": {
+    "id": "ENEM_2018_D2_AZUL",
+    "year": 2018,
+    "day": 2,
+    "color": "AZUL",
+    "area": "CIENCIAS_HUMANAS"
+  },
+  "questions": []
+}

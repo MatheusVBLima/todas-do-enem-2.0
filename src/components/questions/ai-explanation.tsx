@@ -16,7 +16,7 @@ import {
   ReasoningTrigger,
 } from "@/components/ai-elements/reasoning"
 import { Shimmer } from "@/components/ai-elements/shimmer"
-import { UpgradeDialog } from "@/components/upgrade-dialog"
+import { ComingSoonDialog } from "@/components/coming-soon-dialog"
 import { AdBanner } from "@/components/ad-banner"
 
 type AIExplanationProps = {
@@ -111,25 +111,20 @@ Explique esta questão do ENEM de forma didática.`
   if (!showExplanation) {
     return (
       <>
-        <UpgradeDialog
+        <ComingSoonDialog
           open={showUpgradeDialog}
           onOpenChange={setShowUpgradeDialog}
           feature="ai-explanation"
         />
 
         <Button
-          onClick={handleGenerate}
-          disabled={isLoading}
-          variant="default"
+          onClick={() => setShowUpgradeDialog(true)}
+          disabled={false}
+          variant="outline"
           className="w-full"
         >
-          {isLoading ? (
-            <Loader2 className="mr-2 size-4 animate-spin" />
-          ) : (
-            <Sparkles className="mr-2 size-4" />
-          )}
-          {isLoading ? "Gerando explicação..." : "Gerar Explicação com IA"}
-          {!isPro && <Badge variant="outline" className="ml-2">PRO</Badge>}
+          <Sparkles className="mr-2 size-4" />
+          Explicação por IA - Em breve
         </Button>
       </>
     )
@@ -137,7 +132,7 @@ Explique esta questão do ENEM de forma didática.`
 
   return (
     <div className="space-y-4">
-      <UpgradeDialog
+      <ComingSoonDialog
         open={showUpgradeDialog}
         onOpenChange={setShowUpgradeDialog}
         feature="ai-explanation"

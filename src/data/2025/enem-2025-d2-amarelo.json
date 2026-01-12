@@ -1,0 +1,3778 @@
+{
+  "exam": {
+    "id": "ENEM_2025_D2_AMARELO",
+    "year": 2025,
+    "day": 2,
+    "color": "AMARELO",
+    "area": "CIENCIAS_NATUREZA"
+  },
+  "questions": [
+    {
+      "id": "ENEM_2025_D2_CI_Q91",
+      "number": 91,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "Massa.",
+        "B": "Dureza.",
+        "C": "Densidade.",
+        "D": "Superfície.",
+        "E": "Condutividade."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q92",
+      "number": 92,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "metabolismo de _E._ _coli_, apenas.",
+        "B": "ciclo circadiano de _E._ _coli_, apenas.",
+        "C": "metabolismo de _S._ _elongatus_ e do ciclo circadiano de _E._ _coli._",
+        "D": "ciclo circadiano de _S._ _elongatus_ e do metabolismo de _E._ _coli._",
+        "E": "ciclo circadiano de _S._ _elongatus_ e do ciclo circadiano de _E._ _coli._"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q93",
+      "number": 93,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q93",
+          "blocks": [
+            {
+              "id": "text_q93_1",
+              "type": "paragraph",
+              "content": "Os funcionários de um zoológico observaram um aumento\nna taxa de mortalidade de aves aquáticas por afogamento.\nUm grupo de biólogos analisou o comportamento das aves por\nvárias semanas e observou que elas apresentavam dificuldade\nde flutuação, por causa do encharcamento das penas com água.\nO aumento na taxa de mortalidade dessas aves estava associado\na uma redução na"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "a uma redução na",
+      "alternatives": {
+        "A": "dilatação do papo.",
+        "B": "reposição de penas das asas.",
+        "C": "secreção da glândula uropigial.",
+        "D": "formação da membrana natatória.",
+        "E": "largura das cavidades de ossos pneumáticos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q94",
+      "number": 94,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q94",
+          "blocks": [
+            {
+              "id": "text_q94_1",
+              "type": "paragraph",
+              "content": "Réguas elétricas são dispositivos que permitem a ligação\nsegura e simultânea de dois ou mais aparelhos eletroeletrônicos\nà rede elétrica. Uma estudante comprou uma régua com seis\ntomadas, conforme a figura. Essa régua suporta uma intensidade\nmáxima de corrente elétrica igual a 20 A. Acima desse valor, o\nfusível de segurança da régua se rompe, inutilizando-a até que\num novo fusível seja instalado. Considere as potências nominais\nde alguns aparelhos eletroeletrônicos apresentadas no quadro.\n|Aparelho|Potência (watt)|\n|---|---|\n|Luminária de LED|5|\n|Computador|250|\n|Impressora a laser|660|\n|Secador de cabelos|750|\n|Cafeteira|900|\n|Condicionador<br>de ar portátil|1 100|\nEm um dia quente, a estudante mantém o computador e o\ncondicionador de ar portátil ligados à régua permanentemente.\nNessa situação, ela tenta realizar algumas atividades, uma de\ncada vez, utilizando a mesma régua, na seguinte ordem:\n1º – imprimir um trabalho escolar;\n2º – fazer um café com a cafeteira;\n3º – ligar a luminária;\n4º – secar os cabelos.\nSabe-se que a régua foi ligada à tensão elétrica de 110 V,\nadequada para o funcionamento desses aparelhos.\nConsiderando a ordem das tentativas, quantas atividades a\nestudante conseguiu realizar sem queimar o fusível?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q94_1",
+          "blocks": [
+            {
+              "id": "img_q94_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 94",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-1-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q94_2",
+          "blocks": [
+            {
+              "id": "img_q94_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 94",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-1-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "estudante conseguiu realizar sem queimar o fusível?",
+      "alternatives": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "1",
+        "E": "0"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q95",
+      "number": 95,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "PORTUGUES",
+      "supportingMaterials": [
+        {
+          "id": "text_q95",
+          "blocks": [
+            {
+              "id": "text_q95_1",
+              "type": "paragraph",
+              "content": "**TEXTO I**\n#### *020325AZ3*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ3*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q96",
+      "number": 96,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q96",
+          "blocks": [
+            {
+              "id": "text_q96_1",
+              "type": "paragraph",
+              "content": "Questão 96\nOs sapinhos-ponta-de-flecha constituem um grupo de\nespécies encontradas na América Central e do Sul. Seus venenos\nsão obtidos por meio do consumo de algumas formigas e cupins\nque se alimentam de plantas que contêm esses venenos. Esses\nanfíbios são usados para envenenar as flechas das zarabatanas\ndos caçadores nativos. Quando capturados e criados em\ncondições artificiais, ou quando nascidos em cativeiro, não\nsão tóxicos.\nBADIO, B. et al. Epibatidine: Discovery and Definition as a Potent\nAnalgesic and Nicotinic Agonist. Med. Chem. Res.,\nn. 4, 1994 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "n. 4, 1994 (adaptado).",
+      "alternatives": {
+        "A": "diferença de umidade entre os ambientes.",
+        "B": "ausência de alimentação natural.",
+        "C": "adaptação ao novo ambiente.",
+        "D": "mudança de comportamento.",
+        "E": "variabilidade genética."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q97",
+      "number": 97,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q97",
+          "blocks": [
+            {
+              "id": "text_q97_1",
+              "type": "paragraph",
+              "content": "**As mariposas**\nAs mariposa, quando chega o frio\nFica dando volta em volta da lâmpida pra se esquentá. [sic]\nBARBOSA, A. **Reviva: Adoniran Barbosa** .\nSão Paulo: Som Livre, 2002 (fragmento).\n**TEXTO II**\nAs mariposas se aproximam das lâmpadas atraídas pela luz,\npois, sendo basicamente criaturas noturnas, estão adaptadas\na seguir o brilho da lua, em um processo conhecido como\norientação transversal. Assim, o que o sambista Adoniran\nBarbosa, no Texto I, descreve não é a causa, mas sim uma das\nconsequências possíveis dessa aproximação. De fato, o calor\ngerado pelas lâmpadas, sobretudo as incandescentes, pode\naquecer as mariposas.\nHERTZBERG, R. Por que as mariposas são tão atraídas por luzes fortes?\n**National Geographic**, nov. 2020 (adaptado).\nNesse contexto, o processo de transferência de calor para as\nmariposas que independe da presença de fluidos é a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "mariposas que independe da presença de fluidos é a",
+      "alternatives": {
+        "A": "reflexão.",
+        "B": "refração.",
+        "C": "irradiação.",
+        "D": "dispersão.",
+        "E": "convecção."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q98",
+      "number": 98,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q98",
+          "blocks": [
+            {
+              "id": "text_q98_1",
+              "type": "paragraph",
+              "content": "O bioma Cerrado é caracterizado por apresentar ampla e\nnatural diversidade de espécies vegetais. Nos últimos tempos,\n- homem vem modificando esse cenário pela inserção de\nplantas exóticas nesse ambiente. Exemplo disso é o cultivo do\ncapim-gordura, nativo do continente africano e utilizado nesse\ntipo de ecossistema como forma de pastagem. É importante\nressaltar que essa espécie vegetal é capaz de se espalhar por\ngrandes áreas, devido à sua agressividade e poder competitivo.\nCARLOS JR., L. A.; BARBOSA, N. P. U.; FERNANDES, G. W.\nO capim-gordura e as invasões no Cerrado brasileiro.\n**Jornal do Biólogo**, mar.-jun. 2008 (adaptado).\nEm longo prazo, essa ação do homem pode gerar qual\nconsequência?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q98_1",
+          "blocks": [
+            {
+              "id": "img_q98_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 98",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-2-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "Em longo prazo, essa ação do homem pode gerar qual",
+      "alternatives": {
+        "A": "Diversificar nichos ecológicos.",
+        "B": "Assorear as nascentes do bioma.",
+        "C": "Dificultar a infiltração de água na terra.",
+        "D": "Diminuir as espécies nativas do bioma.",
+        "E": "Contribuir com a redução das queimadas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q99",
+      "number": 99,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q99",
+          "blocks": [
+            {
+              "id": "text_q99_1",
+              "type": "paragraph",
+              "content": "O monstro de gila, um lagarto encontrado em um deserto dos\nEstados Unidos, apresenta adaptações à falta de alimento nesse\nambiente. Esse lagarto possui um hormônio que controla os níveis\nde açúcar em seu próprio sangue. Foi observado que esse hormônio\ntambém controla os níveis de açúcar no sangue de pessoas diabéticas.\nRUSSELL, C. **Ozempic e outros remédios inspirados em veneno de animais** .\n 2024 (adaptado).\nConsiderando que animais de um mesmo grupo taxonômico\npodem apresentar características adaptativas semelhantes em\nambientes similares, onde seria mais provável encontrar lagartos\ncom essas características no território brasileiro?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "com essas características no território brasileiro?",
+      "alternatives": {
+        "A": "Cerrado.",
+        "B": "Pampas.",
+        "C": "Caatinga.",
+        "D": "Restinga.",
+        "E": "Pantanal."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q100",
+      "number": 100,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q100",
+          "blocks": [
+            {
+              "id": "text_q100_1",
+              "type": "paragraph",
+              "content": "Existe um processo de purificação de água em que são\nremovidos os sais dissolvidos. A água que passa por esse processo\né muito utilizada em laboratórios de química, em indústrias\n(como solvente), em baterias de carros etc. Entretanto, esse\ntipo de água não é adequado para ingestão, pois pode causar\nproblemas de saúde, como carência iônica e diarreia.\nEssa água é chamada de"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Essa água é chamada de",
+      "alternatives": {
+        "A": "dura.",
+        "B": "pesada.",
+        "C": "sanitária.",
+        "D": "destilada.",
+        "E": "oxigenada."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q101",
+      "number": 101,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q101",
+          "blocks": [
+            {
+              "id": "text_q101_1",
+              "type": "paragraph",
+              "content": "**Por que os olhos ficam vermelhos**\n**em algumas fotografias?**\nEm fotos tiradas com câmeras fotográficas antigas, por\nvezes as pessoas aparecem com os olhos vermelhos. Isso\nocorre porque a luz do flash da câmera incide diretamente\nno globo ocular, sendo refletida por uma região repleta de\nvasos sanguíneos.\n 2017 (adaptado).\nEsse efeito é mais comum à noite ou em lugares pouco iluminados\nporque, com a pupila"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "porque, com a pupila",
+      "alternatives": {
+        "A": "dilatada, chega mais luz à retina.",
+        "B": "retraída, chega mais luz vermelha à retina.",
+        "C": "retraída, chega mais luz vermelha aos bastonetes.",
+        "D": "retraída, chegam menos luzes azul e verde aos cones.",
+        "E": "dilatada, chegam menos luzes azul e verde aos bastonetes."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q102",
+      "number": 102,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q102",
+          "blocks": [
+            {
+              "id": "text_q102_1",
+              "type": "paragraph",
+              "content": "O sashimi (filé de peixe cru) de baiacu é uma iguaria muito\napreciada no Japão. Entretanto, sua ingestão pode causar a\nmorte por parada respiratória, pois esse peixe contém uma\npotente neurotoxina termoestável, a tetrodotoxina, que é\nproduzida e armazenada nas gônadas e vísceras.\nQue ação poderia evitar essa intoxicação?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Que ação poderia evitar essa intoxicação?",
+      "alternatives": {
+        "A": "Criar os peixes em cativeiro.",
+        "B": "Realizar a pesca com redes.",
+        "C": "Consumir peixes cozidos ou fritos.",
+        "D": "Preparar o peixe em condições adequadas de higiene.",
+        "E": "Manusear o peixe sem provocar o rompimento dos órgãos"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q103",
+      "number": 103,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "Lisossomos.",
+        "B": "Ribossomos.",
+        "C": "Mitocôndrias.",
+        "D": "Peroxissomos.",
+        "E": "Retículo endoplasmático liso."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q104",
+      "number": 104,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "Plantar mais árvores.",
+        "B": "Instalar mais usinas eólicas.",
+        "C": "Ampliar o uso de energia solar.",
+        "D": "Manter os combustíveis fósseis no solo.",
+        "E": "Produzir menos resíduos sólidos urbanos."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q105",
+      "number": 105,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q105",
+          "blocks": [
+            {
+              "id": "text_q105_1",
+              "type": "paragraph",
+              "content": "As usinas termonucleares são aquelas que produzem energia elétrica a partir da geração de energia térmica proveniente das\nreações nucleares. Normalmente, essas usinas funcionam por meio de dois circuitos, denominados circuito primário (vaso de pressão,\npressurizador e bomba) e circuito secundário (gerador de vapor, turbina, condensador, tanque de alimentação e bombas), além de\num sistema de água de refrigeração, formado por uma bomba ligada a uma fonte hídrica natural.\nDurante a operação da usina, se o sistema de água de refrigeração funcionar de forma ineficiente pode causar poluição\ntérmica, comprometendo a vida no ecossistema aquático.\n 2021 (adaptado).\nPara o ecossistema aquático, a ineficiência do sistema de água de refrigeração tem como consequência a"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Para o ecossistema aquático, a ineficiência do sistema de água de refrigeração tem como consequência a",
+      "alternatives": {
+        "A": "diminuição do pH.",
+        "B": "liberação de gases poluentes.",
+        "C": "contaminação por combustíveis.",
+        "D": "liberação de elementos radioativos.",
+        "E": "diminuição da solubilidade do gás oxigênio."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q106",
+      "number": 106,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q106",
+          "blocks": [
+            {
+              "id": "text_q106_1",
+              "type": "paragraph",
+              "content": "No início do século XX, as fórmulas das substâncias eram representadas de modo diferente do atual. A figura apresenta uma\nfotografia bem antiga (1909) que registra uma aula de química ministrada em um colégio em Santos (SP). Um olhar mais atento\npermite identificar como os compostos químicos eram representados.\nO nitrogênio era chamado de azoto e representado pelo símbolo Az. Vê-se na lousa a equação representativa da adição do\noxigênio atômico (O) ao monóxido de nitrogênio (AzO) com a formação de dióxido de nitrogênio (AzO [2] ). Analogamente, o nitrato\nde sódio era representado por NaAzO [3] .\n 2014 (adaptado).\nEm 1909, as representações das substâncias ácido nítrico e cloreto de cálcio, tendo por base essas informações e seguindo a\nmesma lógica, seriam, respectivamente:"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q106_1",
+          "blocks": [
+            {
+              "id": "img_q106_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 106",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-4-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q106_2",
+          "blocks": [
+            {
+              "id": "img_q106_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 106",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-4-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "mesma lógica, seriam, respectivamente:",
+      "alternatives": {
+        "A": "HAzO [3] e CaCl [2]",
+        "B": "HAz [3] O e Ca [2] Cl",
+        "C": "H [3] AzO [4] e CaCl",
+        "D": "HAz [3] O e KCl [2]",
+        "E": "HAzO [2] e KCl"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q107",
+      "number": 107,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q107",
+          "blocks": [
+            {
+              "id": "text_q107_1",
+              "type": "paragraph",
+              "content": "Questão 107"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "figura apresenta a herança genética de uma característica",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q108",
+      "number": 108,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q108",
+          "blocks": [
+            {
+              "id": "text_q108_1",
+              "type": "paragraph",
+              "content": "Para transportar uma caixa do primeiro para o segundo\npiso de uma construção, um trabalhador precisará arrasta-lá\nsobre um plano inclinado. O trabalhador começa a arrastar a\ncaixa no primeiro piso, exercendo sobre ela uma força de grande\nintensidade, paralela ao seu deslocamento. Na medida em que a\ncaixa sobe o plano inclinado, ele decide reduzir a força sobre ela,\narrastando-a lentamente até chegar ao segundo piso. Considere\nque a caixa permanece em movimento nos encontros dos pisos\ncom o plano inclinado, e que a rugosidade entre as superfícies\npermanece a mesma durante todo o percurso.\nO comportamento da força de atrito entre a caixa e o chão no\nplano inclinado é representado em:\nA\nB\nC\nD\nE"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q108_1",
+          "blocks": [
+            {
+              "id": "img_q108_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q108_2",
+          "blocks": [
+            {
+              "id": "img_q108_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-1.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q108_3",
+          "blocks": [
+            {
+              "id": "img_q108_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-2.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q108_4",
+          "blocks": [
+            {
+              "id": "img_q108_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-3.png"
+            }
+          ],
+          "order": 5
+        },
+        {
+          "id": "img_q108_5",
+          "blocks": [
+            {
+              "id": "img_q108_5_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-4.png"
+            }
+          ],
+          "order": 6
+        },
+        {
+          "id": "img_q108_6",
+          "blocks": [
+            {
+              "id": "img_q108_6_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-5.png"
+            }
+          ],
+          "order": 7
+        },
+        {
+          "id": "img_q108_7",
+          "blocks": [
+            {
+              "id": "img_q108_7_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-6.png"
+            }
+          ],
+          "order": 8
+        },
+        {
+          "id": "img_q108_8",
+          "blocks": [
+            {
+              "id": "img_q108_8_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-7.png"
+            }
+          ],
+          "order": 9
+        },
+        {
+          "id": "img_q108_9",
+          "blocks": [
+            {
+              "id": "img_q108_9_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-8.png"
+            }
+          ],
+          "order": 10
+        },
+        {
+          "id": "img_q108_10",
+          "blocks": [
+            {
+              "id": "img_q108_10_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-9.png"
+            }
+          ],
+          "order": 11
+        },
+        {
+          "id": "img_q108_11",
+          "blocks": [
+            {
+              "id": "img_q108_11_block",
+              "type": "image",
+              "alt": "Imagem da questão 108",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-5-10.png"
+            }
+          ],
+          "order": 12
+        }
+      ],
+      "statement": "plano inclinado é representado em:",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q109",
+      "number": 109,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q109",
+          "blocks": [
+            {
+              "id": "text_q109_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ7*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ7*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q110",
+      "number": 110,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "bioacumulação de toxinas em plantas.",
+        "B": "eutrofização dos corpos de água.",
+        "C": "destruição da camada de ozônio.",
+        "D": "ocorrência de inversão térmica.",
+        "E": "produção de chuva ácida."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q111",
+      "number": 111,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q111",
+          "blocks": [
+            {
+              "id": "text_q111_1",
+              "type": "paragraph",
+              "content": "O fruto do cajueiro é um aquênio repleto de um líquido\nescuro, quase preto, cáustico e inflamável. Esse líquido da\ncasca da castanha do caju (LCC) representa aproximadamente\n25% da massa da castanha e é um subproduto de agronegócio\ndo caju. Quando submetido a altas temperaturas, o ácido\nanacárdico presente no LCC é convertido a cardanol, que recebe\na denominação de LCC técnico, conforme o esquema:\nMAZZETTO, S. E.; LOMONACO, D.; MELE, G. Óleo da castanha de caju:\noportunidades e desafios no contexto do desenvolvimento e\nsustentabilidade industrial. **Química Nova**, n. 3, 2009 (adaptado).\nO LCC técnico é produzido por meio de uma reação orgânica\ndo tipo"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O LCC técnico é produzido por meio de uma reação orgânica",
+      "alternatives": {
+        "A": "hidrólise.",
+        "B": "fenilação.",
+        "C": "esterificação.",
+        "D": "hidrogenação.",
+        "E": "descarboxilação."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q112",
+      "number": 112,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q112",
+          "blocks": [
+            {
+              "id": "text_q112_1",
+              "type": "paragraph",
+              "content": "_Golden Rice_, ou arroz dourado, é uma variedade de arroz\nenriquecida em betacaroteno, precursor da vitamina A.\nFoi desenvolvida para ajudar a combater a doença decorrente\nda deficiência dessa vitamina. Para a obtenção dessa variedade\nde arroz, foram utilizados métodos de engenharia genética.\nBORÉM, A.; SANTOS, F. R. **Entendendo a biotecnologia** .\nViçosa: UFV, 2008 (adaptado).\nEsse alimento contribui para diminuir a carência associada a\nqual doença?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q112_1",
+          "blocks": [
+            {
+              "id": "img_q112_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 112",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-6-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q112_2",
+          "blocks": [
+            {
+              "id": "img_q112_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 112",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-6-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "Esse alimento contribui para diminuir a carência associada a",
+      "alternatives": {
+        "A": "Hemofilia.",
+        "B": "Escorbuto.",
+        "C": "Raquitismo.",
+        "D": "Cegueira noturna.",
+        "E": "Anemia perniciosa."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q113",
+      "number": 113,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "5"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q114",
+      "number": 114,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "reflexão e comprimento de onda.",
+        "B": "ressonância e frequência.",
+        "C": "interferência e velocidade.",
+        "D": "ressonância e timbre.",
+        "E": "reflexão e amplitude."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q115",
+      "number": 115,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q115",
+          "blocks": [
+            {
+              "id": "text_q115_1",
+              "type": "paragraph",
+              "content": "Em uma aula prática de química orgânica, um professor\nidentificou os frascos de várias substâncias apenas por suas\nfórmulas moleculares. Em seguida, apresentou a representação\ntridimensional da molécula do borneol, um álcool secundário,\nconforme a figura. Ele explicou que, quando oxidado, o borneol\ndá origem à cânfora, uma cetona usada desde a Antiguidade\ncomo incenso e no preparo de medicamentos. Finalmente, o\nprofessor solicitou que os alunos identificassem o frasco contendo\na substância cânfora.\nSANTOS, A. P. B. et al. Oxidação do borneol à cânfora com água sanitária:\num experimento simples de baixo custo e limpo.\n**Química Nova**, n. 6, 2009 (adaptado).\nO frasco contendo cânfora apresenta a fórmula molecular:"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q115_1",
+          "blocks": [
+            {
+              "id": "img_q115_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 115",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-7-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q115_2",
+          "blocks": [
+            {
+              "id": "img_q115_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 115",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-7-1.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q115_3",
+          "blocks": [
+            {
+              "id": "img_q115_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 115",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-7-2.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q115_4",
+          "blocks": [
+            {
+              "id": "img_q115_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 115",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-7-3.png"
+            }
+          ],
+          "order": 5
+        }
+      ],
+      "statement": "O frasco contendo cânfora apresenta a fórmula molecular:",
+      "alternatives": {
+        "A": "C9H16O",
+        "B": "C9H17O",
+        "C": "C10H16O",
+        "D": "C10H16O2",
+        "E": "C10H18O2"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q116",
+      "number": 116,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q116",
+          "blocks": [
+            {
+              "id": "text_q116_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ9*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ9*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q117",
+      "number": 117,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q117",
+          "blocks": [
+            {
+              "id": "text_q117_1",
+              "type": "paragraph",
+              "content": "Para a produção de titânio metálico ou dióxido de titânio\npuros, é necessário fazer a cloração do minério que contém\ndióxido de titânio, com o objetivo de separar esse óxido de\noutras substâncias presentes no minério. A principal reação\nquímica de cloração é representada por:\nTiO2 (s) + 2 Cl2 (g) TiCl4 (g) + O2 (g)  ΔH = +175 kJ/mol\nDepois da cloração, o tetracloreto de titânio é condensado\ne convertido, novamente, a dióxido de titânio.\nApós o sistema atingir o equilíbrio químico, como a formação\ndo TiCl4 pode ser favorecida?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "do TiCl4 pode ser favorecida?",
+      "alternatives": {
+        "A": "Aumentando a pressão total do sistema.",
+        "B": "Diminuindo a temperatura do sistema.",
+        "C": "Aumentando a pressão parcial de O2.",
+        "D": "Aumentando a pressão parcial de Cl2.",
+        "E": "Variando a quantidade de TiO2."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q118",
+      "number": 118,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "img_q118_1",
+          "blocks": [
+            {
+              "id": "img_q118_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 118",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-8-0.png"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q118_2",
+          "blocks": [
+            {
+              "id": "img_q118_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 118",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-8-1.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q118_3",
+          "blocks": [
+            {
+              "id": "img_q118_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 118",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-8-2.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q118_4",
+          "blocks": [
+            {
+              "id": "img_q118_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 118",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-8-3.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q118_5",
+          "blocks": [
+            {
+              "id": "img_q118_5_block",
+              "type": "image",
+              "alt": "Imagem da questão 118",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-8-4.png"
+            }
+          ],
+          "order": 5
+        },
+        {
+          "id": "img_q118_6",
+          "blocks": [
+            {
+              "id": "img_q118_6_block",
+              "type": "image",
+              "alt": "Imagem da questão 118",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-8-5.png"
+            }
+          ],
+          "order": 6
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "0,16 m.",
+        "B": "0,50 m.",
+        "C": "0,80 m.",
+        "D": "1,60 m.",
+        "E": "8,00 m."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q119",
+      "number": 119,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q119",
+          "blocks": [
+            {
+              "id": "text_q119_1",
+              "type": "paragraph",
+              "content": "As cangas são ambientes resultantes da atuação, ao longo\nde milhões de anos, de chuvas, enxurradas, calor e ventos em\nrochas ricas em ferro. São compostas por até 90% de óxidos\nde ferro e contêm solos muito ácidos, rasos, com reduzidos\níndices de fertilidade e temperaturas que atingem quase 70 **°** C\nna superfície. Ao contrário do que se imagina, esse tipo de\nambiente abriga comunidades de plantas e animais com elevado\nnúmero de espécies e distribuição restrita.\nCARMO, F. F. et al. **Ilhas de ferro estratégicas para a conservação** .\n 2018 (adaptado)."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "2018 (adaptado).",
+      "alternatives": {
+        "A": "exóticas.",
+        "B": "migratórias.",
+        "C": "endêmicas.",
+        "D": "dominantes.",
+        "E": "generalistas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q120",
+      "number": 120,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "30 ms.",
+        "B": "70 ms.",
+        "C": "300 ms.",
+        "D": "400 ms.",
+        "E": "700 ms."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q121",
+      "number": 121,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "água.",
+        "B": "vinagre.",
+        "C": "óleo de soja.",
+        "D": "sal de cozinha.",
+        "E": "bicarbonato de sódio."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q122",
+      "number": 122,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q122",
+          "blocks": [
+            {
+              "id": "text_q122_1",
+              "type": "paragraph",
+              "content": "O aquecimento em fogões por indução utiliza bobinas\npara produzir um campo magnético variável. Essa bobina se\nlocaliza abaixo do vidro cerâmico sobre o qual a panela se apoia.\nO mecanismo aquece apenas a panela que se encontra na zona\nde cozimento, o que é uma das principais vantagens em relação\nao uso do fogão a gás ou de resistência elétrica.\nPEREIRA, A. B. et al. **Fogões de indução** : montagem e testes de um circuito\ndisponível. \nO uso do campo magnético variável tem a finalidade de"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O uso do campo magnético variável tem a finalidade de",
+      "alternatives": {
+        "A": "imantar o material da panela por indução.",
+        "B": "movimentar os átomos de ferro concentrados no fundo da panela.",
+        "C": "emitir radiação eletromagnética, aquecendo a panela através",
+        "D": "induzir corrente elétrica na parte inferior da panela, aquecendo-a",
+        "E": "gerar um fluxo de corrente de convecção no ar contido entre"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q123",
+      "number": 123,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q123",
+          "blocks": [
+            {
+              "id": "text_q123_1",
+              "type": "paragraph",
+              "content": "Plantas e algas realizam fotossíntese oxigênica para\nsíntese de matéria orgânica e, para isso, utilizam trifosfato de\nadenosina (ATP) e nicotinamida adenina dinucleotídeo fosfato\nreduzido (NADPH). Já algumas bactérias fotossintetizantes\nnão apresentam cloroplasto e clorofila, mas um pigmento\ndenominado bacterioclorofila. Esses procariotos realizam a\nfotossíntese anoxigênica, um processo de síntese de matéria\norgânica utilizando o gás carbônico (CO2) e o gás sulfídrico (H2S).\nNa fotossíntese oxigênica, qual composto desempenha função\nanáloga à do H2S?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q123_1",
+          "blocks": [
+            {
+              "id": "img_q123_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 123",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-9-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q123_2",
+          "blocks": [
+            {
+              "id": "img_q123_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 123",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-9-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "análoga à do H2S?",
+      "alternatives": {
+        "A": "ATP.",
+        "B": "NADPH.",
+        "C": "Oxigênio.",
+        "D": "Clorofila.",
+        "E": "Água."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q124",
+      "number": 124,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q124",
+          "blocks": [
+            {
+              "id": "text_q124_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ11*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ11*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q125",
+      "number": 125,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q125",
+          "blocks": [
+            {
+              "id": "text_q125_1",
+              "type": "paragraph",
+              "content": "Apaixonada por culinária e química, uma chefe de cozinha\ncalculou que, para promover o crescimento adequado da\nmassa durante o cozimento de um bolo a 180 **°** C (453 K) e\n1,00 atm, ela precisaria utilizar uma quantidade de fermento\nquímico suficiente para produzir um volume de gás igual a\n4,00 L. Com esse objetivo, ela escolheu utilizar o bicarbonato de\namônio, um composto que, sob aquecimento, degrada-se em\ntrês gases distintos, que são os responsáveis pelo crescimento\nda massa. A decomposição do bicarbonato de amônio ocorre\nconforme a equação química apresentada e, nas condições do\ncozimento, seu rendimento é de 80%.\nNH4HCO3 (s) → NH3 (g) + CO2 (g) + H2O (g)\nConsidere que a mistura dos gases se comporta como gás\nideal nas condições de cozimento utilizadas pela chefe.\nDados: Massa molar do NH4HCO3 = 79 g ⋅ mol [−][1] e\nR = 0,082 atm ⋅ L ⋅ mol [−][1] ⋅ K [−][1] ."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q125_1",
+          "blocks": [
+            {
+              "id": "img_q125_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 125",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-10-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "R = 0,082 atm ⋅ L ⋅ mol [−][1] ⋅ K [−][1] .",
+      "alternatives": {
+        "A": "230 km/h para Leste, 180 km/h para Sul e 9 km/h para baixo.",
+        "B": "230 km/h para Leste, 180 km/h para Norte e 9 km/h para cima.",
+        "C": "200 km/h para Oeste, 200 km/h para Norte e 10 km/h para cima.",
+        "D": "170 km/h para Leste, 220 km/h para Norte e 11 km/h para cima.",
+        "E": "170 km/h para Leste, 180 km/h para Norte e 11 km/h para cima."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q126",
+      "number": 126,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q126",
+          "blocks": [
+            {
+              "id": "text_q126_1",
+              "type": "paragraph",
+              "content": "Objetos de prata escurecem em contato com compostos\ncontendo enxofre por causa da formação de uma fina camada\nde sulfeto de prata. Um método simples para clarear o objeto\nconsiste em forrar um recipiente com papel alumínio, adicionar\nao recipiente uma solução aquosa de cloreto de sódio e,\nenfim, mergulhar o objeto de prata enegrecido. Em cerca de\ntrês minutos, a prata volta à coloração original. As seguintes\nsemirreações e os respectivos potenciais-padrão de redução\nsão úteis para a compreensão dos fenômenos ocorridos.\nAg2S (s) + 2 e [−] → 2 Ag (s) + S [2][−] (aq)\nO2 (g) + 4 H [+] (aq) + 4 e [−] → 2 H2O (l)\nAl [3][+] (aq) + 3 e [−] → Al (s)\n−0,69 V\n+1,23 V\n−1,68 V\nSARTORI, E. R.; BATISTA, E. F.; FATIBELLO-FILHO, O. Escurecimento e limpeza\nde objetos de prata: um experimento simples e de fácil execução envolvendo\nreações de oxidação-redução. **Química Nova na Escola**, n. 30, 2008 (adaptado).\nOs valores das diferenças de potencial-padrão das reações que\nrepresentam o escurecimento e o clareamento do objeto de\nprata são, respectivamente:"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "prata são, respectivamente:",
+      "alternatives": {
+        "A": "+0,54 V e +2,37 V.",
+        "B": "+1,92 V e +0,99 V.",
+        "C": "−0,15 V e +5,43 V.",
+        "D": "+2,61 V e +1,29 V.",
+        "E": "+0,15 V e −1,29 V."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q127",
+      "number": 127,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q127",
+          "blocks": [
+            {
+              "id": "text_q127_1",
+              "type": "paragraph",
+              "content": "Nos processos de transformação e reciclagem de recursos\nnaturais, as velocidades das reações químicas são estudadas pela\ncinética química. Uma reação A → B é realizada na presença\ne na ausência de uma enzima, com todas as demais condições\npermanecendo inalteradas. Considere que, no gráfico da\nvariação de energia ao longo dessa reação, a linha contínua\nrepresenta o avanço da reação na ausência da enzima, e a linha\npontilhada, na presença da enzima.\nO gráfico que representa a situação descrita é:\nA\nB\nC\nD"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O gráfico que representa a situação descrita é:",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q128",
+      "number": 128,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "1 e 2.",
+        "B": "1 e 3.",
+        "C": "2 e 3.",
+        "D": "2 e 4.",
+        "E": "2 e 5."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q129",
+      "number": 129,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q129",
+          "blocks": [
+            {
+              "id": "text_q129_1",
+              "type": "paragraph",
+              "content": "O ácido úsnico é retirado de liquens e foi testado contra\ndiversas espécies, conforme o quadro.\n|Teste|Resultado|\n|---|---|\n|_Aedes aegypti_ (larvas)|Baixa eficiência|\n|Bacilo de Koch|Média eficiência|\n|Moluscos aquáticos (adultos)|Alta eficiência|\n|Pernilongo (larvas)|Média eficiência|\n|Vermes platelmintos|Ineficiente|\nO ácido úsnico mostrou-se mais indicado para o controle da"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q129_1",
+          "blocks": [
+            {
+              "id": "img_q129_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 129",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-11-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q129_2",
+          "blocks": [
+            {
+              "id": "img_q129_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 129",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-11-1.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q129_3",
+          "blocks": [
+            {
+              "id": "img_q129_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 129",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-11-2.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q129_4",
+          "blocks": [
+            {
+              "id": "img_q129_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 129",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-11-3.png"
+            }
+          ],
+          "order": 5
+        },
+        {
+          "id": "img_q129_5",
+          "blocks": [
+            {
+              "id": "img_q129_5_block",
+              "type": "image",
+              "alt": "Imagem da questão 129",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-11-4.png"
+            }
+          ],
+          "order": 6
+        },
+        {
+          "id": "img_q129_6",
+          "blocks": [
+            {
+              "id": "img_q129_6_block",
+              "type": "image",
+              "alt": "Imagem da questão 129",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-11-5.png"
+            }
+          ],
+          "order": 7
+        }
+      ],
+      "statement": "O ácido úsnico mostrou-se mais indicado para o controle da",
+      "alternatives": {
+        "A": "esquistossomose.",
+        "B": "febre amarela.",
+        "C": "coqueluche.",
+        "D": "tuberculose.",
+        "E": "dengue."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q130",
+      "number": 130,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q130",
+          "blocks": [
+            {
+              "id": "text_q130_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ13*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ13*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q131",
+      "number": 131,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q131",
+          "blocks": [
+            {
+              "id": "text_q131_1",
+              "type": "paragraph",
+              "content": "Em sua maioria, os equipamentos eletrônicos domésticos\ndemandam baixa potência elétrica em corrente contínua.\nPara alimentá-los, uma fonte externa ou embutida transforma\na corrente alternada em corrente contínua de baixa tensão.\nEntretanto, cada equipamento tem suas especificidades, e muitas\nvezes não é possível simplesmente trocar essas fontes sem levar\nem conta a tensão, a corrente ou a potência elétrica de saída.\nConsidere um equipamento de resistência elétrica RC que\nfunciona corretamente apenas em um dado valor de tensão.\nPorém, a única fonte de alimentação disponível fornece uma\ntensão 20% superior à tensão recomendada. Para adaptar essa\nfonte ao aparelho, a associação de um resistor de proteção RP,\nde potência adequada, se faz necessária."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "de potência adequada, se faz necessária.",
+      "alternatives": {
+        "A": "2,7 kg.",
+        "B": "3,0 kg.",
+        "C": "4,1 kg.",
+        "D": "4,5 kg.",
+        "E": "5,0 kg."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q132",
+      "number": 132,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q132",
+          "blocks": [
+            {
+              "id": "text_q132_1",
+              "type": "paragraph",
+              "content": "O nível sonoro, em decibel (dB), é calculado pela expressão:\n- _I_\n_n_ - 10 log10 �� _I_\n- _I_\n-\n- _I_ 0\n10 log10 �� _I_ 0 ��\nUma conversa normal entre duas pessoas gera sons de\nníveis sonoros entre 50 e 60 dB, enquanto pessoas gritando\npodem gerar sons de níveis superiores a 100 dB. Supondo que,\nno centro de um estádio de futebol, foram realizadas medidas\npara avaliar o ruído médio de uma pessoa gritando a palavra\n“gol” em diferentes posições das arquibancadas. O valor médio\nobtido, considerando um grande número de medidas, foi de\n100 dB. Com esse dado, estimou-se o ruído sonoro produzido por\n10 000 pessoas, distribuídas aleatoriamente nas arquibancadas,\nenquanto gritavam, simultaneamente, a palavra “gol”.\nO valor médio estimado para o ruído produzido por essas\npessoas, na posição central desse estádio hipotético, foi de"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q132_1",
+          "blocks": [
+            {
+              "id": "img_q132_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 132",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-12-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q132_2",
+          "blocks": [
+            {
+              "id": "img_q132_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 132",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-12-1.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q132_3",
+          "blocks": [
+            {
+              "id": "img_q132_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 132",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-12-2.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q132_4",
+          "blocks": [
+            {
+              "id": "img_q132_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 132",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-12-3.png"
+            }
+          ],
+          "order": 5
+        },
+        {
+          "id": "img_q132_5",
+          "blocks": [
+            {
+              "id": "img_q132_5_block",
+              "type": "image",
+              "alt": "Imagem da questão 132",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-12-4.png"
+            }
+          ],
+          "order": 6
+        }
+      ],
+      "statement": "pessoas, na posição central desse estádio hipotético, foi de",
+      "alternatives": {
+        "A": "60 dB.",
+        "B": "104 dB.",
+        "C": "140 dB.",
+        "D": "400 dB.",
+        "E": "800 dB."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q133",
+      "number": 133,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q133",
+          "blocks": [
+            {
+              "id": "text_q133_1",
+              "type": "paragraph",
+              "content": "O despejo acidental de óleo nos oceanos tem ocasionado\nincontáveis prejuízos à vida marinha e à economia de regiões\ncosteiras. Métodos tradicionais de tratamento do despejo geram\nresíduos de difícil descarte e nem sempre são eficazes. Por isso,\npesquisadores desenvolveram um filtro capaz de separar óleo\ne água. O dispositivo é montado sobre uma malha de aço com\numa sequência de camadas. A primeira camada é formada\npor um polímero de carga positiva, a segunda é composta por\nnanopartículas de sílica (SiO2), a terceira é formada pelo mesmo\npolímero e a última é um surfactante, conforme apresentado\nna figura.\n**Representação esquemática do dispositivo**\nBROWN, P. S.; BHUSHAN, B. Mechanically durable, superoleophobic\ncoatings prepared by layer-by-layer technique for anti-smudge\nand oil-water separation. **Scientific Reports**,\nv. 5, mar. 2015 (adaptado).\nNa utilização desse dispositivo, a retenção do óleo ocorre"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Na utilização desse dispositivo, a retenção do óleo ocorre",
+      "alternatives": {
+        "A": "no surfactante.",
+        "B": "na camada superior de polímero.",
+        "C": "nas nanopartículas de sílica.",
+        "D": "na camada inferior de polímero.",
+        "E": "na malha de aço."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q134",
+      "number": 134,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q134",
+          "blocks": [
+            {
+              "id": "text_q134_1",
+              "type": "paragraph",
+              "content": "Alguns hormônios sexuais têm ganhado notável atenção nos\núltimos anos por suas concentrações cada vez maiores no solo e\nna água em todo o mundo. O motivo da preocupação é porque,\nem níveis poluentes, eles têm sido associados ao câncer de mama\ne ao câncer de próstata, além de perturbarem a fisiologia dos\npeixes, podendo, ainda, afetarem o desenvolvimento reprodutivo\nde animais domésticos e selvagens. Assim, o descarte inadequado\ndesses hormônios representa uma séria ameaça ao solo, plantas,\nrecursos hídricos e humanos. De baixa polaridade, eles apresentam\numa solubilidade pequena e variável em água, dependendo dos\ngrupos presentes em suas estruturas, representando um grande\nrisco para os ambientes aquáticos. As figuras a seguir apresentam\nas estruturas de alguns desses hormônios.\nMUHAMMAD, A. et al. Environmental Impact of Estrogens\non Human, Animal and Plant Life: a Critical Review.\n**Environment International**, n. 99, 2017 (adaptado).\nDo ponto de vista das interações químicas, qual desses hormônios\napresenta maior solubilidade em ambientes aquáticos?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q134_1",
+          "blocks": [
+            {
+              "id": "img_q134_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 134",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-13-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q134_2",
+          "blocks": [
+            {
+              "id": "img_q134_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 134",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-13-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "apresenta maior solubilidade em ambientes aquáticos?",
+      "alternatives": {
+        "A": "Estradiol.",
+        "B": "Estriol.",
+        "C": "Estrona.",
+        "D": "Novestrol.",
+        "E": "Noretindrona."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q135",
+      "number": 135,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "img_q135_1",
+          "blocks": [
+            {
+              "id": "img_q135_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 135",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-14-0.png"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q135_2",
+          "blocks": [
+            {
+              "id": "img_q135_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 135",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-14-1.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q135_3",
+          "blocks": [
+            {
+              "id": "img_q135_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 135",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-14-2.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q135_4",
+          "blocks": [
+            {
+              "id": "img_q135_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 135",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-14-3.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q135_5",
+          "blocks": [
+            {
+              "id": "img_q135_5_block",
+              "type": "image",
+              "alt": "Imagem da questão 135",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-14-4.png"
+            }
+          ],
+          "order": 5
+        },
+        {
+          "id": "img_q135_6",
+          "blocks": [
+            {
+              "id": "img_q135_6_block",
+              "type": "image",
+              "alt": "Imagem da questão 135",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-14-5.png"
+            }
+          ],
+          "order": 6
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "icterícia é uma doença que acomete recém-nascidos e",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q136",
+      "number": 136,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q136",
+          "blocks": [
+            {
+              "id": "text_q136_1",
+              "type": "paragraph",
+              "content": "Uma pessoa pretende instalar um kit de gás natural veicular (GNV) em seu carro. Na loja que escolheu para realizar a compra\ne instalação desse kit, havia cinco modelos de cilindro para armazenamento do gás, cujas capacidades, em metro cúbico, eram,\nrespectivamente: 10, 14, 17, 21 e 25. O preço do cilindro é proporcional à sua capacidade. Esse carro rodará 30 km diariamente,\n7 dias por semana, e o consumo do GNV é de 1 m [3] a cada 13 km rodados. A pessoa escolherá o modelo de cilindro de menor\npreço e que garanta apenas um abastecimento semanal.\nNessas condições, qual será a capacidade, em metro cúbico, do cilindro escolhido por essa pessoa?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Nessas condições, qual será a capacidade, em metro cúbico, do cilindro escolhido por essa pessoa?",
+      "alternatives": {
+        "A": "10",
+        "B": "14",
+        "C": "17",
+        "D": "21",
+        "E": "25"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q137",
+      "number": 137,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "img_q137_1",
+          "blocks": [
+            {
+              "id": "img_q137_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 137",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-15-0.png"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "[30]",
+        "B": "[36]",
+        "C": "[40]",
+        "D": "[40]",
+        "E": "[46]"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q138",
+      "number": 138,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q138",
+          "blocks": [
+            {
+              "id": "text_q138_1",
+              "type": "paragraph",
+              "content": "Em um jogo de computador, um cubo se encontra inicialmente posicionado conforme indicado na figura.\nCada deslocamento efetuado por esse cubo se dá sempre em uma das direções definidas pelos três eixos coordenados.\nAo se movimentar a partir da posição inicial, esse cubo se aproximou 3 unidades do plano _yz_, se afastou 5 unidades do plano _xz_\ne se aproximou 4 unidades do plano _xy_ ."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q138_1",
+          "blocks": [
+            {
+              "id": "img_q138_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 138",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-16-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q138_2",
+          "blocks": [
+            {
+              "id": "img_q138_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 138",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-16-1.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q138_3",
+          "blocks": [
+            {
+              "id": "img_q138_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 138",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-16-2.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q138_4",
+          "blocks": [
+            {
+              "id": "img_q138_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 138",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-16-3.png"
+            }
+          ],
+          "order": 5
+        },
+        {
+          "id": "img_q138_5",
+          "blocks": [
+            {
+              "id": "img_q138_5_block",
+              "type": "image",
+              "alt": "Imagem da questão 138",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-16-4.png"
+            }
+          ],
+          "order": 6
+        },
+        {
+          "id": "img_q138_6",
+          "blocks": [
+            {
+              "id": "img_q138_6_block",
+              "type": "image",
+              "alt": "Imagem da questão 138",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-16-5.png"
+            }
+          ],
+          "order": 7
+        }
+      ],
+      "statement": "e se aproximou 4 unidades do plano _xy_ .",
+      "alternatives": {
+        "A": "figura que apresenta as projeções ortogonais desse cubo sobre os três planos coordenados, após efetuar as movimentações",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q139",
+      "number": 139,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q139",
+          "blocks": [
+            {
+              "id": "text_q139_1",
+              "type": "paragraph",
+              "content": "No entorno de uma lagoa circular, cujo raio mede 1 km,\nhá um uma ciclovia. Devido aos frequentes roubos de bicicleta,\na prefeitura planeja alocar policiais em posições estratégicas\npara patrulhar essa ciclovia, de forma a torná-la totalmente\nprotegida. Um ponto da ciclovia é considerado protegido se\nhouver pelo menos um policial a, no máximo, 200 m de distância\ndaquele ponto, posicionado sobre a ciclovia. A figura ilustra\num ponto _P_ sobre a ciclovia, que estará protegido se houver\npelo menos um policial posicionado sobre a região de cor\ncinza escuro.\nDesconsidere a largura da pista da ciclovia e utilize 3 como\naproximação para p.\nNessas condições, a quantidade mínima necessária de policiais a\nserem alocados ao longo dessa ciclovia para torná-la protegida é"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "serem alocados ao longo dessa ciclovia para torná-la protegida é",
+      "alternatives": {
+        "A": "4.",
+        "B": "8.",
+        "C": "15.",
+        "D": "30.",
+        "E": "60."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q140",
+      "number": 140,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "CIENCIAS_NATUREZA_GERAL",
+      "supportingMaterials": [
+        {
+          "id": "text_q140",
+          "blocks": [
+            {
+              "id": "text_q140_1",
+              "type": "paragraph",
+              "content": "Em um laboratório, um recipiente contém 10 litros de\numa solução composta apenas pelas substâncias S1 e S2.\nDessa solução, 99,95% é de S1. Uma quantidade de S1 será\nretirada dessa solução, mantendo a quantidade inicial de S2,\nde modo que 99,90% da nova solução seja de S1.\nQual é a quantidade de S1, em litro, que será retirada?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Qual é a quantidade de S1, em litro, que será retirada?",
+      "alternatives": {
+        "A": "0,0050",
+        "B": "0,0100",
+        "C": "0,5000",
+        "D": "4,9775",
+        "E": "5,0000"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q141",
+      "number": 141,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q141",
+          "blocks": [
+            {
+              "id": "text_q141_1",
+              "type": "paragraph",
+              "content": "Uma distribuidora de combustível possui caminhões-tanque\ncom capacidade de 30 000 litros cada. Em qualquer transporte\nrealizado por esses caminhões, um mesmo volume de combustível\né descartado, pois fica com muitas impurezas. Esse volume\ndescartado independe da quantidade transportada.\nUm posto de combustível encomendou 10 000 litros de\ngasolina dessa distribuidora, que enviou 10 200 litros, considerando\n- volume descartado no transporte. Mesmo assim, a quantidade\nde gasolina entregue ao posto foi de 9 900 litros.\nEm um novo pedido, esse posto solicitou que fosse entregue\nexatamente o dobro do volume de gasolina encomendado no\npedido anterior.\nUtilizando o mesmo caminhão da entrega anterior, qual é o volume\nmínimo de gasolina, em litro, que a distribuidora deverá enviar para\ngarantir a entrega da quantidade encomendada nesse novo pedido?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "garantir a entrega da quantidade encomendada nesse novo pedido?",
+      "alternatives": {
+        "A": "20 100",
+        "B": "20 200",
+        "C": "20 300",
+        "D": "20 400",
+        "E": "20 600"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q142",
+      "number": 142,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q142",
+          "blocks": [
+            {
+              "id": "text_q142_1",
+              "type": "paragraph",
+              "content": "Uma empresa de tecnologia vai padronizar a velocidade de\nconexão de internet que oferece a seus clientes em dez cidades."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q142_1",
+          "blocks": [
+            {
+              "id": "img_q142_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 142",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-17-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "conexão de internet que oferece a seus clientes em dez cidades.",
+      "alternatives": {
+        "A": "360.",
+        "B": "370.",
+        "C": "380.",
+        "D": "390.",
+        "E": "400."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q143",
+      "number": 143,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q143",
+          "blocks": [
+            {
+              "id": "text_q143_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ19*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ19*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q144",
+      "number": 144,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q144",
+          "blocks": [
+            {
+              "id": "text_q144_1",
+              "type": "paragraph",
+              "content": "Uma fábrica utilizou uma impressora 3D para produzir o\nprotótipo de uma peça. O protótipo tem forma de um poliedro\nconvexo, obtido pela justaposição de dois sólidos distintos, um\ncom a forma de um prisma hexagonal regular reto e o outro com\na forma de um tronco de pirâmide hexagonal reta. A base maior\ndo tronco de pirâmide coincide com uma das bases do prisma.\nApós a impressão do protótipo, ele foi encaminhado ao setor\nde customização para realização da pintura de sua superfície.\nO critério definido para realização da pintura considera que faces\ncongruentes entre si devem ser pintadas com uma mesma cor, e\nfaces não congruentes entre si devem apresentar cores distintas.\nQual é a quantidade de cores utilizadas para pintar o protótipo?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Qual é a quantidade de cores utilizadas para pintar o protótipo?",
+      "alternatives": {
+        "A": "mantém-se constante.",
+        "B": "é diretamente proporcional ao tempo.",
+        "C": "é inversamente proporcional ao tempo.",
+        "D": "diminui até o instante t2, a partir do qual se torna constante.",
+        "E": "diminui de forma proporcional ao tempo, tanto entre t1 e t2"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q145",
+      "number": 145,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q145",
+          "blocks": [
+            {
+              "id": "text_q145_1",
+              "type": "paragraph",
+              "content": "Na cantina de uma escola, há cinco alimentos vendidos em\npacotes com diferentes quantidades de porções.\nAs informações nutricionais contidas nos rótulos desses\nprodutos estão indicadas nas imagens.\nUma estudante opta sempre pelo alimento com a menor\nquantidade total de sódio por pacote.\nQual desses produtos deve ser o escolhido pela estudante?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Qual desses produtos deve ser o escolhido pela estudante?",
+      "alternatives": {
+        "A": "Batata chips.",
+        "B": "Palitos salgados.",
+        "C": "Biscoito multigrãos.",
+        "D": "Biscoito de polvilho.",
+        "E": "Biscoito de água e sal."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q146",
+      "number": 146,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q146",
+          "blocks": [
+            {
+              "id": "text_q146_1",
+              "type": "paragraph",
+              "content": "No atletismo, um grande desafio da prova de 100 metros\nrasos é a sua conclusão num tempo abaixo da marca de\nreferência dos 10,00 segundos. Vários atletas já alcançaram\nesse feito. Em 2009, o jamaicano Usain Bolt estabeleceu o\nrecorde mundial masculino dessa prova, com o tempo de\n9,58 segundos.\nQual é a diferença, em segundo, entre a marca de referência e\na marca estabelecida por Usain Bolt em 2009?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q146_1",
+          "blocks": [
+            {
+              "id": "img_q146_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 146",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-18-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q146_2",
+          "blocks": [
+            {
+              "id": "img_q146_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 146",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-18-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "a marca estabelecida por Usain Bolt em 2009?",
+      "alternatives": {
+        "A": "0,02",
+        "B": "0,42",
+        "C": "0,52",
+        "D": "1,02",
+        "E": "1,42"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q147",
+      "number": 147,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q147",
+          "blocks": [
+            {
+              "id": "text_q147_1",
+              "type": "paragraph",
+              "content": "Uma escola de idiomas oferece cursos de inglês, espanhol, francês e alemão. Os gráficos apresentam a distribuição percentual\ndas matrículas, por idioma, em 2023, e a distribuição da quantidade de matrículas, por idioma, em 2024.\nPara planejar as atividades de 2025, o gerente da escola estimou que o total de matrículas será o mesmo de 2024, e a distribuição\npercentual das matrículas, por idioma, será igual à registrada em 2023.\nSegundo essa estimativa, o número de matrículas no curso de francês para o ano de 2025 será"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Segundo essa estimativa, o número de matrículas no curso de francês para o ano de 2025 será",
+      "alternatives": {
+        "A": "2.",
+        "B": "12.",
+        "C": "20.",
+        "D": "22.",
+        "E": "40."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q148",
+      "number": 148,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q148",
+          "blocks": [
+            {
+              "id": "text_q148_1",
+              "type": "paragraph",
+              "content": "O controle remoto de um carrinho de brinquedo vem equipado com uma tela que ajusta automaticamente a escala empregada\nna exibição de cada deslocamento. A tela apresenta a imagem do deslocamento, a escala utilizada na geração dessa imagem e\n- comprimento desse deslocamento, em centímetro, em conformidade com a escala empregada. As figuras representam a tela\ndo controle remoto exibindo os dados de cinco deslocamentos realizados por esse carrinho."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q148_1",
+          "blocks": [
+            {
+              "id": "img_q148_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 148",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-19-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q148_2",
+          "blocks": [
+            {
+              "id": "img_q148_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 148",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-19-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "do controle remoto exibindo os dados de cinco deslocamentos realizados por esse carrinho.",
+      "alternatives": {
+        "A": "I.",
+        "B": "II.",
+        "C": "III.",
+        "D": "IV.",
+        "E": "V."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q149",
+      "number": 149,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q149",
+          "blocks": [
+            {
+              "id": "text_q149_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ21*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ21*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q150",
+      "number": 150,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q150",
+          "blocks": [
+            {
+              "id": "text_q150_1",
+              "type": "paragraph",
+              "content": "Uma fábrica de tijolos ecológicos com 3 funcionários,\ncada um trabalhando 6 horas diárias, produz 720 unidades\npor dia. Para atender ao crescimento da demanda por esse\ntipo de tijolo, essa fábrica passou a ter 5 funcionários, cada um\ntrabalhando 9 horas por dia, aumentando, assim, sua capacidade\nde produção. Todos os funcionários produzem igual quantidade\nde tijolos a cada hora, independentemente de trabalharem\n6 ou 9 horas diárias.\nO número de tijolos fabricados diariamente após o aumento da\ncapacidade de produção é"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "capacidade de produção é",
+      "alternatives": {
+        "A": "0109082.",
+        "B": "0281090.",
+        "C": "1010982.",
+        "D": "2081090.",
+        "E": "2810910."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q151",
+      "number": 151,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "21",
+        "B": "25",
+        "C": "55",
+        "D": "80",
+        "E": "110"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q152",
+      "number": 152,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q152",
+          "blocks": [
+            {
+              "id": "text_q152_1",
+              "type": "paragraph",
+              "content": "Quatro candidatos se apresentaram para realizar a prova de\num concurso. Antes de iniciar a prova, os celulares dos quatro\ncandidatos foram recolhidos pelo aplicador, que os guardou,\ncada um, dentro de um envelope preto. Ao término da prova,\n- aplicador devolveu os quatro envelopes com os celulares aos\nquatro candidatos, de maneira aleatória, já que não havia feito\na identificação dos envelopes."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q152_1",
+          "blocks": [
+            {
+              "id": "img_q152_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 152",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-20-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q152_2",
+          "blocks": [
+            {
+              "id": "img_q152_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 152",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-20-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "a identificação dos envelopes.",
+      "alternatives": {
+        "A": "[1]",
+        "B": "[1]",
+        "C": "[1]",
+        "D": "[1]",
+        "E": "[1]"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q153",
+      "number": 153,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q153",
+          "blocks": [
+            {
+              "id": "text_q153_1",
+              "type": "paragraph",
+              "content": "Em um jogo digital, há três personagens: um herói e dois\nvilões. A programação é feita de tal forma que o herói sempre\nserá atacado pelo vilão que estiver mais próximo dele. Uma das\nmaneiras de “confundir” os vilões é movimentar o herói por\ntrajetórias que o mantenha equidistante dos vilões, gerando\nindefinição entre eles e, com isso, não sendo atacado.\nPara a programação de uma das etapas desse jogo,\n- programador considerou, no plano cartesiano, o quadrado\n_STUV_ como a região de movimentação dos personagens, onde\n_V_ e _T_ representam as posições fixas dos vilões, e _S,_ a posição\ninicial do herói, como apresentado na figura.\nQual é a equação da trajetória em que o herói poderá se\nmovimentar sem ser atacado?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "movimentar sem ser atacado?",
+      "alternatives": {
+        "A": "_y_ = −3 _x_ + 20",
+        "B": "_y_ = −3 _x_ + 16",
+        "C": "_y_ = −3 _x_ - 20",
+        "D": "_y_ = 3 _x_ + 16",
+        "E": "_y_ = 3 _x_ - 16"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q154",
+      "number": 154,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q154",
+          "blocks": [
+            {
+              "id": "text_q154_1",
+              "type": "paragraph",
+              "content": "Uma livraria comercializa livros dos seguintes gêneros\nliterários: ficção científica, autoajuda, romance e biografia.\nO gráfico apresenta o estoque dos livros que essa livraria tem,\npor gênero literário e por nacionalidade do autor, bem como a\ndemanda por gênero literário, obtida por meio de uma enquete\nfeita com seus clientes habituais.\n**Estoque e demanda por livros**\nO gerente da livraria fará a encomenda de novos exemplares\nsomente do gênero cuja quantidade em estoque seja insuficiente\npara atender a demanda constatada pela enquete.\nO gênero de livro do qual o gerente deverá encomendar mais\nexemplares é"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q154_1",
+          "blocks": [
+            {
+              "id": "img_q154_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 154",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-21-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q154_2",
+          "blocks": [
+            {
+              "id": "img_q154_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 154",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-21-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "O gênero de livro do qual o gerente deverá encomendar mais",
+      "alternatives": {
+        "A": "ficção, pois é o que apresenta maior demanda.",
+        "B": "biografia, pois é o gênero que tem a menor demanda.",
+        "C": "autoajuda, pois a quantidade em estoque é inferior à demanda.",
+        "D": "biografia, pois é o gênero que tem a menor quantidade de",
+        "E": "romance, pois é o que apresenta o menor estoque de livros"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q155",
+      "number": 155,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q155",
+          "blocks": [
+            {
+              "id": "text_q155_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ23*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ23*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q156",
+      "number": 156,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q156",
+          "blocks": [
+            {
+              "id": "text_q156_1",
+              "type": "paragraph",
+              "content": "Um artista, que costuma fazer desenhos com areia na\npraia, pediu a um banhista que fizesse um pequeno desenho,\nque serviria de esboço para uma grande obra de arte a ser\nfeita na areia. Esse desenho está representado na figura.\nApós a conclusão, a obra de arte obtida manteve as mesmas\nproporções do desenho feito pelo banhista, sendo que as\nmedidas indicadas na figura foram ampliadas para 30 m.\nEm qual escala esse desenho representa a obra de arte?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Em qual escala esse desenho representa a obra de arte?",
+      "alternatives": {
+        "A": "_T_ = 1,59 + _F_",
+        "B": "_F_ = 1,59 + _T_",
+        "C": "_[T]_ _F_ [=] [ 1 59],",
+        "D": "_T_ _[F]_ [=] [ 1 59],",
+        "E": "_F_ ⋅ _T_ = 1,59"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q157",
+      "number": 157,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q157",
+          "blocks": [
+            {
+              "id": "text_q157_1",
+              "type": "paragraph",
+              "content": "Dez casais fundaram um grupo de dança e decidiram\nconstituir uma diretoria com três cargos: presidente, secretário\ne tesoureiro. Para maior representatividade, decidiu-se que no\nmáximo uma pessoa por casal poderá ocupar um cargo nessa\ndiretoria.\nQuantas diretorias diferentes podem ser constituídas por esses\n10 casais?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Quantas diretorias diferentes podem ser constituídas por esses",
+      "alternatives": {
+        "A": "10 × 9 × 8",
+        "B": "20 × 18 × 16",
+        "C": "20 × 19 × 18",
+        "D": "10 × 9 × 8 × 2",
+        "E": "20 × 18 × 16 × 2"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q158",
+      "number": 158,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q158",
+          "blocks": [
+            {
+              "id": "text_q158_1",
+              "type": "paragraph",
+              "content": "Um estacionamento possui 120 vagas para veículos,\ne todas essas vagas estão ocupadas. Cada cliente paga uma\nmensalidade para utilizar uma vaga, que é calculada com base\nnas despesas mensais do estacionamento e no lucro pretendido.\nAs despesas mensais do estacionamento são: R$ 14 240,00 com\nmanutenção mais R$ 36,00 de seguro por veículo. O lucro do\nestacionamento é determinado pela diferença do valor arrecadado\ncom as mensalidades pelas despesas efetuadas. A partir do mês\nseguinte, o valor do seguro por veículo aumentará em 20%,\ne as despesas com manutenção permanecerão sem alterações.\nCom isso, o dono do estacionamento reajustará as mensalidades\npara obter um lucro mensal de R$ 10 000,00. Apesar desse\nreajuste, todas as vagas continuarão ocupadas.\nO valor, em real, da mensalidade reajustada será"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O valor, em real, da mensalidade reajustada será",
+      "alternatives": {
+        "A": "185,60.",
+        "B": "226,09.",
+        "C": "245,20.",
+        "D": "268,93.",
+        "E": "285,60."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q159",
+      "number": 159,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q159",
+          "blocks": [
+            {
+              "id": "text_q159_1",
+              "type": "paragraph",
+              "content": "O dono de uma sorveteria armazena sorvete em potes de\n20 000 cm [3] . Ele serve o sorvete em taças, em porções de 250 mL."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q159_1",
+          "blocks": [
+            {
+              "id": "img_q159_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 159",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-22-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "20 000 cm [3] . Ele serve o sorvete em taças, em porções de 250 mL.",
+      "alternatives": {
+        "A": "5.",
+        "B": "8.",
+        "C": "50.",
+        "D": "80.",
+        "E": "800."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q160",
+      "number": 160,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q160",
+          "blocks": [
+            {
+              "id": "text_q160_1",
+              "type": "paragraph",
+              "content": "Um recipiente tem um formato que faz com que, ao ser\nenchido de água com uma vazão constante, a distância _D_ da\nlâmina de água ao tampo da mesa, em centímetro, aumente\nem relação ao tempo _T_, em minuto, de acordo com uma função\ndo tipo\n_D_ = _k_ + tg[ _p_ ( _T_ + _m_ )],\nsendo os parâmetros _k_, _p_ e _m_ números reais, para _T_ variando\nentre 0 e 4 minutos, conforme ilustrado na figura, na qual estão\napresentadas assíntotas verticais da função tangente utilizada\nna definição de _D_ ."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "na definição de _D_ .",
+      "alternatives": {
+        "A": "expressão algébrica que representa a relação entre _D_ e _T_ é",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q161",
+      "number": 161,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q161",
+          "blocks": [
+            {
+              "id": "text_q161_1",
+              "type": "paragraph",
+              "content": "Os quadrados em cinza na figura representam os quarteirões\nde uma parte do bairro onde moram João e seu amigo.\nO quadrado pequeno (A), pintado em preto e localizado no canto\nsuperior esquerdo de um quadrado maior, indica a casa do amigo\nde João. João também mora em uma casa de esquina, mas na\nextremidade nordeste de um quarteirão. Para chegar à casa de\nseu amigo, ao sair de casa, João deve caminhar pelo quarteirão\nonde mora na direção oeste, dobrar à direita, caminhar por três\nquarteirões na direção norte e dobrar à esquerda. A casa de\nseu amigo fica no segundo quarteirão a oeste.\nO quarteirão onde se encontra a casa de João é representado\npelo quadrado com a letra"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "pelo quadrado com a letra",
+      "alternatives": {
+        "A": "P.",
+        "B": "Q.",
+        "C": "R.",
+        "D": "S.",
+        "E": "T."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q162",
+      "number": 162,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q162",
+          "blocks": [
+            {
+              "id": "text_q162_1",
+              "type": "paragraph",
+              "content": "Uma empresa produziu, em um determinado mês,\n110 toneladas de plástico a partir de derivados de petróleo\ne 80 toneladas a partir de plásticos reciclados. O custo para\nreciclar uma tonelada de plástico é de R$ 500,00, que equivale\na 5% do custo para produzir a mesma quantidade de plástico\na partir de derivados de petróleo. Para o mês seguinte, a meta\ndessa empresa é produzir a mesma quantidade de plástico que\nfoi produzida nesse mês, mas com redução de, pelo menos,\n50% no custo de produção.\nPara que no mês seguinte a empresa atinja a meta, a quantidade\nmínima de toneladas de plástico que devem ser produzidas a\npartir de reciclagem deverá ser"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q162_1",
+          "blocks": [
+            {
+              "id": "img_q162_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 162",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-23-1.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q162_2",
+          "blocks": [
+            {
+              "id": "img_q162_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 162",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-23-0.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "partir de reciclagem deverá ser",
+      "alternatives": {
+        "A": "135.",
+        "B": "140.",
+        "C": "155.",
+        "D": "160.",
+        "E": "175."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q163",
+      "number": 163,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q163",
+          "blocks": [
+            {
+              "id": "text_q163_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ25*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ25*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q164",
+      "number": 164,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q164",
+          "blocks": [
+            {
+              "id": "text_q164_1",
+              "type": "paragraph",
+              "content": "Em uma escola, todos os estudantes do ensino médio\npraticam uma das três modalidades esportivas oferecidas\ncomo atividade física, e cada um deles pratica somente uma\ndessas atividades. Os gráficos trazem alguns dados relativos aos\nquantitativos de estudantes que praticam essas modalidades\nesportivas nessa escola, apesar de algumas quantidades não\nterem sido informadas.\nQual é a quantidade de estudantes no ensino médio dessa escola?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q164_1",
+          "blocks": [
+            {
+              "id": "img_q164_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 164",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-24-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q164_2",
+          "blocks": [
+            {
+              "id": "img_q164_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 164",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-24-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "Qual é a quantidade de estudantes no ensino médio dessa escola?",
+      "alternatives": {
+        "A": "135 e 7 horas e 15 minutos.",
+        "B": "45 e 7 horas e 15 minutos.",
+        "C": "135 e 12 horas.",
+        "D": "135 e 6 horas.",
+        "E": "45 e 6 horas."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q165",
+      "number": 165,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q165",
+          "blocks": [
+            {
+              "id": "text_q165_1",
+              "type": "paragraph",
+              "content": "Em um estudo clínico, 55 mulheres foram distribuídas, aleatoriamente, em 5 grupos de 11 pessoas. Para testar uma nova\nmedicação, será escolhido um grupo no qual a maioria das mulheres tenham idades entre 20 e 30 anos. Os demais grupos\ntomarão placebo ou medicações já existentes no mercado. O quadro, parcialmente preenchido, informa alguns dados relativos\nàs idades das mulheres desses grupos.\n|Grupos|Menor idade|Maior idade|Média|Mediana|Moda|Desvio padrão|\n|---|---|---|---|---|---|---|\n|1|||25|||10|\n|2||||25||9|\n|3|||||25||\n|4|||25|||1|\n|5|20|35|||||\nMesmo com o quadro incompleto, foi possível selecionar um desses grupos porque, apenas com os dados apresentados no\nquadro, foi identificado um grupo que, certamente, atendia ao critério de escolha.\nO grupo escolhido foi o"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O grupo escolhido foi o",
+      "alternatives": {
+        "A": "1.",
+        "B": "2.",
+        "C": "3.",
+        "D": "4.",
+        "E": "5."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q166",
+      "number": 166,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q166",
+          "blocks": [
+            {
+              "id": "text_q166_1",
+              "type": "paragraph",
+              "content": "_Pace_ é um termo usado por um corredor para denominar o seu ritmo médio em uma corrida. Representa o tempo médio,\nem segundo, que esse corredor leva para percorrer 1 km.\nO esquema apresenta o tempo, em segundo, que um corredor levou para cruzar as marcas que definem os quatro primeiros\ntrechos de 1 km, em uma corrida de 5 km, e o tempo gasto para percorrer cada trecho de 1 km.\nO melhor _pace_ que esse corredor alcançou em corridas de 5 km foi 281 s/km.\nPara que consiga repetir nessa corrida seu melhor _pace_ em corridas de 5 km, seu tempo, no 5º trecho, deve ser quantos segundos\nmenor do que o que ele gastou para percorrer o 4º trecho?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q166_1",
+          "blocks": [
+            {
+              "id": "img_q166_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 166",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-25-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "menor do que o que ele gastou para percorrer o 4º trecho?",
+      "alternatives": {
+        "A": "1",
+        "B": "2",
+        "C": "8",
+        "D": "9",
+        "E": "15"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q167",
+      "number": 167,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q167",
+          "blocks": [
+            {
+              "id": "text_q167_1",
+              "type": "paragraph",
+              "content": "Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro,\nmedido em km/m³, no caso do gás, ou medido em km/L, no caso da gasolina, depende, entre outros fatores, da velocidade,\nem km/h, em que o carro trafega. Essa relação está em conformidade com estes gráficos.\nDurante um feriado, essa pessoa realizou uma viagem de 240 km. Para obter uma estimativa de gasto de combustível,\nassuma que em todo o trajeto se manteve uma velocidade constante de 60 km/h. Considere que, durante metade do caminho,\nfoi utilizado apenas GNV e, na outra metade, apenas gasolina. O que foi pago pelo metro cúbico de GNV e pelo litro de gasolina\ncorrespondeu, respectivamente, a R$ 2,00 e a R$ 3,00.\nQual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?",
+      "alternatives": {
+        "A": "4",
+        "B": "8",
+        "C": "14",
+        "D": "21",
+        "E": "30"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q168",
+      "number": 168,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q168",
+          "blocks": [
+            {
+              "id": "text_q168_1",
+              "type": "paragraph",
+              "content": "Em um país, a primeira etapa para obtenção da carteira de motorista é a contratação de três produtos:\n- pacote com 20 aulas teóricas;\n- pacote com 10 aulas práticas;\n- aluguel do veículo para realização das aulas práticas.\nUma pessoa que pretende obter a carteira de motorista pesquisou o valor do aluguel do veículo e os valores de cada aula\nteórica e de cada aula prática em três autoescolas. O quadro apresenta esses valores.\n|Autoescola|Valor de cada aula teórica (R$)|Valor de cada aula prática (R$)|Aluguel do veículo (R$)|\n|---|---|---|---|\n|I|10|80|400|\n|II|30|50|200|\n|III|20|40|400|\nEla contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível."
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q168_1",
+          "blocks": [
+            {
+              "id": "img_q168_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 168",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-26-0.png"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "statement": "Ela contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível.",
+      "alternatives": {
+        "A": "I, com o custo total de R$ 1 400,00.",
+        "B": "II, com o custo total de R$ 280,00.",
+        "C": "II, com o custo total de R$ 1 300,00.",
+        "D": "III, com o custo total de R$ 460,00.",
+        "E": "III, com o custo total de R$ 1 200,00."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q169",
+      "number": 169,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "img_q169_1",
+          "blocks": [
+            {
+              "id": "img_q169_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 169",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-27-0.png"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q169_2",
+          "blocks": [
+            {
+              "id": "img_q169_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 169",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-27-1.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q169_3",
+          "blocks": [
+            {
+              "id": "img_q169_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 169",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-27-2.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q169_4",
+          "blocks": [
+            {
+              "id": "img_q169_4_block",
+              "type": "image",
+              "alt": "Imagem da questão 169",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-27-3.png"
+            }
+          ],
+          "order": 4
+        },
+        {
+          "id": "img_q169_5",
+          "blocks": [
+            {
+              "id": "img_q169_5_block",
+              "type": "image",
+              "alt": "Imagem da questão 169",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-27-4.png"
+            }
+          ],
+          "order": 5
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "produtividade de soja em uma área cultivada é a média da quantidade de sacas de 50 quilogramas que são produzidas",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q170",
+      "number": 170,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q170",
+          "blocks": [
+            {
+              "id": "text_q170_1",
+              "type": "paragraph",
+              "content": "#### *020325AZ29*"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "#### *020325AZ29*",
+      "alternatives": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "E": ""
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q171",
+      "number": 171,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q171",
+          "blocks": [
+            {
+              "id": "text_q171_1",
+              "type": "paragraph",
+              "content": "Uma caixa de descarga, acoplada a um vaso sanitário, tem\na forma de paralelepípedo reto retângulo cujas dimensões\ninternas da base são 2,5 dm e 1,5 dm. Nessa caixa há uma boia\nque interrompe o abastecimento quando a altura da coluna de\nágua atinge 2 dm, conforme a figura."
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "água atinge 2 dm, conforme a figura.",
+      "alternatives": {
+        "A": "4",
+        "B": "12",
+        "C": "16",
+        "D": "18",
+        "E": "20"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q172",
+      "number": 172,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q172",
+          "blocks": [
+            {
+              "id": "text_q172_1",
+              "type": "paragraph",
+              "content": "Um empresário utiliza máquinas cuja pressão interna _P_,\nem atmosfera, depende do tempo contínuo de utilização _t_, em\nhora, e de um parâmetro positivo _K_, que define o modelo da\nmáquina, segundo a expressão:\n_P_ = 4 ⋅ log[− _K_ ⋅ ( _t_ + 1) ⋅ ( _t_       - 19)]\nO fabricante dessas máquinas recomenda ao usuário\nque a pressão interna desse tipo de máquina não ultrapasse\n10 atmosferas durante seu funcionamento.\nO empresário pretende comprar novas máquinas desse\ntipo que deverão funcionar, diariamente, por um período\ncontínuo de 10 horas. Para isso, precisa definir o modelo de\nmáquina a ser adquirida escolhendo o maior valor possível\ndo parâmetro _K_, atendendo à recomendação do fabricante.\nO maior valor a ser escolhido para _K_ é"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q172_1",
+          "blocks": [
+            {
+              "id": "img_q172_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 172",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-28-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q172_2",
+          "blocks": [
+            {
+              "id": "img_q172_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 172",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-28-1.png"
+            }
+          ],
+          "order": 3
+        }
+      ],
+      "statement": "O maior valor a ser escolhido para _K_ é",
+      "alternatives": {
+        "A": "10 [0,5]",
+        "B": "10 [8]",
+        "C": "[10]",
+        "D": "[10]",
+        "E": "25 × 10 [−][2]"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q173",
+      "number": 173,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q173",
+          "blocks": [
+            {
+              "id": "text_q173_1",
+              "type": "paragraph",
+              "content": "Em uma cidade, será construído um túnel que atravessa uma\nmontanha para facilitar o trânsito de automóveis e bicicletas.\nDois projetos foram elaborados e os esquemas com as vistas\nfrontais desses projetos são apresentados na figura.\nO Projeto 1 conta com dois túneis, um exclusivo para\nbicicletas e o outro, para automóveis. O Projeto 2 conta com\num único túnel, com espaços reservados para o trânsito exclusivo\nde bicicletas e automóveis. Nos dois projetos, os túneis têm o\nformato de semicilindro reto de mesma extensão, com vias de\nida e volta para os dois tipos de veículos, separados por muretas.\nO projeto a ser aprovado será aquele que apresentar a\nmenor área da seção transversal, pois implicará menor volume\nde material retirado da montanha.\nConsidere 3 como aproximação para p e desconsidere as\nespessuras das muretas.\nO projeto a ser aprovado é"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O projeto a ser aprovado é",
+      "alternatives": {
+        "A": "- 1, pois apresenta área de seção transversal medindo",
+        "B": "- 2, pois apresenta área de seção transversal medindo",
+        "C": "- 1, pois apresenta área de seção transversal medindo 135 m [2] .",
+        "D": "- 2, pois apresenta área de seção transversal medindo 243 m [2] .",
+        "E": "qualquer um dos dois, pois apresentam áreas de suas seções"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q174",
+      "number": 174,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q174",
+          "blocks": [
+            {
+              "id": "text_q174_1",
+              "type": "paragraph",
+              "content": "Um carro que custa 60 mil reais é comercializado por uma\nrevendedora que oferece duas opções de pagamento, todas\nsem entrada e sem juros:\n- opção 1: pagamento em _n_ parcelas iguais;\n- opção 2: pagamento em 6 parcelas a mais do que na\nopção 1 e, com isso, o valor de cada parcela se torna\nR$ 500,00 menor do que o valor da parcela na opção 1.\nNas duas opções de pagamento, o valor total a ser pago\npelo carro é o mesmo.\nQual é a quantidade _n_ de parcelas contidas na opção 1 de\npagamento?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "Qual é a quantidade _n_ de parcelas contidas na opção 1 de",
+      "alternatives": {
+        "A": "18",
+        "B": "24",
+        "C": "30",
+        "D": "42",
+        "E": "48"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q175",
+      "number": 175,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q175",
+          "blocks": [
+            {
+              "id": "text_q175_1",
+              "type": "paragraph",
+              "content": "Um pai comprou oito presentes diferentes (dentre os\nquais, uma bicicleta e um celular) para dar a seus três filhos.\nEle pretende distribuir os presentes de modo que o filho\nmais velho e o mais novo recebam três presentes cada um,\ne o do meio receba os dois presentes restantes. O mais velho\nganhará, entre seus presentes, ou uma bicicleta ou um celular,\nmas não ambos.\nDe quantas maneiras distintas a distribuição dos presentes\npode ser feita?"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "De quantas maneiras distintas a distribuição dos presentes",
+      "alternatives": {
+        "A": "36",
+        "B": "53",
+        "C": "300",
+        "D": "360",
+        "E": "560"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q176",
+      "number": 176,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "img_q176_1",
+          "blocks": [
+            {
+              "id": "img_q176_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 176",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-29-0.png"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "4,5.",
+        "B": "6,0.",
+        "C": "7,5.",
+        "D": "9,0.",
+        "E": "12,0."
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": true
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q177",
+      "number": 177,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "288",
+        "B": "297",
+        "C": "567",
+        "D": "990",
+        "E": "1 134"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q178",
+      "number": 178,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q178",
+          "blocks": [
+            {
+              "id": "text_q178_1",
+              "type": "paragraph",
+              "content": "Três dados cúbicos, com faces numeradas de 1 a 6, foram\nutilizados em um jogo. Artur escolheu dois dados, e João\nficou com o terceiro. O jogo consiste em ambos lançarem\nseus dados, observarem os números nas faces voltadas para\ncima e compararem o maior número obtido por Artur com\n- número obtido por João. Vence o jogador que obtiver o\nmaior número. Em caso de empate, a vitória é de João.\nO jogador que tem a maior probabilidade de vitória é"
+            }
+          ],
+          "order": 1
+        }
+      ],
+      "statement": "O jogador que tem a maior probabilidade de vitória é",
+      "alternatives": {
+        "A": "Artur, com probabilidade de [2]",
+        "B": "João, com probabilidade de [4]",
+        "C": "Artur, com probabilidade de [91]",
+        "D": "João, com probabilidade de [91]",
+        "E": "Artur, com probabilidade de [125]"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q179",
+      "number": 179,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [],
+      "statement": "[REVISAR: Enunciado não detectado]",
+      "alternatives": {
+        "A": "[cd]",
+        "B": "[m]",
+        "C": "[cd]",
+        "D": "[m]",
+        "E": "[m]"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": false,
+      "hasImages": false
+    },
+    {
+      "id": "ENEM_2025_D2_CI_Q180",
+      "number": 180,
+      "examYear": 2025,
+      "examDay": 2,
+      "examColor": "AMARELO",
+      "area": "CIENCIAS_NATUREZA",
+      "subject": "MATEMATICA",
+      "supportingMaterials": [
+        {
+          "id": "text_q180",
+          "blocks": [
+            {
+              "id": "text_q180_1",
+              "type": "paragraph",
+              "content": "Quatro amigos, cada um com 100 moedas, criaram um jogo,\nno qual cada um assume uma das quatro posições, 1, 2, 3 ou 4,\nindicadas na figura, e nela permanece até o final.\nO desenvolvimento do jogo se dá em rodadas e, em todas\nelas, cada jogador transfere e recebe uma quantidade de moedas,\nda seguinte maneira:\n- o jogador na posição 1 transfere 1 moeda para o jogador\nna posição 2;\n-   - jogador na posição 2 transfere 2 moedas para o jogador\nna posição 3;\n-   - jogador na posição 3 transfere 3 moedas para o jogador\nna posição 4;\n-   - jogador na posição 4 transfere 4 moedas para o jogador\nna posição 1, completando a rodada.\nAo final da rodada _n_, qual é a expressão algébrica que representa\n- número de moedas do jogador na posição 1?"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "id": "img_q180_1",
+          "blocks": [
+            {
+              "id": "img_q180_1_block",
+              "type": "image",
+              "alt": "Imagem da questão 180",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-30-0.png"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "id": "img_q180_2",
+          "blocks": [
+            {
+              "id": "img_q180_2_block",
+              "type": "image",
+              "alt": "Imagem da questão 180",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-30-1.png"
+            }
+          ],
+          "order": 3
+        },
+        {
+          "id": "img_q180_3",
+          "blocks": [
+            {
+              "id": "img_q180_3_block",
+              "type": "image",
+              "alt": "Imagem da questão 180",
+              "url": "/images/enem/2025/2025_PV_impresso_D2_CD7.pdf-31-0.png"
+            }
+          ],
+          "order": 4
+        }
+      ],
+      "statement": "- número de moedas do jogador na posição 1?",
+      "alternatives": {
+        "A": "103 + 4 _n_",
+        "B": "103 + 3 _n_",
+        "C": "100 + 4 _n_",
+        "D": "100 + 3 _n_",
+        "E": "99 + 4 _n_"
+      },
+      "correctAnswer": "A",
+      "hasMultipleTexts": true,
+      "hasImages": true
+    }
+  ]
+}

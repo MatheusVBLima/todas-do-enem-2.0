@@ -2,7 +2,7 @@ import { Suspense } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Check, Sparkles, BookOpen } from "lucide-react"
+import { Check, Sparkles, BookOpen, Clock } from "lucide-react"
 import { SUBSCRIPTION_PLANS } from "@/lib/constants"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
@@ -71,7 +71,10 @@ async function PlanActions({ planType }: { planType: 'FREE' | 'PRO' }) {
       Plano Atual
     </Button>
   ) : (
-    <SubscribeButton userId={userId} />
+    <Button className="w-full" variant="outline" disabled>
+      <Clock className="mr-2 size-4" />
+      Em breve
+    </Button>
   )
 }
 
@@ -156,7 +159,7 @@ export default function PlanosPage() {
               <CardTitle className="text-2xl">Rumo à Aprovação</CardTitle>
             </div>
             <CardDescription>
-              Acesso completo + inteligência artificial
+              Em breve: Acesso completo + inteligência artificial
             </CardDescription>
             <div className="mt-4">
               <span className="text-4xl font-bold">R$ 29,90</span>

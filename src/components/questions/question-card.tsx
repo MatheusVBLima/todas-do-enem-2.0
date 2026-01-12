@@ -201,13 +201,13 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
                 )}
                 {material.type === 'image' && material.url && (
                   <div className="rounded-lg border bg-muted/30 p-4">
-                    <div className="relative w-full overflow-hidden rounded-md">
+                    <div className="relative w-full rounded-md">
                       <Image
                         src={material.url}
                         alt={material.alt || 'Imagem da questão'}
-                        width={800}
-                        height={600}
-                        className="w-full h-auto object-contain"
+                        width={1200}
+                        height={900}
+                        className="w-full h-auto max-w-full"
                         unoptimized
                       />
                     </div>
@@ -262,9 +262,10 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
         <div className="space-y-2">
           {options.map((option) => {
             const isSelected = selectedOption === option.letter
-            const isCorrectOption = option.letter === question.correctAnswer
+            const isCancelled = question.correctAnswer === 'ANULADA'
+            const isCorrectOption = !isCancelled && option.letter === question.correctAnswer
             const showCorrect = isAnswerVisible && isCorrectOption
-            const showWrong = isAnswerVisible && isSelected && !isCorrectOption
+            const showWrong = isAnswerVisible && isSelected && !isCorrectOption && !isCancelled
 
             return (
               <button
@@ -310,14 +311,22 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
             </Button>
           ) : (
             <div className="flex items-center gap-2">
-              {hasAnswered && (
-                <Badge variant={isCorrect ? "default" : "destructive"}>
-                  {isCorrect ? "Correto!" : "Incorreto"}
+              {question.correctAnswer === 'ANULADA' ? (
+                <Badge variant="outline" className="border-yellow-500 text-yellow-600 dark:text-yellow-500">
+                  Questão Anulada
                 </Badge>
+              ) : (
+                <>
+                  {hasAnswered && (
+                    <Badge variant={isCorrect ? "default" : "destructive"}>
+                      {isCorrect ? "Correto!" : "Incorreto"}
+                    </Badge>
+                  )}
+                  <span className="text-sm text-muted-foreground">
+                    Resposta: <strong>{question.correctAnswer}</strong>
+                  </span>
+                </>
               )}
-              <span className="text-sm text-muted-foreground">
-                Resposta: <strong>{question.correctAnswer}</strong>
-              </span>
             </div>
           )}
 
