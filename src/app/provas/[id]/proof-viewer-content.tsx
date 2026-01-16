@@ -2,15 +2,30 @@
 
 import { useSuspenseQuery } from "@tanstack/react-query"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { PdfViewer } from "@/components/proofs/pdf-viewer"
+import { Skeleton } from "@/components/ui/skeleton"
 import { PdfDownloadButton } from "@/components/proofs/pdf-download-button"
-import { ArrowLeft, Calendar } from "lucide-react"
+import { ArrowLeft, Calendar, Loader2 } from "lucide-react"
 import { getProof } from "@/server/actions/proofs"
 import { queryKeys } from "@/lib/query-keys"
 import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
+
+// Dynamic import for PDF Viewer - heavy component with react-pdf
+const PdfViewer = dynamic(
+  () => import("@/components/proofs/pdf-viewer").then(mod => mod.PdfViewer),
+  {
+    loading: () => (
+      <div className="flex flex-col items-center justify-center min-h-[700px] bg-[#1a1a1a] rounded-xl border border-border/50">
+        <Loader2 className="h-10 w-10 text-primary animate-spin" />
+        <p className="text-white/60 font-medium mt-4">Carregando visualizador de PDF...</p>
+      </div>
+    ),
+    ssr: false,
+  }
+)
 
 interface ProofViewerContentProps {
   proofId: string

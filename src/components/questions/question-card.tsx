@@ -2,6 +2,7 @@
 
 import { useState, startTransition, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
+import dynamic from "next/dynamic"
 import { Eye, ChevronDown, ChevronUp, Trash2, ExternalLink, Lock, Sparkles } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -9,13 +10,25 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
 import { capitalizeSentences } from "@/lib/text-utils"
 import { KNOWLEDGE_AREAS, SUBJECTS, type KnowledgeAreaKey, type SubjectKey } from "@/lib/constants"
 import type { QuestionWithExam } from "@/types"
 import { AddToGroupButton } from "@/components/groups/add-to-group-button"
-import { AIExplanation } from "./ai-explanation"
 import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
+
+// Dynamic import for AI Explanation - only loads when user requests explanation
+const AIExplanation = dynamic(() => import("./ai-explanation").then(mod => mod.AIExplanation), {
+  loading: () => (
+    <div className="space-y-3">
+      <Skeleton className="h-4 w-3/4" />
+      <Skeleton className="h-4 w-full" />
+      <Skeleton className="h-4 w-5/6" />
+    </div>
+  ),
+  ssr: false,
+})
 
 interface SupportingMaterial {
   type: 'text' | 'image'
@@ -208,7 +221,6 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
                         width={1200}
                         height={900}
                         className="w-full h-auto max-w-full"
-                        unoptimized
                       />
                     </div>
                     {material.caption && (

@@ -81,7 +81,13 @@
       "Bash(fi)",
       "Bash(done)",
       "Bash(pkill:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Skill(vercel-react-best-practices)",
+      "Skill(vercel-react-best-practices:*)",
+      "Skill(web-design-guidelines)",
+      "Skill(web-design-guidelines:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
