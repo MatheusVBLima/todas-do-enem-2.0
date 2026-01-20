@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Newsreader } from "next/font/google"
-import { Suspense } from "react"
+import { Suspense, cache } from "react"
 import { Analytics } from "@vercel/analytics/next"
 import { Providers } from "@/providers"
 import { AppSidebar } from "@/components/app-sidebar"
@@ -90,7 +90,9 @@ export const metadata: Metadata = {
   },
 }
 
-async function getUserData() {
+// React.cache() ensures this function is called only once per request,
+// even when invoked from multiple components (SidebarWrapper, HeaderWrapper)
+const getUserData = cache(async function getUserData() {
   const authUser = await getCurrentUser()
 
   if (!authUser) {
@@ -120,7 +122,7 @@ async function getUserData() {
       : authUser.email?.split('@')[0] || 'Usuário',
     plan: (createResult.success && createResult.data ? createResult.data.plan : 'TENTANDO_A_SORTE') as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
   }
-}
+})
 
 async function SidebarWrapper() {
   const user = await getUserData()

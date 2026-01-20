@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Sparkles, FileText, AlertCircle } from "lucide-react"
 import { getUserQuota } from "@/lib/ai-quota"
 import { Skeleton } from "@/components/ui/skeleton"
+import { queryKeys } from "@/lib/query-keys"
 
 interface QuotaDisplayProps {
   userId: string
@@ -16,7 +17,7 @@ interface QuotaDisplayProps {
 
 export function QuotaDisplay({ userId, userPlan, variant = "full" }: QuotaDisplayProps) {
   const { data: quota, isLoading } = useQuery({
-    queryKey: ["ai-quota", userId],
+    queryKey: queryKeys.aiQuota.user(userId),
     queryFn: () => getUserQuota(userId, userPlan),
     staleTime: 0, // Always consider data stale
     refetchOnMount: 'always', // Always refetch when component mounts

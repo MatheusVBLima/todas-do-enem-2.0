@@ -62,4 +62,10 @@ export const queryKeys = {
     session: (id: string) => [...queryKeys.simulados.all, "session", id] as const,
     result: (id: string) => [...queryKeys.simulados.all, "result", id] as const,
   },
+
+  // AI Quota
+  aiQuota: {
+    all: ["ai-quota"] as const,
+    user: (userId: string) => [...queryKeys.aiQuota.all, userId] as const,
+  },
 } as const
