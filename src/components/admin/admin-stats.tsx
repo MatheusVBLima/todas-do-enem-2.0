@@ -15,9 +15,8 @@ export function AdminStats() {
       if (!result.success) throw new Error(result.error)
       return result.data!
     },
-    staleTime: 0, // Always fetch fresh data
-    refetchOnMount: true, // Refetch every time component mounts
-    refetchOnWindowFocus: true, // Refetch when user returns to tab
+    staleTime: 1000 * 60 * 5, // 5 minutes - admin data doesn't need constant refreshing
+    refetchOnWindowFocus: false,
   })
 
   const { data: userCosts, isLoading: loadingUsers } = useQuery({
@@ -27,9 +26,8 @@ export function AdminStats() {
       if (!result.success) throw new Error(result.error)
       return result.data!
     },
-    staleTime: 0, // Always fetch fresh data
-    refetchOnMount: true, // Refetch every time component mounts
-    refetchOnWindowFocus: true, // Refetch when user returns to tab
+    staleTime: 1000 * 60 * 5, // 5 minutes - admin data doesn't need constant refreshing
+    refetchOnWindowFocus: false,
   })
 
   if (loadingTotals) {

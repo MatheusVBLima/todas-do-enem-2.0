@@ -2,13 +2,19 @@ import { Suspense } from "react"
 import { QueryClient, HydrationBoundary, dehydrate } from "@tanstack/react-query"
 import { notFound } from "next/navigation"
 import { ProofViewerContent } from "./proof-viewer-content"
-import { getProof } from "@/server/actions/proofs"
+import { getProof, getAllProofIds } from "@/server/actions/proofs"
 import { queryKeys } from "@/lib/query-keys"
 
 interface PageProps {
   params: Promise<{
     id: string
   }>
+}
+
+// Generate static params for all proofs at build time
+export async function generateStaticParams() {
+  const proofIds = await getAllProofIds()
+  return proofIds.map((id) => ({ id }))
 }
 
 export default async function ProofViewPage({ params }: PageProps) {

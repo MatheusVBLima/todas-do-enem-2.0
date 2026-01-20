@@ -25,6 +25,7 @@ import { deleteEssay } from "@/server/actions/essays"
 import type { EssayWithCorrection } from "@/server/actions/essays"
 import { useQueryClient } from "@tanstack/react-query"
 import { usePrefetchEssay } from "@/hooks/use-prefetch-essay"
+import { queryKeys } from "@/lib/query-keys"
 
 interface EssayListProps {
   essays: EssayWithCorrection[]
@@ -77,7 +78,7 @@ export function EssayList({ essays, onEdit }: EssayListProps) {
 
       if (result.success) {
         toast.success("Redação deletada com sucesso!")
-        queryClient.invalidateQueries({ queryKey: ["essays"] })
+        queryClient.invalidateQueries({ queryKey: queryKeys.essays.all })
       } else {
         toast.error(result.error || "Erro ao deletar redação")
       }

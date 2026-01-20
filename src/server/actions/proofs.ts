@@ -64,6 +64,29 @@ export async function getProofs(
 }
 
 /**
+ * Get all proof IDs for static generation
+ */
+export async function getAllProofIds(): Promise<string[]> {
+  try {
+    const { data, error } = await db
+      .from("Exam")
+      .select("id")
+      .not("pdfUrl", "is", null)
+      .order("year", { ascending: false })
+
+    if (error) {
+      console.error("[getAllProofIds] Error:", error)
+      return []
+    }
+
+    return (data || []).map(proof => proof.id)
+  } catch (error) {
+    console.error("[getAllProofIds] Unexpected error:", error)
+    return []
+  }
+}
+
+/**
  * Get a single proof by ID
  */
 export async function getProof(id: string): Promise<ActionResponse<Proof>> {

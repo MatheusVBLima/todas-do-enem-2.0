@@ -188,7 +188,7 @@ export function QuestionFilters() {
 
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="outline" className="md:hidden">
+            <Button variant="outline" className="md:hidden" aria-label="Abrir filtros de questões">
               <Filter className="size-4" />
               {activeFiltersCount > 0 && (
                 <Badge variant="secondary" className="ml-1">
@@ -220,10 +220,13 @@ export function QuestionFilters() {
           {filters.busca && (
             <Badge variant="secondary" className="gap-1">
               Busca: {filters.busca}
-              <button onClick={() => {
-                setSearchInput("")
-                setFilters({ busca: "", pagina: 1 })
-              }}>
+              <button
+                onClick={() => {
+                  setSearchInput("")
+                  setFilters({ busca: "", pagina: 1 })
+                }}
+                aria-label={`Remover filtro de busca: ${filters.busca}`}
+              >
                 <X className="size-3" />
               </button>
             </Badge>
@@ -231,7 +234,7 @@ export function QuestionFilters() {
           {filters.anos.map((year) => (
             <Badge key={year} variant="secondary" className="gap-1">
               {year}
-              <button onClick={() => toggleYear(year)}>
+              <button onClick={() => toggleYear(year)} aria-label={`Remover filtro do ano ${year}`}>
                 <X className="size-3" />
               </button>
             </Badge>
@@ -239,7 +242,7 @@ export function QuestionFilters() {
           {filters.areas.map((area) => (
             <Badge key={area} variant="secondary" className="gap-1">
               {KNOWLEDGE_AREAS[area as KnowledgeAreaKey]?.shortLabel}
-              <button onClick={() => toggleArea(area)}>
+              <button onClick={() => toggleArea(area)} aria-label={`Remover filtro de área: ${KNOWLEDGE_AREAS[area as KnowledgeAreaKey]?.shortLabel}`}>
                 <X className="size-3" />
               </button>
             </Badge>
@@ -247,7 +250,7 @@ export function QuestionFilters() {
           {filters.disciplinas.map((subject) => (
             <Badge key={subject} variant="secondary" className="gap-1">
               {SUBJECTS[subject as SubjectKey]?.label}
-              <button onClick={() => toggleSubject(subject)}>
+              <button onClick={() => toggleSubject(subject)} aria-label={`Remover filtro de disciplina: ${SUBJECTS[subject as SubjectKey]?.label}`}>
                 <X className="size-3" />
               </button>
             </Badge>

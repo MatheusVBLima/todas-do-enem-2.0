@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { FileText, Plus, Award, BookText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
@@ -10,7 +10,7 @@ import { EssayList } from "./essay-list"
 import { EnemCompetencias } from "./enem-competencias"
 import { EssayThemes } from "./essay-themes"
 import { ComingSoonDialog } from "@/components/coming-soon-dialog"
-import { useQuery, useQueryClient } from "@tanstack/react-query"
+import { useQuery } from "@tanstack/react-query"
 import { getEssays } from "@/server/actions/essays"
 import { queryKeys } from "@/lib/query-keys"
 
@@ -23,7 +23,6 @@ export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
   const [isEditorOpen, setIsEditorOpen] = useState(false)
   const [editingEssayId, setEditingEssayId] = useState<string | undefined>()
   const [showComingSoonDialog, setShowComingSoonDialog] = useState(false)
-  const queryClient = useQueryClient()
 
   // Fetch essays with hydration + cache reuse
   const { data: essaysResult, isPending } = useQuery({
@@ -33,23 +32,14 @@ export function RedacaoClient({ userId, userPlan }: RedacaoClientProps) {
     refetchOnMount: false,
     refetchOnWindowFocus: false,
     refetchOnReconnect: false,
+    refetchInterval: (query) => {
+      const data = query.state.data
+      const hasSubmitted = data?.success && data.data?.some(e => e.status === "SUBMITTED")
+      return hasSubmitted ? 5000 : false
+    },
   })
 
   const essays = essaysResult?.success ? essaysResult.data || [] : []
-
-  // Auto-refresh when there are essays being corrected
-  useEffect(() => {
-    const hasSubmittedEssays = essays.some(essay => essay.status === "SUBMITTED")
-
-    if (!hasSubmittedEssays) return
-
-    // Check every 5 seconds for status updates
-    const interval = setInterval(() => {
-      queryClient.invalidateQueries({ queryKey: queryKeys.essays.list(userId) })
-    }, 5000)
-
-    return () => clearInterval(interval)
-  }, [essays, userId, queryClient])
 
   const handleNewEssay = () => {
     // Show coming soon dialog instead of opening editor

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Newsreader } from "next/font/google"
-import { Suspense } from "react"
+import { Suspense, cache } from "react"
 import { Analytics } from "@vercel/analytics/next"
 import { Providers } from "@/providers"
 import { AppSidebar } from "@/components/app-sidebar"
@@ -90,7 +90,9 @@ export const metadata: Metadata = {
   },
 }
 
-async function getUserData() {
+// React.cache() ensures this function is called only once per request,
+// even when invoked from multiple components (SidebarWrapper, HeaderWrapper)
+const getUserData = cache(async function getUserData() {
   const authUser = await getCurrentUser()
 
   if (!authUser) {
@@ -120,7 +122,7 @@ async function getUserData() {
       : authUser.email?.split('@')[0] || 'Usuário',
     plan: (createResult.success && createResult.data ? createResult.data.plan : 'TENTANDO_A_SORTE') as 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO',
   }
-}
+})
 
 async function SidebarWrapper() {
   const user = await getUserData()
@@ -142,6 +144,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} antialiased`}
       >
+        {/* Skip link for keyboard navigation accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-background focus:text-foreground focus:rounded-md focus:border focus:border-border focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-ring"
+        >
+          Pular para conteúdo principal
+        </a>
         <AppearanceScript />
         <Providers>
           <Analytics />
@@ -164,7 +173,7 @@ export default function RootLayout({
                   </Suspense>
                 </div>
               </header>
-              <main className="flex flex-1 flex-col gap-4 p-4 lg:p-6">{children}</main>
+              <main id="main-content" className="flex flex-1 flex-col gap-4 p-4 lg:p-6">{children}</main>
             </SidebarInset>
           </SidebarProvider>
         </Providers>

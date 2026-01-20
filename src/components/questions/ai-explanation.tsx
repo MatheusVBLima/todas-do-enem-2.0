@@ -18,6 +18,7 @@ import {
 import { Shimmer } from "@/components/ai-elements/shimmer"
 import { ComingSoonDialog } from "@/components/coming-soon-dialog"
 import { AdBanner } from "@/components/ad-banner"
+import { queryKeys } from "@/lib/query-keys"
 
 type AIExplanationProps = {
   question: QuestionWithExam
@@ -63,7 +64,7 @@ export function AIExplanation({ question, userId, userPlan }: AIExplanationProps
       setIsGenerating(false)
 
       // Invalidate quota to update UI
-      queryClient.invalidateQueries({ queryKey: ["ai-quota", userId] })
+      queryClient.invalidateQueries({ queryKey: queryKeys.aiQuota.user(userId) })
     },
   })
 

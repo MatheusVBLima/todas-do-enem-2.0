@@ -29,7 +29,15 @@ interface SupportingMaterialBlock {
 
 interface LocalSupportingMaterial {
   id: string
-  blocks: SupportingMaterialBlock[]
+  type: string
+  content?: string
+  url?: string
+  alt?: string
+  caption?: string
+  metadata?: {
+    source?: string
+  }
+  blocks?: SupportingMaterialBlock[] // Legacy format (pre-2025)
   order: number
 }
 
@@ -41,20 +49,40 @@ function flattenSupportingMaterials(materials: LocalSupportingMaterial[]): any[]
   const flattened: any[] = []
 
   for (const material of materials) {
-    for (const block of material.blocks) {
-      if (block.type === 'paragraph' && block.content) {
+    // Format 2025+ (direct properties)
+    if (material.type && !material.blocks) {
+      if (material.type === 'paragraph' && material.content) {
         flattened.push({
           type: 'text',
-          content: block.content,
-          metadata: block.metadata,
+          content: material.content,
+          metadata: material.metadata,
         })
-      } else if (block.type === 'image' && block.url) {
+      } else if (material.type === 'image' && material.url) {
         flattened.push({
           type: 'image',
-          url: block.url,
-          alt: block.alt || 'Imagem da questão',
-          caption: block.caption,
+          url: material.url,
+          alt: material.alt || 'Imagem da questão',
+          caption: material.caption,
         })
+      }
+    }
+    // Legacy format (pre-2025, with blocks)
+    else if (material.blocks) {
+      for (const block of material.blocks) {
+        if (block.type === 'paragraph' && block.content) {
+          flattened.push({
+            type: 'text',
+            content: block.content,
+            metadata: block.metadata,
+          })
+        } else if (block.type === 'image' && block.url) {
+          flattened.push({
+            type: 'image',
+            url: block.url,
+            alt: block.alt || 'Imagem da questão',
+            caption: block.caption,
+          })
+        }
       }
     }
   }
@@ -201,6 +229,40 @@ function formatLocalQuestionsForResponse(
       q.optionE?.toLowerCase().includes(busca)
     )
   }
+
+  // Sort questions with custom order:
+  // 1. Year (descending)
+  // 2. Language questions grouped (Q1-5 English, then Q1-5 Spanish)
+  // 3. Then by question number
+  filtered.sort((a, b) => {
+    // First: sort by year (newest first)
+    if (a.exam.year !== b.exam.year) {
+      return b.exam.year - a.exam.year
+    }
+
+    // Second: handle language questions (Q1-5)
+    const aIsLanguage = a.questionNumber <= 5
+    const bIsLanguage = b.questionNumber <= 5
+
+    if (aIsLanguage && bIsLanguage) {
+      const aLang = (a as any).languageOption || ''
+      const bLang = (b as any).languageOption || ''
+
+      // Group by language: INGLES first, then ESPANHOL
+      if (aLang !== bLang) {
+        if (aLang === 'INGLES') return -1
+        if (bLang === 'INGLES') return 1
+        if (aLang === 'ESPANHOL') return -1
+        if (bLang === 'ESPANHOL') return 1
+      }
+
+      // Within same language, sort by question number
+      return a.questionNumber - b.questionNumber
+    }
+
+    // Third: sort by question number for non-language questions
+    return a.questionNumber - b.questionNumber
+  })
 
   const total = filtered.length
   const paginated = filtered.slice(offset, offset + pageSize)

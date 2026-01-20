@@ -36,8 +36,7 @@ export function UserStatistics({ userId }: UserStatisticsProps) {
       if (!result.success) throw new Error(result.error)
       return result.data!
     },
-    staleTime: 0, // Always consider data stale
-    refetchOnMount: 'always', // Always refetch when component mounts
+    staleTime: 1000 * 60 * 10, // 10 minutes - stats don't change frequently
   })
 
   if (isLoading) {

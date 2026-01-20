@@ -22,8 +22,8 @@ import Link from "next/link"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { QuotaDisplay } from "@/components/ai/quota-display"
 import { AdminStats } from "@/components/admin/admin-stats"
-import { UserStatistics } from "@/components/conta/user-statistics"
 import { DailyGoalCard } from "@/components/conta/daily-goal-card"
+import { UserStatisticsLazy } from "@/components/conta/user-statistics-lazy"
 
 async function AccountData({ userId }: { userId: string }) {
   const userResult = await getUserProfile(userId)
@@ -298,8 +298,8 @@ async function AccountData({ userId }: { userId: string }) {
         {/* Daily Goal */}
         <DailyGoalCard userId={userId} />
 
-        {/* User Statistics with charts */}
-        <UserStatistics userId={userId} />
+        {/* User Statistics with charts - lazy loaded */}
+        <UserStatisticsLazy userId={userId} />
       </TabsContent>
 
       {/* Tab: Admin */}

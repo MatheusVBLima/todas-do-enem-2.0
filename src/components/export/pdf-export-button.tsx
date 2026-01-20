@@ -4,7 +4,6 @@ import { useState } from "react"
 import { Download, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import type { QuestionWithExam } from "@/types"
-import { generateQuestionsPDF, downloadPDF } from "@/lib/pdf-generator"
 import { toast } from "sonner"
 
 type PDFExportButtonProps = {
@@ -35,6 +34,8 @@ export function PDFExportButton({
     setIsExporting(true)
 
     try {
+      // Dynamic import to reduce initial bundle size - PDF library only loads on click
+      const { generateQuestionsPDF, downloadPDF } = await import("@/lib/pdf-generator")
       const blob = await generateQuestionsPDF(questions, title)
       downloadPDF(blob, `${filename}.pdf`)
       toast.success(`PDF exportado com sucesso! (${questions.length} questões)`)
