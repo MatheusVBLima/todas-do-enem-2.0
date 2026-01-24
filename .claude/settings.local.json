@@ -87,7 +87,8 @@
       "Skill(vercel-react-best-practices)",
       "Skill(vercel-react-best-practices:*)",
       "Skill(web-design-guidelines)",
-      "Skill(web-design-guidelines:*)"
+      "Skill(web-design-guidelines:*)",
+      "Bash(netstat:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

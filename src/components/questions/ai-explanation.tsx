@@ -119,13 +119,13 @@ Explique esta questão do ENEM de forma didática.`
         />
 
         <Button
-          onClick={() => setShowUpgradeDialog(true)}
-          disabled={false}
+          onClick={handleGenerate}
+          disabled={isGenerating}
           variant="outline"
           className="w-full"
         >
           <Sparkles className="mr-2 size-4" />
-          Explicação por IA - Em breve
+          {isGenerating ? "Gerando..." : "Explicação por IA"}
         </Button>
       </>
     )

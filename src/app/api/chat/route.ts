@@ -35,7 +35,7 @@ export async function POST(req: Request) {
   const user = userResult.data
 
   // COMING SOON MODE: Disable AI features
-  const FEATURES_ENABLED = false // Change to true when ready to launch
+  const FEATURES_ENABLED = true // Change to true when ready to launch
 
   if (!FEATURES_ENABLED) {
     return NextResponse.json(

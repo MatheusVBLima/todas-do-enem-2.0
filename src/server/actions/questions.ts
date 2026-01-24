@@ -142,7 +142,7 @@ function loadAllLocalQuestions(): QuestionWithExam[] {
   // Filter based on feature flag
   const isCompleteMode = process.env.NEXT_PUBLIC_FEATURE_FLAG_COMPLETE === 'true'
   const years = isCompleteMode
-    ? allYears.filter(year => year >= 2023 && year <= 2025) // Complete: all available data
+    ? allYears.filter(year => year >= 2022 && year <= 2025) // Complete: all available data
     : allYears.filter(year => year === 2025) // Limited: 2025 only
   console.log('[LocalQuestions] All years found:', allYears)
   console.log('[LocalQuestions] Feature flag complete mode:', isCompleteMode)

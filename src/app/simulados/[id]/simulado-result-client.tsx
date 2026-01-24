@@ -288,6 +288,7 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                 const isExpanded = expandedQuestions.has(sq.questionId)
                 const isCorrect = sq.isCorrect
                 const wasAnswered = sq.userAnswer !== null
+                const isCancelled = question.correctAnswer === 'ANULADA'
 
                 const supportingMaterials: SupportingMaterial[] = Array.isArray(
                   question.supportingMaterials
@@ -324,15 +325,15 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                               "size-8 rounded-full flex items-center justify-center shrink-0 shadow-sm",
                               isCorrect
                                 ? "bg-green-500 text-white"
-                                : wasAnswered
-                                  ? "bg-red-500 text-white"
+                                : wasAnswered && !isCancelled
+                                  ? "bg-muted text-muted-foreground"
                                   : "bg-muted text-muted-foreground"
                             )}
                           >
                             {isCorrect ? (
                               <CheckCircle2 className="size-4" />
-                            ) : wasAnswered ? (
-                              <XCircle className="size-4" />
+                            ) : wasAnswered && !isCancelled ? (
+                              <MinusCircle className="size-4" />
                             ) : (
                               <MinusCircle className="size-4" />
                             )}
@@ -436,7 +437,7 @@ export function SimuladoResultClient({ simuladoId }: SimuladoResultClientProps) 
                         </div>
 
                         {question.correctAnswer === 'ANULADA' && (
-                          <div className="bg-yellow-500/5 border border-yellow-500/20 rounded-lg p-3 flex items-center gap-2 text-yellow-700 dark:text-yellow-500 text-xs font-bold uppercase">
+                          <div className="bg-secondary/50 border border-secondary/30 rounded-lg p-3 flex items-center gap-2 text-secondary-foreground text-xs font-bold uppercase">
                             <AlertCircle className="size-4" />
                             Questão Anulada - Todos recebem pontuação
                           </div>

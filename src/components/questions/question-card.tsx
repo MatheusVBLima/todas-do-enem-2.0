@@ -275,9 +275,10 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
           {options.map((option) => {
             const isSelected = selectedOption === option.letter
             const isCancelled = question.correctAnswer === 'ANULADA'
-            const isCorrectOption = !isCancelled && option.letter === question.correctAnswer
+            const isUnavailable = question.correctAnswer === 'X' || !question.correctAnswer
+            const isCorrectOption = !isCancelled && !isUnavailable && option.letter === question.correctAnswer
             const showCorrect = isAnswerVisible && isCorrectOption
-            const showWrong = isAnswerVisible && isSelected && !isCorrectOption && !isCancelled
+            const showWrong = isAnswerVisible && isSelected && !isCorrectOption && !isCancelled && !isUnavailable
 
             return (
               <button
@@ -324,8 +325,12 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
           ) : (
             <div className="flex items-center gap-2">
               {question.correctAnswer === 'ANULADA' ? (
-                <Badge variant="outline" className="border-yellow-500 text-yellow-600 dark:text-yellow-500">
+                <Badge variant="secondary" className="text-secondary-foreground">
                   Questão Anulada
+                </Badge>
+              ) : question.correctAnswer === 'X' || !question.correctAnswer ? (
+                <Badge variant="outline" className="border-muted-foreground text-muted-foreground">
+                  Gabarito indisponível
                 </Badge>
               ) : (
                 <>

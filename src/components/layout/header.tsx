@@ -65,7 +65,6 @@ export function Header({ userId = null }: HeaderProps) {
         <GlobalSearch />
         <Button
           variant="outline"
-          size="sm"
           onClick={handleButtonClick}
           className="hidden sm:flex items-center gap-2"
         >
