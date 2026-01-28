@@ -2,7 +2,7 @@
 
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { Sparkles, Check, ArrowRight } from "lucide-react"
+import { Sparkles, Check, Clock } from "lucide-react"
 import Link from "next/link"
 
 interface UpgradeDialogProps {
@@ -77,32 +77,25 @@ export function UpgradeDialog({ open, onOpenChange, feature = "ai-explanation" }
             </div>
           </div>
 
-          {/* Pricing */}
-          <div className="rounded-lg border bg-card p-4">
-            <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-bold">R$ 29,90</span>
-              <span className="text-muted-foreground">/mês</span>
-            </div>
-            <p className="text-sm text-muted-foreground mt-1">
-              Cancele quando quiser, sem compromisso
+          {/* Coming soon notice */}
+          <div className="rounded-lg bg-muted p-4 text-center">
+            <p className="text-sm text-muted-foreground">
+              O plano Rumo à Aprovação estará disponível em breve
             </p>
           </div>
         </div>
 
         <DialogFooter className="flex-col sm:flex-col gap-2">
-          <Button asChild className="w-full" size="lg">
-            <Link href="/planos">
-              <Sparkles className="mr-2 size-4" />
-              Ver Planos e Assinar
-              <ArrowRight className="ml-2 size-4" />
-            </Link>
+          <Button className="w-full" variant="outline" disabled size="lg">
+            <Clock className="mr-2 size-4" />
+            Em breve
           </Button>
           <Button
             variant="ghost"
             onClick={() => onOpenChange(false)}
             className="w-full"
           >
-            Agora não
+            Fechar
           </Button>
         </DialogFooter>
       </DialogContent>

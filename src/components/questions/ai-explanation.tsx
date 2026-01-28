@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Loader2, Sparkles, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -11,6 +11,7 @@ import { Streamdown } from "streamdown"
 import { useChat } from "@ai-sdk/react"
 import { DefaultChatTransport } from "ai"
 import { useQueryClient } from "@tanstack/react-query"
+import { motion, AnimatePresence } from "framer-motion"
 import {
   Reasoning,
   ReasoningTrigger,
@@ -24,9 +25,10 @@ type AIExplanationProps = {
   question: QuestionWithExam
   userId: string
   userPlan: string | null
+  onToggle?: (expanded: boolean) => void
 }
 
-export function AIExplanation({ question, userId, userPlan }: AIExplanationProps) {
+export function AIExplanation({ question, userId, userPlan, onToggle }: AIExplanationProps) {
   const isPro = userPlan === "RUMO_A_APROVACAO"
 
   const [isGenerating, setIsGenerating] = useState(false)
@@ -108,10 +110,19 @@ Explique esta questão do ENEM de forma didática.`
     .map((part) => part.text)
     .join("") || ""
 
+  const handleToggle = (expanded: boolean) => {
+    setIsExpanded(expanded)
+    if (onToggle) onToggle(expanded)
+  }
+
   // If not generated yet, show button
   if (!showExplanation) {
     return (
-      <>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+      >
         <ComingSoonDialog
           open={showUpgradeDialog}
           onOpenChange={setShowUpgradeDialog}
@@ -119,15 +130,15 @@ Explique esta questão do ENEM de forma didática.`
         />
 
         <Button
-          onClick={() => setShowUpgradeDialog(true)}
-          disabled={false}
+          onClick={handleGenerate}
+          disabled={isGenerating}
           variant="outline"
           className="w-full"
         >
           <Sparkles className="mr-2 size-4" />
-          Explicação por IA - Em breve
+          {isGenerating ? "Gerando..." : "Explicação por IA"}
         </Button>
-      </>
+      </motion.div>
     )
   }
 
@@ -139,57 +150,87 @@ Explique esta questão do ENEM de forma didática.`
         feature="ai-explanation"
       />
 
-      {isGenerating && !explanationText ? (
-        <Reasoning isStreaming={true} defaultOpen={false}>
-          <ReasoningTrigger
-            getThinkingMessage={() => (
-              <Shimmer duration={1.5}>
-                {isCached ? "Carregando explicação..." : "Analisando questão e gerando explicação..."}
-              </Shimmer>
-            )}
-          />
-        </Reasoning>
-      ) : explanationText ? (
-        isExpanded ? (
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-lg">
-              <Sparkles className="size-5 text-primary" />
-              Explicação por IA
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="prose prose-sm max-w-none dark:prose-invert">
-              <Streamdown isAnimating={isLoading}>
-                {explanationText}
-              </Streamdown>
-            </div>
-
-            {!isLoading && (
-              <>
-                <AdBanner className="mt-6" />
-                <Button
-                  size="sm"
-                  className="mt-4"
-                  onClick={() => setIsExpanded(false)}
-                >
-                  Fechar explicação
-                </Button>
-              </>
-            )}
-          </CardContent>
-        </Card>
-        ) : (
-          <Button
-            size="sm"
-            className="w-full"
-            onClick={() => setIsExpanded(true)}
+      <AnimatePresence mode="wait">
+        {isGenerating && !explanationText ? (
+          <motion.div
+            key="loading"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="overflow-hidden"
           >
-            <Sparkles className="mr-2 size-4" />
-            Ver explicação
-          </Button>
-        )
-      ) : null}
+            <Reasoning isStreaming={true} defaultOpen={false}>
+              <ReasoningTrigger
+                getThinkingMessage={() => (
+                  <Shimmer duration={1.5}>
+                    {isCached ? "Carregando explicação..." : "Analisando questão e gerando explicação..."}
+                  </Shimmer>
+                )}
+              />
+            </Reasoning>
+          </motion.div>
+        ) : explanationText ? (
+          isExpanded ? (
+            <motion.div
+              key="expanded"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+              className="overflow-hidden"
+            >
+              <Card>
+                <CardHeader className="pb-2">
+                  <CardTitle className="flex items-center gap-2 text-lg">
+                    <Sparkles className="size-5 text-primary" />
+                    Explicação por IA
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="prose prose-sm max-w-none dark:prose-invert">
+                    <Streamdown isAnimating={isLoading}>
+                      {explanationText}
+                    </Streamdown>
+                  </div>
+
+                  {!isLoading && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.5 }}
+                    >
+                      <AdBanner className="mt-6" />
+                      <Button
+                        size="sm"
+                        className="mt-4"
+                        onClick={() => handleToggle(false)}
+                      >
+                        Fechar explicação
+                      </Button>
+                    </motion.div>
+                  )}
+                </CardContent>
+              </Card>
+            </motion.div>
+          ) : (
+            <motion.div
+              key="collapsed"
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 5 }}
+            >
+              <Button
+                size="sm"
+                className="w-full"
+                onClick={() => handleToggle(true)}
+              >
+                <Sparkles className="mr-2 size-4" />
+                Ver explicação
+              </Button>
+            </motion.div>
+          )
+        ) : null}
+      </AnimatePresence>
     </div>
   )
 }

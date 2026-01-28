@@ -3,7 +3,6 @@ import { Geist, Geist_Mono, Newsreader } from "next/font/google"
 import { Suspense, cache } from "react"
 import { Analytics } from "@vercel/analytics/next"
 import { Providers } from "@/providers"
-import { AppSidebar } from "@/components/app-sidebar"
 import { Header } from "@/components/layout"
 import { BreadcrumbSection } from "@/components/layout/breadcrumb-section"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
@@ -11,6 +10,7 @@ import { Separator } from "@/components/ui/separator"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile, upsertUserInDatabase } from "@/server/actions/users"
 import { AppearanceScript } from "@/components/appearance-script"
+import { ThemeAwareSidebar } from "@/components/theme-aware-sidebar"
 import "./globals.css"
 
 const geistSans = Geist({
@@ -126,7 +126,7 @@ const getUserData = cache(async function getUserData() {
 
 async function SidebarWrapper() {
   const user = await getUserData()
-  return <AppSidebar user={user} />
+  return <ThemeAwareSidebar user={user} />
 }
 
 async function HeaderWrapper() {

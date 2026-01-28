@@ -13,7 +13,6 @@ import type {
   SimuladoWithResult,
   SimuladoResultado,
   PaginatedResponse,
-  AnswerOption,
   QuestionWithExam,
 } from "@/types"
 
@@ -48,7 +47,7 @@ export async function createSimulado(
         }
       }
     } else {
-      // Use existing RPC search logic for home page
+      // Fetch questions from database using RPC search
       const { data: questionsData, error: questionsError } = await supabase.rpc(
         "search_questions_with_trigrams",
         {
@@ -56,6 +55,7 @@ export async function createSimulado(
           p_anos: filters.anos && filters.anos.length > 0 ? filters.anos : undefined,
           p_areas: filters.areas && filters.areas.length > 0 ? filters.areas : undefined,
           p_disciplinas: filters.disciplinas && filters.disciplinas.length > 0 ? filters.disciplinas : undefined,
+          p_topics: filters.topics && filters.topics.length > 0 ? filters.topics : undefined,
           p_offset: 0,
           p_limit: 500, // Reasonable max for a simulado
         }
@@ -140,8 +140,20 @@ export async function getSimuladoSession(
       return { success: false, error: "Simulado não encontrado." }
     }
 
-    // Get simulado questions with question details
+    // Get simulado questions
     const { data: simuladoQuestoes, error: questoesError } = await supabase
+      .from("SimuladoQuestao")
+      .select("*")
+      .eq("simuladoId", simuladoId)
+      .order("position", { ascending: true })
+
+    if (questoesError) {
+      console.error("Error fetching simulado questions:", questoesError)
+      return { success: false, error: "Erro ao carregar questões do simulado." }
+    }
+
+    // Fetch question details from Question table
+    const { data: questoesWithDetails, error: detailsError } = await supabase
       .from("SimuladoQuestao")
       .select(`
         *,
@@ -153,14 +165,14 @@ export async function getSimuladoSession(
       .eq("simuladoId", simuladoId)
       .order("position", { ascending: true })
 
-    if (questoesError) {
-      console.error("Error fetching simulado questions:", questoesError)
-      return { success: false, error: "Erro ao carregar questões do simulado." }
+    if (detailsError) {
+      console.error("Error fetching question details:", detailsError)
+      return { success: false, error: "Erro ao carregar detalhes das questões." }
     }
 
     const result: SimuladoWithQuestions = {
       ...simulado,
-      questions: simuladoQuestoes.map((sq: any) => ({
+      questions: questoesWithDetails.map((sq: any) => ({
         ...sq,
         question: sq.question as QuestionWithExam,
       })),
@@ -180,7 +192,7 @@ export async function submitAnswer(
   const { simuladoId, questionId, answer } = params
 
   try {
-    // Get the question to check the correct answer
+    // Get the correct answer from database
     const { data: question, error: questionError } = await supabase
       .from("Question")
       .select("correctAnswer")
@@ -191,8 +203,13 @@ export async function submitAnswer(
       return { success: false, error: "Questão não encontrada." }
     }
 
-    // Questões anuladas são sempre consideradas corretas
-    const isCorrect = question.correctAnswer === 'ANULADA' || question.correctAnswer === answer
+    const correctAnswer = question.correctAnswer
+    if (!correctAnswer) {
+      return { success: false, error: "Questão não encontrada." }
+    }
+
+    // Questões anuladas ou com gabarito 'X' (placeholder) são sempre consideradas corretas
+    const isCorrect = correctAnswer === 'ANULADA' || correctAnswer === 'X' || correctAnswer === answer
 
     // Update the SimuladoQuestao record
     const { error: updateError } = await supabase

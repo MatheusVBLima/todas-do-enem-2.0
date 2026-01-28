@@ -89,7 +89,7 @@ export function GlobalSearch() {
     <>
       <Button
         variant="outline"
-        className="relative justify-start text-sm text-muted-foreground w-10 sm:w-64"
+        className="relative justify-start text-sm text-muted-foreground w-10 sm:w-64 h-9"
         onClick={() => setOpen(true)}
       >
         <Search className="size-4 sm:mr-2" />

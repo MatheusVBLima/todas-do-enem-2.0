@@ -58,7 +58,7 @@ export function ComingSoonDialog({ open, onOpenChange, feature }: ComingSoonDial
           <div className="rounded-lg border bg-card p-4">
             <h4 className="font-semibold mb-2">Enquanto isso, você pode:</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Estudar todas as questões do ENEM 2025</li>
+              <li>• Estudar todas as questões do ENEM 2025 até 2023</li>
               <li>• Criar grupos personalizados de questões</li>
               <li>• Exportar questões para PDF</li>
               <li>• Fazer simulados personalizados</li>

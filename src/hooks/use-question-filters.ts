@@ -7,6 +7,7 @@ export function useQuestionFilters() {
     anos: parseAsArrayOf(parseAsInteger).withDefault([]),
     areas: parseAsArrayOf(parseAsString).withDefault([]),
     disciplinas: parseAsArrayOf(parseAsString).withDefault([]),
+    topics: parseAsArrayOf(parseAsString).withDefault([]),
     busca: parseAsString.withDefault(""),
     pagina: parseAsInteger.withDefault(1),
   })

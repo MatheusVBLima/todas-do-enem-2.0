@@ -62,8 +62,8 @@ export type SubjectKey = keyof typeof SUBJECTS
 // Anos do ENEM (1998 - 2025)
 export const ENEM_YEARS = Array.from({ length: 2025 - 1998 + 1 }, (_, i) => 1998 + i)
 
-// Anos disponíveis em modo limitado
-export const AVAILABLE_YEARS_LIMITED = [2025]
+// Anos disponíveis em modo limitado (2022-2025 para testes com questões locais)
+export const AVAILABLE_YEARS_LIMITED = [2025, 2024, 2023, 2022]
 
 // Helper para obter anos disponíveis baseado na feature flag
 export function getAvailableYears(): number[] {
@@ -173,8 +173,8 @@ export const PLATFORM_STATUS = {
     endYear: 2025,
     totalYears: 28,
   },
-  available: [2025] as number[],
-  inProgress: [2024, 2023, 2022] as number[],
+  available: [2025, 2024, 2023, 2022] as number[],
+  inProgress: [] as number[],
 }
 
 export type PlatformYear = {

@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { Search, X, Filter, ChevronDown } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Search, X, Filter, ChevronDown, Tag } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
@@ -23,13 +23,20 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { KNOWLEDGE_AREAS, SUBJECTS, ENEM_YEARS, type KnowledgeAreaKey, type SubjectKey } from "@/lib/constants"
 import { useQuestionFilters } from "@/hooks/use-question-filters"
+import { getTopics, type TopicOption } from "@/server/actions/questions"
 
 export function QuestionFilters() {
   const [filters, setFilters] = useQuestionFilters()
   const [searchInput, setSearchInput] = useState(filters.busca)
+  const [topics, setTopics] = useState<TopicOption[]>([])
+
+  // Load topics on mount
+  useEffect(() => {
+    getTopics().then(setTopics)
+  }, [])
 
   const activeFiltersCount =
-    filters.anos.length + filters.areas.length + filters.disciplinas.length + (filters.busca ? 1 : 0)
+    filters.anos.length + filters.areas.length + filters.disciplinas.length + filters.topics.length + (filters.busca ? 1 : 0)
 
   const handleSearch = () => {
     setFilters({ busca: searchInput, pagina: 1 })
@@ -62,12 +69,20 @@ export function QuestionFilters() {
     setFilters({ disciplinas: newSubjects, pagina: 1 })
   }
 
+  const toggleTopic = (topic: string) => {
+    const newTopics = filters.topics.includes(topic)
+      ? filters.topics.filter((t) => t !== topic)
+      : [...filters.topics, topic]
+    setFilters({ topics: newTopics, pagina: 1 })
+  }
+
   const clearFilters = () => {
     setSearchInput("")
     setFilters({
       anos: [],
       areas: [],
       disciplinas: [],
+      topics: [],
       busca: "",
       pagina: 1,
     })
@@ -142,6 +157,37 @@ export function QuestionFilters() {
           </div>
         </ScrollArea>
       </div>
+
+      {topics.length > 0 && (
+        <>
+          <Separator />
+          <div>
+            <h4 className="mb-3 text-sm font-medium flex items-center gap-1.5">
+              <Tag className="size-3.5" />
+              Assuntos
+            </h4>
+            <ScrollArea className="h-48">
+              <div className="space-y-2">
+                {topics.map((topic) => (
+                  <div key={topic.name} className="flex items-center space-x-2">
+                    <Checkbox
+                      id={`topic-${topic.name}`}
+                      checked={filters.topics.includes(topic.name)}
+                      onCheckedChange={() => toggleTopic(topic.name)}
+                    />
+                    <Label htmlFor={`topic-${topic.name}`} className="text-sm cursor-pointer flex-1 truncate">
+                      {topic.name}
+                    </Label>
+                    <span className="text-xs text-muted-foreground tabular-nums">
+                      {topic.questionCount}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </ScrollArea>
+          </div>
+        </>
+      )}
     </div>
   )
 
@@ -251,6 +297,15 @@ export function QuestionFilters() {
             <Badge key={subject} variant="secondary" className="gap-1">
               {SUBJECTS[subject as SubjectKey]?.label}
               <button onClick={() => toggleSubject(subject)} aria-label={`Remover filtro de disciplina: ${SUBJECTS[subject as SubjectKey]?.label}`}>
+                <X className="size-3" />
+              </button>
+            </Badge>
+          ))}
+          {filters.topics.map((topic) => (
+            <Badge key={topic} variant="secondary" className="gap-1">
+              <Tag className="size-3" />
+              {topic}
+              <button onClick={() => toggleTopic(topic)} aria-label={`Remover filtro de assunto: ${topic}`}>
                 <X className="size-3" />
               </button>
             </Badge>

@@ -18,10 +18,10 @@ interface PageProps {
 export default async function ProvasPage({ searchParams }: PageProps) {
   const params = await searchParams
 
-  // Parse filters from URL
+  // Parse filters from URL (must match nuqs defaults exactly for hydration)
   const filters: ProofFiltersType = {
     anos: params.anos ? params.anos.split(",").map(Number) : [],
-    tipo: params.tipo as any,
+    tipo: params.tipo ? (params.tipo as any) : null, // nuqs uses null as default
     pagina: params.pagina ? Number(params.pagina) : 1,
   }
 

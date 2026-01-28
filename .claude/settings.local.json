@@ -87,7 +87,14 @@
       "Skill(vercel-react-best-practices)",
       "Skill(vercel-react-best-practices:*)",
       "Skill(web-design-guidelines)",
-      "Skill(web-design-guidelines:*)"
+      "Skill(web-design-guidelines:*)",
+      "Bash(netstat:*)",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__generate_typescript_types",
+      "mcp__supabase__execute_sql",
+      "Bash(del add-topics.js verify-topics.js verify-portugues.js)",
+      "Bash(bunx tsc:*)",
+      "WebFetch(domain:github.com)"
     ]
   },
   "enableAllProjectMcpServers": true,

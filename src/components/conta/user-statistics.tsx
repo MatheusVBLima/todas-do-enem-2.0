@@ -36,7 +36,8 @@ export function UserStatistics({ userId }: UserStatisticsProps) {
       if (!result.success) throw new Error(result.error)
       return result.data!
     },
-    staleTime: 1000 * 60 * 10, // 10 minutes - stats don't change frequently
+    staleTime: 0, // Always fetch fresh data
+    refetchOnWindowFocus: true,
   })
 
   if (isLoading) {

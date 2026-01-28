@@ -25,7 +25,7 @@ import {
 
 type UserPlan = 'TENTANDO_A_SORTE' | 'RUMO_A_APROVACAO'
 
-interface AppUser {
+export interface AppUser {
   id: string
   email: string
   name: string

@@ -2,52 +2,50 @@ import { Suspense } from "react"
 import { BookOpen } from "lucide-react"
 import { QuestionFilters, QuestionList } from "@/components/questions"
 import { QuestionListSkeleton } from "@/components/questions/question-list-skeleton"
-import { QueryClient, dehydrate, HydrationBoundary } from "@tanstack/react-query"
 import { getQuestions } from "@/server/actions/questions"
 import { getCurrentUser } from "@/lib/auth/server"
 import { getUserProfile } from "@/server/actions/users"
-import { queryKeys } from "@/lib/query-keys"
+import type { PaginatedResponse, QuestionWithExam, QuestionFilters as QFilters } from "@/types"
 
-async function QuestionsData({ userId, userPlan }: { userId: string | null; userPlan: string | null }) {
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      queries: {
-        staleTime: 1000 * 60 * 30, // 30 minutos
-        gcTime: 1000 * 60 * 60 * 24, // 24 horas
-        refetchOnMount: false,
-        refetchOnWindowFocus: false,
-        refetchOnReconnect: false,
-      },
-    },
-  })
+// Default filters for initial load
+const defaultFilters: QFilters = {
+  anos: [],
+  areas: [],
+  disciplinas: [],
+  busca: "",
+  pagina: 1,
+}
 
-  // Default filters for initial load
-  const defaultFilters = {
-    anos: [],
-    areas: [],
-    disciplinas: [],
-    busca: "",
-    pagina: 1,
-  }
-
-  // Prefetch questions on server so hydration already has data
-  await queryClient.prefetchQuery({
-    queryKey: queryKeys.questions.list(defaultFilters),
-    queryFn: () => getQuestions(defaultFilters),
-  })
+async function QuestionsData({
+  userId,
+  userPlan,
+  questionsPromise,
+}: {
+  userId: string | null
+  userPlan: string | null
+  questionsPromise: Promise<PaginatedResponse<QuestionWithExam>>
+}) {
+  // Await the promise that was started in parallel with auth
+  const initialData = await questionsPromise
 
   return (
-    <HydrationBoundary state={dehydrate(queryClient)}>
-      <QuestionList userId={userId} userPlan={userPlan} />
-    </HydrationBoundary>
+    <QuestionList
+      userId={userId}
+      userPlan={userPlan}
+      initialData={initialData}
+      initialFilters={defaultFilters}
+    />
   )
 }
 
 export default async function QuestoesPage() {
-  // Paraleliza autenticação - não bloqueia renderização inicial
+  // Start questions fetch immediately - doesn't depend on auth (parallel)
+  const questionsPromise = getQuestions(defaultFilters)
+
+  // Auth flow runs in parallel with questions fetch
   const authUser = await getCurrentUser()
 
-  // Se autenticado, busca perfil (não tem como paralelizar pois depende do authUser.id)
+  // Se autenticado, busca perfil (depende do authUser.id)
   const userPlan = authUser
     ? await getUserProfile(authUser.id).then(r => r.success ? r.data?.plan ?? null : null)
     : null
@@ -67,7 +65,11 @@ export default async function QuestoesPage() {
       <QuestionFilters />
 
       <Suspense fallback={<QuestionListSkeleton />}>
-        <QuestionsData userId={authUser?.id || null} userPlan={userPlan} />
+        <QuestionsData
+          userId={authUser?.id || null}
+          userPlan={userPlan}
+          questionsPromise={questionsPromise}
+        />
       </Suspense>
     </div>
   )

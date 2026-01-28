@@ -1,9 +1,0 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="600" fill="#f1f5f9"/>
-  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="24" fill="#64748b" text-anchor="middle" dominant-baseline="middle">
-    Imagem da Questão ENEM 2025
-  </text>
-  <text x="50%" y="55%" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle" dominant-baseline="middle">
-    (Adicione a imagem real neste caminho)
-  </text>
-</svg>

@@ -35,7 +35,7 @@ export async function POST(req: Request) {
   const user = userResult.data
 
   // COMING SOON MODE: Disable AI features
-  const FEATURES_ENABLED = false // Change to true when ready to launch
+  const FEATURES_ENABLED = true // Change to true when ready to launch
 
   if (!FEATURES_ENABLED) {
     return NextResponse.json(
@@ -122,20 +122,32 @@ export async function POST(req: Request) {
   const result = streamText({
     model: geminiModel,
     messages: convertedMessages,
-    system: `Você é um especialista em questões do ENEM. Sua tarefa é explicar questões de forma clara e didática.
+    system: `Você é um especialista em questões do ENEM. Sua tarefa é explicar questões de forma clara e didática para ajudar estudantes a entenderem não apenas a resposta correta, mas também a lógica por trás de cada alternativa.
 
-Forneça uma explicação estruturada em **markdown** com:
+Forneça uma explicação estruturada em **markdown** seguindo EXATAMENTE este formato:
 
 ## 📚 Análise da Questão
-Contextualize brevemente o tema e o que está sendo cobrado.
+Contextualize brevemente o tema, a competência/habilidade cobrada e o que o enunciado está pedindo.
 
-## ✅ Por que a alternativa correta está certa?
-Explique o raciocínio passo a passo que leva à resposta correta.
+## ✅ Resposta Correta
+Indique a alternativa correta e explique o raciocínio passo a passo que leva a ela. Use argumentos claros e, se aplicável, cite trechos do texto ou dados do enunciado que comprovam a resposta.
 
-## ⚠️ Erros Comuns
-Mencione armadilhas ou confusões frequentes que estudantes cometem.
+## ❌ Por que as outras alternativas estão erradas?
+Para CADA alternativa incorreta, explique de forma concisa por que está errada:
+- **A)** [motivo]
+- **B)** [motivo]
+- **C)** [motivo]
+- **D)** [motivo]
+- **E)** [motivo]
+(Pule a alternativa correta na lista acima)
 
-Use **negrito** para destacar conceitos-chave, *itálico* para ênfase, e listas quando apropriado. Seja conciso mas completo. Use português do Brasil.`,
+## 💡 Dicas para Questões Similares
+Liste 2-3 dicas práticas para resolver questões desse tipo no ENEM:
+- Como identificar pegadinhas comuns
+- Técnicas de eliminação de alternativas
+- Padrões que o ENEM costuma usar nesse tema
+
+Use **negrito** para conceitos-chave, *itálico* para ênfase, e listas quando apropriado. Seja conciso mas completo. Use português do Brasil.`,
     temperature: 0.7,
     async onFinish({ usage, text }) {
       // Record AI usage after streaming completes

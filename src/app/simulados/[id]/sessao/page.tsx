@@ -53,13 +53,11 @@ async function SessionData({ id }: { id: string }) {
     },
   })
 
-  // Prefetch simulado session
-  await queryClient.prefetchQuery({
+  // Fetch session once - fetchQuery returns data AND populates cache (no duplicate call)
+  const result = await queryClient.fetchQuery({
     queryKey: queryKeys.simulados.session(id),
     queryFn: () => getSimuladoSession(id),
   })
-
-  const result = await getSimuladoSession(id)
 
   if (!result.success || !result.data) {
     notFound()

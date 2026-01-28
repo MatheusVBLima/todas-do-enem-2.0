@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { User, Crown, Zap, CreditCard, BarChart3, Calendar, AlertCircle, Shield } from "lucide-react"
+import { User, Crown, Zap, CreditCard, BarChart3, Calendar, AlertCircle, Shield, Flag, Clock } from "lucide-react"
 
 // Disable cache for this page - always fetch fresh data
 export const dynamic = 'force-dynamic'
@@ -17,16 +17,21 @@ import { EditProfileForm } from "@/components/conta/edit-profile-form"
 import { Skeleton } from "@/components/ui/skeleton"
 import { CancelSubscriptionButton } from "@/components/conta/cancel-subscription-button"
 import { ReactivateSubscriptionButton } from "@/components/conta/reactivate-subscription-button"
-import { SubscribeButton } from "@/components/stripe/subscribe-button"
 import Link from "next/link"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { QuotaDisplay } from "@/components/ai/quota-display"
 import { AdminStats } from "@/components/admin/admin-stats"
 import { DailyGoalCard } from "@/components/conta/daily-goal-card"
+import { TopicPriorityCard } from "@/components/conta/topic-priority-card"
+import { PerformanceEvolutionCard } from "@/components/conta/performance-evolution-card"
 import { UserStatisticsLazy } from "@/components/conta/user-statistics-lazy"
 
 async function AccountData({ userId }: { userId: string }) {
-  const userResult = await getUserProfile(userId)
+  // Fetch profile and subscription in parallel to avoid waterfall
+  const [userResult, subscriptionResult] = await Promise.all([
+    getUserProfile(userId),
+    getSubscriptionDetails().catch(() => null), // Handle no subscription gracefully
+  ])
 
   if (!userResult.success || !userResult.data) {
     return (
@@ -45,10 +50,8 @@ async function AccountData({ userId }: { userId: string }) {
     ? SUBSCRIPTION_PLANS.RUMO_A_APROVACAO
     : SUBSCRIPTION_PLANS.TENTANDO_A_SORTE
 
-  // Fetch subscription details if user has Stripe subscription
-  const subscriptionDetails = user.stripeSubscriptionId
-    ? await getSubscriptionDetails()
-    : null
+  // Use subscription only if user has a Stripe subscription
+  const subscriptionDetails = user.stripeSubscriptionId ? subscriptionResult : null
 
   const hasActiveSubscription = user.stripeSubscriptionId && user.stripeSubscriptionStatus === 'active'
 
@@ -170,10 +173,13 @@ async function AccountData({ userId }: { userId: string }) {
                 </ul>
               </div>
 
-              <SubscribeButton userId={userId} />
+              <Button className="w-full" variant="outline" disabled>
+                <Clock className="mr-2 size-4" />
+                Em breve
+              </Button>
 
               <p className="text-center text-xs text-muted-foreground">
-                Pagamento seguro processado pelo Stripe
+                O plano Rumo à Aprovação estará disponível em breve
               </p>
             </CardContent>
           </Card>
@@ -298,6 +304,12 @@ async function AccountData({ userId }: { userId: string }) {
         {/* Daily Goal */}
         <DailyGoalCard userId={userId} />
 
+        {/* Topic Priority - Study priorities by topic */}
+        <TopicPriorityCard userId={userId} />
+
+        {/* Performance Evolution - Progress over time */}
+        <PerformanceEvolutionCard userId={userId} />
+
         {/* User Statistics with charts - lazy loaded */}
         <UserStatisticsLazy userId={userId} />
       </TabsContent>
@@ -305,6 +317,21 @@ async function AccountData({ userId }: { userId: string }) {
       {/* Tab: Admin */}
       {isAdmin && (
         <TabsContent value="admin" className="space-y-4">
+          {/* Admin Quick Links */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">Links Rápidos</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button variant="outline" asChild>
+                <Link href="/conta/admin/reports">
+                  <Flag className="mr-2 size-4" />
+                  Questões Reportadas
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+
           <AdminStats />
         </TabsContent>
       )}
