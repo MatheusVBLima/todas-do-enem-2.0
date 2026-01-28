@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, startTransition, useRef, useEffect } from "react"
+import { useState, startTransition, useRef, useEffect, memo } from "react"
 import { useRouter } from "next/navigation"
 import dynamic from "next/dynamic"
 import { Eye, ChevronDown, ChevronUp, Trash2, ExternalLink, Lock, Sparkles } from "lucide-react"
@@ -16,6 +16,7 @@ import { capitalizeSentences } from "@/lib/text-utils"
 import { KNOWLEDGE_AREAS, SUBJECTS, type KnowledgeAreaKey, type SubjectKey } from "@/lib/constants"
 import type { QuestionWithExam } from "@/types"
 import { AddToGroupButton } from "@/components/groups/add-to-group-button"
+import { ReportQuestionButton } from "@/components/questions/report-question-button"
 import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
 
 // Dynamic import for AI Explanation - only loads when user requests explanation
@@ -50,16 +51,32 @@ interface QuestionCardProps {
   userPlan?: string | null
 }
 
-export function QuestionCard({ question, showAnswer = false, onRemove, userId = null, userPlan = null }: QuestionCardProps) {
+export const QuestionCard = memo(function QuestionCard({ question, showAnswer = false, onRemove, userId = null, userPlan = null }: QuestionCardProps) {
   const router = useRouter()
   const [isAnswerVisible, setIsAnswerVisible] = useState(showAnswer)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
 
   const [isExpanded, setIsExpanded] = useState(false)
   const [showExpandButton, setShowExpandButton] = useState(false)
+  const cardRef = useRef<HTMLDivElement>(null)
   const textRef = useRef<HTMLParagraphElement>(null)
   const contextRef = useRef<HTMLParagraphElement>(null)
   const prefetchQuestion = usePrefetchQuestion()
+
+  const handleToggleExplanation = (expanded: boolean) => {
+    // If we're closing the explanation, scroll back to the card
+    if (!expanded && cardRef.current) {
+      // We use scrollIntoView which is more reliable than window.scrollTo
+      // when elements are nested and the page height is changing.
+      // Small delay to allow the animation to start and browser to calculate new positions
+      setTimeout(() => {
+        cardRef.current?.scrollIntoView({ 
+          behavior: "smooth", 
+          block: "start" 
+        })
+      }, 50)
+    }
+  }
 
   // Check if text is actually truncated
   useEffect(() => {
@@ -118,7 +135,8 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
   const hasAnswered = selectedOption !== null
 
   return (
-    <Card>
+    <div ref={cardRef} className="scroll-mt-20">
+      <Card>
       <CardHeader className="pb-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="flex flex-wrap items-center gap-1.5">
@@ -148,6 +166,9 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
             </Button>
           </div>
           <div className="flex items-center gap-1">
+            {userId && (
+              <ReportQuestionButton questionId={question.id} variant="icon" />
+            )}
             <div className="hidden sm:contents">
               <AddToGroupButton questionId={question.id} userId={userId} variant="default" size="sm" />
             </div>
@@ -365,6 +386,7 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
               question={question}
               userId={userId}
               userPlan={userPlan}
+              onToggle={handleToggleExplanation}
             />
           ) : (
             <Button
@@ -382,5 +404,6 @@ export function QuestionCard({ question, showAnswer = false, onRemove, userId = 
         )}
       </CardContent>
     </Card>
+    </div>
   )
-}
+})

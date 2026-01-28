@@ -13,7 +13,10 @@
     "optionD": "Superfície.",
     "optionE": "Condutividade.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_02_img_008.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Geral"
+    ]
   },
   {
     "questionNumber": 92,
@@ -29,7 +32,10 @@
     "optionD": "ciclo circadiano de S. elongatus e do metabolismo de E. coli.",
     "optionE": "ciclo circadiano de S. elongatus e do ciclo circadiano de E. coli.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Genética"
+    ]
   },
   {
     "questionNumber": 93,
@@ -45,7 +51,10 @@
     "optionD": "formação da membrana natatória.",
     "optionE": "largura das cavidades de ossos pneumáticos.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_02_img_008.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fisiologia"
+    ]
   },
   {
     "questionNumber": 94,
@@ -61,7 +70,10 @@
     "optionD": "1",
     "optionE": "0",
     "imageUrl": "imagens/2025_D2_CD7/pagina_02_img_008.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 95,
@@ -77,7 +89,10 @@
     "optionD": "dispersão.",
     "optionE": "convecção.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Termodinâmica"
+    ]
   },
   {
     "questionNumber": 96,
@@ -93,7 +108,10 @@
     "optionD": "mudança de comportamento.",
     "optionE": "variabilidade genética.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_03_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ecologia"
+    ]
   },
   {
     "questionNumber": 97,
@@ -109,7 +127,10 @@
     "optionD": "induz a produção de proteínas neutralizadoras.",
     "optionE": "mantém a quantidade de anticorpos preexistentes.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_03_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fisiologia"
+    ]
   },
   {
     "questionNumber": 98,
@@ -125,7 +146,10 @@
     "optionD": "Diminuir as espécies nativas do bioma.",
     "optionE": "Contribuir com a redução das queimadas.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_03_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ecologia"
+    ]
   },
   {
     "questionNumber": 99,
@@ -141,7 +165,10 @@
     "optionD": "Restinga.",
     "optionE": "Pantanal.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ecologia"
+    ]
   },
   {
     "questionNumber": 100,
@@ -157,7 +184,10 @@
     "optionD": "destilada.",
     "optionE": "oxigenada.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_03_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Geral"
+    ]
   },
   {
     "questionNumber": 101,
@@ -173,7 +203,10 @@
     "optionD": "retraída, chegam menos luzes azul e verde aos cones.",
     "optionE": "dilatada, chegam menos luzes azul e verde aos bastonetes.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_03_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fisiologia"
+    ]
   },
   {
     "questionNumber": 102,
@@ -189,7 +222,10 @@
     "optionD": "Preparar o peixe em condições adequadas de higiene.",
     "optionE": "Manusear o peixe sem provocar o rompimento dos órgãos internos.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_03_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fisiologia"
+    ]
   },
   {
     "questionNumber": 103,
@@ -205,7 +241,10 @@
     "optionD": "Peroxissomos.",
     "optionE": "Retículo endoplasmático liso.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Citologia"
+    ]
   },
   {
     "questionNumber": 104,
@@ -221,7 +260,10 @@
     "optionD": "Manter os combustíveis fósseis no solo.",
     "optionE": "Produzir menos resíduos sólidos urbanos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ecologia"
+    ]
   },
   {
     "questionNumber": 105,
@@ -237,7 +279,10 @@
     "optionD": "liberação de elementos radioativos.",
     "optionE": "diminuição da solubilidade do gás oxigênio.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Físico-Química"
+    ]
   },
   {
     "questionNumber": 106,
@@ -253,7 +298,10 @@
     "optionD": "HAz3O e KCl2",
     "optionE": "HAzO2 e KCl",
     "imageUrl": "imagens/2025_D2_CD7/pagina_05_img_011.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Geral"
+    ]
   },
   {
     "questionNumber": 107,
@@ -269,7 +317,10 @@
     "optionD": "[Imagem: Proporção de besouros com 3 machos vermelhos + 1 macho preto e 3 fêmeas vermelhas + 1 fêmea preta]",
     "optionE": "[Imagem: Proporção de besouros com 4 machos vermelhos + 2 machos pretos e 4 fêmeas vermelhas + 2 fêmeas pretas]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_06_img_013.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Genética"
+    ]
   },
   {
     "questionNumber": 108,
@@ -285,7 +336,10 @@
     "optionD": "[Gráfico: Força de atrito que aumenta, mantém-se constante e depois diminui]",
     "optionE": "[Gráfico: Força de atrito que diminui, mantém-se constante e depois aumenta]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_06_img_013.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 109,
@@ -301,7 +355,10 @@
     "optionD": "hidrogenação.",
     "optionE": "descarboxilação.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Orgânica"
+    ]
   },
   {
     "questionNumber": 110,
@@ -317,7 +374,10 @@
     "optionD": "0,13 mg.",
     "optionE": "0,06 mg.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_07_img_024.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Geral"
+    ]
   },
   {
     "questionNumber": 111,
@@ -333,7 +393,10 @@
     "optionD": "ocorrência de inversão térmica.",
     "optionE": "produção de chuva ácida.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_07_img_024.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ecologia"
+    ]
   },
   {
     "questionNumber": 112,
@@ -349,7 +412,10 @@
     "optionD": "Cegueira noturna.",
     "optionE": "Anemia perniciosa.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fisiologia"
+    ]
   },
   {
     "questionNumber": 113,
@@ -365,7 +431,10 @@
     "optionD": "4",
     "optionE": "5",
     "imageUrl": "imagens/2025_D2_CD7/pagina_08_img_026.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 114,
@@ -381,7 +450,10 @@
     "optionD": "ressonância e timbre.",
     "optionE": "reflexão e amplitude.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_08_img_026.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ondulatória"
+    ]
   },
   {
     "questionNumber": 115,
@@ -397,7 +469,10 @@
     "optionD": "C10H16O2",
     "optionE": "C10H18O2",
     "imageUrl": "imagens/2025_D2_CD7/pagina_08_img_026.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Orgânica"
+    ]
   },
   {
     "questionNumber": 116,
@@ -413,7 +488,10 @@
     "optionD": "dominantes.",
     "optionE": "generalistas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Evolução"
+    ]
   },
   {
     "questionNumber": 117,
@@ -429,7 +507,10 @@
     "optionD": "Aumentando a pressão parcial de Cl2.",
     "optionE": "Variando a quantidade de TiO2.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_09_img_031.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Físico-Química"
+    ]
   },
   {
     "questionNumber": 118,
@@ -445,7 +526,10 @@
     "optionD": "1,60 m.",
     "optionE": "8,00 m.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_09_img_031.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 119,
@@ -461,7 +545,10 @@
     "optionD": "[Diagrama de circuito: 102 V, resistência 2,4 Ω, conectado à Bomba]",
     "optionE": "[Diagrama de circuito: 102 V, resistência 5,3 Ω, conectado à Bomba]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_09_img_031.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 120,
@@ -477,7 +564,10 @@
     "optionD": "400 ms.",
     "optionE": "700 ms.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_10_img_036.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 121,
@@ -493,7 +583,10 @@
     "optionD": "sal de cozinha.",
     "optionE": "bicarbonato de sódio.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_10_img_036.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Geral"
+    ]
   },
   {
     "questionNumber": 122,
@@ -509,7 +602,10 @@
     "optionD": "induzir corrente elétrica na parte inferior da panela, aquecendo-a por efeito Joule.",
     "optionE": "gerar um fluxo de corrente de convecção no ar contido entre a região da bobina e o vidro cerâmico.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 123,
@@ -525,7 +621,10 @@
     "optionD": "Clorofila.",
     "optionE": "Água.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_10_img_036.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Botânica"
+    ]
   },
   {
     "questionNumber": 124,
@@ -541,7 +640,10 @@
     "optionD": "+2,61 V e +1,29 V.",
     "optionE": "+0,15 V e −1,29 V.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Físico-Química"
+    ]
   },
   {
     "questionNumber": 125,
@@ -557,7 +659,10 @@
     "optionD": "6,8 g.",
     "optionE": "8,9 g.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_11_img_038.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estequiometria"
+    ]
   },
   {
     "questionNumber": 126,
@@ -573,7 +678,10 @@
     "optionD": "170 km/h para Leste, 220 km/h para Norte e 11 km/h para cima.",
     "optionE": "170 km/h para Leste, 180 km/h para Norte e 11 km/h para cima.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_11_img_038.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 127,
@@ -589,7 +697,10 @@
     "optionD": "E ￼",
     "optionE": "na ausência de uma enzima, com todas as demais condições permanecendo inalteradas. Considere que, no gráfico da variação de energia ao longo dessa reação, a linha contínua representa o avanço da reação na ausência da enzima, e a linha pontilhada, na presença da enzima. O gráfico que representa a situação descrita é: A B C D E ￼",
     "imageUrl": "imagens/2025_D2_CD7/pagina_12_img_039.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Físico-Química"
+    ]
   },
   {
     "questionNumber": 128,
@@ -605,7 +716,10 @@
     "optionD": "2 e 4.",
     "optionE": "2 e 5.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_12_img_039.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 129,
@@ -621,7 +735,10 @@
     "optionD": "tuberculose.",
     "optionE": "dengue.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_12_img_039.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ecologia"
+    ]
   },
   {
     "questionNumber": 130,
@@ -637,7 +754,10 @@
     "optionD": "[Diagrama: RP = 2,2 RC em paralelo, RC abaixo]",
     "optionE": "[Diagrama: RP = 0,2 RC em paralelo, RC abaixo]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_13_img_037.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 131,
@@ -653,7 +773,10 @@
     "optionD": "4,5 kg",
     "optionE": "5,0 kg",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estequiometria"
+    ]
   },
   {
     "questionNumber": 132,
@@ -669,7 +792,10 @@
     "optionD": "400 dB",
     "optionE": "800 dB",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ondulatória"
+    ]
   },
   {
     "questionNumber": 133,
@@ -685,7 +811,10 @@
     "optionD": "na camada inferior de polímero.",
     "optionE": "na malha de aço.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_14_img_038.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Geral"
+    ]
   },
   {
     "questionNumber": 134,
@@ -701,7 +830,10 @@
     "optionD": "Novestrol.",
     "optionE": "Noretindrona.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_14_img_039.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Geral"
+    ]
   },
   {
     "questionNumber": 135,
@@ -717,7 +849,10 @@
     "optionD": "[Gráfico: Pico inicial em ~600nm, pico final em ~580nm]",
     "optionE": "[Gráfico: Pico inicial em ~600nm, pico final em ~550nm - diferente formato]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_15_img_040.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ondulatória"
+    ]
   },
   {
     "questionNumber": 136,
@@ -733,7 +868,10 @@
     "optionD": "21",
     "optionE": "25",
     "imageUrl": "imagens/2025_D2_CD7/pagina_16_img_058.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 137,
@@ -749,7 +887,10 @@
     "optionD": "40/90",
     "optionE": "46/90",
     "imageUrl": "imagens/2025_D2_CD7/pagina_16_img_058.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 138,
@@ -765,7 +906,10 @@
     "optionD": "[Figura: Projeções ortogonais do cubo nos três planos coordenados - opção D]",
     "optionE": "[Figura: Projeções ortogonais do cubo nos três planos coordenados - opção E]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_17_img_059.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 139,
@@ -781,7 +925,10 @@
     "optionD": "30.",
     "optionE": "60.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_18_img_065.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 140,
@@ -797,7 +944,10 @@
     "optionD": "4,9775",
     "optionE": "5,0000",
     "imageUrl": "imagens/2025_D2_CD7/pagina_18_img_065.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 141,
@@ -813,7 +963,10 @@
     "optionD": "20 400",
     "optionE": "20 600",
     "imageUrl": "imagens/2025_D2_CD7/pagina_18_img_065.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 142,
@@ -829,7 +982,10 @@
     "optionD": "390.",
     "optionE": "400.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_18_img_065.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 143,
@@ -845,7 +1001,10 @@
     "optionD": "Biscoito de polvilho.",
     "optionE": "Biscoito de água e sal.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_19_img_066.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 144,
@@ -861,7 +1020,10 @@
     "optionD": "4",
     "optionE": "3",
     "imageUrl": "imagens/2025_D2_CD7/pagina_19_img_066.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 145,
@@ -877,7 +1039,10 @@
     "optionD": "diminui até o instante t2, a partir do qual se torna constante.",
     "optionE": "diminui de forma proporcional ao tempo, tanto entre t1 e t2 quanto após t2.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_19_img_066.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 146,
@@ -893,7 +1058,10 @@
     "optionD": "1,02",
     "optionE": "1,42",
     "imageUrl": "imagens/2025_D2_CD7/pagina_19_img_066.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 147,
@@ -909,7 +1077,10 @@
     "optionD": "22.",
     "optionE": "40.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_20_img_068.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 148,
@@ -925,7 +1096,10 @@
     "optionD": "IV.",
     "optionE": "V.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_20_img_068.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 149,
@@ -941,7 +1115,10 @@
     "optionD": "80",
     "optionE": "110",
     "imageUrl": "imagens/2025_D2_CD7/pagina_21_img_070.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 150,
@@ -957,7 +1134,10 @@
     "optionD": "1 800.",
     "optionE": "2 520.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_21_img_070.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 151,
@@ -973,7 +1153,10 @@
     "optionD": "2081090.",
     "optionE": "2810910.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_21_img_070.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 152,
@@ -989,7 +1172,10 @@
     "optionD": "1/24",
     "optionE": "1/256",
     "imageUrl": "imagens/2025_D2_CD7/pagina_21_img_070.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 153,
@@ -1005,7 +1191,10 @@
     "optionD": "y = 3x + 16",
     "optionE": "y = 3x − 16",
     "imageUrl": "imagens/2025_D2_CD7/pagina_22_img_072.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 154,
@@ -1021,7 +1210,10 @@
     "optionD": "biografia, pois é o gênero que tem a menor quantidade de livros em estoque.",
     "optionE": "romance, pois é o que apresenta o menor estoque de livros de autores brasileiros.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_22_img_072.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 155,
@@ -1037,7 +1229,10 @@
     "optionD": "10 × 9 × 8 × 2",
     "optionE": "20 × 18 × 16 × 2",
     "imageUrl": "imagens/2025_D2_CD7/pagina_23_img_074.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 156,
@@ -1053,7 +1248,10 @@
     "optionD": "1 : 100",
     "optionE": "1 : 150",
     "imageUrl": "imagens/2025_D2_CD7/pagina_23_img_074.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 157,
@@ -1069,7 +1267,10 @@
     "optionD": "F T = 1 59 ,",
     "optionE": "F ⋅ T = 1,59",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Álgebra"
+    ]
   },
   {
     "questionNumber": 158,
@@ -1085,7 +1286,10 @@
     "optionD": "268,93.",
     "optionE": "285,60.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_23_img_074.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 159,
@@ -1101,7 +1305,10 @@
     "optionD": "80.",
     "optionE": "800.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_23_img_074.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 160,
@@ -1117,7 +1324,10 @@
     "optionD": "D = 30 + tg[(1/2)(T − 5)]",
     "optionE": "D = 30 + tg[(1/2)(T − 5/2)]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_24_img_075.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Álgebra"
+    ]
   },
   {
     "questionNumber": 161,
@@ -1133,7 +1343,10 @@
     "optionD": "S.",
     "optionE": "T.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_24_img_075.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 162,
@@ -1149,7 +1362,10 @@
     "optionD": "160.",
     "optionE": "175.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_24_img_075.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 163,
@@ -1165,7 +1381,10 @@
     "optionD": "288",
     "optionE": "240",
     "imageUrl": "imagens/2025_D2_CD7/pagina_25_img_077.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 164,
@@ -1181,7 +1400,10 @@
     "optionD": "135 e 6 horas.",
     "optionE": "45 e 6 horas.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_25_img_077.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 165,
@@ -1197,7 +1419,10 @@
     "optionD": "4.",
     "optionE": "5.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_26_img_079.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 166,
@@ -1213,7 +1438,10 @@
     "optionD": "9",
     "optionE": "15",
     "imageUrl": "imagens/2025_D2_CD7/pagina_26_img_079.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 167,
@@ -1229,7 +1457,10 @@
     "optionD": "21",
     "optionE": "30",
     "imageUrl": "imagens/2025_D2_CD7/pagina_27_img_080.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 168,
@@ -1245,7 +1476,10 @@
     "optionD": "III, com o custo total de R$ 460,00.",
     "optionE": "III, com o custo total de R$ 1 200,00.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_27_img_080.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 169,
@@ -1261,7 +1495,10 @@
     "optionD": "[Gráfico de linhas: Produção 240, 250, 295, 295, 250 toneladas nas safras 11-12 a 15-16]",
     "optionE": "[Gráfico de linhas: Produção 8, 6.6, 11.25, 11.25, 10 toneladas nas safras 11-12 a 15-16]",
     "imageUrl": "imagens/2025_D2_CD7/pagina_28_img_081.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 170,
@@ -1277,7 +1514,10 @@
     "optionD": "3",
     "optionE": "2",
     "imageUrl": "imagens/2025_D2_CD7/pagina_29_img_086.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 171,
@@ -1293,7 +1533,10 @@
     "optionD": "18",
     "optionE": "20",
     "imageUrl": "imagens/2025_D2_CD7/pagina_29_img_086.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 172,
@@ -1309,7 +1552,10 @@
     "optionD": "10^2,5 / 99",
     "optionE": "25 × 10^−2",
     "imageUrl": "imagens/2025_D2_CD7/pagina_29_img_086.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Álgebra"
+    ]
   },
   {
     "questionNumber": 173,
@@ -1325,7 +1571,10 @@
     "optionD": "o 2, pois apresenta área de seção transversal medindo 243 m2.",
     "optionE": "qualquer um dos dois, pois apresentam áreas de suas seções transversais com medidas iguais.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_30_img_088.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 174,
@@ -1341,7 +1590,10 @@
     "optionD": "42",
     "optionE": "48",
     "imageUrl": "imagens/2025_D2_CD7/pagina_30_img_088.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 175,
@@ -1357,7 +1609,10 @@
     "optionD": "360",
     "optionE": "560",
     "imageUrl": "imagens/2025_D2_CD7/pagina_30_img_088.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 176,
@@ -1373,7 +1628,10 @@
     "optionD": "9,0.",
     "optionE": "12,0.",
     "imageUrl": "imagens/2025_D2_CD7/pagina_30_img_088.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 177,
@@ -1389,7 +1647,10 @@
     "optionD": "990",
     "optionE": "1 134",
     "imageUrl": "imagens/2025_D2_CD7/pagina_31_img_089.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 178,
@@ -1405,7 +1666,10 @@
     "optionD": "João, com probabilidade de 91/216",
     "optionE": "Artur, com probabilidade de 125/216",
     "imageUrl": "imagens/2025_D2_CD7/pagina_31_img_089.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 179,
@@ -1421,7 +1685,10 @@
     "optionD": "m/cd",
     "optionE": "m/cd²",
     "imageUrl": "imagens/2025_D2_CD7/pagina_31_img_089.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 180,
@@ -1437,6 +1704,9 @@
     "optionD": "100 + 3n",
     "optionE": "99 + 4n",
     "imageUrl": "imagens/2025_D2_CD7/pagina_31_img_089.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   }
 ]

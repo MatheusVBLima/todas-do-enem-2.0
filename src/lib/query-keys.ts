@@ -68,4 +68,23 @@ export const queryKeys = {
     all: ["ai-quota"] as const,
     user: (userId: string) => [...queryKeys.aiQuota.all, userId] as const,
   },
+
+  // Question Reports
+  reports: {
+    all: ["reports"] as const,
+    lists: () => [...queryKeys.reports.all, "list"] as const,
+    list: () => [...queryKeys.reports.lists()] as const,
+  },
+
+  // Topic Performance
+  topicPerformance: {
+    all: ["topic-performance"] as const,
+    user: (userId: string) => [...queryKeys.topicPerformance.all, userId] as const,
+  },
+
+  // Performance History
+  performanceHistory: {
+    all: ["performance-history"] as const,
+    user: (userId: string) => [...queryKeys.performanceHistory.all, userId] as const,
+  },
 } as const

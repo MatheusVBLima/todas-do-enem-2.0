@@ -85,6 +85,116 @@ NEXT_PUBLIC_APP_URL
 ADMIN_EMAIL
 ```
 
+## Performance Best Practices
+
+This project follows Vercel React Best Practices for optimal performance.
+
+### Eliminating Waterfalls
+
+**Parallel Data Fetching:** Start independent fetches immediately, await later.
+
+```typescript
+// Good: Questions fetch starts in parallel with auth
+export default async function Page() {
+  const questionsPromise = getQuestions(filters) // Start immediately
+  const authUser = await getCurrentUser()        // Runs in parallel
+  const userPlan = authUser ? await getUserProfile(authUser.id) : null
+
+  return (
+    <Suspense fallback={<Skeleton />}>
+      <DataComponent questionsPromise={questionsPromise} />
+    </Suspense>
+  )
+}
+
+// Bad: Sequential awaits
+const authUser = await getCurrentUser()
+const questions = await getQuestions() // Waits for auth to finish
+```
+
+**Use `fetchQuery` instead of `prefetchQuery` + duplicate call:**
+
+```typescript
+// Good: Single call that returns data AND populates cache
+const result = await queryClient.fetchQuery({
+  queryKey: queryKeys.simulados.result(id),
+  queryFn: () => getSimuladoResult(id),
+})
+
+// Bad: Duplicate calls
+await queryClient.prefetchQuery({ ... })
+const result = await getSimuladoResult(id) // Called again!
+```
+
+### Bundle Size Optimization
+
+**Barrel imports:** `optimizePackageImports` is configured in `next.config.ts` for `lucide-react`. This automatically tree-shakes unused icons.
+
+**Dynamic imports for heavy components:**
+
+```typescript
+const AIExplanation = dynamic(() => import("./ai-explanation"), {
+  loading: () => <Skeleton />,
+  ssr: false,
+})
+```
+
+### Re-render Optimization
+
+**Zustand selectors:** Always use selectors to subscribe only to needed state.
+
+```typescript
+// Good: Only re-renders when groupId changes
+const groupId = useSimuladoContext(state => state.groupId)
+
+// Bad: Re-renders on any store change
+const { groupId } = useSimuladoContext()
+```
+
+**Memoize list item components:**
+
+```typescript
+export const QuestionCard = memo(function QuestionCard(props) {
+  // ...
+})
+```
+
+### Data Fetching Patterns
+
+**Server Components with initialData:**
+
+```typescript
+// Server Component fetches data
+async function DataWrapper({ dataPromise }) {
+  const initialData = await dataPromise
+  return <ClientComponent initialData={initialData} />
+}
+
+// Client Component uses initialData for hydration
+function ClientComponent({ initialData }) {
+  const { data } = useQuery({
+    queryKey: ['data'],
+    queryFn: fetchData,
+    initialData: isInitialState ? initialData : undefined,
+  })
+}
+```
+
+### Prefetch on User Intent
+
+**Prefetch on hover/focus** to reduce perceived latency:
+
+```typescript
+<Button
+  onMouseEnter={() => prefetchPage(nextPage)}
+  onClick={() => goToPage(nextPage)}
+>
+  Next
+</Button>
+```
+
+Used in: pagination, navigation menus, cards, search results.
+
 ## Stripe Testing
 
 Test card: `4242 4242 4242 4242` (any future date, any 3-digit CVC)

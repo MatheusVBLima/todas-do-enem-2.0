@@ -54,13 +54,11 @@ async function ResultData({ id }: { id: string }) {
     },
   })
 
-  // Prefetch result
-  await queryClient.prefetchQuery({
+  // Fetch result once - fetchQuery returns data AND populates cache (no duplicate call)
+  const result = await queryClient.fetchQuery({
     queryKey: queryKeys.simulados.result(id),
     queryFn: () => getSimuladoResult(id),
   })
-
-  const result = await getSimuladoResult(id)
 
   if (!result.success || !result.data) {
     notFound()

@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
       dynamic: 180, // 3 minutos de cache para rotas dinâmicas no navegador
       static: 300,  // 5 minutos para rotas estáticas
     },
+    // Optimize barrel imports - tree-shakes unused icons (200-800ms import savings)
+    optimizePackageImports: ['lucide-react'],
   },
 };
 

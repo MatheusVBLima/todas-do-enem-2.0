@@ -13,7 +13,10 @@
     "optionD": "D desidratação.",
     "optionE": "E neutralização.",
     "imageUrl": "imagens/2022_D2_CD7/pagina_01_img_001.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Orgânica"
+    ]
   },
   {
     "questionNumber": 92,
@@ -29,7 +32,10 @@
     "optionD": "D controle das populações dos vetores.",
     "optionE": "E consumo de carnes vermelhas bem cozidas.",
     "imageUrl": "imagens/2022_D2_CD7/pagina_01_img_001.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Meio Ambiente"
+    ]
   },
   {
     "questionNumber": 93,
@@ -45,7 +51,10 @@
     "optionD": "D 100 000 m2",
     "optionE": "E 20 000 m2",
     "imageUrl": "imagens/2022_D2_CD7/pagina_01_img_001.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 94,
@@ -61,7 +70,10 @@
     "optionD": "D liberação de gás tóxico e liberação de gás oxidante.",
     "optionE": "E formação de sais tóxicos e liberação de gás oxidante. CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Orgânica"
+    ]
   },
   {
     "questionNumber": 95,
@@ -77,7 +89,10 @@
     "optionD": "i B i",
     "optionE": "i C i CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 96,
@@ -93,7 +108,10 @@
     "optionD": "+ A B - - +",
     "optionE": "A B - + - +",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 97,
@@ -109,7 +127,10 @@
     "optionD": "D Destilação fracionada.",
     "optionE": "E Separação magnética.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 98,
@@ -125,7 +146,10 @@
     "optionD": "D liberação imediata da proteína normal na região ocular humana.",
     "optionE": "E expressão do gene responsável pela produção da enzima normal. CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação 5 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Genética"
+    ]
   },
   {
     "questionNumber": 99,
@@ -141,7 +165,10 @@
     "optionD": "D apresentam alta taxa de reprodução e se mantêm com um número de indivíduos superior à capacidade suporte do ambiente.",
     "optionE": "E diminuem a relação de competição entre os polinizadores e facilitam a ação de dispersores de sementes de espécies nativas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Físico-Química"
+    ]
   },
   {
     "questionNumber": 100,
@@ -157,7 +184,10 @@
     "optionD": "D 4,50 m.",
     "optionE": "E 5,00 m.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 101,
@@ -173,7 +203,10 @@
     "optionD": "D SP79",
     "optionE": "E SP80",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Citologia"
+    ]
   },
   {
     "questionNumber": 102,
@@ -189,7 +222,10 @@
     "optionD": "D purificar ácidos nucleicos virais, facilitando a ação da enzima.",
     "optionE": "E obter moléculas de cDNA viral por meio da transcrição reversa. CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estequiometria"
+    ]
   },
   {
     "questionNumber": 103,
@@ -205,7 +241,10 @@
     "optionD": "CM  F  P  f e  N",
     "optionE": "CM  F  P  f e  N CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação 7 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 104,
@@ -221,7 +260,10 @@
     "optionD": "D atividade anaeróbica da musculatura.",
     "optionE": "E taxa de transporte de oxigênio pelo sangue.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ondulatória"
+    ]
   },
   {
     "questionNumber": 105,
@@ -237,7 +279,10 @@
     "optionD": "D A força é maior na colisão com a barreira de pneus, e a energia dissipada é maior na colisão com a barreira de pneus.",
     "optionE": "E A força é maior na colisão com a barreira de blocos, e a energia dissipada é maior na colisão com a barreira de blocos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 106,
@@ -253,7 +298,10 @@
     "optionD": "C C CH3 CH3 H −S COOH NH3 +",
     "optionE": "S H C C CH3 CH3 H NH3 + COOH CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Orgânica"
+    ]
   },
   {
     "questionNumber": 107,
@@ -269,7 +317,10 @@
     "optionD": "D mudar a constante de equilíbrio da reação.",
     "optionE": "E formar ligações de hidrogênio com o polissacarídeo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 108,
@@ -285,7 +336,10 @@
     "optionD": "D 4,8 g L−1",
     "optionE": "E 9,6 g L−1 CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação 9 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estequiometria"
+    ]
   },
   {
     "questionNumber": 109,
@@ -301,7 +355,10 @@
     "optionD": "D 0,4 µg.",
     "optionE": "E 0,2 µg.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Meio Ambiente"
+    ]
   },
   {
     "questionNumber": 110,
@@ -317,7 +374,10 @@
     "optionD": "D o sucesso reprodutivo pode ser garantido por estratégias diferentes.",
     "optionE": "E o ambiente induz modificação na produção do número de gametas femininos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Evolução"
+    ]
   },
   {
     "questionNumber": 111,
@@ -333,7 +393,10 @@
     "optionD": "D Polo Sul.",
     "optionE": "E Equador. CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 112,
@@ -349,7 +412,10 @@
     "optionD": "D 450 N",
     "optionE": "E 900 N",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 113,
@@ -365,7 +431,10 @@
     "optionD": "D efeito de barreira, que impede o contato com o agente oxidante.",
     "optionE": "E galvanização, que usa outros metais de menor potencial de redução.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Eletricidade"
+    ]
   },
   {
     "questionNumber": 114,
@@ -381,7 +450,10 @@
     "optionD": "D quebra da parede celular com extravasamento do pigmento.",
     "optionE": "E murchamento da célula com expulsão do pigmento do vacúolo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Citologia"
+    ]
   },
   {
     "questionNumber": 115,
@@ -397,7 +469,10 @@
     "optionD": "D 5,3.",
     "optionE": "E 13,1. CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação 11 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 116,
@@ -413,7 +488,10 @@
     "optionD": "D 10 A",
     "optionE": "E 5 A",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 117,
@@ -429,7 +507,10 @@
     "optionD": "D CO",
     "optionE": "E Cl2",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Termodinâmica"
+    ]
   },
   {
     "questionNumber": 118,
@@ -445,7 +526,10 @@
     "optionD": "D Somatotrofina.",
     "optionE": "E Hormônio folículo estimulante. CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ondulatória"
+    ]
   },
   {
     "questionNumber": 119,
@@ -461,7 +545,10 @@
     "optionD": "D 1,00 A",
     "optionE": "E 1,33 A",
     "imageUrl": "imagens/2022_D2_CD7/pagina_13_img_003.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 120,
@@ -477,7 +564,10 @@
     "optionD": "D diminuição da concentração do substrato.",
     "optionE": "E modificação da estrutura tridimensional da enzima.",
     "imageUrl": "imagens/2022_D2_CD7/pagina_13_img_003.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 121,
@@ -493,7 +583,10 @@
     "optionD": "D 4",
     "optionE": "E 5 CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação 13 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": "imagens/2022_D2_CD7/pagina_13_img_003.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ondulatória"
+    ]
   },
   {
     "questionNumber": 122,
@@ -509,7 +602,10 @@
     "optionD": "D reduzir o inchaço dos linfonodos, parte da resposta imunitária de diferentes infecções.",
     "optionE": "E regular a oscilação da pressão arterial, característica dos quadros de hipertensão.",
     "imageUrl": "imagens/2022_D2_CD7/pagina_13_img_003.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 123,
@@ -525,7 +621,10 @@
     "optionD": "D Eles passariam a precessionar mais rapidamente.",
     "optionE": "E Eles manteriam suas órbitas inalteradas.",
     "imageUrl": "imagens/2022_D2_CD7/pagina_13_img_003.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 124,
@@ -541,7 +640,10 @@
     "optionD": "D ácido.",
     "optionE": "E base.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Orgânica"
+    ]
   },
   {
     "questionNumber": 125,
@@ -557,7 +659,10 @@
     "optionD": "D penetrância incompleta.",
     "optionE": "E expressividade variável. CN - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": "imagens/2022_D2_CD7/pagina_13_img_003.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Ondulatória"
+    ]
   },
   {
     "questionNumber": 126,
@@ -573,7 +678,10 @@
     "optionD": "D Desinfecção.",
     "optionE": "E Fluoretação.",
     "imageUrl": "imagens/2022_D2_CD7/pagina_14_img_004.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Científica"
+    ]
   },
   {
     "questionNumber": 127,
@@ -589,7 +697,10 @@
     "optionD": "D Oxidação do piruvato.",
     "optionE": "E Fosforilação oxidativa.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Termodinâmica"
+    ]
   },
   {
     "questionNumber": 128,
@@ -605,7 +716,10 @@
     "optionD": "D 3, 1, 2.",
     "optionE": "E 3, 2, 1.",
     "imageUrl": "imagens/2022_D2_CD7/pagina_14_img_004.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 129,
@@ -621,7 +735,10 @@
     "optionD": "D NO2 −",
     "optionE": "E NO3 −",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Físico-Química"
+    ]
   },
   {
     "questionNumber": 130,
@@ -637,7 +754,10 @@
     "optionD": "necessitar de mais luminosidade para enxergar.",
     "optionE": "fazer uma pequena distinção de cores em ambientes iluminados.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fisiologia"
+    ]
   },
   {
     "questionNumber": 131,
@@ -653,7 +773,10 @@
     "optionD": "átomos de oxigênio.",
     "optionE": "carbonos assimétricos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Química Orgânica"
+    ]
   },
   {
     "questionNumber": 132,
@@ -669,7 +792,10 @@
     "optionD": "competição do vírus e da bactéria no hospedeiro.",
     "optionE": "inserção de material genético do vírus na bactéria.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Genética"
+    ]
   },
   {
     "questionNumber": 133,
@@ -685,7 +811,10 @@
     "optionD": "Apresentação de antígeno específico.",
     "optionE": "Desencadeamento de processo anti-inflamatório.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Genética"
+    ]
   },
   {
     "questionNumber": 134,
@@ -701,7 +830,10 @@
     "optionD": "5 240.",
     "optionE": "100.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 135,
@@ -717,7 +849,10 @@
     "optionD": "Reflexão.",
     "optionE": "Refração.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Mecânica"
+    ]
   },
   {
     "questionNumber": 136,
@@ -733,7 +868,10 @@
     "optionD": "D 4",
     "optionE": "E 5",
     "imageUrl": "imagens/2022_D2_CD7/pagina_16_img_005.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 137,
@@ -749,7 +887,10 @@
     "optionD": "D 44",
     "optionE": "E 52",
     "imageUrl": "imagens/2022_D2_CD7/pagina_16_img_005.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 138,
@@ -765,7 +906,10 @@
     "optionD": "D 3,0",
     "optionE": "E 5,5 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": "imagens/2022_D2_CD7/pagina_16_img_005.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 139,
@@ -781,7 +925,10 @@
     "optionD": "D 2,00 e 0,90.",
     "optionE": "E 2,00 e 1,00.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 140,
@@ -797,7 +944,10 @@
     "optionD": "D 48.",
     "optionE": "E 64.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 141,
@@ -813,7 +963,10 @@
     "optionD": "D 46 45",
     "optionE": "E 46 45 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 142,
@@ -829,7 +982,10 @@
     "optionD": "D 18.",
     "optionE": "E 24.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 143,
@@ -845,7 +1001,10 @@
     "optionD": "D",
     "optionE": "E",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 144,
@@ -861,7 +1020,10 @@
     "optionD": "D 8",
     "optionE": "E 9 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 145,
@@ -877,7 +1039,10 @@
     "optionD": "D 300 000.",
     "optionE": "E 400 000.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 146,
@@ -893,7 +1058,10 @@
     "optionD": "D 15.",
     "optionE": "E 16.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 147,
@@ -909,7 +1077,10 @@
     "optionD": "D muito bom.",
     "optionE": "E excelente. MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 148,
@@ -925,7 +1096,10 @@
     "optionD": "D LE = 4LF",
     "optionE": "E LE = 8LF",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 149,
@@ -941,7 +1115,10 @@
     "optionD": "D 2,1.",
     "optionE": "E 2,5.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 150,
@@ -957,7 +1134,10 @@
     "optionD": "D apenas nos ginásios I, II, III e IV.",
     "optionE": "E em todos os ginásios. MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 151,
@@ -973,7 +1153,10 @@
     "optionD": "D mais de 60 e menos de 70 minutos.",
     "optionE": "E 70 minutos ou mais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 152,
@@ -989,7 +1172,10 @@
     "optionD": "D 29",
     "optionE": "E 35 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 153,
@@ -1005,7 +1191,10 @@
     "optionD": "D 6,48.",
     "optionE": "E 7,20.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 154,
@@ -1021,7 +1210,10 @@
     "optionD": "D 441 343.",
     "optionE": "E 448 568.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 155,
@@ -1037,7 +1229,10 @@
     "optionD": "D 9 ! ! !",
     "optionE": "E 9 ! ! ! \u001b \u001a \u0019\u0019 \u0018 \u0017 \u0016\u0016 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 156,
@@ -1053,7 +1248,10 @@
     "optionD": "E MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "optionE": "MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 157,
@@ -1069,7 +1267,10 @@
     "optionD": "D S q q q q q ( ) , , se se \u001b \u001a \u0019",
     "optionE": "E S q q q q q ( ) , , se se \u001b \u001a \u0019",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 158,
@@ -1085,7 +1286,10 @@
     "optionD": "D IV.",
     "optionE": "E V.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 159,
@@ -1101,7 +1305,10 @@
     "optionD": "D R R T5 R T1 R R.",
     "optionE": "E R T5 R T1 R R T2. MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 160,
@@ -1117,7 +1324,10 @@
     "optionD": "[Diagrama: Projeção ortogonal D do trajeto do robô sobre a base]",
     "optionE": "[Diagrama: Projeção ortogonal E do trajeto do robô sobre a base]",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 161,
@@ -1133,7 +1343,10 @@
     "optionD": "D 133,60.",
     "optionE": "E 534,40.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 162,
@@ -1149,7 +1362,10 @@
     "optionD": "D 18 000",
     "optionE": "E 29 000 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 163,
@@ -1165,7 +1381,10 @@
     "optionD": "D 30,0.",
     "optionE": "E 37,5.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 164,
@@ -1181,7 +1400,10 @@
     "optionD": "D 6,000.",
     "optionE": "E 12,000.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 165,
@@ -1197,7 +1419,10 @@
     "optionD": "D 13 322,5",
     "optionE": "E 53 290,0",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 166,
@@ -1213,7 +1438,10 @@
     "optionD": "D 3",
     "optionE": "E 4",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 167,
@@ -1229,7 +1457,10 @@
     "optionD": "D R$ 42,00 maior.",
     "optionE": "E R$ 80,00 maior. MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 168,
@@ -1245,7 +1476,10 @@
     "optionD": "D EFDFEEDDFFE.",
     "optionE": "E EFDFEEEDFFE.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 169,
@@ -1261,7 +1495,10 @@
     "optionD": "D IV.",
     "optionE": "E V.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 170,
@@ -1277,7 +1514,10 @@
     "optionD": "D 2011",
     "optionE": "E 2013 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 171,
@@ -1293,7 +1533,10 @@
     "optionD": "D IV.",
     "optionE": "E V.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 172,
@@ -1309,7 +1552,10 @@
     "optionD": "D IV.",
     "optionE": "E V.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 173,
@@ -1325,7 +1571,10 @@
     "optionD": "D 1 235",
     "optionE": "E 7 200",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 174,
@@ -1341,7 +1590,10 @@
     "optionD": "D 4 800",
     "optionE": "E 6 400 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 175,
@@ -1357,7 +1609,10 @@
     "optionD": "D 135 000 000,00.",
     "optionE": "E 1 350 000 000,00.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 176,
@@ -1373,7 +1628,10 @@
     "optionD": "D IV",
     "optionE": "E V",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   },
   {
     "questionNumber": 177,
@@ -1389,7 +1647,10 @@
     "optionD": "D IV.",
     "optionE": "E V.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções"
+    ]
   },
   {
     "questionNumber": 178,
@@ -1405,7 +1666,10 @@
     "optionD": "D 12",
     "optionE": "E 24 MT - 2° dia | Caderno 7 - AZUL - 1ª Aplicação ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022 ENEM 2022",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Aritmética"
+    ]
   },
   {
     "questionNumber": 179,
@@ -1421,7 +1685,10 @@
     "optionD": "D 75,23.",
     "optionE": "E 78,49.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Estatística e Probabilidade"
+    ]
   },
   {
     "questionNumber": 180,
@@ -1437,6 +1704,9 @@
     "optionD": "E 2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "optionE": "2° dia | Caderno 7 - AZUL - 1ª Aplicação",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Geometria"
+    ]
   }
 ]

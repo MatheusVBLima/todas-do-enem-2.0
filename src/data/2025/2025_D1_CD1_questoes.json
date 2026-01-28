@@ -13,7 +13,10 @@
     "optionD": "criticar a exploração indevida de elementos da identidade indígena.",
     "optionE": "sugerir ações de combate ao preconceito contra os povos originários.",
     "imageUrl": null,
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 1,
@@ -29,7 +32,10 @@
     "optionD": "evidencia o diálogo horizontal entre patrão e trabalhadores.",
     "optionE": "questiona a insalubridade do ambiente de trabalho.",
     "imageUrl": null,
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 2,
@@ -45,7 +51,10 @@
     "optionD": "aproximá-la dos problemas sociais.",
     "optionE": "responsabilizá-la pela pobreza humana.",
     "imageUrl": null,
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 2,
@@ -61,7 +70,10 @@
     "optionD": "valorização da língua de um país em detrimento da de outro.",
     "optionE": "disputa entre hispano-americanos e espanhóis por sua origem.",
     "imageUrl": null,
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 3,
@@ -77,7 +89,10 @@
     "optionD": "relação entre seres humanos e natureza.",
     "optionE": "conexão entre o tempo real e o tempo imaginário.",
     "imageUrl": null,
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 3,
@@ -93,7 +108,10 @@
     "optionD": "verbos no pretérito imperfeito do indicativo.",
     "optionE": "marcas linguísticas de uma variedade caribenha.",
     "imageUrl": null,
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 4,
@@ -109,7 +127,10 @@
     "optionD": "retratar relações conflituosas em ambiente universitário.",
     "optionE": "apontar posturas de uma juventude avessa a contrariedades.",
     "imageUrl": null,
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 4,
@@ -125,7 +146,10 @@
     "optionD": "marcas da oralidade expressas na representação escrita da fala.",
     "optionE": "enunciados interrogativos em situação comunicativa com um interlocutor.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_05_img_009.jpeg",
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 5,
@@ -141,7 +165,10 @@
     "optionD": "consumo de bebidas que causam dependência.",
     "optionE": "necessidade de um produto que provoque o sono.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_03_img_008.jpeg",
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 5,
@@ -157,7 +184,10 @@
     "optionD": "valor dos acontecimentos sociais.",
     "optionE": "indiferença em relação a fatos históricos.",
     "imageUrl": null,
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 6,
@@ -173,7 +203,10 @@
     "optionD": "questiona a prática da escrita de próprio punho.",
     "optionE": "apresenta a diversidade de usos no cotidiano.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 7,
@@ -189,7 +222,10 @@
     "optionD": "utilização de recursos linguísticos para a interlocução direta com o leitor.",
     "optionE": "apresentação de acontecimentos segundo a ordem de sucessão no tempo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 8,
@@ -205,7 +241,10 @@
     "optionD": "diversidade de fontes tipográficas que estão disponíveis.",
     "optionE": "delimitação dos espaços onde a produção textual ocorre.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 9,
@@ -221,7 +260,10 @@
     "optionD": "promovem maior agilidade na comunicação.",
     "optionE": "surgem nos contextos em que são necessárias.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 10,
@@ -237,7 +279,10 @@
     "optionD": "adoção de termo autorreflexivo em “No escritório, costumo ser mais suave comigo mesma”. (l. 30)",
     "optionE": "substituição da expressão “Do punho ao pixel” (l. 44) pela expressão “o punho e o pixel”. (l. 45)",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 11,
@@ -253,7 +298,10 @@
     "optionD": "importância do dote como condição para o casamento.",
     "optionE": "aura de mistério sobre a identidade da jovem.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_08_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 12,
@@ -269,7 +317,10 @@
     "optionD": "eficiência das iniciativas de inclusão em megaeventos esportivos.",
     "optionE": "escassez de investimento em práticas corporais de aventura na natureza.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 13,
@@ -285,7 +336,10 @@
     "optionD": "pela importância para os grupos étnico-raciais.",
     "optionE": "pelas características do gênero a que pertence.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 14,
@@ -301,7 +355,10 @@
     "optionD": "fomentar o turismo cultural na cidade de São Paulo.",
     "optionE": "evidenciar a influência de Pessoa na literatura brasileira.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_08_img_010.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 15,
@@ -317,7 +374,10 @@
     "optionD": "pintura funciona como instrumento de ascensão social.",
     "optionE": "imagens tradicionais preservam memórias afetivas.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_09_img_011.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 16,
@@ -333,7 +393,10 @@
     "optionD": "associar a sua inconsciência a elementos da natureza.",
     "optionE": "metaforizar o conflito amoroso nas imagens de “mar” e “rocha”.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_09_img_011.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 17,
@@ -349,7 +412,10 @@
     "optionD": "sinaliza uma sequência que denota ações consecutivas.",
     "optionE": "apresenta uma explicação para as memórias resgatadas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 18,
@@ -365,7 +431,10 @@
     "optionD": "as ações de incentivo financeiro a jovens atletas são precárias.",
     "optionE": "as publicações da mídia esportiva rotulam atletas iniciantes.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 19,
@@ -381,7 +450,10 @@
     "optionD": "aprimoramento da expressão corporal.",
     "optionE": "importância da saúde emocional.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 20,
@@ -397,7 +469,10 @@
     "optionD": "decodificar o ritual religioso dos nossos antepassados.",
     "optionE": "favorecer a compreensão do léxico africano contemporâneo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 21,
@@ -413,7 +488,10 @@
     "optionD": "hesitações em relação à sua formação profissional.",
     "optionE": "preocupações com as políticas públicas assistenciais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 22,
@@ -429,7 +507,10 @@
     "optionD": "representação de práticas corporais da comunidade.",
     "optionE": "replicação seriada para distribuição em larga escala.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_11_img_012.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 23,
@@ -445,7 +526,10 @@
     "optionD": "desigualdades nos incentivos à produção artística brasileira.",
     "optionE": "negligência na conservação do patrimônio arquitetônico luso-brasileiro.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_11_img_012.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 24,
@@ -461,7 +545,10 @@
     "optionD": "chamar a atenção sobre a necessidade de ações voltadas para a educação infantil.",
     "optionE": "valorizar o trabalho de agências internacionais na luta contra a discriminação racial.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_12_img_014.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 25,
@@ -477,7 +564,10 @@
     "optionD": "sedução sugerida pelo envolvimento direto do leitor marcado nos usos de “você” e “sua”.",
     "optionE": "humor gerado pelo uso das estruturas linguísticas que são objeto da reflexão desenvolvida.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 26,
@@ -493,7 +583,10 @@
     "optionD": "modos de preparo de um mesmo alimento.",
     "optionE": "paladares diversificados entre diferentes estados.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_13_img_015.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 27,
@@ -509,7 +602,10 @@
     "optionD": "desafio externo presente na luta.",
     "optionE": "habilidade desenvolvida na briga.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 28,
@@ -525,7 +621,10 @@
     "optionD": "religiosidade evocada como forma de fortalecimento.",
     "optionE": "impressão de sonho na construção da estrutura poética.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 29,
@@ -541,7 +640,10 @@
     "optionD": "defende a importância da atividade coletiva.",
     "optionE": "valoriza o trabalho ao longo das gerações.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_13_img_015.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 30,
@@ -557,7 +659,10 @@
     "optionD": "atualização de saberes tradicionais dos povos indígenas brasileiros.",
     "optionE": "descrição das propriedades científicas de plantas silvestres.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 31,
@@ -573,7 +678,10 @@
     "optionD": "o impacto das tecnologias nas interações humanas.",
     "optionE": "os desejos de compartilhar vivências com os amigos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 32,
@@ -589,7 +697,10 @@
     "optionD": "apresentação de uma moral.",
     "optionE": "restrição espacial do suporte.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_14_img_016.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 33,
@@ -605,7 +716,10 @@
     "optionD": "ressaltar a importância da segurança dos estudantes no ambiente escolar.",
     "optionE": "dar visibilidade a estudos e pesquisas do setor de segurança.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_14_img_016.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 34,
@@ -621,7 +735,10 @@
     "optionD": "essa frase estabelece um diálogo direto com o leitor.",
     "optionE": "a linguagem utilizada volta-se para si mesma.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_15_img_018.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções de Linguagem"
+    ]
   },
   {
     "questionNumber": 35,
@@ -637,7 +754,10 @@
     "optionD": "utiliza declaração de uma jornalista como argumento de autoridade.",
     "optionE": "enumera críticas à aparência de mulheres consideradas padrões de beleza.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_15_img_018.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 36,
@@ -653,7 +773,10 @@
     "optionD": "uma estratégia presente na linguagem oral.",
     "optionE": "uma ênfase em determinadas partes do discurso.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 37,
@@ -669,7 +792,10 @@
     "optionD": "tema do trabalho como reparação é abordado em ambos os textos.",
     "optionE": "marcação temporal no passado predomina em ambos os textos.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_15_img_018.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 38,
@@ -685,7 +811,10 @@
     "optionD": "pronome “o” em “o que nos daria tempo” (l. 7) remete a “ou usar nossos cartões de crédito” (l. 8).",
     "optionE": "fragmento “o asteroide da Sibéria” (l. 3) introduz um elemento novo no texto.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 39,
@@ -701,7 +830,10 @@
     "optionD": "influência da televisão sobre os programas de radiojornalismo.",
     "optionE": "interferência da tecnologia digital nas interações humanas.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_18_img_019.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 40,
@@ -717,7 +849,10 @@
     "optionD": "prática do enriquecimento ilícito visto nas grandes cidades.",
     "optionE": "desigualdade de gênero acentuada pela baixa escolarização.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_18_img_019.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 41,
@@ -733,7 +868,10 @@
     "optionD": "presença de grafismos na forma animal representada no banco.",
     "optionE": "criação de figuras fantásticas baseadas em formas animais.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_18_img_019.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 42,
@@ -749,7 +887,10 @@
     "optionD": "erudita, que resgata a origem latina da língua portuguesa.",
     "optionE": "técnica, que facilita a circulação de informações no sistema judiciário.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 43,
@@ -765,7 +906,10 @@
     "optionD": "protagonismo feminino na linha sucessória desse povo.",
     "optionE": "reconhecimento dessa comunidade pelo governo brasileiro.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 44,
@@ -781,7 +925,10 @@
     "optionD": "enumerar razões pertinentes a esse ato, como no exemplo “ensina sobre o mundo”.",
     "optionE": "implicar o autor do texto como corresponsável pela campanha, pelo uso de “é nossa função”.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_19_img_020.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 45,
@@ -797,7 +944,10 @@
     "optionD": "apresentar termos equivalentes em outras línguas.",
     "optionE": "apontar para a dificuldade de compreensão do termo. PROPOSTA DE REDAÇÃO A partir da leitura dos textos motivadores e com base nos conhecimentos construídos ao longo de sua formação, redija um texto dissertativo-argumentativo em modalidade escrita formal da língua portuguesa sobre o tema “Perspectivas acerca do envelhecimento na sociedade brasileira”, apresentando proposta de intervenção que respeite os direitos humanos. Selecione, organize e relacione, de forma coerente e coesa, argumentos e fatos para a defesa de seu ponto de vista. TEXTO I Em 2022, o total de pessoas com 65 anos de idade ou mais no país chegou a 10,9% da população, com alta de 57,4% frente a 2010, quando esse contingente era 7,4% da população. É o que revelam os resultados do universo da população do Brasil desagregada por idade e sexo do Censo Demográfico 2022. “O Estatuto do Idoso define como idoso a pessoa de 60 anos ou mais. O corte de 65 anos ou mais foi utilizado nessa análise para manter comparabilidade internacional e com outras pesquisas que utilizam essa faixa etária, como de mercado de trabalho”, justifica a gerente de Estudos e Análises da Dinâmica Demográfica do IBGE. O aumento da população de 65 anos ou mais e a diminuição da parcela da população de até 14 anos no mesmo período, que passou de 24,1% para 19,8%, evidenciam o franco envelhecimento da população brasileira. GOMES, I.; BRITTO, V. Censo 2022. Disponível em: https://agenciadenoticias.ibge.gov.br. Acesso em: 21 maio 2025 (adaptado). TEXTO II Um movimento na internet, contrário ao pictograma com a bengala para os idosos, iniciou uma campanha para modificar essa imagem. A empreitada coletiva acabou com a elaboração de um novo desenho, uma figura mais altiva, ao lado da inscrição “60+”. Disponível em: www12.senado.leg.br. Acesso em: 21 maio 2025. TEXTO III A velhice é tempo de se retratar consigo mesma, de falar da doença, da sexualidade, do tédio e da liberdade de não se encaixar mais nas expectativas sociais. “A velhice não é doença. É destino”, escreve Rita Lee. Mas ela mesma mostra que esse destino não é sinônimo de mero encaminhamento para o fim — é campo de novas escolhas, inclusive a de desafiar estereótipos reservados para essa fase da vida. A atriz Fernanda Montenegro, 95 anos, oferece em suas memórias uma síntese luminosa desse gesto de habitar o tempo com dignidade: “A velhice é o tempo em que a vida já foi vivida e, por isso mesmo, pode finalmente ser olhada de frente, sem o pânico do ineditismo”. Disponível em: https://rascunho.com.br. Acesso em: 17 maio 2025. TEXTO IV Um novo estereótipo: o “velho ativo”, saudável e com recursos pressiona o “velho inativo”, doente e pobre. Nem todos os idosos têm recursos à disposição para aderir a essa corrida. Idosos são os principais mantenedores dos lares Disponível em: g1.globo.com. Acesso em: 4 jun. 2025 (adaptado). TEXTO V Dona Maria Rita era tão antiga que na casa da filha estavam habituados a ela como a um móvel velho. Ela não era novidade para ninguém. Mas nunca lhe passara pela cabeça que era uma solitária. Só que não tinha nada para fazer. Era um lazer forçado que em certos momentos se tornava lancinante: nada tinha a fazer no mundo. Senão viver como um gato, como um cachorro. Seu ideal era ser dama de companhia de alguma senhora, mas isso nem se usava mais e mesmo ninguém acreditaria nos seus fortes setenta e sete anos, pensariam que era uma fraca. Não fazia nada, fazia só isso: ser velha. Às vezes ficava deprimida: achava que não servia a nada, não servia sequer a Deus. LISPECTOR, C. Onde estivestes de noite. Rio de Janeiro: Francisco Alves, 1974. TEXTO VI Quem tem direito de viver mais? O documentário Quantos dias. Quantas noites busca investigar quem, afinal, tem direito a uma vida longa no Brasil. “São inúmeros os marcadores que definem quem vai viver e quem vai sucumbir diante de uma realidade imposta por um sistema bastante perverso”, afirma o diretor do documentário. “O envelhecimento leva a maioria das pessoas a um declínio funcional. Mas, se você chega aos 75 tendo acumulado desigualdades, principalmente pelo racismo, é muito difícil sobreviver com qualidade de vida”, diz um médico gerontólogo. Disponível em: g1.globo.com. Acesso em: 10 jun. 2025 (adaptado). INSTRUÇÕES PARA A REDAÇÃO 1. O rascunho da redação deve ser feito no espaço apropriado. 2. O texto definitivo deve ser escrito à tinta preta, na folha própria, em até 30 (trinta) linhas. 3. \u0007A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas copiadas desconsiderado para a contagem de linhas. 4. Receberá nota zero, em qualquer das situações expressas a seguir, a redação que: 4.1. tiver até 7 (sete) linhas escritas, sendo considerada “texto insuficiente”; 4.2. fugir ao tema ou não atender ao tipo dissertativo-argumentativo; 4.3. apresentar parte do texto deliberadamente desconectada do tema proposto; 4.4. apresentar nome, assinatura, rubrica ou outras formas de identificação no espaço destinado ao texto. RASCUNHO DA REDAÇÃO CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS Questões de 46 a 90",
     "imageUrl": "imagens/2025_D1_CD1/pagina_19_img_020.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 46,
@@ -813,7 +963,10 @@
     "optionD": "expandir o território nacional.",
     "optionE": "intensificar a integração regional.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 47,
@@ -829,7 +982,10 @@
     "optionD": "Circulação de massas de ar.",
     "optionE": "Ausência de frentes frias.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_22_img_023.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 48,
@@ -845,7 +1001,10 @@
     "optionD": "paradigma da racionalidade, alinhado ao modelo cartesiano de método.",
     "optionE": "âmbito da persuasão, análogo às críticas platônicas aos sofistas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 49,
@@ -861,7 +1020,10 @@
     "optionD": "Popularização do pensamento humanista.",
     "optionE": "Desenvolvimento das corporações de ofício.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 50,
@@ -877,7 +1039,10 @@
     "optionD": "Manifestações do movimento sindical.",
     "optionE": "Mobilizações de agremiações estudantis.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 51,
@@ -893,7 +1058,10 @@
     "optionD": "efemeridade dos vínculos de afetividade.",
     "optionE": "obsolescência dos meios de comunicação.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 52,
@@ -909,7 +1077,10 @@
     "optionD": "emprego de armas biológicas em confrontos transnacionais.",
     "optionE": "circulação de refugiados contaminados em áreas conflagradas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 53,
@@ -925,7 +1096,10 @@
     "optionD": "penitência pessoal e juramento coletivo.",
     "optionE": "dogmatismo religioso e adesão de fiéis.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 54,
@@ -941,7 +1115,10 @@
     "optionD": "precariedade de infraestruturas rodoviárias.",
     "optionE": "seletividade de deslocamentos populacionais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 55,
@@ -957,7 +1134,10 @@
     "optionD": "Capilarização das práticas de controle.",
     "optionE": "Espetacularização das medidas de penitência.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 56,
@@ -973,7 +1153,10 @@
     "optionD": "Inviabilização da agricultura de subsistência.",
     "optionE": "Sucateamento da indústria de transformação.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 57,
@@ -989,7 +1172,10 @@
     "optionD": "lembranças fabris e discriminação dos operários.",
     "optionE": "experiências profissionais e segregação regional.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_26_img_025.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 58,
@@ -1005,7 +1191,10 @@
     "optionD": "exigência da alfabetização.",
     "optionE": "obrigatoriedade do sufrágio.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 59,
@@ -1021,7 +1210,10 @@
     "optionD": "metas em acordos climáticos.",
     "optionE": "geologia em áreas naturais.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_26_img_025.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 60,
@@ -1037,7 +1229,10 @@
     "optionD": "percepção de responsabilidade ética.",
     "optionE": "conquista do reconhecimento público.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 61,
@@ -1053,7 +1248,10 @@
     "optionD": "plutocracia, tecnocracia e demagogia.",
     "optionE": "monarquia, aristocracia e democracia.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 62,
@@ -1069,7 +1267,10 @@
     "optionD": "Perpetuar paradigmas científicos.",
     "optionE": "Empreender soluções conclusivas.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_26_img_025.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 63,
@@ -1085,7 +1286,10 @@
     "optionD": "Valorização da moeda nacional em relação ao dólar americano.",
     "optionE": "Inclusão de pequenas propriedades em cultivos de subsistência.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_26_img_025.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 64,
@@ -1101,7 +1305,10 @@
     "optionD": "abandono da censura aos meios de comunicação.",
     "optionE": "apoio dos parlamentares aos candidatos oposicionistas.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_26_img_025.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 65,
@@ -1117,7 +1324,10 @@
     "optionD": "movimento antiespecista.",
     "optionE": "comportamento pragmático.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 66,
@@ -1133,7 +1343,10 @@
     "optionD": "Realidade unidimensional.",
     "optionE": "Desenvolvimento tecnológico.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_27_img_026.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 67,
@@ -1149,7 +1362,10 @@
     "optionD": "revisão das desigualdades econômicas.",
     "optionE": "homogeneização da distribuição fundiária.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_27_img_026.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 68,
@@ -1165,7 +1381,10 @@
     "optionD": "Predomínio da atividade comercial.",
     "optionE": "Processo de verticalização urbana.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_27_img_026.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 69,
@@ -1181,7 +1400,10 @@
     "optionD": "ideias messiânicas.",
     "optionE": "celebrações coletivas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 70,
@@ -1197,7 +1419,10 @@
     "optionD": "acumulação de sedimentos orgânicos.",
     "optionE": "impermeabilização da superfície ocupada.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 71,
@@ -1213,7 +1438,10 @@
     "optionD": "negação das influências orientais.",
     "optionE": "reorganização da mobilidade urbana.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 72,
@@ -1229,7 +1457,10 @@
     "optionD": "distribuição dicotômica do cosmos.",
     "optionE": "desordem incontornável das coisas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 73,
@@ -1245,7 +1476,10 @@
     "optionD": "intolerância — violência.",
     "optionE": "repressão — justiça.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_27_img_026.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 74,
@@ -1261,7 +1495,10 @@
     "optionD": "Inexistência de direitos constitucionais e negação do ecumenismo.",
     "optionE": "Efemeridade das relações políticas e debilidade do pertencimento étnico.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 75,
@@ -1277,7 +1514,10 @@
     "optionD": "produtividade da terra cultivada.",
     "optionE": "ocorrência da erosão laminar.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 76,
@@ -1293,7 +1533,10 @@
     "optionD": "resquícios religiosos.",
     "optionE": "imposições políticas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 77,
@@ -1309,7 +1552,10 @@
     "optionD": "Precariedade da legislação industrial.",
     "optionE": "Utilização de materiais recicláveis.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_29_img_027.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 78,
@@ -1325,7 +1571,10 @@
     "optionD": "discurso de cunho técnico-científico.",
     "optionE": "ideologia de caráter abolicionista.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 79,
@@ -1341,7 +1590,10 @@
     "optionD": "Criação de parâmetros para reconhecer uma prescrição.",
     "optionE": "Elaboração de convenções para referendar um costume.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 80,
@@ -1357,7 +1609,10 @@
     "optionD": "arborização das avenidas centrais.",
     "optionE": "educação ambiental da comunidade.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 81,
@@ -1373,7 +1628,10 @@
     "optionD": "Redução da licença-maternidade.",
     "optionE": "Criação de delegacia especializada.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 82,
@@ -1389,7 +1647,10 @@
     "optionD": "moralidade e virtudes cardeais.",
     "optionE": "ética e exercício do poder.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 83,
@@ -1405,7 +1666,10 @@
     "optionD": "integrar as regiões territoriais ao poder central.",
     "optionE": "difundir as publicações às elites lusitanas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 84,
@@ -1421,7 +1685,10 @@
     "optionD": "importância de pesquisas acadêmicas.",
     "optionE": "interferência de interesses estrangeiros.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_29_img_027.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 85,
@@ -1437,7 +1704,10 @@
     "optionD": "regras teológicas acerca de um mesmo recurso pedagógico.",
     "optionE": "justificativas idênticas acerca de um mesmo aspecto cultural.",
     "imageUrl": "imagens/2025_D1_CD1/pagina_29_img_027.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 86,
@@ -1453,7 +1723,10 @@
     "optionD": "estagnação do consumo em unidades industriais.",
     "optionE": "superação da necessidade de recursos renováveis.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 87,
@@ -1469,7 +1742,10 @@
     "optionD": "camponeses, que aspiravam diminuir a jornada de trabalho.",
     "optionE": "estrangeiros, que ambicionavam acessar os espaços públicos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 88,
@@ -1485,7 +1761,10 @@
     "optionD": "sofisticação das práticas de sobrevivência.",
     "optionE": "diversificação da economia de subsistência.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 89,
@@ -1501,7 +1780,10 @@
     "optionD": "preservação das tradições e rituais místicos.",
     "optionE": "desenvolvimento social e práticas laborais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 90,
@@ -1517,6 +1799,9 @@
     "optionD": "mercantil e predatório.",
     "optionE": "religioso e humanitário.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   }
 ]

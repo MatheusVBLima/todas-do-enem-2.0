@@ -41,7 +41,8 @@ export function Header({ userId = null }: HeaderProps) {
   const [redirectDialogOpen, setRedirectDialogOpen] = useState(false)
 
   // Get group context from Zustand store (set by GroupDetailClient)
-  const { groupId } = useSimuladoContext()
+  // Use selector to avoid re-renders when groupName changes
+  const groupId = useSimuladoContext(state => state.groupId)
 
   const canCreate = canCreateSimulado(pathname, !!groupId)
   const isResultPage = isSimuladoResultPage(pathname)

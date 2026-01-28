@@ -33,6 +33,7 @@ export interface QuestionFilters {
   anos?: number[]
   areas?: string[]
   disciplinas?: string[]
+  topics?: string[]
   busca?: string
   pagina?: number
 }
@@ -41,6 +42,7 @@ export interface SavedFilters {
   anos?: number[]
   areas?: string[]
   disciplinas?: string[]
+  topics?: string[]
   busca?: string
 }
 
@@ -122,7 +124,7 @@ export interface Proof {
 
 export interface ProofFilters {
   anos?: number[]
-  tipo?: '1º dia' | '2º dia' | 'COMPLETA'
+  tipo?: '1º dia' | '2º dia' | 'COMPLETA' | null
   pagina?: number
 }
 
@@ -192,4 +194,34 @@ export interface SubmitAnswerParams {
   simuladoId: string
   questionId: string
   answer: AnswerOption
+}
+
+// Question Report types
+export interface QuestionReport {
+  id: string
+  questionId: string
+  userId: string
+  description: string | null
+  createdAt: string
+}
+
+export interface ReportedQuestion {
+  questionId: string
+  questionNumber: string
+  examYear: number
+  knowledgeArea: string
+  reportCount: number
+}
+
+// Topic Performance types
+export type UrgencyLevel = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'
+
+export interface TopicPerformance {
+  topic: string
+  subject: string
+  knowledgeArea: string
+  total: number
+  correct: number
+  accuracyRate: number
+  urgencyLevel: UrgencyLevel
 }

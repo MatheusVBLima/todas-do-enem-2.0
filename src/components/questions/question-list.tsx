@@ -1,29 +1,49 @@
 "use client"
 
-import { useSuspenseQuery, useQueryClient } from "@tanstack/react-query"
+import { useQuery, useQueryClient } from "@tanstack/react-query"
 import { ChevronLeft, ChevronRight, LayoutGrid, Table2, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription } from "@/components/ui/empty"
 import { QuestionCard } from "./question-card"
 import { QuestionsTable } from "./questions-table"
+import { QuestionListSkeleton } from "./question-list-skeleton"
 import { useQuestionFilters } from "@/hooks/use-question-filters"
 import { getQuestions } from "@/server/actions/questions"
 import { queryKeys } from "@/lib/query-keys"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useMemo } from "react"
+import type { PaginatedResponse, QuestionWithExam, QuestionFilters } from "@/types"
 
 type QuestionListProps = {
   userId: string | null
   userPlan: string | null
+  initialData: PaginatedResponse<QuestionWithExam>
+  initialFilters: QuestionFilters
 }
 
-export function QuestionList({ userId, userPlan }: QuestionListProps) {
+export function QuestionList({ userId, userPlan, initialData, initialFilters }: QuestionListProps) {
   const [filters, setFilters] = useQuestionFilters()
   const queryClient = useQueryClient()
   const [viewMode, setViewMode] = useState<"cards" | "table">("cards")
 
-  const { data } = useSuspenseQuery({
+  // Check if current filters match the initial filters (for using initialData)
+  const isInitialFilters = useMemo(() => {
+    return (
+      filters.pagina === initialFilters.pagina &&
+      filters.busca === initialFilters.busca &&
+      JSON.stringify(filters.anos) === JSON.stringify(initialFilters.anos) &&
+      JSON.stringify(filters.areas) === JSON.stringify(initialFilters.areas) &&
+      JSON.stringify(filters.disciplinas) === JSON.stringify(initialFilters.disciplinas) &&
+      JSON.stringify(filters.topics) === JSON.stringify(initialFilters.topics)
+    )
+  }, [filters, initialFilters])
+
+  const { data = initialData, isLoading } = useQuery({
     queryKey: queryKeys.questions.list(filters),
     queryFn: () => getQuestions(filters),
+    // Use initialData only when filters match, otherwise fetch fresh data
+    initialData: isInitialFilters ? initialData : undefined,
+    // Keep data fresh
+    staleTime: 1000 * 60 * 5, // 5 minutes
   })
 
   const prefetchPage = (page: number) => {
@@ -36,17 +56,22 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
 
   // Prefetch next page when current page loads (keeps paginação adiante quente)
   useEffect(() => {
-    if (data.pagination.hasMore) {
+    if (data?.pagination.hasMore) {
       // Wrap in setTimeout to avoid setState during render
       const timer = setTimeout(() => {
         prefetchPage(filters.pagina + 1)
       }, 0)
       return () => clearTimeout(timer)
     }
-  }, [data.pagination.hasMore, filters.pagina])
+  }, [data?.pagination.hasMore, filters.pagina])
+
+  // Show skeleton while loading new data (filters changed)
+  if (isLoading && !isInitialFilters) {
+    return <QuestionListSkeleton />
+  }
 
   if (data.data.length === 0) {
-    const hasActiveFilters = filters.anos?.length > 0 || filters.areas?.length > 0 || filters.disciplinas?.length > 0 || filters.busca
+    const hasActiveFilters = filters.anos?.length > 0 || filters.areas?.length > 0 || filters.disciplinas?.length > 0 || filters.topics?.length > 0 || filters.busca
 
     return (
       <Empty>
@@ -64,7 +89,7 @@ export function QuestionList({ userId, userPlan }: QuestionListProps) {
         {hasActiveFilters && (
           <Button
             variant="outline"
-            onClick={() => setFilters({ anos: [], areas: [], disciplinas: [], busca: "", pagina: 1 })}
+            onClick={() => setFilters({ anos: [], areas: [], disciplinas: [], topics: [], busca: "", pagina: 1 })}
           >
             Limpar filtros
           </Button>

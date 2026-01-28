@@ -17,6 +17,7 @@ export interface LocalQuestion {
   examColor: string
   area: string
   subject?: string
+  topics?: string[]  // Granular topics like "Termodinâmica", "Revolução Francesa"
   languageOption?: string
   supportingMaterials: Array<{
     id: string
@@ -59,6 +60,7 @@ interface RawNewFormatQuestion {
   reference: string | null
   knowledgeArea: string
   subject: string
+  topics?: string[]  // Granular topics like "Termodinâmica", "Revolução Francesa"
   correctAnswer: string | null
   optionA: string
   optionB: string
@@ -236,6 +238,7 @@ function convertRawQuestionToLocalQuestion(
     examColor: exam.color,
     area: normalizedArea,
     subject: normalizedSubject,
+    topics: raw.topics,
     languageOption: raw.languageOption || undefined,
     supportingMaterials,
     statement: cleanText(raw.statement),

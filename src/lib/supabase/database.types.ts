@@ -231,6 +231,7 @@ export type Database = {
           statement: string
           subject: string
           supportingMaterials: Json | null
+          topic: string | null
         }
         Insert: {
           aiExplanation?: string | null
@@ -250,6 +251,7 @@ export type Database = {
           statement: string
           subject: string
           supportingMaterials?: Json | null
+          topic?: string | null
         }
         Update: {
           aiExplanation?: string | null
@@ -269,6 +271,7 @@ export type Database = {
           statement?: string
           subject?: string
           supportingMaterials?: Json | null
+          topic?: string | null
         }
         Relationships: [
           {
@@ -321,6 +324,38 @@ export type Database = {
           },
         ]
       }
+      QuestionReport: {
+        Row: {
+          createdAt: string
+          description: string | null
+          id: string
+          questionId: string
+          userId: string
+        }
+        Insert: {
+          createdAt?: string
+          description?: string | null
+          id?: string
+          questionId: string
+          userId: string
+        }
+        Update: {
+          createdAt?: string
+          description?: string | null
+          id?: string
+          questionId?: string
+          userId?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "QuestionReport_userId_fkey"
+            columns: ["userId"]
+            isOneToOne: false
+            referencedRelation: "User"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       QuestionsOnGroups: {
         Row: {
           addedAt: string
@@ -350,6 +385,36 @@ export type Database = {
             columns: ["questionId"]
             isOneToOne: false
             referencedRelation: "Question"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      QuestionTopic: {
+        Row: {
+          questionId: string
+          topicId: string
+        }
+        Insert: {
+          questionId: string
+          topicId: string
+        }
+        Update: {
+          questionId?: string
+          topicId?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "QuestionTopic_questionId_fkey"
+            columns: ["questionId"]
+            isOneToOne: false
+            referencedRelation: "Question"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "QuestionTopic_topicId_fkey"
+            columns: ["topicId"]
+            isOneToOne: false
+            referencedRelation: "Topic"
             referencedColumns: ["id"]
           },
         ]
@@ -505,6 +570,30 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      Topic: {
+        Row: {
+          createdAt: string | null
+          id: string
+          knowledgeArea: string | null
+          name: string
+          subject: string | null
+        }
+        Insert: {
+          createdAt?: string | null
+          id?: string
+          knowledgeArea?: string | null
+          name: string
+          subject?: string | null
+        }
+        Update: {
+          createdAt?: string | null
+          id?: string
+          knowledgeArea?: string | null
+          name?: string
+          subject?: string | null
+        }
+        Relationships: []
       }
       User: {
         Row: {
@@ -664,6 +753,16 @@ export type Database = {
           total_count: number
         }[]
       }
+      get_reported_questions: {
+        Args: never
+        Returns: {
+          examYear: number
+          knowledgeArea: string
+          questionId: string
+          questionNumber: string
+          reportCount: number
+        }[]
+      }
       get_total_ai_costs: {
         Args: never
         Returns: {
@@ -680,6 +779,18 @@ export type Database = {
           area: string
           correct: number
           total: number
+        }[]
+      }
+      get_user_performance_by_topic: {
+        Args: { p_user_id: string }
+        Returns: {
+          accuracyRate: number
+          correct: number
+          knowledgeArea: string
+          subject: string
+          topic: string
+          total: number
+          urgencyLevel: string
         }[]
       }
       get_user_total_statistics: {

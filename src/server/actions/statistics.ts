@@ -2,6 +2,7 @@
 
 import { supabase } from "@/lib/supabase/server"
 import { getTodayBrazil, todayBrazilDateString, todayBrazilISOString } from "@/lib/timezone"
+import type { TopicPerformance, UrgencyLevel } from "@/types"
 
 export interface UserStatistics {
   questionsAnswered: number
@@ -191,5 +192,240 @@ export async function getTodayProgress(userId: string): Promise<ActionResponse<{
   } catch (error) {
     console.error('[getTodayProgress] Error:', error)
     return { success: false, error: 'Erro ao carregar progresso' }
+  }
+}
+
+// Map area code to full knowledge area name
+const AREA_CODE_TO_NAME: Record<string, string> = {
+  'LINGUAGENS': 'Linguagens',
+  'CIENCIAS_HUMANAS': 'Ciências Humanas',
+  'CIENCIAS_NATUREZA': 'Ciências da Natureza',
+  'MATEMATICA': 'Matemática',
+}
+
+// Map subject code to display name
+const SUBJECT_CODE_TO_NAME: Record<string, string> = {
+  'PORTUGUES': 'Português',
+  'LITERATURA': 'Literatura',
+  'INGLES': 'Inglês',
+  'ESPANHOL': 'Espanhol',
+  'ARTES': 'Artes',
+  'EDUCACAO_FISICA': 'Educação Física',
+  'HISTORIA': 'História',
+  'GEOGRAFIA': 'Geografia',
+  'FILOSOFIA': 'Filosofia',
+  'SOCIOLOGIA': 'Sociologia',
+  'BIOLOGIA': 'Biologia',
+  'FISICA': 'Física',
+  'QUIMICA': 'Química',
+  'MATEMATICA': 'Matemática',
+}
+
+/**
+ * Get user performance by topic (for study priority card)
+ * Uses QuestionTopic and Topic tables from database
+ */
+export async function getUserPerformanceByTopic(userId: string): Promise<ActionResponse<TopicPerformance[]>> {
+  try {
+    // Fetch answered questions with their topics from the database
+    const { data: answers, error } = await supabase
+      .from('SimuladoQuestao')
+      .select(`
+        isCorrect,
+        questionId,
+        Simulado!inner(userId)
+      `)
+      .eq('Simulado.userId', userId)
+      .not('userAnswer', 'is', null)
+
+    if (error) {
+      console.error('[getUserPerformanceByTopic] Error fetching answers:', error)
+      return { success: false, error: 'Erro ao carregar respostas' }
+    }
+
+    if (!answers || answers.length === 0) {
+      return { success: true, data: [] }
+    }
+
+    // Get unique question IDs
+    const questionIds = [...new Set(answers.map(a => a.questionId))]
+
+    // Fetch topics for all answered questions
+    const { data: questionTopics, error: topicsError } = await supabase
+      .from('QuestionTopic')
+      .select(`
+        questionId,
+        Topic!inner(
+          name,
+          subject,
+          knowledgeArea
+        )
+      `)
+      .in('questionId', questionIds)
+
+    if (topicsError) {
+      console.error('[getUserPerformanceByTopic] Error fetching topics:', topicsError)
+      return { success: false, error: 'Erro ao carregar tópicos' }
+    }
+
+    // Build a map of questionId -> topics
+    const questionTopicMap = new Map<string, Array<{
+      name: string
+      subject: string
+      knowledgeArea: string
+    }>>()
+
+    for (const qt of questionTopics || []) {
+      const topic = (qt as any).Topic
+      if (!topic) continue
+
+      if (!questionTopicMap.has(qt.questionId)) {
+        questionTopicMap.set(qt.questionId, [])
+      }
+      questionTopicMap.get(qt.questionId)!.push({
+        name: topic.name,
+        subject: topic.subject,
+        knowledgeArea: topic.knowledgeArea,
+      })
+    }
+
+    // Aggregate by topic
+    const topicStats = new Map<string, {
+      topic: string
+      subject: string
+      knowledgeArea: string
+      total: number
+      correct: number
+    }>()
+
+    for (const answer of answers) {
+      const topics = questionTopicMap.get(answer.questionId)
+      if (!topics || topics.length === 0) continue
+
+      for (const topic of topics) {
+        const key = `${topic.name}_${topic.subject}_${topic.knowledgeArea}`
+        if (!topicStats.has(key)) {
+          topicStats.set(key, {
+            topic: topic.name,
+            subject: SUBJECT_CODE_TO_NAME[topic.subject || ''] || topic.subject || 'Geral',
+            knowledgeArea: AREA_CODE_TO_NAME[topic.knowledgeArea] || topic.knowledgeArea,
+            total: 0,
+            correct: 0,
+          })
+        }
+        const stats = topicStats.get(key)!
+        stats.total++
+        if (answer.isCorrect) {
+          stats.correct++
+        }
+      }
+    }
+
+    // Convert to TopicPerformance array with urgency levels
+    const performance: TopicPerformance[] = Array.from(topicStats.values())
+      .filter(s => s.total >= 1) // Only show topics with at least 1 answer
+      .map(s => {
+        const accuracyRate = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0
+        let urgencyLevel: UrgencyLevel
+        if (accuracyRate < 40) urgencyLevel = 'CRITICAL'
+        else if (accuracyRate < 60) urgencyLevel = 'HIGH'
+        else if (accuracyRate < 80) urgencyLevel = 'MEDIUM'
+        else urgencyLevel = 'LOW'
+
+        return {
+          topic: s.topic,
+          subject: s.subject,
+          knowledgeArea: s.knowledgeArea,
+          total: s.total,
+          correct: s.correct,
+          accuracyRate,
+          urgencyLevel,
+        }
+      })
+      .sort((a, b) => a.accuracyRate - b.accuracyRate) // Worst performance first
+
+    return { success: true, data: performance }
+  } catch (error) {
+    console.error('[getUserPerformanceByTopic] Unexpected error:', error)
+    return { success: false, error: 'Erro ao carregar performance por tópico' }
+  }
+}
+
+export interface PerformanceHistoryPoint {
+  date: string // ISO date string (YYYY-MM-DD)
+  week: string // Week label (e.g., "Sem 1", "Sem 2")
+  total: number
+  correct: number
+  accuracyRate: number
+}
+
+/**
+ * Get user performance history over time (by week)
+ * Returns performance data aggregated by week for the last 12 weeks
+ */
+export async function getUserPerformanceHistory(userId: string): Promise<ActionResponse<PerformanceHistoryPoint[]>> {
+  try {
+    // Fetch all answered questions for this user with dates
+    const { data: answers, error } = await supabase
+      .from('SimuladoQuestao')
+      .select(`
+        isCorrect,
+        answeredAt,
+        Simulado!inner(userId)
+      `)
+      .eq('Simulado.userId', userId)
+      .not('answeredAt', 'is', null)
+      .order('answeredAt', { ascending: true })
+
+    if (error) {
+      console.error('[getUserPerformanceHistory] Error fetching answers:', error)
+      return { success: false, error: 'Erro ao carregar histórico' }
+    }
+
+    if (!answers || answers.length === 0) {
+      return { success: true, data: [] }
+    }
+
+    // Group by week
+    const weekMap = new Map<string, { total: number; correct: number; date: Date }>()
+
+    for (const answer of answers) {
+      if (!answer.answeredAt) continue
+
+      const date = new Date(answer.answeredAt)
+      // Get the start of the week (Sunday)
+      const startOfWeek = new Date(date)
+      startOfWeek.setDate(date.getDate() - date.getDay())
+      startOfWeek.setHours(0, 0, 0, 0)
+      const weekKey = startOfWeek.toISOString().split('T')[0]
+
+      if (!weekMap.has(weekKey)) {
+        weekMap.set(weekKey, { total: 0, correct: 0, date: startOfWeek })
+      }
+
+      const stats = weekMap.get(weekKey)!
+      stats.total++
+      if (answer.isCorrect) {
+        stats.correct++
+      }
+    }
+
+    // Convert to array and calculate accuracy
+    const weekArray = Array.from(weekMap.entries())
+      .sort((a, b) => a[0].localeCompare(b[0])) // Sort by date ascending
+      .slice(-12) // Last 12 weeks
+
+    const history: PerformanceHistoryPoint[] = weekArray.map(([dateKey, stats], index) => ({
+      date: dateKey,
+      week: `Sem ${index + 1}`,
+      total: stats.total,
+      correct: stats.correct,
+      accuracyRate: stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0,
+    }))
+
+    return { success: true, data: history }
+  } catch (error) {
+    console.error('[getUserPerformanceHistory] Unexpected error:', error)
+    return { success: false, error: 'Erro ao carregar histórico de performance' }
   }
 }

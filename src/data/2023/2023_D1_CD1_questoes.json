@@ -13,7 +13,10 @@
     "optionD": "D a desnutrição compromete o raciocínio.",
     "optionE": "E as residências carecem de refrigeradores.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_02_img_001.jpeg",
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 1,
@@ -29,7 +32,10 @@
     "optionD": "D contato com os pais prejudica o acompanhamento da dislexia.",
     "optionE": "E mudança de interesses ocorre na transição da infância para a vida adulta.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_04_img_003.png",
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 2,
@@ -45,7 +51,10 @@
     "optionD": "D risco de devastação.",
     "optionE": "E necessidade de empatia.",
     "imageUrl": null,
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Vocabulário"
+    ]
   },
   {
     "questionNumber": 2,
@@ -61,7 +70,10 @@
     "optionD": "D substantivos como “sangre” e “piel”.",
     "optionE": "E adjetivos possessivos como “mi” e “mis”. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 3,
@@ -77,7 +89,10 @@
     "optionD": "D existência de experiências plurais.",
     "optionE": "E necessidade de capacitação profissional. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_02_img_001.jpeg",
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 3,
@@ -93,7 +108,10 @@
     "optionD": "D relação entre os sentidos do paladar e do olfato na gastronomia.",
     "optionE": "E gastronomia como representação da identidade cultural de um povo.",
     "imageUrl": null,
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 4,
@@ -109,7 +127,10 @@
     "optionD": "D discriminação cultural.",
     "optionE": "E censura musical.",
     "imageUrl": null,
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 4,
@@ -125,7 +146,10 @@
     "optionD": "D aproxima-se de pessoas indefesas.",
     "optionE": "E faz-se presente de forma controladora.",
     "imageUrl": null,
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Vocabulário"
+    ]
   },
   {
     "questionNumber": 5,
@@ -141,7 +165,10 @@
     "optionD": "D elogiar um modelo de organização.",
     "optionE": "E salientar o espírito de cooperação. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": "INGLES"
+    "languageOption": "INGLES",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 5,
@@ -157,7 +184,10 @@
     "optionD": "D descuido da população com os sonhos dos imigrantes.",
     "optionE": "E falta de segurança existente no transporte público urbano. –LC • 1º DIA • CADERNO 1 • AZUL– LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS Questões de 06 a 45",
     "imageUrl": "imagens/2023_D1_CD1/pagina_04_img_003.png",
-    "languageOption": "ESPANHOL"
+    "languageOption": "ESPANHOL",
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 6,
@@ -173,7 +203,10 @@
     "optionD": "D associação entre o lema olímpico e a cooperatividade.",
     "optionE": "E vinculação entre o lema olímpico e os eventos atléticos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 7,
@@ -189,7 +222,10 @@
     "optionD": "D sugerem uma atmosfera onírica alinhada ao desejo de resgate da espiritualidade.",
     "optionE": "E mimetizam, na paisagem, os corpos transformados pela violência da escravidão.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 8,
@@ -205,7 +241,10 @@
     "optionD": "D ao intercâmbio cultural que ocorre entre os povos dos diferentes países de língua portuguesa.",
     "optionE": "E à distância territorial entre os falantes do português que vivem em Portugal e no Brasil. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 9,
@@ -221,7 +260,10 @@
     "optionD": "D legitimidade da voz dos representantes da nobreza.",
     "optionE": "E diversidade dos meios disponíveis em uma época histórica.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 10,
@@ -237,7 +279,10 @@
     "optionD": "D necessidade de regulamentação do funcionamento dos “bots”.",
     "optionE": "E identificação de padrões de disseminação de informações inverídicas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 11,
@@ -253,7 +298,10 @@
     "optionD": "D sensibilizar o público para a importância de uma direção responsável.",
     "optionE": "E restringir os problemas da violência no trânsito a aspectos emocionais. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 12,
@@ -269,7 +317,10 @@
     "optionD": "D presença de um foco narrativo de caráter impreciso.",
     "optionE": "E ambiência de mistério das relações entre familiares.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 13,
@@ -285,7 +336,10 @@
     "optionD": "D frustração causada pela vontade de retorno ao passado.",
     "optionE": "E disponibilidade para a exploração do prazer efêmero. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 14,
@@ -301,7 +355,10 @@
     "optionD": "D jeito singular de falar aos ouvintes.",
     "optionE": "E dificuldade de compreensão da história.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 15,
@@ -317,7 +374,10 @@
     "optionD": "D resulta na extinção da cultura de povos originários.",
     "optionE": "E inviabiliza o estudo da língua do povo Tikuna. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 16,
@@ -333,7 +393,10 @@
     "optionD": "D diferencia-se em todo o Brasil, desenvolvendo cada região a sua própria língua de sinais.",
     "optionE": "E é ininteligível para parte dos usuários em razão das mudanças de sinais motivadas geograficamente.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 17,
@@ -349,7 +412,10 @@
     "optionD": "D identidade da revista, voltada para a recepção e a promoção de ideias circulantes em livros.",
     "optionE": "E padrão editorial dos artigos, organizados em torno de uma proposta de design inovador.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 18,
@@ -365,7 +431,10 @@
     "optionD": "D busca constante pela liberdade de expressão individual.",
     "optionE": "E crítica à finalidade comercial das notícias. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 19,
@@ -381,7 +450,10 @@
     "optionD": "D evidenciar argumentos que reforçam a ideia de que os negros são vítimas em potencial da violência.",
     "optionE": "E salientar o aumento da participação de jovens nos movimentos de resistência na área da cultura.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 20,
@@ -397,7 +469,10 @@
     "optionD": "D apresentar as consequências do esfacelamento da linguagem.",
     "optionE": "E criticar o obstáculo promovido pelos usos especializados da linguagem.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 21,
@@ -413,7 +488,10 @@
     "optionD": "D propiciaram melhor compreensão dos sintomas dos pacientes.",
     "optionE": "E divulgaram um novo rol de doenças características da localidade. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_12_img_005.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 22,
@@ -429,7 +507,10 @@
     "optionD": "D resgata a musicalidade africana por meio de palavras inteligíveis.",
     "optionE": "E remonta à tristeza dos negros mais velhos com saudade da África.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 23,
@@ -445,7 +526,10 @@
     "optionD": "D limitações inerentes às figuras femininas e masculinas.",
     "optionE": "E dificuldade na atribuição de papéis masculinos e femininos.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_12_img_005.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 24,
@@ -461,7 +545,10 @@
     "optionD": "D alertar a sociedade sobre o aumento da violência contra a mulher em decorrência do coronavírus.",
     "optionE": "E incentivar o público feminino a denunciar crimes de violência contra a mulher durante o período de isolamento. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 25,
@@ -477,7 +564,10 @@
     "optionD": "D confirma a frustração da narradora com relação à terra.",
     "optionE": "E sugere, na ausência da linguagem, a estagnação do tempo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 26,
@@ -493,7 +583,10 @@
     "optionD": "D criticar a atenuação da violência contra os povos escravizados nas memórias retratadas pelos museus.",
     "optionE": "E imaginar a reação de indiferença de seus contemporâneos com os escravizados libertos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 27,
@@ -509,7 +602,10 @@
     "optionD": "D contraposição de ideias marcada pela conjunção “mas”.",
     "optionE": "E substantivação de expressões pela anteposição do artigo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 28,
@@ -525,7 +621,10 @@
     "optionD": "D ressaltar a existência de pressões externas.",
     "optionE": "E manifestar as dores do processo de criação. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Funções de Linguagem"
+    ]
   },
   {
     "questionNumber": 29,
@@ -541,7 +640,10 @@
     "optionD": "D questionamento sutil quanto à sanidade dos inconfidentes.",
     "optionE": "E contraste entre austeridade pomposa e imagem repugnante.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_15_img_006.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 30,
@@ -557,7 +659,10 @@
     "optionD": "D incentivo ao desenvolvimento econômico com a iniciativa privada.",
     "optionE": "E espaço urbano marcado por uma política de isolamento das crianças.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 31,
@@ -573,7 +678,10 @@
     "optionD": "D transformar em paz as emoções conflituosas do casal.",
     "optionE": "E condicionar a existência da paixão a espaços idealizados. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 32,
@@ -589,7 +697,10 @@
     "optionD": "D iniciativa de estímulo à vocação turística da cidade.",
     "optionE": "E divisão hierárquica entre gêneros e estilos musicais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 33,
@@ -605,7 +716,10 @@
     "optionD": "D apresentar uma composição que antecipa o imaginário artístico germânico.",
     "optionE": "E estimular discussões sobre o papel da arte na construção coletiva de cultura.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_15_img_006.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 34,
@@ -621,7 +735,10 @@
     "optionD": "D releitura irônica da atmosfera mística presente no culto a entidades.",
     "optionE": "E oposição entre o resgate de tradições e a efemeridade da vida humana. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_15_img_006.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 35,
@@ -637,7 +754,10 @@
     "optionD": "D favorecimento de fabricantes dos jogos.",
     "optionE": "E modificação da audiência televisiva.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 36,
@@ -653,7 +773,10 @@
     "optionD": "D perpetuar uma narrativa de apagamento dos fatos históricos traumáticos.",
     "optionE": "E ritualizar a passagem de atos fúnebres nas produções coletivas com espírito festivo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 37,
@@ -669,7 +792,10 @@
     "optionD": "D enfatizar o caráter original e inovador de suas criações artísticas, diferenciando-se das artes tradicionais.",
     "optionE": "E trazer um sentido tecnológico às suas colagens, uma vez que as imagens artísticas são recorrentes nas redes sociais.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_15_img_006.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 38,
@@ -685,7 +811,10 @@
     "optionD": "D distanciamento da realidade social indígena.",
     "optionE": "E estímulo ao estudo da poesia indígena. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_15_img_006.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 39,
@@ -701,7 +830,10 @@
     "optionD": "D rapidez na disseminação digital do verbete.",
     "optionE": "E divulgação de plataformas para a criação de petição.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 40,
@@ -717,7 +849,10 @@
     "optionD": "D necessidade de afastamento temporário das competições.",
     "optionE": "E impossibilidade de uso controlado de substâncias exógenas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gênero Textual"
+    ]
   },
   {
     "questionNumber": 41,
@@ -733,7 +868,10 @@
     "optionD": "D as instituições de inteligência.",
     "optionE": "E as federações esportivas.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 42,
@@ -749,7 +887,10 @@
     "optionD": "D variação de condição étnica.",
     "optionE": "E desigualdade entre classes sociais. –LC • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Variação Linguística"
+    ]
   },
   {
     "questionNumber": 43,
@@ -765,7 +906,10 @@
     "optionD": "D contraposição de ideias presentes na obra do homenageado.",
     "optionE": "E seleção vocabular representativa do sentimento de nostalgia.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_18_img_008.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Literatura"
+    ]
   },
   {
     "questionNumber": 44,
@@ -781,7 +925,10 @@
     "optionD": "D orientar sobre os exercícios para uma boa amamentação.",
     "optionE": "E informar sobre o aumento de anticorpos nas mães.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_18_img_008.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Interpretação Textual"
+    ]
   },
   {
     "questionNumber": 45,
@@ -797,7 +944,10 @@
     "optionD": "D informar o setor público sobre o retrocesso da legislação destinada à população idosa.",
     "optionE": "E chamar a atenção da população sobre a qualidade dos serviços de saúde pública para o idoso. –LC • 1º DIA • CADERNO 1 • AZUL– INSTRUÇÕES PARA A REDAÇÃO 1. O rascunho da redação deve ser feito no espaço apropriado. 2. O texto definitivo deve ser escrito à tinta preta, na folha própria, em até 30 (trinta) linhas. 3. \u0007A redação que apresentar cópia dos textos da Proposta de Redação ou do Caderno de Questões terá o número de linhas copiadas desconsiderado para a contagem de linhas. 4. Receberá nota zero, em qualquer das situações expressas a seguir, a redação que: 4.1. tiver até 7 (sete) linhas escritas, sendo considerada “texto insuficiente”; 4.2. fugir ao tema ou não atender ao tipo dissertativo-argumentativo; 4.3. apresentar parte do texto deliberadamente desconectada do tema proposto; 4.4. apresentar nome, assinatura, rubrica ou outras formas de identificação no espaço destinado ao texto. TEXTO I O trabalho de cuidado não remunerado e mal pago e a crise global da desigualdade O trabalho de cuidado é essencial para nossas sociedades e para a economia. Ele inclui o trabalho de cuidar de crianças, idosos e pessoas com doenças e deficiências físicas e mentais, bem como o trabalho doméstico diário que inclui cozinhar, limpar, lavar, consertar coisas e buscar água e lenha. Se ninguém investisse tempo, esforços e recursos nessas tarefas diárias essenciais, comunidades, locais de trabalho e economias inteiras ficariam estagnados. Em todo o mundo, o trabalho de cuidado não remunerado e mal pago é desproporcionalmente assumido por mulheres e meninas em situação de pobreza, especialmente por aquelas que pertencem a grupos que, além da discriminação de gênero, sofrem preconceito em decorrência de sua raça, etnia, nacionalidade e sexualidade. As mulheres são responsáveis por mais de três quartos do cuidado não remunerado e compõem dois terços da força de trabalho envolvida em atividades de cuidado remuneradas. Documento informativo – Tempo de Cuidar. Disponível em: https://www.oxfam.org.br. Acesso em: 18 de jul. de 2023 (adaptado). TEXTO II Média de horas dedicadas pelas pessoas de 14 anos ou mais de idade aos afazeres domésticos e/ou às tarefas de cuidado de pessoas, por sexo Brasil - 2019 Sexo Horas Semanais Homens 11,0 Mulheres 21,4 Fonte: IBGE - Pnad contínua anual Disponível em: https://agenciadenoticias.ibge.gov.br. Acesso em: 18 de jul. 2023 (adaptado). PROPOSTA DE REDAÇÃO A partir da leitura dos textos motivadores e com base nos conhecimentos construídos ao longo de sua formação, redija texto dissertativo-argumentativo em modalidade escrita formal da língua portuguesa sobre o tema “Desafios para o enfrentamento da invisibilidade do trabalho de cuidado realizado pela mulher no Brasil”, apresentando proposta de intervenção que respeite os direitos humanos. Selecione, organize e relacione, de forma coerente e coesa, argumentos e fatos para a defesa de seu ponto de vista. TEXTO III A sociedade brasileira tem passado por inúmeras transformações sociais ao longo das últimas décadas. Entre elas, as percepções sociais a respeito dos valores e das convenções de gênero e a forma como mulheres têm se inserido na sociedade. Algumas permanências, porém, chamam a atenção, como a delegação quase que exclusiva às famílias – e, nestas, às mulheres – de atividades relacionadas à reprodução da vida e da sociedade, usualmente nominadas trabalho de cuidado. Disponível em: https://repositorio.ipea.gov.br. Acesso em: 24 maio 2023 (adaptado). TEXTO IV DESAFIOS DO CUIDADO Apenas 15% dos ﬁlmes nacionais foram dirigidos por mulheres entre 2001 e 2010 Rede de estradas conectava aldeias e culturas pré-colombianas na Amazônia Pterossauros podem ter se originado de pequenos répteis terrestres Cresce o número de brasileiros entre os pesquisadores mais citados em 2020 Aumenta o número de pessoas que demandam serviços de assistência, obrigando os países a repensar seus sistemas de atenção; no Brasil, protagonismo continua familiar Covid-19: a complexidade da distribuição das vacinas; as startups que criaram os primeiros imunizantes aprovados; o impacto das mutações do vírus DESAFIOS DO CUIDADO Apenas 15% dos ﬁlmes nacionais foram dirigidos por mulheres entre 2001 e 2010 Rede de estradas conectava aldeias e culturas pré-colombianas na Amazônia Pterossauros podem ter se originado de pequenos répteis terrestres Cresce o número de brasileiros entre os pesquisadores mais citados em 2020 Aumenta o número de pessoas que demandam serviços de assistência, obrigando os países a repensar seus sistemas de atenção; no Brasil, protagonismo continua familiar Covid-19: a complexidade da distribuição das vacinas; as startups que criaram os primeiros imunizantes aprovados; o impacto das mutações do vírus DESAFIOS DO CUIDADO Aumenta o número de pessoas que demandam serviços de assistência, obrigando os países a repensar seus sistemas de atenção; no Brasil, protagonismo continua familiar Capa da revista Pesquisa. Disponível em: https://revistapesquisa.fapesp.br. Acesso em: 23 maio 2023 (adaptado). –CH • 1º DIA • CADERNO 1 • AZUL– CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS Questões de 46 a 90",
     "imageUrl": "imagens/2023_D1_CD1/pagina_18_img_008.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Gramática"
+    ]
   },
   {
     "questionNumber": 46,
@@ -813,7 +963,10 @@
     "optionD": "D fronteiras e demarcações territoriais.",
     "optionE": "E profissões e interesses econômicos.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_20_img_009.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 47,
@@ -829,7 +982,10 @@
     "optionD": "D Práticas de letramento e transformação cultural.",
     "optionE": "E Flexibilização do ensino e reformismo pedagógico.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_20_img_009.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 48,
@@ -845,7 +1001,10 @@
     "optionD": "D desrespeito aos governantes, comprometendo a criação de empregos para o lavrador.",
     "optionE": "E assédio ao empresariado, dificultando o investimento de maquinários para a produção.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_20_img_009.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 49,
@@ -861,7 +1020,10 @@
     "optionD": "D Incentivar a pluralidade cultural.",
     "optionE": "E Assegurar a integridade territorial. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 50,
@@ -877,7 +1039,10 @@
     "optionD": "D resgate do teocentrismo.",
     "optionE": "E crítica ao eurocentrismo.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_20_img_009.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 51,
@@ -893,7 +1058,10 @@
     "optionD": "D estimular a cooperação regional.",
     "optionE": "E combater os governos autocráticos.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_20_img_009.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 52,
@@ -909,7 +1077,10 @@
     "optionD": "D manutenção do sistema escolar.",
     "optionE": "E capacitação de mobilidade individual.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_20_img_009.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 53,
@@ -925,7 +1096,10 @@
     "optionD": "D Sedimentação de erosão eólica.",
     "optionE": "E Derretimento de geleiras glaciais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 54,
@@ -941,7 +1115,10 @@
     "optionD": "D sustentar um argumento idealista.",
     "optionE": "E defender uma posição intencionalista. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 55,
@@ -957,7 +1134,10 @@
     "optionD": "D promoção da satisfação de necessidades artificiais.",
     "optionE": "E mecanismo de organização do ócio e do prazer.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_22_img_010.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 56,
@@ -973,7 +1153,10 @@
     "optionD": "D permanência em passividade social.",
     "optionE": "E conivência em interesses partidários.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_22_img_010.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 57,
@@ -989,7 +1172,10 @@
     "optionD": "D escolhas humanas definidas pelo conhecimento empírico.",
     "optionE": "E relações interpessoais mediadas pela autonomia dos indivíduos. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   },
   {
     "questionNumber": 58,
@@ -1005,7 +1191,10 @@
     "optionD": "D práticas corporais e esportivas em decorrência de uma imposição eclesiástica.",
     "optionE": "E discursos filosóficos e antropológicos em resultado de uma determinação paroquial.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_22_img_010.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 59,
@@ -1021,7 +1210,10 @@
     "optionD": "D consagração de tradições medievais.",
     "optionE": "E disseminação de produtos manufaturados.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 60,
@@ -1037,7 +1229,10 @@
     "optionD": "D violência patrimonial.",
     "optionE": "E desentendimento matrimonial.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 61,
@@ -1053,7 +1248,10 @@
     "optionD": "D Concentração da produção.",
     "optionE": "E Invisibilidade do profissional. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_22_img_010.png",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 62,
@@ -1069,7 +1267,10 @@
     "optionD": "D imposição econômico-financeira de empresas privadas.",
     "optionE": "E protestos ecológico-sustentáveis de entidades ambientais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 63,
@@ -1085,7 +1286,10 @@
     "optionD": "D intervenção estatal.",
     "optionE": "E padrão estético.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_24_img_011.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 64,
@@ -1101,7 +1305,10 @@
     "optionD": "D exploração predatória.",
     "optionE": "E reaproveitamento energético.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 65,
@@ -1117,7 +1324,10 @@
     "optionD": "D igualdade de oportunidade.",
     "optionE": "E reciprocidade de tratamento. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 66,
@@ -1133,7 +1343,10 @@
     "optionD": "D constância da economia.",
     "optionE": "E romantização da carência.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 67,
@@ -1149,7 +1362,10 @@
     "optionD": "D padronização alimentar dos povos tradicionais.",
     "optionE": "E modernização logística de plantios convencionais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 68,
@@ -1165,7 +1381,10 @@
     "optionD": "D equilíbrio do ambiente das cidades.",
     "optionE": "E controle da proliferação dos animais.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_24_img_011.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 69,
@@ -1181,7 +1400,10 @@
     "optionD": "D desrespeito à dignidade humana.",
     "optionE": "E oposição aos princípios hierárquicos. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 70,
@@ -1197,7 +1419,10 @@
     "optionD": "D Adoção de cerimoniais públicos para controlar as manifestações de grupos opositores.",
     "optionE": "E Estatização de meios de comunicação para selecionar a divulgação de atos governamentais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 71,
@@ -1213,7 +1438,10 @@
     "optionD": "D desoneração de setores produtivos.",
     "optionE": "E flexibilização de legislação ambiental.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 72,
@@ -1229,7 +1457,10 @@
     "optionD": "D Pioneirismo e retrocesso.",
     "optionE": "E Receio e civilidade. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_26_img_012.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 73,
@@ -1245,7 +1476,10 @@
     "optionD": "D O movimento de reformas religiosas.",
     "optionE": "E A manutenção do sistema feudal.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 74,
@@ -1261,7 +1495,10 @@
     "optionD": "D flexível no que diz respeito aos costumes religiosos.",
     "optionE": "E compreensível no que concerne às normas laborais.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 75,
@@ -1277,7 +1514,10 @@
     "optionD": "D Criminalização de práticas homofóbicas.",
     "optionE": "E Contestação do comportamento machista.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 76,
@@ -1293,7 +1533,10 @@
     "optionD": "D Participação feminina no mercado de trabalho.",
     "optionE": "E Diminuição dos benefícios na licença-maternidade. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_26_img_012.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 77,
@@ -1309,7 +1552,10 @@
     "optionD": "D A produção da terra garante a riqueza das nações.",
     "optionE": "E A responsabilidade dos governantes assegura a saúde dos povos.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 78,
@@ -1325,7 +1571,10 @@
     "optionD": "D priorização de insumos químicos.",
     "optionE": "E mecanização de técnicas de cultivo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 79,
@@ -1341,7 +1590,10 @@
     "optionD": "D sustenta a fugacidade da vida.",
     "optionE": "E refuta a evolução biológica.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 80,
@@ -1357,7 +1609,10 @@
     "optionD": "D regularizar a propriedade da terra.",
     "optionE": "E estimular a oferta de mão de obra. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 81,
@@ -1373,7 +1628,10 @@
     "optionD": "D regulamentação dos privilégios pela justiça social.",
     "optionE": "E repartição de vantagens pela hierarquização cultural.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Sociológica"
+    ]
   },
   {
     "questionNumber": 82,
@@ -1389,7 +1647,10 @@
     "optionD": "D fiscalização política dos fluxos de populações do Novo e do Velho Mundo.",
     "optionE": "E monitoramento social dos grupos de trabalhadores da cidade e do campo.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 83,
@@ -1405,7 +1666,10 @@
     "optionD": "D ampliação da microfauna.",
     "optionE": "E decomposição do substrato.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 84,
@@ -1421,7 +1685,10 @@
     "optionD": "D ampliação dos momentos de socialização.",
     "optionE": "E afastamento das atividades especializadas. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 85,
@@ -1437,7 +1704,10 @@
     "optionD": "D manutenção das barreiras fitossanitárias e a livre circulação de mercadorias.",
     "optionE": "E remoção dos entraves alfandegários e a melhor remuneração de empregados.",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 86,
@@ -1453,7 +1723,10 @@
     "optionD": "D consolidação da estratificação social.",
     "optionE": "E ruptura de valores institucionalizados.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_31_img_013.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 87,
@@ -1469,7 +1742,10 @@
     "optionD": "D orientações constitucionais e estatutárias.",
     "optionE": "E decretos legislativos e internacionais.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_31_img_013.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 88,
@@ -1485,7 +1761,10 @@
     "optionD": "D Limitação do mercado monopolista.",
     "optionE": "E Modernização da produção industrial. –CH • 1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": "imagens/2023_D1_CD1/pagina_31_img_013.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Análise Geográfica"
+    ]
   },
   {
     "questionNumber": 89,
@@ -1501,7 +1780,10 @@
     "optionD": "D Controlar as emissões de carbono.",
     "optionE": "E Priorizar a utilização de termoelétricas.",
     "imageUrl": "imagens/2023_D1_CD1/pagina_31_img_013.jpeg",
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Contextualização Histórica"
+    ]
   },
   {
     "questionNumber": 90,
@@ -1517,6 +1799,9 @@
     "optionD": "D investigação empírica da physis.",
     "optionE": "E expressão pictográfica da pólis. RASCUNHO DA REDAÇÃO Transcreva a sua Redação para a Folha de Redação. –1º DIA • CADERNO 1 • AZUL–",
     "imageUrl": null,
-    "languageOption": null
+    "languageOption": null,
+    "topics": [
+      "Fundamentos Filosóficos"
+    ]
   }
 ]
