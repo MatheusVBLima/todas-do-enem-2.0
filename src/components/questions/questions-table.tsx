@@ -1,6 +1,5 @@
 "use client"
 
-import { useState, useMemo } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react"
@@ -18,8 +17,6 @@ import { AddToGroupButton } from "@/components/groups/add-to-group-button"
 import { usePrefetchQuestion } from "@/hooks/use-prefetch-question"
 import type { QuestionWithExam } from "@/types"
 
-const TABLE_PAGE_SIZE = 10
-
 interface QuestionsTableProps {
   questions: QuestionWithExam[]
   pagination: {
@@ -30,6 +27,7 @@ interface QuestionsTableProps {
     hasMore: boolean
   }
   onPageChange: (page: number) => void
+  prefetchPage?: (page: number) => void
   isLoading?: boolean
   userId: string | null
 }
@@ -38,24 +36,12 @@ export function QuestionsTable({
   questions,
   pagination,
   onPageChange,
+  prefetchPage,
   isLoading,
   userId,
 }: QuestionsTableProps) {
   const router = useRouter()
   const prefetchQuestion = usePrefetchQuestion()
-  const [tablePage, setTablePage] = useState(1)
-
-  // Internal pagination for the table (max 10 items per page)
-  const tablePageCount = Math.ceil(questions.length / TABLE_PAGE_SIZE)
-  const paginatedQuestions = useMemo(() => {
-    const start = (tablePage - 1) * TABLE_PAGE_SIZE
-    return questions.slice(start, start + TABLE_PAGE_SIZE)
-  }, [questions, tablePage])
-
-  // Reset table page when questions change
-  useMemo(() => {
-    setTablePage(1)
-  }, [pagination.page])
 
   if (isLoading) {
     return (
@@ -91,7 +77,7 @@ export function QuestionsTable({
             </TableRow>
           </TableHeader>
           <TableBody>
-            {paginatedQuestions.map((question) => (
+            {questions.map((question) => (
               <TableRow key={question.id}>
                 <TableCell>
                   <Badge variant="outline">{question.exam.year}</Badge>
@@ -138,63 +124,67 @@ export function QuestionsTable({
         </Table>
       </div>
 
-      {/* Internal Table Pagination */}
-      {tablePageCount > 1 && (
-        <div className="flex items-center justify-between">
-          <p className="text-sm text-muted-foreground">
-            Página {tablePage} de {tablePageCount} ({questions.length} questões nesta página)
-          </p>
-          <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              disabled={tablePage <= 1}
-              onClick={() => setTablePage(tablePage - 1)}
-            >
-              <ChevronLeft className="size-4" />
-              Anterior
-            </Button>
+      {/* Pagination - Navigate through Supabase pages */}
+      {pagination.totalPages > 1 && (
+        <div className="flex items-center justify-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            disabled={pagination.page <= 1}
+            onClick={() => onPageChange(pagination.page - 1)}
+            onMouseEnter={() => prefetchPage?.(pagination.page - 1)}
+          >
+            <ChevronLeft className="size-4" />
+            Anterior
+          </Button>
 
-            <div className="flex items-center gap-1">
-              {Array.from({ length: Math.min(5, tablePageCount) }, (_, i) => {
-                let pageNum: number
-
-                if (tablePageCount <= 5) {
-                  pageNum = i + 1
-                } else if (tablePage <= 3) {
-                  pageNum = i + 1
-                } else if (tablePage >= tablePageCount - 2) {
-                  pageNum = tablePageCount - 4 + i
-                } else {
-                  pageNum = tablePage - 2 + i
-                }
-
-                return (
-                  <Button
-                    key={pageNum}
-                    variant={tablePage === pageNum ? "default" : "outline"}
-                    size="sm"
-                    onClick={() => setTablePage(pageNum)}
-                    className="min-w-9"
-                  >
-                    {pageNum}
-                  </Button>
-                )
-              })}
-            </div>
-
-            <Button
-              variant="outline"
-              size="sm"
-              disabled={tablePage >= tablePageCount}
-              onClick={() => setTablePage(tablePage + 1)}
-            >
-              Próxima
-              <ChevronRight className="size-4" />
-            </Button>
+          <div className="flex items-center gap-1">
+            {generatePageNumbers(pagination.page, pagination.totalPages).map((page, idx) =>
+              page === "..." ? (
+                <span key={`ellipsis-${idx}`} className="px-2 text-muted-foreground">...</span>
+              ) : (
+                <Button
+                  key={page}
+                  variant={pagination.page === page ? "default" : "outline"}
+                  size="sm"
+                  className="size-8 p-0"
+                  onClick={() => onPageChange(page)}
+                  onMouseEnter={() => typeof page === "number" && prefetchPage?.(page)}
+                >
+                  {page}
+                </Button>
+              )
+            )}
           </div>
+
+          <Button
+            variant="outline"
+            size="sm"
+            disabled={!pagination.hasMore}
+            onClick={() => onPageChange(pagination.page + 1)}
+            onMouseEnter={() => prefetchPage?.(pagination.page + 1)}
+          >
+            Próxima
+            <ChevronRight className="size-4" />
+          </Button>
         </div>
       )}
     </div>
   )
+}
+
+function generatePageNumbers(current: number, total: number): (number | "...")[] {
+  if (total <= 7) {
+    return Array.from({ length: total }, (_, i) => i + 1)
+  }
+
+  if (current <= 3) {
+    return [1, 2, 3, 4, 5, "...", total]
+  }
+
+  if (current >= total - 2) {
+    return [1, "...", total - 4, total - 3, total - 2, total - 1, total]
+  }
+
+  return [1, "...", current - 1, current, current + 1, "...", total]
 }

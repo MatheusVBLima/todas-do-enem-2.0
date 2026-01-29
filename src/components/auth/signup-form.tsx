@@ -46,6 +46,9 @@ export function SignupForm() {
         password: data.password,
         options: {
           emailRedirectTo: `${window.location.origin}/auth/callback`,
+          data: {
+            language: 'pt', // Para templates de email em português
+          },
         },
       })
 

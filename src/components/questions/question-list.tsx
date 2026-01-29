@@ -139,6 +139,7 @@ export function QuestionList({ userId, userPlan, initialData, initialFilters }: 
           questions={data.data}
           pagination={pagination}
           onPageChange={(page) => setFilters({ pagina: page })}
+          prefetchPage={prefetchPage}
           isLoading={false}
           userId={userId}
         />

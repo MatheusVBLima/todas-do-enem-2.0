@@ -1,0 +1,24 @@
+{
+  "file": "2024_D2_CD7_questoes.json",
+  "fixedCount": 3,
+  "fixedQuestions": [
+    {
+      "questionNumber": 145,
+      "updates": {
+        "optionE": "1 145"
+      }
+    },
+    {
+      "questionNumber": 149,
+      "updates": {
+        "optionE": "3 12 3"
+      }
+    },
+    {
+      "questionNumber": 172,
+      "updates": {
+        "optionE": "V"
+      }
+    }
+  ]
+}
