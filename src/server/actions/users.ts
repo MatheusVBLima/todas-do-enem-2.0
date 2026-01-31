@@ -79,6 +79,11 @@ export async function updateUserProfile(
 
 /**
  * Create or get user in database (called after Supabase Auth signup)
+ *
+ * Handles edge cases:
+ * - User exists with same ID → return existing
+ * - User exists with same email but different ID → update ID to match auth
+ * - User doesn't exist → create new
  */
 export async function upsertUserInDatabase(
   authUserId: string,
@@ -87,15 +92,36 @@ export async function upsertUserInDatabase(
   try {
     const supabase = await getSupabaseServer()
 
-    // Try to get existing user first
-    const { data: existingUser } = await supabase
+    // Try to get existing user by ID first
+    const { data: existingById } = await supabase
       .from('User')
       .select('*')
       .eq('id', authUserId)
       .single()
 
-    if (existingUser) {
-      return { success: true, data: existingUser }
+    if (existingById) {
+      return { success: true, data: existingById }
+    }
+
+    // Check if user exists by email (different auth ID - re-signup scenario)
+    const { data: existingByEmail } = await supabase
+      .from('User')
+      .select('*')
+      .eq('email', email)
+      .single()
+
+    if (existingByEmail) {
+      // Update the existing user's ID to match new auth ID
+      const { data: updatedUser, error: updateError } = await supabase
+        .from('User')
+        .update({ id: authUserId, updatedAt: new Date().toISOString() })
+        .eq('email', email)
+        .select()
+        .single()
+
+      if (updateError) throw updateError
+
+      return { success: true, data: updatedUser }
     }
 
     // Create new user with free plan

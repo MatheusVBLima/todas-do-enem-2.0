@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { createClientSupabaseClient } from '@/lib/auth/client'
@@ -19,12 +18,12 @@ import {
   FormMessage,
   FormDescription,
 } from '@/components/ui/form'
-import { Loader2 } from 'lucide-react'
-import { toast } from 'sonner'
+import { Loader2, Mail } from 'lucide-react'
 
 export function SignupForm() {
-  const router = useRouter()
   const [formError, setFormError] = useState('')
+  const [signupSuccess, setSignupSuccess] = useState(false)
+  const [userEmail, setUserEmail] = useState('')
 
   const form = useForm<SignupInput>({
     resolver: zodResolver(signupSchema),
@@ -71,13 +70,31 @@ export function SignupForm() {
         }
       }
 
-      // Show success toast and redirect immediately
-      toast.success('Conta criada com sucesso!')
-      router.push('/')
-      router.refresh()
+      // Show success state with email confirmation message
+      setUserEmail(data.email)
+      setSignupSuccess(true)
     } catch (err) {
       setFormError('Ocorreu um erro ao criar sua conta. Tente novamente.')
     }
+  }
+
+  if (signupSuccess) {
+    return (
+      <div className="text-center space-y-4">
+        <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+          <Mail className="h-6 w-6 text-primary" />
+        </div>
+        <div className="space-y-2">
+          <h3 className="font-semibold text-lg">Verifique seu email</h3>
+          <p className="text-sm text-muted-foreground">
+            Enviamos um link de confirmação para <strong>{userEmail}</strong>.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Clique no link do email para ativar sua conta. Você pode fechar esta aba.
+          </p>
+        </div>
+      </div>
+    )
   }
 
   return (

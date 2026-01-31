@@ -9,15 +9,20 @@
         "mcp"
       ]
     },
+    "context7-mcp": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@upstash/context7-mcp",
+        "--api-key",
+        "ctx7sk-f39f66f4-7544-44cc-8eeb-f7cf96e689a2"
+      ]
+    },
     "supabase": {
       "type": "http",
       "url": "https://mcp.supabase.com/mcp?project_ref=hmauacrtvesutfbmogyo"
-    },
-    "context7-mcp": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-f39f66f4-7544-44cc-8eeb-f7cf96e689a2"],
-      "disabled": false,
-      "autoApprove": []
     }
   }
 }
